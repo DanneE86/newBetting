@@ -1,4 +1,4 @@
-// Kupongmotor för Stryktipset och Europatipset: filkupongerna A, B och C (Egna rader hos Svenska Spel) med krav som
+// Kupongmotor för Stryktipset och Europatipset: filkupong A (Egna rader hos Svenska Spel) med krav som
 // användaren låser själv (1, X, 2, 1X, X2, 12 eller 1X2). Samma funktion bygger kupongerna i servern
 // (scripts/fetch-stryktipset.mjs), så sidan och servern ger exakt samma rader. Inga Gambling Cabin-regler sedan 2026-10-11.
 // Dessutom: "kan falla"-favoriter och skrällspikar/skrällkryss att läsa om (ligger inte i kupongerna).
@@ -7,9 +7,6 @@ const PAYOUT_13 = 0.65 * 0.4; // 65 % återbetalning, 40 % av potten till 13 rä
 // Typisk omsättning per spel när datan saknar en (samma som servern)
 const TYPICAL_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
 const favIdx = (e) => e.final.indexOf(Math.max(...e.final));
-// Skrällfönstret (användaren 2026-10-02: "en skräll runt 40 %"): vår chans 35–47 % och minst 3 procentenheter över folket.
-// Används när skrällspikarna att läsa om rangordnas (skrallTips).
-const SKRALL_SPIK = { min: 0.35, max: 0.47, edge: 0.03 };
 // "Kan falla" (användaren 2026-10-03: "ett system som hittar oj denna favorit kan falla"): favoriten (1 eller 2) streckas av
 // minst 50 % av folket men har under 55 % chans hos oss. 107 omg PL/CH/L1: 4,4 per omgång, föll 57 % (väntat 52 %). A:s spikar
 // på dem föll 27 av 34 (väntat 16, alla tre perioderna). Inget annat (form, svit, tabell, vila, xG m.m., 13 431 favoriter
@@ -22,11 +19,13 @@ export function canFall(e) {
   return { k, sign: SIGNS[k], side: k === 0 ? "home" : "away", p: e.final[k], folk: e.folk[k], x: e.final[1] };
 }
 // Skrällspik att läsa om (användaren 2026-10-04: "rekommendera någon skräll spik inte på raden men skriv den högst upp och
-// varför"): ett tecken som inte är favorit, minst SKRALL_TIP.min hos oss och minst SKRALL_SPIK.edge över folket. Påverkar inte
-// kupongerna. 35–47 % (skrallOk) går först, sedan störst värde mot folket. reasons = klartext till sidan.
-// Två att välja på (användaren 2026-10-04: "ta med en till skrällspik så man alltid har två att välja på"): skrallTips
-// ger de SKRALL_TIP.count bästa, högst en per match. Räcker de inte fylls det på med reserver (weak: true): inte favorit,
-// minst SKRALL_TIP.weakMin hos oss och understreckat (vår chans över folket). skrallTip = den första.
+// varför"). Bara data sedan 2026-10-25 (användaren: "Data ska alltid används bortse helt från vad folket tycker"): ett tecken
+// som inte är favorit i vår procent, rangordnat på datachansen (e.model, vår modell utan odds), minst SKRALL_TIP.min.
+// Folkets streck används inte. Kupongens skrällspik är förstavalet (strongSpikeForced). reasons = klartext till sidan.
+// Två att välja på (användaren 2026-10-04: "ta med en till skrällspik så man alltid har två att välja på"): högst en per
+// match. Räcker de inte fylls det på med reserver (weak: true): minst SKRALL_TIP.weakMin på data. skrallTip = den första.
+// Kontroll 2026-10-25 (bakkörningarna, 162 omg, 1 007 skrällar 25–45 % hos oddsen): där datan låg minst 8 enh. över oddsen
+// gick skrällen in 30,9 % mot oddsens 29,8 % – datan hittar inte fler skrällar än oddsen, men väljer inte sämre.
 export const SKRALL_TIP = { min: 0.3, count: 2, weakMin: 0.25 };
 export function skrallTip(events) {
   const t = skrallTips(events, 1)[0];
@@ -35,64 +34,54 @@ export function skrallTip(events) {
 export function skrallTips(events, n = SKRALL_TIP.count) {
   const cands = [];
   (events || []).forEach((e, i) => {
-    if (!e?.final || !e.folk) return;
-    const fav = e.final.indexOf(Math.max(...e.final));
+    if (!e?.final || !e.model?.length) return;
+    const fav = favIdx(e);
     for (const k of [0, 1, 2]) {
-      const p = e.final[k];
-      const folk = e.folk[k];
-      if (k === fav || folk == null || p < SKRALL_TIP.weakMin || p <= folk) continue;
-      const weak = p < SKRALL_TIP.min || p - folk < SKRALL_SPIK.edge;
-      cands.push({ i, k, p, folk, edge: p - folk, weak, window: !weak && skrallWindow(e, k) });
+      const p = e.model[k];
+      if (k === fav || p < SKRALL_TIP.weakMin) continue;
+      cands.push({ i, k, p, odds: e.final[k], weak: p < SKRALL_TIP.min });
     }
   });
-  cands.sort((a, b) => a.weak - b.weak || b.window - a.window || b.edge - a.edge || b.p - a.p);
+  cands.sort((a, b) => a.weak - b.weak || b.p - a.p);
   const used = new Set();
   return cands.filter((c) => !used.has(c.i) && used.add(c.i)).slice(0, n).map((c) => describeSkrall(events[c.i], c));
 }
-// Skrällkryss att läsa om (användaren 2026-10-04: "rekommendera också 2 st skrällkryss, skriv om dem på samma sätt"):
-// X där krysset inte är favorit, minst SKRALL_X.min hos oss och minst SKRALL_X.edge över folket. Andra matcher än
-// skrällspikarna (skrallTips), högst en per match. Störst värde mot folket först, sedan jämnast match (1 och 2 närmast
-// varandra). Räcker de inte: reserver (weak: true) med minst SKRALL_X.weakMin och understreckat. Påverkar inte kupongerna.
-export const SKRALL_X = { min: 0.26, edge: 0.02, count: 2, weakMin: 0.22 };
+// Skrällkryss att läsa om (användaren 2026-10-04: "rekommendera också 2 st skrällkryss, skriv om dem på samma sätt"). Bara data
+// sedan 2026-10-25: X där krysset inte är favorit, minst SKRALL_X.min på data. Andra matcher än skrällspikarna, högst en per
+// match. Högst datachans först, sedan jämnast match på data (1 och 2 närmast varandra). Räcker de inte: reserver (weak: true)
+// med minst SKRALL_X.weakMin. Påverkar inte kupongerna.
+export const SKRALL_X = { min: 0.26, count: 2, weakMin: 0.22 };
 export function skrallKryss(events, n = SKRALL_X.count) {
   const taken = new Set(skrallTips(events).map((t) => t.i));
   const cands = [];
   (events || []).forEach((e, i) => {
-    if (!e?.final || !e.folk || e.folk[1] == null || taken.has(i)) return;
-    const p = e.final[1], folk = e.folk[1];
-    if (e.final.indexOf(Math.max(...e.final)) === 1 || p < SKRALL_X.weakMin || p <= folk) return;
-    const weak = p < SKRALL_X.min || p - folk < SKRALL_X.edge;
-    cands.push({ i, k: 1, p, folk, edge: p - folk, weak, gap: Math.abs(e.final[0] - e.final[2]) });
+    if (!e?.final || !e.model?.length || taken.has(i)) return;
+    const p = e.model[1];
+    if (favIdx(e) === 1 || p < SKRALL_X.weakMin) return;
+    cands.push({ i, k: 1, p, odds: e.final[1], weak: p < SKRALL_X.min, gap: Math.abs(e.model[0] - e.model[2]) });
   });
-  cands.sort((a, b) => a.weak - b.weak || b.edge - a.edge || a.gap - b.gap || b.p - a.p);
+  cands.sort((a, b) => a.weak - b.weak || b.p - a.p || a.gap - b.gap);
   return cands.slice(0, n).map((c) => {
     const t = describeSkrall(events[c.i], c);
-    if (c.gap <= 0.15) t.reasons.splice(1, 0, `Jämn match: vi ger 1 ${Math.round(events[c.i].final[0] * 100)} % och 2 ${Math.round(events[c.i].final[2] * 100)} % – ju jämnare, desto oftare blir det kryss.`);
+    if (c.gap <= 0.15) t.reasons.splice(1, 0, `Jämn match: datan ger 1 ${Math.round(events[c.i].model[0] * 100)} % och 2 ${Math.round(events[c.i].model[2] * 100)} % – ju jämnare, desto oftare blir det kryss.`);
     return t;
   });
 }
 function describeSkrall(e, c) {
   const names = [`${e.home} vinner`, "oavgjort", `${e.away} vinner`];
-  const fav = e.final.indexOf(Math.max(...e.final));
+  const fav = favIdx(e);
   const favSide = fav === 0 ? "home" : fav === 2 ? "away" : null;
   const favTeam = favSide ? e[favSide] : null;
   const P = (x) => `${Math.round(x * 100)} %`;
-  const reasons = [`Vi ger ${SIGNS[c.k]} (${names[c.k]}) ${P(c.p)}, men folket har bara streckat ${P(c.folk)} – ${Math.round(c.edge * 100)} procentenheter för lite.`];
+  const reasons = [`Datan (vår modell utan odds) ger ${SIGNS[c.k]} (${names[c.k]}) ${P(c.p)}${c.p > c.odds + 0.02 ? ` – mer än oddsens ${P(c.odds)}` : `, oddsen ${P(c.odds)}`}.`];
   if (e.odds?.[c.k]) reasons.push(`Svenska Spels odds på ${SIGNS[c.k]} är ${e.odds[c.k].toFixed(2).replace(".", ",")}${e.startOdds?.[c.k] && e.startOdds[c.k] - e.odds[c.k] >= 0.05 ? `, ned från ${e.startOdds[c.k].toFixed(2).replace(".", ",")} – pengar har gått in på tecknet` : ""}.`);
-  const f = canFall(e);
-  if (f && f.k !== c.k) reasons.push(`Favoriten ${f.sign} kan falla: folket streckar ${P(f.folk)} men vi ger bara ${P(f.p)}.`);
-  if (favSide && e.streckFlop?.[favSide]) {
-    const s = e.streckFlop[favSide].season;
-    reasons.push(`${favTeam} är ett risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong.`);
-  }
   const miss = favSide ? e.context?.[favSide] : null;
   if (miss?.unavailable?.length && miss.missingValueShare >= 0.1) reasons.push(`${favTeam} saknar ${miss.unavailable.slice(0, 3).map((x) => x.name).join(", ")} (${P(miss.missingValueShare)} av lagets värde).`);
   const exp = (e.experts || []).filter((x) => x.signs.includes(SIGNS[c.k]));
   if (exp.length) reasons.push(`${exp.length} av ${e.experts.length} av Svenska Spels experter har med ${SIGNS[c.k]}.`);
-  reasons.push(`Få har den på sin kupong, så går den in blir utdelningen hög. Men den går bara in ungefär ${Math.max(1, Math.round(c.p * 10))} av 10 gånger – en chansning.`);
+  reasons.push(`Den går in ungefär ${Math.max(1, Math.round(c.p * 10))} av 10 gånger enligt datan – en chansning.`);
   return { ...c, eventNumber: e.eventNumber, sign: SIGNS[c.k], home: e.home, away: e.away, league: e.league, kickoff: e.kickoff, outcome: names[c.k], hit: e.result?.outcome ? e.result.outcome === SIGNS[c.k] : null, score: e.result?.score || null, reasons };
 }
-const skrallWindow = (e, k) => e.folk?.[k] != null && e.final[k] >= SKRALL_SPIK.min && e.final[k] <= SKRALL_SPIK.max && e.final[k] - e.folk[k] >= SKRALL_SPIK.edge;
 
 const pickOf = (x) => ({
   signs: x.map((k) => SIGNS[k]).join(""),
@@ -111,14 +100,14 @@ export function kravSigns(k) {
 // alltid Oddsets procent, samma som servern (fetch-stryktipset.mjs sysEv)
 const topOf = (x) => x.indexOf(Math.max(...x));
 export const sysFinal = (e) => (e.tipBasis !== "oddset" && e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
-/** Genererar filkupongerna A, B och C med dina krav. krav: { [eventNumber]: { signs, scope: "both" | "A" | "B" | "C" | "all" } }.
- *  rows: summa per kupong i kr (1 kr/rad), t.ex. { A: 500, B: 300, C: 500 } – saknas den gäller FILE_RULES.rows. */
+/** Genererar filkupong A med dina krav. krav: { [eventNumber]: { signs, scope } } (bara A finns sedan 2026-10-25, alla krav
+ *  gäller A). rows: summa i kr (1 kr/rad), t.ex. { A: 500 } – saknas den gäller FILE_RULES.rows. */
 export function generateCoupons(p, krav, { rows = null } = {}) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
   const events = p.events.map((e) => ({ ...e, final: sysFinal(e) }));
   const forcedFor = (sys) => events.map((e) => {
     const k = krav[e.eventNumber];
-    const on = k && (k.scope === sys || k.scope === "all" || (k.scope === "both" && (sys === "A" || sys === "B")));
+    const on = Boolean(k); // bara A finns – alla krav gäller A
     return on ? kravSigns(k) : null;
   });
   const rules = p.reduced?.rules || {};
@@ -129,24 +118,31 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
     jackpot: rules.jackpot || 0,
   };
   // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill
-  // bara köra på fil"): A, B och C som Egna rader-filer. B har inga rader från A, så A+B = summan.
-  const { A, B, C } = buildFileCoupons(p, events, forcedFor, base, rows ? { ...FILE_RULES, rowsBy: rows } : FILE_RULES);
-  return { A, B, C, overlap: 0, unionHit: (A?.hitAll || 0) + (B?.hitAll || 0) };
+  // bara köra på fil"): A som Egna rader-fil. B och C borttagna 2026-10-25 (användaren: "Vi ska bara ha A kvar så ta bort b och c").
+  const { A } = buildFileCoupons(p, events, forcedFor, base, rows ? { ...FILE_RULES, rowsBy: rows } : FILE_RULES);
+  return { A };
 }
 
-// ---------- Filkuponger A, B och C (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort
+// ---------- Filkupong A (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort
 // alla regler, vill bara köra på fil"). Spelas som Egna rader-fil hos Svenska Spel. Inga färg-, tecken- eller GC-regler:
 //   spikar: 4 st (användaren 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig") – omgångens 3
 //      starkaste favoriter (vår procent) + omgångens bästa skrällspik (skrallTips förstaval, på en annan match) – har du
 //      egna spikar spikas inga andra matcher
 //   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt
-//   B: de 500 nästa raderna som inte finns i A, med bonus för tecken A saknar (fyller A:s hål)
-//   C: 500 rader där underspelade tecken (vår chans minst 20 % och minst 1,3 × folkets streck, inte favoriten) väger
-//      1,3 × per tecken – skrällarna folket missar. Samma golv, oberoende av A och B.
 // Bakkört 2026-10-11 (kupongarkivet, ST 169 / ET 183 omg, scripts/backtest-stryk-fil.mjs): A chans 1 på 170 / 162 med 2 spikar
 // (0 spikar 1 på 168 / 159, 4 spikar 1 på 181 / 174); A+B bäst med 2 (1 på 96 / 92). Båda spikarna satt i 80 / 90 omg.
 // C: bonus 1,3 gav 1 på 177 / 167 (2: 1 på 220 / 195). 4 spikar varav 1 skräll sedan 2026-10-20 (användarens val).
-export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, underRatio: 1.3, underMin: 0.2, underBonus: 1.3, gapBonus: 2.5 };
+// Starka spikar bedöms match för match på data (användaren 2026-10-25 efter Chelsea–Tottenham 0–2: "spik baserat på data
+// inte på streck i första hand ... alla matcher enskilt först bedöms på data"): favoriten måste ha minst spikDataMin enligt
+// vår oddsfria modell (e.model) och vara samma tecken som favoriten i vår procent. Färre matcher klarar det -> färre spikar.
+export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, spikDataMin: 0.55 };
+/** Datachansen för favoriten om matchen duger som stark spik på data, annars null (ingen modell, under spikDataMin eller
+ *  datan har en annan favorit än vår procent). */
+export function dataSpikP(e, r = FILE_RULES) {
+  if (!e.model?.length) return null;
+  const p = Math.max(...e.model);
+  return p >= r.spikDataMin && e.model.indexOf(p) === favIdx(e) ? p : null;
+}
 // Egen summa per kupong (användaren 2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad
 export const FILE_BUDGET = { min: 1, max: 10000 };
 export function clampFileRows(n, fallback = FILE_RULES.rows) {
@@ -155,13 +151,14 @@ export function clampFileRows(n, fallback = FILE_RULES.rows) {
   return Math.max(FILE_BUDGET.min, Math.min(FILE_BUDGET.max, x));
 }
 /** Spikar för filkupongerna: n spikar, varav skrall st på omgångens bästa skrällspik (skrallTips: inte favoriten, på en
- *  annan match än de starka) och resten på favoriten i de starkaste matcherna. Finns ingen skräll blir det ännu en stark
- *  favorit. Har du egna spikar spikas inga andra matcher (användaren 2026-10-12: "har jag hittat egna spikar så ska du
- *  göra om de icke låsta matcherna om det är spik i någon av dom"). */
+ *  annan match än de starka) och resten på favoriten i de matcher som är starkast på data (dataSpikP – bara de som klarar
+ *  datakravet var för sig). Finns ingen skräll blir det ännu en stark favorit om någon match klarar kravet. Har du egna
+ *  spikar spikas inga andra matcher (användaren 2026-10-12: "har jag hittat egna spikar så ska du göra om de icke låsta
+ *  matcherna om det är spik i någon av dom"). */
 export function strongSpikeForced(events, forced, n = FILE_RULES.spikes, skrall = FILE_RULES.skrallSpikes) {
   const own = forced.filter((f) => f?.length === 1).length;
   if (own) return forced.slice();
-  const free = events.map((e, i) => ({ i, p: Math.max(...e.final) })).filter((x) => forced[x.i] == null).sort((a, b) => b.p - a.p);
+  const free = events.map((e, i) => ({ i, p: dataSpikP(e) })).filter((x) => forced[x.i] == null && x.p != null).sort((a, b) => b.p - a.p);
   const out = forced.slice();
   const nSkrall = Math.min(skrall, n);
   for (const { i } of free.slice(0, n - nSkrall)) out[i] = [favIdx(events[i])];
@@ -171,9 +168,6 @@ export function strongSpikeForced(events, forced, n = FILE_RULES.spikes, skrall 
   for (const { i } of free.filter((x) => out[x.i] == null).slice(0, nSkrall - tips.length)) out[i] = [favIdx(events[i])];
   return out;
 }
-/** Underspelat tecken: inte favoriten, vår chans minst underMin och minst underRatio × folkets streck. */
-export const underplayed = (e, k, r = FILE_RULES) => k !== favIdx(e) && e.folk?.[k] > 0 && e.final[k] >= r.underMin && e.final[k] / e.folk[k] >= r.underRatio;
-const rowSigns = (code, n) => { const out = new Array(n); for (let i = n - 1; i >= 0; i--) { out[i] = code % 3; code = Math.floor(code / 3); } return out; };
 export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
   const make = (sys, extra = {}) => {
     // Egen fördelning på en match: den spikas aldrig automatiskt, raderna fördelas efter dina andelar
@@ -189,57 +183,40 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
     // Egna spikar: en fri match där alla rader ändå fick samma tecken (stark favorit) görs om med vår chans som fördelning,
     // så att bara dina matcher är spikar (användaren 2026-10-12)
     // (upprepas: en omgjord match kan flytta spiken till en annan)
+    // Utan egna spikar (bara starka spikar på data, 2026-10-25) går utdelningsgolvet före omgörningen: hellre en spik av sig
+    // själv än rader under 30 000 kr
+    const own = forcedFor(sys).some((f) => f?.length === 1);
     const redo = [];
     for (let guard = 0; forced.some((f) => f?.length === 1) && guard < events.length; guard++) {
       const spiked = events.map((_, i) => i).filter((i) => forced[i] == null && !plan[i] && new Set(picked.rowList.map((row) => row[i])).size === 1);
       if (!spiked.length) break;
       for (const i of spiked) plan[i] = events[i].final.map((x) => x * 100);
+      const next = select();
+      if (!next) return null;
+      if (!own && next.payoutShort && !picked.payoutShort) {
+        for (const i of spiked) plan[i] = null;
+        break;
+      }
       redo.push(...spiked);
-      picked = select();
-      if (!picked) return null;
+      picked = next;
     }
     redo.sort((a, b) => a - b);
     // turnover = typisk omsättning: sidan räknar live med max(live-omsättning, typisk), annars blir omsättningen tidigt i veckan
     // så låg att inga rader når 30 000 kr (Europatipset 2026-10-11)
     const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover });
     c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, spikSkrall: forced[i]?.length === 1 && forcedFor(sys)[i] == null && forced[i][0] !== favIdx(events[i]), shares: plan[i] || null }));
-    if (redo.length) c.relaxed = [...c.relaxed, `match ${redo.map((i) => events[i].eventNumber).join(", ")} blev spik av sig själv och är omgjord efter vår chans – bara dina spikar är spikar`];
+    if (redo.length) c.relaxed = [...c.relaxed, `match ${redo.map((i) => events[i].eventNumber).join(", ")} blev spik av sig själv och är omgjord efter vår chans – ${own ? "bara dina spikar är spikar" : "bara datastarka favoriter och skrällspiken spikas"}`];
     if (nPlan) c.relaxed = [...c.relaxed, `${nPlan} ${nPlan === 1 ? "match" : "matcher"} med din egen fördelning (${sys} %)`];
     if (picked.payoutShort) c.relaxed = [...c.relaxed, `några rader ger under ${r.payoutMin.toLocaleString("sv-SE")} kr – fördelningen gick före utdelningsgolvet`];
     return c;
   };
-  const A = make("A");
-  // B: nästa rader utanför A, bonus för tecken A saknar på matchen
-  let B = null;
-  if (A) {
-    const gaps = events.map((_, i) => [0, 1, 2].filter((k) => !A.picks[i].signs.includes(SIGNS[k])));
-    const gapN = gaps.reduce((s, g) => s + g.length, 0);
-    B = make("B", {
-      exclude: new Set(A.rowList.map(encodeRow)),
-      score: (pr, code) => { const s = rowSigns(code, events.length); let h = 0; s.forEach((k, i) => { if (gaps[i].includes(k)) h++; }); return pr * r.gapBonus ** h; },
-      scoreMaxFactor: gapN ? r.gapBonus ** gapN : 1,
-    });
-  }
-  // C: underspelade tecken väger underBonus per tecken
-  const under = events.map((e) => [0, 1, 2].filter((k) => underplayed(e, k, r)));
-  const uN = under.filter((u) => u.length).length;
-  const C = make("C", {
-    score: (pr, code) => { const s = rowSigns(code, events.length); let h = 0; s.forEach((k, i) => { if (under[i].includes(k)) h++; }); return pr * r.underBonus ** h; },
-    scoreMaxFactor: uN ? r.underBonus ** uN : 1,
-  });
-  if (C) C.rules.underplayed = under.map((u) => u.map((k) => SIGNS[k]).join(""));
-  return { A, B, C };
+  return { A: make("A") };
 }
 
 const decodeRow = (code, n) => {
   const s = new Array(n);
   for (let i = n - 1; i >= 0; i--) { s[i] = SIGNS[code % 3]; code = Math.floor(code / 3); }
   return s.join("");
-};
-const encodeRow = (row) => {
-  let c = 0;
-  for (let i = 0; i < row.length; i++) c = c * 3 + SIGNS.indexOf(row[i]);
-  return c;
 };
 
 /**

@@ -22,8 +22,6 @@ const products: any[] = data?.products ?? [];
 function systems(p: any) {
   const out: { name: 'A' | 'B' | 'C'; red: any; picks: string[] }[] = [];
   if (p.reduced) out.push({ name: 'A', red: p.reduced, picks: p.events.map((e: any) => e.systemPick?.signs) });
-  if (p.reducedB) out.push({ name: 'B', red: p.reducedB, picks: p.events.map((e: any) => e.systemPickB?.signs) });
-  if (p.reducedC) out.push({ name: 'C', red: p.reducedC, picks: p.reducedC.picks });
   return out;
 }
 
@@ -65,47 +63,19 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
       const top = e.final.indexOf(Math.max(...e.final));
       expect(e.tip, at).toBe(SIGNS[top]);
       expect(e.tipP, at).toBeCloseTo(e.final[top], 3);
-      // Procentens kalla: odds + modell, eller utan odds modell 50 % + folk 50 % (basis '<modell>+folk'); utan lagmodell bara oddsen ('market')
-      expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(market|folk|none|oddset)$/);
-      if (e.basis === 'oddset') {
-        // Icke-spikbar match tipsad som Oddset: Oddsets 1X2 (normerad), inte vår odds+modell-blandning
-        expect(e.tipBasis, at).toBe('oddset');
-        expect(e.oddsetTip, at).toBeTruthy();
-        expect(e.spik?.used && e.spik.spikbar, `${at}: spikbar match tipsas aldrig som Oddset`).toBeFalsy();
-        expect(e.final.reduce((s: number, x: number) => s + x, 0), at).toBeCloseTo(1, 2);
-      } else if (e.market && e.model) {
-        // Domare med låg hemmavinst och ny tränare flyttar procenten efteråt (finalBase = före)
-        (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} odds+modell`).toBeCloseTo((1 - e.modelWeight) * e.market[i] + e.modelWeight * e.model[i], 2));
-      } else if (/\+folk$/.test(e.basis)) {
-        expect(e.market, at).toBeNull();
-        e.final.forEach((x: number, i: number) => expect(x, `${at} modell+folk`).toBeCloseTo(0.5 * e.model[i] + 0.5 * e.folk[i], 2));
-      }
-      if (/^clubelo/.test(e.basis)) expect(e.clubElo?.home > 0 && e.clubElo?.away > 0, at).toBe(true);
-      if (e.neutralVenue != null) expect(typeof e.neutralVenue, at).toBe('boolean');
-      // Varde: odds >= 1,03 / var sannolikhet (EV >= 3 %)
-      expect(e.verdict.sign, at).toBe(e.tip);
-      expect(e.verdict.minOdds, at).toBeCloseTo(1.03 / e.tipP, 2);
-      if (e.odds) {
-        expect(e.odds, at).toHaveLength(3);
-        expect(e.verdict.odds, at).toBe(e.odds[top]);
-        expect(e.verdict.value, at).toBe(e.odds[top] >= 1.03 / e.tipP);
-      } else {
-        expect(e.verdict.value, `${at}: utan odds kan det inte vara värde`).toBe(false);
-      }
-      // Marknaden ar devigad (summerar till 1) och matchar oddsen
-      if (e.market && e.odds) {
-        expect(e.market.reduce((s: number, x: number) => s + x, 0), at).toBeCloseTo(1, 2);
-        const inv = e.odds.map((o: number) => 1 / o);
-        const s = inv.reduce((a: number, b: number) => a + b, 0);
-        // Skarpa odds (sharpOdds) kan ersatta Svenska Spels i marknaden - jamfor bara nar kallan ar Svenska Spel
-        if (/^Svenska Spel/.test(e.marketSource || '')) inv.forEach((x: number, i: number) => expect(e.market[i], at).toBeCloseTo(x / s, 2));
-      }
+      // Procentens kalla: bara data och historik (2026-10-25: "Bedöm matcherna bara på data där samt historik") – vår modell
+      // utan odds, justerad för domare/ny tränare/lärdomar (finalBase = före). Ingen data -> 1/3 var. Aldrig odds eller folk.
+      expect(e.basis, at).toMatch(/^(club|elo|clubelo|none)$/);
+      expect(e.tipBasis, `${at}: inga Oddset-tips`).toBeUndefined();
+      expect(e.pocket, `${at}: ingen skrällficka (folkets streck)`).toBeUndefined();
+      if (e.model) (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} data`).toBeCloseTo(e.model[i], 2));
+      else e.final.forEach((x: number) => expect(x, `${at} ingen data`).toBeCloseTo(1 / 3, 2));
       // Folkets streck och farger (gron >= 45 %, rod 25 % eller lagre)
       if (e.folk) {
         expect(e.folk.reduce((s: number, x: number) => s + x, 0), at).toBeCloseTo(1, 2);
       }
       // Grundradens tecken och typ
-      for (const pick of [e.systemPick, e.systemPickB].filter(Boolean)) {
+      for (const pick of [e.systemPick].filter(Boolean)) {
         expect(pick.signs, at).toMatch(/^(1|X|2|1X|12|X2|1X2)$/);
         expect(pick.type, at).toBe(['Spik', 'Halvgardering', 'Helgardering'][pick.signs.length - 1]);
       }
@@ -115,15 +85,14 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
 
 // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill bara
 // köra på fil"): A, B och C är Egna rader-filer à 500 rader. Inga färg-, tecken- eller GC-regler.
-test('filkuponger: 500 rader, minst 30 000 kr per rad, 4 spikar (3 starka + 1 skräll), B utan A:s rader, filen = raderna', async () => {
-  const { FILE_RULES } = await import(pathToFileURL(path.join(root, 'gui', 'public', 'stryk-engine.js')).href);
+test('filkupong A: 500 rader, minst 30 000 kr per rad, starka spikar på data (högst 3) + skräll, filen = raderna', async () => {
+  const { FILE_RULES, dataSpikP } = await import(pathToFileURL(path.join(root, 'gui', 'public', 'stryk-engine.js')).href);
   expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1 });
   for (const p of data.products) {
-    // Systemets procent som motorn (sysEv): tips som Oddset använder Oddsets procent, annars spikbedömningens
-    const sysOf = (e: any) => (e.tipBasis !== 'oddset' && e.spik?.used ? e.spik.sysP : e.final);
-    const strength = p.events.map((e: any, i: number) => ({ i, v: Math.max(...sysOf(e)) })).sort((x: any, y: any) => y.v - x.v);
+    // Starka spikar: bara matcher som klarar datakravet (2026-10-25), starkast på data först
+    const strength = p.events.map((e: any, i: number) => ({ i, v: dataSpikP(e) })).filter((x: any) => x.v != null).sort((x: any, y: any) => y.v - x.v);
     const list = systems(p);
-    expect(list.map((x) => x.name), `${p.product}`).toEqual(['A', 'B', 'C']);
+    expect(list.map((x) => x.name), `${p.product}`).toEqual(['A']);
     for (const { name, red, picks } of list) {
       const at = `${p.product} ${p.drawNumber} ${name}`;
       expect(red.gamblingCabinUrl, `${at}: ingen Gambling Cabin-länk`).toBeUndefined();
@@ -143,19 +112,17 @@ test('filkuponger: 500 rader, minst 30 000 kr per rad, 4 spikar (3 starka + 1 sk
       const lines = red.egnaRader.trim().split('\n');
       expect(lines[0], at).toBe(p.product === 'europatipset' ? 'Europatipset' : 'Stryktipset');
       expect(lines.slice(1).map((l: string) => l.replace(/^E,/, '').split(',').join('')), at).toEqual(red.rowList);
-      // 3 starka spikar: omgångens starkaste favoriter, spikade på favoriten (lika styrka som fyran: hoppas över).
-      // Den fjärde spiken är en skräll (2026-10-20): inte favoriten
+      // Högst 3 starka spikar, alla med datastöd; plus högst 1 skräll (2026-10-20)
       const nStrong = FILE_RULES.spikes - FILE_RULES.skrallSpikes;
-      expect(picks.filter((x: string) => x.length === 1).length, at).toBe(FILE_RULES.spikes);
-      for (const { i, v } of strength.slice(0, nStrong)) {
-        if (Math.abs(v - strength[nStrong].v) < 1e-3) continue;
-        const sp = sysOf(p.events[i]);
+      for (const { i } of strength.slice(0, nStrong)) {
+        const sp = p.events[i].final;
         expect(picks[i], `${at} match ${i + 1}: stark spik`).toBe(SIGNS[sp.indexOf(Math.max(...sp))]);
       }
+      const favSpikes = picks.filter((x: string, i: number) => x.length === 1 && dataSpikP(p.events[i]) != null && x === p.events[i].tip).length;
+      expect(favSpikes, at).toBeLessThanOrEqual(nStrong);
     }
-    const setA = new Set(p.reduced.rowList);
-    expect(p.reducedB.rowList.filter((r: string) => setA.has(r)), `${p.product}: B har inga rader från A`).toEqual([]);
-    expect(p.reduced.hitAll, `${p.product}: A är de troligaste raderna`).toBeGreaterThanOrEqual(p.reducedB.hitAll);
+    expect(p.reducedB, `${p.product}: ingen kupong B`).toBeUndefined();
+    expect(p.reducedC, `${p.product}: ingen kupong C`).toBeUndefined();
   }
 });
 

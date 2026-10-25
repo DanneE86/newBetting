@@ -1590,7 +1590,7 @@ test.describe('stryk-rules: skrällficka (skrällar folket missar, 2026-10-11)',
   });
 });
 
-test.describe('stryk-engine: kupong A, B och C', () => {
+test.describe('stryk-engine: kupong A (B och C borttagna 2026-10-25)', () => {
   const dataFile = path.join(ROOT, 'data', 'stryktipset.json');
   const products: any[] = fs.existsSync(dataFile) ? JSON.parse(fs.readFileSync(dataFile, 'utf8')).products ?? [] : [];
   const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
@@ -1598,16 +1598,32 @@ test.describe('stryk-engine: kupong A, B och C', () => {
 
   // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill
   // bara köra på fil"): A, B och C är Egna rader-filer à 500 rader.
-  test('filkuponger: A/B/C à 500 rader ≥ 30 000 kr, 4 spikar (3 starka + 1 skräll), B utan A:s rader, C väger underspelade tecken', async () => {
+  // Datakravet för starka spikar (användaren 2026-10-25 efter Chelsea–Tottenham 0–2: "alla matcher enskilt först bedöms på data")
+  test('dataSpikP: stark spik bara när datan (utan odds) ger favoriten minst 55 % och har samma favorit', async () => {
+    const { dataSpikP, strongSpikeForced, FILE_RULES } = await engine();
+    expect(FILE_RULES.spikDataMin).toBe(0.55);
+    const ev = (final: number[], model: number[] | null) => ({ final, model, folk: [0.4, 0.3, 0.3] });
+    // Chelsea–Tottenham 4976: 56 % i vår procent men 53 % på data -> ingen stark spik
+    expect(dataSpikP(ev([0.556, 0.231, 0.212], [0.527, 0.245, 0.228]))).toBeNull();
+    expect(dataSpikP(ev([0.66, 0.23, 0.11], [0.65, 0.23, 0.12]))).toBe(0.65);
+    expect(dataSpikP(ev([0.4, 0.25, 0.35], [0.2, 0.2, 0.6]))).toBeNull(); // datan har en annan favorit
+    expect(dataSpikP(ev([0.7, 0.2, 0.1], null))).toBeNull(); // ingen data
+    // Bara två matcher klarar kravet -> två starka spikar, rangordnade på data, inga svaga utfyllnader
+    const evs = [ev([0.6, 0.25, 0.15], [0.56, 0.26, 0.18]), ev([0.7, 0.2, 0.1], [0.5, 0.3, 0.2]), ev([0.55, 0.25, 0.2], [0.62, 0.22, 0.16]), ev([0.4, 0.3, 0.3], [0.4, 0.3, 0.3])];
+    const f = strongSpikeForced(evs, evs.map(() => null), 3, 0);
+    expect(f.map((x: any) => x?.[0] ?? null)).toEqual([0, null, 0, null]);
+  });
+
+  test('filkuponger: bara A, 500 rader ≥ 30 000 kr, starka spikar på data (högst 3) + 1 skräll', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
-    const { generateCoupons, sysFinal, FILE_RULES, underplayed, skrallTips } = await engine();
-    expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, underBonus: 1.3 });
+    const { generateCoupons, sysFinal, FILE_RULES, skrallTips, dataSpikP } = await engine();
+    expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1 });
     for (const p of products.slice(0, 2)) {
       const out = generateCoupons(p, {});
-      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), p.product).toEqual(['A', 'B', 'C']);
+      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), p.product).toEqual(['A']);
       const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
-      const strength = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => b.v - a.v);
-      for (const name of ['A', 'B', 'C']) {
+      const strength = ev.map((e: any, i: number) => ({ i, v: dataSpikP(e) })).filter((x: any) => x.v != null).sort((a: any, b: any) => b.v - a.v);
+      for (const name of ['A']) {
         const c = out[name];
         const at = `${p.product} ${name}`;
         expect(c.gamblingCabinUrl, at).toBeUndefined();
@@ -1615,26 +1631,23 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         expect(new Set(c.rowList).size, at).toBe(500);
         expect(Math.min(...c.rowReal), at).toBeGreaterThanOrEqual(30000);
         expect(c.egnaRader.trim().split('\n'), at).toHaveLength(501);
-        for (const { i, v } of strength.slice(0, 3)) expect(c.picks[i].signs, `${at} match ${i + 1}: stark spik`).toBe('1X2'[ev[i].final.indexOf(v)]);
-        // 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig" – den fjärde är bästa skrällspiken
-        expect(c.picks.filter((x: any) => x.signs.length === 1), at).toHaveLength(4);
+        for (const { i } of strength.slice(0, 3)) expect(c.picks[i].signs, `${at} match ${i + 1}: stark spik`).toBe('1X2'[ev[i].final.indexOf(Math.max(...ev[i].final))]);
+        // Starka favoritspikar bara där datan klarar kravet (2026-10-25), högst 3
+        const favSpikes = c.picks.map((x: any, i: number) => (x.spikStrong && !x.spikSkrall ? i : -1)).filter((i: number) => i >= 0);
+        for (const i of favSpikes) expect(dataSpikP(ev[i]), `${at} match ${i + 1}: spik utan datastöd`).not.toBeNull();
+        expect(favSpikes.length, at).toBeLessThanOrEqual(FILE_RULES.spikes);
+        // 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig" – skrällspiken ligger kvar
         const sk = skrallTips(ev, 13).find((t: any) => !strength.slice(0, 3).some((s: any) => s.i === t.i));
         if (sk) {
           expect(c.picks[sk.i].signs, `${at} match ${sk.i + 1}: skrällspik`).toBe(sk.sign);
           expect(c.picks.filter((x: any) => x.spikSkrall).map((x: any) => x.signs), at).toEqual([sk.sign]);
         }
       }
-      const setA = new Set(out.A.rowList);
-      expect(out.B.rowList.some((r: string) => setA.has(r)), `${p.product}: B utan A:s rader`).toBe(false);
-      expect(out.unionHit).toBeCloseTo(out.A.hitAll + out.B.hitAll, 12);
-      // C: underspelade tecken förekommer minst lika ofta som i A
-      const share = (c: any) => c.rowList.reduce((n: number, r: string) => n + r.split('').filter((s: string, i: number) => underplayed(ev[i], '1X2'.indexOf(s))).length, 0);
-      expect(share(out.C), p.product).toBeGreaterThanOrEqual(share(out.A));
     }
   });
 
   // Egen summa per kupong (2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad, 1–10 000 kr
-  test('filkuponger: egen summa per kupong A/B/C', async () => {
+  test('filkuponger: egen summa för kupong A', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     const { generateCoupons, clampFileRows, FILE_BUDGET } = await engine();
     expect(FILE_BUDGET).toEqual({ min: 1, max: 10000 });
@@ -1645,19 +1658,18 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(clampFileRows(99999)).toBe(10000);
     expect(clampFileRows('250.4')).toBe(250);
     const p = products[0];
-    const out = generateCoupons(p, {}, { rows: { A: 200, B: 300, C: 100 } });
-    expect([out.A.rows, out.B.rows, out.C.rows]).toEqual([200, 300, 100]);
+    const out = generateCoupons(p, {}, { rows: { A: 200 } });
+    expect(out.A.rows).toBe(200);
+    expect(Object.keys(out)).toEqual(['A']);
     expect(out.A.cost).toBe(200);
     expect(out.A.egnaRader.trim().split('\n')).toHaveLength(201);
-    expect(Math.min(...out.B.rowReal)).toBeGreaterThanOrEqual(30000);
-    const setA = new Set(out.A.rowList);
-    expect(out.B.rowList.some((r: string) => setA.has(r))).toBe(false);
-    // Saknas en kupong i rows gäller standarden 500
-    expect(generateCoupons(p, {}, { rows: { A: 100 } }).B.rows).toBe(500);
+    expect(Math.min(...out.A.rowReal)).toBeGreaterThanOrEqual(30000);
+    // Utan rows gäller standarden 500
+    expect(generateCoupons(p, {}).A.rows).toBe(500);
   });
 
   // Egen fördelning per match (2026-10-12: "jag ska kunna bestämma fördelningen själv som förut"), som gamla D/E/F %
-  test('filkuponger: egen fördelning A/B/C % per match', async () => {
+  test('filkuponger: egen fördelning A % per match', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     const { generateCoupons, fallShareTargets, sysFinal } = await engine();
     expect(fallShareTargets(500, [40, 30, 30])).toEqual([200, 150, 150]);
@@ -1669,33 +1681,29 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     const nr = (i: number) => p.events[i].eventNumber;
     const other = (strongest + 3) % 13;
     const dist = (c: any, i: number) => ['1', 'X', '2'].map((s) => c.rowList.filter((r: string) => r[i] === s).length);
-    const out = generateCoupons({ ...p, fileShares: { A: { [nr(strongest)]: [40, 30, 30], [nr(other)]: [20, 50, 30] }, B: { [nr(other)]: [0, 50, 50] } } }, {}, { rows: { A: 500, B: 400, C: 500 } });
+    const out = generateCoupons({ ...p, fileShares: { A: { [nr(strongest)]: [40, 30, 30], [nr(other)]: [20, 50, 30] }, } }, {}, { rows: { A: 500 } });
     // Starkaste matchen spikas inte när den har egen fördelning
     expect(dist(out.A, strongest)).toEqual([200, 150, 150]);
     expect(dist(out.A, other)).toEqual([100, 250, 150]);
-    expect(dist(out.B, other)).toEqual([0, 200, 200]);
     expect(out.A.rows).toBe(500);
     expect(new Set(out.A.rowList).size).toBe(500);
-    expect(out.B.rowList.some((r: string) => out.A.rowList.includes(r))).toBe(false);
     expect(out.A.relaxed.join(' ')).toContain('2 matcher med din egen fördelning');
-    // C utan egna andelar: spikar fortfarande starkaste matchen
-    expect(out.C.picks[strongest].signs).toHaveLength(1);
     // Ett spikat krav går före fördelningen
     const k = generateCoupons({ ...p, fileShares: { A: { [nr(other)]: [20, 50, 30] } } }, { [nr(other)]: { signs: 'X', scope: 'A' } });
     expect(dist(k.A, other)).toEqual([0, 500, 0]);
   });
 
-  test('filkuponger: dina krav gäller bara sina kuponger, egna spikar stänger av de starka spikarna', async () => {
+  test('filkuponger: dina krav gäller A, egna spikar stänger av de starka spikarna', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
-    const { generateCoupons, strongSpikeForced, sysFinal } = await engine();
+    const { generateCoupons, strongSpikeForced, sysFinal, dataSpikP } = await engine();
     const p = products[0];
     const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
+    const nSpik = (f: any[]) => f.filter((x: any) => x?.length === 1).length;
     // Krav X på svagaste matchen, bara i A
     const weakest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => a.v - b.v)[0].i;
     const out = generateCoupons(p, { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'A' } });
     expect(out.A.picks[weakest].signs).toBe('X');
     expect(out.A.picks[weakest].locked).toBe(true);
-    expect(out.B.picks[weakest].locked).toBe(false);
     // Två egna spikar: inga starka spikar läggs till
     const forced: any[] = ev.map(() => null);
     forced[weakest] = [1];
@@ -1706,21 +1714,26 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     // En egen spik: ingen annan match spikas (användaren 2026-10-12)
     forced[(weakest + 1) % 13] = null;
     expect(strongSpikeForced(ev, forced, 2)).toEqual(forced);
-    // Egen halvgardering är ingen spik: de 4 spikarna läggs till, en av dem en skräll (inte favoriten)
+    // Egen halvgardering är ingen spik: starka spikar (bara datastarka, 2026-10-25) och högst en skräll läggs till
     forced[weakest] = [0, 1];
     const f4 = strongSpikeForced(ev, forced);
-    expect(f4.filter((x: any) => x?.length === 1)).toHaveLength(4);
-    expect(f4.filter((x: any, i: number) => x?.length === 1 && x[0] !== ev[i].final.indexOf(Math.max(...ev[i].final))).length).toBeLessThanOrEqual(1);
-    expect(strongSpikeForced(ev, forced, 2, 0).filter((x: any) => x?.length === 1)).toHaveLength(2);
-    // Hela kupongen: egen spik i A -> inga starka spikar i A, men B/C (kravet gäller inte där) får sina 4
+    const nData = ev.filter((e: any, i: number) => forced[i] == null && dataSpikP(e) != null).length;
+    expect(nSpik(f4)).toBeGreaterThan(0);
+    expect(nSpik(f4)).toBeLessThanOrEqual(4);
+    const favOf = (i: number) => ev[i].final.indexOf(Math.max(...ev[i].final));
+    expect(f4.filter((x: any, i: number) => x?.length === 1 && x[0] !== favOf(i)).length).toBeLessThanOrEqual(1);
+    f4.forEach((x: any, i: number) => { if (forced[i] == null && x?.length === 1 && x[0] === favOf(i)) expect(dataSpikP(ev[i])).not.toBeNull(); });
+    expect(nSpik(strongSpikeForced(ev, forced, 2, 0))).toBe(Math.min(2, nData));
+    // Hela kupongen: egen spik -> inga starka spikar
     const own = generateCoupons(p, { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'A' } });
     expect(own.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(0);
-    expect(own.B.picks.filter((x: any) => x.spikStrong)).toHaveLength(4);
+    // Utan krav: de automatiska spikarna
+    expect(generateCoupons(p, {}).A.picks.filter((x: any) => x.spikStrong)).toHaveLength(nSpik(strongSpikeForced(ev, ev.map(() => null))));
     // Egna spikar: ingen annan match blir spik ens av sig själv (alla rader samma tecken) – den görs om
     const strongest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => b.v - a.v)[0].i;
     const k2 = { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'all' }, [p.events[(strongest + 1) % 13].eventNumber]: { signs: '1', scope: 'all' } };
     const two = generateCoupons(p, k2);
-    for (const s of ['A', 'B', 'C']) {
+    for (const s of ['A']) {
       const c = two[s];
       expect(c.rows).toBeGreaterThan(0);
       c.picks.forEach((x: any, i: number) => {
@@ -1730,9 +1743,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
-  test('filkuponger: egen fördelning med bara ett tecken räknas in i de 4 spikarna (2026-10-21)', async () => {
+  test('filkuponger: egen fördelning med bara ett tecken räknas in i spikarna (2026-10-21)', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
-    const { generateCoupons, sysFinal } = await engine();
+    const { generateCoupons, sysFinal, strongSpikeForced } = await engine();
     const p = products[0];
     const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
     // Svagaste matchen med 100 % på favoriten i A (som när % slås På på en spikad match): fortfarande 4 spikar i A
@@ -1742,9 +1755,11 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     share[fav] = 100;
     const out = generateCoupons({ ...p, fileShares: { A: { [p.events[weakest].eventNumber]: share } } }, {});
     expect(out.A.picks[weakest].signs).toBe('1X2'[fav]);
-    expect(out.A.picks.filter((x: any) => x.signs.length === 1)).toHaveLength(4);
-    expect(out.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(3);
-    expect(out.B.picks.filter((x: any) => x.signs.length === 1)).toHaveLength(4);
+    // Den egna enteckensfördelningen tar en av de 4 platserna: A får 3 automatiska (datakravet kan ge färre)
+    const nSpik = (f: any[]) => f.filter((x: any) => x?.length === 1).length;
+    const planA = ev.map((_: any, i: number) => (i === weakest ? [0, 1, 2] : null));
+    expect(out.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(nSpik(strongSpikeForced(ev, planA, 3)));
+    expect(out.A.picks.filter((x: any) => x.spikStrong).length).toBeLessThanOrEqual(nSpik(strongSpikeForced(ev, ev.map(() => null))));
   });
 
 
@@ -1806,96 +1821,93 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(sysFinal({ final, tipBasis: 'oddset', spik: { used: true, sysP: [0.34, 0.27, 0.39] } })).toEqual(final);
   });
 
-  test('skrallTip: skrällspik att läsa om – aldrig favoriten, minst 30 % och understreckad, 35–47 % först, med varför', async () => {
+  // Skrällar bara på data sedan 2026-10-25 (användaren: "Data ska alltid används bortse helt från vad folket tycker")
+  test('skrallTip: skrällspik att läsa om – aldrig favoriten, högst datachans (minst 30 %), folket spelar ingen roll, med varför', async () => {
     const { skrallTip, SKRALL_TIP } = await engine();
     expect(SKRALL_TIP.min).toBe(0.3);
-    const e = (eventNumber: number, final: number[], folk: number[], extra: any = {}) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, folk, ...extra });
+    const e = (eventNumber: number, final: number[], model: number[] | null, extra: any = {}) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, model, folk: [0.6, 0.2, 0.2], ...extra });
     const events = [
-      e(1, [0.30, 0.25, 0.45], [0.20, 0.20, 0.60]), // 1 30 %: +10 men utanför 35–47
-      e(2, [0.40, 0.25, 0.35], [0.45, 0.25, 0.30]), // 2 35 %: +5 och i fönstret -> vinner
-      e(3, [0.29, 0.21, 0.50], [0.10, 0.20, 0.70]), // 1 29 %: under 30 %
-      e(4, [0.60, 0.25, 0.15], [0.40, 0.30, 0.30]), // favoriten understreckad: aldrig
+      e(1, [0.30, 0.25, 0.45], [0.32, 0.26, 0.42]), // 1 32 % på data
+      e(2, [0.40, 0.25, 0.35], [0.36, 0.24, 0.40]), // 2 40 % på data -> vinner
+      e(3, [0.29, 0.21, 0.50], [0.28, 0.22, 0.50]), // 1 28 %: under 30 %
+      e(4, [0.60, 0.25, 0.15], [0.62, 0.24, 0.14]), // bara favoriten är stark: aldrig
     ];
     const t = skrallTip(events);
     expect(`${t.eventNumber}:${t.sign}`).toBe('2:2');
-    expect(t.window).toBe(true);
-    expect(t.reasons[0]).toContain('35 %');
+    expect(t.reasons[0]).toContain('40 %');
+    expect(t.reasons[0]).toContain('mer än oddsens 35 %');
+    expect(t.reasons.join(' ')).not.toContain('folket');
     expect(t.reasons.at(-1)).toContain('chansning');
     expect(t.hit).toBeNull();
-    // Utan fönsterkandidat: störst värde mot folket
     expect(skrallTip([events[0], events[2], events[3]])).toMatchObject({ eventNumber: 1, sign: '1' });
-    // Inget understreckat tecken på minst 30 %: ingen skräll
+    // Inget tecken utanför favoriten på minst 30 % på data: ingen skräll; ingen data: ingen skräll
     expect(skrallTip([events[2], events[3]])).toBeNull();
-    // Facit och skäl från risklag, oddsrörelse och experter
-    const r = skrallTip([e(5, [0.50, 0.30, 0.20], [0.60, 0.22, 0.18], {
-      result: { outcome: 'X', score: '1-1' }, odds: [2.0, 3.2, 5.0], startOdds: [1.9, 3.5, 5.0],
-      experts: [{ signs: '1X' }, { signs: '1' }], streckFlop: { flagged: true, home: { season: { noWin: 3, games: 4 } } },
+    expect(skrallTip([{ ...events[1], model: null }])).toBeNull();
+    // Facit och skäl från oddsrörelse och experter
+    const r = skrallTip([e(5, [0.50, 0.30, 0.20], [0.45, 0.33, 0.22], {
+      result: { outcome: 'X', score: '1-1' }, odds: [2.0, 3.2, 5.0], startOdds: [1.9, 3.5, 5.0], experts: [{ signs: '1X' }, { signs: '1' }],
     })]);
     expect(r).toMatchObject({ sign: 'X', hit: true, score: '1-1' });
     expect(r.reasons.join(' ')).toContain('ned från 3,50');
-    expect(r.reasons.join(' ')).toContain('H5 är ett risklag');
     expect(r.reasons.join(' ')).toContain('1 av 2');
   });
 
-  test('skrallTips: alltid två att välja på – olika matcher, reserv (weak) när bara en klarar kravet', async () => {
-    const { skrallTips, SKRALL_TIP } = await engine();
+  test('skrallTips: alltid två att välja på – olika matcher, reserv (weak) när bara en klarar kravet, oberoende av folket', async () => {
+    const { skrallTips, skrallTip, SKRALL_TIP } = await engine();
     expect(SKRALL_TIP.count).toBe(2);
     expect(SKRALL_TIP.weakMin).toBe(0.25);
-    const e = (eventNumber: number, final: number[], folk: number[]) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, folk });
+    const e = (eventNumber: number, final: number[], model: number[], folk = [0.4, 0.3, 0.3]) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, model, folk });
     const events = [
-      e(1, [0.30, 0.25, 0.45], [0.20, 0.20, 0.60]), // 1 30 %: +10
-      e(2, [0.40, 0.25, 0.35], [0.45, 0.25, 0.30]), // 2 35 %: i fönstret -> först
-      e(3, [0.29, 0.21, 0.50], [0.10, 0.20, 0.70]), // 1 29 %: bara reserv
-      e(4, [0.60, 0.25, 0.15], [0.40, 0.30, 0.30]), // favoriten: aldrig
+      e(1, [0.30, 0.25, 0.45], [0.32, 0.26, 0.42]),
+      e(2, [0.40, 0.25, 0.35], [0.36, 0.24, 0.40]), // högst på data -> först
+      e(3, [0.29, 0.21, 0.50], [0.28, 0.22, 0.50]), // 28 %: bara reserv
+      e(4, [0.60, 0.25, 0.15], [0.62, 0.24, 0.14]),
     ];
     const two = skrallTips(events);
     expect(two.map((t: any) => `${t.eventNumber}:${t.sign}`)).toEqual(['2:2', '1:1']);
     expect(two.every((t: any) => !t.weak)).toBe(true);
+    // Folkets streck ändrar ingenting
+    const folkShift = skrallTips(events.map((x) => ({ ...x, folk: [0.05, 0.05, 0.9] })));
+    expect(folkShift.map((t: any) => `${t.eventNumber}:${t.sign}`)).toEqual(['2:2', '1:1']);
     // Högst en per match, även när två tecken i samma match klarar kravet
-    const same = skrallTips([e(7, [0.36, 0.30, 0.34], [0.60, 0.20, 0.20]), e(8, [0.31, 0.19, 0.50], [0.20, 0.20, 0.60])]);
-    expect(new Set(same.map((t: any) => t.eventNumber)).size).toBe(same.length);
-    expect(same.map((t: any) => t.eventNumber)).toEqual([7, 8]);
+    const same = skrallTips([e(7, [0.36, 0.30, 0.34], [0.30, 0.33, 0.37]), e(8, [0.31, 0.19, 0.50], [0.31, 0.20, 0.49])]);
+    expect(same.map((t: any) => `${t.eventNumber}:${t.sign}`)).toEqual(['7:2', '8:1']);
     // Bara en klarar kravet: reserven fyller på och märks weak
     const fill = skrallTips([events[1], events[2], events[3]]);
     expect(fill.map((t: any) => `${t.eventNumber}:${t.sign}:${t.weak}`)).toEqual(['2:2:false', '3:1:true']);
-    // Ingen klarar kravet: skrallTip säger null men skrallTips ger reserven
-    const { skrallTip } = await engine();
     expect(skrallTip([events[2], events[3]])).toBeNull();
     expect(skrallTips([events[2], events[3]])).toHaveLength(1);
-    // Inget understreckat tecken på minst 25 %: tomt
     expect(skrallTips([events[3]])).toEqual([]);
   });
 
-  test('skrallKryss: två skrällkryss – aldrig favorit, andra matcher än skrällspikarna, reserv (weak), med varför', async () => {
+  test('skrallKryss: två skrällkryss på data – aldrig favorit, andra matcher än skrällspikarna, reserv (weak), med varför', async () => {
     const { skrallKryss, skrallTips, SKRALL_X } = await engine();
-    expect(SKRALL_X).toMatchObject({ min: 0.26, edge: 0.02, count: 2, weakMin: 0.22 });
-    const e = (eventNumber: number, final: number[], folk: number[], extra: any = {}) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, folk, ...extra });
+    expect(SKRALL_X).toMatchObject({ min: 0.26, count: 2, weakMin: 0.22 });
+    const e = (eventNumber: number, final: number[], model: number[], extra: any = {}) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, model, folk: [0.4, 0.3, 0.3], ...extra });
     const events = [
-      e(1, [0.40, 0.25, 0.35], [0.45, 0.25, 0.30]), // skrällspik 2 -> matchen tas inte för kryss
-      e(2, [0.38, 0.30, 0.32], [0.45, 0.22, 0.33]), // X 30 %: +8, jämn
-      e(3, [0.50, 0.28, 0.22], [0.55, 0.24, 0.21]), // X 28 %: +4
-      e(4, [0.45, 0.27, 0.28], [0.44, 0.26, 0.30]), // X 27 %: +1 -> bara reserv
-      e(5, [0.30, 0.40, 0.30], [0.40, 0.20, 0.40]), // krysset är favorit: aldrig
-      e(6, [0.60, 0.21, 0.19], [0.70, 0.15, 0.15]), // X 21 %: under 22 %
-      e(7, [0.36, 0.20, 0.44], [0.20, 0.20, 0.60]), // skrällspik 1 (+16) -> andra skrällspiken
+      e(1, [0.40, 0.25, 0.35], [0.36, 0.24, 0.40]), // skrällspik 2 (40 %) -> matchen tas inte för kryss
+      e(2, [0.38, 0.30, 0.32], [0.36, 0.31, 0.33]), // X 31 %, jämn
+      e(3, [0.50, 0.28, 0.22], [0.48, 0.29, 0.23]), // X 29 %
+      e(4, [0.45, 0.27, 0.28], [0.46, 0.24, 0.30]), // X 24 % -> bara reserv
+      e(5, [0.30, 0.40, 0.30], [0.30, 0.40, 0.30]), // krysset är favorit: aldrig
+      e(6, [0.60, 0.21, 0.19], [0.62, 0.20, 0.18]), // X 20 %: under 22 %
+      e(7, [0.36, 0.20, 0.44], [0.45, 0.20, 0.35]), // skrällspik 1 (45 %) -> första skrällspiken
     ];
-    expect(skrallTips(events).map((t: any) => t.eventNumber)).toEqual([7, 1]);
     const spik = skrallTips(events).map((t: any) => t.eventNumber);
+    expect(spik).toEqual([7, 1]);
     const x = skrallKryss(events);
     expect(x.map((t: any) => `${t.eventNumber}:${t.sign}:${t.weak}`)).toEqual(['2:X:false', '3:X:false']);
     expect(x.some((t: any) => spik.includes(t.eventNumber))).toBe(false);
     expect(x[0].outcome).toBe('oavgjort');
-    expect(x[0].reasons[0]).toContain('30 %');
+    expect(x[0].reasons[0]).toContain('31 %');
     expect(x[0].reasons.join(' ')).toContain('Jämn match');
     expect(x[1].reasons.join(' ')).not.toContain('Jämn match');
     expect(x[0].reasons.at(-1)).toContain('chansning');
-    // Bara en klarar kravet: reserven fyller på
     expect(skrallKryss([events[0], events[6], events[2], events[3]]).map((t: any) => `${t.eventNumber}:${t.weak}`)).toEqual(['3:false', '4:true']);
-    // Inget understreckat kryss på minst 22 % (eller krysset favorit): tomt
     expect(skrallKryss([events[4], events[5]])).toEqual([]);
-    // Facit
-    expect(skrallKryss([events[0], events[6], e(9, [0.45, 0.28, 0.27], [0.50, 0.22, 0.28], { result: { outcome: 'X', score: '0-0' } })])[0]).toMatchObject({ hit: true, score: '0-0' });
+    expect(skrallKryss([events[0], events[6], e(9, [0.45, 0.28, 0.27], [0.44, 0.29, 0.27], { result: { outcome: 'X', score: '0-0' } })])[0]).toMatchObject({ hit: true, score: '0-0' });
   });
+
 
 });
 

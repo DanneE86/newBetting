@@ -31,12 +31,10 @@ function shares(rowList) {
 
 const coupons = [
   { key: 'A', name: 'Kupong A', sys: p.reduced, color: '#1d6b3a', desc: 'De troligaste raderna (fil)' },
-  { key: 'B', name: 'Kupong B', sys: p.reducedB, color: '#1f4e8c', desc: 'Nästa rader utanför A (fil)' },
-  { key: 'C', name: 'Kupong C', sys: p.reducedC, color: '#8a4b0f', desc: 'Underspelade tecken uppviktade (fil)' },
 ].filter((c) => c.sys?.rowList?.length);
 for (const c of coupons) {
   // Filkuponger (2026-10-11): tecknen per match är de som raderna använder
-  c.signs = c.sys.gamblingCabinUrl ? signsFromUrl(c.sys.gamblingCabinUrl) : c.key === 'A' ? p.events.map((e) => e.systemPick?.signs || '') : c.key === 'B' ? p.events.map((e) => e.systemPickB?.signs || '') : c.sys.picks;
+  c.signs = c.sys.gamblingCabinUrl ? signsFromUrl(c.sys.gamblingCabinUrl) : c.key === 'A' ? p.events.map((e) => e.systemPick?.signs || '') : c.sys.picks;
   c.shares = shares(c.sys.rowList);
   c.spikar = c.signs.filter((s) => s.length === 1).length;
   c.halv = c.signs.filter((s) => s.length === 2).length;
