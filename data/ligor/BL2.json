@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "BL2",
  "fotmobId": 146,
  "name": "2. Bundesliga",
@@ -11,13 +11,13 @@
    "fotmobName": "Hertha BSC",
    "fotmobId": 8177,
    "group": null,
-   "played": 8,
-   "won": 7,
+   "played": 9,
+   "won": 8,
    "drawn": 1,
    "lost": 0,
-   "goals": "19-8",
-   "gd": 11,
-   "pts": 22
+   "goals": "20-8",
+   "gd": 12,
+   "pts": 25
   },
   {
    "rank": 2,
@@ -25,16 +25,30 @@
    "fotmobName": "1. FC Nürnberg",
    "fotmobId": 8165,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 5,
    "drawn": 3,
-   "lost": 0,
-   "goals": "21-11",
-   "gd": 10,
+   "lost": 1,
+   "goals": "21-12",
+   "gd": 9,
    "pts": 18
   },
   {
    "rank": 3,
+   "team": "Kaiserslautern",
+   "fotmobName": "Kaiserslautern",
+   "fotmobId": 8350,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "9-4",
+   "gd": 5,
+   "pts": 18
+  },
+  {
+   "rank": 4,
    "team": "Wolfsburg",
    "fotmobName": "Wolfsburg",
    "fotmobId": 8721,
@@ -48,46 +62,32 @@
    "pts": 16
   },
   {
-   "rank": 4,
-   "team": "Kaiserslautern",
-   "fotmobName": "Kaiserslautern",
-   "fotmobId": 8350,
-   "group": null,
-   "played": 8,
-   "won": 4,
-   "drawn": 3,
-   "lost": 1,
-   "goals": "8-4",
-   "gd": 4,
-   "pts": 15
-  },
-  {
    "rank": 5,
-   "team": "Heidenheim",
-   "fotmobName": "FC Heidenheim",
-   "fotmobId": 94937,
-   "group": null,
-   "played": 8,
-   "won": 4,
-   "drawn": 2,
-   "lost": 2,
-   "goals": "15-15",
-   "gd": 0,
-   "pts": 14
-  },
-  {
-   "rank": 6,
    "team": "Magdeburg",
    "fotmobName": "Magdeburg",
    "fotmobId": 8188,
    "group": null,
-   "played": 8,
-   "won": 4,
+   "played": 9,
+   "won": 5,
    "drawn": 1,
    "lost": 3,
-   "goals": "14-11",
-   "gd": 3,
-   "pts": 13
+   "goals": "20-12",
+   "gd": 8,
+   "pts": 16
+  },
+  {
+   "rank": 6,
+   "team": "Heidenheim",
+   "fotmobName": "FC Heidenheim",
+   "fotmobId": 94937,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "16-16",
+   "gd": 0,
+   "pts": 15
   },
   {
    "rank": 7,
@@ -109,12 +109,12 @@
    "fotmobName": "Arminia Bielefeld",
    "fotmobId": 9912,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
    "drawn": 2,
-   "lost": 3,
-   "goals": "13-13",
-   "gd": 0,
+   "lost": 4,
+   "goals": "13-14",
+   "gd": -1,
    "pts": 11
   },
   {
@@ -123,13 +123,13 @@
    "fotmobName": "Energie Cottbus",
    "fotmobId": 8398,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 3,
-   "goals": "16-17",
+   "goals": "17-18",
    "gd": -1,
-   "pts": 9
+   "pts": 10
   },
   {
    "rank": 10,
@@ -175,20 +175,6 @@
   },
   {
    "rank": 13,
-   "team": "Karlsruhe",
-   "fotmobName": "Karlsruher SC",
-   "fotmobId": 8295,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "10-14",
-   "gd": -4,
-   "pts": 8
-  },
-  {
-   "rank": 14,
    "team": "Bochum",
    "fotmobName": "Bochum",
    "fotmobId": 9911,
@@ -202,7 +188,7 @@
    "pts": 8
   },
   {
-   "rank": 15,
+   "rank": 14,
    "team": "Hannover",
    "fotmobName": "Hannover 96",
    "fotmobId": 9904,
@@ -213,6 +199,20 @@
    "lost": 4,
    "goals": "8-13",
    "gd": -5,
+   "pts": 8
+  },
+  {
+   "rank": 15,
+   "team": "Karlsruhe",
+   "fotmobName": "Karlsruher SC",
+   "fotmobId": 8295,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "11-20",
+   "gd": -9,
    "pts": 8
   },
   {
@@ -1132,6 +1132,134 @@
     8,
     8,
     -5
+   ],
+   [
+    "Darmstadt",
+    16,
+    9,
+    8,
+    -10
+   ],
+   [
+    "Braunschweig",
+    17,
+    8,
+    7,
+    -2
+   ],
+   [
+    "Holstein Kiel",
+    18,
+    8,
+    5,
+    -4
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Hertha",
+    1,
+    9,
+    25,
+    12
+   ],
+   [
+    "Nurnberg",
+    2,
+    9,
+    18,
+    9
+   ],
+   [
+    "Kaiserslautern",
+    3,
+    9,
+    18,
+    5
+   ],
+   [
+    "Wolfsburg",
+    4,
+    9,
+    16,
+    9
+   ],
+   [
+    "Magdeburg",
+    5,
+    9,
+    16,
+    8
+   ],
+   [
+    "Heidenheim",
+    6,
+    9,
+    15,
+    0
+   ],
+   [
+    "St Pauli",
+    7,
+    9,
+    12,
+    2
+   ],
+   [
+    "Bielefeld",
+    8,
+    9,
+    11,
+    -1
+   ],
+   [
+    "Cottbus",
+    9,
+    9,
+    10,
+    -1
+   ],
+   [
+    "Greuther Furth",
+    10,
+    8,
+    9,
+    -1
+   ],
+   [
+    "Dresden",
+    11,
+    8,
+    8,
+    -4
+   ],
+   [
+    "Osnabruck",
+    12,
+    8,
+    8,
+    -4
+   ],
+   [
+    "Bochum",
+    13,
+    9,
+    8,
+    -4
+   ],
+   [
+    "Hannover",
+    14,
+    8,
+    8,
+    -5
+   ],
+   [
+    "Karlsruhe",
+    15,
+    9,
+    8,
+    -9
    ],
    [
     "Darmstadt",

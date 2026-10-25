@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "EK",
  "fotmobId": 196,
  "name": "Ekstraklasa",
@@ -35,6 +35,20 @@
   },
   {
    "rank": 3,
+   "team": "Pogon Szczecin",
+   "fotmobName": "Pogoń Szczecin",
+   "fotmobId": 8023,
+   "group": null,
+   "played": 11,
+   "won": 7,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "19-9",
+   "gd": 10,
+   "pts": 24
+  },
+  {
+   "rank": 4,
    "team": "Legia",
    "fotmobName": "Legia Warszawa",
    "fotmobId": 8673,
@@ -48,21 +62,35 @@
    "pts": 23
   },
   {
-   "rank": 4,
-   "team": "Pogon Szczecin",
-   "fotmobName": "Pogoń Szczecin",
-   "fotmobId": 8023,
+   "rank": 5,
+   "team": "Wisla",
+   "fotmobName": "Wisła Kraków",
+   "fotmobId": 10265,
    "group": null,
-   "played": 10,
+   "played": 12,
    "won": 6,
    "drawn": 3,
-   "lost": 1,
-   "goals": "15-6",
-   "gd": 9,
+   "lost": 3,
+   "goals": "19-15",
+   "gd": 4,
    "pts": 21
   },
   {
-   "rank": 5,
+   "rank": 6,
+   "team": "Piast Gliwice",
+   "fotmobName": "Piast Gliwice",
+   "fotmobId": 8028,
+   "group": null,
+   "played": 12,
+   "won": 6,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "22-18",
+   "gd": 4,
+   "pts": 20
+  },
+  {
+   "rank": 7,
    "team": "Zaglebie",
    "fotmobName": "Zagłębie Lubin",
    "fotmobId": 8021,
@@ -76,46 +104,18 @@
    "pts": 19
   },
   {
-   "rank": 6,
+   "rank": 8,
    "team": "GKS Katowice",
    "fotmobName": "GKS Katowice",
    "fotmobId": 4023,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 6,
    "drawn": 0,
-   "lost": 5,
-   "goals": "22-16",
-   "gd": 6,
+   "lost": 6,
+   "goals": "22-17",
+   "gd": 5,
    "pts": 18
-  },
-  {
-   "rank": 7,
-   "team": "Wisla",
-   "fotmobName": "Wisła Kraków",
-   "fotmobId": 10265,
-   "group": null,
-   "played": 11,
-   "won": 5,
-   "drawn": 3,
-   "lost": 3,
-   "goals": "17-14",
-   "gd": 3,
-   "pts": 18
-  },
-  {
-   "rank": 8,
-   "team": "Piast Gliwice",
-   "fotmobName": "Piast Gliwice",
-   "fotmobId": 8028,
-   "group": null,
-   "played": 11,
-   "won": 5,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "19-17",
-   "gd": 2,
-   "pts": 17
   },
   {
    "rank": 9,
@@ -123,13 +123,13 @@
    "fotmobName": "Korona Kielce",
    "fotmobId": 8245,
    "group": null,
-   "played": 11,
-   "won": 4,
+   "played": 12,
+   "won": 5,
    "drawn": 3,
    "lost": 4,
-   "goals": "13-18",
-   "gd": -5,
-   "pts": 15
+   "goals": "14-18",
+   "gd": -4,
+   "pts": 18
   },
   {
    "rank": 10,
@@ -161,20 +161,6 @@
   },
   {
    "rank": 12,
-   "team": "Cracovia",
-   "fotmobName": "Cracovia",
-   "fotmobId": 2186,
-   "group": null,
-   "played": 11,
-   "won": 3,
-   "drawn": 3,
-   "lost": 5,
-   "goals": "13-16",
-   "gd": -3,
-   "pts": 12
-  },
-  {
-   "rank": 13,
    "team": "Jagiellonia",
    "fotmobName": "Jagiellonia Białystok",
    "fotmobId": 1957,
@@ -185,6 +171,20 @@
    "lost": 6,
    "goals": "13-17",
    "gd": -4,
+   "pts": 12
+  },
+  {
+   "rank": 13,
+   "team": "Cracovia",
+   "fotmobName": "Cracovia",
+   "fotmobId": 2186,
+   "group": null,
+   "played": 12,
+   "won": 3,
+   "drawn": 3,
+   "lost": 6,
+   "goals": "14-19",
+   "gd": -5,
    "pts": 12
   },
   {
@@ -203,45 +203,45 @@
   },
   {
    "rank": 15,
-   "team": "Wieczysta Krakow",
-   "fotmobName": "Wieczysta Kraków",
-   "fotmobId": 1286895,
-   "group": null,
-   "played": 11,
-   "won": 2,
-   "drawn": 2,
-   "lost": 7,
-   "goals": "16-21",
-   "gd": -5,
-   "pts": 8
-  },
-  {
-   "rank": 16,
-   "team": "Radomiak Radom",
-   "fotmobName": "Radomiak Radom",
-   "fotmobId": 5769,
-   "group": null,
-   "played": 11,
-   "won": 2,
-   "drawn": 2,
-   "lost": 7,
-   "goals": "9-24",
-   "gd": -15,
-   "pts": 8
-  },
-  {
-   "rank": 17,
    "team": "Slask Wroclaw",
    "fotmobName": "Śląsk Wrocław",
    "fotmobId": 8025,
    "group": null,
-   "played": 11,
-   "won": 1,
+   "played": 12,
+   "won": 2,
    "drawn": 3,
    "lost": 7,
-   "goals": "14-22",
-   "gd": -8,
-   "pts": 6
+   "goals": "16-22",
+   "gd": -6,
+   "pts": 9
+  },
+  {
+   "rank": 16,
+   "team": "Wieczysta Krakow",
+   "fotmobName": "Wieczysta Kraków",
+   "fotmobId": 1286895,
+   "group": null,
+   "played": 12,
+   "won": 2,
+   "drawn": 2,
+   "lost": 8,
+   "goals": "16-23",
+   "gd": -7,
+   "pts": 8
+  },
+  {
+   "rank": 17,
+   "team": "Radomiak Radom",
+   "fotmobName": "Radomiak Radom",
+   "fotmobId": 5769,
+   "group": null,
+   "played": 12,
+   "won": 2,
+   "drawn": 2,
+   "lost": 8,
+   "goals": "12-28",
+   "gd": -16,
+   "pts": 8
   },
   {
    "rank": 18,
@@ -249,12 +249,12 @@
    "fotmobName": "Raków Częstochowa",
    "fotmobId": 4024,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 0,
-   "lost": 9,
-   "goals": "15-26",
-   "gd": -11,
+   "lost": 10,
+   "goals": "16-28",
+   "gd": -12,
    "pts": 6
   }
  ],
@@ -1153,6 +1153,134 @@
     11,
     6,
     -11
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Gornik Zabrze",
+    1,
+    12,
+    27,
+    10
+   ],
+   [
+    "Lech Poznan",
+    2,
+    10,
+    25,
+    18
+   ],
+   [
+    "Pogon Szczecin",
+    3,
+    11,
+    24,
+    10
+   ],
+   [
+    "Legia",
+    4,
+    11,
+    23,
+    13
+   ],
+   [
+    "Wisla",
+    5,
+    12,
+    21,
+    4
+   ],
+   [
+    "Piast Gliwice",
+    6,
+    12,
+    20,
+    4
+   ],
+   [
+    "Zaglebie",
+    7,
+    12,
+    19,
+    0
+   ],
+   [
+    "GKS Katowice",
+    8,
+    12,
+    18,
+    5
+   ],
+   [
+    "Korona Kielce",
+    9,
+    12,
+    18,
+    -4
+   ],
+   [
+    "Wisla Plock",
+    10,
+    10,
+    14,
+    -5
+   ],
+   [
+    "Motor Lublin",
+    11,
+    12,
+    13,
+    -4
+   ],
+   [
+    "Jagiellonia",
+    12,
+    10,
+    12,
+    -4
+   ],
+   [
+    "Cracovia",
+    13,
+    12,
+    12,
+    -5
+   ],
+   [
+    "Widzew Lodz",
+    14,
+    12,
+    11,
+    -1
+   ],
+   [
+    "Slask Wroclaw",
+    15,
+    12,
+    9,
+    -6
+   ],
+   [
+    "Wieczysta Krakow",
+    16,
+    12,
+    8,
+    -7
+   ],
+   [
+    "Radomiak Radom",
+    17,
+    12,
+    8,
+    -16
+   ],
+   [
+    "Rakow",
+    18,
+    12,
+    6,
+    -12
    ]
   ]
  }

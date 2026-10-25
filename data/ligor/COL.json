@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "COL",
  "fotmobId": 274,
  "name": "Primera A",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "América de Cali",
+   "fotmobName": "América de Cali",
+   "fotmobId": 10280,
+   "group": "Clausura",
+   "played": 15,
+   "won": 9,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "29-11",
+   "gd": 18,
+   "pts": 31
+  },
+  {
+   "rank": 2,
    "team": "Atlético Nacional",
    "fotmobName": "Atlético Nacional",
    "fotmobId": 6368,
@@ -20,7 +34,7 @@
    "pts": 29
   },
   {
-   "rank": 2,
+   "rank": 3,
    "team": "Deportivo Cali",
    "fotmobName": "Deportivo Cali",
    "fotmobId": 6387,
@@ -32,20 +46,6 @@
    "goals": "23-9",
    "gd": 14,
    "pts": 29
-  },
-  {
-   "rank": 3,
-   "team": "América de Cali",
-   "fotmobName": "América de Cali",
-   "fotmobId": 10280,
-   "group": "Clausura",
-   "played": 14,
-   "won": 8,
-   "drawn": 4,
-   "lost": 2,
-   "goals": "26-10",
-   "gd": 16,
-   "pts": 28
   },
   {
    "rank": 4,
@@ -105,31 +105,31 @@
   },
   {
    "rank": 8,
-   "team": "Cúcuta Deportivo",
-   "fotmobName": "Cúcuta",
-   "fotmobId": 6254,
-   "group": "Clausura",
-   "played": 14,
-   "won": 6,
-   "drawn": 3,
-   "lost": 5,
-   "goals": "17-19",
-   "gd": -2,
-   "pts": 21
-  },
-  {
-   "rank": 9,
    "team": "Once Caldas",
    "fotmobName": "Once Caldas",
    "fotmobId": 6024,
    "group": "Clausura",
-   "played": 15,
+   "played": 16,
    "won": 5,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 5,
-   "goals": "19-17",
+   "goals": "20-18",
    "gd": 2,
-   "pts": 20
+   "pts": 21
+  },
+  {
+   "rank": 9,
+   "team": "Cúcuta Deportivo",
+   "fotmobName": "Cúcuta",
+   "fotmobId": 6254,
+   "group": "Clausura",
+   "played": 15,
+   "won": 6,
+   "drawn": 3,
+   "lost": 6,
+   "goals": "18-22",
+   "gd": -4,
+   "pts": 21
   },
   {
    "rank": 10,
@@ -235,13 +235,13 @@
    "fotmobName": "Deportivo Pereira",
    "fotmobId": 4404,
    "group": "Clausura",
-   "played": 14,
+   "played": 15,
    "won": 2,
-   "drawn": 7,
+   "drawn": 8,
    "lost": 5,
-   "goals": "10-18",
+   "goals": "11-19",
    "gd": -8,
-   "pts": 13
+   "pts": 14
   },
   {
    "rank": 18,
@@ -2377,6 +2377,288 @@
     17,
     14,
     13,
+    -8
+   ],
+   [
+    "Fortaleza CEIF",
+    18,
+    14,
+    11,
+    -6
+   ],
+   [
+    "Jaguares de Córdoba",
+    19,
+    14,
+    10,
+    -12
+   ],
+   [
+    "Deportivo Pasto",
+    20,
+    14,
+    9,
+    -13
+   ],
+   [
+    "Atlético Nacional",
+    1,
+    19,
+    40,
+    20
+   ],
+   [
+    "Atlético Junior",
+    2,
+    19,
+    35,
+    7
+   ],
+   [
+    "Deportivo Pasto",
+    3,
+    19,
+    34,
+    4
+   ],
+   [
+    "América de Cali",
+    4,
+    19,
+    33,
+    10
+   ],
+   [
+    "Once Caldas",
+    5,
+    19,
+    33,
+    9
+   ],
+   [
+    "Deportes Tolima",
+    6,
+    19,
+    31,
+    10
+   ],
+   [
+    "Independiente Santa Fe",
+    7,
+    19,
+    29,
+    7
+   ],
+   [
+    "Internacional de Bogotá",
+    8,
+    19,
+    28,
+    0
+   ],
+   [
+    "Deportivo Cali",
+    9,
+    19,
+    27,
+    4
+   ],
+   [
+    "Millonarios",
+    10,
+    19,
+    26,
+    8
+   ],
+   [
+    "Independiente Medellín",
+    11,
+    19,
+    26,
+    2
+   ],
+   [
+    "Águilas Doradas",
+    12,
+    19,
+    26,
+    -5
+   ],
+   [
+    "Atlético Bucaramanga",
+    13,
+    19,
+    23,
+    6
+   ],
+   [
+    "Llaneros FC",
+    14,
+    19,
+    22,
+    -3
+   ],
+   [
+    "Fortaleza CEIF",
+    15,
+    19,
+    22,
+    -5
+   ],
+   [
+    "Jaguares de Córdoba",
+    16,
+    19,
+    18,
+    -13
+   ],
+   [
+    "Alianza FC",
+    17,
+    19,
+    17,
+    -14
+   ],
+   [
+    "Boyacá Chicó FC",
+    18,
+    19,
+    17,
+    -17
+   ],
+   [
+    "Cúcuta Deportivo",
+    19,
+    19,
+    16,
+    -13
+   ],
+   [
+    "Deportivo Pereira",
+    20,
+    19,
+    10,
+    -17
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "América de Cali",
+    1,
+    15,
+    31,
+    18
+   ],
+   [
+    "Atlético Nacional",
+    2,
+    14,
+    29,
+    16
+   ],
+   [
+    "Deportivo Cali",
+    3,
+    15,
+    29,
+    14
+   ],
+   [
+    "Millonarios",
+    4,
+    16,
+    26,
+    10
+   ],
+   [
+    "Atlético Bucaramanga",
+    5,
+    14,
+    25,
+    9
+   ],
+   [
+    "Independiente Santa Fe",
+    6,
+    14,
+    25,
+    7
+   ],
+   [
+    "Independiente Medellín",
+    7,
+    14,
+    23,
+    2
+   ],
+   [
+    "Once Caldas",
+    8,
+    16,
+    21,
+    2
+   ],
+   [
+    "Cúcuta Deportivo",
+    9,
+    15,
+    21,
+    -4
+   ],
+   [
+    "Deportes Tolima",
+    10,
+    15,
+    20,
+    0
+   ],
+   [
+    "Águilas Doradas",
+    11,
+    15,
+    19,
+    -1
+   ],
+   [
+    "Internacional de Bogotá",
+    12,
+    15,
+    17,
+    -3
+   ],
+   [
+    "Llaneros FC",
+    13,
+    15,
+    17,
+    -4
+   ],
+   [
+    "Atlético Junior",
+    14,
+    15,
+    15,
+    -3
+   ],
+   [
+    "Alianza FC",
+    15,
+    14,
+    15,
+    -11
+   ],
+   [
+    "Boyacá Chicó FC",
+    16,
+    15,
+    15,
+    -13
+   ],
+   [
+    "Deportivo Pereira",
+    17,
+    15,
+    14,
     -8
    ],
    [

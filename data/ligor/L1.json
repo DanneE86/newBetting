@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "L1",
  "fotmobId": 53,
  "name": "Ligue 1",
@@ -35,20 +35,6 @@
   },
   {
    "rank": 3,
-   "team": "Paris FC",
-   "fotmobName": "Paris FC",
-   "fotmobId": 6379,
-   "group": null,
-   "played": 7,
-   "won": 4,
-   "drawn": 2,
-   "lost": 1,
-   "goals": "12-7",
-   "gd": 5,
-   "pts": 14
-  },
-  {
-   "rank": 4,
    "team": "Lille",
    "fotmobName": "Lille",
    "fotmobId": 8639,
@@ -59,6 +45,20 @@
    "lost": 1,
    "goals": "10-5",
    "gd": 5,
+   "pts": 14
+  },
+  {
+   "rank": 4,
+   "team": "Paris FC",
+   "fotmobName": "Paris FC",
+   "fotmobId": 6379,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "13-9",
+   "gd": 4,
    "pts": 14
   },
   {
@@ -77,6 +77,20 @@
   },
   {
    "rank": 6,
+   "team": "Lens",
+   "fotmobName": "Lens",
+   "fotmobId": 8588,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "16-12",
+   "gd": 4,
+   "pts": 13
+  },
+  {
+   "rank": 7,
    "team": "Rennes",
    "fotmobName": "Rennes",
    "fotmobId": 9851,
@@ -90,7 +104,7 @@
    "pts": 13
   },
   {
-   "rank": 7,
+   "rank": 8,
    "team": "Lorient",
    "fotmobName": "Lorient",
    "fotmobId": 8689,
@@ -104,7 +118,7 @@
    "pts": 11
   },
   {
-   "rank": 8,
+   "rank": 9,
    "team": "Nice",
    "fotmobName": "Nice",
    "fotmobId": 9831,
@@ -116,20 +130,6 @@
    "goals": "8-10",
    "gd": -2,
    "pts": 11
-  },
-  {
-   "rank": 9,
-   "team": "Lens",
-   "fotmobName": "Lens",
-   "fotmobId": 8588,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 1,
-   "lost": 3,
-   "goals": "14-11",
-   "gd": 3,
-   "pts": 10
   },
   {
    "rank": 10,
@@ -962,6 +962,134 @@
     7,
     10,
     3
+   ],
+   [
+    "Marseille",
+    10,
+    7,
+    9,
+    4
+   ],
+   [
+    "Brest",
+    11,
+    8,
+    9,
+    2
+   ],
+   [
+    "Toulouse",
+    12,
+    7,
+    9,
+    1
+   ],
+   [
+    "Auxerre",
+    13,
+    7,
+    9,
+    -6
+   ],
+   [
+    "Strasbourg",
+    14,
+    7,
+    7,
+    -3
+   ],
+   [
+    "Angers",
+    15,
+    7,
+    7,
+    -6
+   ],
+   [
+    "Le Mans",
+    16,
+    7,
+    6,
+    -5
+   ],
+   [
+    "Troyes",
+    17,
+    7,
+    4,
+    -11
+   ],
+   [
+    "Le Havre",
+    18,
+    7,
+    2,
+    -6
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Lyon",
+    1,
+    7,
+    14,
+    8
+   ],
+   [
+    "Paris SG",
+    2,
+    7,
+    14,
+    5
+   ],
+   [
+    "Lille",
+    3,
+    7,
+    14,
+    5
+   ],
+   [
+    "Paris FC",
+    4,
+    8,
+    14,
+    4
+   ],
+   [
+    "Monaco",
+    5,
+    7,
+    14,
+    4
+   ],
+   [
+    "Lens",
+    6,
+    8,
+    13,
+    4
+   ],
+   [
+    "Rennes",
+    7,
+    7,
+    13,
+    1
+   ],
+   [
+    "Lorient",
+    8,
+    7,
+    11,
+    1
+   ],
+   [
+    "Nice",
+    9,
+    8,
+    11,
+    -2
    ],
    [
     "Marseille",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Série B",
@@ -7,31 +7,31 @@
  "table": [
   {
    "rank": 1,
-   "team": "Vila Nova",
-   "fotmobName": "Vila Nova",
-   "fotmobId": 109706,
-   "group": null,
-   "played": 34,
-   "won": 18,
-   "drawn": 8,
-   "lost": 8,
-   "goals": "48-33",
-   "gd": 15,
-   "pts": 62
-  },
-  {
-   "rank": 2,
    "team": "Novorizontino",
    "fotmobName": "Novorizontino",
    "fotmobId": 581838,
    "group": null,
-   "played": 34,
-   "won": 17,
+   "played": 35,
+   "won": 18,
    "drawn": 10,
    "lost": 7,
-   "goals": "61-30",
-   "gd": 31,
-   "pts": 61
+   "goals": "62-30",
+   "gd": 32,
+   "pts": 64
+  },
+  {
+   "rank": 2,
+   "team": "Vila Nova",
+   "fotmobName": "Vila Nova",
+   "fotmobId": 109706,
+   "group": null,
+   "played": 35,
+   "won": 18,
+   "drawn": 8,
+   "lost": 9,
+   "goals": "50-36",
+   "gd": 14,
+   "pts": 62
   },
   {
    "rank": 3,
@@ -53,13 +53,13 @@
    "fotmobName": "Fortaleza",
    "fotmobId": 8287,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 16,
-   "drawn": 12,
+   "drawn": 13,
    "lost": 6,
-   "goals": "41-29",
+   "goals": "43-31",
    "gd": 12,
-   "pts": 60
+   "pts": 61
   },
   {
    "rank": 5,
@@ -77,17 +77,17 @@
   },
   {
    "rank": 6,
-   "team": "Atlético Goianiense",
-   "fotmobName": "Atlético-GO",
-   "fotmobId": 165545,
+   "team": "CRB",
+   "fotmobName": "CRB",
+   "fotmobId": 104821,
    "group": null,
-   "played": 34,
-   "won": 14,
-   "drawn": 12,
-   "lost": 8,
-   "goals": "42-32",
-   "gd": 10,
-   "pts": 54
+   "played": 35,
+   "won": 16,
+   "drawn": 7,
+   "lost": 12,
+   "goals": "53-49",
+   "gd": 4,
+   "pts": 55
   },
   {
    "rank": 7,
@@ -105,17 +105,17 @@
   },
   {
    "rank": 8,
-   "team": "CRB",
-   "fotmobName": "CRB",
-   "fotmobId": 104821,
+   "team": "Atlético Goianiense",
+   "fotmobName": "Atlético-GO",
+   "fotmobId": 165545,
    "group": null,
-   "played": 34,
-   "won": 15,
-   "drawn": 7,
-   "lost": 12,
-   "goals": "51-48",
-   "gd": 3,
-   "pts": 52
+   "played": 35,
+   "won": 14,
+   "drawn": 12,
+   "lost": 9,
+   "goals": "42-33",
+   "gd": 9,
+   "pts": 54
   },
   {
    "rank": 9,
@@ -147,6 +147,34 @@
   },
   {
    "rank": 11,
+   "team": "São Bernardo",
+   "fotmobName": "São Bernardo",
+   "fotmobId": 231931,
+   "group": null,
+   "played": 35,
+   "won": 13,
+   "drawn": 10,
+   "lost": 12,
+   "goals": "49-39",
+   "gd": 10,
+   "pts": 49
+  },
+  {
+   "rank": 12,
+   "team": "Botafogo-SP",
+   "fotmobName": "Botafogo SP",
+   "fotmobId": 8355,
+   "group": null,
+   "played": 35,
+   "won": 13,
+   "drawn": 8,
+   "lost": 14,
+   "goals": "40-38",
+   "gd": 2,
+   "pts": 47
+  },
+  {
+   "rank": 13,
    "team": "Cuiabá",
    "fotmobName": "Cuiabá",
    "fotmobId": 197815,
@@ -158,34 +186,6 @@
    "goals": "32-27",
    "gd": 5,
    "pts": 47
-  },
-  {
-   "rank": 12,
-   "team": "São Bernardo",
-   "fotmobName": "São Bernardo",
-   "fotmobId": 231931,
-   "group": null,
-   "played": 34,
-   "won": 12,
-   "drawn": 10,
-   "lost": 12,
-   "goals": "46-37",
-   "gd": 9,
-   "pts": 46
-  },
-  {
-   "rank": 13,
-   "team": "Botafogo-SP",
-   "fotmobName": "Botafogo SP",
-   "fotmobId": 8355,
-   "group": null,
-   "played": 34,
-   "won": 12,
-   "drawn": 8,
-   "lost": 14,
-   "goals": "38-38",
-   "gd": 0,
-   "pts": 44
   },
   {
    "rank": 14,
@@ -235,12 +235,12 @@
    "fotmobName": "Avaí",
    "fotmobId": 104822,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 10,
    "drawn": 7,
-   "lost": 17,
-   "goals": "33-43",
-   "gd": -10,
+   "lost": 18,
+   "goals": "33-45",
+   "gd": -12,
    "pts": 37
   },
   {
@@ -249,12 +249,12 @@
    "fotmobName": "Londrina",
    "fotmobId": 298660,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 8,
    "drawn": 8,
-   "lost": 18,
-   "goals": "43-49",
-   "gd": -6,
+   "lost": 19,
+   "goals": "44-51",
+   "gd": -7,
    "pts": 32
   },
   {
@@ -277,13 +277,13 @@
    "fotmobName": "Ponte Preta",
    "fotmobId": 8630,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 3,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 26,
-   "goals": "19-74",
+   "goals": "21-76",
    "gd": -55,
-   "pts": 14
+   "pts": 15
   }
  ],
  "tableHistory": {
@@ -1278,6 +1278,148 @@
     20,
     34,
     14,
+    -55
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Novorizontino",
+    1,
+    35,
+    64,
+    32
+   ],
+   [
+    "Vila Nova",
+    2,
+    35,
+    62,
+    14
+   ],
+   [
+    "Juventude",
+    3,
+    34,
+    61,
+    18
+   ],
+   [
+    "Fortaleza",
+    4,
+    35,
+    61,
+    12
+   ],
+   [
+    "Criciúma",
+    5,
+    35,
+    59,
+    6
+   ],
+   [
+    "CRB",
+    6,
+    35,
+    55,
+    4
+   ],
+   [
+    "Sport",
+    7,
+    35,
+    54,
+    9
+   ],
+   [
+    "Atlético Goianiense",
+    8,
+    35,
+    54,
+    9
+   ],
+   [
+    "Operário PR",
+    9,
+    35,
+    51,
+    -1
+   ],
+   [
+    "Goiás",
+    10,
+    34,
+    49,
+    -6
+   ],
+   [
+    "São Bernardo",
+    11,
+    35,
+    49,
+    10
+   ],
+   [
+    "Botafogo-SP",
+    12,
+    35,
+    47,
+    2
+   ],
+   [
+    "Cuiabá",
+    13,
+    34,
+    47,
+    5
+   ],
+   [
+    "Athletic",
+    14,
+    35,
+    44,
+    0
+   ],
+   [
+    "Náutico",
+    15,
+    34,
+    43,
+    -3
+   ],
+   [
+    "Ceará",
+    16,
+    34,
+    43,
+    -5
+   ],
+   [
+    "Avaí",
+    17,
+    35,
+    37,
+    -12
+   ],
+   [
+    "Londrina",
+    18,
+    35,
+    32,
+    -7
+   ],
+   [
+    "América Mineiro",
+    19,
+    34,
+    20,
+    -32
+   ],
+   [
+    "Ponte Preta",
+    20,
+    35,
+    15,
     -55
    ]
   ]

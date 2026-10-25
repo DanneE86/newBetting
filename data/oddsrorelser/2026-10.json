@@ -1292,12 +1292,99 @@
    "kickoffUtc": "2026-10-25T13:00:00Z",
    "src": "api",
    "firstAt": "2026-10-24T13:51:41.296Z",
-   "lastAt": "2026-10-24T19:29:01.002Z",
-   "minBeforeKick": 1051,
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 26,
    "moves": {
     "home": {
      "from": 1.58,
      "to": 1.58,
+     "pp": 0,
+     "step": 0
+    },
+    "draw": {
+     "from": 4,
+     "to": 4,
+     "pp": 0,
+     "step": 0
+    },
+    "away": {
+     "from": 6.5,
+     "to": 6.5,
+     "pp": 0,
+     "step": 0
+    },
+    "over25": {
+     "from": 2.3,
+     "to": 2.3,
+     "pp": 0,
+     "step": 0
+    },
+    "under25": {
+     "from": 1.62,
+     "to": 1.62,
+     "pp": 0,
+     "step": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|BL|Freiburg|Bayern Munich": {
+   "key": "2026-10-25|BL|Freiburg|Bayern Munich",
+   "league": "BL",
+   "date": "2026-10-25",
+   "home": "Freiburg",
+   "away": "Bayern Munich",
+   "kickoffUtc": "2026-10-25T16:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 236,
+   "moves": {
+    "home": {
+     "from": 7,
+     "to": 7,
+     "pp": 0
+    },
+    "draw": {
+     "from": 6.25,
+     "to": 6.25,
+     "pp": 0
+    },
+    "away": {
+     "from": 1.4,
+     "to": 1.4,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.25,
+     "to": 1.25,
+     "pp": 0
+    },
+    "under25": {
+     "from": 4.33,
+     "to": 4.33,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|BL|Hoffenheim|Leverkusen": {
+   "key": "2026-10-25|BL|Hoffenheim|Leverkusen",
+   "league": "BL",
+   "date": "2026-10-25",
+   "home": "Hoffenheim",
+   "away": "Leverkusen",
+   "kickoffUtc": "2026-10-25T14:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 116,
+   "moves": {
+    "home": {
+     "from": 2.88,
+     "to": 2.88,
      "pp": 0
     },
     "draw": {
@@ -1306,24 +1393,188 @@
      "pp": 0
     },
     "away": {
-     "from": 6.5,
-     "to": 6.5,
+     "from": 2.38,
+     "to": 2.38,
      "pp": 0
     },
     "over25": {
-     "from": 2.3,
-     "to": 2.3,
+     "from": 1.4,
+     "to": 1.4,
      "pp": 0
     },
     "under25": {
-     "from": 1.62,
-     "to": 1.62,
+     "from": 3.25,
+     "to": 3.25,
      "pp": 0
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-24T19:29:45.282Z"
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|L1|Monaco|Lille": {
+   "key": "2026-10-25|L1|Monaco|Lille",
+   "league": "L1",
+   "date": "2026-10-25",
+   "home": "Monaco",
+   "away": "Lille",
+   "kickoffUtc": "2026-10-25T14:00:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 86,
+   "moves": {
+    "home": {
+     "from": 2.12,
+     "to": 2.12,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.5,
+     "to": 3.5,
+     "pp": 0
+    },
+    "away": {
+     "from": 3.7,
+     "to": 3.7,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.8,
+     "to": 1.8,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2,
+     "to": 2,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|SA|Atalanta|Frosinone": {
+   "key": "2026-10-25|SA|Atalanta|Frosinone",
+   "league": "SA",
+   "date": "2026-10-25",
+   "home": "Atalanta",
+   "away": "Frosinone",
+   "kickoffUtc": "2026-10-25T14:00:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 86,
+   "moves": {
+    "home": {
+     "from": 1.83,
+     "to": 1.83,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.33,
+     "to": 4.33,
+     "pp": 0
+    },
+    "away": {
+     "from": 3.95,
+     "to": 3.95,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.42,
+     "to": 1.42,
+     "pp": 0
+    },
+    "under25": {
+     "from": 3,
+     "to": 3,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|LL|Celta|Betis": {
+   "key": "2026-10-25|LL|Celta|Betis",
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Celta",
+   "away": "Betis",
+   "kickoffUtc": "2026-10-25T15:15:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 161,
+   "moves": {
+    "home": {
+     "from": 3,
+     "to": 3,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.6,
+     "to": 3.6,
+     "pp": 0
+    },
+    "away": {
+     "from": 2.4,
+     "to": 2.4,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.85,
+     "to": 1.85,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2,
+     "to": 2,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
+  },
+  "2026-10-25|LL|Sociedad|Levante": {
+   "key": "2026-10-25|LL|Sociedad|Levante",
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Sociedad",
+   "away": "Levante",
+   "kickoffUtc": "2026-10-25T17:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T19:29:01.002Z",
+   "lastAt": "2026-10-25T12:33:38.549Z",
+   "minBeforeKick": 296,
+   "moves": {
+    "home": {
+     "from": 1.67,
+     "to": 1.67,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.33,
+     "to": 4.33,
+     "pp": 0
+    },
+    "away": {
+     "from": 5.4,
+     "to": 5.4,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.6,
+     "to": 1.6,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.4,
+     "to": 2.4,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T12:34:21.372Z"
   }
  },
- "updatedAt": "2026-10-24T19:29:45.282Z"
+ "updatedAt": "2026-10-25T12:34:21.375Z"
 }

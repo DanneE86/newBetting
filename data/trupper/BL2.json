@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "BL2",
  "fotmobId": 146,
  "source": "FotMob",
@@ -39,7 +39,7 @@
      "country": "Germany",
      "height": 187,
      "value": 118219,
-     "rating": 7.55,
+     "rating": 7.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -77,7 +77,7 @@
      "country": "Germany",
      "height": 180,
      "value": 1256040,
-     "rating": 7.29,
+     "rating": 7.2,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -96,7 +96,7 @@
      "country": "Denmark",
      "height": 173,
      "value": 721119,
-     "rating": 7.21,
+     "rating": 7.26,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -115,7 +115,7 @@
      "country": "Germany",
      "height": 196,
      "value": 201610,
-     "rating": 7.35,
+     "rating": 7.44,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -146,6 +146,25 @@
      }
     },
     {
+     "id": 2405407,
+     "name": "Mayson Grothe",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 34,
+     "age": 17,
+     "born": "2009-01-21",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 766868,
      "name": "Deyovaisio Zeefuik",
      "role": "defenders",
@@ -156,7 +175,7 @@
      "country": "Netherlands",
      "height": 185,
      "value": 515500,
-     "rating": 7.07,
+     "rating": 7.06,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -175,7 +194,7 @@
      "country": "Germany",
      "height": 190,
      "value": 3706826,
-     "rating": 7.53,
+     "rating": 7.6,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -213,7 +232,7 @@
      "country": "Germany",
      "height": 175,
      "value": 319162,
-     "rating": 7.16,
+     "rating": 7.18,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -254,11 +273,11 @@
      "country": "Germany",
      "height": 186,
      "value": 269422,
-     "rating": 6.99,
+     "rating": 7.01,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 4,
+     "yellow": 5,
      "red": 1,
      "injury": null
     },
@@ -273,7 +292,7 @@
      "country": "Estonia",
      "height": 187,
      "value": 328638,
-     "rating": 6.88,
+     "rating": 6.69,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -350,9 +369,9 @@
      "height": 175,
      "value": 1592657,
      "rating": 8.21,
-     "goals": 4,
+     "goals": 5,
      "assists": 5,
-     "penalties": 1,
+     "penalties": 2,
      "yellow": 3,
      "red": 0,
      "injury": null
@@ -409,7 +428,7 @@
      "country": "Germany",
      "height": 190,
      "value": 527149,
-     "rating": 6.67,
+     "rating": 6.56,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -428,7 +447,7 @@
      "country": "Austria",
      "height": 182,
      "value": 1158463,
-     "rating": 7.2,
+     "rating": 7.1,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -447,7 +466,7 @@
      "country": "Germany",
      "height": 181,
      "value": 3549116,
-     "rating": 6.68,
+     "rating": 6.62,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -466,7 +485,7 @@
      "country": "Iceland",
      "height": 177,
      "value": 358632,
-     "rating": 7.34,
+     "rating": 7.3,
      "goals": 3,
      "assists": 1,
      "penalties": 0,
@@ -513,7 +532,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Stefan Leitl",
@@ -524,7 +543,7 @@
     "118241": {
      "name": "Gustaf Nilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "239911": {
      "name": "Diego Demme",
@@ -539,127 +558,132 @@
     "434259": {
      "name": "Marius Gersbeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "520342": {
      "name": "Paul Seguin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "657217": {
      "name": "Mads Valentin Pedersen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "688668": {
      "name": "Josip Brekalo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "759096": {
      "name": "Sebastian Grønning",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "766868": {
      "name": "Deyovaisio Zeefuik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "796492": {
      "name": "Niklas Kolbe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "873236": {
      "name": "Jón Thorsteinsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "929613": {
      "name": "Kevin Sessa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1132183": {
      "name": "Luca Schuler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1153342": {
      "name": "Márton Dárdai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1282298": {
      "name": "Linus Gechter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1355089": {
      "name": "Oluwaseun Adewumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1355216": {
      "name": "Julian Eitschberger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1422564": {
      "name": "Farid Alfa-Ruprecht",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1439629": {
      "name": "Pascal Klemens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1487868": {
      "name": "Konstantin Heide",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1516073": {
      "name": "Tim Goller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1667989": {
      "name": "Julius Gottschalk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1671560": {
      "name": "Jelani Ndi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1681495": {
      "name": "Boris Lum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1747804": {
      "name": "Selim Telib",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1760024": {
      "name": "Niklas Hildebrandt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1797148": {
      "name": "Soufian Gouram",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2069513": {
      "name": "Kian Todorovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
+    },
+    "2405407": {
+     "name": "Mayson Grothe",
+     "firstSeen": "2026-10-25",
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -693,7 +717,7 @@
      "country": "Germany",
      "height": 191,
      "value": 1241187,
-     "rating": 7.2,
+     "rating": 7.27,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -769,7 +793,7 @@
      "country": "Greece",
      "height": 187,
      "value": 1471490,
-     "rating": 7.08,
+     "rating": 7.11,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -788,7 +812,7 @@
      "country": "Armenia",
      "height": 192,
      "value": 361274,
-     "rating": 7.21,
+     "rating": 6.93,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -848,7 +872,7 @@
      "country": "Germany",
      "height": 192,
      "value": 468481,
-     "rating": 7.32,
+     "rating": 7.15,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -886,7 +910,7 @@
      "country": "Germany",
      "height": 177,
      "value": 767081,
-     "rating": 6.89,
+     "rating": 6.99,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -927,7 +951,7 @@
      "country": "Germany",
      "height": 187,
      "value": 947264,
-     "rating": 7.47,
+     "rating": 7.42,
      "goals": 0,
      "assists": 3,
      "penalties": 0,
@@ -1003,7 +1027,7 @@
      "country": "Finland",
      "height": 183,
      "value": 3101212,
-     "rating": 7.9,
+     "rating": 7.86,
      "goals": 3,
      "assists": 2,
      "penalties": 0,
@@ -1022,11 +1046,30 @@
      "country": "Spain",
      "height": 186,
      "value": 2805452,
-     "rating": 7.39,
+     "rating": 7.37,
      "goals": 0,
      "assists": 3,
      "penalties": 0,
      "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1135609,
+     "name": "William Bøving",
+     "role": "midfielders",
+     "position": "LW",
+     "number": 11,
+     "age": 23,
+     "born": "2003-03-01",
+     "country": "Denmark",
+     "height": 180,
+     "value": 4347856,
+     "rating": 6.34,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -1060,7 +1103,7 @@
      "country": "Germany",
      "height": 175,
      "value": 4292138,
-     "rating": 6.4,
+     "rating": 6.48,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1101,7 +1144,7 @@
      "country": "Syria",
      "height": 176,
      "value": 240081,
-     "rating": null,
+     "rating": 6.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1158,7 +1201,7 @@
      "country": "France",
      "height": 182,
      "value": 570800,
-     "rating": 7.08,
+     "rating": 6.99,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -1177,7 +1220,7 @@
      "country": "Norway",
      "height": 187,
      "value": 307931,
-     "rating": 6.03,
+     "rating": 6.14,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1196,30 +1239,11 @@
      "country": "Germany",
      "height": 177,
      "value": 1411298,
-     "rating": 7.42,
+     "rating": 7.34,
      "goals": 3,
      "assists": 1,
      "penalties": 0,
      "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1135609,
-     "name": "William Bøving",
-     "role": "attackers",
-     "position": "LW",
-     "number": 11,
-     "age": 23,
-     "born": "2003-03-01",
-     "country": "Denmark",
-     "height": 180,
-     "value": 4347856,
-     "rating": 6.33,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -1234,7 +1258,7 @@
      "country": "Germany",
      "height": 191,
      "value": 1030614,
-     "rating": 7.49,
+     "rating": 7.39,
      "goals": 5,
      "assists": 1,
      "penalties": 0,
@@ -1284,7 +1308,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Miroslav Klose",
@@ -1295,7 +1319,7 @@
     "184556": {
      "name": "Adriano Grimaldi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "208193": {
      "name": "Enrico Valentini",
@@ -1305,67 +1329,67 @@
     "448805": {
      "name": "Christian Mathenia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "631761": {
      "name": "Sigurd Haugen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "714645": {
      "name": "Giannis Masouras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "801003": {
      "name": "Julian Justvan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1039779": {
      "name": "Finn Becker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1062357": {
      "name": "Adam Markhiev",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1135609": {
      "name": "William Bøving",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1167181": {
      "name": "Jan Reichert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1253090": {
      "name": "Alexios Kalogeropoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1288516": {
      "name": "Fynn Otto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1313923": {
      "name": "Mohamed Alì Zoma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1339293": {
      "name": "Styopa Mkrtchyan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1399936": {
      "name": "Rayan Ghrieb",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1400556": {
      "name": "Simon Joachims",
@@ -1375,87 +1399,87 @@
     "1487903": {
      "name": "Winners Osawe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1514591": {
      "name": "Rafael Lubach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1515991": {
      "name": "Nicolas Ortegel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1518451": {
      "name": "Mikayil Faye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1531531": {
      "name": "Tim Janisch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1560749": {
      "name": "Javier Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1578411": {
      "name": "Andrea Ceresoli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663143": {
      "name": "Can Moustfa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1728464": {
      "name": "Robin Lisewski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1729588": {
      "name": "Piet Scobel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1755330": {
      "name": "Eric Porstner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1755332": {
      "name": "Levin Chiumento",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1838043": {
      "name": "Tobias Hess",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1867186": {
      "name": "Khalid Abu El Haija",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1899554": {
      "name": "Marko Soldic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1980888": {
      "name": "Kristian Mandic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2130761": {
      "name": "Marc Kornwachs",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -1468,6 +1492,839 @@
     {
      "id": "1400556",
      "name": "Simon Joachims",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
+  },
+  "Kaiserslautern": {
+   "fotmobName": "Kaiserslautern",
+   "fotmobId": 8350,
+   "coach": "Torsten Lieberknecht",
+   "players": [
+    {
+     "id": 953080,
+     "name": "Julian Krahl",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 26,
+     "born": "2000-01-22",
+     "country": "Germany",
+     "height": 194,
+     "value": 859998,
+     "rating": 8.01,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1732541,
+     "name": "Yannick Onohiol",
+     "role": "keepers",
+     "position": "GK",
+     "number": 34,
+     "age": 22,
+     "born": "2004-08-21",
+     "country": "Germany",
+     "height": null,
+     "value": 199973,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1921594,
+     "name": "Enis Kamga",
+     "role": "keepers",
+     "position": "GK",
+     "number": 40,
+     "age": 19,
+     "born": "2007-07-08",
+     "country": "Germany",
+     "height": null,
+     "value": 376867,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 488564,
+     "name": "Jean Zimmer",
+     "role": "defenders",
+     "position": "RWB",
+     "number": null,
+     "age": 32,
+     "born": "1993-12-06",
+     "country": "Germany",
+     "height": 171,
+     "value": 57764,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1362341,
+     "name": "Alex Murphy",
+     "role": "defenders",
+     "position": "CB,LB",
+     "number": 3,
+     "age": 22,
+     "born": "2004-06-25",
+     "country": "Ireland",
+     "height": 188,
+     "value": 1323850,
+     "rating": 7.22,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1073476,
+     "name": "Maxwell Gyamfi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 26,
+     "born": "2000-01-18",
+     "country": "Germany",
+     "height": 189,
+     "value": 720365,
+     "rating": 7.16,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1695875,
+     "name": "Kelven Frees",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 21,
+     "born": "2005-02-03",
+     "country": "Germany",
+     "height": 202,
+     "value": 661730,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 767256,
+     "name": "Jacob Rasmussen",
+     "role": "defenders",
+     "position": "CB",
+     "number": 14,
+     "age": 29,
+     "born": "1997-05-28",
+     "country": "Denmark",
+     "height": 193,
+     "value": 593264,
+     "rating": 7.26,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 560410,
+     "name": "Jan Elvedi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 33,
+     "age": 30,
+     "born": "1996-09-30",
+     "country": "Switzerland",
+     "height": 186,
+     "value": 431717,
+     "rating": 7.4,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1659455,
+     "name": "Leon Robinson",
+     "role": "defenders",
+     "position": "CB,CDM,CM",
+     "number": 37,
+     "age": 25,
+     "born": "2001-07-11",
+     "country": "Germany",
+     "height": 186,
+     "value": 445232,
+     "rating": 6.42,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 926446,
+     "name": "Simon Asta",
+     "role": "midfielders",
+     "position": "RWB",
+     "number": 2,
+     "age": 25,
+     "born": "2001-01-25",
+     "country": "Germany",
+     "height": 178,
+     "value": 378567,
+     "rating": 6.12,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 808155,
+     "name": "Fabian Kunze",
+     "role": "midfielders",
+     "position": "CDM,CB,CM",
+     "number": 6,
+     "age": 28,
+     "born": "1998-06-14",
+     "country": "Germany",
+     "height": 183,
+     "value": 745950,
+     "rating": 6.71,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 553556,
+     "name": "Marlon Ritter",
+     "role": "midfielders",
+     "position": "CAM,CDM,ST",
+     "number": 7,
+     "age": 32,
+     "born": "1994-10-15",
+     "country": "Germany",
+     "height": 170,
+     "value": 340553,
+     "rating": 6.51,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1083342,
+     "name": "Semih Şahin",
+     "role": "midfielders",
+     "position": "CDM,CAM,CM",
+     "number": 8,
+     "age": 26,
+     "born": "1999-12-22",
+     "country": "Germany",
+     "height": 177,
+     "value": 1033077,
+     "rating": 7.63,
+     "goals": 1,
+     "assists": 3,
+     "penalties": 1,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 930047,
+     "name": "Naatan Skyttä",
+     "role": "midfielders",
+     "position": "CAM,RW,CM,ST",
+     "number": 15,
+     "age": 24,
+     "born": "2002-05-07",
+     "country": "Finland",
+     "height": 165,
+     "value": 4688084,
+     "rating": 6.98,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1256224,
+     "name": "Mário Sauer",
+     "role": "midfielders",
+     "position": "CDM,CAM,CM",
+     "number": 21,
+     "age": 22,
+     "born": "2004-05-15",
+     "country": "Slovakia",
+     "height": 180,
+     "value": 1477717,
+     "rating": 6.98,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1659454,
+     "name": "Mika Haas",
+     "role": "midfielders",
+     "position": "LWB,LW,LB",
+     "number": 22,
+     "age": 21,
+     "born": "2005-08-11",
+     "country": "Germany",
+     "height": 181,
+     "value": 1910534,
+     "rating": 7.11,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1274452,
+     "name": "Paul Joly",
+     "role": "midfielders",
+     "position": "RWB,CAM",
+     "number": 26,
+     "age": 26,
+     "born": "2000-06-07",
+     "country": "France",
+     "height": 182,
+     "value": 1514724,
+     "rating": 6.98,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1244893,
+     "name": "Neal Gibs",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 38,
+     "age": 24,
+     "born": "2002-01-01",
+     "country": "Germany",
+     "height": 180,
+     "value": 104812,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1843406,
+     "name": "Thierry Fidjeu-Tazemeta",
+     "role": "midfielders",
+     "position": "CAM,ST",
+     "number": 39,
+     "age": 19,
+     "born": "2007-07-27",
+     "country": "Austria",
+     "height": 192,
+     "value": null,
+     "rating": 6.85,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1975549,
+     "name": "David Schramm",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 41,
+     "age": 20,
+     "born": "2006-06-28",
+     "country": "Germany",
+     "height": null,
+     "value": 362880,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1862548,
+     "name": "Erik Müller",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 42,
+     "age": 20,
+     "born": "2006-06-11",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1862541,
+     "name": "Owen Gibs",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 43,
+     "age": 19,
+     "born": "2006-11-21",
+     "country": "Germany",
+     "height": null,
+     "value": 268035,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "6",
+      "expectedReturn": "Unknown"
+     }
+    },
+    {
+     "id": 1838936,
+     "name": "Dion Hofmeister",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 44,
+     "age": 17,
+     "born": "2009-07-11",
+     "country": "Germany",
+     "height": null,
+     "value": 1008137,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1975550,
+     "name": "Ben Jungfleisch",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 47,
+     "age": 18,
+     "born": "2008-06-14",
+     "country": "Germany",
+     "height": null,
+     "value": 508668,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 645697,
+     "name": "Ivan Prtajin",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 30,
+     "born": "1996-05-14",
+     "country": "Croatia",
+     "height": 189,
+     "value": 649565,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1581718,
+     "name": "Ibrahim Kanaté",
+     "role": "attackers",
+     "position": "LW,CAM",
+     "number": 11,
+     "age": 20,
+     "born": "2006-10-23",
+     "country": "Mali",
+     "height": 172,
+     "value": 1497915,
+     "rating": 6.46,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1081707,
+     "name": "Erencan Yardımcı",
+     "role": "attackers",
+     "position": "ST",
+     "number": 17,
+     "age": 24,
+     "born": "2002-02-04",
+     "country": "Turkiye",
+     "height": 188,
+     "value": 1275850,
+     "rating": 6.6,
+     "goals": 3,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 597737,
+     "name": "Mërgim Berisha",
+     "role": "attackers",
+     "position": "ST",
+     "number": 20,
+     "age": 28,
+     "born": "1998-05-11",
+     "country": "Germany",
+     "height": 186,
+     "value": 724875,
+     "rating": 6.41,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2406201,
+     "name": "Thierry Tazemeta",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 39,
+     "age": 19,
+     "born": "2007-07-27",
+     "country": "Austria",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1370590,
+     "name": "Miloš Luković",
+     "role": "attackers",
+     "position": "ST",
+     "number": 45,
+     "age": 20,
+     "born": "2005-11-18",
+     "country": "Serbia",
+     "height": 184,
+     "value": 6644481,
+     "rating": 7.04,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2067583,
+     "name": "Kian Scheer",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 46,
+     "age": 19,
+     "born": "2007-06-30",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
+   "coachHistory": [
+    {
+     "name": "Torsten Lieberknecht",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "343797": {
+     "name": "Hendrick Zuck",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "459002": {
+     "name": "Kenny-Prince Redondo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "488564": {
+     "name": "Jean Zimmer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "553556": {
+     "name": "Marlon Ritter",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "560410": {
+     "name": "Jan Elvedi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "597737": {
+     "name": "Mërgim Berisha",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "634286": {
+     "name": "Avdo Spahić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "645697": {
+     "name": "Ivan Prtajin",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "763992": {
+     "name": "Frank Ronstadt",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "767256": {
+     "name": "Jacob Rasmussen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "808155": {
+     "name": "Fabian Kunze",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "926446": {
+     "name": "Simon Asta",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "930047": {
+     "name": "Naatan Skyttä",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "953080": {
+     "name": "Julian Krahl",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1073476": {
+     "name": "Maxwell Gyamfi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1081707": {
+     "name": "Erencan Yardımcı",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1083342": {
+     "name": "Semih Şahin",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1244893": {
+     "name": "Neal Gibs",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1256224": {
+     "name": "Mário Sauer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1274452": {
+     "name": "Paul Joly",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1362341": {
+     "name": "Alex Murphy",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1370590": {
+     "name": "Miloš Luković",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1581718": {
+     "name": "Ibrahim Kanaté",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1659454": {
+     "name": "Mika Haas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1659455": {
+     "name": "Leon Robinson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1695875": {
+     "name": "Kelven Frees",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1732541": {
+     "name": "Yannick Onohiol",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1838936": {
+     "name": "Dion Hofmeister",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1843406": {
+     "name": "Thierry Fidjeu-Tazemeta",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1862541": {
+     "name": "Owen Gibs",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1862548": {
+     "name": "Erik Müller",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1921594": {
+     "name": "Enis Kamga",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1975549": {
+     "name": "David Schramm",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1975550": {
+     "name": "Ben Jungfleisch",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2067583": {
+     "name": "Kian Scheer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2406201": {
+     "name": "Thierry Tazemeta",
+     "firstSeen": "2026-10-25",
+     "lastSeen": "2026-10-25"
+    }
+   },
+   "left": [
+    {
+     "id": "343797",
+     "name": "Hendrick Zuck",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "459002",
+     "name": "Kenny-Prince Redondo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "634286",
+     "name": "Avdo Spahić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "763992",
+     "name": "Frank Ronstadt",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -2042,7 +2899,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Tobias Strobl",
@@ -2053,7 +2910,7 @@
     "118308": {
      "name": "Pavao Pervan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "157723": {
      "name": "Christian Eriksen",
@@ -2063,142 +2920,142 @@
     "298915": {
      "name": "Maximilian Arnold",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "408986": {
      "name": "Timon Wellenreuther",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "450976": {
      "name": "Yannick Gerhardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "458976": {
      "name": "Hauke Wahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "490489": {
      "name": "Robert Glatzel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "647900": {
      "name": "Mattias Svanberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "696433": {
      "name": "Fabian Reese",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "749564": {
      "name": "Fraser Hornby",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "759097": {
      "name": "Joakim Mæhle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "839038": {
      "name": "Elvis Rexhbeçaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "882578": {
      "name": "Rogério",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1014688": {
      "name": "Alexander Bernhardsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1047671": {
      "name": "Vini Souza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1067754": {
      "name": "Aster Vranckx",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1187389": {
      "name": "Kilian Fischer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1250259": {
      "name": "Alessio Besio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1279034": {
      "name": "Aaron Zehnter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1302920": {
      "name": "Cleiton Santos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1327298": {
      "name": "Saël Kumbedi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1393387": {
      "name": "Muhammed Mehmet Damar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1432344": {
      "name": "Jonas Adjetey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1482729": {
      "name": "Bence Dárdai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1611223": {
      "name": "Kento Shiogai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1635701": {
      "name": "Mathys Angély",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1660229": {
      "name": "Jakub Zieliński",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1797593": {
      "name": "Bruno Katz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1843927": {
      "name": "Pharrell Hensel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1869135": {
      "name": "Trevor Benedict",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -2210,41 +3067,41 @@
     }
    ]
   },
-  "Kaiserslautern": {
-   "fotmobName": "Kaiserslautern",
-   "fotmobId": 8350,
-   "coach": "Torsten Lieberknecht",
+  "Magdeburg": {
+   "fotmobName": "Magdeburg",
+   "fotmobId": 8188,
+   "coach": "Petrik Sander",
    "players": [
     {
-     "id": 953080,
-     "name": "Julian Krahl",
+     "id": 562055,
+     "name": "Dominik Reimann",
      "role": "keepers",
      "position": "GK",
      "number": 1,
-     "age": 26,
-     "born": "2000-01-22",
+     "age": 29,
+     "born": "1997-06-18",
      "country": "Germany",
-     "height": 194,
-     "value": 859998,
-     "rating": 7.83,
+     "height": 186,
+     "value": 759721,
+     "rating": 7.22,
      "goals": 0,
-     "assists": 1,
+     "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
      "injury": null
     },
     {
-     "id": 1732541,
-     "name": "Yannick Onohiol",
+     "id": 1285683,
+     "name": "Noah Kruth",
      "role": "keepers",
      "position": "GK",
-     "number": 34,
-     "age": 22,
-     "born": "2004-08-21",
+     "number": 30,
+     "age": 23,
+     "born": "2003-06-24",
      "country": "Germany",
-     "height": null,
-     "value": 199973,
+     "height": 186,
+     "value": 160712,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2254,16 +3111,16 @@
      "injury": null
     },
     {
-     "id": 1921594,
-     "name": "Enis Kamga",
+     "id": 1520256,
+     "name": "Robert Kampa",
      "role": "keepers",
-     "position": "GK",
+     "position": "Keeper",
      "number": 40,
-     "age": 19,
-     "born": "2007-07-08",
+     "age": 21,
+     "born": "2005-02-13",
      "country": "Germany",
-     "height": null,
-     "value": 376867,
+     "height": 188,
+     "value": 230555,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2273,56 +3130,18 @@
      "injury": null
     },
     {
-     "id": 488564,
-     "name": "Jean Zimmer",
-     "role": "defenders",
-     "position": "RWB",
-     "number": null,
-     "age": 32,
-     "born": "1993-12-06",
-     "country": "Germany",
-     "height": 171,
-     "value": 57764,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1362341,
-     "name": "Alex Murphy",
+     "id": 1286190,
+     "name": "Anselmo MacNulty",
      "role": "defenders",
      "position": "CB,LB",
      "number": 3,
-     "age": 22,
-     "born": "2004-06-25",
+     "age": 23,
+     "born": "2003-02-19",
      "country": "Ireland",
-     "height": 188,
-     "value": 1323850,
-     "rating": 7.09,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1073476,
-     "name": "Maxwell Gyamfi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 26,
-     "born": "2000-01-18",
-     "country": "Germany",
-     "height": 189,
-     "value": 720365,
-     "rating": 7.16,
-     "goals": 0,
+     "height": 187,
+     "value": 1306158,
+     "rating": 7.24,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 3,
@@ -2330,112 +3149,283 @@
      "injury": null
     },
     {
-     "id": 1695875,
-     "name": "Kelven Frees",
+     "id": 1238697,
+     "name": "Eldin Džogović",
+     "role": "defenders",
+     "position": "RM",
+     "number": 4,
+     "age": 23,
+     "born": "2003-06-08",
+     "country": "Luxembourg",
+     "height": 180,
+     "value": 197134,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 932852,
+     "name": "Tobias Müller",
      "role": "defenders",
      "position": "CB",
      "number": 5,
-     "age": 21,
-     "born": "2005-02-03",
+     "age": 32,
+     "born": "1994-07-08",
      "country": "Germany",
-     "height": 202,
-     "value": 661730,
-     "rating": null,
+     "height": 188,
+     "value": 338468,
+     "rating": 6.9,
      "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 767256,
-     "name": "Jacob Rasmussen",
-     "role": "defenders",
-     "position": "CB",
-     "number": 14,
-     "age": 29,
-     "born": "1997-05-28",
-     "country": "Denmark",
-     "height": 193,
-     "value": 593264,
-     "rating": 7.26,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 560410,
-     "name": "Jan Elvedi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 33,
-     "age": 30,
-     "born": "1996-09-30",
-     "country": "Switzerland",
-     "height": 186,
-     "value": 431717,
-     "rating": 7.39,
-     "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 2,
-     "red": 0,
+     "red": 1,
      "injury": null
     },
     {
-     "id": 1659455,
-     "name": "Leon Robinson",
+     "id": 926447,
+     "name": "Paul Jaeckel",
      "role": "defenders",
-     "position": "CB,CDM,CM",
-     "number": 37,
-     "age": 25,
-     "born": "2001-07-11",
-     "country": "Germany",
-     "height": 186,
-     "value": 445232,
-     "rating": 6.42,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 926446,
-     "name": "Simon Asta",
-     "role": "midfielders",
-     "position": "RWB",
-     "number": 2,
-     "age": 25,
-     "born": "2001-01-25",
-     "country": "Germany",
-     "height": 178,
-     "value": 378567,
-     "rating": 6.12,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 808155,
-     "name": "Fabian Kunze",
-     "role": "midfielders",
-     "position": "CDM,CB,CM",
+     "position": "CB",
      "number": 6,
      "age": 28,
-     "born": "1998-06-14",
+     "born": "1998-07-22",
      "country": "Germany",
-     "height": 183,
-     "value": 745950,
-     "rating": 6.77,
+     "height": 188,
+     "value": 425275,
+     "rating": 4.92,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 866164,
+     "name": "Herbert Bockhorn",
+     "role": "defenders",
+     "position": "RB",
+     "number": 7,
+     "age": 31,
+     "born": "1995-01-31",
+     "country": "Uganda",
+     "height": 177,
+     "value": 127778,
+     "rating": 6.63,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 874540,
+     "name": "Daniel Heber",
+     "role": "defenders",
+     "position": "CB",
+     "number": 15,
+     "age": 32,
+     "born": "1994-07-04",
+     "country": "Germany",
+     "height": 182,
+     "value": 103680,
+     "rating": 7.25,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 814892,
+     "name": "Alexander Nollenberger",
+     "role": "defenders",
+     "position": "LB,LM,RW",
+     "number": 17,
+     "age": 29,
+     "born": "1997-06-04",
+     "country": "Germany",
+     "height": 180,
+     "value": 383888,
+     "rating": 7.24,
+     "goals": 3,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 546190,
+     "name": "Lubambo Musonda",
+     "role": "defenders",
+     "position": "LB,RB,RM,RW",
+     "number": 19,
+     "age": 31,
+     "born": "1995-03-01",
+     "country": "Zambia",
+     "height": 171,
+     "value": 211774,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 641181,
+     "name": "Tarek Chahed",
+     "role": "defenders",
+     "position": "RW",
+     "number": 24,
+     "age": 30,
+     "born": "1996-06-23",
+     "country": "Germany",
+     "height": 184,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 884276,
+     "name": "Moritz-Broni Kwarteng",
+     "role": "midfielders",
+     "position": "CM,LW",
+     "number": 10,
+     "age": 28,
+     "born": "1998-04-28",
+     "country": "Germany",
+     "height": 175,
+     "value": 549690,
+     "rating": 7.03,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1690072,
+     "name": "Felipe Chávez",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 11,
+     "age": 19,
+     "born": "2007-04-10",
+     "country": "Peru",
+     "height": 177,
+     "value": 3729985,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1415371,
+     "name": "Tony Reitz",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 14,
+     "age": 22,
+     "born": "2004-07-05",
+     "country": "Germany",
+     "height": 189,
+     "value": 179974,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1190549,
+     "name": "Falko Michel",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 21,
+     "age": 25,
+     "born": "2001-01-14",
+     "country": "Germany",
+     "height": 186,
+     "value": 798121,
+     "rating": 7.02,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 864436,
+     "name": "Torben Müsel",
+     "role": "midfielders",
+     "position": "CDM,CM,CAM,RW",
+     "number": 26,
+     "age": 27,
+     "born": "1999-07-25",
+     "country": "Germany",
+     "height": 185,
+     "value": 150852,
+     "rating": 7.01,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1613077,
+     "name": "Do-Young Yoon",
+     "role": "midfielders",
+     "position": "RWB,CAM",
+     "number": 27,
+     "age": 19,
+     "born": "2006-10-28",
+     "country": "South Korea",
+     "height": 172,
+     "value": 1014458,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1412134,
+     "name": "Pierre Nadjombe",
+     "role": "midfielders",
+     "position": "RM,RB,RWB,RW,LB",
+     "number": 28,
+     "age": 23,
+     "born": "2003-05-10",
+     "country": "Togo",
+     "height": 180,
+     "value": 244331,
+     "rating": 6.57,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2444,74 +3434,17 @@
      "injury": null
     },
     {
-     "id": 553556,
-     "name": "Marlon Ritter",
+     "id": 1790008,
+     "name": "Leon Mergner",
      "role": "midfielders",
-     "position": "CAM,CDM,ST",
-     "number": 7,
-     "age": 32,
-     "born": "1994-10-15",
+     "position": "CM",
+     "number": 33,
+     "age": 20,
+     "born": "2006-07-21",
      "country": "Germany",
-     "height": 170,
-     "value": 340553,
-     "rating": 6.56,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1083342,
-     "name": "Semih Şahin",
-     "role": "midfielders",
-     "position": "CDM,CAM,CM",
-     "number": 8,
-     "age": 26,
-     "born": "1999-12-22",
-     "country": "Germany",
-     "height": 177,
-     "value": 1033077,
-     "rating": 7.71,
-     "goals": 1,
-     "assists": 3,
-     "penalties": 1,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 930047,
-     "name": "Naatan Skyttä",
-     "role": "midfielders",
-     "position": "CAM,RW,CM,ST",
-     "number": 15,
-     "age": 24,
-     "born": "2002-05-07",
-     "country": "Finland",
-     "height": 165,
-     "value": 4688084,
-     "rating": 6.83,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1256224,
-     "name": "Mário Sauer",
-     "role": "midfielders",
-     "position": "CDM,CAM,CM",
-     "number": 21,
-     "age": 22,
-     "born": "2004-05-15",
-     "country": "Slovakia",
-     "height": 180,
-     "value": 1477717,
-     "rating": 6.82,
+     "height": null,
+     "value": 457553,
+     "rating": 6.67,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -2520,17 +3453,17 @@
      "injury": null
     },
     {
-     "id": 1659454,
-     "name": "Mika Haas",
+     "id": 1740897,
+     "name": "Magnus Baars",
      "role": "midfielders",
-     "position": "LWB,LW,LB",
-     "number": 22,
-     "age": 21,
-     "born": "2005-08-11",
+     "position": "Midfielder",
+     "number": 35,
+     "age": 20,
+     "born": "2006-10-12",
      "country": "Germany",
-     "height": 181,
-     "value": 1910534,
-     "rating": 7.1,
+     "height": 178,
+     "value": 489441,
+     "rating": 6.17,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2539,192 +3472,18 @@
      "injury": null
     },
     {
-     "id": 1274452,
-     "name": "Paul Joly",
+     "id": 1531833,
+     "name": "Luka Hyryläinen",
      "role": "midfielders",
-     "position": "RWB,CAM",
-     "number": 26,
-     "age": 26,
-     "born": "2000-06-07",
-     "country": "France",
-     "height": 182,
-     "value": 1514724,
-     "rating": 7,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1244893,
-     "name": "Neal Gibs",
-     "role": "midfielders",
-     "position": "LM",
+     "position": "CM,CDM",
      "number": 38,
-     "age": 24,
-     "born": "2002-01-01",
-     "country": "Germany",
-     "height": 180,
-     "value": 104812,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1843406,
-     "name": "Thierry Fidjeu-Tazemeta",
-     "role": "midfielders",
-     "position": "CAM,ST",
-     "number": 39,
-     "age": 19,
-     "born": "2007-07-27",
-     "country": "Austria",
-     "height": 192,
-     "value": null,
-     "rating": 6.94,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1975549,
-     "name": "David Schramm",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 41,
-     "age": 20,
-     "born": "2006-06-28",
-     "country": "Germany",
-     "height": null,
-     "value": 362880,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1862548,
-     "name": "Erik Müller",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 42,
-     "age": 20,
-     "born": "2006-06-11",
-     "country": "Germany",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1862541,
-     "name": "Owen Gibs",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 43,
-     "age": 19,
-     "born": "2006-11-21",
-     "country": "Germany",
-     "height": null,
-     "value": 268035,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "6",
-      "expectedReturn": "Unknown"
-     }
-    },
-    {
-     "id": 1838936,
-     "name": "Dion Hofmeister",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 44,
-     "age": 17,
-     "born": "2009-07-11",
-     "country": "Germany",
-     "height": null,
-     "value": 1008137,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1975550,
-     "name": "Ben Jungfleisch",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 47,
-     "age": 18,
-     "born": "2008-06-14",
-     "country": "Germany",
-     "height": null,
-     "value": 508668,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 645697,
-     "name": "Ivan Prtajin",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 30,
-     "born": "1996-05-14",
-     "country": "Croatia",
-     "height": 189,
-     "value": 649565,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1581718,
-     "name": "Ibrahim Kanaté",
-     "role": "attackers",
-     "position": "LW,CAM",
-     "number": 11,
-     "age": 20,
-     "born": "2006-10-23",
-     "country": "Mali",
-     "height": 172,
-     "value": 1497915,
-     "rating": 6.5,
-     "goals": 0,
+     "age": 22,
+     "born": "2004-08-25",
+     "country": "Finland",
+     "height": 197,
+     "value": 1424713,
+     "rating": 7.51,
+     "goals": 1,
      "assists": 1,
      "penalties": 0,
      "yellow": 2,
@@ -2732,37 +3491,18 @@
      "injury": null
     },
     {
-     "id": 1081707,
-     "name": "Erencan Yardımcı",
+     "id": 687306,
+     "name": "Emmanuel Iyoha",
      "role": "attackers",
-     "position": "ST",
-     "number": 17,
-     "age": 24,
-     "born": "2002-02-04",
-     "country": "Turkiye",
-     "height": 188,
-     "value": 1275850,
-     "rating": 6.49,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 597737,
-     "name": "Mërgim Berisha",
-     "role": "attackers",
-     "position": "ST",
-     "number": 20,
-     "age": 28,
-     "born": "1998-05-11",
+     "position": "RW,LW,CAM",
+     "number": 8,
+     "age": 29,
+     "born": "1997-10-11",
      "country": "Germany",
-     "height": 186,
-     "value": 724875,
-     "rating": 6.49,
-     "goals": 1,
+     "height": 191,
+     "value": 365974,
+     "rating": 7.61,
+     "goals": 6,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -2770,17 +3510,17 @@
      "injury": null
     },
     {
-     "id": 1370590,
-     "name": "Miloš Luković",
+     "id": 1178504,
+     "name": "Roko Šimić",
      "role": "attackers",
      "position": "ST",
-     "number": 45,
-     "age": 20,
-     "born": "2005-11-18",
-     "country": "Serbia",
-     "height": 184,
-     "value": 6644481,
-     "rating": 7.65,
+     "number": 9,
+     "age": 23,
+     "born": "2003-09-10",
+     "country": "Croatia",
+     "height": 190,
+     "value": 1567837,
+     "rating": 7.47,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -2789,15 +3529,15 @@
      "injury": null
     },
     {
-     "id": 2067583,
-     "name": "Kian Scheer",
+     "id": 1859768,
+     "name": "Chung-Hyun Lee",
      "role": "attackers",
      "position": "Attacker",
-     "number": 46,
+     "number": 18,
      "age": 19,
-     "born": "2007-06-30",
-     "country": "Germany",
-     "height": null,
+     "born": "2007-09-12",
+     "country": "South Korea",
+     "height": 177,
      "value": null,
      "rating": null,
      "goals": 0,
@@ -2806,214 +3546,258 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1932988,
+     "name": "Kevin Manthey",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 20,
+     "age": 19,
+     "born": "2007-05-29",
+     "country": "Germany",
+     "height": null,
+     "value": 496012,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 908847,
+     "name": "Mateusz Żukowski",
+     "role": "attackers",
+     "position": "ST",
+     "number": 22,
+     "age": 24,
+     "born": "2001-11-23",
+     "country": "Poland",
+     "height": 185,
+     "value": 1134664,
+     "rating": 7.31,
+     "goals": 5,
+     "assists": 0,
+     "penalties": 2,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 629562,
+     "name": "Barış Atik",
+     "role": "attackers",
+     "position": "LW",
+     "number": 23,
+     "age": 31,
+     "born": "1995-01-09",
+     "country": "Turkiye",
+     "height": 169,
+     "value": 520439,
+     "rating": 7.82,
+     "goals": 0,
+     "assists": 5,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 964542,
+     "name": "Richmond Tachie",
+     "role": "attackers",
+     "position": "RW",
+     "number": 29,
+     "age": 27,
+     "born": "1999-04-21",
+     "country": "Germany",
+     "height": 180,
+     "value": 277396,
+     "rating": 6.13,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
-     "name": "Torsten Lieberknecht",
+     "name": "Petrik Sander",
      "firstSeen": "2026-09-28"
     }
    ],
    "history": {
-    "343797": {
-     "name": "Hendrick Zuck",
+    "546190": {
+     "name": "Lubambo Musonda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "562055": {
+     "name": "Dominik Reimann",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "629562": {
+     "name": "Barış Atik",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "641181": {
+     "name": "Tarek Chahed",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "687306": {
+     "name": "Emmanuel Iyoha",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "814892": {
+     "name": "Alexander Nollenberger",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "857709": {
+     "name": "Aleksa Marušić",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     },
-    "459002": {
-     "name": "Kenny-Prince Redondo",
+    "864436": {
+     "name": "Torben Müsel",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "866164": {
+     "name": "Herbert Bockhorn",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "874540": {
+     "name": "Daniel Heber",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "884276": {
+     "name": "Moritz-Broni Kwarteng",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "908847": {
+     "name": "Mateusz Żukowski",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "913716": {
+     "name": "Samuel Loric",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     },
-    "488564": {
-     "name": "Jean Zimmer",
+    "926447": {
+     "name": "Paul Jaeckel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "553556": {
-     "name": "Marlon Ritter",
+    "932852": {
+     "name": "Tobias Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "560410": {
-     "name": "Jan Elvedi",
+    "964542": {
+     "name": "Richmond Tachie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "597737": {
-     "name": "Mërgim Berisha",
+    "1178504": {
+     "name": "Roko Šimić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "634286": {
-     "name": "Avdo Spahić",
+    "1190549": {
+     "name": "Falko Michel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-25"
     },
-    "645697": {
-     "name": "Ivan Prtajin",
+    "1238697": {
+     "name": "Eldin Džogović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "763992": {
-     "name": "Frank Ronstadt",
+    "1285683": {
+     "name": "Noah Kruth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-25"
     },
-    "767256": {
-     "name": "Jacob Rasmussen",
+    "1286190": {
+     "name": "Anselmo MacNulty",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "808155": {
-     "name": "Fabian Kunze",
+    "1412134": {
+     "name": "Pierre Nadjombe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "926446": {
-     "name": "Simon Asta",
+    "1415371": {
+     "name": "Tony Reitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "930047": {
-     "name": "Naatan Skyttä",
+    "1520256": {
+     "name": "Robert Kampa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "953080": {
-     "name": "Julian Krahl",
+    "1531833": {
+     "name": "Luka Hyryläinen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1073476": {
-     "name": "Maxwell Gyamfi",
+    "1613077": {
+     "name": "Do-Young Yoon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1081707": {
-     "name": "Erencan Yardımcı",
+    "1690072": {
+     "name": "Felipe Chávez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1083342": {
-     "name": "Semih Şahin",
+    "1740897": {
+     "name": "Magnus Baars",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1244893": {
-     "name": "Neal Gibs",
+    "1790008": {
+     "name": "Leon Mergner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1256224": {
-     "name": "Mário Sauer",
+    "1859768": {
+     "name": "Chung-Hyun Lee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
-    "1274452": {
-     "name": "Paul Joly",
+    "1932988": {
+     "name": "Kevin Manthey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1362341": {
-     "name": "Alex Murphy",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1370590": {
-     "name": "Miloš Luković",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1581718": {
-     "name": "Ibrahim Kanaté",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1659454": {
-     "name": "Mika Haas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1659455": {
-     "name": "Leon Robinson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1695875": {
-     "name": "Kelven Frees",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1732541": {
-     "name": "Yannick Onohiol",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1838936": {
-     "name": "Dion Hofmeister",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1843406": {
-     "name": "Thierry Fidjeu-Tazemeta",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1862541": {
-     "name": "Owen Gibs",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1862548": {
-     "name": "Erik Müller",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1921594": {
-     "name": "Enis Kamga",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1975549": {
-     "name": "David Schramm",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1975550": {
-     "name": "Ben Jungfleisch",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2067583": {
-     "name": "Kian Scheer",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
     {
-     "id": "343797",
-     "name": "Hendrick Zuck",
+     "id": "857709",
+     "name": "Aleksa Marušić",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     },
     {
-     "id": "459002",
-     "name": "Kenny-Prince Redondo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "634286",
-     "name": "Avdo Spahić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "763992",
-     "name": "Frank Ronstadt",
+     "id": "913716",
+     "name": "Samuel Loric",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -3054,7 +3838,7 @@
      "country": "Germany",
      "height": 193,
      "value": 270920,
-     "rating": 7.12,
+     "rating": 7.06,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3130,7 +3914,7 @@
      "country": "Germany",
      "height": 194,
      "value": 1628554,
-     "rating": 7,
+     "rating": 7.06,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3149,7 +3933,7 @@
      "country": "Germany",
      "height": 185,
      "value": 706197,
-     "rating": 6.91,
+     "rating": 7,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -3168,8 +3952,8 @@
      "country": "Morocco",
      "height": 187,
      "value": 686502,
-     "rating": 6.63,
-     "goals": 1,
+     "rating": 6.84,
+     "goals": 2,
      "assists": 0,
      "penalties": 0,
      "yellow": 2,
@@ -3206,11 +3990,11 @@
      "country": "Switzerland",
      "height": 171,
      "value": 1882830,
-     "rating": 7.47,
+     "rating": 7.46,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -3244,11 +4028,11 @@
      "country": "Germany",
      "height": 181,
      "value": 2302361,
-     "rating": 7.36,
+     "rating": 7.38,
      "goals": 3,
      "assists": 1,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -3263,9 +4047,9 @@
      "country": "Germany",
      "height": 181,
      "value": 1404944,
-     "rating": 7.39,
+     "rating": 7.53,
      "goals": 1,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -3275,14 +4059,14 @@
      "id": 1000011,
      "name": "Christian Conteh",
      "role": "midfielders",
-     "position": "CAM,LW,LM",
+     "position": "CAM,LM,LW",
      "number": 10,
      "age": 27,
      "born": "1999-08-27",
      "country": "Germany",
      "height": 182,
      "value": 1179760,
-     "rating": 6.74,
+     "rating": 6.79,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3294,14 +4078,14 @@
      "id": 1193815,
      "name": "Julian Niehues",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 16,
      "age": 25,
      "born": "2001-04-17",
      "country": "Germany",
      "height": 195,
      "value": 970791,
-     "rating": 6.83,
+     "rating": 6.75,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3399,7 +4183,7 @@
      "country": "Georgia",
      "height": 189,
      "value": 1132288,
-     "rating": 7.2,
+     "rating": 7.09,
      "goals": 3,
      "assists": 0,
      "penalties": 1,
@@ -3437,7 +4221,7 @@
      "country": "Austria",
      "height": 188,
      "value": 976419,
-     "rating": 6.47,
+     "rating": 6.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3456,7 +4240,7 @@
      "country": "Switzerland",
      "height": null,
      "value": 10433569,
-     "rating": 6.49,
+     "rating": 6.45,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3475,7 +4259,7 @@
      "country": "Germany",
      "height": 183,
      "value": 295170,
-     "rating": 7.6,
+     "rating": 7.56,
      "goals": 1,
      "assists": 3,
      "penalties": 0,
@@ -3494,7 +4278,7 @@
      "country": "Denmark",
      "height": 190,
      "value": 1201569,
-     "rating": 6.64,
+     "rating": 6.63,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -3503,7 +4287,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Frank Schmidt",
@@ -3514,122 +4298,122 @@
     "314960": {
      "name": "Thomas Dähne",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "423624": {
      "name": "Patrick Mainka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "554979": {
      "name": "Leart Paçarada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "556540": {
      "name": "Marcel Costly",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "557805": {
      "name": "Mathias Honsak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "571379": {
      "name": "Marnon-Thomas Busch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "642534": {
      "name": "Jonas Föhrenbach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "673432": {
      "name": "Sirlord Conteh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "674242": {
      "name": "Budu Zivzivadze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "939409": {
      "name": "Maximilian Breunig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "945935": {
      "name": "Mikkel Kaufmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1000011": {
      "name": "Christian Conteh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1002673": {
      "name": "Jan Schöppner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1138311": {
      "name": "Paul Tschernuth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1173779": {
      "name": "Tim Siersleben",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1188619": {
      "name": "Michael Heule",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1193815": {
      "name": "Julian Niehues",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1222166": {
      "name": "Luca Kerber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1330848": {
      "name": "Frank Feller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1352636": {
      "name": "Oualid Mhamdi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1419782": {
      "name": "Alessandro Vogt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1688937": {
      "name": "Paul Hennrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1791784": {
      "name": "Yannik Wagner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1799711": {
      "name": "Adam Kölle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1818980": {
      "name": "Tobias Weigel",
@@ -3639,749 +4423,13 @@
     "2130071": {
      "name": "Marko Zrilic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
     {
      "id": "1818980",
      "name": "Tobias Weigel",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    }
-   ]
-  },
-  "Magdeburg": {
-   "fotmobName": "Magdeburg",
-   "fotmobId": 8188,
-   "coach": "Petrik Sander",
-   "players": [
-    {
-     "id": 562055,
-     "name": "Dominik Reimann",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 29,
-     "born": "1997-06-18",
-     "country": "Germany",
-     "height": 186,
-     "value": 759721,
-     "rating": 7.25,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1285683,
-     "name": "Noah Kruth",
-     "role": "keepers",
-     "position": "GK",
-     "number": 30,
-     "age": 23,
-     "born": "2003-06-24",
-     "country": "Germany",
-     "height": 186,
-     "value": 160712,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1520256,
-     "name": "Robert Kampa",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 40,
-     "age": 21,
-     "born": "2005-02-13",
-     "country": "Germany",
-     "height": 188,
-     "value": 230555,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1286190,
-     "name": "Anselmo MacNulty",
-     "role": "defenders",
-     "position": "CB,LB",
-     "number": 3,
-     "age": 23,
-     "born": "2003-02-19",
-     "country": "Ireland",
-     "height": 187,
-     "value": 1306158,
-     "rating": 7.14,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1238697,
-     "name": "Eldin Džogović",
-     "role": "defenders",
-     "position": "RM",
-     "number": 4,
-     "age": 23,
-     "born": "2003-06-08",
-     "country": "Luxembourg",
-     "height": 180,
-     "value": 197134,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 932852,
-     "name": "Tobias Müller",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 32,
-     "born": "1994-07-08",
-     "country": "Germany",
-     "height": 188,
-     "value": 338468,
-     "rating": 6.83,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 926447,
-     "name": "Paul Jaeckel",
-     "role": "defenders",
-     "position": "CB",
-     "number": 6,
-     "age": 28,
-     "born": "1998-07-22",
-     "country": "Germany",
-     "height": 188,
-     "value": 425275,
-     "rating": 4.92,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 866164,
-     "name": "Herbert Bockhorn",
-     "role": "defenders",
-     "position": "RB",
-     "number": 7,
-     "age": 31,
-     "born": "1995-01-31",
-     "country": "Uganda",
-     "height": 177,
-     "value": 127778,
-     "rating": 6.65,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 874540,
-     "name": "Daniel Heber",
-     "role": "defenders",
-     "position": "CB",
-     "number": 15,
-     "age": 32,
-     "born": "1994-07-04",
-     "country": "Germany",
-     "height": 182,
-     "value": 103680,
-     "rating": 7.25,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 814892,
-     "name": "Alexander Nollenberger",
-     "role": "defenders",
-     "position": "LB,LM,RW",
-     "number": 17,
-     "age": 29,
-     "born": "1997-06-04",
-     "country": "Germany",
-     "height": 180,
-     "value": 383888,
-     "rating": 7.34,
-     "goals": 3,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 546190,
-     "name": "Lubambo Musonda",
-     "role": "defenders",
-     "position": "LB,RB,RM,RW",
-     "number": 19,
-     "age": 31,
-     "born": "1995-03-01",
-     "country": "Zambia",
-     "height": 171,
-     "value": 211774,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 641181,
-     "name": "Tarek Chahed",
-     "role": "defenders",
-     "position": "RW",
-     "number": 24,
-     "age": 30,
-     "born": "1996-06-23",
-     "country": "Germany",
-     "height": 184,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 884276,
-     "name": "Moritz-Broni Kwarteng",
-     "role": "midfielders",
-     "position": "CM,LW",
-     "number": 10,
-     "age": 28,
-     "born": "1998-04-28",
-     "country": "Germany",
-     "height": 175,
-     "value": 549690,
-     "rating": 7.03,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1690072,
-     "name": "Felipe Chávez",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 11,
-     "age": 19,
-     "born": "2007-04-10",
-     "country": "Peru",
-     "height": 177,
-     "value": 3729985,
-     "rating": 6.56,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1415371,
-     "name": "Tony Reitz",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 14,
-     "age": 22,
-     "born": "2004-07-05",
-     "country": "Germany",
-     "height": 189,
-     "value": 179974,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1190549,
-     "name": "Falko Michel",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 21,
-     "age": 25,
-     "born": "2001-01-14",
-     "country": "Germany",
-     "height": 186,
-     "value": 798121,
-     "rating": 7.11,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 864436,
-     "name": "Torben Müsel",
-     "role": "midfielders",
-     "position": "CDM,CM,CAM,RW",
-     "number": 26,
-     "age": 27,
-     "born": "1999-07-25",
-     "country": "Germany",
-     "height": 185,
-     "value": 150852,
-     "rating": 6.76,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1613077,
-     "name": "Do-Young Yoon",
-     "role": "midfielders",
-     "position": "RWB,CAM",
-     "number": 27,
-     "age": 19,
-     "born": "2006-10-28",
-     "country": "South Korea",
-     "height": 172,
-     "value": 1014458,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1412134,
-     "name": "Pierre Nadjombe",
-     "role": "midfielders",
-     "position": "RM,RB,RWB,RW,LB",
-     "number": 28,
-     "age": 23,
-     "born": "2003-05-10",
-     "country": "Togo",
-     "height": 180,
-     "value": 244331,
-     "rating": 6.43,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1790008,
-     "name": "Leon Mergner",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 33,
-     "age": 20,
-     "born": "2006-07-21",
-     "country": "Germany",
-     "height": null,
-     "value": 457553,
-     "rating": 6.39,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1740897,
-     "name": "Magnus Baars",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 35,
-     "age": 20,
-     "born": "2006-10-12",
-     "country": "Germany",
-     "height": 178,
-     "value": 489441,
-     "rating": 6.17,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1531833,
-     "name": "Luka Hyryläinen",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 38,
-     "age": 22,
-     "born": "2004-08-25",
-     "country": "Finland",
-     "height": 197,
-     "value": 1424713,
-     "rating": 7.47,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 687306,
-     "name": "Emmanuel Iyoha",
-     "role": "attackers",
-     "position": "RW,LW,CAM",
-     "number": 8,
-     "age": 29,
-     "born": "1997-10-11",
-     "country": "Germany",
-     "height": 191,
-     "value": 365974,
-     "rating": 7.54,
-     "goals": 5,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1178504,
-     "name": "Roko Šimić",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 23,
-     "born": "2003-09-10",
-     "country": "Croatia",
-     "height": 190,
-     "value": 1567837,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1859768,
-     "name": "Chung-Hyun Lee",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 18,
-     "age": 19,
-     "born": "2007-09-12",
-     "country": "South Korea",
-     "height": 177,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1932988,
-     "name": "Kevin Manthey",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 20,
-     "age": 19,
-     "born": "2007-05-29",
-     "country": "Germany",
-     "height": null,
-     "value": 496012,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 908847,
-     "name": "Mateusz Żukowski",
-     "role": "attackers",
-     "position": "ST",
-     "number": 22,
-     "age": 24,
-     "born": "2001-11-23",
-     "country": "Poland",
-     "height": 185,
-     "value": 1134664,
-     "rating": 7.11,
-     "goals": 3,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 629562,
-     "name": "Barış Atik",
-     "role": "attackers",
-     "position": "LW",
-     "number": 23,
-     "age": 31,
-     "born": "1995-01-09",
-     "country": "Turkiye",
-     "height": 169,
-     "value": 520439,
-     "rating": 7.78,
-     "goals": 0,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 964542,
-     "name": "Richmond Tachie",
-     "role": "attackers",
-     "position": "RW",
-     "number": 29,
-     "age": 27,
-     "born": "1999-04-21",
-     "country": "Germany",
-     "height": 180,
-     "value": 277396,
-     "rating": 6.07,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Petrik Sander",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "546190": {
-     "name": "Lubambo Musonda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "562055": {
-     "name": "Dominik Reimann",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "629562": {
-     "name": "Barış Atik",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "641181": {
-     "name": "Tarek Chahed",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "687306": {
-     "name": "Emmanuel Iyoha",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "814892": {
-     "name": "Alexander Nollenberger",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "857709": {
-     "name": "Aleksa Marušić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "864436": {
-     "name": "Torben Müsel",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "866164": {
-     "name": "Herbert Bockhorn",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "874540": {
-     "name": "Daniel Heber",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "884276": {
-     "name": "Moritz-Broni Kwarteng",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "908847": {
-     "name": "Mateusz Żukowski",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "913716": {
-     "name": "Samuel Loric",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "926447": {
-     "name": "Paul Jaeckel",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "932852": {
-     "name": "Tobias Müller",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "964542": {
-     "name": "Richmond Tachie",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1178504": {
-     "name": "Roko Šimić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1190549": {
-     "name": "Falko Michel",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1238697": {
-     "name": "Eldin Džogović",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1285683": {
-     "name": "Noah Kruth",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1286190": {
-     "name": "Anselmo MacNulty",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1412134": {
-     "name": "Pierre Nadjombe",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1415371": {
-     "name": "Tony Reitz",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1520256": {
-     "name": "Robert Kampa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1531833": {
-     "name": "Luka Hyryläinen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1613077": {
-     "name": "Do-Young Yoon",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1690072": {
-     "name": "Felipe Chávez",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1740897": {
-     "name": "Magnus Baars",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1790008": {
-     "name": "Leon Mergner",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1859768": {
-     "name": "Chung-Hyun Lee",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1932988": {
-     "name": "Kevin Manthey",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": [
-    {
-     "id": "857709",
-     "name": "Aleksa Marušić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "913716",
-     "name": "Samuel Loric",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -4510,7 +4558,7 @@
      "id": 531327,
      "name": "Eric Smith",
      "role": "defenders",
-     "position": "CB,CDM,CM",
+     "position": "CB,CDM",
      "number": 8,
      "age": 29,
      "born": "1997-01-08",
@@ -4925,7 +4973,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Marcel Rapp",
@@ -4936,142 +4984,142 @@
     "258245": {
      "name": "Branimir Hrgota",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "361712": {
      "name": "Adam Dźwigała",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "531327": {
      "name": "Eric Smith",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "537853": {
      "name": "Mathias Rasmussen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "574451": {
      "name": "Dimitar Mitov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "639580": {
      "name": "Marcus Mathisen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "725398": {
      "name": "Mathias Pereira Lage",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "812839": {
      "name": "Martijn Kaars",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "825806": {
      "name": "Lars Ritzka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "885870": {
      "name": "Connor Metcalfe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "922731": {
      "name": "Taichi Hara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1002668": {
      "name": "David Nemeth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1005370": {
      "name": "Erik Ahlstrand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1022849": {
      "name": "Scott Banks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1089870": {
      "name": "Ricky-Jade Jones",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1092731": {
      "name": "Joel Chima Fujita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1094045": {
      "name": "Ben Alexander Voll",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1112702": {
      "name": "Arkadiusz Pyrka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1276604": {
      "name": "Simon Spari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1315546": {
      "name": "Tomoya Andō",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1331018": {
      "name": "Samuel Klein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1383059": {
      "name": "Gísli Thórdarson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1398841": {
      "name": "Rony Jansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1463266": {
      "name": "Louis Oppie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1632265": {
      "name": "Jannik Westphal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1659893": {
      "name": "Abdoulie Ceesay",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663983": {
      "name": "Marwin Schmitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1888413": {
      "name": "Youssoupha Niang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -5092,11 +5140,11 @@
      "country": "Germany",
      "height": 192,
      "value": 1171457,
-     "rating": 6.81,
+     "rating": 6.86,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -5168,7 +5216,7 @@
      "country": "Germany",
      "height": 178,
      "value": 571060,
-     "rating": 6.8,
+     "rating": 6.66,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5187,11 +5235,11 @@
      "country": "Denmark",
      "height": 190,
      "value": 156839,
-     "rating": 6.43,
+     "rating": 6.86,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -5206,7 +5254,7 @@
      "country": "Germany",
      "height": 189,
      "value": 1371419,
-     "rating": 6.94,
+     "rating": 6.92,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -5244,7 +5292,7 @@
      "country": "Germany",
      "height": 184,
      "value": 220919,
-     "rating": 7.22,
+     "rating": 7.27,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -5263,7 +5311,7 @@
      "country": "Germany",
      "height": 189,
      "value": 452448,
-     "rating": 6.62,
+     "rating": 6.64,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5358,7 +5406,7 @@
      "country": "Germany",
      "height": 180,
      "value": 125460,
-     "rating": 6.24,
+     "rating": 6.19,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5377,7 +5425,7 @@
      "country": "Germany",
      "height": 182,
      "value": 393103,
-     "rating": 6.92,
+     "rating": 6.84,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -5395,7 +5443,7 @@
      "born": "1998-06-14",
      "country": "Germany",
      "height": 191,
-     "value": 170107,
+     "value": 174472,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5434,7 +5482,7 @@
      "country": "Germany",
      "height": 175,
      "value": 221250,
-     "rating": 6.6,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5453,7 +5501,7 @@
      "country": "Germany",
      "height": 178,
      "value": 1541509,
-     "rating": 7.09,
+     "rating": 7.02,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -5548,7 +5596,7 @@
      "country": "Germany",
      "height": 185,
      "value": 757656,
-     "rating": 7.12,
+     "rating": 7.02,
      "goals": 5,
      "assists": 1,
      "penalties": 1,
@@ -5567,7 +5615,7 @@
      "country": "Germany",
      "height": 181,
      "value": 1278800,
-     "rating": 6.7,
+     "rating": 6.57,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -5636,7 +5684,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Oliver Kirch",
@@ -5647,72 +5695,72 @@
     "658423": {
      "name": "Marvin Mehlem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "733965": {
      "name": "Joel Felix",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "734063": {
      "name": "Arne Sicker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "747765": {
      "name": "Sam Schreck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "770566": {
      "name": "Leon Jensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "862292": {
      "name": "Isaiah Young",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "865066": {
      "name": "Joel Grodowski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "872742": {
      "name": "Tim Handwerker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "929350": {
      "name": "Jannik Rochelt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "932422": {
      "name": "Lukas Kunze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "955191": {
      "name": "Maximilian Bauer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "964099": {
      "name": "Leon Schneider",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "997577": {
      "name": "David Min",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1052360": {
      "name": "Stefano Russo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1081463": {
      "name": "Gerrit Gohlke",
@@ -5722,42 +5770,42 @@
     "1140917": {
      "name": "Maximilian Großer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1174734": {
      "name": "Jonas Thomas Kersken",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1179897": {
      "name": "Leo Oppermann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1195744": {
      "name": "Henri Koudossou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1288294": {
      "name": "Monju Momuluh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1385154": {
      "name": "Marius Wörl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1460416": {
      "name": "Felix Hagmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1565666": {
      "name": "Artem Zaloha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1596346": {
      "name": "Justin Lukas",
@@ -5767,37 +5815,37 @@
     "1644174": {
      "name": "Benjamin Boakye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1724698": {
      "name": "Daniel Richter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1801084": {
      "name": "Philip Hildesheim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1807386": {
      "name": "Semih Sarli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1821708": {
      "name": "Monti Theiß",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1859997": {
      "name": "Eyyüb Yaşar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2111634": {
      "name": "Till Wegener",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -5831,11 +5879,11 @@
      "country": "Germany",
      "height": 190,
      "value": 248077,
-     "rating": 7,
+     "rating": 7.02,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -5888,11 +5936,11 @@
      "country": "Germany",
      "height": 195,
      "value": 536124,
-     "rating": 7.31,
+     "rating": 7.34,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -5907,7 +5955,7 @@
      "country": "Germany",
      "height": 182,
      "value": 166049,
-     "rating": 6.7,
+     "rating": 6.69,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5926,7 +5974,7 @@
      "country": "Germany",
      "height": 186,
      "value": 116078,
-     "rating": 5.85,
+     "rating": 5.94,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5945,7 +5993,7 @@
      "country": "USA",
      "height": 188,
      "value": 102076,
-     "rating": 6.22,
+     "rating": 6.26,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5986,9 +6034,28 @@
      "country": "Germany",
      "height": null,
      "value": 2078843,
-     "rating": 6.87,
+     "rating": 6.86,
      "goals": 1,
      "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2405474,
+     "name": "Fabian Balg",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 22,
+     "age": 18,
+     "born": "2008-03-04",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -6005,7 +6072,7 @@
      "country": "Germany",
      "height": 190,
      "value": 399924,
-     "rating": 5.85,
+     "rating": 5.95,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6043,7 +6110,26 @@
      "country": "Germany",
      "height": null,
      "value": 775627,
-     "rating": 6.78,
+     "rating": 6.45,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2405472,
+     "name": "Aaron Reschke",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 43,
+     "age": 18,
+     "born": "2008-08-07",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6100,7 +6186,7 @@
      "country": "Lithuania",
      "height": 181,
      "value": 998498,
-     "rating": 6.87,
+     "rating": 6.85,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -6112,16 +6198,16 @@
      "id": 555654,
      "name": "Tolcay Ciğerci",
      "role": "midfielders",
-     "position": "RW,CAM,CM,LW",
+     "position": "CAM,RW,CM,LW",
      "number": 10,
      "age": 31,
      "born": "1995-01-24",
      "country": "Turkiye",
      "height": 180,
      "value": 233552,
-     "rating": 7.67,
+     "rating": 7.66,
      "goals": 4,
-     "assists": 1,
+     "assists": 2,
      "penalties": 2,
      "yellow": 3,
      "red": 0,
@@ -6160,7 +6246,7 @@
      "country": "Greece",
      "height": 178,
      "value": 204647,
-     "rating": 6.97,
+     "rating": 6.73,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6217,8 +6303,8 @@
      "country": "Germany",
      "height": 183,
      "value": 488212,
-     "rating": 6.7,
-     "goals": 1,
+     "rating": 6.79,
+     "goals": 2,
      "assists": 1,
      "penalties": 0,
      "yellow": 1,
@@ -6255,7 +6341,7 @@
      "country": "Ukraine",
      "height": 188,
      "value": 925569,
-     "rating": 6.57,
+     "rating": 6.63,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -6305,7 +6391,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Claus-Dieter Wollitz",
@@ -6316,17 +6402,17 @@
     "260470": {
      "name": "Leonardo Bittencourt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "488297": {
      "name": "Axel Borgmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "555654": {
      "name": "Tolcay Ciğerci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "637199": {
      "name": "Leon Guwara",
@@ -6336,7 +6422,7 @@
     "659081": {
      "name": "Ryan Malone",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "687860": {
      "name": "Alexander Sebald",
@@ -6346,77 +6432,77 @@
     "700075": {
      "name": "Dominik Pelivan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "764500": {
      "name": "Anderson Lucoqui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "793609": {
      "name": "Jonas Hofmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "846291": {
      "name": "Tim Campulka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "862686": {
      "name": "Erik Engelhardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "931614": {
      "name": "Julian Guttau",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "956863": {
      "name": "Christian Kinsombi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "978378": {
      "name": "Moritz Hannemann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1106859": {
      "name": "Henry Rorig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1162510": {
      "name": "Justin Butler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1257828": {
      "name": "Marcel Lotka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1276194": {
      "name": "Lucas Copado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1400168": {
      "name": "Jannis Boziaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1559822": {
      "name": "King Manu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1640793": {
      "name": "Dmytro Bogdanov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663205": {
      "name": "Finn Heidrich",
@@ -6426,22 +6512,22 @@
     "1669829": {
      "name": "Fousseny Doumbia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1701764": {
      "name": "Lukas Michelbrink",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1709032": {
      "name": "Luca Erlein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1789374": {
      "name": "Max Böhnke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1854183": {
      "name": "Félix Schubart",
@@ -6461,12 +6547,22 @@
     "2092491": {
      "name": "Kevin Kratzsch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2130754": {
      "name": "Jannis Zaydan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
+    },
+    "2405472": {
+     "name": "Aaron Reschke",
+     "firstSeen": "2026-10-25",
+     "lastSeen": "2026-10-25"
+    },
+    "2405474": {
+     "name": "Fabian Balg",
+     "firstSeen": "2026-10-25",
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -7001,7 +7097,7 @@
      "id": 237541,
      "name": "Felix Klaus",
      "role": "attackers",
-     "position": "ST,RW,CAM,RM",
+     "position": "ST,RW,CAM",
      "number": 30,
      "age": 34,
      "born": "1992-09-13",
@@ -7036,7 +7132,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Heiko Vogel",
@@ -7047,7 +7143,7 @@
     "237541": {
      "name": "Felix Klaus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "461356": {
      "name": "Julian Green",
@@ -7057,22 +7153,22 @@
     "522139": {
      "name": "Dennis Srbeny",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "555384": {
      "name": "Christian Ortag",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "602300": {
      "name": "Jannik Dehm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "613714": {
      "name": "Jordan Pefok",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "667789": {
      "name": "Nils-Jonathan Körber",
@@ -7082,32 +7178,32 @@
     "832736": {
      "name": "Gian-Luca Itter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "950823": {
      "name": "Paul Will",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1036220": {
      "name": "Jannis Heuer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1039217": {
      "name": "Shinta Appelkamp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1079809": {
      "name": "Doni Arifi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1187364": {
      "name": "Ole Pohlmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1202909": {
      "name": "Marco John",
@@ -7117,82 +7213,82 @@
     "1393252": {
      "name": "Omar Megeed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1414649": {
      "name": "Krisztián Keresztes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1437477": {
      "name": "Sacha Bansé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1437911": {
      "name": "Hendry Blank",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1484933": {
      "name": "Maxim Dal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1520546": {
      "name": "Aaron Keller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1531528": {
      "name": "Benjamin Zank",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1619435": {
      "name": "Omar Sillah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1641040": {
      "name": "Lukas Reich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1661176": {
      "name": "Elias Benkara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1700509": {
      "name": "Silas Prüfrock",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1709671": {
      "name": "Faton Ademi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1765924": {
      "name": "Loris Giandomenico",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1789642": {
      "name": "Florian Hellstern",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1838023": {
      "name": "Mika Wallentowitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1874938": {
      "name": "Mehmet Avlayici",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -7747,7 +7843,7 @@
      "id": 1279694,
      "name": "Ben Bobzien",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "LW",
      "number": 20,
      "age": 23,
      "born": "2003-04-29",
@@ -7782,7 +7878,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Thomas Stamm",
@@ -7793,7 +7889,7 @@
     "467488": {
      "name": "Vincent Vermeij",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "469705": {
      "name": "Stefan Kutschke",
@@ -7803,142 +7899,142 @@
     "554299": {
      "name": "Daniel Mesenhöler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "585268": {
      "name": "Lukas Boeder",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "616917": {
      "name": "Nicolai Rapp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "659047": {
      "name": "Niklas Hauptmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "773519": {
      "name": "Christoph Daferner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "791614": {
      "name": "Alexander Rossipal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "801122": {
      "name": "Lennart Grill",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "815958": {
      "name": "Ahmet Muhamedbegović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "854069": {
      "name": "Nils Fröling",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "862285": {
      "name": "Lars Bünning",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "933544": {
      "name": "Luca Herrmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "978212": {
      "name": "Simon Straudi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "980288": {
      "name": "Thomas Leon Keller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "982335": {
      "name": "Tobias Raschl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1077244": {
      "name": "Tim Schreiber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1097375": {
      "name": "Jakob Lemmer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1140913": {
      "name": "Jonas Sterner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1190503": {
      "name": "Brooklyn Ezeh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1279694": {
      "name": "Ben Bobzien",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1281111": {
      "name": "Robert Wagner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1282980": {
      "name": "Kenneth Schmidt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1455252": {
      "name": "Kennedy Okpala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1605679": {
      "name": "Marlon Grafe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1606165": {
      "name": "Kaan İnanoğlu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1646943": {
      "name": "Patrice Čović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663210": {
      "name": "Elias Bethke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1738346": {
      "name": "Till Neininger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1843898": {
      "name": "Friedrich Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -8450,7 +8546,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Timo Schultz",
@@ -8466,87 +8562,87 @@
     "391679": {
      "name": "Bjarke Jacobsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "458620": {
      "name": "Jannik Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "618923": {
      "name": "Bryan Henning",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "620577": {
      "name": "Daniel-Kofi Kyereh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "673292": {
      "name": "Fridolin Wagner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "732381": {
      "name": "Joël Abu Hanna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "775691": {
      "name": "Patrick Kammerbauer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "794393": {
      "name": "Adrian Beck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "964599": {
      "name": "Robin Meißner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1002652": {
      "name": "Konrad Faber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1052358": {
      "name": "Niklas Wiemann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1171023": {
      "name": "Jonathan Gómez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1185617": {
      "name": "Leon Flach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1199140": {
      "name": "Jonas Krumrey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1230638": {
      "name": "Tony Lesueur",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1250794": {
      "name": "Leonhard Münst",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1282976": {
      "name": "Niklas Sauter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1336014": {
      "name": "Lion Semić",
@@ -8556,37 +8652,37 @@
     "1385830": {
      "name": "Theo Janotta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1435101": {
      "name": "Elias Bakatukanda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1452488": {
      "name": "Leon Opitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1515922": {
      "name": "Robin Fabinski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1515980": {
      "name": "Luca Böggemann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1552927": {
      "name": "Luca Raimund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1637460": {
      "name": "Jonathan Wensing",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663014": {
      "name": "Mats Remberg",
@@ -8596,12 +8692,12 @@
     "1663015": {
      "name": "Bernd Riesselman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1663016": {
      "name": "Ismail Badjie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1789669": {
      "name": "Ibrahim Touray",
@@ -8631,676 +8727,6 @@
     {
      "id": "1789669",
      "name": "Ibrahim Touray",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    }
-   ]
-  },
-  "Karlsruhe": {
-   "fotmobName": "Karlsruher SC",
-   "fotmobId": 8295,
-   "coach": "Maximilian Senft",
-   "players": [
-    {
-     "id": 972732,
-     "name": "Hans Christian Bernat",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 25,
-     "born": "2000-11-13",
-     "country": "Denmark",
-     "height": 192,
-     "value": 770708,
-     "rating": 6.39,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2101829,
-     "name": "Ferdinand Gebert",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 18,
-     "age": 20,
-     "born": "2006-04-05",
-     "country": "Germany",
-     "height": null,
-     "value": 381371,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 312560,
-     "name": "Robin Himmelmann",
-     "role": "keepers",
-     "position": "GK",
-     "number": 30,
-     "age": 37,
-     "born": "1989-02-05",
-     "country": "Germany",
-     "height": 187,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 167065,
-     "name": "Sebastian Jung",
-     "role": "defenders",
-     "position": "RB,RWB,RM,CAM",
-     "number": 2,
-     "age": 36,
-     "born": "1990-06-22",
-     "country": "Germany",
-     "height": 179,
-     "value": 126748,
-     "rating": 6.84,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1845073,
-     "name": "Deniz Ofli",
-     "role": "defenders",
-     "position": "LB",
-     "number": 3,
-     "age": 19,
-     "born": "2007-03-29",
-     "country": "Turkiye",
-     "height": 175,
-     "value": 746496,
-     "rating": 6.55,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1283759,
-     "name": "Héliton",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 30,
-     "born": "1995-11-13",
-     "country": "Brazil",
-     "height": 195,
-     "value": 637755,
-     "rating": 7.01,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "121",
-      "expectedReturn": "Late October 2026"
-     }
-    },
-    {
-     "id": 1696428,
-     "name": "Paul Scholl",
-     "role": "defenders",
-     "position": "CB",
-     "number": 15,
-     "age": 20,
-     "born": "2006-07-23",
-     "country": "Germany",
-     "height": 193,
-     "value": 677648,
-     "rating": 6.8,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 861662,
-     "name": "Christoph Kobald",
-     "role": "defenders",
-     "position": "CB",
-     "number": 22,
-     "age": 29,
-     "born": "1997-08-18",
-     "country": "Austria",
-     "height": 186,
-     "value": 341706,
-     "rating": 6.62,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1382192,
-     "name": "Sandro Trémoulet",
-     "role": "defenders",
-     "position": "CB",
-     "number": 24,
-     "age": 26,
-     "born": "1999-11-18",
-     "country": "Madagascar",
-     "height": 191,
-     "value": 249575,
-     "rating": 7.35,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 208243,
-     "name": "Marcel Franke",
-     "role": "defenders",
-     "position": "CB",
-     "number": 28,
-     "age": 33,
-     "born": "1993-04-05",
-     "country": "Germany",
-     "height": 193,
-     "value": 173805,
-     "rating": 6.68,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 932268,
-     "name": "Viktor Bergh",
-     "role": "defenders",
-     "position": "LB",
-     "number": 33,
-     "age": 27,
-     "born": "1999-07-26",
-     "country": "Sweden",
-     "height": 172,
-     "value": 192201,
-     "rating": 6.55,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1640966,
-     "name": "Rafael Pinto Pedrosa",
-     "role": "defenders",
-     "position": "RB,RM,RW,RWB,CAM",
-     "number": 36,
-     "age": 19,
-     "born": "2007-09-30",
-     "country": "Germany",
-     "height": 180,
-     "value": 5284701,
-     "rating": 6.7,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1085809,
-     "name": "Hyeok-Kyu Kwon",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 5,
-     "age": 25,
-     "born": "2001-03-13",
-     "country": "South Korea",
-     "height": 192,
-     "value": 941177,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 942032,
-     "name": "Santeri Väänänen",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 6,
-     "age": 24,
-     "born": "2002-01-01",
-     "country": "Finland",
-     "height": 177,
-     "value": 561123,
-     "rating": 6.58,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1357382,
-     "name": "Kevin Wiethaup",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 7,
-     "age": 21,
-     "born": "2005-08-06",
-     "country": "Germany",
-     "height": 175,
-     "value": 232027,
-     "rating": 6.61,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 458998,
-     "name": "Marvin Wanitzek",
-     "role": "midfielders",
-     "position": "CM,CAM,LM,LW",
-     "number": 10,
-     "age": 33,
-     "born": "1993-05-07",
-     "country": "Germany",
-     "height": 172,
-     "value": 793531,
-     "rating": 7.84,
-     "goals": 2,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1214053,
-     "name": "Tim Civeja",
-     "role": "midfielders",
-     "position": "CDM,CAM,CM",
-     "number": 23,
-     "age": 24,
-     "born": "2002-01-04",
-     "country": "Germany",
-     "height": 180,
-     "value": 205397,
-     "rating": 6.09,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1114472,
-     "name": "Lilian Egloff",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 25,
-     "age": 24,
-     "born": "2002-08-20",
-     "country": "Germany",
-     "height": 183,
-     "value": 993229,
-     "rating": 6.67,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1818951,
-     "name": "Danyal Zor",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 26,
-     "age": 19,
-     "born": "2007-06-05",
-     "country": "Germany",
-     "height": null,
-     "value": null,
-     "rating": 6.66,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 936618,
-     "name": "Moritz Broschinski",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 26,
-     "born": "2000-09-23",
-     "country": "Germany",
-     "height": 190,
-     "value": 550076,
-     "rating": 7.7,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "30",
-      "expectedReturn": "Early November 2026"
-     }
-    },
-    {
-     "id": 1385841,
-     "name": "Noel Eichinger",
-     "role": "attackers",
-     "position": "CAM,LW,RW,CM,ST,LM",
-     "number": 11,
-     "age": 25,
-     "born": "2001-08-02",
-     "country": "Germany",
-     "height": 183,
-     "value": 267340,
-     "rating": 6.7,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1477956,
-     "name": "Shio Fukuda",
-     "role": "attackers",
-     "position": "ST",
-     "number": 13,
-     "age": 22,
-     "born": "2004-04-08",
-     "country": "Japan",
-     "height": 178,
-     "value": 797532,
-     "rating": 7.01,
-     "goals": 3,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1832591,
-     "name": "Eymen Laghrissi",
-     "role": "attackers",
-     "position": "ST",
-     "number": 17,
-     "age": 18,
-     "born": "2008-06-04",
-     "country": "Germany",
-     "height": null,
-     "value": 1495415,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1620628,
-     "name": "Louey Ben Farhat",
-     "role": "attackers",
-     "position": "ST",
-     "number": 19,
-     "age": 20,
-     "born": "2006-07-19",
-     "country": "Tunisia",
-     "height": 175,
-     "value": 10777075,
-     "rating": 6.63,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2130037,
-     "name": "John Meyer",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 27,
-     "age": 17,
-     "born": "2009-07-29",
-     "country": "Germany",
-     "height": null,
-     "value": null,
-     "rating": 5.76,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1829437,
-     "name": "Jason Ponente",
-     "role": "attackers",
-     "position": "RW",
-     "number": 37,
-     "age": 19,
-     "born": "2007-02-02",
-     "country": "Italy",
-     "height": null,
-     "value": null,
-     "rating": 6.38,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Maximilian Senft",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "167065": {
-     "name": "Sebastian Jung",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "208243": {
-     "name": "Marcel Franke",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "312560": {
-     "name": "Robin Himmelmann",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "458998": {
-     "name": "Marvin Wanitzek",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "861662": {
-     "name": "Christoph Kobald",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "932268": {
-     "name": "Viktor Bergh",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "936618": {
-     "name": "Moritz Broschinski",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "942032": {
-     "name": "Santeri Väänänen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "972732": {
-     "name": "Hans Christian Bernat",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1085809": {
-     "name": "Hyeok-Kyu Kwon",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1114472": {
-     "name": "Lilian Egloff",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1199713": {
-     "name": "Marcel Beifus",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1214053": {
-     "name": "Tim Civeja",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1283759": {
-     "name": "Héliton",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1357382": {
-     "name": "Kevin Wiethaup",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1382192": {
-     "name": "Sandro Trémoulet",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1385841": {
-     "name": "Noel Eichinger",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1477956": {
-     "name": "Shio Fukuda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1620628": {
-     "name": "Louey Ben Farhat",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1640966": {
-     "name": "Rafael Pinto Pedrosa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1666110": {
-     "name": "Robert Geller",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1696428": {
-     "name": "Paul Scholl",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1818951": {
-     "name": "Danyal Zor",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1829437": {
-     "name": "Jason Ponente",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1832591": {
-     "name": "Eymen Laghrissi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1845073": {
-     "name": "Deniz Ofli",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2101829": {
-     "name": "Ferdinand Gebert",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2130037": {
-     "name": "John Meyer",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": [
-    {
-     "id": "1199713",
-     "name": "Marcel Beifus",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "1666110",
-     "name": "Robert Geller",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -9897,7 +9323,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Uwe Rösler",
@@ -9908,12 +9334,12 @@
     "212815": {
      "name": "Timo Horn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "290201": {
      "name": "Philipp Hofmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "450978": {
      "name": "Marcel Sobottka",
@@ -9923,142 +9349,142 @@
     "462863": {
      "name": "Karol Mets",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "466861": {
      "name": "Sean Klaiber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "521311": {
      "name": "Tino Casali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "556027": {
      "name": "Maximilian Wittek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "620914": {
      "name": "Koji Miyoshi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "625091": {
      "name": "Gerrit Holtmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "872402": {
      "name": "Berkan Taz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "891747": {
      "name": "Daniel Hanslik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "920436": {
      "name": "Philipp Strompf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "940766": {
      "name": "Michael Steinwender",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "945881": {
      "name": "Oliver Olsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1024688": {
      "name": "Jean Manuel Mbom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1087596": {
      "name": "Enis Çokaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1180746": {
      "name": "Christian Rasmussen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1224465": {
      "name": "Jarne Steuckers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1229058": {
      "name": "Charlie Patino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1357381": {
      "name": "Yiğit Karademir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1388931": {
      "name": "Mohammed Tolba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1404461": {
      "name": "Babis Drakas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1469955": {
      "name": "Mansour Ouro-Tagba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1516009": {
      "name": "Aurel Wagbe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1525304": {
      "name": "Mats Pannewig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1617094": {
      "name": "Hugo Rölleke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1763612": {
      "name": "Lasse Isbruch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1845063": {
      "name": "Moritz Göttlicher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1909745": {
      "name": "Alessandro Crimaldi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2070318": {
      "name": "Tom Meyer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2172226": {
      "name": "Leon Sawas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -10554,7 +9980,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Sandro Wagner",
@@ -10565,130 +9991,800 @@
     "652295": {
      "name": "Emir Sahiti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "664810": {
      "name": "Benjamin Källman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "673045": {
      "name": "Maurice Neubauer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "726692": {
      "name": "Marcel Hartel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "745912": {
      "name": "Stefán Thórdarson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "782704": {
      "name": "Leo Weinkauf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "789638": {
      "name": "Mustapha Bundu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "803163": {
      "name": "Benedikt Pichler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "834602": {
      "name": "Virgil Ghiță",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "860609": {
      "name": "Boris Tomiak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1081230": {
      "name": "Jean Hugonet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1178262": {
      "name": "Waniss Taïbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1221941": {
      "name": "Bastian Allgeier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1263675": {
      "name": "Lars Gindorf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1270028": {
      "name": "Pascal Loretz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1275289": {
      "name": "Franz Roggow",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1337351": {
      "name": "Hayate Matsuda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1600334": {
      "name": "Ime Okon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1680367": {
      "name": "Karl Steinmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1689693": {
      "name": "Taycan Etçibasi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1802547": {
      "name": "Alexander Vogel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1804038": {
      "name": "Tom Hobrecht",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1806109": {
      "name": "Yunus Uenal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1820035": {
      "name": "Mwisho Mhango",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2174595": {
      "name": "Jasper Reinhold",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
+  },
+  "Karlsruhe": {
+   "fotmobName": "Karlsruher SC",
+   "fotmobId": 8295,
+   "coach": "Maximilian Senft",
+   "players": [
+    {
+     "id": 972732,
+     "name": "Hans Christian Bernat",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 25,
+     "born": "2000-11-13",
+     "country": "Denmark",
+     "height": 192,
+     "value": 770708,
+     "rating": 6.14,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2101829,
+     "name": "Ferdinand Gebert",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 18,
+     "age": 20,
+     "born": "2006-04-05",
+     "country": "Germany",
+     "height": null,
+     "value": 381371,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 312560,
+     "name": "Robin Himmelmann",
+     "role": "keepers",
+     "position": "GK",
+     "number": 30,
+     "age": 37,
+     "born": "1989-02-05",
+     "country": "Germany",
+     "height": 187,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 167065,
+     "name": "Sebastian Jung",
+     "role": "defenders",
+     "position": "RB,RM,RWB,CAM",
+     "number": 2,
+     "age": 36,
+     "born": "1990-06-22",
+     "country": "Germany",
+     "height": 179,
+     "value": 126748,
+     "rating": 6.74,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1845073,
+     "name": "Deniz Ofli",
+     "role": "defenders",
+     "position": "LB",
+     "number": 3,
+     "age": 19,
+     "born": "2007-03-29",
+     "country": "Turkiye",
+     "height": 175,
+     "value": 746496,
+     "rating": 6.67,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1283759,
+     "name": "Héliton",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 30,
+     "born": "1995-11-13",
+     "country": "Brazil",
+     "height": 195,
+     "value": 637755,
+     "rating": 7.01,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "121",
+      "expectedReturn": "Late October 2026"
+     }
+    },
+    {
+     "id": 1696428,
+     "name": "Paul Scholl",
+     "role": "defenders",
+     "position": "CB",
+     "number": 15,
+     "age": 20,
+     "born": "2006-07-23",
+     "country": "Germany",
+     "height": 193,
+     "value": 677648,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 861662,
+     "name": "Christoph Kobald",
+     "role": "defenders",
+     "position": "CB",
+     "number": 22,
+     "age": 29,
+     "born": "1997-08-18",
+     "country": "Austria",
+     "height": 186,
+     "value": 341706,
+     "rating": 6.57,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1382192,
+     "name": "Sandro Trémoulet",
+     "role": "defenders",
+     "position": "CB",
+     "number": 24,
+     "age": 26,
+     "born": "1999-11-18",
+     "country": "Madagascar",
+     "height": 191,
+     "value": 249575,
+     "rating": 7.12,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 208243,
+     "name": "Marcel Franke",
+     "role": "defenders",
+     "position": "CB",
+     "number": 28,
+     "age": 33,
+     "born": "1993-04-05",
+     "country": "Germany",
+     "height": 193,
+     "value": 173805,
+     "rating": 6.51,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 932268,
+     "name": "Viktor Bergh",
+     "role": "defenders",
+     "position": "LB,LWB",
+     "number": 33,
+     "age": 27,
+     "born": "1999-07-26",
+     "country": "Sweden",
+     "height": 172,
+     "value": 192201,
+     "rating": 6.46,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1640966,
+     "name": "Rafael Pinto Pedrosa",
+     "role": "defenders",
+     "position": "RB,RM,RW,RWB,CAM",
+     "number": 36,
+     "age": 19,
+     "born": "2007-09-30",
+     "country": "Germany",
+     "height": 180,
+     "value": 5284701,
+     "rating": 6.6,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1085809,
+     "name": "Hyeok-Kyu Kwon",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 5,
+     "age": 25,
+     "born": "2001-03-13",
+     "country": "South Korea",
+     "height": 192,
+     "value": 941177,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 942032,
+     "name": "Santeri Väänänen",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 6,
+     "age": 24,
+     "born": "2002-01-01",
+     "country": "Finland",
+     "height": 177,
+     "value": 561123,
+     "rating": 6.67,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1357382,
+     "name": "Kevin Wiethaup",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 7,
+     "age": 21,
+     "born": "2005-08-06",
+     "country": "Germany",
+     "height": 175,
+     "value": 232027,
+     "rating": 6.6,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 458998,
+     "name": "Marvin Wanitzek",
+     "role": "midfielders",
+     "position": "CM,CAM,LM,LW",
+     "number": 10,
+     "age": 33,
+     "born": "1993-05-07",
+     "country": "Germany",
+     "height": 172,
+     "value": 793531,
+     "rating": 7.68,
+     "goals": 2,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1385841,
+     "name": "Noel Eichinger",
+     "role": "midfielders",
+     "position": "CAM,LW,RW,LM,CM,ST",
+     "number": 11,
+     "age": 25,
+     "born": "2001-08-02",
+     "country": "Germany",
+     "height": 183,
+     "value": 267340,
+     "rating": 6.65,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1214053,
+     "name": "Tim Civeja",
+     "role": "midfielders",
+     "position": "CDM,CAM,CM",
+     "number": 23,
+     "age": 24,
+     "born": "2002-01-04",
+     "country": "Germany",
+     "height": 180,
+     "value": 205397,
+     "rating": 6.09,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1114472,
+     "name": "Lilian Egloff",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 25,
+     "age": 24,
+     "born": "2002-08-20",
+     "country": "Germany",
+     "height": 183,
+     "value": 993229,
+     "rating": 6.64,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1818951,
+     "name": "Danyal Zor",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 26,
+     "age": 19,
+     "born": "2007-06-05",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": 6.66,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 936618,
+     "name": "Moritz Broschinski",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 26,
+     "born": "2000-09-23",
+     "country": "Germany",
+     "height": 190,
+     "value": 550076,
+     "rating": 7.7,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "30",
+      "expectedReturn": "Early November 2026"
+     }
+    },
+    {
+     "id": 1477956,
+     "name": "Shio Fukuda",
+     "role": "attackers",
+     "position": "ST",
+     "number": 13,
+     "age": 22,
+     "born": "2004-04-08",
+     "country": "Japan",
+     "height": 178,
+     "value": 797532,
+     "rating": 7.01,
+     "goals": 3,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1832591,
+     "name": "Eymen Laghrissi",
+     "role": "attackers",
+     "position": "ST",
+     "number": 17,
+     "age": 18,
+     "born": "2008-06-04",
+     "country": "Germany",
+     "height": null,
+     "value": 1495415,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1620628,
+     "name": "Louey Ben Farhat",
+     "role": "attackers",
+     "position": "ST",
+     "number": 19,
+     "age": 20,
+     "born": "2006-07-19",
+     "country": "Tunisia",
+     "height": 175,
+     "value": 10777075,
+     "rating": 6.63,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2130037,
+     "name": "John Meyer",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 27,
+     "age": 17,
+     "born": "2009-07-29",
+     "country": "Germany",
+     "height": null,
+     "value": null,
+     "rating": 5.76,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1829437,
+     "name": "Jason Ponente",
+     "role": "attackers",
+     "position": "RW",
+     "number": 37,
+     "age": 19,
+     "born": "2007-02-02",
+     "country": "Italy",
+     "height": null,
+     "value": null,
+     "rating": 6.38,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
+   "coachHistory": [
+    {
+     "name": "Maximilian Senft",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "167065": {
+     "name": "Sebastian Jung",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "208243": {
+     "name": "Marcel Franke",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "312560": {
+     "name": "Robin Himmelmann",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "458998": {
+     "name": "Marvin Wanitzek",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "861662": {
+     "name": "Christoph Kobald",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "932268": {
+     "name": "Viktor Bergh",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "936618": {
+     "name": "Moritz Broschinski",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "942032": {
+     "name": "Santeri Väänänen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "972732": {
+     "name": "Hans Christian Bernat",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1085809": {
+     "name": "Hyeok-Kyu Kwon",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1114472": {
+     "name": "Lilian Egloff",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1199713": {
+     "name": "Marcel Beifus",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1214053": {
+     "name": "Tim Civeja",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1283759": {
+     "name": "Héliton",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1357382": {
+     "name": "Kevin Wiethaup",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1382192": {
+     "name": "Sandro Trémoulet",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1385841": {
+     "name": "Noel Eichinger",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1477956": {
+     "name": "Shio Fukuda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1620628": {
+     "name": "Louey Ben Farhat",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1640966": {
+     "name": "Rafael Pinto Pedrosa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1666110": {
+     "name": "Robert Geller",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1696428": {
+     "name": "Paul Scholl",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1818951": {
+     "name": "Danyal Zor",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1829437": {
+     "name": "Jason Ponente",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1832591": {
+     "name": "Eymen Laghrissi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1845073": {
+     "name": "Deniz Ofli",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2101829": {
+     "name": "Ferdinand Gebert",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2130037": {
+     "name": "John Meyer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    }
+   },
+   "left": [
+    {
+     "id": "1199713",
+     "name": "Marcel Beifus",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "1666110",
+     "name": "Robert Geller",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
   },
   "Darmstadt": {
    "fotmobName": "Darmstadt",
@@ -11145,7 +11241,7 @@
      "id": 642418,
      "name": "Marco Richter",
      "role": "attackers",
-     "position": "RW,CAM,CM,RM",
+     "position": "RW,CAM,RM",
      "number": 5,
      "age": 28,
      "born": "1997-11-24",
@@ -11164,7 +11260,7 @@
      "id": 1231555,
      "name": "Noah Weißhaupt",
      "role": "attackers",
-     "position": "LW,RW,LM",
+     "position": "LW,LM,RW",
      "number": 7,
      "age": 25,
      "born": "2001-09-20",
@@ -11300,7 +11396,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Florian Kohfeldt",
@@ -11321,142 +11417,142 @@
     "343763": {
      "name": "Marcel Schuhen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "553559": {
      "name": "Alexander Brunst-Zöllner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "614571": {
      "name": "Matthias Bader",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "642418": {
      "name": "Marco Richter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "661062": {
      "name": "Luca Marseiler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "808148": {
      "name": "Aleksandar Vukotić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "822832": {
      "name": "Raoul Petretta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "881740": {
      "name": "Christopher Lannert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "909433": {
      "name": "Carlo Sickinger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "951912": {
      "name": "Patric Pfeiffer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "956728": {
      "name": "Lance Duijvestijn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "959045": {
      "name": "Kai Klefisch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "971258": {
      "name": "Fabian Nürnberger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1010726": {
      "name": "Hiroki Akiyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1112136": {
      "name": "Ibrahim El Kadiri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1140910": {
      "name": "Florian Kleinhansl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1168059": {
      "name": "Meldin Drešković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1175955": {
      "name": "Merveille Papela",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1185143": {
      "name": "Fynn Lakenmacher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1231555": {
      "name": "Noah Weißhaupt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1232390": {
      "name": "Ho-Jae Lee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1242757": {
      "name": "William Mikelbrencis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1281097": {
      "name": "Lars Kehl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1337791": {
      "name": "Yosuke Furukawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1353053": {
      "name": "Milan Smit",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1438496": {
      "name": "Yannik Lührs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1554137": {
      "name": "Nicolas Verkooijen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1668657": {
      "name": "Grayson Dettoni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1717166": {
      "name": "Tim Arnold",
@@ -11466,17 +11562,17 @@
     "1790184": {
      "name": "Benedikt Börner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1790185": {
      "name": "Max Pfister",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2130111": {
      "name": "Manolo Merx",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -11553,25 +11649,6 @@
      "born": "2007-03-07",
      "country": "Germany",
      "height": 186,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1901795,
-     "name": "Hugo Afonso",
-     "role": "defenders",
-     "position": "CB,CM",
-     "number": null,
-     "age": 21,
-     "born": "2005-01-28",
-     "country": "Luxembourg",
-     "height": null,
      "value": null,
      "rating": null,
      "goals": 0,
@@ -11785,6 +11862,25 @@
      "country": "Austria",
      "height": 178,
      "value": 501496,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1901795,
+     "name": "Hugo Afonso",
+     "role": "midfielders",
+     "position": "CB,CM",
+     "number": null,
+     "age": 21,
+     "born": "2005-01-28",
+     "country": "Luxembourg",
+     "height": null,
+     "value": null,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12060,7 +12156,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Lars Kornetka",
@@ -12071,7 +12167,7 @@
     "289216": {
      "name": "Benjamin Uphoff",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "683834": {
      "name": "Léon Bell",
@@ -12081,47 +12177,47 @@
     "687328": {
      "name": "Maximilian Entrup",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "820748": {
      "name": "Aaron Opoku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "859752": {
      "name": "Ron-Thorben Hoffmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "865059": {
      "name": "Robin Heußer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "993786": {
      "name": "Noah Katterbach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1024937": {
      "name": "Kevin Ehlers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1072530": {
      "name": "Florian Flick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1081024": {
      "name": "Frederik Jäkel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1082491": {
      "name": "Lino Tempelmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1129220": {
      "name": "Anas Bakhat",
@@ -12131,97 +12227,97 @@
     "1235057": {
      "name": "Lukas Frenkert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1237634": {
      "name": "Mehmet Aydın",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1256221": {
      "name": "Sidney Raebiger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1276507": {
      "name": "Andi Hoti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1368656": {
      "name": "Jovan Mijatović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1381854": {
      "name": "Fabio Di Michele",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1382008": {
      "name": "Sanoussy Ba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1404445": {
      "name": "Sidi Sané",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1462152": {
      "name": "Isidoros Koutsidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1480622": {
      "name": "Junior Zé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1512828": {
      "name": "Damjan Kovacevic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1520061": {
      "name": "Yann Sturm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1532192": {
      "name": "Max Marie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1541355": {
      "name": "Jan Urbich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1596360": {
      "name": "Samuele Di Benedetto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1701663": {
      "name": "Leonard Laatsch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1707669": {
      "name": "Leon Herdes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1819406": {
      "name": "Tristan Wagner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1901795": {
      "name": "Hugo Afonso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -12738,7 +12834,7 @@
      "id": 1677743,
      "name": "Hamza Muqaj",
      "role": "midfielders",
-     "position": "CDM",
+     "position": "CM",
      "number": 48,
      "age": 21,
      "born": "2005-10-03",
@@ -12871,7 +12967,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Tim Walter",
@@ -12882,22 +12978,22 @@
     "212982": {
      "name": "Steven Skrzybski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "409818": {
      "name": "Jonas Meffert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "445204": {
      "name": "Sebastian Schonlau",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "449277": {
      "name": "Giorgi Kvilitaia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "484640": {
      "name": "Carl Johansson",
@@ -12907,7 +13003,7 @@
     "657654": {
      "name": "Marcel Engelhardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "673377": {
      "name": "Patrick Erras",
@@ -12917,32 +13013,32 @@
     "861541": {
      "name": "David Zec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "874272": {
      "name": "Ivan Nekić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "951919": {
      "name": "Timon Weiner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1091141": {
      "name": "Faride Alidou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1136403": {
      "name": "John Tolkin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1159556": {
      "name": "Adrián Kaprálik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1189792": {
      "name": "Lenny Borges",
@@ -12952,107 +13048,107 @@
     "1253909": {
      "name": "Andu Yobel Kelati",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1257990": {
      "name": "Taisei Abe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1258603": {
      "name": "Guillermo Balzi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1275291": {
      "name": "Phil Harres",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1323311": {
      "name": "Gyan de Regt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1368049": {
      "name": "Lasse Rosenboom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1378854": {
      "name": "Jonas Torrissen Therkelsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1436615": {
      "name": "Frederik Roslyng",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1437580": {
      "name": "Kasper Davidsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1477966": {
      "name": "Niko Takahashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1543415": {
      "name": "Hiroki Sekine",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1577605": {
      "name": "Lio Rothenhagen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1601774": {
      "name": "Noah Madsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1677743": {
      "name": "Hamza Muqaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1800278": {
      "name": "Moritz Reimers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1807867": {
      "name": "Tayar Tasdelen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1899702": {
      "name": "Leon Parduzi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1921200": {
      "name": "Ikem Ugoh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2069899": {
      "name": "Caspar Medlin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2130086": {
      "name": "Till Wiese",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2130107": {
      "name": "Mark Richter Monserrat",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
