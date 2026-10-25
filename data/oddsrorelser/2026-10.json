@@ -1543,38 +1543,187 @@
    "kickoffUtc": "2026-10-25T17:30:00Z",
    "src": "api",
    "firstAt": "2026-10-24T19:29:01.002Z",
-   "lastAt": "2026-10-25T12:33:38.549Z",
-   "minBeforeKick": 296,
+   "lastAt": "2026-10-25T16:43:00.578Z",
+   "minBeforeKick": 47,
    "moves": {
     "home": {
      "from": 1.67,
      "to": 1.67,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "draw": {
      "from": 4.33,
      "to": 4.33,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "away": {
      "from": 5.4,
      "to": 5.4,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "over25": {
      "from": 1.6,
      "to": 1.6,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "under25": {
      "from": 2.4,
      "to": 2.4,
+     "pp": 0,
+     "step": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T16:43:37.708Z"
+  },
+  "2026-10-25|L1|Paris SG|Lyon": {
+   "key": "2026-10-25|L1|Paris SG|Lyon",
+   "league": "L1",
+   "date": "2026-10-25",
+   "home": "Paris SG",
+   "away": "Lyon",
+   "kickoffUtc": "2026-10-25T19:45:00Z",
+   "src": "api",
+   "firstAt": "2026-10-25T12:33:38.549Z",
+   "lastAt": "2026-10-25T16:43:00.578Z",
+   "minBeforeKick": 182,
+   "moves": {
+    "home": {
+     "from": 1.48,
+     "to": 1.48,
+     "pp": 0
+    },
+    "draw": {
+     "from": 5.25,
+     "to": 5.25,
+     "pp": 0
+    },
+    "away": {
+     "from": 6.5,
+     "to": 6.5,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.4,
+     "to": 1.4,
+     "pp": 0
+    },
+    "under25": {
+     "from": 3,
+     "to": 3,
      "pp": 0
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-25T12:34:21.372Z"
+   "savedAt": "2026-10-25T16:43:37.708Z"
+  },
+  "2026-10-25|SA|Udinese|Milan": {
+   "key": "2026-10-25|SA|Udinese|Milan",
+   "league": "SA",
+   "date": "2026-10-25",
+   "home": "Udinese",
+   "away": "Milan",
+   "kickoffUtc": "2026-10-25T19:45:00Z",
+   "src": "api",
+   "firstAt": "2026-10-25T12:33:38.549Z",
+   "lastAt": "2026-10-25T16:43:00.578Z",
+   "minBeforeKick": 182,
+   "moves": {
+    "home": {
+     "from": 5.5,
+     "to": 5.5,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4,
+     "to": 4,
+     "pp": 0
+    },
+    "away": {
+     "from": 1.7,
+     "to": 1.7,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.88,
+     "to": 1.88,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.98,
+     "to": 1.98,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T16:43:37.708Z"
+  },
+  "2026-10-25|LL|Barcelona|Real Madrid": {
+   "key": "2026-10-25|LL|Barcelona|Real Madrid",
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Barcelona",
+   "away": "Real Madrid",
+   "kickoffUtc": "2026-10-25T20:00:00Z",
+   "src": "op",
+   "firstAt": "2026-10-25T12:32:51.557Z",
+   "lastAt": "2026-10-25T16:42:36.811Z",
+   "minBeforeKick": 197,
+   "moves": {
+    "home": {
+     "from": 1.62,
+     "to": 1.58,
+     "pp": 0.8
+    },
+    "draw": {
+     "from": 6,
+     "to": 6,
+     "pp": -0.2
+    },
+    "away": {
+     "from": 4.1,
+     "to": 4.15,
+     "pp": -0.6
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T16:43:37.708Z"
+  },
+  "2026-10-25|SA|Lecce|Juventus": {
+   "key": "2026-10-25|SA|Lecce|Juventus",
+   "league": "SA",
+   "date": "2026-10-25",
+   "home": "Lecce",
+   "away": "Juventus",
+   "kickoffUtc": "2026-10-25T17:00:00Z",
+   "src": "op",
+   "firstAt": "2026-10-25T12:32:51.557Z",
+   "lastAt": "2026-10-25T16:42:36.811Z",
+   "minBeforeKick": 17,
+   "moves": {
+    "home": {
+     "from": 6.5,
+     "to": 6.5,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.1,
+     "to": 4.1,
+     "pp": 0
+    },
+    "away": {
+     "from": 1.55,
+     "to": 1.55,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-25T16:43:37.708Z"
   }
  },
- "updatedAt": "2026-10-25T12:34:21.375Z"
+ "updatedAt": "2026-10-25T16:43:37.710Z"
 }
