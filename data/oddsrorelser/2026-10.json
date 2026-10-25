@@ -1589,37 +1589,42 @@
    "kickoffUtc": "2026-10-25T19:45:00Z",
    "src": "api",
    "firstAt": "2026-10-25T12:33:38.549Z",
-   "lastAt": "2026-10-25T16:43:00.578Z",
-   "minBeforeKick": 182,
+   "lastAt": "2026-10-25T19:22:29.915Z",
+   "minBeforeKick": 23,
    "moves": {
     "home": {
      "from": 1.48,
      "to": 1.48,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "draw": {
      "from": 5.25,
      "to": 5.25,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "away": {
      "from": 6.5,
      "to": 6.5,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "over25": {
      "from": 1.4,
      "to": 1.4,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "under25": {
      "from": 3,
      "to": 3,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-25T16:43:37.708Z"
+   "savedAt": "2026-10-25T19:23:16.418Z"
   },
   "2026-10-25|SA|Udinese|Milan": {
    "key": "2026-10-25|SA|Udinese|Milan",
@@ -1630,37 +1635,42 @@
    "kickoffUtc": "2026-10-25T19:45:00Z",
    "src": "api",
    "firstAt": "2026-10-25T12:33:38.549Z",
-   "lastAt": "2026-10-25T16:43:00.578Z",
-   "minBeforeKick": 182,
+   "lastAt": "2026-10-25T19:22:29.915Z",
+   "minBeforeKick": 23,
    "moves": {
     "home": {
      "from": 5.5,
      "to": 5.5,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "draw": {
      "from": 4,
      "to": 4,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "away": {
      "from": 1.7,
      "to": 1.7,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "over25": {
      "from": 1.88,
      "to": 1.88,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "under25": {
      "from": 1.98,
      "to": 1.98,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-25T16:43:37.708Z"
+   "savedAt": "2026-10-25T19:23:16.418Z"
   },
   "2026-10-25|LL|Barcelona|Real Madrid": {
    "key": "2026-10-25|LL|Barcelona|Real Madrid",
@@ -1671,27 +1681,30 @@
    "kickoffUtc": "2026-10-25T20:00:00Z",
    "src": "op",
    "firstAt": "2026-10-25T12:32:51.557Z",
-   "lastAt": "2026-10-25T16:42:36.811Z",
-   "minBeforeKick": 197,
+   "lastAt": "2026-10-25T19:22:06.958Z",
+   "minBeforeKick": 38,
    "moves": {
     "home": {
      "from": 1.62,
-     "to": 1.58,
-     "pp": 0.8
+     "to": 1.6,
+     "pp": 0.3,
+     "step": -0.5
     },
     "draw": {
      "from": 6,
      "to": 6,
-     "pp": -0.2
+     "pp": -0.1,
+     "step": 0.1
     },
     "away": {
      "from": 4.1,
-     "to": 4.15,
-     "pp": -0.6
+     "to": 4.1,
+     "pp": -0.2,
+     "step": 0.4
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-25T16:43:37.708Z"
+   "savedAt": "2026-10-25T19:23:16.418Z"
   },
   "2026-10-25|SA|Lecce|Juventus": {
    "key": "2026-10-25|SA|Lecce|Juventus",
@@ -1725,5 +1738,5 @@
    "savedAt": "2026-10-25T16:43:37.708Z"
   }
  },
- "updatedAt": "2026-10-25T16:43:37.710Z"
+ "updatedAt": "2026-10-25T19:23:16.421Z"
 }
