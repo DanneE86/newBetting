@@ -17,7 +17,6 @@ import { eloToLambdas, eloProbs, CLUB_ELO_SCALE } from './lib/elo-1x2.mjs';
 import { teamElo, TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, buildSystemMissProfiles, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
-import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes, buildRefHomeIndex, refereeHomeBias, applyRefereeAway, refereeAwayNotes, resolveTeam } from './lib/referee-streaks.mjs';
 import { coachMatches, buildCoachIndex, coachTenure, applyNewCoach, newCoachNotes } from './lib/coaches.mjs';
 import { streckFlopFlags, streckFlopNotes, streckFlopSeasonList } from './lib/streck-flop.mjs';
@@ -29,7 +28,7 @@ import { request } from './lib/http.mjs';
 import { xpTable, xpNotes } from './lib/xp-table.mjs';
 import { svsSchemas } from './lib/api-schemas.mjs';
 // Delat med webben: tecknen, folkets färger (visning) och skrällfickan
-import { SIGNS, applyPocket } from '../gui/public/stryk-rules.js';
+import { SIGNS } from '../gui/public/stryk-rules.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -42,13 +41,10 @@ const PRODUCTS = [
 ];
 // Senast kanda omgangsnummer (for att hitta senaste avgjorda kupong nar ingen ar oppen)
 const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
-// Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
-const MODEL_W = Number(process.env.STRYK_MODEL_W ?? 0.1); // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
 // Andel av modelldelen som ar eget lag-Elo (scripts/lib/team-elo.mjs) i stallet for klubbmodellen. 0 = av.
 // Elo raknas pa langre historik (ELO_SEASONS) an klubbmodellen, sa att uppflyttade lag hunnit fa ratt niva.
 const ELO_W = Number(process.env.STRYK_ELO_W ?? 0);
 const ELO_SEASONS = ['2627', '2526', '2425', '2324', '2223'];
-const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_MODEL_W ?? 0.1); // lite data (fa viktade matcher) eller landslag
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Typisk omsattning per spel (minsta omsattning som utdelningen raknas med)
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
@@ -553,20 +549,6 @@ function narrative(a) {
   return out;
 }
 
-// Spikbedomning match for match (scripts/lib/stryk-calibration.mjs): favoritchansen justeras efter hur ofta favoriter av
-// samma slag (chansniva, hemma/borta, liga) vunnit i kupongarkivet fore omgangen, systemet byggs pa de justerade procenten
-// och en match far spikas om den justerade chansen ar minst SPIK_CAL_MIN. STRYK_CALIB=0 stanger av, STRYK_SPIK_CAL styr.
-// Backtest 2026-09-30 (38 ST omg), aterbetalning A+B / C: fast 65 %-grans 29 % / 70 %; match for match med spik fran
-// 55 % 78 % / 69 % (A+B+C -15 401 kr mot -29 312), 60 % 79 % / 65 %, 65 % 41 % / 59 %, ingen niva 70 % / 73 %.
-// Europatipset (55 omg) blev samre av justeringen (A+B 19 % mot 39 %, C 55 % mot 76 %): dar byggs systemet pa modellens
-// procent och bedomningen visas bara.
-const CALIB = process.env.STRYK_CALIB !== '0';
-// Anvandarens regel 2026-09-30: alla matcher bedoms ALLTID match for match, pa bada spelen.
-const CALIB_FOR = new Set((process.env.STRYK_CALIB_FOR || 'stryktipset,europatipset').split(','));
-// Europatipset (55 omg) med bedomning: spik fran 55 % A+B+C -44 457 kr, ingen niva -52 175, 60 % -62 498, 65 % -66 663.
-const SPIK_CAL_MIN_BY_PRODUCT = { stryktipset: 0.55, europatipset: 0.55 };
-const spikCalMinFor = (productId) => Number(process.env.STRYK_SPIK_CAL ?? SPIK_CAL_MIN_BY_PRODUCT[productId] ?? 0);
-
 // Varde per omgang: forvantad aterbetalning fran 13 ratt / insats (system A). Nivaer fran backtest 2025/26
 // (33 omg): p25 0,26, median 0,33, p75 0,40. Lagt varde -> skrivs ut, men raderna skapas anda (anvandarens val).
 const VALUE_LEVELS = { low: 0.26, high: 0.40 };
@@ -856,14 +838,12 @@ async function analyzeDraw(product, draw, ctx, result) {
       const x = matchExtraOdds(extraCache, { league: a.league, kickoff: m.matchStart, home, away, homeCountry: hp?.countryName, awayCountry: ap?.countryName });
       if (x?.p) { a.market = x.p; a.marketSource = x.source; a.sharpOdds = x.odds; }
     }
-    // Blandning
-    const wm = a.model ? (a.thin ? MODEL_W_THIN : MODEL_W) : 0;
-    if (a.market && a.model) a.final = a.market.map((p, i) => (1 - wm) * p + wm * a.model[i]);
-    // Inga odds alls (t.ex. innan oddsen slapps): modellen ensam ar for saker (Elo gav Frankrike-Italien 80 %),
-    // folkets streck ar nastan lika traffsakert som oddsen (Europatipset logloss 0,990 mot 0,994) -> halva/halva
-    else if (a.model && folk) { a.final = a.model.map((p, i) => 0.5 * p + 0.5 * folk[i]); a.basis = `${a.basis}+folk`; }
-    else a.final = a.market || a.model || folk || [1 / 3, 1 / 3, 1 / 3];
-    if (!a.market && !a.model) a.basis = folk ? 'folk' : 'none';
+    // Bara data och historik (anvandaren 2026-10-25: "Bedom matcherna bara pa data dar samt historik"): procenten ar var
+    // modell utan odds (lagmodellen pa mal+xG, Elo nar lagdata saknas) med de historiska justeringarna nedan (domare, ny
+    // tranare, lardomar). Oddsen och folkets streck blandas inte in; oddsen anvands bara for Varde. Ingen data -> 1/3 var.
+    const wm = a.model ? 1 : 0;
+    a.final = a.model || [1 / 3, 1 / 3, 1 / 3];
+    if (!a.model) a.basis = 'none';
     // Domare med lag hemmavinst historiskt (hogst 38 % pa minst 40 engelska ligamatcher): bortalaget vinner oftare an oddsen
     // sager (anvandaren 2026-10-02 kvall: "fixa detta", test i scripts/lib/referee-streaks.mjs AWAY_REF). Bara engelska ligor
     // och bara nar FotMob har domaren (oppna omgangar). Flyttar procenten fore tips, spikbedomning och system.
@@ -890,13 +870,7 @@ async function analyzeDraw(product, draw, ctx, result) {
       const adj = adjustProbs(a.final, a.leagueCode, sig, 'close');
       if (adj.applied.length) { a.learned = { applied: adj.applied, before: a.final.map(r3) }; a.final = adj.p; }
     }
-    // Skrallficka (2026-10-11): skrall i PL/Championship dar oddsen ger 20-30 % och minst 1,3 x folkets streck gick in oftare
-    // an oddsen sa (kupongarkivet, kontroll 2025/26-). Tecknet hojs med POCKET.lift i stryk-rules.js och markeras (a.pocket).
-    if (folk) {
-      const pk = applyPocket({ league: a.league, market: a.market, final: a.final, folk });
-      if (pk.signs.length) { a.pocket = pk.signs.map((k) => SIGNS[k]); a.final = pk.p; }
-    }
-    // Procenten fore domar- och tranarjusteringen (odds + modell)
+    // Procenten fore domar-, tranar- och lardomsjusteringen (bara modellen)
     if (a.final !== finalBase) a.finalBase = finalBase.map(r3);
     a.modelWeight = wm;
     const order = [0, 1, 2].sort((x, y) => a.final[y] - a.final[x]);
@@ -945,41 +919,26 @@ async function analyzeDraw(product, draw, ctx, result) {
   if (process.env.STRYK_JACKPOT === '0') jackpot = 0; // for jamforelse i backtest
   const rowPrice = num(draw.rowPrice) || 1;
   const closeDate = (draw.regCloseTime || '').slice(0, 10);
-  // Spikbedomning match for match; systemen byggs pa de justerade procenten (sysEv), matchkorten visar modellens
-  const calib = CALIB ? calibrationTable(product.id, draw.regCloseTime || new Date().toISOString()) : null;
-  const used = CALIB_FOR.has(product.id);
+  // Bara data och historik (2026-10-25): ingen spikbedomning mot kupongarkivet (den ar kalibrerad pa var gamla
+  // marknadsstyrda procent och arkivet saknar modellens procent) och inga Oddset-tips. Starka spikar = datakravet.
   out.forEach((a) => {
-    a.spik = assessMatch(a.final, a.league, calib, used ? spikCalMinFor(product.id) : 0);
-    if (a.spik) {
-      a.spik.used = used; // Europatipset: bara visning
-      // Forst i analysen: FotMob-kontexten ska ligga sist
-      a.analysis = [assessmentText(a.spik, a.home, a.away), ...(a.analysis || [])];
-    }
-    // Icke-spikbara (eller ET dar spik bara visas): tipsa som Oddset nar matchen finns i tips-latest
-    const spiked = a.spik?.used && a.spik.spikbar;
-    if (!spiked && applyOddsetTipBasis(a)) {
-      const src = a.oddsetTip?.source ? String(a.oddsetTip.source) : 'marknad';
-      a.analysis = [`Tips som Oddset (${src}${a.oddsetTip?.modelW ? `, modell ${Math.round(a.oddsetTip.modelW * 100)} %` : ''}).`, ...(a.analysis || [])];
-    }
+    if (!a.model?.length) return;
+    const dp = Math.max(...a.model), di = a.model.indexOf(dp);
+    const name = di === 0 ? a.home : di === 2 ? a.away : 'Kryss';
+    const ok = dp >= FILE_RULES.spikDataMin;
+    // Forst i analysen: FotMob-kontexten ska ligga sist
+    a.analysis = [`Data utan odds: ${name} ${Math.round(dp * 100)} % – ${ok ? 'klarar' : 'under'} spikkravet ${Math.round(FILE_RULES.spikDataMin * 100)} %.`, ...(a.analysis || [])];
   });
-  // Spikbara: kalibrerad sysP. Ovriga med Oddset-bas: Oddsets final. Ovriga: sysP om kalibrering anvands.
-  const sysEv = out.map((a) => {
-    if (a.tipBasis === 'oddset') return a.spik?.used ? { ...a } : { ...a, spik: undefined };
-    if (a.spik?.used) return { ...a, final: a.spik.sysP };
-    return { ...a, spik: undefined };
-  });
-  // Filkuponger A, B och C (anvandaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att gora, ta bort alla
-  // regler, vill bara kora pa fil"). Samma motor som webben (gui/public/stryk-engine.js buildFileCoupons): 4 spikar (3 starka + 1 skrall),
-  // A = 500 troligaste raderna >= 30 000 kr, B = nasta 500 utanfor A, C = underspelade tecken uppviktade. Spelas som
-  // Egna rader-fil (reduced.egnaRader).
-  let system = null, reduced = null, systemB = null, reducedB = null, systemC = null, reducedC = null;
+  const sysEv = out;
+  // Filkupong A (anvandaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att gora, ta bort alla regler, vill
+  // bara kora pa fil"). Samma motor som webben (gui/public/stryk-engine.js buildFileCoupons): starka spikar pa data + 1 skrall,
+  // de 500 troligaste raderna >= 30 000 kr. Spelas som Egna rader-fil (reduced.egnaRader). B och C borttagna 2026-10-25.
+  let system = null, reduced = null;
   if (out.length) {
     const fc = buildFileCoupons({ product: product.id }, sysEv, () => sysEv.map(() => null), { rowPrice, turnover, realTurnover, jackpot });
     const asSystem = (c) => c && { rows: c.grundRows, hitAll: c.hitAll, picks: c.picks, sets: c.picks.map((x) => [...x.signs].map((t) => SIGNS.indexOf(t))) };
-    system = asSystem(fc.A); reduced = fc.A; systemB = asSystem(fc.B); reducedB = fc.B; systemC = asSystem(fc.C); reducedC = fc.C;
+    system = asSystem(fc.A); reduced = fc.A;
     if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
-    if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
-    if (reducedC) reducedC.picks = systemC.picks.map((x) => x.signs);
   }
   const bestRowOf = (red) => red && Math.max(...red.rowList.map((row) => out.filter((a, i) => a.result && row[i] === a.result.outcome).length));
   const bestRow = () => bestRowOf(reduced);
@@ -990,13 +949,10 @@ async function analyzeDraw(product, draw, ctx, result) {
     system: system && { rows: system.rows, hitAll: system.hitAll, hitSingle: out.reduce((s, e) => s * Math.max(...e.final), 1) },
     value: drawValue(reduced, jackpot),
     reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
-    reducedC: reducedC && { ...reducedC, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
-    reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
       reducedCorrect: bestRow(),
-      reducedCorrectB: bestRowOf(reducedB),
       total: out.filter((a) => a.result).length,
       experts: [...new Set(out.flatMap((a) => a.experts.map((x) => x.author)))].map((author) => ({
         author,
@@ -1048,18 +1004,11 @@ function saveSnapshot(a) {
     // Odds och streck som de sag ut nar systemet sparades (for rattvisa backtest senare)
     matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null, context: ctxSummary(e.context, e.refereeStreak), refereeAway: e.refereeAway?.flag ? { matches: e.refereeAway.matches, homeRate: e.refereeAway.homeRate } : null, newCoach: e.newCoach || null, finalBase: e.finalBase || null })),
   };
-  const snapB = a.reducedB && {
-    at: snap.at, rows: a.reducedB.rows, cost: a.reducedB.cost, hitAll: a.reducedB.hitAll,
-    rules: a.reducedB.rules, rowList: a.reducedB.rowList,
-    picks: a.events.map((e) => e.systemPickB?.signs || ''),
-  };
   const entry = prev || {
     product: a.product, productName: a.productName, drawNumber: a.drawNumber, closeTime: a.regCloseTime,
     closeDescription: a.closeDescription, matches: a.events.map((e) => `${e.home} - ${e.away}`), saved: snap,
   };
   entry.latest = snap;
-  // Paret A+B lases forsta gangen B sparas (A som den sag ut da)
-  if (snapB) { if (!entry.savedB) { entry.savedB = snapB; entry.pairA = snap; } entry.latestB = snapB; }
   fs.writeFileSync(file, JSON.stringify(entry, null, 2), 'utf8');
 }
 
@@ -1160,10 +1109,8 @@ async function main() {
         log(`  OBS lagnamn ej matchade: ${e.home} (${e.matched?.home ?? '?'}) - ${e.away} (${e.matched?.away ?? '?'})`);
       }
       log(`  expertanalyser: ${a.events.reduce((s, e) => s + e.experts.length, 0)}, tio tidningar: ${a.events.filter((e) => e.tioTidningar).length} matcher`);
-      if (a.reducedB) log(`  fil B: ${a.reducedB.rows} rader (${a.reducedB.cost} kr), utdelning ≥ ${a.reducedB.rules.payoutMin} kr, chans 13 rätt 1 på ${Math.round(1 / a.reducedB.hitAll)}, A+B 1 på ${Math.round(1 / (a.reducedB.unionHit || a.reducedB.hitAll))}`);
       if (a.value) log(`  värde: ${a.value.level} (${Math.round(a.value.ratio * 100)} %)`);
       if (a.reduced) log(`  fil A: ${a.reduced.rows} rader (${a.reduced.cost} kr), utdelning ≥ ${a.reduced.rules.payoutMin} kr, ${a.reduced.rules.spikes} spikar, chans 13 rätt 1 på ${Math.round(1 / a.reduced.hitAll)}`);
-      if (a.reducedC) log(`  fil C: ${a.reducedC.rows} rader (${a.reducedC.cost} kr), chans 13 rätt 1 på ${Math.round(1 / a.reducedC.hitAll)}`);
       if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, grundrad ${a.result.systemCorrect}/${a.result.total}, reducerat bästa rad ${a.result.reducedCorrect}/${a.result.total}`);
       for (const x of a.result?.experts || []) log(`  expert ${x.author}: ${x.correct}/${x.tipped} rätt`);
     } catch (e) {
@@ -1192,7 +1139,7 @@ async function main() {
     updatedAt: new Date().toISOString(),
     source: 'api.spela.svenskaspel.se + football-data.co.uk + eloratings.net',
     method: {
-      blend: `Slutprocent = ${Math.round((1 - MODEL_W) * 100)} % Svenska Spels odds (utan marginal) + ${Math.round(MODEL_W * 100)} % egen modell (${Math.round(MODEL_W_THIN * 100)} % vid tunt underlag/landslag).`,
+      blend: 'Slutprocent = bara data och historik (2026-10-25): egen modell utan odds, justerad för domare, ny tränare och lärdomar. Oddsen och folkets streck används inte i bedömningen.',
       club: 'Klubblag: viktad Poisson (anfall/försvar, hemmafördel, halveringstid 150 dagar, xG inblandat) per land; England skattas gemensamt över PL, Championship, League One och League Two.',
       national: 'Landslag: World Football Elo (eloratings.net) omräknat till förväntade mål.',
       elo: 'Elo bredvid lagnamnen: eget lag-Elo ur ligaresultaten (England, Spanien, Italien m.fl., MLS, Brasilien) eller Klubb-Elo (clubelo.com, Europacup och nordiska ligor). Elo-skillnaden krymps till 75 % eftersom Elo annars är för säker på favoriten. Lag-Elo är bara visning; Klubb-Elo används som egen modell när lagmodell saknas.',
@@ -1215,7 +1162,7 @@ async function main() {
 // Reglerna som galler just nu (sparas med varje arkiverad kupong)
 function currentRules(productId) {
   // Filkupongerna (2026-10-11): ändras reglerna byggs arkivet om (build-tips-archive.mjs jämför detta objekt)
-  return { file: { ...FILE_RULES }, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, product: productId };
+  return { file: { ...FILE_RULES }, market: MARKET_MODE, product: productId };
 }
 
 export { analyzeDraw, findOddsetRow, applyOddsetTipBasis, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, currentRules, PRODUCTS };

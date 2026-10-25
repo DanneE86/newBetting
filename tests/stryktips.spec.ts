@@ -33,14 +33,15 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       // Reservspik (2026-10-02: högst 2 helgula garderingar) ligger på favoriten i systemets justerade procent, som kan skilja från tipset
       const sysP = e.spik?.used ? e.spik.sysP : e.final;
       const reserveSpik = e.systemPick.signs.length === 1 && sysP['1X2'.indexOf(e.systemPick.signs)] === Math.max(...sysP);
-      if (!reserveSpik) expect(e.systemPick.signs).toContain(e.tip);
+      // Skrällspiken (2026-10-20) är med avsikt inte tipset
+      if (!reserveSpik && !e.systemPick.spikSkrall) expect(e.systemPick.signs).toContain(e.tip);
       // Svenska Spels expertanalyser (kan vara tomma innan de publicerats)
       expect(Array.isArray(e.experts)).toBe(true);
       for (const x of e.experts) expect(x.signs).toMatch(/^[1X2]+$/);
     }
     // Filkuponger (2026-10-11): ingen grundradsgräns – raderna väljs en och en
-    // Filkuponger (2026-10-11): A, B och C à 500 rader som Egna rader-fil, ingen Gambling Cabin-länk
-    for (const red of [p.reduced, p.reducedB, p.reducedC]) {
+    // Filkupong A (2026-10-11) à 500 rader som Egna rader-fil, ingen Gambling Cabin-länk. B och C borttagna 2026-10-25
+    for (const red of [p.reduced]) {
       expect(red.cost).toBe(500 * (red.rowPrice || 1));
       expect(new Set(red.rowList).size).toBe(red.rows);
       expect(red.gamblingCabinUrl).toBeUndefined();
@@ -50,8 +51,8 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       expect(red.egnaRader.trim().split('\n')).toHaveLength(red.rows + 1);
     }
     expect(p.value?.level).toMatch(/^(low|normal|high)$/);
-    const setA = new Set(p.reduced.rowList);
-    expect(p.reducedB.rowList.some((r: string) => setA.has(r))).toBe(false);
+    expect(p.reducedB).toBeUndefined();
+    expect(p.reducedC).toBeUndefined();
   }
 });
 

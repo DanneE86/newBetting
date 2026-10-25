@@ -208,7 +208,7 @@ function lineupRow(e) {
   if (!status && !sides) return "";
   const effect = l.alpha
     ? `Lagmodellens anfall justerat: ${e.home} ×${dec(l.home?.attackFactor ?? 1)}, ${e.away} ×${dec(l.away?.attackFactor ?? 1)}.`
-    : "Påverkar inte procenten direkt (Oddsets backtest valde vikt 0) – oddsen tar hänsyn till elvorna när de hämtas sent.";
+    : "Påverkar inte procenten (backtesten valde vikt 0) – procenten bygger bara på data och historik, inte på oddsen.";
   return `<div class="st-lineup"><span class="st-svs-k">Startelvor</span>${status}${sides}<small class="st-lu-note">${effect}</small></div>`;
 }
 
@@ -909,7 +909,8 @@ function couponCard(c, label, p) {
   const file = `${p.product}-${p.drawNumber}-${label}.txt`;
   // Egna spikar: kupongen spikar inga andra matcher
   const own = c.picks.some((x) => x.locked && x.signs.length === 1);
-  const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${FILE_RULES.spikes} spikar: omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
+  const nSpik = c.picks.filter((x) => x.signs.length === 1).length;
+  const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${nSpik} ${nSpik === 1 ? "spik" : "spikar"}: högst ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} favoriter med minst ${Math.round(FILE_RULES.spikDataMin * 100)} % på data och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
   return `<div class="sb-coupon is-main ds-card">
     ${tag}
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
@@ -1109,24 +1110,24 @@ function skrallTipBox(p, res) {
     const inC = ["A"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
     const facit = t.hit == null ? "" : ` <span class="st-chip ${t.hit ? "good" : "bad"}">${t.hit ? "Gick in" : "Gick inte in"}${t.score ? ` · ${esc(t.score)}` : ""}</span>`;
     const label = i === 0 ? "Förstaval" : t.weak ? "Reserv (svagare)" : "Andraval";
-    const weakTxt = kind === "x" ? "Klarar inte hela kravet (minst 26 % och 2 procentenheter över folket) men är det bästa krysset som finns kvar." : "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar.";
+    const weakTxt = kind === "x" ? "Klarar inte hela kravet (minst 26 % på data) men är det bästa krysset som finns kvar." : "Klarar inte hela skrällkravet (minst 30 % på data) men är den bästa som finns kvar.";
     const what = kind === "x" ? ["Omgångens bästa skrällkryss.", "Näst bästa krysset, på en annan match."] : ["Omgångens bästa skräll.", "Näst bästa skrällen, på en annan match."];
     return `<div class="st-skrall-item">
-      <p class="st-skrall-pick"><small class="st-skrall-rank">${label}</small><br><span class="st-num">${t.eventNumber}</span> <b>${esc(t.home)} – ${esc(t.away)}</b>: spika <b class="st-skrall-sign">${esc(t.sign)}</b> (${esc(t.outcome)})${facit}<br><small>${esc(kickoff(t.kickoff))} · ${esc(t.league || "")} · vår chans ${pct(t.p)}, folket ${pct(t.folk)}</small></p>
+      <p class="st-skrall-pick"><small class="st-skrall-rank">${label}</small><br><span class="st-num">${t.eventNumber}</span> <b>${esc(t.home)} – ${esc(t.away)}</b>: spika <b class="st-skrall-sign">${esc(t.sign)}</b> (${esc(t.outcome)})${facit}<br><small>${esc(kickoff(t.kickoff))} · ${esc(t.league || "")} · data ${pct(t.p)}, oddsen ${pct(t.odds)}</small></p>
       <p>${t.weak ? weakTxt : what[i === 0 ? 0 : 1]}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongen spikar den inte – lägg den som krav själv om du vill."}</p>
       <details class="sb-howto"${keep(`skrall-${kind}-why-${i}`)}><summary>Varför?</summary><ul>${t.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>
     </div>`;
   };
   const spikPart = tips.length
     ? `<p class="st-skrall-h">Skrällspikar</p>
-    <p><b>Kort sagt:</b> folket tror för lite på de här tecknen. Vill du chansa på en skräll – välj ${tips.length > 1 ? "en av de två" : "den här"}.</p>
+    <p><b>Kort sagt:</b> datan (vår modell utan odds) ger de här tecknen störst chans utanför favoriten. Folkets streck spelar ingen roll. Vill du chansa på en skräll – välj ${tips.length > 1 ? "en av de två" : "den här"}.</p>
     ${tips.map(pick("spik")).join("")}`
-    : `<p class="st-skrall-h">Skrällspikar</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % hos oss och är understreckat av folket.</p>`;
+    : `<p class="st-skrall-h">Skrällspikar</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % på data.</p>`;
   const xPart = kryss.length
     ? `<p class="st-skrall-h">Skrällkryss <small>ligger inte i kupongen</small></p>
-    <p><b>Kort sagt:</b> folket tror för lite på oavgjort i de här matcherna. Vill du chansa på ett kryss – välj ${kryss.length > 1 ? "ett av de två" : "det här"}.</p>
+    <p><b>Kort sagt:</b> datan ger oavgjort störst chans i de här matcherna. Vill du chansa på ett kryss – välj ${kryss.length > 1 ? "ett av de två" : "det här"}.</p>
     ${kryss.map(pick("x")).join("")}`
-    : `<p class="st-skrall-h">Skrällkryss</p><p>Inget skrällkryss denna omgång: inget kryss har minst 22 % hos oss och är understreckat av folket.</p>`;
+    : `<p class="st-skrall-h">Skrällkryss</p><p>Inget skrällkryss denna omgång: inget kryss har minst 22 % på data.</p>`;
   const count = n ? `${n} tips` : "inga denna omgång";
   return `<details class="st-skrall ds-notice" role="note"${keep("skrall")}>
     <summary><span class="st-skrall-title">Skrälltips</span> <small>${esc(count)}</small></summary>
@@ -1191,7 +1192,7 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Kupongen är en <b>fil</b> med 1 rad per krona – summan sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
-            <li><b>Spikar:</b> ${FILE_RULES.spikes} spikar – omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter (vår procent) och 1 lite skrälligare: omgångens bästa skrällspik (förstavalet under Skrälltips, ett tecken som inte är favorit men som folket streckat för lite). Finns ingen skräll blir det ännu en stark favorit. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
+            <li><b>Spikar:</b> varje match bedöms först för sig på data (vår modell utan odds). En favorit spikas bara om datan ger den minst ${Math.round(FILE_RULES.spikDataMin * 100)} % och har samma favorit som vår procent – högst ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} sådana, de starkaste på data. Klarar färre matcher kravet blir det färre spikar. Dessutom 1 lite skrälligare: omgångens bästa skrällspik (förstavalet under Skrälltips, det tecken utanför favoriten som datan ger störst chans – folkets streck spelar ingen roll). Finns ingen skräll blir det ännu en datastark favorit om någon finns. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
             <li>De troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
             <li>Förstavalet bland skrällspikarna överst på sidan är kupongens skrällspik. Andravalet och skrällkryssen ligger inte i kupongen – lägg dem som krav om du vill chansa.</li>
             <li>⚠ i tabellen = tecken som kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
