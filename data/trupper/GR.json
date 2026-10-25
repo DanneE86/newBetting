@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "GR",
  "fotmobId": 135,
  "source": "FotMob",
@@ -310,7 +310,7 @@
      "born": "1989-08-16",
      "country": "France",
      "height": 187,
-     "value": 160467,
+     "value": 143948,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -417,7 +417,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "A few weeks"
+      "expectedReturn": "Early January 2027"
      }
     },
     {
@@ -540,7 +540,7 @@
      "role": "attackers",
      "position": "LW,LM,CAM",
      "number": 10,
-     "age": 20,
+     "age": 21,
      "born": "2005-10-25",
      "country": "Argentina",
      "height": null,
@@ -668,7 +668,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Jacob Neestrup",
@@ -679,175 +679,951 @@
     "94550": {
      "name": "Moussa Sissoko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "188555": {
      "name": "Stefan de Vrij",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "213873": {
      "name": "Sverrir Ingi Ingason",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "518633": {
      "name": "Giorgos Kyriakopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "525133": {
      "name": "Erik Palmer-Brown",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "526230": {
      "name": "Cyriel Dessers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "560841": {
      "name": "Kostas Kotsaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "612755": {
      "name": "Davide Calabria",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "680031": {
      "name": "Pedro Chirivella",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "690302": {
      "name": "Rick van Drongelen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "717557": {
      "name": "Levi García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "736344": {
      "name": "Lucas Abraham Chávez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "990996": {
      "name": "Iñaki Peña",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "993022": {
      "name": "Imrân Louza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1050838": {
      "name": "Anass Salah-Eddine",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1061612": {
      "name": "Kings Kangwa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1073143": {
      "name": "Azzedine Ounahi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1073402": {
      "name": "Facundo Pellistri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1211437": {
      "name": "Victor Kristiansen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1222191": {
      "name": "Étienne Camara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1280328": {
      "name": "Vicente Taborda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1318666": {
      "name": "Triantafyllos Tsapras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1318701": {
      "name": "Andrews Tetteh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1347804": {
      "name": "Elmin Rastoder",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1515990": {
      "name": "Adriano Jagušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526934": {
      "name": "Pavlos Pantelidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526975": {
      "name": "Sotiris Kontouris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1613657": {
      "name": "Georgios Katris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1680164": {
      "name": "Santino Andino Valencia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1785059": {
      "name": "Giannis Bokos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1787032": {
      "name": "Vasileios Lavdas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1857608": {
      "name": "Christos Geitonas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1872021": {
      "name": "Iason Nempis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2097464": {
      "name": "Panagiotis Biniaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
+  },
+  "AEK": {
+   "fotmobName": "AEK Athens",
+   "fotmobId": 8563,
+   "coach": "Marko Nikolić",
+   "players": [
+    {
+     "id": 403049,
+     "name": "Thomas Strakosha",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 31,
+     "born": "1995-03-19",
+     "country": "Albania",
+     "height": 186,
+     "value": 1873692,
+     "rating": 6.84,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "34",
+      "expectedReturn": "Unknown"
+     }
+    },
+    {
+     "id": 2251243,
+     "name": "Georgios Sarakasidis",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 31,
+     "age": 15,
+     "born": "2010-11-01",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1798250,
+     "name": "Marios Balamotis",
+     "role": "keepers",
+     "position": "GK",
+     "number": 41,
+     "age": 21,
+     "born": "2005-05-06",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 299879,
+     "name": "Alberto Brignoli",
+     "role": "keepers",
+     "position": "GK",
+     "number": 91,
+     "age": 35,
+     "born": "1991-08-19",
+     "country": "Italy",
+     "height": 187,
+     "value": 180869,
+     "rating": 7.47,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 637737,
+     "name": "Harold Moukoudi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 2,
+     "age": 28,
+     "born": "1997-11-27",
+     "country": "Cameroon",
+     "height": 191,
+     "value": 4614319,
+     "rating": 7.14,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1015750,
+     "name": "Stavros Pilios",
+     "role": "defenders",
+     "position": "LB,CM",
+     "number": 3,
+     "age": 25,
+     "born": "2000-12-10",
+     "country": "Albania",
+     "height": 175,
+     "value": 1765437,
+     "rating": 7.68,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1661197,
+     "name": "Christos Alexiou",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 21,
+     "born": "2005-06-30",
+     "country": "Greece",
+     "height": 186,
+     "value": 1168568,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 949866,
+     "name": "Lazaros Rota",
+     "role": "defenders",
+     "position": "RB",
+     "number": 12,
+     "age": 29,
+     "born": "1997-08-23",
+     "country": "Greece",
+     "height": 180,
+     "value": 2316350,
+     "rating": 7.34,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1295674,
+     "name": "Martin Georgiev",
+     "role": "defenders",
+     "position": "RB,CB",
+     "number": 15,
+     "age": 21,
+     "born": "2005-09-24",
+     "country": "Bulgaria",
+     "height": 184,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 115180,
+     "name": "Domagoj Vida",
+     "role": "defenders",
+     "position": "CB",
+     "number": 21,
+     "age": 37,
+     "born": "1989-04-29",
+     "country": "Croatia",
+     "height": 184,
+     "value": 85644,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 395914,
+     "name": "Charalambos Lykogiannis",
+     "role": "defenders",
+     "position": "LB",
+     "number": 22,
+     "age": 33,
+     "born": "1993-10-22",
+     "country": "Greece",
+     "height": 186,
+     "value": 572081,
+     "rating": 6.24,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1285815,
+     "name": "Filipe Relvas",
+     "role": "defenders",
+     "position": "CB",
+     "number": 44,
+     "age": 27,
+     "born": "1999-09-20",
+     "country": "Portugal",
+     "height": 192,
+     "value": 2431456,
+     "rating": 7.7,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2135145,
+     "name": "Spyros Christakopoulos",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 57,
+     "age": 20,
+     "born": "2006-09-21",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 547454,
+     "name": "Kaan Kairinen",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 6,
+     "age": 27,
+     "born": "1998-12-22",
+     "country": "Finland",
+     "height": 186,
+     "value": 5146153,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 617396,
+     "name": "Dereck Kutesa",
+     "role": "midfielders",
+     "position": "LW,LM",
+     "number": 7,
+     "age": 28,
+     "born": "1997-12-06",
+     "country": "Switzerland",
+     "height": 176,
+     "value": 2023660,
+     "rating": 6.73,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 448859,
+     "name": "Mijat Gaćinović",
+     "role": "midfielders",
+     "position": "LM,RM,CAM,RB,LW",
+     "number": 8,
+     "age": 31,
+     "born": "1995-02-08",
+     "country": "Serbia",
+     "height": 175,
+     "value": 981735,
+     "rating": 7.17,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 725695,
+     "name": "Aboubakary Koïta",
+     "role": "midfielders",
+     "position": "LM,RM,LW,ST,RW,CAM",
+     "number": 11,
+     "age": 28,
+     "born": "1998-09-20",
+     "country": "Mauritania",
+     "height": 175,
+     "value": 4054641,
+     "rating": 7.23,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 762721,
+     "name": "Lovro Majer",
+     "role": "midfielders",
+     "position": "CAM,RM,RW",
+     "number": 14,
+     "age": 28,
+     "born": "1998-01-17",
+     "country": "Croatia",
+     "height": 179,
+     "value": 13283318,
+     "rating": 7.61,
+     "goals": 0,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 839750,
+     "name": "Kervin Arriaga",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 16,
+     "age": 28,
+     "born": "1998-01-05",
+     "country": "Honduras",
+     "height": 191,
+     "value": 1444475,
+     "rating": 6.13,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 574844,
+     "name": "Răzvan Marin",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 18,
+     "age": 30,
+     "born": "1996-05-23",
+     "country": "Romania",
+     "height": 177,
+     "value": 2213462,
+     "rating": 7.62,
+     "goals": 1,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 184639,
+     "name": "Petros Mantalos",
+     "role": "midfielders",
+     "position": "CAM,CDM,LM,CM",
+     "number": 20,
+     "age": 35,
+     "born": "1991-08-31",
+     "country": "Greece",
+     "height": 176,
+     "value": 285140,
+     "rating": 6.74,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1197823,
+     "name": "Milán Vitális",
+     "role": "midfielders",
+     "position": "CDM,CM,CAM",
+     "number": 27,
+     "age": 24,
+     "born": "2002-01-28",
+     "country": "Hungary",
+     "height": 179,
+     "value": 1547979,
+     "rating": 7.67,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1453434,
+     "name": "Hakim Sahabo",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 80,
+     "age": 21,
+     "born": "2005-06-16",
+     "country": "Rwanda",
+     "height": 183,
+     "value": 1610052,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 833641,
+     "name": "Frantzdy Pierrot",
+     "role": "attackers",
+     "position": "ST",
+     "number": null,
+     "age": 31,
+     "born": "1995-03-29",
+     "country": "Haiti",
+     "height": 194,
+     "value": 775743,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 463291,
+     "name": "Luka Jović",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 28,
+     "born": "1997-12-23",
+     "country": "Serbia",
+     "height": 181,
+     "value": 5675548,
+     "rating": 7.31,
+     "goals": 4,
+     "assists": 0,
+     "penalties": 1,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 655636,
+     "name": "Oleksandr Zubkov",
+     "role": "attackers",
+     "position": "RW,LW,RM",
+     "number": 10,
+     "age": 30,
+     "born": "1996-08-03",
+     "country": "Ukraine",
+     "height": 182,
+     "value": 4162145,
+     "rating": 6.77,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1412199,
+     "name": "Dimitrios Kaloskamis",
+     "role": "attackers",
+     "position": "RW,CAM,CM",
+     "number": 17,
+     "age": 21,
+     "born": "2005-03-01",
+     "country": "Greece",
+     "height": 171,
+     "value": 1631539,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 796504,
+     "name": "Barnabás Varga",
+     "role": "attackers",
+     "position": "ST",
+     "number": 19,
+     "age": 32,
+     "born": "1994-10-25",
+     "country": "Hungary",
+     "height": 185,
+     "value": 2184432,
+     "rating": 7.75,
+     "goals": 5,
+     "assists": 0,
+     "penalties": 1,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 300916,
+     "name": "Joao Mário",
+     "role": "attackers",
+     "position": "LW,CAM,LM",
+     "number": 23,
+     "age": 33,
+     "born": "1993-01-19",
+     "country": "Portugal",
+     "height": 179,
+     "value": 919093,
+     "rating": 6.72,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1814510,
+     "name": "Zois Karagyris",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 39,
+     "age": 19,
+     "born": "2007-08-18",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1106943,
+     "name": "Zine",
+     "role": "attackers",
+     "position": "ST",
+     "number": 90,
+     "age": 24,
+     "born": "2002-07-03",
+     "country": "Angola",
+     "height": 181,
+     "value": 1894246,
+     "rating": 7.32,
+     "goals": 3,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
+   "coachHistory": [
+    {
+     "name": "Marko Nikolić",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "115180": {
+     "name": "Domagoj Vida",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "184639": {
+     "name": "Petros Mantalos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "299879": {
+     "name": "Alberto Brignoli",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "300916": {
+     "name": "Joao Mário",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "395914": {
+     "name": "Charalambos Lykogiannis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "403049": {
+     "name": "Thomas Strakosha",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "448859": {
+     "name": "Mijat Gaćinović",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "463291": {
+     "name": "Luka Jović",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "547454": {
+     "name": "Kaan Kairinen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "574844": {
+     "name": "Răzvan Marin",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "617396": {
+     "name": "Dereck Kutesa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "637737": {
+     "name": "Harold Moukoudi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "655636": {
+     "name": "Oleksandr Zubkov",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "725695": {
+     "name": "Aboubakary Koïta",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "762721": {
+     "name": "Lovro Majer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "796504": {
+     "name": "Barnabás Varga",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "833641": {
+     "name": "Frantzdy Pierrot",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "839750": {
+     "name": "Kervin Arriaga",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "949866": {
+     "name": "Lazaros Rota",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1015750": {
+     "name": "Stavros Pilios",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1106943": {
+     "name": "Zine",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1197823": {
+     "name": "Milán Vitális",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1285815": {
+     "name": "Filipe Relvas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1295674": {
+     "name": "Martin Georgiev",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1412199": {
+     "name": "Dimitrios Kaloskamis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1453434": {
+     "name": "Hakim Sahabo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1661197": {
+     "name": "Christos Alexiou",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1798250": {
+     "name": "Marios Balamotis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1814510": {
+     "name": "Zois Karagyris",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2135145": {
+     "name": "Spyros Christakopoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2183546": {
+     "name": "Argyris Argyriou",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    },
+    "2251243": {
+     "name": "Georgios Sarakasidis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    }
+   },
+   "left": [
+    {
+     "id": "2183546",
+     "name": "Argyris Argyriou",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    }
+   ]
   },
   "Olympiakos": {
    "fotmobName": "Olympiacos",
@@ -1453,7 +2229,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Imanol Alguacil",
@@ -1464,157 +2240,157 @@
     "201704": {
      "name": "Remo Freuler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "209430": {
      "name": "Konstantinos Fortounis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "276729": {
      "name": "Stefan Ortega",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "530197": {
      "name": "Manolis Saliakas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "566644": {
      "name": "Chiquinho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "575225": {
      "name": "Gelson Martins",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "643690": {
      "name": "Roman Yaremchuk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "671331": {
      "name": "Leon Bailey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "711559": {
      "name": "Yusuf Yazıcı",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "719055": {
      "name": "Panagiotis Retsos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "884382": {
      "name": "Ayoub El Kaabi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "935622": {
      "name": "Marcus Holmgren Pedersen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "951976": {
      "name": "Nair Tiknizyan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "953517": {
      "name": "Marius Mouandilmadji",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "954962": {
      "name": "David Carmo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1050165": {
      "name": "Lorenzo Pirola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1114798": {
      "name": "Jota Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1131349": {
      "name": "Santiago Hezze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1287837": {
      "name": "Bruno Onyemaechi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1290479": {
      "name": "Clayton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1326043": {
      "name": "Joel Roca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1331597": {
      "name": "Gustavo Puerta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1358378": {
      "name": "Lorenzo Scipioni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1395482": {
      "name": "Gustavo Sá",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1456983": {
      "name": "Armando González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1457854": {
      "name": "Zinedin Smajlović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1586560": {
      "name": "Athanasios Koutsogoulas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1639718": {
      "name": "Theofanis Bakoulas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1683553": {
      "name": "Balša Popović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1818166": {
      "name": "Dimitrios Stournaras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1820535": {
      "name": "Christos Filis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -1897,7 +2673,7 @@
      "id": 819696,
      "name": "Mohamed Mady Camara",
      "role": "midfielders",
-     "position": "CDM,CAM",
+     "position": "CAM,CDM",
      "number": 2,
      "age": 29,
      "born": "1997-02-28",
@@ -1979,7 +2755,7 @@
      "id": 670009,
      "name": "Dimitrios Giannoulis",
      "role": "midfielders",
-     "position": "LWB,LB,LM",
+     "position": "LWB,LB",
      "number": 13,
      "age": 31,
      "born": "1995-10-17",
@@ -2077,7 +2853,7 @@
      "id": 1463448,
      "name": "Tom Louchet",
      "role": "midfielders",
-     "position": "CM,LW,CAM,RW,RM",
+     "position": "LW,CM,CAM,RW,RM",
      "number": 23,
      "age": 23,
      "born": "2003-05-04",
@@ -2090,7 +2866,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 1337885,
@@ -2156,7 +2935,7 @@
      "id": 463268,
      "name": "Andrija Živković",
      "role": "attackers",
-     "position": "RW,LW,RM",
+     "position": "RW,RM,LW",
      "number": 14,
      "age": 30,
      "born": "1996-07-11",
@@ -2308,7 +3087,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Alessio Lisci",
@@ -2319,956 +3098,180 @@
     "130589": {
      "name": "Taison",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "279477": {
      "name": "Soualiho Meité",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "324910": {
      "name": "Abdul Rahman Baba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "358937": {
      "name": "Dimitrios Pelkas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "364430": {
      "name": "Kiril Despodov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "429697": {
      "name": "Jirí Pavlenka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "463268": {
      "name": "Andrija Živković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "478105": {
      "name": "Baptiste Santamaría",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "605252": {
      "name": "Jonjoe Kenny",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "607148": {
      "name": "Aritz Elustondo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "643448": {
      "name": "Kristijan Jakić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "660132": {
      "name": "Pantelis Hatzidiakos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "670009": {
      "name": "Dimitrios Giannoulis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "688287": {
      "name": "Fedor Chalov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "696932": {
      "name": "Simon Banza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "744907": {
      "name": "Greg Taylor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "819696": {
      "name": "Mohamed Mady Camara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "819972": {
      "name": "Cherif Ndiaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "873265": {
      "name": "Antonis Tsiftsis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1076939": {
      "name": "Giannis Michailidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1090333": {
      "name": "Diego Costa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1124529": {
      "name": "Christos Zafeiris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1135782": {
      "name": "Taha Abdi Ali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1189627": {
      "name": "Shola Shoretire",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1288237": {
      "name": "Konstantinos Balomenos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1337885": {
      "name": "Dimitrios Tsopouroglou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1463448": {
      "name": "Tom Louchet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1574188": {
      "name": "Ognjen Ugrešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1619612": {
      "name": "Dimitrios Monastirlis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1707911": {
      "name": "Dimitrios Bataoulas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1727377": {
      "name": "Dimitrios Chatsidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1792869": {
      "name": "Dimitrios Berdos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1792876": {
      "name": "Anestis Mythou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1838872": {
      "name": "Giorgos Kosidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1883542": {
      "name": "Vasilios Nikolakoulis",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
-  },
-  "AEK": {
-   "fotmobName": "AEK Athens",
-   "fotmobId": 8563,
-   "coach": "Marko Nikolić",
-   "players": [
-    {
-     "id": 403049,
-     "name": "Thomas Strakosha",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 31,
-     "born": "1995-03-19",
-     "country": "Albania",
-     "height": 186,
-     "value": 1873692,
-     "rating": 6.84,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "34",
-      "expectedReturn": "Unknown"
-     }
-    },
-    {
-     "id": 2251243,
-     "name": "Georgios Sarakasidis",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 31,
-     "age": 15,
-     "born": "2010-11-01",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1798250,
-     "name": "Marios Balamotis",
-     "role": "keepers",
-     "position": "GK",
-     "number": 41,
-     "age": 21,
-     "born": "2005-05-06",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 299879,
-     "name": "Alberto Brignoli",
-     "role": "keepers",
-     "position": "GK",
-     "number": 91,
-     "age": 35,
-     "born": "1991-08-19",
-     "country": "Italy",
-     "height": 187,
-     "value": 180869,
-     "rating": 7.45,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 637737,
-     "name": "Harold Moukoudi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 28,
-     "born": "1997-11-27",
-     "country": "Cameroon",
-     "height": 191,
-     "value": 4614319,
-     "rating": 7.02,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1015750,
-     "name": "Stavros Pilios",
-     "role": "defenders",
-     "position": "LB,CM",
-     "number": 3,
-     "age": 25,
-     "born": "2000-12-10",
-     "country": "Albania",
-     "height": 175,
-     "value": 1765437,
-     "rating": 7.62,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1661197,
-     "name": "Christos Alexiou",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 21,
-     "born": "2005-06-30",
-     "country": "Greece",
-     "height": 186,
-     "value": 1168568,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 949866,
-     "name": "Lazaros Rota",
-     "role": "defenders",
-     "position": "RB",
-     "number": 12,
-     "age": 29,
-     "born": "1997-08-23",
-     "country": "Greece",
-     "height": 180,
-     "value": 2316350,
-     "rating": 7.15,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1295674,
-     "name": "Martin Georgiev",
-     "role": "defenders",
-     "position": "RB,CB",
-     "number": 15,
-     "age": 21,
-     "born": "2005-09-24",
-     "country": "Bulgaria",
-     "height": 184,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 115180,
-     "name": "Domagoj Vida",
-     "role": "defenders",
-     "position": "CB",
-     "number": 21,
-     "age": 37,
-     "born": "1989-04-29",
-     "country": "Croatia",
-     "height": 184,
-     "value": 85644,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 395914,
-     "name": "Charalambos Lykogiannis",
-     "role": "defenders",
-     "position": "LB",
-     "number": 22,
-     "age": 33,
-     "born": "1993-10-22",
-     "country": "Greece",
-     "height": 186,
-     "value": 572081,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1285815,
-     "name": "Filipe Relvas",
-     "role": "defenders",
-     "position": "CB",
-     "number": 44,
-     "age": 27,
-     "born": "1999-09-20",
-     "country": "Portugal",
-     "height": 192,
-     "value": 2431456,
-     "rating": 7.7,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2135145,
-     "name": "Spyros Christakopoulos",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 57,
-     "age": 20,
-     "born": "2006-09-21",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 547454,
-     "name": "Kaan Kairinen",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 6,
-     "age": 27,
-     "born": "1998-12-22",
-     "country": "Finland",
-     "height": 186,
-     "value": 5146153,
-     "rating": 6.65,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 617396,
-     "name": "Dereck Kutesa",
-     "role": "midfielders",
-     "position": "LW,LM",
-     "number": 7,
-     "age": 28,
-     "born": "1997-12-06",
-     "country": "Switzerland",
-     "height": 176,
-     "value": 2023660,
-     "rating": 6.75,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 448859,
-     "name": "Mijat Gaćinović",
-     "role": "midfielders",
-     "position": "LM,RM,CAM,RB,LW",
-     "number": 8,
-     "age": 31,
-     "born": "1995-02-08",
-     "country": "Serbia",
-     "height": 175,
-     "value": 981735,
-     "rating": 7.17,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 725695,
-     "name": "Aboubakary Koïta",
-     "role": "midfielders",
-     "position": "LM,LW,RM,ST,RW,CAM",
-     "number": 11,
-     "age": 28,
-     "born": "1998-09-20",
-     "country": "Mauritania",
-     "height": 175,
-     "value": 4054641,
-     "rating": 6.94,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 762721,
-     "name": "Lovro Majer",
-     "role": "midfielders",
-     "position": "CAM,RM,RW",
-     "number": 14,
-     "age": 28,
-     "born": "1998-01-17",
-     "country": "Croatia",
-     "height": 179,
-     "value": 13283318,
-     "rating": 7.61,
-     "goals": 0,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 839750,
-     "name": "Kervin Arriaga",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 16,
-     "age": 28,
-     "born": "1998-01-05",
-     "country": "Honduras",
-     "height": 191,
-     "value": 1444475,
-     "rating": 6.13,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 574844,
-     "name": "Răzvan Marin",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 18,
-     "age": 30,
-     "born": "1996-05-23",
-     "country": "Romania",
-     "height": 177,
-     "value": 2213462,
-     "rating": 7.86,
-     "goals": 1,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 184639,
-     "name": "Petros Mantalos",
-     "role": "midfielders",
-     "position": "CAM,CDM,CM,LM",
-     "number": 20,
-     "age": 35,
-     "born": "1991-08-31",
-     "country": "Greece",
-     "height": 176,
-     "value": 285140,
-     "rating": 6.47,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1197823,
-     "name": "Milán Vitális",
-     "role": "midfielders",
-     "position": "CDM,CM,CAM",
-     "number": 27,
-     "age": 24,
-     "born": "2002-01-28",
-     "country": "Hungary",
-     "height": 179,
-     "value": 1547979,
-     "rating": 7.47,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1453434,
-     "name": "Hakim Sahabo",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 80,
-     "age": 21,
-     "born": "2005-06-16",
-     "country": "Rwanda",
-     "height": 183,
-     "value": 1610052,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 833641,
-     "name": "Frantzdy Pierrot",
-     "role": "attackers",
-     "position": "ST",
-     "number": null,
-     "age": 31,
-     "born": "1995-03-29",
-     "country": "Haiti",
-     "height": 194,
-     "value": 775743,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 463291,
-     "name": "Luka Jović",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 28,
-     "born": "1997-12-23",
-     "country": "Serbia",
-     "height": 181,
-     "value": 5675548,
-     "rating": 7.51,
-     "goals": 4,
-     "assists": 0,
-     "penalties": 1,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 655636,
-     "name": "Oleksandr Zubkov",
-     "role": "attackers",
-     "position": "RW,LW,RM",
-     "number": 10,
-     "age": 30,
-     "born": "1996-08-03",
-     "country": "Ukraine",
-     "height": 182,
-     "value": 4162145,
-     "rating": 6.56,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1412199,
-     "name": "Dimitrios Kaloskamis",
-     "role": "attackers",
-     "position": "RW,CAM,CM",
-     "number": 17,
-     "age": 21,
-     "born": "2005-03-01",
-     "country": "Greece",
-     "height": 171,
-     "value": 1631539,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 796504,
-     "name": "Barnabás Varga",
-     "role": "attackers",
-     "position": "ST",
-     "number": 19,
-     "age": 31,
-     "born": "1994-10-25",
-     "country": "Hungary",
-     "height": 185,
-     "value": 2184432,
-     "rating": 7.73,
-     "goals": 4,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 300916,
-     "name": "Joao Mário",
-     "role": "attackers",
-     "position": "LW,CAM,LM",
-     "number": 23,
-     "age": 33,
-     "born": "1993-01-19",
-     "country": "Portugal",
-     "height": 179,
-     "value": 919093,
-     "rating": 6.72,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1814510,
-     "name": "Zois Karagyris",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 39,
-     "age": 19,
-     "born": "2007-08-18",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1106943,
-     "name": "Zine",
-     "role": "attackers",
-     "position": "ST",
-     "number": 90,
-     "age": 24,
-     "born": "2002-07-03",
-     "country": "Angola",
-     "height": 181,
-     "value": 1894246,
-     "rating": 7.13,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Marko Nikolić",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "115180": {
-     "name": "Domagoj Vida",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "184639": {
-     "name": "Petros Mantalos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "299879": {
-     "name": "Alberto Brignoli",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "300916": {
-     "name": "Joao Mário",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "395914": {
-     "name": "Charalambos Lykogiannis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "403049": {
-     "name": "Thomas Strakosha",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "448859": {
-     "name": "Mijat Gaćinović",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "463291": {
-     "name": "Luka Jović",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "547454": {
-     "name": "Kaan Kairinen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "574844": {
-     "name": "Răzvan Marin",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "617396": {
-     "name": "Dereck Kutesa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "637737": {
-     "name": "Harold Moukoudi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "655636": {
-     "name": "Oleksandr Zubkov",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "725695": {
-     "name": "Aboubakary Koïta",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "762721": {
-     "name": "Lovro Majer",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "796504": {
-     "name": "Barnabás Varga",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "833641": {
-     "name": "Frantzdy Pierrot",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "839750": {
-     "name": "Kervin Arriaga",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "949866": {
-     "name": "Lazaros Rota",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1015750": {
-     "name": "Stavros Pilios",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1106943": {
-     "name": "Zine",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1197823": {
-     "name": "Milán Vitális",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1285815": {
-     "name": "Filipe Relvas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1295674": {
-     "name": "Martin Georgiev",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1412199": {
-     "name": "Dimitrios Kaloskamis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1453434": {
-     "name": "Hakim Sahabo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1661197": {
-     "name": "Christos Alexiou",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1798250": {
-     "name": "Marios Balamotis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1814510": {
-     "name": "Zois Karagyris",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2135145": {
-     "name": "Spyros Christakopoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2183546": {
-     "name": "Argyris Argyriou",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "2251243": {
-     "name": "Georgios Sarakasidis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": [
-    {
-     "id": "2183546",
-     "name": "Argyris Argyriou",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   ]
   },
   "Aris": {
    "fotmobName": "Aris Thessaloniki",
@@ -3896,7 +3899,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Michalis Grigoriou",
@@ -3907,162 +3910,980 @@
     "282600": {
      "name": "Sokratis Dioudis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "282603": {
      "name": "Giannis Gianniotas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "361322": {
      "name": "Bruma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "432949": {
      "name": "Sebastián Palacios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "498313": {
      "name": "Fabiano Leismann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "640492": {
      "name": "Rafa Mir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "659201": {
      "name": "Manu García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "666860": {
      "name": "Tino Kadewere",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "676536": {
      "name": "Loren Morón",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "745509": {
      "name": "Konstantinos Galanopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "764624": {
      "name": "Uroš Račić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "774625": {
      "name": "Fredrik Jensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "776940": {
      "name": "Christian Kouamé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "797758": {
      "name": "Martin Hongla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "798608": {
      "name": "Omar Richards",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "839476": {
      "name": "Othman Boussaid",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "863848": {
      "name": "Ricardo Velho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "872963": {
      "name": "Tom Dele-Bashiru",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "872965": {
      "name": "Benjamín Garré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "949350": {
      "name": "Boško Šutalo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "988119": {
      "name": "Noah Fadiga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1002682": {
      "name": "Jeremy Petris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1195276": {
      "name": "Migouel Alfarela",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1478007": {
      "name": "Mamadou Gning",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1510886": {
      "name": "Lovro Majkić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1676366": {
      "name": "Diallo Sanoussi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1691575": {
      "name": "Michalis Voriazidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1759879": {
      "name": "Konstantinos Charoupas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1817325": {
      "name": "Sarafianos Papasarafianos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1883451": {
      "name": "Christos Kamtsis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2070406": {
      "name": "Matar Thiam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2144606": {
      "name": "Apostolos Barbopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
+    }
+   },
+   "left": []
+  },
+  "Kifisia": {
+   "fotmobName": "Kifisia FC",
+   "fotmobId": 488099,
+   "coach": "Sebastián Leto",
+   "players": [
+    {
+     "id": 1782739,
+     "name": "Loukas Stamellos",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": null,
+     "age": 18,
+     "born": "2008-03-28",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1783294,
+     "name": "Filippos Roberts",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 1,
+     "age": 21,
+     "born": "2005-04-26",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 474507,
+     "name": "Alexandros Anagnostopoulos",
+     "role": "keepers",
+     "position": "GK",
+     "number": 15,
+     "age": 32,
+     "born": "1994-08-18",
+     "country": "Greece",
+     "height": 185,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 978290,
+     "name": "Moisés Ramirez",
+     "role": "keepers",
+     "position": "GK",
+     "number": 99,
+     "age": 26,
+     "born": "2000-09-09",
+     "country": "Ecuador",
+     "height": 185,
+     "value": 666734,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 938554,
+     "name": "Konstantinos Apostolakis",
+     "role": "defenders",
+     "position": "RB,RM,RWB",
+     "number": 2,
+     "age": 27,
+     "born": "1999-05-28",
+     "country": "Greece",
+     "height": 178,
+     "value": 65850,
+     "rating": 6.63,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1596411,
+     "name": "Jon De Luis",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 23,
+     "born": "2003-08-05",
+     "country": "Spain",
+     "height": 186,
+     "value": 259881,
+     "rating": 7.22,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "About a week"
+     }
+    },
+    {
+     "id": 888907,
+     "name": "Alex Petkov",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 27,
+     "born": "1999-07-25",
+     "country": "Bulgaria",
+     "height": 191,
+     "value": 325450,
+     "rating": 7.8,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1899316,
+     "name": "Nektarios Kaloskamis",
+     "role": "defenders",
+     "position": "CB",
+     "number": 21,
+     "age": 19,
+     "born": "2007-01-10",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1133599,
+     "name": "Leroy Abanda",
+     "role": "defenders",
+     "position": "LB,LWB,LM,RB",
+     "number": 23,
+     "age": 26,
+     "born": "2000-06-07",
+     "country": "France",
+     "height": 178,
+     "value": 116572,
+     "rating": 6.92,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 924844,
+     "name": "Roshon van Eijma",
+     "role": "defenders",
+     "position": "CB",
+     "number": 24,
+     "age": 28,
+     "born": "1998-06-09",
+     "country": "Curacao",
+     "height": 186,
+     "value": 61185,
+     "rating": 6.57,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1838855,
+     "name": "Konstantinos Polykratis",
+     "role": "defenders",
+     "position": "LB",
+     "number": 26,
+     "age": 20,
+     "born": "2006-07-02",
+     "country": "Greece",
+     "height": null,
+     "value": 263311,
+     "rating": 7.4,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2137165,
+     "name": "Georgios Zygouras",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 27,
+     "age": 19,
+     "born": "2007-07-04",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 276261,
+     "name": "Hugo Sousa",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 33,
+     "age": 34,
+     "born": "1992-06-04",
+     "country": "Portugal",
+     "height": 183,
+     "value": 84519,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1668201,
+     "name": "Clément Jolibois",
+     "role": "defenders",
+     "position": "CB",
+     "number": 34,
+     "age": 29,
+     "born": "1997-09-03",
+     "country": "France",
+     "height": 192,
+     "value": 178035,
+     "rating": 6.72,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1525157,
+     "name": "Tiago Manso",
+     "role": "defenders",
+     "position": "RB",
+     "number": 48,
+     "age": 26,
+     "born": "1999-12-13",
+     "country": "Portugal",
+     "height": 174,
+     "value": 378315,
+     "rating": 6.86,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1818863,
+     "name": "Konstantinos Lampsias",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 74,
+     "age": 24,
+     "born": "2002-09-18",
+     "country": "Greece",
+     "height": null,
+     "value": 137323,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1338386,
+     "name": "Pavlos Mavroudis",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": null,
+     "age": 25,
+     "born": "2001-01-12",
+     "country": "Greece",
+     "height": 180,
+     "value": 159450,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1604258,
+     "name": "Giannis Doiranlis",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 4,
+     "age": 24,
+     "born": "2002-09-29",
+     "country": "Greece",
+     "height": 180,
+     "value": 264060,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "74",
+      "expectedReturn": "A few weeks"
+     }
+    },
+    {
+     "id": 623758,
+     "name": "Jorge Pombo",
+     "role": "midfielders",
+     "position": "CAM,ST",
+     "number": 6,
+     "age": 32,
+     "born": "1994-02-22",
+     "country": "Spain",
+     "height": 177,
+     "value": 220903,
+     "rating": 7.91,
+     "goals": 4,
+     "assists": 1,
+     "penalties": 1,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 776606,
+     "name": "Bernardo Martins",
+     "role": "midfielders",
+     "position": "CM,CAM,LW",
+     "number": 8,
+     "age": 28,
+     "born": "1997-12-04",
+     "country": "Portugal",
+     "height": 176,
+     "value": 281893,
+     "rating": 6.79,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1050830,
+     "name": "Gerson Sousa",
+     "role": "midfielders",
+     "position": "RM,LW,RW,LM",
+     "number": 10,
+     "age": 24,
+     "born": "2002-05-10",
+     "country": "Portugal",
+     "height": 178,
+     "value": 493677,
+     "rating": 6.25,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1798261,
+     "name": "Alexandros Pothas",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 16,
+     "age": 19,
+     "born": "2006-12-11",
+     "country": "Greece",
+     "height": null,
+     "value": 276830,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1284538,
+     "name": "Konstantinos Roukounakis",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 17,
+     "age": 25,
+     "born": "2001-07-17",
+     "country": "Greece",
+     "height": 183,
+     "value": 257003,
+     "rating": 6.96,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1103937,
+     "name": "Imam Jagne",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 19,
+     "age": 23,
+     "born": "2003-10-01",
+     "country": "Sweden",
+     "height": null,
+     "value": 288898,
+     "rating": 6.51,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1645376,
+     "name": "Michalis Patiras",
+     "role": "midfielders",
+     "position": "RM",
+     "number": 20,
+     "age": 22,
+     "born": "2004-05-13",
+     "country": "Greece",
+     "height": null,
+     "value": 172142,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 574060,
+     "name": "Ioannis Kousoulos",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 31,
+     "age": 30,
+     "born": "1996-06-14",
+     "country": "Cyprus",
+     "height": 181,
+     "value": 144691,
+     "rating": 6.5,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
+     }
+    },
+    {
+     "id": 2143832,
+     "name": "Vangelis Manganas",
+     "role": "midfielders",
+     "position": "ST",
+     "number": 44,
+     "age": 23,
+     "born": "2003-10-17",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1210947,
+     "name": "Jeremy Antonisse",
+     "role": "attackers",
+     "position": "LW,LM",
+     "number": 7,
+     "age": 24,
+     "born": "2002-03-29",
+     "country": "Curacao",
+     "height": 180,
+     "value": 481114,
+     "rating": 6.56,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1634971,
+     "name": "Dimitrios Theodoridis",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 24,
+     "born": "2002-08-08",
+     "country": "Greece",
+     "height": 185,
+     "value": 287121,
+     "rating": 6.34,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 748378,
+     "name": "Jordi Mboula",
+     "role": "attackers",
+     "position": "LW,LM",
+     "number": 11,
+     "age": 27,
+     "born": "1999-03-16",
+     "country": "Congo",
+     "height": 183,
+     "value": 134768,
+     "rating": 6.37,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1418919,
+     "name": "Georgios Kyriopoulos",
+     "role": "attackers",
+     "position": "RW",
+     "number": 18,
+     "age": 22,
+     "born": "2004-08-24",
+     "country": "Greece",
+     "height": 176,
+     "value": null,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 304555,
+     "name": "Ángelo Sagal",
+     "role": "attackers",
+     "position": "ST,RW,RM,CAM",
+     "number": 28,
+     "age": 33,
+     "born": "1993-04-18",
+     "country": "Chile",
+     "height": 179,
+     "value": 108907,
+     "rating": 6.85,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1423601,
+     "name": "Apostolos Christopoulos",
+     "role": "attackers",
+     "position": "ST",
+     "number": 72,
+     "age": 23,
+     "born": "2003-01-29",
+     "country": "Greece",
+     "height": 186,
+     "value": 301207,
+     "rating": 6.18,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
+   "coachHistory": [
+    {
+     "name": "Sebastián Leto",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "276261": {
+     "name": "Hugo Sousa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "304555": {
+     "name": "Ángelo Sagal",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "474507": {
+     "name": "Alexandros Anagnostopoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "574060": {
+     "name": "Ioannis Kousoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "623758": {
+     "name": "Jorge Pombo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "748378": {
+     "name": "Jordi Mboula",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "776606": {
+     "name": "Bernardo Martins",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "888907": {
+     "name": "Alex Petkov",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "924844": {
+     "name": "Roshon van Eijma",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "938554": {
+     "name": "Konstantinos Apostolakis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "978290": {
+     "name": "Moisés Ramirez",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1050830": {
+     "name": "Gerson Sousa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1103937": {
+     "name": "Imam Jagne",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1133599": {
+     "name": "Leroy Abanda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1210947": {
+     "name": "Jeremy Antonisse",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1284538": {
+     "name": "Konstantinos Roukounakis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1338386": {
+     "name": "Pavlos Mavroudis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1418919": {
+     "name": "Georgios Kyriopoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1423601": {
+     "name": "Apostolos Christopoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1525157": {
+     "name": "Tiago Manso",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1596411": {
+     "name": "Jon De Luis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1604258": {
+     "name": "Giannis Doiranlis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1634971": {
+     "name": "Dimitrios Theodoridis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1645376": {
+     "name": "Michalis Patiras",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1668201": {
+     "name": "Clément Jolibois",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1782739": {
+     "name": "Loukas Stamellos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1783294": {
+     "name": "Filippos Roberts",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1798261": {
+     "name": "Alexandros Pothas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1818863": {
+     "name": "Konstantinos Lampsias",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1838855": {
+     "name": "Konstantinos Polykratis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1899316": {
+     "name": "Nektarios Kaloskamis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2137165": {
+     "name": "Georgios Zygouras",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2143832": {
+     "name": "Vangelis Manganas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -4367,7 +5188,7 @@
      "id": 1478000,
      "name": "Djibril Diarra",
      "role": "midfielders",
-     "position": "CDM,CB,CM",
+     "position": "CDM,CM,CB",
      "number": 6,
      "age": 22,
      "born": "2004-04-30",
@@ -4462,7 +5283,7 @@
      "id": 1666495,
      "name": "Ben Zidane",
      "role": "midfielders",
-     "position": "CAM",
+     "position": "CM",
      "number": 14,
      "age": 21,
      "born": "2005-10-01",
@@ -4712,7 +5533,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Panagiotis Christofileas",
@@ -4723,167 +5544,167 @@
     "215645": {
      "name": "Ioannis Gelios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "435741": {
      "name": "Nikola Vasiljević",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "627510": {
      "name": "Josete Miranda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "650234": {
      "name": "Arnór Sigurðsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "759276": {
      "name": "Rodrigues",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "796451": {
      "name": "Ilias Chatzitheodoridis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "839891": {
      "name": "Julián Bonetto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "882068": {
      "name": "Julio Alonso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "900344": {
      "name": "Stefanos Stroungis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "923187": {
      "name": "Dawid Kurminowski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "947883": {
      "name": "Ahmad Mendes Moreira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "955212": {
      "name": "Juan Cataldi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "999156": {
      "name": "Marcelino Carreazo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1067252": {
      "name": "Uroš Ignjatović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1081232": {
      "name": "Messemo Junior Bakayoko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1138511": {
      "name": "Jovanny Bolívar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1184455": {
      "name": "Panagiotis Ginis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1237185": {
      "name": "Kenneth Vargas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1288239": {
      "name": "Petros Kaloutsikidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1292195": {
      "name": "Axel Guessand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1320033": {
      "name": "Panagiotis Panagiotou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1359227": {
      "name": "Gonzalo Piñeiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1478000": {
      "name": "Djibril Diarra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526227": {
      "name": "Eugene Frimpong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526974": {
      "name": "Dimitrios Naoumis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1607522": {
      "name": "Alex Perez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1649316": {
      "name": "Aarón Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1666495": {
      "name": "Ben Zidane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1692887": {
      "name": "Argyrios Liatsikouras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1814500": {
      "name": "Erik Hamza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137149": {
      "name": "Pavlos Varelas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137150": {
      "name": "Savvas Mouzakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2164027": {
      "name": "Stavros Angelis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -5413,7 +6234,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "76",
+      "expectedReturn": "Out for season"
+     }
     },
     {
      "id": 801780,
@@ -5453,7 +6277,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "A few weeks"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -5533,7 +6357,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Christos Kontis",
@@ -5544,167 +6368,167 @@
     "300618": {
      "name": "Andreas Bouchalakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "307446": {
      "name": "Taxiarchis Fountas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "408105": {
      "name": "Nikos Marinakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "543172": {
      "name": "Lorenzo Dickmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "559072": {
      "name": "Aaron Iseka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "574623": {
      "name": "Kenan Kodro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "604348": {
      "name": "Achilleas Poungouras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "655165": {
      "name": "Zisis Karachalios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "675600": {
      "name": "Aitor Cantalapiedra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "723574": {
      "name": "Dimitrios Nikolaou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "784493": {
      "name": "Thanasis Androutsos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "801780": {
      "name": "Anastasios Chatzigiovanis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "865217": {
      "name": "Christos Sielis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "916949": {
      "name": "Giorgios Kanellopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1011961": {
      "name": "Panagiotis Katsikas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1033314": {
      "name": "Thiago Nuss",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1071487": {
      "name": "Borja González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1106824": {
      "name": "Nikos Christogeorgos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1225435": {
      "name": "Nikolaos Athanasiou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1240425": {
      "name": "Krešimir Krizmanić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1318668": {
      "name": "Giannis Apostolakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1398146": {
      "name": "Giannis Theodosoulakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1533544": {
      "name": "Klidman Lilo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1574181": {
      "name": "Konstantinos Kostoulas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1606164": {
      "name": "Manouel Kalafatis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1667997": {
      "name": "Fotis Koutsoupias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1668000": {
      "name": "Konstantinos Lagoudakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1668460": {
      "name": "Thiago Romano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1748218": {
      "name": "Emmanouil Chnaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1782716": {
      "name": "Athanasios Sitmalidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1782726": {
      "name": "Pavlos Kenourgiakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1782727": {
      "name": "Lefteris Kontekas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1844657": {
      "name": "Konstantinos Papadakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -5763,7 +6587,7 @@
      "country": "Greece",
      "height": 191,
      "value": 109797,
-     "rating": 6.95,
+     "rating": 6.81,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5820,7 +6644,7 @@
      "country": "Greece",
      "height": 183,
      "value": 158048,
-     "rating": 6.61,
+     "rating": 6.53,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5858,11 +6682,11 @@
      "country": "Morocco",
      "height": 188,
      "value": 72608,
-     "rating": 5.98,
-     "goals": 0,
+     "rating": 6.28,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -5877,7 +6701,7 @@
      "country": "Spain",
      "height": 188,
      "value": 223342,
-     "rating": 6.62,
+     "rating": 6.51,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5934,9 +6758,9 @@
      "country": "Spain",
      "height": 169,
      "value": 94090,
-     "rating": 7.07,
+     "rating": 7.23,
      "goals": 0,
-     "assists": 2,
+     "assists": 4,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -5953,7 +6777,7 @@
      "country": "Guinea-Bissau",
      "height": 177,
      "value": 53849,
-     "rating": 6.95,
+     "rating": 6.87,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -6108,7 +6932,7 @@
      "country": "Serbia",
      "height": 186,
      "value": 150793,
-     "rating": 6.66,
+     "rating": 6.61,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6149,8 +6973,8 @@
      "country": "Spain",
      "height": 187,
      "value": 132638,
-     "rating": 6.56,
-     "goals": 1,
+     "rating": 6.7,
+     "goals": 2,
      "assists": 0,
      "penalties": 1,
      "yellow": 3,
@@ -6199,14 +7023,14 @@
      "id": 1089736,
      "name": "Rob Nizet",
      "role": "midfielders",
-     "position": "RM,CAM",
+     "position": "CAM,RM",
      "number": 18,
      "age": 24,
      "born": "2002-04-14",
      "country": "Belgium",
      "height": 177,
      "value": 139781,
-     "rating": 6.81,
+     "rating": 6.76,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -6233,7 +7057,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Unknown"
      }
     },
     {
@@ -6247,7 +7071,7 @@
      "country": "Austria",
      "height": 179,
      "value": 65456,
-     "rating": 6.61,
+     "rating": 6.56,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -6266,7 +7090,7 @@
      "country": "Greece",
      "height": 183,
      "value": 146551,
-     "rating": 6.7,
+     "rating": 6.65,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6342,7 +7166,7 @@
      "country": "Portugal",
      "height": 177,
      "value": 249447,
-     "rating": 6.8,
+     "rating": 6.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6361,7 +7185,7 @@
      "country": "Portugal",
      "height": 181,
      "value": 368338,
-     "rating": 6.72,
+     "rating": 6.69,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -6389,7 +7213,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Walter Mazzarri",
@@ -6400,132 +7224,132 @@
     "365306": {
      "name": "Georgios Athanasiadis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "369327": {
      "name": "Panagiotis Tsintotas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "425985": {
      "name": "Nemanja Radoja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "470547": {
      "name": "Nanú",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "497796": {
      "name": "Elvir Koljić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "521754": {
      "name": "Praxitelis Vouros",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "526710": {
      "name": "Yoel Bárcenas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "530460": {
      "name": "Ivi López",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "543278": {
      "name": "Jakub Hromada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "559577": {
      "name": "Soufiane Chakla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "571296": {
      "name": "Xande Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "595154": {
      "name": "Rasmus Lauritsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "677342": {
      "name": "Marco Krainz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "725737": {
      "name": "Carles Soria",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "727228": {
      "name": "Pedro Marques",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "734060": {
      "name": "Kristian Kushta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "800200": {
      "name": "Piña",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "822532": {
      "name": "Giorgos Giannoutsos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "929777": {
      "name": "Yohan Roche",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "980424": {
      "name": "Kylian Kaiboué",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1072697": {
      "name": "Vasilios Sourlis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1089736": {
      "name": "Rob Nizet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1134337": {
      "name": "Panagiotis Panagiotidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1348120": {
      "name": "Orestis Tsintonis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1387412": {
      "name": "Georgios Karakasidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1503661": {
      "name": "Vitor Meer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526937": {
      "name": "Georgios Konstantakopoulos",
@@ -6535,47 +7359,47 @@
     "1668178": {
      "name": "Daniel Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1670284": {
      "name": "Adam Žulevič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1721197": {
      "name": "Carlos Rodriguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1818168": {
      "name": "Nikolaos Anastasiadis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1818169": {
      "name": "Efstratios Tachmetzidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137142": {
      "name": "Nikolaos Tsiligeridis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137144": {
      "name": "Stelios Karagogos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137145": {
      "name": "Christos Papazoglou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137146": {
      "name": "Georgios Simseropoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
@@ -6641,7 +7465,7 @@
      "country": "Greece",
      "height": 185,
      "value": 120279,
-     "rating": 7.05,
+     "rating": 5.86,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6723,7 +7547,7 @@
      "country": "Greece",
      "height": 188,
      "value": 225642,
-     "rating": 6.09,
+     "rating": 5.87,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6748,7 +7572,10 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 958187,
@@ -6761,11 +7588,11 @@
      "country": "Spain",
      "height": 180,
      "value": 100350,
-     "rating": 6.77,
+     "rating": 6.54,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6780,7 +7607,7 @@
      "country": "Serbia",
      "height": 186,
      "value": 195466,
-     "rating": 6.97,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6805,7 +7632,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "About a week"
+     }
     },
     {
      "id": 1670587,
@@ -6837,11 +7667,11 @@
      "country": "Serbia",
      "height": 182,
      "value": 149196,
-     "rating": 6.8,
+     "rating": 6.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6894,7 +7724,7 @@
      "country": "Zimbabwe",
      "height": 175,
      "value": 233453,
-     "rating": 6.27,
+     "rating": 6.19,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6954,7 +7784,7 @@
      "country": "Spain",
      "height": null,
      "value": 343620,
-     "rating": 7.28,
+     "rating": 7.22,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -6966,14 +7796,14 @@
      "id": 857707,
      "name": "Novica Eraković",
      "role": "midfielders",
-     "position": "CAM",
+     "position": "CAM,CM",
      "number": 44,
      "age": 26,
      "born": "1999-11-12",
      "country": "Montenegro",
      "height": 187,
      "value": 208550,
-     "rating": 6.4,
+     "rating": 6.48,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6992,7 +7822,7 @@
      "country": "Greece",
      "height": null,
      "value": 281272,
-     "rating": null,
+     "rating": 6.25,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7030,7 +7860,7 @@
      "country": "Colombia",
      "height": 188,
      "value": 273658,
-     "rating": 6.04,
+     "rating": 6.03,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7042,14 +7872,14 @@
      "id": 844782,
      "name": "Amine Bassi",
      "role": "attackers",
-     "position": "RW",
+     "position": "RW,ST",
      "number": 10,
      "age": 28,
      "born": "1997-11-27",
      "country": "France",
      "height": 173,
      "value": 1470329,
-     "rating": 6.94,
+     "rating": 6.84,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7087,7 +7917,7 @@
      "country": "Mali",
      "height": 177,
      "value": 616912,
-     "rating": 6.4,
+     "rating": 6.35,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7106,7 +7936,7 @@
      "country": "Serbia",
      "height": 182,
      "value": 173923,
-     "rating": 6.42,
+     "rating": 6.39,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -7125,7 +7955,7 @@
      "country": "Senegal",
      "height": 192,
      "value": 946114,
-     "rating": 6.33,
+     "rating": 6.31,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7156,23 +7986,23 @@
      "id": 1195006,
      "name": "Kwadwo Opoku",
      "role": "attackers",
-     "position": "RW",
+     "position": "RW,RM",
      "number": 90,
      "age": 25,
      "born": "2001-07-13",
      "country": "Ghana",
      "height": 172,
      "value": 330644,
-     "rating": 6.49,
+     "rating": 6.37,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Giannis Anastasiou",
@@ -7183,973 +8013,152 @@
     "209439": {
      "name": "Charalampos Mavrias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "541330": {
      "name": "Marvelous Nakamba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "819771": {
      "name": "Vasilios Xenopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "844782": {
      "name": "Amine Bassi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "857707": {
      "name": "Novica Eraković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "862645": {
      "name": "Moussa Djenepo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "916990": {
      "name": "Konstantinos Thimianis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "919741": {
      "name": "Lazar Kojić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "958187": {
      "name": "Christian Manrique",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1015654": {
      "name": "Gustav Granath",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1053689": {
      "name": "Youssouph Badji",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1067286": {
      "name": "Kosta Aleksić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1139858": {
      "name": "Yevhenii Kucherenko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1167710": {
      "name": "Elias Olsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1173343": {
      "name": "Apostolos Apostolopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1178049": {
      "name": "Giannis Satsias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1195006": {
      "name": "Kwadwo Opoku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1204365": {
      "name": "Diego Esteban",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1289416": {
      "name": "Michalis Pardalos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1338387": {
      "name": "Lampros Smyrlis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1384034": {
      "name": "Nikola Stajić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1388477": {
      "name": "Salifou Soumah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1428047": {
      "name": "Vangelis Nikolaou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1457935": {
      "name": "Mateo Mejía",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1461223": {
      "name": "Athanasios Prodromitis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1661173": {
      "name": "Adriano Bregu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1667980": {
      "name": "Efthymios Papazois",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1670587": {
      "name": "David Galiatsos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1782717": {
      "name": "Vasilios Rados",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2143830": {
      "name": "Aristidis Albanis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": []
-  },
-  "Kifisia": {
-   "fotmobName": "Kifisia FC",
-   "fotmobId": 488099,
-   "coach": "Sebastián Leto",
-   "players": [
-    {
-     "id": 1782739,
-     "name": "Loukas Stamellos",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": null,
-     "age": 18,
-     "born": "2008-03-28",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1783294,
-     "name": "Filippos Roberts",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 1,
-     "age": 21,
-     "born": "2005-04-26",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 474507,
-     "name": "Alexandros Anagnostopoulos",
-     "role": "keepers",
-     "position": "GK",
-     "number": 15,
-     "age": 32,
-     "born": "1994-08-18",
-     "country": "Greece",
-     "height": 185,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 978290,
-     "name": "Moisés Ramirez",
-     "role": "keepers",
-     "position": "GK",
-     "number": 99,
-     "age": 26,
-     "born": "2000-09-09",
-     "country": "Ecuador",
-     "height": 185,
-     "value": 666734,
-     "rating": 6.94,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 938554,
-     "name": "Konstantinos Apostolakis",
-     "role": "defenders",
-     "position": "RB,RM,RWB",
-     "number": 2,
-     "age": 27,
-     "born": "1999-05-28",
-     "country": "Greece",
-     "height": 178,
-     "value": 65850,
-     "rating": 6.63,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1596411,
-     "name": "Jon De Luis",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 23,
-     "born": "2003-08-05",
-     "country": "Spain",
-     "height": 186,
-     "value": 259881,
-     "rating": 7.22,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "About a week"
-     }
-    },
-    {
-     "id": 888907,
-     "name": "Alex Petkov",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 27,
-     "born": "1999-07-25",
-     "country": "Bulgaria",
-     "height": 191,
-     "value": 325450,
-     "rating": 7.8,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1899316,
-     "name": "Nektarios Kaloskamis",
-     "role": "defenders",
-     "position": "CB",
-     "number": 21,
-     "age": 19,
-     "born": "2007-01-10",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "A few weeks"
-     }
-    },
-    {
-     "id": 1133599,
-     "name": "Leroy Abanda",
-     "role": "defenders",
-     "position": "LB,LWB,LM,RB",
-     "number": 23,
-     "age": 26,
-     "born": "2000-06-07",
-     "country": "France",
-     "height": 178,
-     "value": 116572,
-     "rating": 6.94,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 924844,
-     "name": "Roshon van Eijma",
-     "role": "defenders",
-     "position": "CB",
-     "number": 24,
-     "age": 28,
-     "born": "1998-06-09",
-     "country": "Curacao",
-     "height": 186,
-     "value": 61185,
-     "rating": 6.47,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1838855,
-     "name": "Konstantinos Polykratis",
-     "role": "defenders",
-     "position": "LB",
-     "number": 26,
-     "age": 20,
-     "born": "2006-07-02",
-     "country": "Greece",
-     "height": null,
-     "value": 263311,
-     "rating": 7.21,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2137165,
-     "name": "Georgios Zygouras",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 27,
-     "age": 19,
-     "born": "2007-07-04",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 276261,
-     "name": "Hugo Sousa",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 33,
-     "age": 34,
-     "born": "1992-06-04",
-     "country": "Portugal",
-     "height": 183,
-     "value": 84519,
-     "rating": 6.53,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1668201,
-     "name": "Clément Jolibois",
-     "role": "defenders",
-     "position": "CB",
-     "number": 34,
-     "age": 29,
-     "born": "1997-09-03",
-     "country": "France",
-     "height": 192,
-     "value": 178035,
-     "rating": 6.75,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1525157,
-     "name": "Tiago Manso",
-     "role": "defenders",
-     "position": "RB",
-     "number": 48,
-     "age": 26,
-     "born": "1999-12-13",
-     "country": "Portugal",
-     "height": 174,
-     "value": 378315,
-     "rating": 6.73,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1818863,
-     "name": "Konstantinos Lampsias",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 74,
-     "age": 24,
-     "born": "2002-09-18",
-     "country": "Greece",
-     "height": null,
-     "value": 137323,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1338386,
-     "name": "Pavlos Mavroudis",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": null,
-     "age": 25,
-     "born": "2001-01-12",
-     "country": "Greece",
-     "height": 180,
-     "value": 159450,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1604258,
-     "name": "Giannis Doiranlis",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 4,
-     "age": 24,
-     "born": "2002-09-29",
-     "country": "Greece",
-     "height": 180,
-     "value": 264060,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "74",
-      "expectedReturn": "A few weeks"
-     }
-    },
-    {
-     "id": 623758,
-     "name": "Jorge Pombo",
-     "role": "midfielders",
-     "position": "CAM,ST",
-     "number": 6,
-     "age": 32,
-     "born": "1994-02-22",
-     "country": "Spain",
-     "height": 177,
-     "value": 220903,
-     "rating": 7.83,
-     "goals": 3,
-     "assists": 1,
-     "penalties": 1,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 776606,
-     "name": "Bernardo Martins",
-     "role": "midfielders",
-     "position": "CM,CAM,LW",
-     "number": 8,
-     "age": 28,
-     "born": "1997-12-04",
-     "country": "Portugal",
-     "height": 176,
-     "value": 281893,
-     "rating": 6.9,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1050830,
-     "name": "Gerson Sousa",
-     "role": "midfielders",
-     "position": "RM,LW,RW,LM",
-     "number": 10,
-     "age": 24,
-     "born": "2002-05-10",
-     "country": "Portugal",
-     "height": 178,
-     "value": 493677,
-     "rating": 6.25,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1798261,
-     "name": "Alexandros Pothas",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 16,
-     "age": 19,
-     "born": "2006-12-11",
-     "country": "Greece",
-     "height": null,
-     "value": 276830,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1284538,
-     "name": "Konstantinos Roukounakis",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 17,
-     "age": 25,
-     "born": "2001-07-17",
-     "country": "Greece",
-     "height": 183,
-     "value": 257003,
-     "rating": 6.85,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1103937,
-     "name": "Imam Jagne",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 19,
-     "age": 23,
-     "born": "2003-10-01",
-     "country": "Sweden",
-     "height": null,
-     "value": 288898,
-     "rating": 6.38,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1645376,
-     "name": "Michalis Patiras",
-     "role": "midfielders",
-     "position": "RM",
-     "number": 20,
-     "age": 22,
-     "born": "2004-05-13",
-     "country": "Greece",
-     "height": null,
-     "value": 172142,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 574060,
-     "name": "Ioannis Kousoulos",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 31,
-     "age": 30,
-     "born": "1996-06-14",
-     "country": "Cyprus",
-     "height": 181,
-     "value": 144691,
-     "rating": 6.5,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
-     }
-    },
-    {
-     "id": 2143832,
-     "name": "Vangelis Manganas",
-     "role": "midfielders",
-     "position": "ST",
-     "number": 44,
-     "age": 23,
-     "born": "2003-10-17",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1210947,
-     "name": "Jeremy Antonisse",
-     "role": "attackers",
-     "position": "LW,LM",
-     "number": 7,
-     "age": 24,
-     "born": "2002-03-29",
-     "country": "Curacao",
-     "height": 180,
-     "value": 481114,
-     "rating": 6.45,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1634971,
-     "name": "Dimitrios Theodoridis",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 24,
-     "born": "2002-08-08",
-     "country": "Greece",
-     "height": 185,
-     "value": 287121,
-     "rating": 6.34,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 748378,
-     "name": "Jordi Mboula",
-     "role": "attackers",
-     "position": "LW,LM",
-     "number": 11,
-     "age": 27,
-     "born": "1999-03-16",
-     "country": "Congo",
-     "height": 183,
-     "value": 134768,
-     "rating": 6.37,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1418919,
-     "name": "Georgios Kyriopoulos",
-     "role": "attackers",
-     "position": "RW",
-     "number": 18,
-     "age": 22,
-     "born": "2004-08-24",
-     "country": "Greece",
-     "height": 176,
-     "value": null,
-     "rating": 6.25,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 304555,
-     "name": "Ángelo Sagal",
-     "role": "attackers",
-     "position": "ST,RW,RM,CAM",
-     "number": 28,
-     "age": 33,
-     "born": "1993-04-18",
-     "country": "Chile",
-     "height": 179,
-     "value": 108907,
-     "rating": 6.68,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1423601,
-     "name": "Apostolos Christopoulos",
-     "role": "attackers",
-     "position": "ST",
-     "number": 72,
-     "age": 23,
-     "born": "2003-01-29",
-     "country": "Greece",
-     "height": 186,
-     "value": 301207,
-     "rating": 6.12,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Sebastián Leto",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "276261": {
-     "name": "Hugo Sousa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "304555": {
-     "name": "Ángelo Sagal",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "474507": {
-     "name": "Alexandros Anagnostopoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "574060": {
-     "name": "Ioannis Kousoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "623758": {
-     "name": "Jorge Pombo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "748378": {
-     "name": "Jordi Mboula",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "776606": {
-     "name": "Bernardo Martins",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "888907": {
-     "name": "Alex Petkov",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "924844": {
-     "name": "Roshon van Eijma",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "938554": {
-     "name": "Konstantinos Apostolakis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "978290": {
-     "name": "Moisés Ramirez",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1050830": {
-     "name": "Gerson Sousa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1103937": {
-     "name": "Imam Jagne",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1133599": {
-     "name": "Leroy Abanda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1210947": {
-     "name": "Jeremy Antonisse",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1284538": {
-     "name": "Konstantinos Roukounakis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1338386": {
-     "name": "Pavlos Mavroudis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1418919": {
-     "name": "Georgios Kyriopoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1423601": {
-     "name": "Apostolos Christopoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1525157": {
-     "name": "Tiago Manso",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1596411": {
-     "name": "Jon De Luis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1604258": {
-     "name": "Giannis Doiranlis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1634971": {
-     "name": "Dimitrios Theodoridis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1645376": {
-     "name": "Michalis Patiras",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1668201": {
-     "name": "Clément Jolibois",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1782739": {
-     "name": "Loukas Stamellos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1783294": {
-     "name": "Filippos Roberts",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1798261": {
-     "name": "Alexandros Pothas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1818863": {
-     "name": "Konstantinos Lampsias",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1838855": {
-     "name": "Konstantinos Polykratis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1899316": {
-     "name": "Nektarios Kaloskamis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2137165": {
-     "name": "Georgios Zygouras",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2143832": {
-     "name": "Vangelis Manganas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
@@ -8170,7 +8179,7 @@
      "country": "Greece",
      "height": 190,
      "value": 98616,
-     "rating": 5.78,
+     "rating": 5.98,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8325,7 +8334,7 @@
      "country": "Greece",
      "height": 191,
      "value": 326928,
-     "rating": 6.54,
+     "rating": 6.73,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -8344,11 +8353,11 @@
      "country": "Sweden",
      "height": 187,
      "value": 482493,
-     "rating": 6.2,
+     "rating": 6.26,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -8363,7 +8372,7 @@
      "country": "Greece",
      "height": 183,
      "value": 167989,
-     "rating": 6.98,
+     "rating": 6.96,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8375,14 +8384,14 @@
      "id": 1159261,
      "name": "Alex Méndez",
      "role": "defenders",
-     "position": "LB,LWB,LM",
+     "position": "LB,LM,LWB",
      "number": 28,
      "age": 25,
      "born": "2001-07-28",
      "country": "Spain",
      "height": 180,
      "value": 253857,
-     "rating": 6.74,
+     "rating": 6.71,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -8426,10 +8435,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "About a week"
-     }
+     "injury": null
     },
     {
      "id": 1526927,
@@ -8442,11 +8448,11 @@
      "country": "Greece",
      "height": null,
      "value": 353934,
-     "rating": 6.31,
+     "rating": 6.34,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -8480,7 +8486,7 @@
      "country": "Greece",
      "height": 172,
      "value": 179756,
-     "rating": 6.6,
+     "rating": 6.61,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8499,7 +8505,7 @@
      "country": "Spain",
      "height": 170,
      "value": 158638,
-     "rating": 6.88,
+     "rating": 6.92,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -8556,7 +8562,7 @@
      "country": "Greece",
      "height": 171,
      "value": 62098,
-     "rating": 6.21,
+     "rating": 6.13,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8575,7 +8581,7 @@
      "country": "Greece",
      "height": 182,
      "value": 648593,
-     "rating": 7,
+     "rating": 7.08,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8663,25 +8669,6 @@
      "injury": null
     },
     {
-     "id": 1814189,
-     "name": "Chrysanthos Gezos",
-     "role": "attackers",
-     "position": "LM",
-     "number": null,
-     "age": 21,
-     "born": "2005-09-28",
-     "country": "Greece",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 908534,
      "name": "Julián Bartolo",
      "role": "attackers",
@@ -8692,11 +8679,11 @@
      "country": "Argentina",
      "height": 166,
      "value": 280053,
-     "rating": 7.23,
+     "rating": 7.06,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -8711,7 +8698,7 @@
      "country": "Italy",
      "height": 187,
      "value": 158836,
-     "rating": 6.67,
+     "rating": 6.66,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -8749,11 +8736,30 @@
      "country": "Argentina",
      "height": 168,
      "value": 405875,
-     "rating": 6.64,
+     "rating": 6.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1814189,
+     "name": "Chrysanthos Gezos",
+     "role": "attackers",
+     "position": "LM",
+     "number": 22,
+     "age": 21,
+     "born": "2005-09-28",
+     "country": "Greece",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -8799,14 +8805,14 @@
      "id": 1561078,
      "name": "Antonis Papakanellos",
      "role": "attackers",
-     "position": "RW,LW,CAM",
+     "position": "LW,RW,CAM",
      "number": 44,
      "age": 21,
      "born": "2005-08-11",
      "country": "Greece",
      "height": 186,
      "value": 468592,
-     "rating": 6.83,
+     "rating": 6.76,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -8834,7 +8840,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Giorgos Antonopoulos",
@@ -8845,180 +8851,994 @@
     "11175": {
      "name": "Panagiotis Deligiannidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "121774": {
      "name": "Nikolaos Kaltsas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "165709": {
      "name": "Federico Macheda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "260750": {
      "name": "Dimitrios Kourbelis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "281627": {
      "name": "Nikos Papadopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "409193": {
      "name": "Issiaga Sylla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "494184": {
      "name": "Jordan Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "556958": {
      "name": "Evgeniy Yablonski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "614193": {
      "name": "Franz Brorsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "746607": {
      "name": "Julián Chicco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "780816": {
      "name": "Giannis Kotsiras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "834643": {
      "name": "Ketu Jih Kalvin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "851199": {
      "name": "Giannis Bouzoukis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "874302": {
      "name": "Adrián Riera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "908534": {
      "name": "Julián Bartolo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "954408": {
      "name": "Nikola Šipčić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "961305": {
      "name": "Benjamin Mbunga Kimpioka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1078491": {
      "name": "Eder González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1084574": {
      "name": "Alexandros Tereziou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1109039": {
      "name": "Franco Orozco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1159261": {
      "name": "Alex Méndez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1184453": {
      "name": "Vasilios Chatziemmanouil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1238739": {
      "name": "Ricardinho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1368080": {
      "name": "Bruno Pérez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1426698": {
      "name": "Konstantinos Pomonis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1428135": {
      "name": "Konstantinos Chrysopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1526927": {
      "name": "Dimitrios Laskaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1561078": {
      "name": "Antonis Papakanellos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1571960": {
      "name": "Spyros Angelidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1598900": {
      "name": "Theofilos Kakadiaris",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1707913": {
      "name": "Giannis Gitersos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1727422": {
      "name": "Vasilios Archontakakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1814189": {
      "name": "Chrysanthos Gezos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1861018": {
      "name": "Giannis Kriaras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2209521": {
      "name": "Matias Zogu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": []
+  },
+  "Levadeiakos": {
+   "fotmobName": "Levadiakos",
+   "fotmobId": 4493,
+   "coach": "Elias Charalampous",
+   "players": [
+    {
+     "id": 1045800,
+     "name": "Lucas Anacker",
+     "role": "keepers",
+     "position": "GK",
+     "number": 33,
+     "age": 30,
+     "born": "1996-09-22",
+     "country": "Brazil",
+     "height": 187,
+     "value": 50000,
+     "rating": 6.48,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1289357,
+     "name": "Stelios Vallindras",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 33,
+     "age": 21,
+     "born": "2005-05-03",
+     "country": "Greece",
+     "height": 195,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1284486,
+     "name": "Niv Eliasi",
+     "role": "keepers",
+     "position": "GK",
+     "number": 55,
+     "age": 24,
+     "born": "2002-02-21",
+     "country": "Israel",
+     "height": 188,
+     "value": 851788,
+     "rating": 6.45,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 291655,
+     "name": "Norbert Gyömbér",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": null,
+     "age": 34,
+     "born": "1992-07-03",
+     "country": "Slovakia",
+     "height": 189,
+     "value": 351662,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1161609,
+     "name": "Alexandru Pantea",
+     "role": "defenders",
+     "position": "RB,LB",
+     "number": 2,
+     "age": 23,
+     "born": "2003-09-11",
+     "country": "Romania",
+     "height": 172,
+     "value": 783066,
+     "rating": 6.64,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 988775,
+     "name": "Marios Vichos",
+     "role": "defenders",
+     "position": "LB,LWB",
+     "number": 3,
+     "age": 26,
+     "born": "2000-01-14",
+     "country": "Greece",
+     "height": 180,
+     "value": 832117,
+     "rating": 6.57,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 955366,
+     "name": "Jonathan Panzo",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 26,
+     "born": "2000-10-25",
+     "country": "England",
+     "height": 188,
+     "value": 888106,
+     "rating": 6.61,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1622764,
+     "name": "Taxiarchis Filon",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 22,
+     "age": 21,
+     "born": "2005-03-16",
+     "country": "Greece",
+     "height": 177,
+     "value": 297005,
+     "rating": 6.4,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1065320,
+     "name": "Georgios Kornezos",
+     "role": "defenders",
+     "position": "CB",
+     "number": 23,
+     "age": 28,
+     "born": "1998-02-23",
+     "country": "Greece",
+     "height": 191,
+     "value": 60333,
+     "rating": 6.92,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 994411,
+     "name": "Panagiotis Liagas",
+     "role": "defenders",
+     "position": "CB",
+     "number": 24,
+     "age": 26,
+     "born": "1999-11-05",
+     "country": "Greece",
+     "height": 189,
+     "value": 827861,
+     "rating": 6.55,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1300381,
+     "name": "Giannis Tsivelekidis",
+     "role": "defenders",
+     "position": "CB",
+     "number": 37,
+     "age": 27,
+     "born": "1999-06-04",
+     "country": "Greece",
+     "height": 187,
+     "value": 79279,
+     "rating": 6.78,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1426851,
+     "name": "Nikolaos Tsaras",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 95,
+     "age": 20,
+     "born": "2006-03-13",
+     "country": "Greece",
+     "height": 185,
+     "value": 231559,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 339992,
+     "name": "Mohamed Elneny",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 6,
+     "age": 34,
+     "born": "1992-07-11",
+     "country": "Egypt",
+     "height": 180,
+     "value": 551662,
+     "rating": 5.63,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 798149,
+     "name": "Juan Bauza",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 7,
+     "age": 30,
+     "born": "1996-05-03",
+     "country": "Argentina",
+     "height": 177,
+     "value": 197735,
+     "rating": 6.21,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 892618,
+     "name": "Georgios Nikas",
+     "role": "midfielders",
+     "position": "CDM,CAM",
+     "number": 8,
+     "age": 27,
+     "born": "1999-09-17",
+     "country": "Greece",
+     "height": 188,
+     "value": 100865,
+     "rating": 6.58,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1025630,
+     "name": "Adrian Șut",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 15,
+     "age": 27,
+     "born": "1999-04-30",
+     "country": "Romania",
+     "height": 185,
+     "value": 2028513,
+     "rating": 6.47,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 750828,
+     "name": "Ioannis Kosti",
+     "role": "midfielders",
+     "position": "CDM,CM,CAM",
+     "number": 18,
+     "age": 26,
+     "born": "2000-03-17",
+     "country": "Cyprus",
+     "height": 170,
+     "value": 802486,
+     "rating": 6.96,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1596720,
+     "name": "Lamarana Jallow",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 19,
+     "age": 24,
+     "born": "2002-03-21",
+     "country": "The Gambia",
+     "height": 182,
+     "value": 262943,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1575953,
+     "name": "Konstantinos Goumas",
+     "role": "midfielders",
+     "position": "CM,CAM",
+     "number": 20,
+     "age": 21,
+     "born": "2005-03-12",
+     "country": "Greece",
+     "height": 175,
+     "value": 438549,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1366607,
+     "name": "Gregorio Rodríguez",
+     "role": "midfielders",
+     "position": "LW,RM",
+     "number": 27,
+     "age": 26,
+     "born": "2000-01-17",
+     "country": "Argentina",
+     "height": null,
+     "value": 423610,
+     "rating": 6.43,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 625626,
+     "name": "Panagiotis Simelidis",
+     "role": "midfielders",
+     "position": "CAM,LW,CDM",
+     "number": 31,
+     "age": 33,
+     "born": "1992-11-03",
+     "country": "Greece",
+     "height": 177,
+     "value": 159041,
+     "rating": 6.29,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 1,
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About a week"
+     }
+    },
+    {
+     "id": 2130618,
+     "name": "Mohamed Ndiaye",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 66,
+     "age": 19,
+     "born": "2007-05-01",
+     "country": "Senegal",
+     "height": null,
+     "value": null,
+     "rating": 6.7,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1585812,
+     "name": "Christos Papadopoulos",
+     "role": "midfielders",
+     "position": "RW",
+     "number": 74,
+     "age": 21,
+     "born": "2004-11-01",
+     "country": "Greece",
+     "height": 188,
+     "value": 387675,
+     "rating": 6.09,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1187008,
+     "name": "Georgios Vrakas",
+     "role": "midfielders",
+     "position": "RM,LM,RW,CM,CAM,LW",
+     "number": 77,
+     "age": 25,
+     "born": "2001-04-28",
+     "country": "Greece",
+     "height": 178,
+     "value": 260862,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 463293,
+     "name": "Ognjen Ožegović",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 32,
+     "born": "1994-06-09",
+     "country": "Serbia",
+     "height": 180,
+     "value": 122974,
+     "rating": 6.11,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 989371,
+     "name": "Agustín Urzi",
+     "role": "attackers",
+     "position": "RW,LM,LW,CAM",
+     "number": 11,
+     "age": 26,
+     "born": "2000-05-04",
+     "country": "Argentina",
+     "height": 168,
+     "value": 606208,
+     "rating": 6.58,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 719056,
+     "name": "Georgios Manthatis",
+     "role": "attackers",
+     "position": "LW,RB",
+     "number": 14,
+     "age": 29,
+     "born": "1997-05-11",
+     "country": "Greece",
+     "height": 174,
+     "value": 66008,
+     "rating": 7.11,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 863872,
+     "name": "Dimitrios Emmanouilidis",
+     "role": "attackers",
+     "position": "LW,RW,LM,CAM,ST",
+     "number": 17,
+     "age": 26,
+     "born": "2000-10-24",
+     "country": "Greece",
+     "height": 175,
+     "value": 352849,
+     "rating": 6.22,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1792870,
+     "name": "Mahamadou Balde",
+     "role": "attackers",
+     "position": "LW",
+     "number": 21,
+     "age": 19,
+     "born": "2007-01-30",
+     "country": "Spain",
+     "height": null,
+     "value": null,
+     "rating": 6.5,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 837264,
+     "name": "Aliou Badji",
+     "role": "attackers",
+     "position": "ST",
+     "number": 25,
+     "age": 29,
+     "born": "1997-10-10",
+     "country": "Senegal",
+     "height": 190,
+     "value": 208198,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1190097,
+     "name": "Octavian Popescu",
+     "role": "attackers",
+     "position": "LW",
+     "number": 30,
+     "age": 23,
+     "born": "2002-12-27",
+     "country": "Romania",
+     "height": 180,
+     "value": 497372,
+     "rating": 6.83,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1280732,
+     "name": "David Cobnan",
+     "role": "attackers",
+     "position": "ST",
+     "number": 99,
+     "age": 24,
+     "born": "2002-09-10",
+     "country": "Nigeria",
+     "height": 178,
+     "value": 579353,
+     "rating": 5.88,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "Unknown"
+     }
+    }
+   ],
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
+   "coachHistory": [
+    {
+     "name": "Elias Charalampous",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "291655": {
+     "name": "Norbert Gyömbér",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-10-25"
+    },
+    "339992": {
+     "name": "Mohamed Elneny",
+     "firstSeen": "2026-10-04",
+     "lastSeen": "2026-10-25"
+    },
+    "463293": {
+     "name": "Ognjen Ožegović",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "625626": {
+     "name": "Panagiotis Simelidis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "719056": {
+     "name": "Georgios Manthatis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "750828": {
+     "name": "Ioannis Kosti",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "798149": {
+     "name": "Juan Bauza",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "837264": {
+     "name": "Aliou Badji",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "863872": {
+     "name": "Dimitrios Emmanouilidis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "892618": {
+     "name": "Georgios Nikas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "955366": {
+     "name": "Jonathan Panzo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "988775": {
+     "name": "Marios Vichos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "989371": {
+     "name": "Agustín Urzi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "994411": {
+     "name": "Panagiotis Liagas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1025630": {
+     "name": "Adrian Șut",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1045800": {
+     "name": "Lucas Anacker",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1065320": {
+     "name": "Georgios Kornezos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1161609": {
+     "name": "Alexandru Pantea",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1187008": {
+     "name": "Georgios Vrakas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1190097": {
+     "name": "Octavian Popescu",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1280732": {
+     "name": "David Cobnan",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1284486": {
+     "name": "Niv Eliasi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1289357": {
+     "name": "Stelios Vallindras",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1300381": {
+     "name": "Giannis Tsivelekidis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1366607": {
+     "name": "Gregorio Rodríguez",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1426851": {
+     "name": "Nikolaos Tsaras",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1575953": {
+     "name": "Konstantinos Goumas",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1585812": {
+     "name": "Christos Papadopoulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1596720": {
+     "name": "Lamarana Jallow",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1622764": {
+     "name": "Taxiarchis Filon",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "1792870": {
+     "name": "Mahamadou Balde",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    },
+    "2104827": {
+     "name": "Vasilios Tzebelikos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "2107410": {
+     "name": "Giannis Poulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "2130618": {
+     "name": "Mohamed Ndiaye",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-25"
+    }
+   },
+   "left": [
+    {
+     "id": "2104827",
+     "name": "Vasilios Tzebelikos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "2107410",
+     "name": "Giannis Poulos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
   },
   "Atromitos": {
    "fotmobName": "Atromitos",
@@ -9627,7 +10447,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Dušan Kerkez",
@@ -9638,147 +10458,147 @@
     "140819": {
      "name": "Steven Zuber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "179759": {
      "name": "Hördur Magnusson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "261654": {
      "name": "Jere Uronen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "433311": {
      "name": "Dani García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "490413": {
      "name": "Seny Dieng",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "574217": {
      "name": "Lefteris Choutesiotis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "612027": {
      "name": "Sotiris Tsiloulis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "819752": {
      "name": "Dimitrios Stavropoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "848335": {
      "name": "Cristopher Núnez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "866108": {
      "name": "Samuel Moutoussamy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "891748": {
      "name": "Serginho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "914839": {
      "name": "Lefteris Lyratzis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "953698": {
      "name": "Vasilios Athanasiou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1065450": {
      "name": "Georgios Tzovaras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1076940": {
      "name": "Theocharis Tsingaras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1080171": {
      "name": "Kelvin Ofori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1085343": {
      "name": "Gerasimos Mitoglou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1087743": {
      "name": "Juan Perea",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1289351": {
      "name": "Georgios Papadopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1428562": {
      "name": "Mattheos Mountes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1429994": {
      "name": "Thanasis Karamanis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1434524": {
      "name": "Dimitrios Tsakmakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1532188": {
      "name": "Spyros Abartzidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1561233": {
      "name": "Stavros Pnevmonidis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1683522": {
      "name": "Panagiotis Tsantilas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1797210": {
      "name": "Konstantinos Batos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1807890": {
      "name": "Vangelis Paliouras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1838613": {
      "name": "Elton Hoxha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2132001": {
      "name": "Anastasios Kotsis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2137129": {
      "name": "Argyris Marnezos",
@@ -9788,835 +10608,18 @@
     "2209586": {
      "name": "Petros Tsagdis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2356926": {
      "name": "Spiros Ampartzidis",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [
     {
      "id": "2137129",
      "name": "Argyris Marnezos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    }
-   ]
-  },
-  "Levadeiakos": {
-   "fotmobName": "Levadiakos",
-   "fotmobId": 4493,
-   "coach": "Elias Charalampous",
-   "players": [
-    {
-     "id": 1045800,
-     "name": "Lucas Anacker",
-     "role": "keepers",
-     "position": "GK",
-     "number": 33,
-     "age": 30,
-     "born": "1996-09-22",
-     "country": "Brazil",
-     "height": 187,
-     "value": 50000,
-     "rating": 6.48,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1289357,
-     "name": "Stelios Vallindras",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 33,
-     "age": 21,
-     "born": "2005-05-03",
-     "country": "Greece",
-     "height": 195,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1284486,
-     "name": "Niv Eliasi",
-     "role": "keepers",
-     "position": "GK",
-     "number": 55,
-     "age": 24,
-     "born": "2002-02-21",
-     "country": "Israel",
-     "height": 188,
-     "value": 851788,
-     "rating": 6.29,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 291655,
-     "name": "Norbert Gyömbér",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": null,
-     "age": 34,
-     "born": "1992-07-03",
-     "country": "Slovakia",
-     "height": 189,
-     "value": 351662,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1161609,
-     "name": "Alexandru Pantea",
-     "role": "defenders",
-     "position": "RB,LB",
-     "number": 2,
-     "age": 23,
-     "born": "2003-09-11",
-     "country": "Romania",
-     "height": 172,
-     "value": 783066,
-     "rating": 6.64,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 988775,
-     "name": "Marios Vichos",
-     "role": "defenders",
-     "position": "LB,LWB",
-     "number": 3,
-     "age": 26,
-     "born": "2000-01-14",
-     "country": "Greece",
-     "height": 180,
-     "value": 832117,
-     "rating": 6.44,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 955366,
-     "name": "Jonathan Panzo",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 25,
-     "born": "2000-10-25",
-     "country": "England",
-     "height": 188,
-     "value": 888106,
-     "rating": 6.61,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1622764,
-     "name": "Taxiarchis Filon",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 22,
-     "age": 21,
-     "born": "2005-03-16",
-     "country": "Greece",
-     "height": 177,
-     "value": 297005,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1065320,
-     "name": "Georgios Kornezos",
-     "role": "defenders",
-     "position": "CB",
-     "number": 23,
-     "age": 28,
-     "born": "1998-02-23",
-     "country": "Greece",
-     "height": 191,
-     "value": 60333,
-     "rating": 7,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "About 1-2 weeks"
-     }
-    },
-    {
-     "id": 994411,
-     "name": "Panagiotis Liagas",
-     "role": "defenders",
-     "position": "CB",
-     "number": 24,
-     "age": 26,
-     "born": "1999-11-05",
-     "country": "Greece",
-     "height": 189,
-     "value": 827861,
-     "rating": 6.47,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1300381,
-     "name": "Giannis Tsivelekidis",
-     "role": "defenders",
-     "position": "CB",
-     "number": 37,
-     "age": 27,
-     "born": "1999-06-04",
-     "country": "Greece",
-     "height": 187,
-     "value": 79279,
-     "rating": 6.82,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1426851,
-     "name": "Nikolaos Tsaras",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 95,
-     "age": 20,
-     "born": "2006-03-13",
-     "country": "Greece",
-     "height": 185,
-     "value": 231559,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 339992,
-     "name": "Mohamed Elneny",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 6,
-     "age": 34,
-     "born": "1992-07-11",
-     "country": "Egypt",
-     "height": 180,
-     "value": 551662,
-     "rating": 5.63,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 798149,
-     "name": "Juan Bauza",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 7,
-     "age": 30,
-     "born": "1996-05-03",
-     "country": "Argentina",
-     "height": 177,
-     "value": 197735,
-     "rating": 6.28,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 892618,
-     "name": "Georgios Nikas",
-     "role": "midfielders",
-     "position": "CDM,CAM",
-     "number": 8,
-     "age": 27,
-     "born": "1999-09-17",
-     "country": "Greece",
-     "height": 188,
-     "value": 100865,
-     "rating": 6.58,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1025630,
-     "name": "Adrian Șut",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 15,
-     "age": 27,
-     "born": "1999-04-30",
-     "country": "Romania",
-     "height": 185,
-     "value": 2028513,
-     "rating": 6.47,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 750828,
-     "name": "Ioannis Kosti",
-     "role": "midfielders",
-     "position": "CDM,CM,CAM",
-     "number": 18,
-     "age": 26,
-     "born": "2000-03-17",
-     "country": "Cyprus",
-     "height": 170,
-     "value": 802486,
-     "rating": 7.06,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1596720,
-     "name": "Lamarana Jallow",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 19,
-     "age": 24,
-     "born": "2002-03-21",
-     "country": "The Gambia",
-     "height": 182,
-     "value": 262943,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1575953,
-     "name": "Konstantinos Goumas",
-     "role": "midfielders",
-     "position": "CM,CAM",
-     "number": 20,
-     "age": 21,
-     "born": "2005-03-12",
-     "country": "Greece",
-     "height": 175,
-     "value": 438549,
-     "rating": 6.53,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1366607,
-     "name": "Gregorio Rodríguez",
-     "role": "midfielders",
-     "position": "LW,RM",
-     "number": 27,
-     "age": 26,
-     "born": "2000-01-17",
-     "country": "Argentina",
-     "height": null,
-     "value": 423610,
-     "rating": 6.43,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 625626,
-     "name": "Panagiotis Simelidis",
-     "role": "midfielders",
-     "position": "CAM,LW,CDM",
-     "number": 31,
-     "age": 33,
-     "born": "1992-11-03",
-     "country": "Greece",
-     "height": 177,
-     "value": 159041,
-     "rating": 6.29,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 1,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "About a week"
-     }
-    },
-    {
-     "id": 2130618,
-     "name": "Mohamed Ndiaye",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 66,
-     "age": 19,
-     "born": "2007-05-01",
-     "country": "Senegal",
-     "height": null,
-     "value": null,
-     "rating": 6.64,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1585812,
-     "name": "Christos Papadopoulos",
-     "role": "midfielders",
-     "position": "RW",
-     "number": 74,
-     "age": 21,
-     "born": "2004-11-01",
-     "country": "Greece",
-     "height": 188,
-     "value": 387675,
-     "rating": 6.09,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1187008,
-     "name": "Georgios Vrakas",
-     "role": "midfielders",
-     "position": "RM,LM,RW,CM,CAM,LW",
-     "number": 77,
-     "age": 25,
-     "born": "2001-04-28",
-     "country": "Greece",
-     "height": 178,
-     "value": 260862,
-     "rating": 6.61,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 463293,
-     "name": "Ognjen Ožegović",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 32,
-     "born": "1994-06-09",
-     "country": "Serbia",
-     "height": 180,
-     "value": 122974,
-     "rating": 6.02,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 989371,
-     "name": "Agustín Urzi",
-     "role": "attackers",
-     "position": "RW,LM,LW,CAM",
-     "number": 11,
-     "age": 26,
-     "born": "2000-05-04",
-     "country": "Argentina",
-     "height": 168,
-     "value": 606208,
-     "rating": 6.68,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 719056,
-     "name": "Georgios Manthatis",
-     "role": "attackers",
-     "position": "LW,RB",
-     "number": 14,
-     "age": 29,
-     "born": "1997-05-11",
-     "country": "Greece",
-     "height": 174,
-     "value": 66008,
-     "rating": 7.07,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 863872,
-     "name": "Dimitrios Emmanouilidis",
-     "role": "attackers",
-     "position": "LW,RW,LM,CAM,ST",
-     "number": 17,
-     "age": 26,
-     "born": "2000-10-24",
-     "country": "Greece",
-     "height": 175,
-     "value": 352849,
-     "rating": 6.27,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1792870,
-     "name": "Mahamadou Balde",
-     "role": "attackers",
-     "position": "LW",
-     "number": 21,
-     "age": 19,
-     "born": "2007-01-30",
-     "country": "Spain",
-     "height": null,
-     "value": null,
-     "rating": 6.5,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 837264,
-     "name": "Aliou Badji",
-     "role": "attackers",
-     "position": "ST",
-     "number": 25,
-     "age": 29,
-     "born": "1997-10-10",
-     "country": "Senegal",
-     "height": 190,
-     "value": 208198,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1190097,
-     "name": "Octavian Popescu",
-     "role": "attackers",
-     "position": "LW",
-     "number": 30,
-     "age": 23,
-     "born": "2002-12-27",
-     "country": "Romania",
-     "height": 180,
-     "value": 497372,
-     "rating": 6.8,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1280732,
-     "name": "David Cobnan",
-     "role": "attackers",
-     "position": "ST",
-     "number": 99,
-     "age": 24,
-     "born": "2002-09-10",
-     "country": "Nigeria",
-     "height": 178,
-     "value": 579353,
-     "rating": 5.88,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "Unknown"
-     }
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Elias Charalampous",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "291655": {
-     "name": "Norbert Gyömbér",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-24"
-    },
-    "339992": {
-     "name": "Mohamed Elneny",
-     "firstSeen": "2026-10-04",
-     "lastSeen": "2026-10-24"
-    },
-    "463293": {
-     "name": "Ognjen Ožegović",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "625626": {
-     "name": "Panagiotis Simelidis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "719056": {
-     "name": "Georgios Manthatis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "750828": {
-     "name": "Ioannis Kosti",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "798149": {
-     "name": "Juan Bauza",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "837264": {
-     "name": "Aliou Badji",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "863872": {
-     "name": "Dimitrios Emmanouilidis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "892618": {
-     "name": "Georgios Nikas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "955366": {
-     "name": "Jonathan Panzo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "988775": {
-     "name": "Marios Vichos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "989371": {
-     "name": "Agustín Urzi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "994411": {
-     "name": "Panagiotis Liagas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1025630": {
-     "name": "Adrian Șut",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1045800": {
-     "name": "Lucas Anacker",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1065320": {
-     "name": "Georgios Kornezos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1161609": {
-     "name": "Alexandru Pantea",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1187008": {
-     "name": "Georgios Vrakas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1190097": {
-     "name": "Octavian Popescu",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1280732": {
-     "name": "David Cobnan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1284486": {
-     "name": "Niv Eliasi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1289357": {
-     "name": "Stelios Vallindras",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1300381": {
-     "name": "Giannis Tsivelekidis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1366607": {
-     "name": "Gregorio Rodríguez",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1426851": {
-     "name": "Nikolaos Tsaras",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1575953": {
-     "name": "Konstantinos Goumas",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1585812": {
-     "name": "Christos Papadopoulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1596720": {
-     "name": "Lamarana Jallow",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1622764": {
-     "name": "Taxiarchis Filon",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1792870": {
-     "name": "Mahamadou Balde",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "2104827": {
-     "name": "Vasilios Tzebelikos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "2107410": {
-     "name": "Giannis Poulos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "2130618": {
-     "name": "Mohamed Ndiaye",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": [
-    {
-     "id": "2104827",
-     "name": "Vasilios Tzebelikos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "2107410",
-     "name": "Giannis Poulos",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -11226,7 +11229,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-25T12:27:09.239Z",
    "coachHistory": [
     {
      "name": "Konstantinos Bratsos",
@@ -11237,107 +11240,107 @@
     "198100": {
      "name": "Yuri Lodygin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "199834": {
      "name": "Rémy Cabella",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "255381": {
      "name": "Alexei Koşelev",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "369322": {
      "name": "Anastasios Tsokanis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "474502": {
      "name": "Georgios Mygas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "531931": {
      "name": "Giannis Kargas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "560847": {
      "name": "Lazaros Lamprou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "564713": {
      "name": "Quentin Lecoeuche",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "566470": {
      "name": "Joca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "656648": {
      "name": "Marios Siabanis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "660148": {
      "name": "Dženis Burnić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "699362": {
      "name": "Ronaël Pierre-Gabriel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "720021": {
      "name": "Xesc Regis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "776012": {
      "name": "Jan Hurtado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "782154": {
      "name": "Hamza Mendyl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "815187": {
      "name": "Yvan Neyou Noupa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "820143": {
      "name": "Keidi Bare",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "890242": {
      "name": "Maximiliano Comba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1077671": {
      "name": "Gustavo Furtado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1182566": {
      "name": "Derek Agyakwa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1200040": {
      "name": "Matías González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1206185": {
      "name": "Nabil Makni",
@@ -11347,52 +11350,52 @@
     "1288474": {
      "name": "Stefanos Katsikas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1337880": {
      "name": "Vasilios Grosdis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1434534": {
      "name": "Hatim Essaoubi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1435436": {
      "name": "Lefteris Tasiouras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1665411": {
      "name": "Georgios Charalampoglou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1667984": {
      "name": "Konstantinos Lykourinos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1803326": {
      "name": "Klearchos Vainopoulos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "1897361": {
      "name": "Athanasios Papathanasiou-Gerofokas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2139579": {
      "name": "Fabio Refatllari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     },
     "2139580": {
      "name": "Alexandros Garavelas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-25"
     }
    },
    "left": [

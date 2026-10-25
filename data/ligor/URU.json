@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "URU",
  "fotmobId": 161,
  "name": "Liga AUF Uruguaya",
@@ -49,6 +49,20 @@
   },
   {
    "rank": 4,
+   "team": "Deportivo Maldonado",
+   "fotmobName": "Deportivo Maldonado",
+   "fotmobId": 1833,
+   "group": null,
+   "played": 12,
+   "won": 6,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "18-10",
+   "gd": 8,
+   "pts": 21
+  },
+  {
+   "rank": 5,
    "team": "Club Atletico Peñarol",
    "fotmobName": "Club Atletico Peñarol",
    "fotmobId": 8450,
@@ -60,20 +74,6 @@
    "goals": "16-8",
    "gd": 8,
    "pts": 21
-  },
-  {
-   "rank": 5,
-   "team": "Deportivo Maldonado",
-   "fotmobName": "Deportivo Maldonado",
-   "fotmobId": 1833,
-   "group": null,
-   "played": 11,
-   "won": 5,
-   "drawn": 3,
-   "lost": 3,
-   "goals": "16-9",
-   "gd": 7,
-   "pts": 18
   },
   {
    "rank": 6,
@@ -105,6 +105,20 @@
   },
   {
    "rank": 8,
+   "team": "Racing",
+   "fotmobName": "Racing",
+   "fotmobId": 6043,
+   "group": null,
+   "played": 12,
+   "won": 4,
+   "drawn": 4,
+   "lost": 4,
+   "goals": "15-13",
+   "gd": 2,
+   "pts": 16
+  },
+  {
+   "rank": 9,
    "team": "Club Atlético Progreso",
    "fotmobName": "Club Atlético Progreso",
    "fotmobId": 1838,
@@ -116,20 +130,6 @@
    "goals": "12-13",
    "gd": -1,
    "pts": 16
-  },
-  {
-   "rank": 9,
-   "team": "Racing",
-   "fotmobName": "Racing",
-   "fotmobId": 6043,
-   "group": null,
-   "played": 11,
-   "won": 4,
-   "drawn": 3,
-   "lost": 4,
-   "goals": "12-10",
-   "gd": 2,
-   "pts": 15
   },
   {
    "rank": 10,
@@ -161,31 +161,31 @@
   },
   {
    "rank": 12,
-   "team": "Danubio",
-   "fotmobName": "Danubio",
-   "fotmobId": 8562,
-   "group": null,
-   "played": 11,
-   "won": 2,
-   "drawn": 4,
-   "lost": 5,
-   "goals": "5-11",
-   "gd": -6,
-   "pts": 10
-  },
-  {
-   "rank": 13,
    "team": "Albion",
    "fotmobName": "Albion",
    "fotmobId": 924934,
    "group": null,
-   "played": 11,
-   "won": 3,
+   "played": 12,
+   "won": 4,
    "drawn": 0,
    "lost": 8,
-   "goals": "12-19",
+   "goals": "15-20",
+   "gd": -5,
+   "pts": 12
+  },
+  {
+   "rank": 13,
+   "team": "Danubio",
+   "fotmobName": "Danubio",
+   "fotmobId": 8562,
+   "group": null,
+   "played": 12,
+   "won": 2,
+   "drawn": 4,
+   "lost": 6,
+   "goals": "6-13",
    "gd": -7,
-   "pts": 9
+   "pts": 10
   },
   {
    "rank": 14,
@@ -193,13 +193,13 @@
    "fotmobName": "Defensor Sporting",
    "fotmobId": 7796,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 7,
-   "goals": "11-20",
+   "goals": "14-23",
    "gd": -9,
-   "pts": 8
+   "pts": 9
   },
   {
    "rank": 15,
@@ -221,12 +221,12 @@
    "fotmobName": "Central Español",
    "fotmobId": 1834,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 1,
    "drawn": 2,
-   "lost": 8,
-   "goals": "5-18",
-   "gd": -13,
+   "lost": 9,
+   "goals": "6-21",
+   "gd": -15,
    "pts": 5
   }
  ],
@@ -571,6 +571,120 @@
     11,
     5,
     -13
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Liverpool FC",
+    1,
+    11,
+    24,
+    11
+   ],
+   [
+    "Nacional",
+    2,
+    11,
+    23,
+    6
+   ],
+   [
+    "Montevideo City Torque",
+    3,
+    11,
+    22,
+    9
+   ],
+   [
+    "Deportivo Maldonado",
+    4,
+    12,
+    21,
+    8
+   ],
+   [
+    "Club Atletico Peñarol",
+    5,
+    12,
+    21,
+    8
+   ],
+   [
+    "Juventud de las Piedras",
+    6,
+    12,
+    18,
+    4
+   ],
+   [
+    "Cerro",
+    7,
+    11,
+    18,
+    -1
+   ],
+   [
+    "Racing",
+    8,
+    12,
+    16,
+    2
+   ],
+   [
+    "Club Atlético Progreso",
+    9,
+    11,
+    16,
+    -1
+   ],
+   [
+    "Boston River",
+    10,
+    11,
+    15,
+    1
+   ],
+   [
+    "Montevideo Wanderers",
+    11,
+    11,
+    15,
+    -4
+   ],
+   [
+    "Albion",
+    12,
+    12,
+    12,
+    -5
+   ],
+   [
+    "Danubio",
+    13,
+    12,
+    10,
+    -7
+   ],
+   [
+    "Defensor Sporting",
+    14,
+    12,
+    9,
+    -9
+   ],
+   [
+    "Cerro Largo",
+    15,
+    11,
+    6,
+    -7
+   ],
+   [
+    "Central Español",
+    16,
+    12,
+    5,
+    -15
    ]
   ]
  }

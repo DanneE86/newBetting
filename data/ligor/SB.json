@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "SB",
  "fotmobId": 86,
  "name": "Serie B",
@@ -25,16 +25,58 @@
    "fotmobName": "Mantova",
    "fotmobId": 9889,
    "group": null,
-   "played": 7,
-   "won": 4,
+   "played": 8,
+   "won": 5,
    "drawn": 2,
    "lost": 1,
-   "goals": "13-8",
-   "gd": 5,
-   "pts": 14
+   "goals": "14-8",
+   "gd": 6,
+   "pts": 17
   },
   {
    "rank": 3,
+   "team": "Modena",
+   "fotmobName": "Modena",
+   "fotmobId": 9887,
+   "group": null,
+   "played": 8,
+   "won": 5,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "15-8",
+   "gd": 7,
+   "pts": 16
+  },
+  {
+   "rank": 4,
+   "team": "Ascoli",
+   "fotmobName": "Ascoli",
+   "fotmobId": 8522,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "14-6",
+   "gd": 8,
+   "pts": 15
+  },
+  {
+   "rank": 5,
+   "team": "Benevento",
+   "fotmobName": "Benevento",
+   "fotmobId": 6266,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "13-7",
+   "gd": 6,
+   "pts": 14
+  },
+  {
+   "rank": 6,
    "team": "Pisa",
    "fotmobName": "Pisa",
    "fotmobId": 6479,
@@ -48,105 +90,77 @@
    "pts": 13
   },
   {
-   "rank": 4,
-   "team": "Modena",
-   "fotmobName": "Modena",
-   "fotmobId": 9887,
-   "group": null,
-   "played": 7,
-   "won": 4,
-   "drawn": 1,
-   "lost": 2,
-   "goals": "12-8",
-   "gd": 4,
-   "pts": 13
-  },
-  {
-   "rank": 5,
+   "rank": 7,
    "team": "Sudtirol",
    "fotmobName": "Südtirol",
    "fotmobId": 189475,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 3,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 1,
-   "goals": "9-6",
+   "goals": "10-7",
    "gd": 3,
-   "pts": 12
+   "pts": 13
   },
   {
-   "rank": 6,
-   "team": "Ascoli",
-   "fotmobName": "Ascoli",
-   "fotmobId": 8522,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 3,
-   "lost": 1,
-   "goals": "8-5",
-   "gd": 3,
-   "pts": 12
-  },
-  {
-   "rank": 7,
+   "rank": 8,
    "team": "Avellino",
    "fotmobName": "Avellino",
    "fotmobId": 6722,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 3,
    "drawn": 2,
-   "lost": 2,
-   "goals": "12-8",
-   "gd": 4,
-   "pts": 11
-  },
-  {
-   "rank": 8,
-   "team": "Benevento",
-   "fotmobName": "Benevento",
-   "fotmobId": 6266,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 2,
-   "lost": 2,
-   "goals": "10-7",
+   "lost": 3,
+   "goals": "12-9",
    "gd": 3,
    "pts": 11
   },
   {
    "rank": 9,
-   "team": "Arezzo",
-   "fotmobName": "Arezzo",
-   "fotmobId": 9849,
+   "team": "Padova",
+   "fotmobName": "Padova",
+   "fotmobId": 583944,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 3,
    "drawn": 1,
-   "lost": 3,
-   "goals": "8-14",
-   "gd": -6,
+   "lost": 4,
+   "goals": "7-10",
+   "gd": -3,
    "pts": 10
   },
   {
    "rank": 10,
+   "team": "Arezzo",
+   "fotmobName": "Arezzo",
+   "fotmobId": 9849,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "8-17",
+   "gd": -9,
+   "pts": 10
+  },
+  {
+   "rank": 11,
    "team": "Virtus Entella",
    "fotmobName": "Virtus Entella",
    "fotmobId": 208932,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 2,
    "drawn": 3,
-   "lost": 2,
-   "goals": "10-8",
-   "gd": 2,
+   "lost": 3,
+   "goals": "10-9",
+   "gd": 1,
    "pts": 9
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Vicenza",
    "fotmobName": "LR Vicenza",
    "fotmobId": 145007,
@@ -160,7 +174,7 @@
    "pts": 9
   },
   {
-   "rank": 12,
+   "rank": 13,
    "team": "Verona",
    "fotmobName": "Hellas Verona",
    "fotmobId": 9876,
@@ -174,21 +188,35 @@
    "pts": 8
   },
   {
-   "rank": 13,
+   "rank": 14,
+   "team": "Juve Stabia",
+   "fotmobName": "Juve Stabia",
+   "fotmobId": 6106,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "9-8",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 15,
    "team": "Cesena",
    "fotmobName": "Cesena",
    "fotmobId": 584022,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 1,
    "drawn": 5,
-   "lost": 1,
-   "goals": "8-9",
-   "gd": -1,
+   "lost": 2,
+   "goals": "8-12",
+   "gd": -4,
    "pts": 8
   },
   {
-   "rank": 14,
+   "rank": 16,
    "team": "Carrarese",
    "fotmobName": "Carrarese",
    "fotmobId": 6488,
@@ -202,21 +230,7 @@
    "pts": 7
   },
   {
-   "rank": 15,
-   "team": "Padova",
-   "fotmobName": "Padova",
-   "fotmobId": 583944,
-   "group": null,
-   "played": 7,
-   "won": 2,
-   "drawn": 1,
-   "lost": 4,
-   "goals": "6-10",
-   "gd": -4,
-   "pts": 7
-  },
-  {
-   "rank": 16,
+   "rank": 17,
    "team": "Empoli",
    "fotmobName": "Empoli",
    "fotmobId": 8534,
@@ -230,59 +244,45 @@
    "pts": 7
   },
   {
-   "rank": 17,
+   "rank": 18,
    "team": "Cremonese",
    "fotmobName": "Cremonese",
    "fotmobId": 7801,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 1,
    "drawn": 3,
-   "lost": 3,
-   "goals": "6-10",
-   "gd": -4,
+   "lost": 4,
+   "goals": "6-11",
+   "gd": -5,
    "pts": 6
   },
   {
-   "rank": 18,
-   "team": "Juve Stabia",
-   "fotmobName": "Juve Stabia",
-   "fotmobId": 6106,
-   "group": null,
-   "played": 7,
-   "won": 2,
-   "drawn": 3,
-   "lost": 2,
-   "goals": "8-8",
-   "gd": 0,
-   "pts": 5
-  },
-  {
    "rank": 19,
-   "team": "Catanzaro",
-   "fotmobName": "Catanzaro",
-   "fotmobId": 10168,
-   "group": null,
-   "played": 7,
-   "won": 1,
-   "drawn": 1,
-   "lost": 5,
-   "goals": "8-14",
-   "gd": -6,
-   "pts": 4
-  },
-  {
-   "rank": 20,
    "team": "Sampdoria",
    "fotmobName": "Sampdoria",
    "fotmobId": 9882,
    "group": null,
-   "played": 7,
+   "played": 8,
+   "won": 1,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "8-16",
+   "gd": -8,
+   "pts": 5
+  },
+  {
+   "rank": 20,
+   "team": "Catanzaro",
+   "fotmobName": "Catanzaro",
+   "fotmobId": 10168,
+   "group": null,
+   "played": 8,
    "won": 1,
    "drawn": 1,
-   "lost": 5,
-   "goals": "7-15",
-   "gd": -8,
+   "lost": 6,
+   "goals": "9-20",
+   "gd": -11,
    "pts": 4
   }
  ],
@@ -1137,6 +1137,148 @@
     7,
     4,
     -8
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Palermo",
+    1,
+    7,
+    19,
+    9
+   ],
+   [
+    "Mantova",
+    2,
+    8,
+    17,
+    6
+   ],
+   [
+    "Modena",
+    3,
+    8,
+    16,
+    7
+   ],
+   [
+    "Ascoli",
+    4,
+    8,
+    15,
+    8
+   ],
+   [
+    "Benevento",
+    5,
+    8,
+    14,
+    6
+   ],
+   [
+    "Pisa",
+    6,
+    7,
+    13,
+    5
+   ],
+   [
+    "Sudtirol",
+    7,
+    8,
+    13,
+    3
+   ],
+   [
+    "Avellino",
+    8,
+    8,
+    11,
+    3
+   ],
+   [
+    "Padova",
+    9,
+    8,
+    10,
+    -3
+   ],
+   [
+    "Arezzo",
+    10,
+    8,
+    10,
+    -9
+   ],
+   [
+    "Virtus Entella",
+    11,
+    8,
+    9,
+    1
+   ],
+   [
+    "Vicenza",
+    12,
+    8,
+    9,
+    -4
+   ],
+   [
+    "Verona",
+    13,
+    7,
+    8,
+    2
+   ],
+   [
+    "Juve Stabia",
+    14,
+    8,
+    8,
+    1
+   ],
+   [
+    "Cesena",
+    15,
+    8,
+    8,
+    -4
+   ],
+   [
+    "Carrarese",
+    16,
+    7,
+    7,
+    -1
+   ],
+   [
+    "Empoli",
+    17,
+    8,
+    7,
+    -6
+   ],
+   [
+    "Cremonese",
+    18,
+    8,
+    6,
+    -5
+   ],
+   [
+    "Sampdoria",
+    19,
+    8,
+    5,
+    -8
+   ],
+   [
+    "Catanzaro",
+    20,
+    8,
+    4,
+    -11
    ]
   ]
  }

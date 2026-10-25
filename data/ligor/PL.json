@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "PL",
  "fotmobId": 47,
  "name": "Premier League",
@@ -11,12 +11,12 @@
    "fotmobName": "Manchester City",
    "fotmobId": 8456,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 7,
    "drawn": 0,
-   "lost": 0,
-   "goals": "19-7",
-   "gd": 12,
+   "lost": 1,
+   "goals": "20-9",
+   "gd": 11,
    "pts": 21
   },
   {
@@ -25,13 +25,13 @@
    "fotmobName": "Arsenal",
    "fotmobId": 9825,
    "group": null,
-   "played": 7,
-   "won": 6,
+   "played": 8,
+   "won": 7,
    "drawn": 0,
    "lost": 1,
-   "goals": "11-5",
-   "gd": 6,
-   "pts": 18
+   "goals": "13-5",
+   "gd": 8,
+   "pts": 21
   },
   {
    "rank": 3,
@@ -53,12 +53,12 @@
    "fotmobName": "Chelsea",
    "fotmobId": 8455,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 4,
    "drawn": 1,
-   "lost": 2,
-   "goals": "17-13",
-   "gd": 4,
+   "lost": 3,
+   "goals": "17-15",
+   "gd": 2,
    "pts": 13
   },
   {
@@ -77,6 +77,20 @@
   },
   {
    "rank": 6,
+   "team": "Aston Villa",
+   "fotmobName": "Aston Villa",
+   "fotmobId": 10252,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-12",
+   "gd": -3,
+   "pts": 11
+  },
+  {
+   "rank": 7,
    "team": "Brentford",
    "fotmobName": "Brentford",
    "fotmobId": 9937,
@@ -90,7 +104,7 @@
    "pts": 10
   },
   {
-   "rank": 7,
+   "rank": 8,
    "team": "Leeds",
    "fotmobName": "Leeds United",
    "fotmobId": 8463,
@@ -104,21 +118,21 @@
    "pts": 10
   },
   {
-   "rank": 8,
+   "rank": 9,
    "team": "Everton",
    "fotmobName": "Everton",
    "fotmobId": 8668,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 2,
    "drawn": 4,
-   "lost": 1,
-   "goals": "8-7",
-   "gd": 1,
+   "lost": 2,
+   "goals": "8-9",
+   "gd": -1,
    "pts": 10
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "Ipswich",
    "fotmobName": "Ipswich Town",
    "fotmobId": 9902,
@@ -132,7 +146,7 @@
    "pts": 10
   },
   {
-   "rank": 10,
+   "rank": 11,
    "team": "Hull",
    "fotmobName": "Hull City",
    "fotmobId": 8667,
@@ -146,7 +160,35 @@
    "pts": 9
   },
   {
-   "rank": 11,
+   "rank": 12,
+   "team": "Tottenham",
+   "fotmobName": "Tottenham Hotspur",
+   "fotmobId": 8586,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "8-10",
+   "gd": -2,
+   "pts": 9
+  },
+  {
+   "rank": 13,
+   "team": "Fulham",
+   "fotmobName": "Fulham",
+   "fotmobId": 9879,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "8-10",
+   "gd": -2,
+   "pts": 8
+  },
+  {
+   "rank": 14,
    "team": "Newcastle",
    "fotmobName": "Newcastle United",
    "fotmobId": 10261,
@@ -160,21 +202,7 @@
    "pts": 8
   },
   {
-   "rank": 12,
-   "team": "Aston Villa",
-   "fotmobName": "Aston Villa",
-   "fotmobId": 10252,
-   "group": null,
-   "played": 7,
-   "won": 2,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "7-11",
-   "gd": -4,
-   "pts": 8
-  },
-  {
-   "rank": 13,
+   "rank": 15,
    "team": "Man United",
    "fotmobName": "Manchester United",
    "fotmobId": 10260,
@@ -188,7 +216,7 @@
    "pts": 7
   },
   {
-   "rank": 14,
+   "rank": 16,
    "team": "Crystal Palace",
    "fotmobName": "Crystal Palace",
    "fotmobId": 9826,
@@ -202,7 +230,7 @@
    "pts": 7
   },
   {
-   "rank": 15,
+   "rank": 17,
    "team": "Bournemouth",
    "fotmobName": "AFC Bournemouth",
    "fotmobId": 8678,
@@ -216,7 +244,7 @@
    "pts": 6
   },
   {
-   "rank": 16,
+   "rank": 18,
    "team": "Nott'm Forest",
    "fotmobName": "Nottingham Forest",
    "fotmobId": 10203,
@@ -230,46 +258,18 @@
    "pts": 6
   },
   {
-   "rank": 17,
-   "team": "Tottenham",
-   "fotmobName": "Tottenham Hotspur",
-   "fotmobId": 8586,
-   "group": null,
-   "played": 7,
-   "won": 1,
-   "drawn": 3,
-   "lost": 3,
-   "goals": "6-10",
-   "gd": -4,
-   "pts": 6
-  },
-  {
-   "rank": 18,
+   "rank": 19,
    "team": "Coventry",
    "fotmobName": "Coventry City",
    "fotmobId": 8669,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 2,
    "drawn": 0,
-   "lost": 5,
-   "goals": "6-14",
-   "gd": -8,
+   "lost": 6,
+   "goals": "6-15",
+   "gd": -9,
    "pts": 6
-  },
-  {
-   "rank": 19,
-   "team": "Fulham",
-   "fotmobName": "Fulham",
-   "fotmobId": 9879,
-   "group": null,
-   "played": 7,
-   "won": 1,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "7-10",
-   "gd": -3,
-   "pts": 5
   },
   {
    "rank": 20,
@@ -1414,6 +1414,148 @@
     7,
     5,
     -3
+   ],
+   [
+    "Sunderland",
+    20,
+    7,
+    4,
+    -8
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Man City",
+    1,
+    8,
+    21,
+    11
+   ],
+   [
+    "Arsenal",
+    2,
+    8,
+    21,
+    8
+   ],
+   [
+    "Brighton",
+    3,
+    7,
+    16,
+    18
+   ],
+   [
+    "Chelsea",
+    4,
+    8,
+    13,
+    2
+   ],
+   [
+    "Liverpool",
+    5,
+    7,
+    12,
+    1
+   ],
+   [
+    "Aston Villa",
+    6,
+    8,
+    11,
+    -3
+   ],
+   [
+    "Brentford",
+    7,
+    7,
+    10,
+    5
+   ],
+   [
+    "Leeds",
+    8,
+    7,
+    10,
+    3
+   ],
+   [
+    "Everton",
+    9,
+    8,
+    10,
+    -1
+   ],
+   [
+    "Ipswich",
+    10,
+    8,
+    10,
+    -4
+   ],
+   [
+    "Hull",
+    11,
+    7,
+    9,
+    1
+   ],
+   [
+    "Tottenham",
+    12,
+    8,
+    9,
+    -2
+   ],
+   [
+    "Fulham",
+    13,
+    8,
+    8,
+    -2
+   ],
+   [
+    "Newcastle",
+    14,
+    7,
+    8,
+    -4
+   ],
+   [
+    "Man United",
+    15,
+    7,
+    7,
+    0
+   ],
+   [
+    "Crystal Palace",
+    16,
+    7,
+    7,
+    -8
+   ],
+   [
+    "Bournemouth",
+    17,
+    7,
+    6,
+    -4
+   ],
+   [
+    "Nott'm Forest",
+    18,
+    8,
+    6,
+    -4
+   ],
+   [
+    "Coventry",
+    19,
+    8,
+    6,
+    -9
    ],
    [
     "Sunderland",

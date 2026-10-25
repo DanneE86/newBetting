@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "BL",
  "fotmobId": 54,
  "name": "Bundesliga",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Dortmund",
+   "fotmobName": "Borussia Dortmund",
+   "fotmobId": 9789,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "12-4",
+   "gd": 8,
+   "pts": 17
+  },
+  {
+   "rank": 2,
    "team": "Bayern Munich",
    "fotmobName": "Bayern München",
    "fotmobId": 9823,
@@ -17,20 +31,6 @@
    "lost": 0,
    "goals": "22-5",
    "gd": 17,
-   "pts": 14
-  },
-  {
-   "rank": 2,
-   "team": "Dortmund",
-   "fotmobName": "Borussia Dortmund",
-   "fotmobId": 9789,
-   "group": null,
-   "played": 6,
-   "won": 4,
-   "drawn": 2,
-   "lost": 0,
-   "goals": "11-4",
-   "gd": 7,
    "pts": 14
   },
   {
@@ -63,118 +63,132 @@
   },
   {
    "rank": 5,
-   "team": "Mainz",
-   "fotmobName": "Mainz 05",
-   "fotmobId": 9905,
-   "group": null,
-   "played": 6,
-   "won": 3,
-   "drawn": 1,
-   "lost": 2,
-   "goals": "14-10",
-   "gd": 4,
-   "pts": 10
-  },
-  {
-   "rank": 6,
-   "team": "Elversberg",
-   "fotmobName": "Elversberg",
-   "fotmobId": 8232,
-   "group": null,
-   "played": 6,
-   "won": 3,
-   "drawn": 1,
-   "lost": 2,
-   "goals": "12-11",
-   "gd": 1,
-   "pts": 10
-  },
-  {
-   "rank": 7,
    "team": "RB Leipzig",
    "fotmobName": "RB Leipzig",
    "fotmobId": 178475,
    "group": null,
-   "played": 6,
-   "won": 3,
+   "played": 7,
+   "won": 4,
    "drawn": 0,
    "lost": 3,
-   "goals": "16-11",
-   "gd": 5,
-   "pts": 9
+   "goals": "20-11",
+   "gd": 9,
+   "pts": 12
   },
   {
-   "rank": 8,
+   "rank": 6,
    "team": "Werder Bremen",
    "fotmobName": "Werder Bremen",
    "fotmobId": 8697,
    "group": null,
-   "played": 6,
-   "won": 2,
+   "played": 7,
+   "won": 3,
    "drawn": 3,
    "lost": 1,
-   "goals": "12-12",
-   "gd": 0,
-   "pts": 9
+   "goals": "15-14",
+   "gd": 1,
+   "pts": 12
+  },
+  {
+   "rank": 7,
+   "team": "Mainz",
+   "fotmobName": "Mainz 05",
+   "fotmobId": 9905,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "16-13",
+   "gd": 3,
+   "pts": 10
+  },
+  {
+   "rank": 8,
+   "team": "Elversberg",
+   "fotmobName": "Elversberg",
+   "fotmobId": 8232,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "12-15",
+   "gd": -3,
+   "pts": 10
   },
   {
    "rank": 9,
-   "team": "Hamburg",
-   "fotmobName": "Hamburger SV",
-   "fotmobId": 9790,
-   "group": null,
-   "played": 6,
-   "won": 3,
-   "drawn": 0,
-   "lost": 3,
-   "goals": "6-15",
-   "gd": -9,
-   "pts": 9
-  },
-  {
-   "rank": 10,
    "team": "Augsburg",
    "fotmobName": "Augsburg",
    "fotmobId": 8406,
    "group": null,
-   "played": 6,
+   "played": 7,
    "won": 2,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 2,
-   "goals": "16-12",
+   "goals": "17-13",
    "gd": 4,
-   "pts": 8
+   "pts": 9
+  },
+  {
+   "rank": 10,
+   "team": "Hamburg",
+   "fotmobName": "Hamburger SV",
+   "fotmobId": 9790,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "6-16",
+   "gd": -10,
+   "pts": 9
   },
   {
    "rank": 11,
-   "team": "Ein Frankfurt",
-   "fotmobName": "Eintracht Frankfurt",
-   "fotmobId": 9810,
-   "group": null,
-   "played": 6,
-   "won": 2,
-   "drawn": 2,
-   "lost": 2,
-   "goals": "10-16",
-   "gd": -6,
-   "pts": 8
-  },
-  {
-   "rank": 12,
    "team": "FC Koln",
    "fotmobName": "1. FC Köln",
    "fotmobId": 8722,
    "group": null,
-   "played": 6,
+   "played": 7,
    "won": 2,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 3,
    "goals": "8-11",
    "gd": -3,
-   "pts": 7
+   "pts": 8
+  },
+  {
+   "rank": 12,
+   "team": "Paderborn",
+   "fotmobName": "Paderborn",
+   "fotmobId": 8460,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "6-9",
+   "gd": -3,
+   "pts": 8
   },
   {
    "rank": 13,
+   "team": "Ein Frankfurt",
+   "fotmobName": "Eintracht Frankfurt",
+   "fotmobId": 9810,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-17",
+   "gd": -7,
+   "pts": 8
+  },
+  {
+   "rank": 14,
    "team": "Hoffenheim",
    "fotmobName": "Hoffenheim",
    "fotmobId": 8226,
@@ -188,7 +202,7 @@
    "pts": 6
   },
   {
-   "rank": 14,
+   "rank": 15,
    "team": "Stuttgart",
    "fotmobName": "VfB Stuttgart",
    "fotmobId": 10269,
@@ -202,32 +216,18 @@
    "pts": 6
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Schalke 04",
    "fotmobName": "Schalke 04",
    "fotmobId": 10189,
    "group": null,
-   "played": 6,
+   "played": 7,
    "won": 1,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 3,
    "goals": "4-7",
    "gd": -3,
-   "pts": 5
-  },
-  {
-   "rank": 16,
-   "team": "Paderborn",
-   "fotmobName": "Paderborn",
-   "fotmobId": 8460,
-   "group": null,
-   "played": 6,
-   "won": 1,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "5-9",
-   "gd": -4,
-   "pts": 5
+   "pts": 6
   },
   {
    "rank": 17,
@@ -235,13 +235,13 @@
    "fotmobName": "Union Berlin",
    "fotmobId": 8149,
    "group": null,
-   "played": 6,
+   "played": 7,
    "won": 1,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 3,
-   "goals": "5-17",
+   "goals": "6-18",
    "gd": -12,
-   "pts": 5
+   "pts": 6
   },
   {
    "rank": 18,
@@ -1017,6 +1017,134 @@
     17,
     6,
     5,
+    -12
+   ],
+   [
+    "M'gladbach",
+    18,
+    7,
+    3,
+    -11
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Dortmund",
+    1,
+    7,
+    17,
+    8
+   ],
+   [
+    "Bayern Munich",
+    2,
+    6,
+    14,
+    17
+   ],
+   [
+    "Freiburg",
+    3,
+    6,
+    13,
+    9
+   ],
+   [
+    "Leverkusen",
+    4,
+    6,
+    13,
+    7
+   ],
+   [
+    "RB Leipzig",
+    5,
+    7,
+    12,
+    9
+   ],
+   [
+    "Werder Bremen",
+    6,
+    7,
+    12,
+    1
+   ],
+   [
+    "Mainz",
+    7,
+    7,
+    10,
+    3
+   ],
+   [
+    "Elversberg",
+    8,
+    7,
+    10,
+    -3
+   ],
+   [
+    "Augsburg",
+    9,
+    7,
+    9,
+    4
+   ],
+   [
+    "Hamburg",
+    10,
+    7,
+    9,
+    -10
+   ],
+   [
+    "FC Koln",
+    11,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Paderborn",
+    12,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Ein Frankfurt",
+    13,
+    7,
+    8,
+    -7
+   ],
+   [
+    "Hoffenheim",
+    14,
+    6,
+    6,
+    -3
+   ],
+   [
+    "Stuttgart",
+    15,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Schalke 04",
+    16,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Union Berlin",
+    17,
+    7,
+    6,
     -12
    ],
    [

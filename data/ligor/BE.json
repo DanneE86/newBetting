@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "BE",
  "fotmobId": 40,
  "name": "First Division A",
@@ -39,12 +39,12 @@
    "fotmobName": "Sporting Charleroi",
    "fotmobId": 9986,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 7,
    "drawn": 0,
-   "lost": 1,
-   "goals": "16-7",
-   "gd": 9,
+   "lost": 2,
+   "goals": "16-10",
+   "gd": 6,
    "pts": 21
   },
   {
@@ -81,13 +81,13 @@
    "fotmobName": "Westerlo",
    "fotmobId": 10001,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 4,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 3,
-   "goals": "20-17",
+   "goals": "24-21",
    "gd": 3,
-   "pts": 13
+   "pts": 14
   },
   {
    "rank": 7,
@@ -105,17 +105,17 @@
   },
   {
    "rank": 8,
-   "team": "Waregem",
-   "fotmobName": "Zulte Waregem",
-   "fotmobId": 10000,
+   "team": "Lommel SK",
+   "fotmobName": "Lommel",
+   "fotmobId": 6702,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 3,
-   "goals": "10-9",
-   "gd": 1,
-   "pts": 11
+   "goals": "11-11",
+   "gd": 0,
+   "pts": 12
   },
   {
    "rank": 9,
@@ -133,34 +133,48 @@
   },
   {
    "rank": 10,
-   "team": "Lommel SK",
-   "fotmobName": "Lommel",
-   "fotmobId": 6702,
+   "team": "Waregem",
+   "fotmobName": "Zulte Waregem",
+   "fotmobId": 10000,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
    "drawn": 2,
-   "lost": 3,
-   "goals": "9-9",
-   "gd": 0,
+   "lost": 4,
+   "goals": "10-12",
+   "gd": -2,
    "pts": 11
   },
   {
    "rank": 11,
+   "team": "Antwerp",
+   "fotmobName": "Royal Antwerp",
+   "fotmobId": 9988,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "15-20",
+   "gd": -5,
+   "pts": 10
+  },
+  {
+   "rank": 12,
    "team": "Beveren",
    "fotmobName": "SK Beveren",
    "fotmobId": 8475,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
-   "drawn": 0,
+   "drawn": 1,
    "lost": 5,
-   "goals": "8-14",
+   "goals": "12-18",
    "gd": -6,
-   "pts": 9
+   "pts": 10
   },
   {
-   "rank": 12,
+   "rank": 13,
    "team": "St Truiden",
    "fotmobName": "St.Truiden",
    "fotmobId": 9997,
@@ -174,21 +188,21 @@
    "pts": 8
   },
   {
-   "rank": 13,
-   "team": "Antwerp",
-   "fotmobName": "Royal Antwerp",
-   "fotmobId": 9988,
+   "rank": 14,
+   "team": "RAAL La Louviere",
+   "fotmobName": "RAAL La Louvière",
+   "fotmobId": 1218969,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 1,
-   "lost": 5,
-   "goals": "12-20",
-   "gd": -8,
+   "lost": 6,
+   "goals": "11-18",
+   "gd": -7,
    "pts": 7
   },
   {
-   "rank": 14,
+   "rank": 15,
    "team": "Mechelen",
    "fotmobName": "KV Mechelen",
    "fotmobId": 8203,
@@ -202,32 +216,18 @@
    "pts": 6
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Oud-Heverlee Leuven",
    "fotmobName": "OH Leuven",
    "fotmobId": 1773,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 1,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 5,
-   "goals": "6-14",
+   "goals": "8-16",
    "gd": -8,
-   "pts": 5
-  },
-  {
-   "rank": 16,
-   "team": "RAAL La Louviere",
-   "fotmobName": "RAAL La Louvière",
-   "fotmobId": 1218969,
-   "group": null,
-   "played": 8,
-   "won": 1,
-   "drawn": 1,
-   "lost": 6,
-   "goals": "8-18",
-   "gd": -10,
-   "pts": 4
+   "pts": 6
   },
   {
    "rank": 17,
@@ -755,6 +755,134 @@
     8,
     4,
     -10
+   ],
+   [
+    "Kortrijk",
+    17,
+    8,
+    3,
+    -16
+   ],
+   [
+    "Cercle Brugge",
+    18,
+    8,
+    3,
+    -7
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Gent",
+    1,
+    8,
+    22,
+    11
+   ],
+   [
+    "Club Brugge",
+    2,
+    8,
+    21,
+    15
+   ],
+   [
+    "Charleroi",
+    3,
+    9,
+    21,
+    6
+   ],
+   [
+    "St. Gilloise",
+    4,
+    8,
+    20,
+    18
+   ],
+   [
+    "Anderlecht",
+    5,
+    8,
+    16,
+    3
+   ],
+   [
+    "Westerlo",
+    6,
+    9,
+    14,
+    3
+   ],
+   [
+    "Genk",
+    7,
+    8,
+    12,
+    4
+   ],
+   [
+    "Lommel SK",
+    8,
+    9,
+    12,
+    0
+   ],
+   [
+    "Standard",
+    9,
+    8,
+    11,
+    0
+   ],
+   [
+    "Waregem",
+    10,
+    9,
+    11,
+    -2
+   ],
+   [
+    "Antwerp",
+    11,
+    9,
+    10,
+    -5
+   ],
+   [
+    "Beveren",
+    12,
+    9,
+    10,
+    -6
+   ],
+   [
+    "St Truiden",
+    13,
+    8,
+    8,
+    -1
+   ],
+   [
+    "RAAL La Louviere",
+    14,
+    9,
+    7,
+    -7
+   ],
+   [
+    "Mechelen",
+    15,
+    8,
+    6,
+    -8
+   ],
+   [
+    "Oud-Heverlee Leuven",
+    16,
+    9,
+    6,
+    -8
    ],
    [
     "Kortrijk",

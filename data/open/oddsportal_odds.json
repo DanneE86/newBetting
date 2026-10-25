@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-10-24T19:28:54.950Z",
+  "updatedAt": "2026-10-25T12:33:33.173Z",
   "source": "oddsportal.com (1X2-snitt)",
   "report": {
-    "PL": 20,
+    "PL": 26,
     "KR": 10,
     "LL2": 13,
     "SE3N": 5,
@@ -44,42 +44,12 @@
     "URU": 9,
     "CH": 14,
     "LL": 15,
-    "SA": 20,
-    "BL": 18,
-    "L1": 18
+    "SA": 15,
+    "BL": 12,
+    "L1": 17
   },
-  "eventCount": 174,
+  "eventCount": 140,
   "events": [
-    {
-      "league": "PT",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Gil Vicente",
-      "away": "FC Porto",
-      "homeRaw": "Gil Vicente",
-      "awayRaw": "FC Porto",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 7.8,
-        "draw": 4.4,
-        "away": 1.42,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 7.8,
-          "draw": 4.4,
-          "away": 1.42,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/portugal/liga-portugal/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
     {
       "league": "PT",
       "commence": "2026-10-25T15:30:00.000Z",
@@ -412,36 +382,6 @@
     },
     {
       "league": "BE",
-      "commence": "2026-10-25T12:30:00.000Z",
-      "home": "Genk",
-      "away": "St. Liege",
-      "homeRaw": "Genk",
-      "awayRaw": "St. Liege",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.79,
-        "draw": 3.7,
-        "away": 4.1,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.79,
-          "draw": 3.7,
-          "away": 4.1,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/belgium/jupiler-pro-league/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BE",
       "commence": "2026-10-25T15:00:00.000Z",
       "home": "Club Brugge KV",
       "away": "St. Truiden",
@@ -532,246 +472,6 @@
     },
     {
       "league": "BR",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Vitoria",
-      "away": "Athletico-PR",
-      "homeRaw": "Vitoria",
-      "awayRaw": "Athletico-PR",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.56,
-        "draw": 3.35,
-        "away": 2.75,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.56,
-          "draw": 3.35,
-          "away": 2.75,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Internacional",
-      "away": "Botafogo RJ",
-      "homeRaw": "Internacional",
-      "awayRaw": "Botafogo RJ",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.08,
-        "draw": 3.65,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.08,
-          "draw": 3.65,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Internacional",
-      "away": "Botafogo RJ",
-      "homeRaw": "Internacional",
-      "awayRaw": "Botafogo RJ",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.08,
-        "draw": 3.65,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.08,
-          "draw": 3.65,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Mirassol",
-      "away": "Sao Paulo",
-      "homeRaw": "Mirassol",
-      "awayRaw": "Sao Paulo",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.43,
-        "draw": 3.3,
-        "away": 3.25,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.43,
-          "draw": 3.3,
-          "away": 3.25,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T21:30:00.000Z",
-      "home": "Palmeiras",
-      "away": "Bragantino",
-      "homeRaw": "Palmeiras",
-      "awayRaw": "Bragantino",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.57,
-        "draw": 4.1,
-        "away": 6,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.57,
-          "draw": 4.1,
-          "away": 6,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T21:30:00.000Z",
-      "home": "Vasco",
-      "away": "Corinthians",
-      "homeRaw": "Vasco",
-      "awayRaw": "Corinthians",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.8,
-        "draw": 3.6,
-        "away": 4.6,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.8,
-          "draw": 3.6,
-          "away": 4.6,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-24T22:30:00.000Z",
-      "home": "Chapecoense-SC",
-      "away": "Fluminense",
-      "homeRaw": "Chapecoense-SC",
-      "awayRaw": "Fluminense",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 4.5,
-        "draw": 3.6,
-        "away": 1.94,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 4.5,
-          "draw": 3.6,
-          "away": 1.94,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
-      "commence": "2026-10-25T00:00:00.000Z",
-      "home": "Santos",
-      "away": "Bahia",
-      "homeRaw": "Santos",
-      "awayRaw": "Bahia",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.28,
-        "draw": 3.55,
-        "away": 3.25,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.28,
-          "draw": 3.55,
-          "away": 3.25,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-a-betano/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "BR",
       "commence": "2026-10-26T22:30:00.000Z",
       "home": "Coritiba",
       "away": "Gremio",
@@ -858,486 +558,6 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/asia/afc-champions-league/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Columbus Crew",
-      "away": "Toronto FC",
-      "homeRaw": "Columbus Crew",
-      "awayRaw": "Toronto FC",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.77,
-        "draw": 4,
-        "away": 3.85,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.77,
-          "draw": 4,
-          "away": 3.85,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T21:30:00.000Z",
-      "home": "New York Red Bulls",
-      "away": "Inter Miami",
-      "homeRaw": "New York Red Bulls",
-      "awayRaw": "Inter Miami",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.3,
-        "draw": 4.45,
-        "away": 1.95,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.3,
-          "draw": 4.45,
-          "away": 1.95,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T23:30:00.000Z",
-      "home": "Atlanta Utd",
-      "away": "Chicago Fire",
-      "homeRaw": "Atlanta Utd",
-      "awayRaw": "Chicago Fire",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.48,
-        "draw": 3.85,
-        "away": 2.74,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.48,
-          "draw": 3.85,
-          "away": 2.74,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T23:30:00.000Z",
-      "home": "DC United",
-      "away": "FC Cincinnati",
-      "homeRaw": "DC United",
-      "awayRaw": "FC Cincinnati",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.8,
-        "away": 2.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.55,
-          "draw": 3.8,
-          "away": 2.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T23:30:00.000Z",
-      "home": "Philadelphia Union",
-      "away": "New England Revolution",
-      "homeRaw": "Philadelphia Union",
-      "awayRaw": "New England Revolution",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.6,
-        "draw": 4.51,
-        "away": 5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.6,
-          "draw": 4.51,
-          "away": 5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-24T23:30:00.000Z",
-      "home": "Orlando City",
-      "away": "New York City",
-      "homeRaw": "Orlando City",
-      "awayRaw": "New York City",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.93,
-        "away": 3.2,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.3,
-          "draw": 3.93,
-          "away": 3.2,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "Sporting Kansas City",
-      "away": "Austin FC",
-      "homeRaw": "Sporting Kansas City",
-      "awayRaw": "Austin FC",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.38,
-        "draw": 3.97,
-        "away": 2.97,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.38,
-          "draw": 3.97,
-          "away": 2.97,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "Colorado Rapids",
-      "away": "Vancouver Whitecaps",
-      "homeRaw": "Colorado Rapids",
-      "awayRaw": "Vancouver Whitecaps",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.11,
-        "draw": 3.83,
-        "away": 2.18,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.11,
-          "draw": 3.83,
-          "away": 2.18,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "FC Dallas",
-      "away": "San Jose Earthquakes",
-      "homeRaw": "FC Dallas",
-      "awayRaw": "San Jose Earthquakes",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.83,
-        "draw": 4.1,
-        "away": 4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.83,
-          "draw": 4.1,
-          "away": 4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "Houston Dynamo",
-      "away": "Minnesota United",
-      "homeRaw": "Houston Dynamo",
-      "awayRaw": "Minnesota United",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2,
-        "draw": 3.8,
-        "away": 3.45,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2,
-          "draw": 3.8,
-          "away": 3.45,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "Real Salt Lake",
-      "away": "St. Louis City",
-      "homeRaw": "Real Salt Lake",
-      "awayRaw": "St. Louis City",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.75,
-        "away": 2.51,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.8,
-          "draw": 3.75,
-          "away": 2.51,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T02:30:00.000Z",
-      "home": "Portland Timbers",
-      "away": "Charlotte",
-      "homeRaw": "Portland Timbers",
-      "awayRaw": "Charlotte",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.02,
-        "draw": 4.13,
-        "away": 3.34,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.02,
-          "draw": 4.13,
-          "away": 3.34,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "MLS",
-      "commence": "2026-10-25T02:30:00.000Z",
-      "home": "San Diego FC",
-      "away": "Seattle Sounders",
-      "homeRaw": "San Diego FC",
-      "awayRaw": "Seattle Sounders",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.19,
-        "draw": 3.95,
-        "away": 3.3,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.19,
-          "draw": 3.95,
-          "away": 3.3,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/usa/mls/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "AR",
-      "commence": "2026-10-24T20:00:00.000Z",
-      "home": "Talleres Cordoba",
-      "away": "Defensa y Justicia",
-      "homeRaw": "Talleres Cordoba",
-      "awayRaw": "Defensa y Justicia",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.15,
-        "draw": 3.3,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.15,
-          "draw": 3.3,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/argentina/liga-profesional/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "AR",
-      "commence": "2026-10-24T22:15:00.000Z",
-      "home": "San Lorenzo",
-      "away": "Newells Old Boys",
-      "homeRaw": "San Lorenzo",
-      "awayRaw": "Newells Old Boys",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.53,
-        "draw": 3,
-        "away": 3.7,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.53,
-          "draw": 3,
-          "away": 3.7,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/argentina/liga-profesional/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "AR",
-      "commence": "2026-10-25T00:30:00.000Z",
-      "home": "Rosario Central",
-      "away": "Huracan",
-      "homeRaw": "Rosario Central",
-      "awayRaw": "Huracan",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.9,
-        "draw": 3.45,
-        "away": 5.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.9,
-          "draw": 3.45,
-          "away": 5.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/argentina/liga-profesional/",
       "fetchedAt": "2026-10-20T15:05:16.661Z"
     },
     {
@@ -1612,36 +832,6 @@
     },
     {
       "league": "SC",
-      "commence": "2026-10-25T12:00:00.000Z",
-      "home": "Hibernian",
-      "away": "Celtic",
-      "homeRaw": "Hibernian",
-      "awayRaw": "Celtic",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 4.65,
-        "draw": 4.1,
-        "away": 1.68,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 4.65,
-          "draw": 4.1,
-          "away": 1.68,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/scotland/premiership/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
-      "league": "SC",
       "commence": "2026-10-25T14:00:00.000Z",
       "home": "Motherwell",
       "away": "Hearts",
@@ -1851,36 +1041,6 @@
       "fetchedAt": "2026-10-20T15:05:16.661Z"
     },
     {
-      "league": "URU",
-      "commence": "2026-10-24T22:30:00.000Z",
-      "home": "Maldonado",
-      "away": "Danubio",
-      "homeRaw": "Maldonado",
-      "awayRaw": "Danubio",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.02,
-        "draw": 3.3,
-        "away": 3.65,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.02,
-          "draw": 3.3,
-          "away": 3.65,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/uruguay/liga-auf-uruguaya/",
-      "fetchedAt": "2026-10-20T15:05:16.661Z"
-    },
-    {
       "league": "SE2",
       "commence": "2026-10-25T14:00:00.000Z",
       "home": "Helsingborg",
@@ -1972,126 +1132,6 @@
     },
     {
       "league": "BR2",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Atletico GO",
-      "away": "Novorizontino",
-      "homeRaw": "Atletico GO",
-      "awayRaw": "Novorizontino",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.32,
-        "draw": 3.35,
-        "away": 3.16,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.32,
-          "draw": 3.35,
-          "away": 3.16,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-b/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "BR2",
-      "commence": "2026-10-24T19:30:00.000Z",
-      "home": "Sao Bernardo",
-      "away": "Vila Nova FC",
-      "homeRaw": "Sao Bernardo",
-      "awayRaw": "Vila Nova FC",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.85,
-        "draw": 3.2,
-        "away": 2.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.85,
-          "draw": 3.2,
-          "away": 2.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-b/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "BR2",
-      "commence": "2026-10-24T21:30:00.000Z",
-      "home": "CRB",
-      "away": "Londrina",
-      "homeRaw": "CRB",
-      "awayRaw": "Londrina",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.52,
-        "draw": 4.2,
-        "away": 5.75,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.52,
-          "draw": 4.2,
-          "away": 5.75,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-b/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "BR2",
-      "commence": "2026-10-24T21:30:00.000Z",
-      "home": "Ponte Preta",
-      "away": "Fortaleza",
-      "homeRaw": "Ponte Preta",
-      "awayRaw": "Fortaleza",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 11,
-        "draw": 5.4,
-        "away": 1.29,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 11,
-          "draw": 5.4,
-          "away": 1.29,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/brazil/serie-b/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "BR2",
       "commence": "2026-10-26T23:30:00.000Z",
       "home": "Juventude",
       "away": "Nautico",
@@ -2118,276 +1158,6 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/brazil/serie-b/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "JP1",
-      "commence": "2026-10-25T05:00:00.000Z",
-      "home": "Nagoya Grampus",
-      "away": "Yokohama F. Marinos",
-      "homeRaw": "Nagoya Grampus",
-      "awayRaw": "Yokohama F. Marinos",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.45,
-        "away": 2.48,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.5,
-          "draw": 3.45,
-          "away": 2.48,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/japan/j1-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "JP1",
-      "commence": "2026-10-25T06:00:00.000Z",
-      "home": "Cerezo Osaka",
-      "away": "Chiba",
-      "homeRaw": "Cerezo Osaka",
-      "awayRaw": "Chiba",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.68,
-        "draw": 3.8,
-        "away": 4.3,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.68,
-          "draw": 3.8,
-          "away": 4.3,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/japan/j1-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "JP1",
-      "commence": "2026-10-25T06:00:00.000Z",
-      "home": "Urawa Reds",
-      "away": "V-Varen Nagasaki",
-      "homeRaw": "Urawa Reds",
-      "awayRaw": "V-Varen Nagasaki",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.67,
-        "draw": 3.75,
-        "away": 4.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.67,
-          "draw": 3.75,
-          "away": 4.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/japan/j1-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "JP1",
-      "commence": "2026-10-25T07:00:00.000Z",
-      "home": "FC Tokyo",
-      "away": "Mito",
-      "homeRaw": "FC Tokyo",
-      "awayRaw": "Mito",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.55,
-        "draw": 3.95,
-        "away": 5.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.55,
-          "draw": 3.95,
-          "away": 5.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/japan/j1-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "JP1",
-      "commence": "2026-10-25T07:00:00.000Z",
-      "home": "Kawasaki Frontale",
-      "away": "Okayama",
-      "homeRaw": "Kawasaki Frontale",
-      "awayRaw": "Okayama",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.5,
-        "away": 3.1,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.1,
-          "draw": 3.5,
-          "away": 3.1,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/japan/j1-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "MX",
-      "commence": "2026-10-25T00:00:00.000Z",
-      "home": "Monterrey",
-      "away": "Guadalajara Chivas",
-      "homeRaw": "Monterrey",
-      "awayRaw": "Guadalajara Chivas",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.5,
-        "away": 2.62,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.55,
-          "draw": 3.5,
-          "away": 2.62,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/mexico/liga-mx/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "MX",
-      "commence": "2026-10-24T23:00:00.000Z",
-      "home": "Club Leon",
-      "away": "Toluca",
-      "homeRaw": "Club Leon",
-      "awayRaw": "Toluca",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.55,
-        "draw": 3.8,
-        "away": 2.08,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.55,
-          "draw": 3.8,
-          "away": 2.08,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/mexico/liga-mx/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "MX",
-      "commence": "2026-10-25T00:00:00.000Z",
-      "home": "Monterrey",
-      "away": "Guadalajara Chivas",
-      "homeRaw": "Monterrey",
-      "awayRaw": "Guadalajara Chivas",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.5,
-        "away": 2.62,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.55,
-          "draw": 3.5,
-          "away": 2.62,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/mexico/liga-mx/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "MX",
-      "commence": "2026-10-25T03:10:00.000Z",
-      "home": "UNAM Pumas",
-      "away": "Tigres UANL",
-      "homeRaw": "UNAM Pumas",
-      "awayRaw": "Tigres UANL",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3,
-        "draw": 3.45,
-        "away": 2.35,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.45,
-          "away": 2.35,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/mexico/liga-mx/",
       "fetchedAt": "2026-10-20T15:39:02.048Z"
     },
     {
@@ -2508,66 +1278,6 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/mexico/liga-mx/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "COL",
-      "commence": "2026-10-24T23:05:00.000Z",
-      "home": "America De Cali",
-      "away": "Cucuta",
-      "homeRaw": "America De Cali",
-      "awayRaw": "Cucuta",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.33,
-        "draw": 5.1,
-        "away": 10,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.33,
-          "draw": 5.1,
-          "away": 10,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/colombia/primera-a/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "COL",
-      "commence": "2026-10-25T00:15:00.000Z",
-      "home": "Once Caldas",
-      "away": "Pereira",
-      "homeRaw": "Once Caldas",
-      "awayRaw": "Pereira",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.19,
-        "draw": 6,
-        "away": 13,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.19,
-          "draw": 6,
-          "away": 13,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/colombia/primera-a/",
       "fetchedAt": "2026-10-20T15:39:02.048Z"
     },
     {
@@ -2991,435 +1701,15 @@
       "fetchedAt": "2026-10-21T10:39:16.730Z"
     },
     {
-      "league": "SA",
-      "commence": "2026-10-25T11:30:00.000Z",
-      "home": "Inter",
-      "away": "Fiorentina",
-      "homeRaw": "Inter",
-      "awayRaw": "Fiorentina",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.36,
-        "draw": 5.5,
-        "away": 8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.36,
-          "draw": 5.5,
-          "away": 8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
+      "league": "PL",
       "commence": "2026-10-25T14:00:00.000Z",
-      "home": "Atalanta",
-      "away": "Frosinone",
-      "homeRaw": "Atalanta",
-      "awayRaw": "Frosinone",
+      "home": "Manchester Utd",
+      "away": "Bournemouth",
+      "homeRaw": "Manchester Utd",
+      "awayRaw": "Bournemouth",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.83,
-        "draw": 4.33,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.83,
-          "draw": 4.33,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-25T14:00:00.000Z",
-      "home": "Genoa",
-      "away": "Venezia",
-      "homeRaw": "Genoa",
-      "awayRaw": "Venezia",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.15,
-        "draw": 3.4,
-        "away": 3.7,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.15,
-          "draw": 3.4,
-          "away": 3.7,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-25T17:00:00.000Z",
-      "home": "Lecce",
-      "away": "Juventus",
-      "homeRaw": "Lecce",
-      "awayRaw": "Juventus",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 7.5,
-        "draw": 4.33,
-        "away": 1.48,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 7.5,
-          "draw": 4.33,
-          "away": 1.48,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-25T19:45:00.000Z",
-      "home": "Udinese",
-      "away": "AC Milan",
-      "homeRaw": "Udinese",
-      "awayRaw": "AC Milan",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 5.5,
-        "draw": 3.8,
-        "away": 1.68,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 5.5,
-          "draw": 3.8,
-          "away": 1.68,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-27T17:30:00.000Z",
-      "home": "Sassuolo",
-      "away": "Lazio",
-      "homeRaw": "Sassuolo",
-      "awayRaw": "Lazio",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.9,
-        "draw": 3.5,
-        "away": 2.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.9,
-          "draw": 3.5,
-          "away": 2.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-27T19:45:00.000Z",
-      "home": "AS Roma",
-      "away": "Cagliari",
-      "homeRaw": "AS Roma",
-      "awayRaw": "Cagliari",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.36,
-        "draw": 5,
-        "away": 9,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.36,
-          "draw": 5,
-          "away": 9,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-27T19:45:00.000Z",
-      "home": "Torino",
-      "away": "Como",
-      "homeRaw": "Torino",
-      "awayRaw": "Como",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 4.5,
-        "draw": 3.6,
-        "away": 1.76,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 4.5,
-          "draw": 3.6,
-          "away": 1.76,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-28T17:30:00.000Z",
-      "home": "AC Milan",
-      "away": "Bologna",
-      "homeRaw": "AC Milan",
-      "awayRaw": "Bologna",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.6,
-        "draw": 4.1,
-        "away": 5.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.6,
-          "draw": 4.1,
-          "away": 5.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-28T17:30:00.000Z",
-      "home": "Venezia",
-      "away": "Inter",
-      "homeRaw": "Venezia",
-      "awayRaw": "Inter",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 8.5,
-        "draw": 5.75,
-        "away": 1.33,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 8.5,
-          "draw": 5.75,
-          "away": 1.33,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-28T17:30:00.000Z",
-      "home": "Parma",
-      "away": "Udinese",
-      "homeRaw": "Parma",
-      "awayRaw": "Udinese",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3,
-        "draw": 3.2,
-        "away": 2.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.2,
-          "away": 2.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-28T19:45:00.000Z",
-      "home": "Genoa",
-      "away": "Juventus",
-      "homeRaw": "Genoa",
-      "awayRaw": "Juventus",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 5.5,
-        "draw": 3.8,
-        "away": 1.66,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 5.5,
-          "draw": 3.8,
-          "away": 1.66,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-28T19:45:00.000Z",
-      "home": "Monza",
-      "away": "Napoli",
-      "homeRaw": "Monza",
-      "awayRaw": "Napoli",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 4.1,
-        "draw": 3.8,
-        "away": 1.9,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 4.1,
-          "draw": 3.8,
-          "away": 1.9,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-29T17:30:00.000Z",
-      "home": "Frosinone",
-      "away": "Lecce",
-      "homeRaw": "Frosinone",
-      "awayRaw": "Lecce",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.93,
-        "draw": 3.6,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.93,
-          "draw": 3.6,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-29T19:45:00.000Z",
-      "home": "Fiorentina",
-      "away": "Atalanta",
-      "homeRaw": "Fiorentina",
-      "awayRaw": "Atalanta",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.3,
+        "home": 2.4,
         "draw": 3.5,
         "away": 3,
         "over25": null,
@@ -3429,7 +1719,7 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.3,
+          "home": 2.4,
           "draw": 3.5,
           "away": 3,
           "over25": null,
@@ -3437,938 +1727,8 @@
         }
       ],
       "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "SA",
-      "commence": "2026-10-25T11:30:00.000Z",
-      "home": "Inter",
-      "away": "Fiorentina",
-      "homeRaw": "Inter",
-      "awayRaw": "Fiorentina",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.36,
-        "draw": 5.5,
-        "away": 8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.36,
-          "draw": 5.5,
-          "away": 8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/italy/serie-a/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-25T14:30:00.000Z",
-      "home": "Hoffenheim",
-      "away": "Bayer Leverkusen",
-      "homeRaw": "Hoffenheim",
-      "awayRaw": "Bayer Leverkusen",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.88,
-        "draw": 4.1,
-        "away": 2.3,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.88,
-          "draw": 4.1,
-          "away": 2.3,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-25T16:30:00.000Z",
-      "home": "Freiburg",
-      "away": "Bayern Munich",
-      "homeRaw": "Freiburg",
-      "awayRaw": "Bayern Munich",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 6.5,
-        "draw": 5.9,
-        "away": 1.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 6.5,
-          "draw": 5.9,
-          "away": 1.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-30T19:30:00.000Z",
-      "home": "Elversberg",
-      "away": "Mainz",
-      "homeRaw": "Elversberg",
-      "awayRaw": "Mainz",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.2,
-        "draw": 4,
-        "away": 2.05,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.2,
-          "draw": 4,
-          "away": 2.05,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T14:30:00.000Z",
-      "home": "Augsburg",
-      "away": "Freiburg",
-      "homeRaw": "Augsburg",
-      "awayRaw": "Freiburg",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3,
-        "draw": 3.8,
-        "away": 2.2,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.8,
-          "away": 2.2,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T14:30:00.000Z",
-      "home": "B. Monchengladbach",
-      "away": "Paderborn",
-      "homeRaw": "B. Monchengladbach",
-      "awayRaw": "Paderborn",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.85,
-        "draw": 4.1,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.85,
-          "draw": 4.1,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T14:30:00.000Z",
-      "home": "Bayer Leverkusen",
-      "away": "Stuttgart",
-      "homeRaw": "Bayer Leverkusen",
-      "awayRaw": "Stuttgart",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.8,
-        "draw": 4.3,
-        "away": 3.8,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.8,
-          "draw": 4.3,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T14:30:00.000Z",
-      "home": "Werder Bremen",
-      "away": "Hoffenheim",
-      "homeRaw": "Werder Bremen",
-      "awayRaw": "Hoffenheim",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3,
-        "draw": 4,
-        "away": 2.2,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 4,
-          "away": 2.2,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T14:30:00.000Z",
-      "home": "Schalke",
-      "away": "RB Leipzig",
-      "homeRaw": "Schalke",
-      "awayRaw": "RB Leipzig",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.75,
-        "draw": 4.1,
-        "away": 1.91,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.75,
-          "draw": 4.1,
-          "away": 1.91,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-10-31T17:30:00.000Z",
-      "home": "Bayern Munich",
-      "away": "Dortmund",
-      "homeRaw": "Bayern Munich",
-      "awayRaw": "Dortmund",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.36,
-        "draw": 5.75,
-        "away": 7.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.36,
-          "draw": 5.75,
-          "away": 7.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-11-01T14:30:00.000Z",
-      "home": "Union Berlin",
-      "away": "FC Koln",
-      "homeRaw": "Union Berlin",
-      "awayRaw": "FC Koln",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.6,
-        "away": 2.6,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.5,
-          "draw": 3.6,
-          "away": 2.6,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "BL",
-      "commence": "2026-11-01T16:30:00.000Z",
-      "home": "Eintracht Frankfurt",
-      "away": "Hamburger SV",
-      "homeRaw": "Eintracht Frankfurt",
-      "awayRaw": "Hamburger SV",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.68,
-        "draw": 4.33,
-        "away": 4.75,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.68,
-          "draw": 4.33,
-          "away": 4.75,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T14:00:00.000Z",
-      "home": "Monaco",
-      "away": "Lille",
-      "homeRaw": "Monaco",
-      "awayRaw": "Lille",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.5,
-        "away": 3.75,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.05,
-          "draw": 3.5,
-          "away": 3.75,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Toulouse",
-      "away": "Troyes",
-      "homeRaw": "Toulouse",
-      "awayRaw": "Troyes",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.62,
-        "draw": 4.33,
-        "away": 5.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.62,
-          "draw": 4.33,
-          "away": 5.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Angers",
-      "away": "Lorient",
-      "homeRaw": "Angers",
-      "awayRaw": "Lorient",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3,
-        "draw": 3.35,
-        "away": 2.45,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.35,
-          "away": 2.45,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Auxerre",
-      "away": "Le Mans",
-      "homeRaw": "Auxerre",
-      "awayRaw": "Le Mans",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.65,
-        "away": 3.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.1,
-          "draw": 3.65,
-          "away": 3.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Marseille",
-      "away": "Le Havre",
-      "homeRaw": "Marseille",
-      "awayRaw": "Le Havre",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.58,
-        "draw": 4.7,
-        "away": 5.4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.58,
-          "draw": 4.7,
-          "away": 5.4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Rennes",
-      "away": "Strasbourg",
-      "homeRaw": "Rennes",
-      "awayRaw": "Strasbourg",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.8,
-        "draw": 4.5,
-        "away": 4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.8,
-          "draw": 4.5,
-          "away": 4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-25T16:15:00.000Z",
-      "home": "Toulouse",
-      "away": "Troyes",
-      "homeRaw": "Toulouse",
-      "awayRaw": "Troyes",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.62,
-        "draw": 4.33,
-        "away": 5.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.62,
-          "draw": 4.33,
-          "away": 5.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-26T19:30:00.000Z",
-      "home": "PSG",
-      "away": "Lyon",
-      "homeRaw": "PSG",
-      "awayRaw": "Lyon",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.44,
-        "draw": 5.4,
-        "away": 6.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.44,
-          "draw": 5.4,
-          "away": 6.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-30T18:00:00.000Z",
-      "home": "Le Havre",
-      "away": "PSG",
-      "homeRaw": "Le Havre",
-      "awayRaw": "PSG",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 10,
-        "draw": 6.5,
-        "away": 1.25,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 10,
-          "draw": 6.5,
-          "away": 1.25,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-30T20:05:00.000Z",
-      "home": "Lille",
-      "away": "Lens",
-      "homeRaw": "Lille",
-      "awayRaw": "Lens",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.6,
-        "away": 2.95,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.3,
-          "draw": 3.6,
-          "away": 2.95,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-31T16:15:00.000Z",
-      "home": "Nice",
-      "away": "Rennes",
-      "homeRaw": "Nice",
-      "awayRaw": "Rennes",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.8,
-        "away": 2.35,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.75,
-          "draw": 3.8,
-          "away": 2.35,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-31T19:45:00.000Z",
-      "home": "Lyon",
-      "away": "Angers",
-      "homeRaw": "Lyon",
-      "awayRaw": "Angers",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.39,
-        "draw": 5.1,
-        "away": 7.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.39,
-          "draw": 5.1,
-          "away": 7.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-31T19:45:00.000Z",
-      "home": "Lorient",
-      "away": "Brest",
-      "homeRaw": "Lorient",
-      "awayRaw": "Brest",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.6,
-        "draw": 3.5,
-        "away": 2.6,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.6,
-          "draw": 3.5,
-          "away": 2.6,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-10-31T19:45:00.000Z",
-      "home": "Troyes",
-      "away": "Le Mans",
-      "homeRaw": "Troyes",
-      "awayRaw": "Le Mans",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.6,
-        "away": 3.3,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.1,
-          "draw": 3.6,
-          "away": 3.3,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-11-01T14:00:00.000Z",
-      "home": "Strasbourg",
-      "away": "Auxerre",
-      "homeRaw": "Strasbourg",
-      "awayRaw": "Auxerre",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.8,
-        "draw": 4,
-        "away": 4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.8,
-          "draw": 4,
-          "away": 4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-11-01T16:15:00.000Z",
-      "home": "Paris FC",
-      "away": "Monaco",
-      "homeRaw": "Paris FC",
-      "awayRaw": "Monaco",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.6,
-        "away": 2.9,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.3,
-          "draw": 3.6,
-          "away": 2.9,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "L1",
-      "commence": "2026-11-01T19:45:00.000Z",
-      "home": "Marseille",
-      "away": "Toulouse",
-      "homeRaw": "Marseille",
-      "awayRaw": "Toulouse",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.83,
-        "draw": 4,
-        "away": 4,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.83,
-          "draw": 4,
-          "away": 4,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/france/ligue-1/",
-      "fetchedAt": "2026-10-24T09:56:40.076Z"
-    },
-    {
-      "league": "PL",
-      "commence": "2026-10-31T20:00:00.000Z",
-      "home": "Aston Villa",
-      "away": "Fulham",
-      "homeRaw": "Aston Villa",
-      "awayRaw": "Fulham",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.65,
-        "away": 3.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.05,
-          "draw": 3.65,
-          "away": 3.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
-    },
-    {
-      "league": "PL",
-      "commence": "2026-10-25T14:00:00.000Z",
-      "home": "Manchester Utd",
-      "away": "Bournemouth",
-      "homeRaw": "Manchester Utd",
-      "awayRaw": "Bournemouth",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.2,
-        "draw": 3.7,
-        "away": 3.2,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.2,
-          "draw": 3.7,
-          "away": 3.2,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4379,9 +1739,9 @@
       "awayRaw": "Brentford",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 4.8,
-        "draw": 4,
-        "away": 1.73,
+        "home": 5,
+        "draw": 4.1,
+        "away": 1.7,
         "over25": null,
         "under25": null
       },
@@ -4389,16 +1749,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 4.8,
-          "draw": 4,
-          "away": 1.73,
+          "home": 5,
+          "draw": 4.1,
+          "away": 1.7,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4410,7 +1770,7 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2.15,
-        "draw": 3.9,
+        "draw": 3.8,
         "away": 3.2,
         "over25": null,
         "under25": null
@@ -4420,7 +1780,7 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 2.15,
-          "draw": 3.9,
+          "draw": 3.8,
           "away": 3.2,
           "over25": null,
           "under25": null
@@ -4428,7 +1788,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4440,8 +1800,8 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2.9,
-        "draw": 3.7,
-        "away": 2.35,
+        "draw": 3.65,
+        "away": 2.45,
         "over25": null,
         "under25": null
       },
@@ -4450,28 +1810,28 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 2.9,
-          "draw": 3.7,
-          "away": 2.35,
+          "draw": 3.65,
+          "away": 2.45,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
       "commence": "2026-10-25T16:30:00.000Z",
       "home": "Sunderland",
-      "away": "Leeds",
+      "away": "Leeds Utd",
       "homeRaw": "Sunderland",
-      "awayRaw": "Leeds",
+      "awayRaw": "Leeds Utd",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 3,
-        "draw": 3.25,
-        "away": 2.5,
+        "home": 2.95,
+        "draw": 3.2,
+        "away": 2.6,
         "over25": null,
         "under25": null
       },
@@ -4479,16 +1839,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.25,
-          "away": 2.5,
+          "home": 2.95,
+          "draw": 3.2,
+          "away": 2.6,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4499,9 +1859,9 @@
       "awayRaw": "Manchester Utd",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.86,
-        "draw": 4,
-        "away": 3.8,
+        "home": 2,
+        "draw": 3.7,
+        "away": 3.5,
         "over25": null,
         "under25": null
       },
@@ -4509,24 +1869,24 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.86,
-          "draw": 4,
-          "away": 3.8,
+          "home": 2,
+          "draw": 3.7,
+          "away": 3.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
       "commence": "2026-10-31T15:00:00.000Z",
       "home": "Bournemouth",
-      "away": "Leeds",
+      "away": "Leeds Utd",
       "homeRaw": "Bournemouth",
-      "awayRaw": "Leeds",
+      "awayRaw": "Leeds Utd",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2.2,
@@ -4548,15 +1908,15 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
       "commence": "2026-10-31T15:00:00.000Z",
       "home": "Brentford",
-      "away": "Nottingham",
+      "away": "Nottingham Forest",
       "homeRaw": "Brentford",
-      "awayRaw": "Nottingham",
+      "awayRaw": "Nottingham Forest",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2,
@@ -4578,7 +1938,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4608,7 +1968,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4638,7 +1998,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4668,7 +2028,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4698,7 +2058,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4709,9 +2069,9 @@
       "awayRaw": "Fulham",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.05,
-        "draw": 3.65,
-        "away": 3.5,
+        "home": 1.93,
+        "draw": 3.8,
+        "away": 3.9,
         "over25": null,
         "under25": null
       },
@@ -4719,16 +2079,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.05,
-          "draw": 3.65,
-          "away": 3.5,
+          "home": 1.93,
+          "draw": 3.8,
+          "away": 3.9,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4739,7 +2099,7 @@
       "awayRaw": "Arsenal",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 3.2,
+        "home": 3.25,
         "draw": 3.6,
         "away": 2.2,
         "over25": null,
@@ -4749,7 +2109,7 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 3.2,
+          "home": 3.25,
           "draw": 3.6,
           "away": 2.2,
           "over25": null,
@@ -4758,7 +2118,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4771,7 +2131,7 @@
       "odds": {
         "home": 2.25,
         "draw": 3.6,
-        "away": 3.1,
+        "away": 3,
         "over25": null,
         "under25": null
       },
@@ -4781,6 +2141,126 @@
           "bookmaker": "OddsPortal (snitt)",
           "home": 2.25,
           "draw": 3.6,
+          "away": 3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-06T20:00:00.000Z",
+      "home": "Everton",
+      "away": "Coventry",
+      "homeRaw": "Everton",
+      "awayRaw": "Coventry",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.66,
+        "draw": 4.2,
+        "away": 5.1,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.66,
+          "draw": 4.2,
+          "away": 5.1,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-07T12:30:00.000Z",
+      "home": "Leeds Utd",
+      "away": "Tottenham",
+      "homeRaw": "Leeds Utd",
+      "awayRaw": "Tottenham",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.4,
+        "away": 3,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.35,
+          "draw": 3.4,
+          "away": 3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-07T15:00:00.000Z",
+      "home": "Arsenal",
+      "away": "Hull",
+      "homeRaw": "Arsenal",
+      "awayRaw": "Hull",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.15,
+        "draw": 7.5,
+        "away": 15,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.15,
+          "draw": 7.5,
+          "away": 15,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-07T15:00:00.000Z",
+      "home": "Fulham",
+      "away": "Newcastle",
+      "homeRaw": "Fulham",
+      "awayRaw": "Newcastle",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.3,
+        "draw": 3.6,
+        "away": 3.1,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.3,
+          "draw": 3.6,
           "away": 3.1,
           "over25": null,
           "under25": null
@@ -4788,7 +2268,187 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-07T17:30:00.000Z",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "homeRaw": "Nottingham Forest",
+      "awayRaw": "Manchester City",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.8,
+        "draw": 4.2,
+        "away": 1.68,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.8,
+          "draw": 4.2,
+          "away": 1.68,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-08T14:00:00.000Z",
+      "home": "Ipswich",
+      "away": "Bournemouth",
+      "homeRaw": "Ipswich",
+      "awayRaw": "Bournemouth",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.1,
+        "draw": 3.5,
+        "away": 2.3,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.1,
+          "draw": 3.5,
+          "away": 2.3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-08T14:00:00.000Z",
+      "home": "Brighton",
+      "away": "Brentford",
+      "homeRaw": "Brighton",
+      "awayRaw": "Brentford",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.83,
+        "draw": 4,
+        "away": 4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.83,
+          "draw": 4,
+          "away": 4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-08T14:00:00.000Z",
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "homeRaw": "Sunderland",
+      "awayRaw": "Chelsea",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.1,
+        "draw": 3.6,
+        "away": 1.86,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.1,
+          "draw": 3.6,
+          "away": 1.86,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-08T14:00:00.000Z",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "homeRaw": "Crystal Palace",
+      "awayRaw": "Liverpool",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.75,
+        "draw": 4.4,
+        "away": 1.62,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.75,
+          "draw": 4.4,
+          "away": 1.62,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "PL",
+      "commence": "2026-11-08T16:30:00.000Z",
+      "home": "Manchester Utd",
+      "away": "Aston Villa",
+      "homeRaw": "Manchester Utd",
+      "awayRaw": "Aston Villa",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.25,
+        "draw": 3.8,
+        "away": 3,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.25,
+          "draw": 3.8,
+          "away": 3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/england/premier-league/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "PL",
@@ -4818,7 +2478,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/england/premier-league/",
-      "fetchedAt": "2026-10-24T13:51:26.804Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4829,9 +2489,9 @@
       "awayRaw": "Getafe",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.58,
-        "draw": 4,
-        "away": 6.25,
+        "home": 1.55,
+        "draw": 4.2,
+        "away": 6.5,
         "over25": null,
         "under25": null
       },
@@ -4839,16 +2499,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.58,
-          "draw": 4,
-          "away": 6.25,
+          "home": 1.55,
+          "draw": 4.2,
+          "away": 6.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4859,8 +2519,8 @@
       "awayRaw": "Betis",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 3.2,
-        "draw": 3.55,
+        "home": 3.15,
+        "draw": 3.45,
         "away": 2.3,
         "over25": null,
         "under25": null
@@ -4869,8 +2529,8 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 3.2,
-          "draw": 3.55,
+          "home": 3.15,
+          "draw": 3.45,
           "away": 2.3,
           "over25": null,
           "under25": null
@@ -4878,7 +2538,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4889,9 +2549,9 @@
       "awayRaw": "Levante",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.6,
-        "draw": 4.5,
-        "away": 5.4,
+        "home": 1.57,
+        "draw": 4.75,
+        "away": 5.25,
         "over25": null,
         "under25": null
       },
@@ -4899,16 +2559,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.6,
-          "draw": 4.5,
-          "away": 5.4,
+          "home": 1.57,
+          "draw": 4.75,
+          "away": 5.25,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4919,8 +2579,8 @@
       "awayRaw": "Real Madrid",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.66,
-        "draw": 5.9,
+        "home": 1.62,
+        "draw": 6,
         "away": 4.1,
         "over25": null,
         "under25": null
@@ -4929,8 +2589,8 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.66,
-          "draw": 5.9,
+          "home": 1.62,
+          "draw": 6,
           "away": 4.1,
           "over25": null,
           "under25": null
@@ -4938,7 +2598,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4968,7 +2628,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -4979,9 +2639,9 @@
       "awayRaw": "Espanyol",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.57,
-        "draw": 4.5,
-        "away": 5.5,
+        "home": 1.52,
+        "draw": 4.6,
+        "away": 5.75,
         "over25": null,
         "under25": null
       },
@@ -4989,16 +2649,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.57,
-          "draw": 4.5,
-          "away": 5.5,
+          "home": 1.52,
+          "draw": 4.6,
+          "away": 5.75,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5028,7 +2688,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5058,7 +2718,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5070,7 +2730,7 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 1.4,
-        "draw": 5.3,
+        "draw": 5.25,
         "away": 7,
         "over25": null,
         "under25": null
@@ -5080,7 +2740,7 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 1.4,
-          "draw": 5.3,
+          "draw": 5.25,
           "away": 7,
           "over25": null,
           "under25": null
@@ -5088,7 +2748,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5118,7 +2778,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5148,7 +2808,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5159,7 +2819,7 @@
       "awayRaw": "Real Madrid",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 9.5,
+        "home": 9,
         "draw": 7,
         "away": 1.26,
         "over25": null,
@@ -5169,7 +2829,7 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 9.5,
+          "home": 9,
           "draw": 7,
           "away": 1.26,
           "over25": null,
@@ -5178,7 +2838,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5208,7 +2868,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5220,8 +2880,8 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2.05,
-        "draw": 3.6,
-        "away": 3.6,
+        "draw": 3.7,
+        "away": 3.5,
         "over25": null,
         "under25": null
       },
@@ -5230,15 +2890,15 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 2.05,
-          "draw": 3.6,
-          "away": 3.6,
+          "draw": 3.7,
+          "away": 3.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     },
     {
       "league": "LL",
@@ -5249,8 +2909,428 @@
       "awayRaw": "Osasuna",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.3,
+        "home": 2.25,
         "draw": 3.3,
+        "away": 3.3,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.25,
+          "draw": 3.3,
+          "away": 3.3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/spain/laliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-25T14:00:00.000Z",
+      "home": "Atalanta",
+      "away": "Frosinone",
+      "homeRaw": "Atalanta",
+      "awayRaw": "Frosinone",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.87,
+        "draw": 4.2,
+        "away": 3.7,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.87,
+          "draw": 4.2,
+          "away": 3.7,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-25T14:00:00.000Z",
+      "home": "Genoa",
+      "away": "Venezia",
+      "homeRaw": "Genoa",
+      "awayRaw": "Venezia",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.2,
+        "draw": 3.4,
+        "away": 3.6,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.2,
+          "draw": 3.4,
+          "away": 3.6,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-25T17:00:00.000Z",
+      "home": "Lecce",
+      "away": "Juventus",
+      "homeRaw": "Lecce",
+      "awayRaw": "Juventus",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 6.5,
+        "draw": 4.1,
+        "away": 1.55,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 6.5,
+          "draw": 4.1,
+          "away": 1.55,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-25T19:45:00.000Z",
+      "home": "Udinese",
+      "away": "AC Milan",
+      "homeRaw": "Udinese",
+      "awayRaw": "AC Milan",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.6,
+        "draw": 3.6,
+        "away": 1.83,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.6,
+          "draw": 3.6,
+          "away": 1.83,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-27T17:30:00.000Z",
+      "home": "Sassuolo",
+      "away": "Lazio",
+      "homeRaw": "Sassuolo",
+      "awayRaw": "Lazio",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.1,
+        "draw": 3.6,
+        "away": 2.25,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.1,
+          "draw": 3.6,
+          "away": 2.25,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-27T19:45:00.000Z",
+      "home": "AS Roma",
+      "away": "Cagliari",
+      "homeRaw": "AS Roma",
+      "awayRaw": "Cagliari",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.36,
+        "draw": 5,
+        "away": 9,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.36,
+          "draw": 5,
+          "away": 9,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-27T19:45:00.000Z",
+      "home": "Torino",
+      "away": "Como",
+      "homeRaw": "Torino",
+      "awayRaw": "Como",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.5,
+        "draw": 3.9,
+        "away": 1.8,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.5,
+          "draw": 3.9,
+          "away": 1.8,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T17:30:00.000Z",
+      "home": "AC Milan",
+      "away": "Bologna",
+      "homeRaw": "AC Milan",
+      "awayRaw": "Bologna",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.67,
+        "draw": 4.1,
+        "away": 5.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.67,
+          "draw": 4.1,
+          "away": 5.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T17:30:00.000Z",
+      "home": "Venezia",
+      "away": "Inter",
+      "homeRaw": "Venezia",
+      "awayRaw": "Inter",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 8.5,
+        "draw": 5.75,
+        "away": 1.33,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 8.5,
+          "draw": 5.75,
+          "away": 1.33,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T17:30:00.000Z",
+      "home": "Parma",
+      "away": "Udinese",
+      "homeRaw": "Parma",
+      "awayRaw": "Udinese",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.1,
+        "draw": 3.25,
+        "away": 2.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.1,
+          "draw": 3.25,
+          "away": 2.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T19:45:00.000Z",
+      "home": "Genoa",
+      "away": "Juventus",
+      "homeRaw": "Genoa",
+      "awayRaw": "Juventus",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 5.5,
+        "draw": 3.8,
+        "away": 1.69,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 5.5,
+          "draw": 3.8,
+          "away": 1.69,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T19:45:00.000Z",
+      "home": "Monza",
+      "away": "Napoli",
+      "homeRaw": "Monza",
+      "awayRaw": "Napoli",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4.75,
+        "draw": 4.05,
+        "away": 1.76,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4.75,
+          "draw": 4.05,
+          "away": 1.76,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-29T17:30:00.000Z",
+      "home": "Frosinone",
+      "away": "Lecce",
+      "homeRaw": "Frosinone",
+      "awayRaw": "Lecce",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2,
+        "draw": 3.8,
+        "away": 3.8,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2,
+          "draw": 3.8,
+          "away": 3.8,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-29T19:45:00.000Z",
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "homeRaw": "Fiorentina",
+      "awayRaw": "Atalanta",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.5,
         "away": 3.1,
         "over25": null,
         "under25": null
@@ -5259,16 +3339,916 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.3,
-          "draw": 3.3,
+          "home": 2.4,
+          "draw": 3.5,
           "away": 3.1,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/spain/laliga/",
-      "fetchedAt": "2026-10-24T19:28:48.318Z"
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "SA",
+      "commence": "2026-10-28T17:30:00.000Z",
+      "home": "Venezia",
+      "away": "Inter",
+      "homeRaw": "Venezia",
+      "awayRaw": "Inter",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 8.5,
+        "draw": 5.75,
+        "away": 1.33,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 8.5,
+          "draw": 5.75,
+          "away": 1.33,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/italy/serie-a/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-25T14:30:00.000Z",
+      "home": "Hoffenheim",
+      "away": "Bayer Leverkusen",
+      "homeRaw": "Hoffenheim",
+      "awayRaw": "Bayer Leverkusen",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.2,
+        "draw": 4.3,
+        "away": 2.05,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.2,
+          "draw": 4.3,
+          "away": 2.05,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-25T16:30:00.000Z",
+      "home": "Freiburg",
+      "away": "Bayern Munich",
+      "homeRaw": "Freiburg",
+      "awayRaw": "Bayern Munich",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 5.9,
+        "draw": 5,
+        "away": 1.53,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 5.9,
+          "draw": 5,
+          "away": 1.53,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-30T19:30:00.000Z",
+      "home": "Elversberg",
+      "away": "Mainz",
+      "homeRaw": "Elversberg",
+      "awayRaw": "Mainz",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.2,
+        "draw": 4,
+        "away": 2.05,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.2,
+          "draw": 4,
+          "away": 2.05,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "Augsburg",
+      "away": "Freiburg",
+      "homeRaw": "Augsburg",
+      "awayRaw": "Freiburg",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3,
+        "draw": 3.8,
+        "away": 2.2,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3,
+          "draw": 3.8,
+          "away": 2.2,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "B. Monchengladbach",
+      "away": "Paderborn",
+      "homeRaw": "B. Monchengladbach",
+      "awayRaw": "Paderborn",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.9,
+        "draw": 4.1,
+        "away": 3.7,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.9,
+          "draw": 4.1,
+          "away": 3.7,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "Bayer Leverkusen",
+      "away": "Stuttgart",
+      "homeRaw": "Bayer Leverkusen",
+      "awayRaw": "Stuttgart",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.8,
+        "draw": 4.3,
+        "away": 3.8,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.8,
+          "draw": 4.3,
+          "away": 3.8,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "Werder Bremen",
+      "away": "Hoffenheim",
+      "homeRaw": "Werder Bremen",
+      "awayRaw": "Hoffenheim",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.9,
+        "draw": 4,
+        "away": 2.2,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.9,
+          "draw": 4,
+          "away": 2.2,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "Schalke",
+      "away": "RB Leipzig",
+      "homeRaw": "Schalke",
+      "awayRaw": "RB Leipzig",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 4,
+        "draw": 4,
+        "away": 1.83,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 4,
+          "draw": 4,
+          "away": 1.83,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T17:30:00.000Z",
+      "home": "Bayern Munich",
+      "away": "Dortmund",
+      "homeRaw": "Bayern Munich",
+      "awayRaw": "Dortmund",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.36,
+        "draw": 6,
+        "away": 7.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.36,
+          "draw": 6,
+          "away": 7.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-10-31T14:30:00.000Z",
+      "home": "Bayer Leverkusen",
+      "away": "Stuttgart",
+      "homeRaw": "Bayer Leverkusen",
+      "awayRaw": "Stuttgart",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.8,
+        "draw": 4.3,
+        "away": 3.8,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.8,
+          "draw": 4.3,
+          "away": 3.8,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-11-01T14:30:00.000Z",
+      "home": "Union Berlin",
+      "away": "FC Koln",
+      "homeRaw": "Union Berlin",
+      "awayRaw": "FC Koln",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.5,
+        "draw": 3.6,
+        "away": 2.6,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.5,
+          "draw": 3.6,
+          "away": 2.6,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "BL",
+      "commence": "2026-11-01T16:30:00.000Z",
+      "home": "Eintracht Frankfurt",
+      "away": "Hamburger SV",
+      "homeRaw": "Eintracht Frankfurt",
+      "awayRaw": "Hamburger SV",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.68,
+        "draw": 4.33,
+        "away": 4.75,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.68,
+          "draw": 4.33,
+          "away": 4.75,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/germany/bundesliga/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T14:00:00.000Z",
+      "home": "Monaco",
+      "away": "Lille",
+      "homeRaw": "Monaco",
+      "awayRaw": "Lille",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.95,
+        "draw": 3.5,
+        "away": 4.1,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.95,
+          "draw": 3.5,
+          "away": 4.1,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Angers",
+      "away": "Lorient",
+      "homeRaw": "Angers",
+      "awayRaw": "Lorient",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 3.1,
+        "draw": 3.3,
+        "away": 2.4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 3.1,
+          "draw": 3.3,
+          "away": 2.4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Auxerre",
+      "away": "Le Mans",
+      "homeRaw": "Auxerre",
+      "awayRaw": "Le Mans",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.6,
+        "away": 3.4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.1,
+          "draw": 3.6,
+          "away": 3.4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Marseille",
+      "away": "Le Havre",
+      "homeRaw": "Marseille",
+      "awayRaw": "Le Havre",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.48,
+        "draw": 4.8,
+        "away": 6,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.48,
+          "draw": 4.8,
+          "away": 6,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Auxerre",
+      "away": "Le Mans",
+      "homeRaw": "Auxerre",
+      "awayRaw": "Le Mans",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.6,
+        "away": 3.4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.1,
+          "draw": 3.6,
+          "away": 3.4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Rennes",
+      "away": "Strasbourg",
+      "homeRaw": "Rennes",
+      "awayRaw": "Strasbourg",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.8,
+        "draw": 4.33,
+        "away": 4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.8,
+          "draw": 4.33,
+          "away": 4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-25T16:15:00.000Z",
+      "home": "Toulouse",
+      "away": "Troyes",
+      "homeRaw": "Toulouse",
+      "awayRaw": "Troyes",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.52,
+        "draw": 4.6,
+        "away": 6.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.52,
+          "draw": 4.6,
+          "away": 6.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-26T19:30:00.000Z",
+      "home": "PSG",
+      "away": "Lyon",
+      "homeRaw": "PSG",
+      "awayRaw": "Lyon",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.41,
+        "draw": 5.6,
+        "away": 7,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.41,
+          "draw": 5.6,
+          "away": 7,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-30T18:00:00.000Z",
+      "home": "Le Havre",
+      "away": "PSG",
+      "homeRaw": "Le Havre",
+      "awayRaw": "PSG",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 11,
+        "draw": 6.5,
+        "away": 1.23,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 11,
+          "draw": 6.5,
+          "away": 1.23,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-30T20:05:00.000Z",
+      "home": "Lille",
+      "away": "Lens",
+      "homeRaw": "Lille",
+      "awayRaw": "Lens",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.3,
+        "draw": 3.6,
+        "away": 2.95,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.3,
+          "draw": 3.6,
+          "away": 2.95,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-31T16:15:00.000Z",
+      "home": "Nice",
+      "away": "Rennes",
+      "homeRaw": "Nice",
+      "awayRaw": "Rennes",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.8,
+        "away": 2.35,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.75,
+          "draw": 3.8,
+          "away": 2.35,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-31T19:45:00.000Z",
+      "home": "Lyon",
+      "away": "Angers",
+      "homeRaw": "Lyon",
+      "awayRaw": "Angers",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.4,
+        "draw": 5.1,
+        "away": 7.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.4,
+          "draw": 5.1,
+          "away": 7.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-31T19:45:00.000Z",
+      "home": "Lorient",
+      "away": "Brest",
+      "homeRaw": "Lorient",
+      "awayRaw": "Brest",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.6,
+        "draw": 3.5,
+        "away": 2.6,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.6,
+          "draw": 3.5,
+          "away": 2.6,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-10-31T19:45:00.000Z",
+      "home": "Troyes",
+      "away": "Le Mans",
+      "homeRaw": "Troyes",
+      "awayRaw": "Le Mans",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.6,
+        "away": 3.3,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.1,
+          "draw": 3.6,
+          "away": 3.3,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-11-01T14:00:00.000Z",
+      "home": "Strasbourg",
+      "away": "Auxerre",
+      "homeRaw": "Strasbourg",
+      "awayRaw": "Auxerre",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.8,
+        "draw": 4,
+        "away": 4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.8,
+          "draw": 4,
+          "away": 4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-11-01T16:15:00.000Z",
+      "home": "Paris FC",
+      "away": "Monaco",
+      "homeRaw": "Paris FC",
+      "awayRaw": "Monaco",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 2.25,
+        "draw": 3.6,
+        "away": 2.95,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 2.25,
+          "draw": 3.6,
+          "away": 2.95,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
+    },
+    {
+      "league": "L1",
+      "commence": "2026-11-01T19:45:00.000Z",
+      "home": "Marseille",
+      "away": "Toulouse",
+      "homeRaw": "Marseille",
+      "awayRaw": "Toulouse",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.83,
+        "draw": 4,
+        "away": 4,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.83,
+          "draw": 4,
+          "away": 4,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/france/ligue-1/",
+      "fetchedAt": "2026-10-25T12:32:51.557Z"
     }
   ]
 }

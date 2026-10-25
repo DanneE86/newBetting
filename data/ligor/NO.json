@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-25T12:27:09.239Z",
  "league": "NO",
  "fotmobId": 59,
  "name": "Eliteserien",
@@ -7,20 +7,6 @@
  "table": [
   {
    "rank": 1,
-   "team": "Bodo/Glimt",
-   "fotmobName": "Bodø/Glimt",
-   "fotmobId": 8402,
-   "group": null,
-   "played": 23,
-   "won": 18,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "58-20",
-   "gd": 38,
-   "pts": 56
-  },
-  {
-   "rank": 2,
    "team": "Viking",
    "fotmobName": "Viking",
    "fotmobId": 8478,
@@ -30,6 +16,20 @@
    "drawn": 2,
    "lost": 3,
    "goals": "59-22",
+   "gd": 37,
+   "pts": 56
+  },
+  {
+   "rank": 2,
+   "team": "Bodo/Glimt",
+   "fotmobName": "Bodø/Glimt",
+   "fotmobId": 8402,
+   "group": null,
+   "played": 24,
+   "won": 18,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "58-21",
    "gd": 37,
    "pts": 56
   },
@@ -49,6 +49,20 @@
   },
   {
    "rank": 4,
+   "team": "Rosenborg",
+   "fotmobName": "Rosenborg",
+   "fotmobId": 8422,
+   "group": null,
+   "played": 24,
+   "won": 12,
+   "drawn": 4,
+   "lost": 8,
+   "goals": "46-31",
+   "gd": 15,
+   "pts": 40
+  },
+  {
+   "rank": 5,
    "team": "Tromso",
    "fotmobName": "Tromsø",
    "fotmobId": 8608,
@@ -60,20 +74,6 @@
    "goals": "42-31",
    "gd": 11,
    "pts": 40
-  },
-  {
-   "rank": 5,
-   "team": "Rosenborg",
-   "fotmobName": "Rosenborg",
-   "fotmobId": 8422,
-   "group": null,
-   "played": 23,
-   "won": 11,
-   "drawn": 4,
-   "lost": 8,
-   "goals": "43-31",
-   "gd": 12,
-   "pts": 37
   },
   {
    "rank": 6,
@@ -105,6 +105,20 @@
   },
   {
    "rank": 8,
+   "team": "Valerenga",
+   "fotmobName": "Vålerenga",
+   "fotmobId": 8007,
+   "group": null,
+   "played": 24,
+   "won": 8,
+   "drawn": 5,
+   "lost": 11,
+   "goals": "39-46",
+   "gd": -7,
+   "pts": 29
+  },
+  {
+   "rank": 9,
    "team": "Fredrikstad",
    "fotmobName": "Fredrikstad",
    "fotmobId": 8417,
@@ -118,7 +132,7 @@
    "pts": 29
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "KFUM Oslo",
    "fotmobName": "KFUM",
    "fotmobId": 2305,
@@ -132,7 +146,7 @@
    "pts": 29
   },
   {
-   "rank": 10,
+   "rank": 11,
    "team": "Sarpsborg 08",
    "fotmobName": "Sarpsborg 08",
    "fotmobId": 8509,
@@ -146,31 +160,17 @@
    "pts": 28
   },
   {
-   "rank": 11,
-   "team": "Valerenga",
-   "fotmobName": "Vålerenga",
-   "fotmobId": 8007,
-   "group": null,
-   "played": 23,
-   "won": 7,
-   "drawn": 5,
-   "lost": 11,
-   "goals": "38-46",
-   "gd": -8,
-   "pts": 26
-  },
-  {
    "rank": 12,
    "team": "HamKam",
    "fotmobName": "Hamarkameratene",
    "fotmobId": 8448,
    "group": null,
-   "played": 23,
+   "played": 24,
    "won": 7,
    "drawn": 5,
-   "lost": 11,
-   "goals": "33-48",
-   "gd": -15,
+   "lost": 12,
+   "goals": "33-51",
+   "gd": -18,
    "pts": 26
   },
   {
@@ -885,6 +885,120 @@
     23,
     26,
     -15
+   ],
+   [
+    "Sandefjord",
+    13,
+    23,
+    24,
+    -8
+   ],
+   [
+    "Aalesund",
+    14,
+    23,
+    24,
+    -12
+   ],
+   [
+    "Kristiansund",
+    15,
+    23,
+    19,
+    -24
+   ],
+   [
+    "Start",
+    16,
+    23,
+    16,
+    -29
+   ]
+  ],
+  "2026-10-25": [
+   [
+    "Viking",
+    1,
+    23,
+    56,
+    37
+   ],
+   [
+    "Bodo/Glimt",
+    2,
+    24,
+    56,
+    37
+   ],
+   [
+    "Molde",
+    3,
+    23,
+    40,
+    17
+   ],
+   [
+    "Rosenborg",
+    4,
+    24,
+    40,
+    15
+   ],
+   [
+    "Tromso",
+    5,
+    23,
+    40,
+    11
+   ],
+   [
+    "Lillestrom",
+    6,
+    23,
+    36,
+    1
+   ],
+   [
+    "Brann",
+    7,
+    23,
+    29,
+    3
+   ],
+   [
+    "Valerenga",
+    8,
+    24,
+    29,
+    -7
+   ],
+   [
+    "Fredrikstad",
+    9,
+    23,
+    29,
+    -8
+   ],
+   [
+    "KFUM Oslo",
+    10,
+    23,
+    29,
+    -9
+   ],
+   [
+    "Sarpsborg 08",
+    11,
+    23,
+    28,
+    -6
+   ],
+   [
+    "HamKam",
+    12,
+    24,
+    26,
+    -18
    ],
    [
     "Sandefjord",
