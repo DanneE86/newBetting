@@ -1,7 +1,7 @@
 {
  "product": "stryktipset",
  "month": "2026-10",
- "updatedAt": "2026-10-23T06:45:41.334Z",
+ "updatedAt": "2026-10-25T13:27:36.911Z",
  "items": {
   "stryktipset-4974-1": {
    "id": "stryktipset-4974-1",
@@ -2481,7 +2481,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-2"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-2": {
    "id": "stryktipset-4976-2",
@@ -2569,7 +2573,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "2-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-3": {
    "id": "stryktipset-4976-3",
@@ -2657,7 +2665,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-4": {
    "id": "stryktipset-4976-4",
@@ -2745,7 +2757,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "2-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-5": {
    "id": "stryktipset-4976-5",
@@ -2833,7 +2849,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "1-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-6": {
    "id": "stryktipset-4976-6",
@@ -2921,7 +2941,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "4-1"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-7": {
    "id": "stryktipset-4976-7",
@@ -3009,7 +3033,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "1-1"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-8": {
    "id": "stryktipset-4976-8",
@@ -3097,7 +3125,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "5-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-9": {
    "id": "stryktipset-4976-9",
@@ -3185,7 +3217,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "0-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-10": {
    "id": "stryktipset-4976-10",
@@ -3273,7 +3309,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "2-3"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-11": {
    "id": "stryktipset-4976-11",
@@ -3361,7 +3401,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "1-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-12": {
    "id": "stryktipset-4976-12",
@@ -3449,7 +3493,11 @@
     },
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "2-3"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   },
   "stryktipset-4976-13": {
    "id": "stryktipset-4976-13",
@@ -3537,7 +3585,11 @@
     },
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "0-0"
+   },
+   "settledAt": "2026-10-25T13:27:36.911Z"
   }
  }
 }
