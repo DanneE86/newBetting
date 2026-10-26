@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "SB",
  "fotmobId": 86,
  "name": "Serie B",
@@ -11,13 +11,13 @@
    "fotmobName": "Palermo",
    "fotmobId": 8540,
    "group": null,
-   "played": 7,
-   "won": 6,
+   "played": 8,
+   "won": 7,
    "drawn": 1,
    "lost": 0,
-   "goals": "16-7",
-   "gd": 9,
-   "pts": 19
+   "goals": "18-8",
+   "gd": 10,
+   "pts": 22
   },
   {
    "rank": 2,
@@ -81,13 +81,13 @@
    "fotmobName": "Pisa",
    "fotmobId": 6479,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 4,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 2,
-   "goals": "14-9",
+   "goals": "15-10",
    "gd": 5,
-   "pts": 13
+   "pts": 14
   },
   {
    "rank": 7,
@@ -147,6 +147,20 @@
   },
   {
    "rank": 11,
+   "team": "Verona",
+   "fotmobName": "Hellas Verona",
+   "fotmobId": 9876,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "15-13",
+   "gd": 2,
+   "pts": 9
+  },
+  {
+   "rank": 12,
    "team": "Virtus Entella",
    "fotmobName": "Virtus Entella",
    "fotmobId": 208932,
@@ -160,7 +174,7 @@
    "pts": 9
   },
   {
-   "rank": 12,
+   "rank": 13,
    "team": "Vicenza",
    "fotmobName": "LR Vicenza",
    "fotmobId": 145007,
@@ -172,20 +186,6 @@
    "goals": "11-15",
    "gd": -4,
    "pts": 9
-  },
-  {
-   "rank": 13,
-   "team": "Verona",
-   "fotmobName": "Hellas Verona",
-   "fotmobId": 9876,
-   "group": null,
-   "played": 7,
-   "won": 2,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "14-12",
-   "gd": 2,
-   "pts": 8
   },
   {
    "rank": 14,
@@ -221,12 +221,12 @@
    "fotmobName": "Carrarese",
    "fotmobId": 6488,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 2,
    "drawn": 1,
-   "lost": 4,
-   "goals": "6-7",
-   "gd": -1,
+   "lost": 5,
+   "goals": "7-9",
+   "gd": -2,
    "pts": 7
   },
   {
@@ -1251,6 +1251,148 @@
     7,
     7,
     -1
+   ],
+   [
+    "Empoli",
+    17,
+    8,
+    7,
+    -6
+   ],
+   [
+    "Cremonese",
+    18,
+    8,
+    6,
+    -5
+   ],
+   [
+    "Sampdoria",
+    19,
+    8,
+    5,
+    -8
+   ],
+   [
+    "Catanzaro",
+    20,
+    8,
+    4,
+    -11
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Palermo",
+    1,
+    8,
+    22,
+    10
+   ],
+   [
+    "Mantova",
+    2,
+    8,
+    17,
+    6
+   ],
+   [
+    "Modena",
+    3,
+    8,
+    16,
+    7
+   ],
+   [
+    "Ascoli",
+    4,
+    8,
+    15,
+    8
+   ],
+   [
+    "Benevento",
+    5,
+    8,
+    14,
+    6
+   ],
+   [
+    "Pisa",
+    6,
+    8,
+    14,
+    5
+   ],
+   [
+    "Sudtirol",
+    7,
+    8,
+    13,
+    3
+   ],
+   [
+    "Avellino",
+    8,
+    8,
+    11,
+    3
+   ],
+   [
+    "Padova",
+    9,
+    8,
+    10,
+    -3
+   ],
+   [
+    "Arezzo",
+    10,
+    8,
+    10,
+    -9
+   ],
+   [
+    "Verona",
+    11,
+    8,
+    9,
+    2
+   ],
+   [
+    "Virtus Entella",
+    12,
+    8,
+    9,
+    1
+   ],
+   [
+    "Vicenza",
+    13,
+    8,
+    9,
+    -4
+   ],
+   [
+    "Juve Stabia",
+    14,
+    8,
+    8,
+    1
+   ],
+   [
+    "Cesena",
+    15,
+    8,
+    8,
+    -4
+   ],
+   [
+    "Carrarese",
+    16,
+    8,
+    7,
+    -2
    ],
    [
     "Empoli",

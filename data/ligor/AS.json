@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "AS",
  "fotmobId": 67,
  "name": "Allsvenskan",
@@ -21,6 +21,20 @@
   },
   {
    "rank": 2,
+   "team": "Hammarby",
+   "fotmobName": "Hammarby",
+   "fotmobId": 8248,
+   "group": null,
+   "played": 25,
+   "won": 15,
+   "drawn": 4,
+   "lost": 6,
+   "goals": "52-21",
+   "gd": 31,
+   "pts": 49
+  },
+  {
+   "rank": 3,
    "team": "Djurgarden",
    "fotmobName": "Djurgården",
    "fotmobId": 9802,
@@ -32,20 +46,6 @@
    "goals": "52-23",
    "gd": 29,
    "pts": 48
-  },
-  {
-   "rank": 3,
-   "team": "Hammarby",
-   "fotmobName": "Hammarby",
-   "fotmobId": 8248,
-   "group": null,
-   "played": 24,
-   "won": 14,
-   "drawn": 4,
-   "lost": 6,
-   "goals": "50-21",
-   "gd": 29,
-   "pts": 46
   },
   {
    "rank": 4,
@@ -123,13 +123,13 @@
    "fotmobName": "IFK Göteborg",
    "fotmobId": 9893,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 10,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 8,
-   "goals": "34-43",
+   "goals": "35-44",
    "gd": -9,
-   "pts": 36
+   "pts": 37
   },
   {
    "rank": 10,
@@ -151,13 +151,13 @@
    "fotmobName": "GAIS",
    "fotmobId": 8297,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 8,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 10,
-   "goals": "30-25",
+   "goals": "31-26",
    "gd": 5,
-   "pts": 30
+   "pts": 31
   },
   {
    "rank": 12,
@@ -165,12 +165,12 @@
    "fotmobName": "Mjällby",
    "fotmobId": 8127,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 5,
    "drawn": 8,
-   "lost": 11,
-   "goals": "28-40",
-   "gd": -12,
+   "lost": 12,
+   "goals": "28-42",
+   "gd": -14,
    "pts": 23
   },
   {
@@ -1113,6 +1113,120 @@
     24,
     23,
     -12
+   ],
+   [
+    "Kalmar",
+    13,
+    25,
+    22,
+    -18
+   ],
+   [
+    "Degerfors",
+    14,
+    25,
+    20,
+    -20
+   ],
+   [
+    "Orgryte",
+    15,
+    25,
+    19,
+    -25
+   ],
+   [
+    "Halmstad",
+    16,
+    25,
+    17,
+    -28
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Sirius",
+    1,
+    25,
+    55,
+    24
+   ],
+   [
+    "Hammarby",
+    2,
+    25,
+    49,
+    31
+   ],
+   [
+    "Djurgarden",
+    3,
+    25,
+    48,
+    29
+   ],
+   [
+    "Hacken",
+    4,
+    25,
+    45,
+    17
+   ],
+   [
+    "Elfsborg",
+    5,
+    25,
+    42,
+    13
+   ],
+   [
+    "Vasteras SK",
+    6,
+    25,
+    38,
+    -2
+   ],
+   [
+    "Malmo FF",
+    7,
+    25,
+    37,
+    4
+   ],
+   [
+    "AIK",
+    8,
+    25,
+    37,
+    -3
+   ],
+   [
+    "Goteborg",
+    9,
+    25,
+    37,
+    -9
+   ],
+   [
+    "Brommapojkarna",
+    10,
+    25,
+    33,
+    -4
+   ],
+   [
+    "GAIS",
+    11,
+    25,
+    31,
+    5
+   ],
+   [
+    "Mjallby",
+    12,
+    25,
+    23,
+    -14
    ],
    [
     "Kalmar",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "SE2",
  "fotmobId": 168,
  "name": "Superettan",
@@ -12,12 +12,12 @@
    "fotmobId": 8449,
    "group": null,
    "played": 28,
-   "won": 18,
-   "drawn": 6,
+   "won": 19,
+   "drawn": 5,
    "lost": 4,
-   "goals": "54-18",
-   "gd": 36,
-   "pts": 60
+   "goals": "58-18",
+   "gd": 40,
+   "pts": 62
   },
   {
    "rank": 2,
@@ -133,6 +133,20 @@
   },
   {
    "rank": 10,
+   "team": "Helsingborg",
+   "fotmobName": "Helsingborg",
+   "fotmobId": 9859,
+   "group": null,
+   "played": 28,
+   "won": 8,
+   "drawn": 8,
+   "lost": 12,
+   "goals": "37-48",
+   "gd": -11,
+   "pts": 32
+  },
+  {
+   "rank": 11,
    "team": "IFK Värnamo",
    "fotmobName": "IFK Värnamo",
    "fotmobId": 6181,
@@ -146,32 +160,18 @@
    "pts": 32
   },
   {
-   "rank": 11,
-   "team": "Helsingborg",
-   "fotmobName": "Helsingborg",
-   "fotmobId": 9859,
-   "group": null,
-   "played": 27,
-   "won": 8,
-   "drawn": 7,
-   "lost": 12,
-   "goals": "36-47",
-   "gd": -11,
-   "pts": 31
-  },
-  {
    "rank": 12,
    "team": "Ljungskile",
    "fotmobName": "Ljungskile",
    "fotmobId": 8500,
    "group": null,
-   "played": 27,
+   "played": 28,
    "won": 7,
-   "drawn": 8,
+   "drawn": 9,
    "lost": 12,
-   "goals": "34-39",
+   "goals": "35-40",
    "gd": -5,
-   "pts": 29
+   "pts": 30
   },
   {
    "rank": 13,
@@ -181,11 +181,11 @@
    "group": null,
    "played": 28,
    "won": 5,
-   "drawn": 13,
-   "lost": 10,
-   "goals": "31-37",
-   "gd": -6,
-   "pts": 28
+   "drawn": 12,
+   "lost": 11,
+   "goals": "31-41",
+   "gd": -10,
+   "pts": 27
   },
   {
    "rank": 14,
@@ -1120,6 +1120,120 @@
     28,
     28,
     -6
+   ],
+   [
+    "IK Brage",
+    14,
+    28,
+    26,
+    -10
+   ],
+   [
+    "Örebro",
+    15,
+    27,
+    26,
+    -12
+   ],
+   [
+    "GIF Sundsvall",
+    16,
+    28,
+    19,
+    -46
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "IFK Norrköping",
+    1,
+    28,
+    62,
+    40
+   ],
+   [
+    "Falkenbergs FF",
+    2,
+    27,
+    51,
+    15
+   ],
+   [
+    "Östersunds FK",
+    3,
+    28,
+    48,
+    12
+   ],
+   [
+    "Varbergs BoIS FC",
+    4,
+    27,
+    46,
+    11
+   ],
+   [
+    "Landskrona BoIS",
+    5,
+    27,
+    43,
+    13
+   ],
+   [
+    "IK Oddevold",
+    6,
+    28,
+    42,
+    11
+   ],
+   [
+    "Östers IF",
+    7,
+    28,
+    42,
+    1
+   ],
+   [
+    "Sandvikens IF",
+    8,
+    28,
+    41,
+    10
+   ],
+   [
+    "Nordic United FC",
+    9,
+    28,
+    39,
+    -6
+   ],
+   [
+    "Helsingborg",
+    10,
+    28,
+    32,
+    -11
+   ],
+   [
+    "IFK Värnamo",
+    11,
+    28,
+    32,
+    -13
+   ],
+   [
+    "Ljungskile",
+    12,
+    28,
+    30,
+    -5
+   ],
+   [
+    "Norrby",
+    13,
+    28,
+    27,
+    -10
    ],
    [
     "IK Brage",

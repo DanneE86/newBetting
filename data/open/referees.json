@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T19:23:07.207Z",
+  "updatedAt": "2026-10-26T07:08:12.339Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 145,
   "referees": [
@@ -389,17 +389,6 @@
       "homeWinRate": 0.2
     },
     {
-      "league": "PL",
-      "referee": "R Jones",
-      "matches": 44,
-      "yellowPg": 4.09,
-      "redPg": 0.091,
-      "bookingPointsPg": 43.2,
-      "foulsPg": 23.7,
-      "goalsPg": 2.91,
-      "homeWinRate": 0.386
-    },
-    {
       "league": "CH",
       "referee": "T Kirk",
       "matches": 32,
@@ -442,6 +431,17 @@
       "foulsPg": 22.2,
       "goalsPg": 2.41,
       "homeWinRate": 0.424
+    },
+    {
+      "league": "PL",
+      "referee": "R Jones",
+      "matches": 43,
+      "yellowPg": 4.07,
+      "redPg": 0.093,
+      "bookingPointsPg": 43,
+      "foulsPg": 23.7,
+      "goalsPg": 2.95,
+      "homeWinRate": 0.372
     },
     {
       "league": "EL1",

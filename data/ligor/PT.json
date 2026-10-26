@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "PT",
  "fotmobId": 61,
  "name": "Liga Portugal",
@@ -39,12 +39,12 @@
    "fotmobName": "Sporting CP",
    "fotmobId": 9768,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 5,
    "drawn": 3,
-   "lost": 0,
-   "goals": "20-9",
-   "gd": 11,
+   "lost": 1,
+   "goals": "21-11",
+   "gd": 10,
    "pts": 18
   },
   {
@@ -81,13 +81,13 @@
    "fotmobName": "Académico Viseu",
    "fotmobId": 1786,
    "group": null,
-   "played": 8,
-   "won": 4,
+   "played": 9,
+   "won": 5,
    "drawn": 2,
    "lost": 2,
-   "goals": "11-10",
-   "gd": 1,
-   "pts": 14
+   "goals": "13-11",
+   "gd": 2,
+   "pts": 17
   },
   {
    "rank": 7,
@@ -105,20 +105,6 @@
   },
   {
    "rank": 8,
-   "team": "Sp Braga",
-   "fotmobName": "Braga",
-   "fotmobId": 10264,
-   "group": null,
-   "played": 8,
-   "won": 3,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "9-10",
-   "gd": -1,
-   "pts": 11
-  },
-  {
-   "rank": 9,
    "team": "Alverca",
    "fotmobName": "Alverca",
    "fotmobId": 9780,
@@ -132,7 +118,49 @@
    "pts": 11
   },
   {
+   "rank": 9,
+   "team": "Sp Braga",
+   "fotmobName": "Braga",
+   "fotmobId": 10264,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "9-11",
+   "gd": -2,
+   "pts": 11
+  },
+  {
    "rank": 10,
+   "team": "Moreirense",
+   "fotmobName": "Moreirense",
+   "fotmobId": 8348,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "11-16",
+   "gd": -5,
+   "pts": 11
+  },
+  {
+   "rank": 11,
+   "team": "Famalicao",
+   "fotmobName": "Famalicão",
+   "fotmobId": 1634,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "14-11",
+   "gd": 3,
+   "pts": 10
+  },
+  {
+   "rank": 12,
    "team": "Estrela",
    "fotmobName": "Estrela da Amadora",
    "fotmobId": 1074320,
@@ -146,7 +174,7 @@
    "pts": 10
   },
   {
-   "rank": 11,
+   "rank": 13,
    "team": "Guimaraes",
    "fotmobName": "Vitória de Guimarães",
    "fotmobId": 7844,
@@ -160,21 +188,7 @@
    "pts": 8
   },
   {
-   "rank": 12,
-   "team": "Moreirense",
-   "fotmobName": "Moreirense",
-   "fotmobId": 8348,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "8-15",
-   "gd": -7,
-   "pts": 8
-  },
-  {
-   "rank": 13,
+   "rank": 14,
    "team": "Maritimo",
    "fotmobName": "Marítimo",
    "fotmobId": 10212,
@@ -188,31 +202,17 @@
    "pts": 8
   },
   {
-   "rank": 14,
-   "team": "Famalicao",
-   "fotmobName": "Famalicão",
-   "fotmobId": 1634,
-   "group": null,
-   "played": 8,
-   "won": 1,
-   "drawn": 4,
-   "lost": 3,
-   "goals": "10-11",
-   "gd": -1,
-   "pts": 7
-  },
-  {
    "rank": 15,
-   "team": "Rio Ave",
-   "fotmobName": "Rio Ave",
-   "fotmobId": 7841,
+   "team": "Nacional",
+   "fotmobName": "Nacional",
+   "fotmobId": 10214,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 1,
-   "lost": 5,
-   "goals": "8-17",
-   "gd": -9,
+   "lost": 6,
+   "goals": "10-18",
+   "gd": -8,
    "pts": 7
   },
   {
@@ -231,17 +231,17 @@
   },
   {
    "rank": 17,
-   "team": "Nacional",
-   "fotmobName": "Nacional",
-   "fotmobId": 10214,
+   "team": "Rio Ave",
+   "fotmobName": "Rio Ave",
+   "fotmobId": 7841,
    "group": null,
-   "played": 8,
-   "won": 1,
+   "played": 9,
+   "won": 2,
    "drawn": 1,
    "lost": 6,
-   "goals": "9-18",
-   "gd": -9,
-   "pts": 4
+   "goals": "8-21",
+   "gd": -13,
+   "pts": 7
   },
   {
    "rank": 18,
@@ -249,12 +249,12 @@
    "fotmobName": "Estoril",
    "fotmobId": 7842,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 0,
    "drawn": 2,
-   "lost": 6,
-   "goals": "4-12",
-   "gd": -8,
+   "lost": 7,
+   "goals": "5-15",
+   "gd": -10,
    "pts": 2
   }
  ],
@@ -1153,6 +1153,134 @@
     8,
     2,
     -8
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Porto",
+    1,
+    9,
+    27,
+    17
+   ],
+   [
+    "Benfica",
+    2,
+    8,
+    19,
+    17
+   ],
+   [
+    "Sp Lisbon",
+    3,
+    9,
+    18,
+    10
+   ],
+   [
+    "Santa Clara",
+    4,
+    8,
+    18,
+    8
+   ],
+   [
+    "Arouca",
+    5,
+    9,
+    17,
+    5
+   ],
+   [
+    "Academico Viseu",
+    6,
+    9,
+    17,
+    2
+   ],
+   [
+    "Gil Vicente",
+    7,
+    9,
+    14,
+    1
+   ],
+   [
+    "Alverca",
+    8,
+    9,
+    11,
+    0
+   ],
+   [
+    "Sp Braga",
+    9,
+    9,
+    11,
+    -2
+   ],
+   [
+    "Moreirense",
+    10,
+    9,
+    11,
+    -5
+   ],
+   [
+    "Famalicao",
+    11,
+    9,
+    10,
+    3
+   ],
+   [
+    "Estrela",
+    12,
+    9,
+    10,
+    -3
+   ],
+   [
+    "Guimaraes",
+    13,
+    9,
+    8,
+    0
+   ],
+   [
+    "Maritimo",
+    14,
+    9,
+    8,
+    -10
+   ],
+   [
+    "Nacional",
+    15,
+    9,
+    7,
+    -8
+   ],
+   [
+    "Casa Pia",
+    16,
+    9,
+    7,
+    -12
+   ],
+   [
+    "Rio Ave",
+    17,
+    9,
+    7,
+    -13
+   ],
+   [
+    "Estoril",
+    18,
+    9,
+    2,
+    -10
    ]
   ]
  }

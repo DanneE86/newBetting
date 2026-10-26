@@ -838,8 +838,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-25 HFX Wanderers FC vs Supra du Québec (CAN) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Inter Toronto FC vs Atlético Ottawa (CAN) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Inter Toronto FC vs Atlético Ottawa (CAN) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 River Plate vs Racing Club (AR) | 1X2 | 1 | 1.55 | Ej varde | 1.58 | 500 kr -> +275 kr (1:0.55, EV +6 kr) | 65.3% / 64.5% | - |
-| 2026-10-25 River Plate vs Racing Club (AR) | O/U 2.5 | UNDER 2.5 | 1.83 | Ej varde | 2.04 | 500 kr -> +415 kr (1:0.83, EV -37 kr) | 50.6% / 54.6% | - |
+| 2026-10-25 River Plate vs Racing Club (AR) | 1X2 | 1 | 1.48 | Ej varde | 1.66 | 500 kr -> +240 kr (1:0.48, EV -19 kr) | 65.1% / 67.6% | - |
+| 2026-10-25 River Plate vs Racing Club (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Volos NFC vs Panathinaikos (GR) | 1X2 | 2 | 1.38 | Ej varde | 1.56 | 500 kr -> +190 kr (1:0.38, EV -21 kr) | 69.4% / 72.5% | - |
 | 2026-10-25 Volos NFC vs Panathinaikos (GR) | O/U 2.5 | UNDER 2.5 | 2.25 | Ej varde | 2.58 | 500 kr -> +625 kr (1:1.25, EV -28 kr) | 42.0% / 44.4% | - |
 | 2026-10-25 Osnabruck vs Greuther Furth (BL2) | 1X2 | 1 | 2.25 | Ej varde | 2.57 | 500 kr -> +625 kr (1:1.25, EV -26 kr) | 42.1% / 44.4% | - |
@@ -906,13 +906,13 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-25 Rosario Central vs Huracan (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Aldosivi vs Belgrano (AR) | 1X2 | 2 | 2.1 | Ej varde | 2.34 | 500 kr -> +550 kr (1:1.1, EV -15 kr) | 46.2% / 47.6% | - |
 | 2026-10-25 Aldosivi vs Belgrano (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Independiente vs Boca Juniors (AR) | 1X2 | 2 | 2.12 | Ej varde | 2.35 | 500 kr -> +560 kr (1:1.12, EV -33 kr) | 44.0% / 47.2% | - |
-| 2026-10-25 Independiente vs Boca Juniors (AR) | O/U 2.5 | UNDER 2.5 | 1.6 | Ej varde | 1.79 | 500 kr -> +300 kr (1:0.6, EV -30 kr) | 58.7% / 62.5% | - |
+| 2026-10-25 Independiente vs Boca Juniors (AR) | 1X2 | 2 | 2.12 | Ej varde | 2.41 | 500 kr -> +560 kr (1:1.12, EV -24 kr) | 44.9% / 47.2% | - |
+| 2026-10-25 Independiente vs Boca Juniors (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Fortaleza CEIF vs Deportivo Cali (COL) | 1X2 | X | - | Inga odds | - | - | - | - |
 | 2026-10-25 Fortaleza CEIF vs Deportivo Cali (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Alianza FC vs Internacional de Bogotá (COL) | 1X2 | 1 | 2.26 | Ej varde | 2.61 | 500 kr -> +630 kr (1:1.26, EV -32 kr) | 41.4% / 44.3% | - |
+| 2026-10-25 Alianza FC vs Internacional de Bogotá (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Alianza FC vs Internacional de Bogotá (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Atlético Nacional vs Independiente Medellín (COL) | 1X2 | 1 | 1.87 | Ej varde | 2.07 | 500 kr -> +435 kr (1:0.87, EV -10 kr) | 52.4% / 53.5% | - |
+| 2026-10-25 Atlético Nacional vs Independiente Medellín (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Atlético Nacional vs Independiente Medellín (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 FC Dallas vs San Jose Earthquakes (MLS) | 1X2 | 1 | 1.73 | Ej varde | 1.94 | 500 kr -> +365 kr (1:0.73, EV -16 kr) | 55.9% / 57.8% | - |
 | 2026-10-25 FC Dallas vs San Jose Earthquakes (MLS) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
@@ -930,8 +930,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-25 FC Tokyo vs Mito (JP1) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 UNAM Pumas vs Tigres UANL (MX) | 1X2 | 1 | 2.85 | **VARDE** | 2.83 | 500 kr -> +925 kr (1:1.85, EV +45 kr) | 38.2% / 35.1% | - |
 | 2026-10-25 UNAM Pumas vs Tigres UANL (MX) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Atlas vs Puebla (MX) | 1X2 | 1 | 1.72 | Ej varde | 2.02 | 500 kr -> +360 kr (1:0.72, EV -52 kr) | 52.0% / 58.1% | - |
-| 2026-10-25 Atlas vs Puebla (MX) | O/U 2.5 | UNDER 2.5 | 2.1 | Ej varde | 2.3 | 500 kr -> +550 kr (1:1.1, EV -19 kr) | 45.8% / 47.6% | - |
+| 2026-10-25 Atlas vs Puebla (MX) | 1X2 | 1 | 1.75 | Ej varde | 1.95 | 500 kr -> +375 kr (1:0.75, EV -14 kr) | 55.5% / 57.1% | - |
+| 2026-10-25 Atlas vs Puebla (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Colorado Rapids vs Vancouver Whitecaps (MLS) | 1X2 | 2 | 2.2 | Ej varde | 2.53 | 500 kr -> +600 kr (1:1.2, EV -29 kr) | 42.8% / 45.5% | - |
 | 2026-10-25 Colorado Rapids vs Vancouver Whitecaps (MLS) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-25 Albacete vs Eldense (LL2) | 1X2 | 1 | 2.26 | Ej varde | 2.58 | 500 kr -> +630 kr (1:1.26, EV -25 kr) | 42.0% / 44.3% | - |
@@ -944,7 +944,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-25 Auxerre vs Le Mans (L1) | O/U 2.5 | OVER 2.5 | 1.73 | Ej varde | 1.93 | 500 kr -> +365 kr (1:0.73, EV -15 kr) | 56.0% / 57.8% | - |
 | 2026-10-25 Angers vs Lorient (L1) | 1X2 | 2 | 2.56 | Ej varde | 2.73 | 500 kr -> +780 kr (1:1.56, EV +8 kr) | 39.7% / 39.1% | - |
 | 2026-10-25 Angers vs Lorient (L1) | O/U 2.5 | UNDER 2.5 | 1.8 | Ej varde | 2.05 | 500 kr -> +400 kr (1:0.8, EV -26 kr) | 52.7% / 55.6% | - |
-| 2026-10-25 Paris SG vs Lyon (L1) | 1X2 | 1 | 1.48 | Ej varde | 1.61 | 500 kr -> +240 kr (1:0.48, EV -3 kr) | 67.1% / 67.6% | - |
+| 2026-10-25 Paris SG vs Lyon (L1) | 1X2 | 1 | 1.48 | Ej varde | 1.62 | 500 kr -> +240 kr (1:0.48, EV -6 kr) | 66.7% / 67.6% | - |
 | 2026-10-25 Paris SG vs Lyon (L1) | O/U 2.5 | OVER 2.5 | 1.4 | Ej varde | 1.58 | 500 kr -> +200 kr (1:0.4, EV -20 kr) | 68.6% / 71.4% | - |
 | 2026-10-25 Rennes vs Strasbourg (L1) | 1X2 | 1 | 1.8 | Ej varde | 2.02 | 500 kr -> +400 kr (1:0.8, EV -18 kr) | 53.5% / 55.6% | - |
 | 2026-10-25 Rennes vs Strasbourg (L1) | O/U 2.5 | OVER 2.5 | 1.45 | Ej varde | 1.63 | 500 kr -> +225 kr (1:0.45, EV -19 kr) | 66.3% / 69.0% | - |
@@ -1002,7 +1002,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-26 Queretaro vs Cruz Azul (MX) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-26 Jaguares de Córdoba vs Llaneros FC (COL) | 1X2 | 1 | 2.63 | Ej varde | 3.09 | 500 kr -> +815 kr (1:1.63, EV -39 kr) | 35.0% / 38.0% | - |
 | 2026-10-26 Jaguares de Córdoba vs Llaneros FC (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-26 Deportes Tolima vs Deportivo Pasto (COL) | 1X2 | 1 | 1.46 | Ej varde | 1.68 | 500 kr -> +230 kr (1:0.46, EV -29 kr) | 64.5% / 68.5% | - |
+| 2026-10-26 Deportes Tolima vs Deportivo Pasto (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-26 Deportes Tolima vs Deportivo Pasto (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-26 FC Copenhagen vs Odense (DK) | 1X2 | 1 | 1.45 | Ej varde | 1.64 | 500 kr -> +225 kr (1:0.45, EV -22 kr) | 66.0% / 69.0% | - |
 | 2026-10-26 FC Copenhagen vs Odense (DK) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
@@ -1024,7 +1024,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-26 Club America vs Pachuca (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-26 Union de Santa Fe vs Estudiantes L.P. (AR) | 1X2 | 1 | 2.66 | Ej varde | 3.19 | 500 kr -> +830 kr (1:1.66, EV -49 kr) | 33.9% / 37.6% | - |
 | 2026-10-26 Union de Santa Fe vs Estudiantes L.P. (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-26 Andorra vs Burgos (LL2) | 1X2 | 1 | 1.91 | Ej varde | 2.08 | 500 kr -> +455 kr (1:0.91, EV -4 kr) | 51.9% / 52.4% | - |
+| 2026-10-26 Andorra vs Burgos (LL2) | 1X2 | 1 | 1.91 | Ej varde | 2.16 | 500 kr -> +455 kr (1:0.91, EV -21 kr) | 50.2% / 52.4% | - |
 | 2026-10-26 Andorra vs Burgos (LL2) | O/U 2.5 | UNDER 2.5 | 1.8 | Ej varde | 2.06 | 500 kr -> +400 kr (1:0.8, EV -26 kr) | 52.6% / 55.6% | - |
 | 2026-10-26 América Mineiro vs Cuiabá (BR2) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-26 América Mineiro vs Cuiabá (BR2) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
@@ -1870,9 +1870,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-11-09 Club Leon vs Guadalajara Chivas (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-11-10 Independiente Santa Fe vs Deportivo Pasto (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-11-10 Independiente Santa Fe vs Deportivo Pasto (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Barcelona vs Real Madrid (LL) | 1X2 | 1 | 1.63 | Ej varde | 1.71 | 500 kr -> +315 kr (1:0.63, EV -8 kr) | 60.4% / 61.4% | 2 @ 4.55 |
-| 2026-10-25 Barcelona vs Real Madrid (LL) | O/U 2.5 | - | 4.78 | Ej varde | 5.26 | 500 kr -> +1890 kr (1:3.78, EV -9 kr) | 20.5% / 20.9% | - |
-| 2026-10-25 Sevilla vs Osasuna (LL) | 1X2 | 1 | 1.95 | Ej varde | 2.15 | 500 kr -> +475 kr (1:0.95, EV -9 kr) | 50.3% / 51.3% | - |
+| 2026-10-25 Sevilla vs Osasuna (LL) | 1X2 | 1 | 1.95 | Ej varde | 2.2 | 500 kr -> +475 kr (1:0.95, EV -20 kr) | 49.2% / 51.3% | - |
 | 2026-10-25 Sevilla vs Osasuna (LL) | O/U 2.5 | UNDER 2.5 | 1.73 | Ej varde | 1.96 | 500 kr -> +365 kr (1:0.73, EV -22 kr) | 55.2% / 57.8% | - |
 | 2026-10-27 Sassuolo vs Lazio (SA) | 1X2 | 2 | 2.48 | Ej varde | 2.57 | 500 kr -> +740 kr (1:1.48, EV -3 kr) | 40.1% / 40.3% | X @ 3.55 |
 | 2026-10-27 Sassuolo vs Lazio (SA) | O/U 2.5 | - | 2.1 | Ej varde | 2.32 | 500 kr -> +550 kr (1:1.1, EV -23 kr) | 45.4% / 47.6% | - |
@@ -2032,6 +2030,22 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-11-02 Sassuolo vs Fiorentina (SA) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-02 Atalanta vs Parma (SA) | 1X2 | 1 | 1.4 | Ej varde | 1.61 | 500 kr -> +200 kr (1:0.4, EV -28 kr) | 67.4% / 71.4% | - |
 | 2026-11-02 Atalanta vs Parma (SA) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Malaga vs Santander (LL) | 1X2 | 1 | 2.35 | Ej varde | 2.63 | 500 kr -> +675 kr (1:1.35, EV -16 kr) | 41.2% / 42.5% | - |
+| 2026-11-08 Malaga vs Santander (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Elche vs Betis (LL) | 1X2 | 2 | 2.05 | Ej varde | 2.3 | 500 kr -> +525 kr (1:1.05, EV -17 kr) | 47.1% / 48.8% | - |
+| 2026-11-08 Elche vs Betis (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Espanol vs La Coruna (LL) | 1X2 | 1 | 2.2 | Ej varde | 2.49 | 500 kr -> +600 kr (1:1.2, EV -21 kr) | 43.5% / 45.5% | - |
+| 2026-11-08 Espanol vs La Coruna (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Osasuna vs Ath Bilbao (LL) | 1X2 | 2 | 2.15 | Ej varde | 2.46 | 500 kr -> +575 kr (1:1.15, EV -28 kr) | 43.9% / 46.5% | - |
+| 2026-11-08 Osasuna vs Ath Bilbao (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Valencia vs Real Madrid (LL) | 1X2 | 2 | 1.4 | Ej varde | 1.54 | 500 kr -> +200 kr (1:0.4, EV -6 kr) | 70.6% / 71.4% | - |
+| 2026-11-08 Valencia vs Real Madrid (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Sociedad vs Vallecano (LL) | 1X2 | 1 | 1.85 | Ej varde | 2.03 | 500 kr -> +425 kr (1:0.85, EV -6 kr) | 53.4% / 54.0% | - |
+| 2026-11-08 Sociedad vs Vallecano (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Celta vs Levante (LL) | 1X2 | 1 | 1.86 | Ej varde | 2.06 | 500 kr -> +430 kr (1:0.86, EV -11 kr) | 52.6% / 53.8% | - |
+| 2026-11-08 Celta vs Levante (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Villarreal vs Getafe (LL) | 1X2 | 1 | 1.57 | Ej varde | 1.72 | 500 kr -> +285 kr (1:0.57, EV -4 kr) | 63.1% / 63.7% | - |
+| 2026-11-08 Villarreal vs Getafe (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 
 Varde = forvantad avkastning >= 3 % till dagens odds. BTTS saknar odds.
 

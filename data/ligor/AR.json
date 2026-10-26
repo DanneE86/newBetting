@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "AR",
  "fotmobId": 112,
  "name": "Liga Profesional",
@@ -21,6 +21,34 @@
   },
   {
    "rank": 2,
+   "team": "Velez Sarsfield",
+   "fotmobName": "Vélez Sarsfield",
+   "fotmobId": 10079,
+   "group": "Clausura Group A",
+   "played": 14,
+   "won": 7,
+   "drawn": 6,
+   "lost": 1,
+   "goals": "23-13",
+   "gd": 10,
+   "pts": 27
+  },
+  {
+   "rank": 3,
+   "team": "Boca Juniors",
+   "fotmobName": "Boca Juniors",
+   "fotmobId": 10077,
+   "group": "Clausura Group A",
+   "played": 14,
+   "won": 7,
+   "drawn": 6,
+   "lost": 1,
+   "goals": "22-14",
+   "gd": 8,
+   "pts": 27
+  },
+  {
+   "rank": 4,
    "team": "Defensa y Justicia",
    "fotmobName": "Defensa y Justicia",
    "fotmobId": 161730,
@@ -34,21 +62,7 @@
    "pts": 27
   },
   {
-   "rank": 3,
-   "team": "Boca Juniors",
-   "fotmobName": "Boca Juniors",
-   "fotmobId": 10077,
-   "group": "Clausura Group A",
-   "played": 13,
-   "won": 6,
-   "drawn": 6,
-   "lost": 1,
-   "goals": "21-14",
-   "gd": 7,
-   "pts": 24
-  },
-  {
-   "rank": 4,
+   "rank": 5,
    "team": "Lanus",
    "fotmobName": "Lanús",
    "fotmobId": 10082,
@@ -59,20 +73,6 @@
    "lost": 4,
    "goals": "17-10",
    "gd": 7,
-   "pts": 24
-  },
-  {
-   "rank": 5,
-   "team": "Velez Sarsfield",
-   "fotmobName": "Vélez Sarsfield",
-   "fotmobId": 10079,
-   "group": "Clausura Group A",
-   "played": 13,
-   "won": 6,
-   "drawn": 6,
-   "lost": 1,
-   "goals": "18-13",
-   "gd": 5,
    "pts": 24
   },
   {
@@ -109,12 +109,12 @@
    "fotmobName": "Independiente",
    "fotmobId": 10078,
    "group": "Clausura Group A",
-   "played": 13,
+   "played": 14,
    "won": 5,
    "drawn": 4,
-   "lost": 4,
-   "goals": "12-13",
-   "gd": -1,
+   "lost": 5,
+   "goals": "12-14",
+   "gd": -2,
    "pts": 19
   },
   {
@@ -193,12 +193,12 @@
    "fotmobName": "Central Córdoba de Santiago",
    "fotmobId": 213596,
    "group": "Clausura Group A",
-   "played": 13,
+   "played": 14,
    "won": 2,
    "drawn": 4,
-   "lost": 7,
-   "goals": "11-18",
-   "gd": -7,
+   "lost": 8,
+   "goals": "11-23",
+   "gd": -12,
    "pts": 10
   },
   {
@@ -259,20 +259,48 @@
   },
   {
    "rank": 4,
+   "team": "River Plate",
+   "fotmobName": "River Plate",
+   "fotmobId": 10076,
+   "group": "Clausura Group B",
+   "played": 14,
+   "won": 7,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "19-13",
+   "gd": 6,
+   "pts": 23
+  },
+  {
+   "rank": 5,
    "team": "Belgrano",
    "fotmobName": "Belgrano",
    "fotmobId": 10092,
    "group": "Clausura Group B",
-   "played": 13,
+   "played": 14,
    "won": 6,
    "drawn": 4,
-   "lost": 3,
-   "goals": "14-10",
-   "gd": 4,
+   "lost": 4,
+   "goals": "14-11",
+   "gd": 3,
    "pts": 22
   },
   {
-   "rank": 5,
+   "rank": 6,
+   "team": "Barracas Central",
+   "fotmobName": "Barracas Central",
+   "fotmobId": 213534,
+   "group": "Clausura Group B",
+   "played": 14,
+   "won": 6,
+   "drawn": 4,
+   "lost": 4,
+   "goals": "13-11",
+   "gd": 2,
+   "pts": 22
+  },
+  {
+   "rank": 7,
    "team": "Sarmiento Junin",
    "fotmobName": "Sarmiento",
    "fotmobId": 202757,
@@ -284,34 +312,6 @@
    "goals": "22-21",
    "gd": 1,
    "pts": 21
-  },
-  {
-   "rank": 6,
-   "team": "River Plate",
-   "fotmobName": "River Plate",
-   "fotmobId": 10076,
-   "group": "Clausura Group B",
-   "played": 13,
-   "won": 6,
-   "drawn": 2,
-   "lost": 5,
-   "goals": "18-13",
-   "gd": 5,
-   "pts": 20
-  },
-  {
-   "rank": 7,
-   "team": "Barracas Central",
-   "fotmobName": "Barracas Central",
-   "fotmobId": 213534,
-   "group": "Clausura Group B",
-   "played": 13,
-   "won": 5,
-   "drawn": 4,
-   "lost": 4,
-   "goals": "11-10",
-   "gd": 1,
-   "pts": 19
   },
   {
    "rank": 8,
@@ -389,41 +389,41 @@
    "fotmobName": "Racing Club",
    "fotmobId": 10080,
    "group": "Clausura Group B",
-   "played": 13,
+   "played": 14,
    "won": 3,
    "drawn": 3,
-   "lost": 7,
-   "goals": "14-20",
-   "gd": -6,
+   "lost": 8,
+   "goals": "14-21",
+   "gd": -7,
    "pts": 12
   },
   {
    "rank": 14,
-   "team": "Estudiantes Rio Cuarto",
-   "fotmobName": "Estudiantes de Río Cuarto",
-   "fotmobId": 213591,
-   "group": "Clausura Group B",
-   "played": 13,
-   "won": 2,
-   "drawn": 3,
-   "lost": 8,
-   "goals": "8-17",
-   "gd": -9,
-   "pts": 9
-  },
-  {
-   "rank": 15,
    "team": "Aldosivi",
    "fotmobName": "Aldosivi",
    "fotmobId": 161728,
    "group": "Clausura Group B",
-   "played": 13,
-   "won": 2,
+   "played": 14,
+   "won": 3,
    "drawn": 2,
    "lost": 9,
-   "goals": "14-22",
-   "gd": -8,
-   "pts": 8
+   "goals": "15-22",
+   "gd": -7,
+   "pts": 11
+  },
+  {
+   "rank": 15,
+   "team": "Estudiantes Rio Cuarto",
+   "fotmobName": "Estudiantes de Río Cuarto",
+   "fotmobId": 213591,
+   "group": "Clausura Group B",
+   "played": 14,
+   "won": 2,
+   "drawn": 3,
+   "lost": 9,
+   "goals": "9-19",
+   "gd": -10,
+   "pts": 9
   },
   {
    "rank": 1,
@@ -3589,6 +3589,428 @@
     13,
     8,
     -8
+   ],
+   [
+    "Estudiantes L.P.",
+    1,
+    16,
+    31,
+    12
+   ],
+   [
+    "Boca Juniors",
+    2,
+    16,
+    30,
+    13
+   ],
+   [
+    "Velez Sarsfield",
+    3,
+    16,
+    28,
+    6
+   ],
+   [
+    "Talleres Cordoba",
+    4,
+    16,
+    26,
+    4
+   ],
+   [
+    "Independiente",
+    5,
+    16,
+    24,
+    4
+   ],
+   [
+    "Lanus",
+    6,
+    16,
+    24,
+    3
+   ],
+   [
+    "San Lorenzo",
+    7,
+    16,
+    22,
+    0
+   ],
+   [
+    "Union de Santa Fe",
+    8,
+    16,
+    21,
+    4
+   ],
+   [
+    "Instituto",
+    9,
+    16,
+    21,
+    0
+   ],
+   [
+    "Defensa y Justicia",
+    10,
+    16,
+    19,
+    -3
+   ],
+   [
+    "Gimnasia Mendoza",
+    11,
+    16,
+    19,
+    -8
+   ],
+   [
+    "Platense",
+    12,
+    16,
+    16,
+    -5
+   ],
+   [
+    "Central Cordoba",
+    13,
+    16,
+    16,
+    -10
+   ],
+   [
+    "Newells Old Boys",
+    14,
+    16,
+    15,
+    -12
+   ],
+   [
+    "Dep. Riestra",
+    15,
+    16,
+    11,
+    -7
+   ],
+   [
+    "Ind. Rivadavia",
+    1,
+    16,
+    34,
+    14
+   ],
+   [
+    "River Plate",
+    2,
+    16,
+    29,
+    10
+   ],
+   [
+    "Argentinos Jrs",
+    3,
+    16,
+    29,
+    4
+   ],
+   [
+    "Rosario Central",
+    4,
+    16,
+    28,
+    4
+   ],
+   [
+    "Belgrano",
+    5,
+    16,
+    26,
+    4
+   ],
+   [
+    "Gimnasia L.P.",
+    6,
+    16,
+    26,
+    0
+   ],
+   [
+    "Huracan",
+    7,
+    16,
+    22,
+    4
+   ],
+   [
+    "Racing Club",
+    8,
+    16,
+    21,
+    2
+   ],
+   [
+    "Barracas Central",
+    9,
+    16,
+    21,
+    0
+   ],
+   [
+    "Tigre",
+    10,
+    16,
+    20,
+    3
+   ],
+   [
+    "Sarmiento Junin",
+    11,
+    16,
+    19,
+    -7
+   ],
+   [
+    "Banfield",
+    12,
+    16,
+    18,
+    -2
+   ],
+   [
+    "Atl. Tucuman",
+    13,
+    16,
+    14,
+    -5
+   ],
+   [
+    "Aldosivi",
+    14,
+    16,
+    8,
+    -13
+   ],
+   [
+    "Estudiantes Rio Cuarto",
+    15,
+    16,
+    5,
+    -19
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Instituto",
+    1,
+    13,
+    29,
+    10
+   ],
+   [
+    "Velez Sarsfield",
+    2,
+    14,
+    27,
+    10
+   ],
+   [
+    "Boca Juniors",
+    3,
+    14,
+    27,
+    8
+   ],
+   [
+    "Defensa y Justicia",
+    4,
+    14,
+    27,
+    7
+   ],
+   [
+    "Lanus",
+    5,
+    14,
+    24,
+    7
+   ],
+   [
+    "Newells Old Boys",
+    6,
+    14,
+    21,
+    3
+   ],
+   [
+    "Gimnasia Mendoza",
+    7,
+    14,
+    20,
+    1
+   ],
+   [
+    "Independiente",
+    8,
+    14,
+    19,
+    -2
+   ],
+   [
+    "San Lorenzo",
+    9,
+    14,
+    18,
+    -5
+   ],
+   [
+    "Estudiantes L.P.",
+    10,
+    13,
+    14,
+    1
+   ],
+   [
+    "Union de Santa Fe",
+    11,
+    13,
+    14,
+    -4
+   ],
+   [
+    "Platense",
+    12,
+    14,
+    14,
+    -6
+   ],
+   [
+    "Dep. Riestra",
+    13,
+    13,
+    12,
+    -3
+   ],
+   [
+    "Central Cordoba",
+    14,
+    14,
+    10,
+    -12
+   ],
+   [
+    "Talleres Cordoba",
+    15,
+    14,
+    9,
+    -9
+   ],
+   [
+    "Rosario Central",
+    1,
+    14,
+    28,
+    11
+   ],
+   [
+    "Argentinos Jrs",
+    2,
+    13,
+    25,
+    6
+   ],
+   [
+    "Gimnasia L.P.",
+    3,
+    14,
+    25,
+    3
+   ],
+   [
+    "River Plate",
+    4,
+    14,
+    23,
+    6
+   ],
+   [
+    "Belgrano",
+    5,
+    14,
+    22,
+    3
+   ],
+   [
+    "Barracas Central",
+    6,
+    14,
+    22,
+    2
+   ],
+   [
+    "Sarmiento Junin",
+    7,
+    14,
+    21,
+    1
+   ],
+   [
+    "Huracan",
+    8,
+    14,
+    19,
+    -2
+   ],
+   [
+    "Ind. Rivadavia",
+    9,
+    13,
+    19,
+    -4
+   ],
+   [
+    "Atl. Tucuman",
+    10,
+    14,
+    17,
+    0
+   ],
+   [
+    "Banfield",
+    11,
+    14,
+    14,
+    -5
+   ],
+   [
+    "Tigre",
+    12,
+    14,
+    13,
+    -3
+   ],
+   [
+    "Racing Club",
+    13,
+    14,
+    12,
+    -7
+   ],
+   [
+    "Aldosivi",
+    14,
+    14,
+    11,
+    -7
+   ],
+   [
+    "Estudiantes Rio Cuarto",
+    15,
+    14,
+    9,
+    -10
    ],
    [
     "Estudiantes L.P.",
