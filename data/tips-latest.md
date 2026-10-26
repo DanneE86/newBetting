@@ -1008,8 +1008,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-26 FC Copenhagen vs Odense (DK) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-26 Central Cordoba vs Velez Sarsfield (AR) | 1X2 | 2 | 2.38 | Ej varde | 2.65 | 500 kr -> +690 kr (1:1.38, EV -14 kr) | 40.8% / 42.0% | - |
 | 2026-10-26 Central Cordoba vs Velez Sarsfield (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-26 Santa Clara vs Benfica (PT) | 1X2 | 2 | 1.38 | Ej varde | 1.47 | 500 kr -> +190 kr (1:0.38, EV -14 kr) | 70.4% / 72.5% | - |
-| 2026-10-26 Santa Clara vs Benfica (PT) | O/U 2.5 | OVER 2.5 | 1.82 | Ej varde | 2.01 | 500 kr -> +410 kr (1:0.82, EV -24 kr) | 52.3% / 54.9% | - |
+| 2026-10-26 Santa Clara vs Benfica (PT) | 1X2 | 2 | 1.4 | Ej varde | 1.55 | 500 kr -> +200 kr (1:0.4, EV -11 kr) | 69.8% / 71.4% | - |
+| 2026-10-26 Santa Clara vs Benfica (PT) | O/U 2.5 | OVER 2.5 | 1.85 | Ej varde | 2.09 | 500 kr -> +425 kr (1:0.85, EV -22 kr) | 51.7% / 54.0% | - |
 | 2026-10-26 Barracas Central vs Estudiantes Rio Cuarto (AR) | 1X2 | 1 | 1.6 | Ej varde | 1.8 | 500 kr -> +300 kr (1:0.6, EV -20 kr) | 60.0% / 62.5% | - |
 | 2026-10-26 Barracas Central vs Estudiantes Rio Cuarto (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-26 Los Angeles FC vs Los Angeles Galaxy (MLS) | 1X2 | 1 | 1.56 | Ej varde | 1.74 | 500 kr -> +280 kr (1:0.56, EV -16 kr) | 62.1% / 64.1% | - |
@@ -1870,13 +1870,11 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-11-09 Club Leon vs Guadalajara Chivas (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-11-10 Independiente Santa Fe vs Deportivo Pasto (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-11-10 Independiente Santa Fe vs Deportivo Pasto (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-25 Sevilla vs Osasuna (LL) | 1X2 | 1 | 1.95 | Ej varde | 2.2 | 500 kr -> +475 kr (1:0.95, EV -20 kr) | 49.2% / 51.3% | - |
-| 2026-10-25 Sevilla vs Osasuna (LL) | O/U 2.5 | UNDER 2.5 | 1.73 | Ej varde | 1.96 | 500 kr -> +365 kr (1:0.73, EV -22 kr) | 55.2% / 57.8% | - |
-| 2026-10-27 Sassuolo vs Lazio (SA) | 1X2 | 2 | 2.48 | Ej varde | 2.57 | 500 kr -> +740 kr (1:1.48, EV -3 kr) | 40.1% / 40.3% | X @ 3.55 |
+| 2026-10-27 Sassuolo vs Lazio (SA) | 1X2 | 2 | 2.48 | Ej varde | 2.69 | 500 kr -> +740 kr (1:1.48, EV -24 kr) | 38.4% / 40.3% | X @ 3.55 |
 | 2026-10-27 Sassuolo vs Lazio (SA) | O/U 2.5 | - | 2.1 | Ej varde | 2.32 | 500 kr -> +550 kr (1:1.1, EV -23 kr) | 45.4% / 47.6% | - |
-| 2026-10-27 Roma vs Cagliari (SA) | 1X2 | 1 | 1.38 | Ej varde | 1.43 | 500 kr -> +190 kr (1:0.38, EV -1 kr) | 72.3% / 72.5% | - |
+| 2026-10-27 Roma vs Cagliari (SA) | 1X2 | 1 | 1.38 | Ej varde | 1.46 | 500 kr -> +190 kr (1:0.38, EV -12 kr) | 70.7% / 72.5% | - |
 | 2026-10-27 Roma vs Cagliari (SA) | O/U 2.5 | - | 2.13 | Ej varde | 2.36 | 500 kr -> +565 kr (1:1.13, EV -26 kr) | 44.5% / 46.9% | - |
-| 2026-10-27 Torino vs Como (SA) | 1X2 | 2 | 1.83 | **VARDE** | 1.79 | 500 kr -> +415 kr (1:0.83, EV +27 kr) | 57.6% / 54.6% | X @ 3.9 |
+| 2026-10-27 Torino vs Como (SA) | 1X2 | 2 | 1.83 | Ej varde | 1.92 | 500 kr -> +415 kr (1:0.83, EV -7 kr) | 53.9% / 54.6% | X @ 3.9 |
 | 2026-10-27 Torino vs Como (SA) | O/U 2.5 | - | 2.12 | Ej varde | 2.33 | 500 kr -> +560 kr (1:1.12, EV -22 kr) | 45.1% / 47.2% | - |
 | 2026-10-28 Milan vs Bologna (SA) | 1X2 | 1 | 1.64 | Ej varde | 1.74 | 500 kr -> +320 kr (1:0.64, EV -12 kr) | 59.5% / 61.0% | - |
 | 2026-10-28 Milan vs Bologna (SA) | O/U 2.5 | OVER 2.5 | 1.82 | Ej varde | 1.97 | 500 kr -> +410 kr (1:0.82, EV -24 kr) | 52.3% / 54.9% | - |
@@ -1984,8 +1982,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-11-01 Union Berlin vs FC Koln (BL) | O/U 2.5 | - | 2.26 | Ej varde | 2.48 | 500 kr -> +630 kr (1:1.26, EV -21 kr) | 42.4% / 44.3% | - |
 | 2026-11-01 Ein Frankfurt vs Hamburg (BL) | 1X2 | 1 | 1.6 | Ej varde | 1.78 | 500 kr -> +300 kr (1:0.6, EV -36 kr) | 58.0% / 62.5% | - |
 | 2026-11-01 Ein Frankfurt vs Hamburg (BL) | O/U 2.5 | - | 2.91 | Ej varde | 3.29 | 500 kr -> +955 kr (1:1.91, EV -22 kr) | 32.9% / 34.4% | - |
-| 2026-10-26 Örebro vs Falkenbergs FF (SE2) | 1X2 | 2 | 2.65 | Ej varde | 2.89 | 500 kr -> +825 kr (1:1.65, EV -17 kr) | 36.4% / 37.7% | - |
-| 2026-10-26 Örebro vs Falkenbergs FF (SE2) | O/U 2.5 | OVER 2.5 | 1.7 | Ej varde | 1.99 | 500 kr -> +350 kr (1:0.7, EV -38 kr) | 54.3% / 58.8% | - |
 | 2026-11-04 AEK Athens vs Real Madrid (CL) | 1X2 | 2 | 1.29 | Ej varde | 1.49 | 500 kr -> +145 kr (1:0.29, EV -31 kr) | 72.7% / 77.5% | - |
 | 2026-11-04 AEK Athens vs Real Madrid (CL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-04 FC Porto vs Napoli (CL) | 1X2 | 1 | 1.95 | Ej varde | 2.26 | 500 kr -> +475 kr (1:0.95, EV -33 kr) | 47.9% / 51.3% | - |
@@ -2030,22 +2026,26 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-11-02 Sassuolo vs Fiorentina (SA) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-02 Atalanta vs Parma (SA) | 1X2 | 1 | 1.4 | Ej varde | 1.61 | 500 kr -> +200 kr (1:0.4, EV -28 kr) | 67.4% / 71.4% | - |
 | 2026-11-02 Atalanta vs Parma (SA) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-06 Sevilla vs Alaves (LL) | 1X2 | 1 | 2.1 | Ej varde | 2.34 | 500 kr -> +550 kr (1:1.1, EV -15 kr) | 46.2% / 47.6% | - |
+| 2026-11-06 Sevilla vs Alaves (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-08 Malaga vs Santander (LL) | 1X2 | 1 | 2.35 | Ej varde | 2.63 | 500 kr -> +675 kr (1:1.35, EV -16 kr) | 41.2% / 42.5% | - |
 | 2026-11-08 Malaga vs Santander (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-11-08 Elche vs Betis (LL) | 1X2 | 2 | 2.05 | Ej varde | 2.3 | 500 kr -> +525 kr (1:1.05, EV -17 kr) | 47.1% / 48.8% | - |
-| 2026-11-08 Elche vs Betis (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-11-08 Espanol vs La Coruna (LL) | 1X2 | 1 | 2.2 | Ej varde | 2.49 | 500 kr -> +600 kr (1:1.2, EV -21 kr) | 43.5% / 45.5% | - |
+| 2026-11-08 Espanol vs La Coruna (LL) | 1X2 | 1 | 2.2 | Ej varde | 2.48 | 500 kr -> +600 kr (1:1.2, EV -19 kr) | 43.7% / 45.5% | - |
 | 2026-11-08 Espanol vs La Coruna (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-08 Osasuna vs Ath Bilbao (LL) | 1X2 | 2 | 2.15 | Ej varde | 2.46 | 500 kr -> +575 kr (1:1.15, EV -28 kr) | 43.9% / 46.5% | - |
 | 2026-11-08 Osasuna vs Ath Bilbao (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-11-08 Valencia vs Real Madrid (LL) | 1X2 | 2 | 1.4 | Ej varde | 1.54 | 500 kr -> +200 kr (1:0.4, EV -6 kr) | 70.6% / 71.4% | - |
+| 2026-11-08 Valencia vs Real Madrid (LL) | 1X2 | 2 | 1.43 | Ej varde | 1.59 | 500 kr -> +215 kr (1:0.43, EV -14 kr) | 67.9% / 69.9% | - |
 | 2026-11-08 Valencia vs Real Madrid (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Elche vs Betis (LL) | 1X2 | 2 | 2.05 | Ej varde | 2.32 | 500 kr -> +525 kr (1:1.05, EV -21 kr) | 46.7% / 48.8% | - |
+| 2026-11-08 Elche vs Betis (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 | 2026-11-08 Sociedad vs Vallecano (LL) | 1X2 | 1 | 1.85 | Ej varde | 2.03 | 500 kr -> +425 kr (1:0.85, EV -6 kr) | 53.4% / 54.0% | - |
 | 2026-11-08 Sociedad vs Vallecano (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-11-08 Celta vs Levante (LL) | 1X2 | 1 | 1.86 | Ej varde | 2.06 | 500 kr -> +430 kr (1:0.86, EV -11 kr) | 52.6% / 53.8% | - |
+| 2026-11-08 Celta vs Levante (LL) | 1X2 | 1 | 1.86 | Ej varde | 2.04 | 500 kr -> +430 kr (1:0.86, EV -7 kr) | 53.0% / 53.8% | - |
 | 2026-11-08 Celta vs Levante (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-11-08 Villarreal vs Getafe (LL) | 1X2 | 1 | 1.57 | Ej varde | 1.72 | 500 kr -> +285 kr (1:0.57, EV -4 kr) | 63.1% / 63.7% | - |
+| 2026-11-08 Villarreal vs Getafe (LL) | 1X2 | 1 | 1.52 | Ej varde | 1.67 | 500 kr -> +260 kr (1:0.52, EV -8 kr) | 64.7% / 65.8% | - |
 | 2026-11-08 Villarreal vs Getafe (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
+| 2026-11-08 Ath Madrid vs Barcelona (LL) | 1X2 | 2 | 1.86 | Ej varde | 2.06 | 500 kr -> +430 kr (1:0.86, EV -12 kr) | 52.5% / 53.8% | - |
+| 2026-11-08 Ath Madrid vs Barcelona (LL) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
 
 Varde = forvantad avkastning >= 3 % till dagens odds. BTTS saknar odds.
 
