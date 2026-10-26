@@ -2,9 +2,9 @@
   "loaded": true,
   "source": "the-odds-api.com v4 (sparad) + football-data fixtures (reserv)",
   "note": "Pinnacle saknas i football-data sedan 2025/26 -> Betfair Exchange ar facit. Basta pris = marknadens max, kontrollera hos ditt bolag.",
-  "updatedAt": "2026-10-26T07:07:37.383Z",
-  "eventCount": 346,
-  "keptApiEvents": 115,
+  "updatedAt": "2026-10-26T19:59:55.759Z",
+  "eventCount": 343,
+  "keptApiEvents": 111,
   "events": [
     {
       "league": "BE",
@@ -5257,171 +5257,44 @@
       "away": "Benfica",
       "homeRaw": "Santa Clara",
       "awayRaw": "Benfica",
-      "bookmaker": "Unibet (FR)",
+      "bookmaker": "Snitt (football-data)",
       "odds": {
-        "away": 1.27,
-        "over25": null,
-        "draw": 4.05,
-        "under25": null,
-        "home": 7
+        "home": 8.19,
+        "draw": 4.55,
+        "away": 1.36,
+        "over25": 1.8,
+        "under25": 1.93
       },
       "books": [
         {
-          "key": "winamax_fr",
-          "bookmaker": "Winamax (FR)",
-          "home": 7,
-          "draw": 4.6,
-          "away": 1.34,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betclic_fr",
-          "bookmaker": "Betclic (FR)",
-          "home": 7.75,
-          "draw": 4.45,
-          "away": 1.31,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "sport888",
-          "bookmaker": "888sport",
-          "home": 8,
-          "draw": 4.4,
-          "away": 1.36,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_de",
-          "bookmaker": "Winamax (DE)",
-          "home": 7.25,
-          "draw": 4.7,
-          "away": 1.34,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_fr",
-          "bookmaker": "Unibet (FR)",
-          "home": 7,
-          "draw": 4.05,
-          "away": 1.27,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "williamhill",
-          "bookmaker": "William Hill",
-          "home": 8,
-          "draw": 4.4,
-          "away": 1.36,
-          "over25": 1.83,
-          "under25": 1.85
-        },
-        {
-          "key": "coolbet",
-          "bookmaker": "Coolbet",
-          "home": 9,
-          "draw": 4.75,
-          "away": 1.38,
-          "over25": 1.8,
+          "key": "betfair_ex_eu",
+          "bookmaker": "Betfair Exchange",
+          "home": 9.4,
+          "draw": 5.5,
+          "away": 1.37,
+          "over25": 1.84,
           "under25": 1.98
         },
         {
-          "key": "betsson",
-          "bookmaker": "Betsson",
-          "home": 8.8,
-          "draw": 4.55,
-          "away": 1.34,
-          "over25": 1.82,
-          "under25": 1.92
-        },
-        {
-          "key": "nordicbet",
-          "bookmaker": "Nordic Bet",
-          "home": 8.8,
-          "draw": 4.55,
-          "away": 1.34,
-          "over25": 1.82,
-          "under25": 1.92
-        },
-        {
-          "key": "marathonbet",
-          "bookmaker": "Marathon Bet",
-          "home": 8.3,
-          "draw": 4.25,
-          "away": 1.39,
-          "over25": 1.83,
-          "under25": 1.91
-        },
-        {
-          "key": "betfair_ex_eu",
-          "bookmaker": "Betfair",
-          "home": 9.8,
-          "draw": 5,
-          "away": 1.39,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "tipico_de",
-          "bookmaker": "Tipico",
-          "home": 9.5,
-          "draw": 4.7,
-          "away": 1.33,
-          "over25": 1.8,
-          "under25": 1.95
-        },
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 7.5,
-          "draw": 4.3,
-          "away": 1.32,
-          "over25": 1.63,
-          "under25": 1.91
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 7.5,
-          "draw": 4.35,
-          "away": 1.34,
-          "over25": 1.7,
-          "under25": 1.97
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 7.5,
-          "draw": 4.35,
-          "away": 1.35,
-          "over25": 1.71,
-          "under25": 2
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 7.5,
-          "draw": 4.35,
-          "away": 1.35,
-          "over25": 1.71,
-          "under25": 2
-        },
-        {
-          "key": "gtbets",
-          "bookmaker": "GTbets",
-          "home": 8.5,
-          "draw": 4.41,
+          "key": "market_max",
+          "bookmaker": "Marknadens basta (football-data)",
+          "home": 9.3,
+          "draw": 4.8,
           "away": 1.4,
           "over25": 1.85,
-          "under25": 1.93
+          "under25": 2
+        },
+        {
+          "key": "bet365",
+          "bookmaker": "Bet365",
+          "home": 9,
+          "draw": 4.33,
+          "away": 1.35,
+          "over25": 1.85,
+          "under25": 1.95
         }
       ],
-      "sourceEventId": "7f4d1fc269584543a305935a2d3552fd",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
+      "source": "football-data fixtures"
     },
     {
       "league": "SC",
@@ -14570,170 +14443,6 @@
       "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
     },
     {
-      "league": "LL2",
-      "commence": "2026-10-26T19:30:00Z",
-      "home": "Andorra CF",
-      "away": "Burgos CF",
-      "homeRaw": "Andorra CF",
-      "awayRaw": "Burgos CF",
-      "bookmaker": "Unibet (FR)",
-      "odds": {
-        "away": 3.55,
-        "over25": null,
-        "draw": 3.15,
-        "under25": null,
-        "home": 1.67
-      },
-      "books": [
-        {
-          "key": "unibet_fr",
-          "bookmaker": "Unibet (FR)",
-          "home": 1.67,
-          "draw": 3.15,
-          "away": 3.55,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betclic_fr",
-          "bookmaker": "Betclic (FR)",
-          "home": 1.82,
-          "draw": 3.3,
-          "away": 3.73,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "nordicbet",
-          "bookmaker": "Nordic Bet",
-          "home": 1.88,
-          "draw": 3.35,
-          "away": 3.85,
-          "over25": 1.92,
-          "under25": 1.78
-        },
-        {
-          "key": "betsson",
-          "bookmaker": "Betsson",
-          "home": 1.88,
-          "draw": 3.35,
-          "away": 3.85,
-          "over25": 1.92,
-          "under25": 1.78
-        },
-        {
-          "key": "winamax_fr",
-          "bookmaker": "Winamax (FR)",
-          "home": 1.78,
-          "draw": 3.25,
-          "away": 3.45,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_de",
-          "bookmaker": "Winamax (DE)",
-          "home": 1.8,
-          "draw": 3.3,
-          "away": 3.55,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "onexbet",
-          "bookmaker": "1xBet",
-          "home": 1.95,
-          "draw": 3.61,
-          "away": 3.96,
-          "over25": 1.92,
-          "under25": 1.92
-        },
-        {
-          "key": "marathonbet",
-          "bookmaker": "Marathon Bet",
-          "home": 1.89,
-          "draw": 3.5,
-          "away": 3.84,
-          "over25": 1.87,
-          "under25": 1.87
-        },
-        {
-          "key": "williamhill",
-          "bookmaker": "William Hill",
-          "home": 1.85,
-          "draw": 3.25,
-          "away": 4,
-          "over25": 1.95,
-          "under25": 1.75
-        },
-        {
-          "key": "pinnacle",
-          "bookmaker": "Pinnacle",
-          "home": 1.93,
-          "draw": 3.4,
-          "away": 4.2,
-          "over25": 2.03,
-          "under25": 1.82
-        },
-        {
-          "key": "codere_it",
-          "bookmaker": "Codere (IT)",
-          "home": 1.87,
-          "draw": 3.35,
-          "away": 3.75,
-          "over25": 1.89,
-          "under25": 1.75
-        },
-        {
-          "key": "tipico_de",
-          "bookmaker": "Tipico",
-          "home": 1.85,
-          "draw": 3,
-          "away": 4.1,
-          "over25": 1.85,
-          "under25": 1.8
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 1.88,
-          "draw": 3.55,
-          "away": 4,
-          "over25": 1.92,
-          "under25": 1.77
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 1.79,
-          "draw": 3.35,
-          "away": 3.75,
-          "over25": 1.89,
-          "under25": 1.75
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 1.88,
-          "draw": 3.55,
-          "away": 4,
-          "over25": 1.92,
-          "under25": 1.77
-        },
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 1.73,
-          "draw": 3.2,
-          "away": 3.65,
-          "over25": 1.83,
-          "under25": 1.7
-        }
-      ],
-      "sourceEventId": "c11380ae8c4a17f15b0b2946719b79e0",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
       "league": "BR",
       "commence": "2026-10-26T22:30:00Z",
       "home": "Coritiba",
@@ -23746,80 +23455,6 @@
       "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
     },
     {
-      "league": "SE2",
-      "commence": "2026-10-26T18:05:00Z",
-      "home": "Örebro SK",
-      "away": "Falkenbergs FF",
-      "homeRaw": "Örebro SK",
-      "awayRaw": "Falkenbergs FF",
-      "bookmaker": "Unibet (SE)",
-      "odds": {
-        "away": 2.65,
-        "over25": 1.7,
-        "draw": 3.35,
-        "under25": 2.02,
-        "home": 2.55
-      },
-      "books": [
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 2.55,
-          "draw": 3.35,
-          "away": 2.65,
-          "over25": 1.7,
-          "under25": 2.02
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 2.55,
-          "draw": 3.35,
-          "away": 2.65,
-          "over25": 1.7,
-          "under25": 2.02
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 2.45,
-          "draw": 3.25,
-          "away": 2.55,
-          "over25": 1.7,
-          "under25": 2.02
-        },
-        {
-          "key": "nordicbet",
-          "bookmaker": "Nordic Bet",
-          "home": 2.55,
-          "draw": 3.45,
-          "away": 2.45,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betsson",
-          "bookmaker": "Betsson",
-          "home": 2.61,
-          "draw": 3.55,
-          "away": 2.51,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "onexbet",
-          "bookmaker": "1xBet",
-          "home": 2.55,
-          "draw": 3.5,
-          "away": 2.45,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "sourceEventId": "1890564c20db109024daf7095a8b8ee0",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
       "league": "GR",
       "commence": "2026-10-31T17:00:00Z",
       "home": "AE Kifisia",
@@ -25087,188 +24722,6 @@
         }
       ],
       "sourceEventId": "58b71c53bc15c3996694b3c8e9350cdc",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
-      "league": "DK",
-      "commence": "2026-10-26T18:00:00Z",
-      "home": "FC Copenhagen",
-      "away": "OB Odense BK",
-      "homeRaw": "FC Copenhagen",
-      "awayRaw": "OB Odense BK",
-      "bookmaker": "Unibet (FR)",
-      "odds": {
-        "away": 6,
-        "over25": null,
-        "draw": 4.45,
-        "under25": null,
-        "home": 1.28
-      },
-      "books": [
-        {
-          "key": "tipico_de",
-          "bookmaker": "Tipico",
-          "home": 1.32,
-          "draw": 5.2,
-          "away": 6.7,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_de",
-          "bookmaker": "Winamax (DE)",
-          "home": 1.34,
-          "draw": 4.6,
-          "away": 5.7,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_fr",
-          "bookmaker": "Winamax (FR)",
-          "home": 1.33,
-          "draw": 4.5,
-          "away": 5.5,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "onexbet",
-          "bookmaker": "1xBet",
-          "home": 1.37,
-          "draw": 4.95,
-          "away": 7.28,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_fr",
-          "bookmaker": "Unibet (FR)",
-          "home": 1.28,
-          "draw": 4.45,
-          "away": 6,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betclic_fr",
-          "bookmaker": "Betclic (FR)",
-          "home": 1.33,
-          "draw": 4.5,
-          "away": 6,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betfair_ex_eu",
-          "bookmaker": "Betfair",
-          "home": 1.39,
-          "draw": 4.6,
-          "away": 7.2,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "marathonbet",
-          "bookmaker": "Marathon Bet",
-          "home": 1.36,
-          "draw": 4.95,
-          "away": 7.3,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "nordicbet",
-          "bookmaker": "Nordic Bet",
-          "home": 1.37,
-          "draw": 4.85,
-          "away": 7.4,
-          "over25": 1.5,
-          "under25": 2.48
-        },
-        {
-          "key": "betsson",
-          "bookmaker": "Betsson",
-          "home": 1.39,
-          "draw": 4.95,
-          "away": 7.7,
-          "over25": 1.5,
-          "under25": 2.48
-        },
-        {
-          "key": "sport888",
-          "bookmaker": "888sport",
-          "home": 1.36,
-          "draw": 5,
-          "away": 7,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "williamhill",
-          "bookmaker": "William Hill",
-          "home": 1.36,
-          "draw": 5,
-          "away": 6.5,
-          "over25": 1.5,
-          "under25": 2.45
-        },
-        {
-          "key": "pinnacle",
-          "bookmaker": "Pinnacle",
-          "home": 1.4,
-          "draw": 5.24,
-          "away": 6.56,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 1.36,
-          "draw": 4.4,
-          "away": 6.25,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 1.41,
-          "draw": 4.7,
-          "away": 6.75,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 1.36,
-          "draw": 4.5,
-          "away": 6.25,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 1.41,
-          "draw": 4.7,
-          "away": 6.75,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "gtbets",
-          "bookmaker": "GTbets",
-          "home": 1.37,
-          "draw": 4.94,
-          "away": 7.79,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "sourceEventId": "3f5faa947bf77ec3cb0c5555a0e0ced4",
       "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
     }
   ]
