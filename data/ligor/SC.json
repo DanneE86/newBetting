@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "SC",
  "fotmobId": 64,
  "name": "Premiership",
@@ -12,12 +12,12 @@
    "fotmobId": 9925,
    "group": null,
    "played": 10,
-   "won": 8,
-   "drawn": 1,
+   "won": 9,
+   "drawn": 0,
    "lost": 1,
-   "goals": "24-6",
-   "gd": 18,
-   "pts": 25
+   "goals": "25-6",
+   "gd": 19,
+   "pts": 27
   },
   {
    "rank": 2,
@@ -39,13 +39,13 @@
    "fotmobName": "Heart of Midlothian",
    "fotmobId": 9860,
    "group": null,
-   "played": 9,
-   "won": 5,
+   "played": 10,
+   "won": 6,
    "drawn": 1,
    "lost": 3,
-   "goals": "20-15",
-   "gd": 5,
-   "pts": 16
+   "goals": "22-15",
+   "gd": 7,
+   "pts": 19
   },
   {
    "rank": 4,
@@ -137,30 +137,16 @@
    "fotmobName": "Motherwell",
    "fotmobId": 9927,
    "group": null,
-   "played": 9,
-   "won": 2,
-   "drawn": 2,
-   "lost": 5,
-   "goals": "11-16",
-   "gd": -5,
-   "pts": 8
-  },
-  {
-   "rank": 11,
-   "team": "Hibernian",
-   "fotmobName": "Hibernian",
-   "fotmobId": 10251,
-   "group": null,
    "played": 10,
    "won": 2,
    "drawn": 2,
    "lost": 6,
-   "goals": "10-15",
-   "gd": -5,
+   "goals": "11-18",
+   "gd": -7,
    "pts": 8
   },
   {
-   "rank": 12,
+   "rank": 11,
    "team": "Kilmarnock",
    "fotmobName": "Kilmarnock",
    "fotmobId": 8597,
@@ -172,6 +158,20 @@
    "goals": "10-23",
    "gd": -13,
    "pts": 8
+  },
+  {
+   "rank": 12,
+   "team": "Hibernian",
+   "fotmobName": "Hibernian",
+   "fotmobId": 10251,
+   "group": null,
+   "played": 10,
+   "won": 2,
+   "drawn": 1,
+   "lost": 7,
+   "goals": "10-16",
+   "gd": -6,
+   "pts": 7
   }
  ],
  "tableHistory": {
@@ -603,6 +603,92 @@
     10,
     8,
     -13
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Celtic",
+    1,
+    10,
+    27,
+    19
+   ],
+   [
+    "Rangers",
+    2,
+    10,
+    23,
+    10
+   ],
+   [
+    "Hearts",
+    3,
+    10,
+    19,
+    7
+   ],
+   [
+    "Dundee United",
+    4,
+    10,
+    15,
+    0
+   ],
+   [
+    "Dundee",
+    5,
+    10,
+    14,
+    2
+   ],
+   [
+    "St Mirren",
+    6,
+    10,
+    13,
+    -7
+   ],
+   [
+    "Falkirk",
+    7,
+    10,
+    12,
+    0
+   ],
+   [
+    "St Johnstone",
+    8,
+    10,
+    12,
+    -4
+   ],
+   [
+    "Aberdeen",
+    9,
+    10,
+    11,
+    -1
+   ],
+   [
+    "Motherwell",
+    10,
+    10,
+    8,
+    -7
+   ],
+   [
+    "Kilmarnock",
+    11,
+    10,
+    8,
+    -13
+   ],
+   [
+    "Hibernian",
+    12,
+    10,
+    7,
+    -6
    ]
   ]
  }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "MLS",
  "fotmobId": 130,
  "name": "MLS",
@@ -291,13 +291,13 @@
    "fotmobName": "Los Angeles FC",
    "fotmobId": 867280,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 12,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 9,
-   "goals": "48-33",
+   "goals": "50-35",
    "gd": 15,
-   "pts": 46
+   "pts": 47
   },
   {
    "rank": 7,
@@ -333,13 +333,13 @@
    "fotmobName": "LA Galaxy",
    "fotmobId": 6637,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 10,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 11,
-   "goals": "43-52",
+   "goals": "45-54",
    "gd": -9,
-   "pts": 40
+   "pts": 41
   },
   {
    "rank": 10,
@@ -567,6 +567,20 @@
   },
   {
    "rank": 11,
+   "team": "Los Angeles FC",
+   "fotmobName": "Los Angeles FC",
+   "fotmobId": 867280,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 12,
+   "drawn": 11,
+   "lost": 9,
+   "goals": "50-35",
+   "gd": 15,
+   "pts": 47
+  },
+  {
+   "rank": 12,
    "team": "Philadelphia Union",
    "fotmobName": "Philadelphia Union",
    "fotmobId": 191716,
@@ -577,20 +591,6 @@
    "lost": 11,
    "goals": "62-50",
    "gd": 12,
-   "pts": 46
-  },
-  {
-   "rank": 12,
-   "team": "Los Angeles FC",
-   "fotmobName": "Los Angeles FC",
-   "fotmobId": 867280,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 12,
-   "drawn": 10,
-   "lost": 9,
-   "goals": "48-33",
-   "gd": 15,
    "pts": 46
   },
   {
@@ -655,13 +655,13 @@
    "fotmobName": "LA Galaxy",
    "fotmobId": 6637,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 10,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 11,
-   "goals": "43-52",
+   "goals": "45-54",
    "gd": -9,
-   "pts": 40
+   "pts": 41
   },
   {
    "rank": 18,
@@ -4129,6 +4129,428 @@
     17,
     31,
     40,
+    -9
+   ],
+   [
+    "Real Salt Lake",
+    18,
+    31,
+    39,
+    0
+   ],
+   [
+    "New York Red Bulls",
+    19,
+    31,
+    39,
+    -15
+   ],
+   [
+    "Columbus Crew",
+    20,
+    31,
+    38,
+    1
+   ],
+   [
+    "Portland Timbers",
+    21,
+    31,
+    37,
+    -4
+   ],
+   [
+    "Toronto FC",
+    22,
+    31,
+    36,
+    -11
+   ],
+   [
+    "New York City",
+    23,
+    31,
+    35,
+    2
+   ],
+   [
+    "San Diego FC",
+    24,
+    31,
+    35,
+    -3
+   ],
+   [
+    "Minnesota United",
+    25,
+    31,
+    35,
+    -8
+   ],
+   [
+    "Austin FC",
+    26,
+    31,
+    34,
+    -17
+   ],
+   [
+    "DC United",
+    27,
+    31,
+    33,
+    -17
+   ],
+   [
+    "Atlanta Utd",
+    28,
+    31,
+    30,
+    -15
+   ],
+   [
+    "CF Montreal",
+    29,
+    31,
+    25,
+    -26
+   ],
+   [
+    "Sporting Kansas City",
+    30,
+    31,
+    22,
+    -40
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Nashville SC",
+    1,
+    31,
+    70,
+    43
+   ],
+   [
+    "New England Revolution",
+    2,
+    31,
+    55,
+    9
+   ],
+   [
+    "Inter Miami",
+    3,
+    31,
+    55,
+    20
+   ],
+   [
+    "Chicago Fire",
+    4,
+    31,
+    51,
+    9
+   ],
+   [
+    "Charlotte",
+    5,
+    31,
+    47,
+    7
+   ],
+   [
+    "Philadelphia Union",
+    6,
+    31,
+    46,
+    12
+   ],
+   [
+    "Orlando City",
+    7,
+    31,
+    42,
+    -12
+   ],
+   [
+    "FC Cincinnati",
+    8,
+    31,
+    42,
+    -7
+   ],
+   [
+    "New York Red Bulls",
+    9,
+    31,
+    39,
+    -15
+   ],
+   [
+    "Columbus Crew",
+    10,
+    31,
+    38,
+    1
+   ],
+   [
+    "Toronto FC",
+    11,
+    31,
+    36,
+    -11
+   ],
+   [
+    "New York City",
+    12,
+    31,
+    35,
+    2
+   ],
+   [
+    "DC United",
+    13,
+    31,
+    33,
+    -17
+   ],
+   [
+    "Atlanta Utd",
+    14,
+    31,
+    30,
+    -15
+   ],
+   [
+    "CF Montreal",
+    15,
+    31,
+    25,
+    -26
+   ],
+   [
+    "Vancouver Whitecaps",
+    1,
+    31,
+    55,
+    31
+   ],
+   [
+    "FC Dallas",
+    2,
+    31,
+    54,
+    11
+   ],
+   [
+    "St. Louis City",
+    3,
+    31,
+    51,
+    12
+   ],
+   [
+    "San Jose Earthquakes",
+    4,
+    31,
+    48,
+    7
+   ],
+   [
+    "Houston Dynamo",
+    5,
+    31,
+    48,
+    2
+   ],
+   [
+    "Los Angeles FC",
+    6,
+    32,
+    47,
+    15
+   ],
+   [
+    "Seattle Sounders",
+    7,
+    31,
+    43,
+    2
+   ],
+   [
+    "Colorado Rapids",
+    8,
+    31,
+    42,
+    1
+   ],
+   [
+    "Los Angeles Galaxy",
+    9,
+    32,
+    41,
+    -9
+   ],
+   [
+    "Real Salt Lake",
+    10,
+    31,
+    39,
+    0
+   ],
+   [
+    "Portland Timbers",
+    11,
+    31,
+    37,
+    -4
+   ],
+   [
+    "San Diego FC",
+    12,
+    31,
+    35,
+    -3
+   ],
+   [
+    "Minnesota United",
+    13,
+    31,
+    35,
+    -8
+   ],
+   [
+    "Austin FC",
+    14,
+    31,
+    34,
+    -17
+   ],
+   [
+    "Sporting Kansas City",
+    15,
+    31,
+    22,
+    -40
+   ],
+   [
+    "Nashville SC",
+    1,
+    31,
+    70,
+    43
+   ],
+   [
+    "New England Revolution",
+    2,
+    31,
+    55,
+    9
+   ],
+   [
+    "Vancouver Whitecaps",
+    3,
+    31,
+    55,
+    31
+   ],
+   [
+    "Inter Miami",
+    4,
+    31,
+    55,
+    20
+   ],
+   [
+    "FC Dallas",
+    5,
+    31,
+    54,
+    11
+   ],
+   [
+    "Chicago Fire",
+    6,
+    31,
+    51,
+    9
+   ],
+   [
+    "St. Louis City",
+    7,
+    31,
+    51,
+    12
+   ],
+   [
+    "San Jose Earthquakes",
+    8,
+    31,
+    48,
+    7
+   ],
+   [
+    "Houston Dynamo",
+    9,
+    31,
+    48,
+    2
+   ],
+   [
+    "Charlotte",
+    10,
+    31,
+    47,
+    7
+   ],
+   [
+    "Los Angeles FC",
+    11,
+    32,
+    47,
+    15
+   ],
+   [
+    "Philadelphia Union",
+    12,
+    31,
+    46,
+    12
+   ],
+   [
+    "Seattle Sounders",
+    13,
+    31,
+    43,
+    2
+   ],
+   [
+    "Colorado Rapids",
+    14,
+    31,
+    42,
+    1
+   ],
+   [
+    "Orlando City",
+    15,
+    31,
+    42,
+    -12
+   ],
+   [
+    "FC Cincinnati",
+    16,
+    31,
+    42,
+    -7
+   ],
+   [
+    "Los Angeles Galaxy",
+    17,
+    32,
+    41,
     -9
    ],
    [

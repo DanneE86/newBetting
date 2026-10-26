@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-26T07:07:01.355Z",
  "league": "MX",
  "fotmobId": 230,
  "name": "Liga MX",
@@ -11,16 +11,30 @@
    "fotmobName": "CF América",
    "fotmobId": 6576,
    "group": null,
-   "played": 12,
+   "played": 13,
    "won": 8,
    "drawn": 3,
-   "lost": 1,
-   "goals": "32-16",
-   "gd": 16,
+   "lost": 2,
+   "goals": "33-18",
+   "gd": 15,
    "pts": 27
   },
   {
    "rank": 2,
+   "team": "Cruz Azul",
+   "fotmobName": "Cruz Azul",
+   "fotmobId": 6578,
+   "group": null,
+   "played": 14,
+   "won": 8,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "32-23",
+   "gd": 9,
+   "pts": 26
+  },
+  {
+   "rank": 3,
    "team": "Guadalajara Chivas",
    "fotmobName": "Chivas",
    "fotmobId": 7807,
@@ -34,7 +48,21 @@
    "pts": 26
   },
   {
-   "rank": 3,
+   "rank": 4,
+   "team": "Atlas",
+   "fotmobName": "Atlas",
+   "fotmobId": 6577,
+   "group": null,
+   "played": 14,
+   "won": 7,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "25-26",
+   "gd": -1,
+   "pts": 24
+  },
+  {
+   "rank": 5,
    "team": "Toluca",
    "fotmobName": "Toluca",
    "fotmobId": 6618,
@@ -48,21 +76,7 @@
    "pts": 23
   },
   {
-   "rank": 4,
-   "team": "Cruz Azul",
-   "fotmobName": "Cruz Azul",
-   "fotmobId": 6578,
-   "group": null,
-   "played": 13,
-   "won": 7,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "29-22",
-   "gd": 7,
-   "pts": 23
-  },
-  {
-   "rank": 5,
+   "rank": 6,
    "team": "Club Leon",
    "fotmobName": "León",
    "fotmobId": 1841,
@@ -74,20 +88,6 @@
    "goals": "21-18",
    "gd": 3,
    "pts": 22
-  },
-  {
-   "rank": 6,
-   "team": "Atlas",
-   "fotmobName": "Atlas",
-   "fotmobId": 6577,
-   "group": null,
-   "played": 13,
-   "won": 6,
-   "drawn": 3,
-   "lost": 4,
-   "goals": "21-23",
-   "gd": -2,
-   "pts": 21
   },
   {
    "rank": 7,
@@ -105,34 +105,48 @@
   },
   {
    "rank": 8,
-   "team": "Queretaro",
-   "fotmobName": "Querétaro FC",
-   "fotmobId": 1943,
+   "team": "Club Tijuana",
+   "fotmobName": "Tijuana",
+   "fotmobId": 162418,
    "group": null,
-   "played": 12,
-   "won": 6,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "16-15",
-   "gd": 1,
+   "played": 13,
+   "won": 5,
+   "drawn": 5,
+   "lost": 3,
+   "goals": "21-17",
+   "gd": 4,
    "pts": 20
   },
   {
    "rank": 9,
+   "team": "Queretaro",
+   "fotmobName": "Querétaro FC",
+   "fotmobId": 1943,
+   "group": null,
+   "played": 13,
+   "won": 6,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "17-18",
+   "gd": -1,
+   "pts": 20
+  },
+  {
+   "rank": 10,
    "team": "Santos Laguna",
    "fotmobName": "Santos Laguna",
    "fotmobId": 7857,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 6,
    "drawn": 1,
-   "lost": 6,
-   "goals": "19-16",
-   "gd": 3,
+   "lost": 7,
+   "goals": "20-20",
+   "gd": 0,
    "pts": 19
   },
   {
-   "rank": 10,
+   "rank": 11,
    "team": "Atl. San Luis",
    "fotmobName": "Atlético de San Luis",
    "fotmobId": 6358,
@@ -144,20 +158,6 @@
    "goals": "19-22",
    "gd": -3,
    "pts": 19
-  },
-  {
-   "rank": 11,
-   "team": "Club Tijuana",
-   "fotmobName": "Tijuana",
-   "fotmobId": 162418,
-   "group": null,
-   "played": 12,
-   "won": 4,
-   "drawn": 5,
-   "lost": 3,
-   "goals": "17-16",
-   "gd": 1,
-   "pts": 17
   },
   {
    "rank": 12,
@@ -175,20 +175,34 @@
   },
   {
    "rank": 13,
-   "team": "Puebla",
-   "fotmobName": "Puebla",
-   "fotmobId": 7847,
+   "team": "Pachuca",
+   "fotmobName": "Pachuca",
+   "fotmobId": 7848,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 4,
    "drawn": 4,
-   "lost": 5,
-   "goals": "13-17",
-   "gd": -4,
+   "lost": 6,
+   "goals": "22-19",
+   "gd": 3,
    "pts": 16
   },
   {
    "rank": 14,
+   "team": "Puebla",
+   "fotmobName": "Puebla",
+   "fotmobId": 7847,
+   "group": null,
+   "played": 14,
+   "won": 4,
+   "drawn": 4,
+   "lost": 6,
+   "goals": "16-21",
+   "gd": -5,
+   "pts": 16
+  },
+  {
+   "rank": 15,
    "team": "Tigres UANL",
    "fotmobName": "Tigres",
    "fotmobId": 8561,
@@ -202,7 +216,7 @@
    "pts": 15
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Atlante",
    "fotmobName": "Atlante",
    "fotmobId": 1942,
@@ -214,20 +228,6 @@
    "goals": "14-20",
    "gd": -6,
    "pts": 14
-  },
-  {
-   "rank": 16,
-   "team": "Pachuca",
-   "fotmobName": "Pachuca",
-   "fotmobId": 7848,
-   "group": null,
-   "played": 13,
-   "won": 3,
-   "drawn": 4,
-   "lost": 6,
-   "goals": "20-18",
-   "gd": 2,
-   "pts": 13
   },
   {
    "rank": 17,
@@ -1267,6 +1267,134 @@
     13,
     13,
     2
+   ],
+   [
+    "Necaxa",
+    17,
+    14,
+    10,
+    -11
+   ],
+   [
+    "Juarez",
+    18,
+    14,
+    5,
+    -24
+   ]
+  ],
+  "2026-10-26": [
+   [
+    "Club America",
+    1,
+    13,
+    27,
+    15
+   ],
+   [
+    "Cruz Azul",
+    2,
+    14,
+    26,
+    9
+   ],
+   [
+    "Guadalajara Chivas",
+    3,
+    14,
+    26,
+    9
+   ],
+   [
+    "Atlas",
+    4,
+    14,
+    24,
+    -1
+   ],
+   [
+    "Toluca",
+    5,
+    14,
+    23,
+    10
+   ],
+   [
+    "Club Leon",
+    6,
+    14,
+    22,
+    3
+   ],
+   [
+    "Monterrey",
+    7,
+    13,
+    20,
+    5
+   ],
+   [
+    "Club Tijuana",
+    8,
+    13,
+    20,
+    4
+   ],
+   [
+    "Queretaro",
+    9,
+    13,
+    20,
+    -1
+   ],
+   [
+    "Santos Laguna",
+    10,
+    14,
+    19,
+    0
+   ],
+   [
+    "Atl. San Luis",
+    11,
+    14,
+    19,
+    -3
+   ],
+   [
+    "UNAM Pumas",
+    12,
+    14,
+    17,
+    -3
+   ],
+   [
+    "Pachuca",
+    13,
+    14,
+    16,
+    3
+   ],
+   [
+    "Puebla",
+    14,
+    14,
+    16,
+    -5
+   ],
+   [
+    "Tigres UANL",
+    15,
+    14,
+    15,
+    -4
+   ],
+   [
+    "Atlante",
+    16,
+    14,
+    14,
+    -6
    ],
    [
     "Necaxa",
