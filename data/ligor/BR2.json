@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T07:07:01.355Z",
+ "updatedAt": "2026-10-27T08:16:27.699Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Série B",
@@ -21,6 +21,20 @@
   },
   {
    "rank": 2,
+   "team": "Juventude",
+   "fotmobName": "Juventude",
+   "fotmobId": 10274,
+   "group": null,
+   "played": 35,
+   "won": 18,
+   "drawn": 10,
+   "lost": 7,
+   "goals": "45-23",
+   "gd": 22,
+   "pts": 64
+  },
+  {
+   "rank": 3,
    "team": "Vila Nova",
    "fotmobName": "Vila Nova",
    "fotmobId": 109706,
@@ -32,20 +46,6 @@
    "goals": "50-36",
    "gd": 14,
    "pts": 62
-  },
-  {
-   "rank": 3,
-   "team": "Juventude",
-   "fotmobName": "Juventude",
-   "fotmobId": 10274,
-   "group": null,
-   "played": 34,
-   "won": 17,
-   "drawn": 10,
-   "lost": 7,
-   "goals": "41-23",
-   "gd": 18,
-   "pts": 61
   },
   {
    "rank": 4,
@@ -179,12 +179,12 @@
    "fotmobName": "Cuiabá",
    "fotmobId": 197815,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 11,
    "drawn": 14,
-   "lost": 9,
-   "goals": "32-27",
-   "gd": 5,
+   "lost": 10,
+   "goals": "32-28",
+   "gd": 4,
    "pts": 47
   },
   {
@@ -203,20 +203,6 @@
   },
   {
    "rank": 15,
-   "team": "Náutico",
-   "fotmobName": "Náutico",
-   "fotmobId": 2369,
-   "group": null,
-   "played": 34,
-   "won": 11,
-   "drawn": 10,
-   "lost": 13,
-   "goals": "39-42",
-   "gd": -3,
-   "pts": 43
-  },
-  {
-   "rank": 16,
    "team": "Ceará",
    "fotmobName": "Ceará",
    "fotmobId": 172341,
@@ -227,6 +213,20 @@
    "lost": 13,
    "goals": "37-42",
    "gd": -5,
+   "pts": 43
+  },
+  {
+   "rank": 16,
+   "team": "Náutico",
+   "fotmobName": "Náutico",
+   "fotmobId": 2369,
+   "group": null,
+   "played": 35,
+   "won": 11,
+   "drawn": 10,
+   "lost": 14,
+   "goals": "39-46",
+   "gd": -7,
    "pts": 43
   },
   {
@@ -263,13 +263,13 @@
    "fotmobName": "América-MG",
    "fotmobId": 1757,
    "group": null,
-   "played": 34,
-   "won": 5,
+   "played": 35,
+   "won": 6,
    "drawn": 5,
    "lost": 24,
-   "goals": "22-54",
-   "gd": -32,
-   "pts": 20
+   "goals": "23-54",
+   "gd": -31,
+   "pts": 23
   },
   {
    "rank": 20,
@@ -1556,6 +1556,148 @@
     34,
     20,
     -32
+   ],
+   [
+    "Ponte Preta",
+    20,
+    35,
+    15,
+    -55
+   ]
+  ],
+  "2026-10-27": [
+   [
+    "Novorizontino",
+    1,
+    35,
+    64,
+    32
+   ],
+   [
+    "Juventude",
+    2,
+    35,
+    64,
+    22
+   ],
+   [
+    "Vila Nova",
+    3,
+    35,
+    62,
+    14
+   ],
+   [
+    "Fortaleza",
+    4,
+    35,
+    61,
+    12
+   ],
+   [
+    "Criciúma",
+    5,
+    35,
+    59,
+    6
+   ],
+   [
+    "CRB",
+    6,
+    35,
+    55,
+    4
+   ],
+   [
+    "Sport",
+    7,
+    35,
+    54,
+    9
+   ],
+   [
+    "Atlético Goianiense",
+    8,
+    35,
+    54,
+    9
+   ],
+   [
+    "Operário PR",
+    9,
+    35,
+    51,
+    -1
+   ],
+   [
+    "Goiás",
+    10,
+    34,
+    49,
+    -6
+   ],
+   [
+    "São Bernardo",
+    11,
+    35,
+    49,
+    10
+   ],
+   [
+    "Botafogo-SP",
+    12,
+    35,
+    47,
+    2
+   ],
+   [
+    "Cuiabá",
+    13,
+    35,
+    47,
+    4
+   ],
+   [
+    "Athletic",
+    14,
+    35,
+    44,
+    0
+   ],
+   [
+    "Ceará",
+    15,
+    34,
+    43,
+    -5
+   ],
+   [
+    "Náutico",
+    16,
+    35,
+    43,
+    -7
+   ],
+   [
+    "Avaí",
+    17,
+    35,
+    37,
+    -12
+   ],
+   [
+    "Londrina",
+    18,
+    35,
+    32,
+    -7
+   ],
+   [
+    "América Mineiro",
+    19,
+    35,
+    23,
+    -31
    ],
    [
     "Ponte Preta",

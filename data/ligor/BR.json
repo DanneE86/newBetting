@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T07:07:01.355Z",
+ "updatedAt": "2026-10-27T08:16:27.699Z",
  "league": "BR",
  "fotmobId": 268,
  "name": "Série A",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Flamengo RJ",
+   "fotmobName": "Flamengo",
+   "fotmobId": 9770,
+   "group": null,
+   "played": 32,
+   "won": 21,
+   "drawn": 7,
+   "lost": 4,
+   "goals": "64-27",
+   "gd": 37,
+   "pts": 70
+  },
+  {
+   "rank": 2,
    "team": "Palmeiras",
    "fotmobName": "Palmeiras",
    "fotmobId": 10283,
@@ -18,20 +32,6 @@
    "goals": "56-22",
    "gd": 34,
    "pts": 69
-  },
-  {
-   "rank": 2,
-   "team": "Flamengo RJ",
-   "fotmobName": "Flamengo",
-   "fotmobId": 9770,
-   "group": null,
-   "played": 31,
-   "won": 20,
-   "drawn": 7,
-   "lost": 4,
-   "goals": "61-25",
-   "gd": 36,
-   "pts": 67
   },
   {
    "rank": 3,
@@ -81,12 +81,12 @@
    "fotmobName": "Atlético-MG",
    "fotmobId": 10272,
    "group": null,
-   "played": 31,
+   "played": 32,
    "won": 14,
    "drawn": 8,
-   "lost": 9,
-   "goals": "42-35",
-   "gd": 7,
+   "lost": 10,
+   "goals": "44-38",
+   "gd": 6,
    "pts": 50
   },
   {
@@ -165,12 +165,12 @@
    "fotmobName": "Coritiba",
    "fotmobId": 9767,
    "group": null,
-   "played": 31,
+   "played": 32,
    "won": 10,
    "drawn": 9,
-   "lost": 12,
-   "goals": "38-49",
-   "gd": -11,
+   "lost": 13,
+   "goals": "38-50",
+   "gd": -12,
    "pts": 39
   },
   {
@@ -231,6 +231,20 @@
   },
   {
    "rank": 17,
+   "team": "Gremio",
+   "fotmobName": "Grêmio",
+   "fotmobId": 9769,
+   "group": null,
+   "played": 32,
+   "won": 8,
+   "drawn": 10,
+   "lost": 14,
+   "goals": "35-44",
+   "gd": -9,
+   "pts": 34
+  },
+  {
+   "rank": 18,
    "team": "Corinthians",
    "fotmobName": "Corinthians",
    "fotmobId": 9808,
@@ -242,20 +256,6 @@
    "goals": "34-42",
    "gd": -8,
    "pts": 33
-  },
-  {
-   "rank": 18,
-   "team": "Gremio",
-   "fotmobName": "Grêmio",
-   "fotmobId": 9769,
-   "group": null,
-   "played": 31,
-   "won": 7,
-   "drawn": 10,
-   "lost": 14,
-   "goals": "34-44",
-   "gd": -10,
-   "pts": 31
   },
   {
    "rank": 19,
@@ -1407,6 +1407,148 @@
     31,
     31,
     -10
+   ],
+   [
+    "Remo",
+    19,
+    32,
+    26,
+    -16
+   ],
+   [
+    "Chapecoense-SC",
+    20,
+    31,
+    21,
+    -31
+   ]
+  ],
+  "2026-10-27": [
+   [
+    "Flamengo RJ",
+    1,
+    32,
+    70,
+    37
+   ],
+   [
+    "Palmeiras",
+    2,
+    32,
+    69,
+    34
+   ],
+   [
+    "Cruzeiro",
+    3,
+    32,
+    54,
+    5
+   ],
+   [
+    "Athletico-PR",
+    4,
+    32,
+    54,
+    12
+   ],
+   [
+    "Fluminense",
+    5,
+    32,
+    51,
+    9
+   ],
+   [
+    "Atletico-MG",
+    6,
+    32,
+    50,
+    6
+   ],
+   [
+    "Bahia",
+    7,
+    32,
+    50,
+    5
+   ],
+   [
+    "Santos",
+    8,
+    32,
+    46,
+    2
+   ],
+   [
+    "Sao Paulo",
+    9,
+    32,
+    43,
+    1
+   ],
+   [
+    "Bragantino",
+    10,
+    32,
+    41,
+    1
+   ],
+   [
+    "Botafogo RJ",
+    11,
+    32,
+    39,
+    -7
+   ],
+   [
+    "Coritiba",
+    12,
+    32,
+    39,
+    -12
+   ],
+   [
+    "Vasco",
+    13,
+    31,
+    38,
+    -6
+   ],
+   [
+    "Vitoria",
+    14,
+    32,
+    38,
+    -11
+   ],
+   [
+    "Mirassol",
+    15,
+    32,
+    37,
+    -8
+   ],
+   [
+    "Internacional",
+    16,
+    32,
+    35,
+    -4
+   ],
+   [
+    "Gremio",
+    17,
+    32,
+    34,
+    -9
+   ],
+   [
+    "Corinthians",
+    18,
+    32,
+    33,
+    -8
    ],
    [
     "Remo",
