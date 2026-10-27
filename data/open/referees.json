@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-26T20:00:15.489Z",
+  "updatedAt": "2026-10-27T08:19:10.999Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
-  "count": 145,
+  "count": 144,
   "referees": [
     {
       "league": "CH",
@@ -182,13 +182,13 @@
     {
       "league": "CH",
       "referee": "L Doughty",
-      "matches": 35,
-      "yellowPg": 4.51,
-      "redPg": 0.114,
-      "bookingPointsPg": 48,
-      "foulsPg": 22.6,
-      "goalsPg": 2.66,
-      "homeWinRate": 0.371
+      "matches": 34,
+      "yellowPg": 4.53,
+      "redPg": 0.118,
+      "bookingPointsPg": 48.2,
+      "foulsPg": 22.4,
+      "goalsPg": 2.68,
+      "homeWinRate": 0.382
     },
     {
       "league": "EL1",
@@ -200,6 +200,17 @@
       "foulsPg": 26.2,
       "goalsPg": 2.6,
       "homeWinRate": 0.1
+    },
+    {
+      "league": "PL",
+      "referee": "S Hooper",
+      "matches": 37,
+      "yellowPg": 4.49,
+      "redPg": 0.081,
+      "bookingPointsPg": 46.9,
+      "foulsPg": 21.2,
+      "goalsPg": 2.97,
+      "homeWinRate": 0.432
     },
     {
       "league": "CH",
@@ -222,17 +233,6 @@
       "foulsPg": 21.7,
       "goalsPg": 2.93,
       "homeWinRate": 0.4
-    },
-    {
-      "league": "PL",
-      "referee": "S Hooper",
-      "matches": 38,
-      "yellowPg": 4.42,
-      "redPg": 0.105,
-      "bookingPointsPg": 46.8,
-      "foulsPg": 21.1,
-      "goalsPg": 2.97,
-      "homeWinRate": 0.421
     },
     {
       "league": "PL",
@@ -281,13 +281,13 @@
     {
       "league": "CH",
       "referee": "S Martin",
-      "matches": 52,
+      "matches": 51,
       "yellowPg": 4.31,
-      "redPg": 0.058,
-      "bookingPointsPg": 44.5,
-      "foulsPg": 24.1,
-      "goalsPg": 2.54,
-      "homeWinRate": 0.365
+      "redPg": 0.059,
+      "bookingPointsPg": 44.6,
+      "foulsPg": 23.9,
+      "goalsPg": 2.53,
+      "homeWinRate": 0.353
     },
     {
       "league": "SC",
@@ -301,17 +301,6 @@
       "homeWinRate": 0.5
     },
     {
-      "league": "CH",
-      "referee": "A Backhouse",
-      "matches": 47,
-      "yellowPg": 4.17,
-      "redPg": 0.064,
-      "bookingPointsPg": 43.3,
-      "foulsPg": 20.9,
-      "goalsPg": 2.81,
-      "homeWinRate": 0.553
-    },
-    {
       "league": "PL",
       "referee": "D England",
       "matches": 47,
@@ -321,6 +310,17 @@
       "foulsPg": 22.3,
       "goalsPg": 2.89,
       "homeWinRate": 0.404
+    },
+    {
+      "league": "CH",
+      "referee": "A Backhouse",
+      "matches": 46,
+      "yellowPg": 4.17,
+      "redPg": 0.043,
+      "bookingPointsPg": 42.8,
+      "foulsPg": 20.8,
+      "goalsPg": 2.78,
+      "homeWinRate": 0.565
     },
     {
       "league": "SC",
@@ -336,13 +336,13 @@
     {
       "league": "PL",
       "referee": "T Robinson",
-      "matches": 25,
-      "yellowPg": 4.16,
-      "redPg": 0.12,
-      "bookingPointsPg": 44.6,
-      "foulsPg": 22.8,
-      "goalsPg": 2.56,
-      "homeWinRate": 0.4
+      "matches": 24,
+      "yellowPg": 4.17,
+      "redPg": 0.125,
+      "bookingPointsPg": 44.8,
+      "foulsPg": 22.6,
+      "goalsPg": 2.58,
+      "homeWinRate": 0.417
     },
     {
       "league": "SC",
@@ -387,6 +387,17 @@
       "foulsPg": 26.8,
       "goalsPg": 3.3,
       "homeWinRate": 0.2
+    },
+    {
+      "league": "EL1",
+      "referee": "B Toner",
+      "matches": 22,
+      "yellowPg": 4.09,
+      "redPg": 0.273,
+      "bookingPointsPg": 47.7,
+      "foulsPg": 25.8,
+      "goalsPg": 2.23,
+      "homeWinRate": 0.5
     },
     {
       "league": "CH",
@@ -445,17 +456,6 @@
     },
     {
       "league": "EL1",
-      "referee": "B Toner",
-      "matches": 23,
-      "yellowPg": 4.04,
-      "redPg": 0.261,
-      "bookingPointsPg": 47,
-      "foulsPg": 25.9,
-      "goalsPg": 2.35,
-      "homeWinRate": 0.478
-    },
-    {
-      "league": "EL1",
       "referee": "J Miles",
       "matches": 27,
       "yellowPg": 4.04,
@@ -468,24 +468,13 @@
     {
       "league": "EL1",
       "referee": "C Brook",
-      "matches": 38,
+      "matches": 37,
       "yellowPg": 4.03,
-      "redPg": 0.132,
+      "redPg": 0.135,
       "bookingPointsPg": 43.6,
-      "foulsPg": 22.3,
+      "foulsPg": 22.2,
       "goalsPg": 2.76,
-      "homeWinRate": 0.421
-    },
-    {
-      "league": "EL1",
-      "referee": "L Smith",
-      "matches": 7,
-      "yellowPg": 4,
-      "redPg": 0.143,
-      "bookingPointsPg": 43.6,
-      "foulsPg": 24.6,
-      "goalsPg": 2.57,
-      "homeWinRate": 0.429
+      "homeWinRate": 0.405
     },
     {
       "league": "EL1",
@@ -545,13 +534,13 @@
     {
       "league": "PL",
       "referee": "J Gillett",
-      "matches": 43,
+      "matches": 42,
       "yellowPg": 3.95,
-      "redPg": 0.023,
+      "redPg": 0.024,
       "bookingPointsPg": 40.1,
-      "foulsPg": 21,
-      "goalsPg": 2.79,
-      "homeWinRate": 0.279
+      "foulsPg": 20.8,
+      "goalsPg": 2.81,
+      "homeWinRate": 0.262
     },
     {
       "league": "CH",
@@ -576,17 +565,6 @@
       "homeWinRate": 0.571
     },
     {
-      "league": "EL1",
-      "referee": "D Rock",
-      "matches": 38,
-      "yellowPg": 3.92,
-      "redPg": 0.053,
-      "bookingPointsPg": 40.5,
-      "foulsPg": 22.9,
-      "goalsPg": 2.26,
-      "homeWinRate": 0.395
-    },
-    {
       "league": "SC",
       "referee": "J Beaton",
       "matches": 44,
@@ -598,17 +576,6 @@
       "homeWinRate": 0.614
     },
     {
-      "league": "EL1",
-      "referee": "S Purkiss",
-      "matches": 10,
-      "yellowPg": 3.9,
-      "redPg": 0.1,
-      "bookingPointsPg": 41.5,
-      "foulsPg": 23.2,
-      "goalsPg": 3.4,
-      "homeWinRate": 0.5
-    },
-    {
       "league": "SC",
       "referee": "D Nicolson",
       "matches": 21,
@@ -618,6 +585,17 @@
       "foulsPg": 24.3,
       "goalsPg": 2.57,
       "homeWinRate": 0.381
+    },
+    {
+      "league": "EL1",
+      "referee": "S Purkiss",
+      "matches": 9,
+      "yellowPg": 3.89,
+      "redPg": 0.111,
+      "bookingPointsPg": 41.7,
+      "foulsPg": 24.2,
+      "goalsPg": 3.11,
+      "homeWinRate": 0.556
     },
     {
       "league": "EL1",
@@ -653,6 +631,17 @@
       "homeWinRate": 0.75
     },
     {
+      "league": "EL1",
+      "referee": "L Smith",
+      "matches": 6,
+      "yellowPg": 3.83,
+      "redPg": 0.167,
+      "bookingPointsPg": 42.5,
+      "foulsPg": 24.3,
+      "goalsPg": 2.17,
+      "homeWinRate": 0.5
+    },
+    {
       "league": "CH",
       "referee": "T Harrington",
       "matches": 11,
@@ -664,15 +653,15 @@
       "homeWinRate": 0.727
     },
     {
-      "league": "CH",
-      "referee": "J Bell",
-      "matches": 40,
-      "yellowPg": 3.8,
-      "redPg": 0.125,
-      "bookingPointsPg": 41.1,
-      "foulsPg": 21.7,
-      "goalsPg": 2.68,
-      "homeWinRate": 0.45
+      "league": "EL1",
+      "referee": "D Rock",
+      "matches": 37,
+      "yellowPg": 3.81,
+      "redPg": 0.054,
+      "bookingPointsPg": 39.5,
+      "foulsPg": 22.8,
+      "goalsPg": 2.3,
+      "homeWinRate": 0.405
     },
     {
       "league": "SC",
@@ -686,17 +675,6 @@
       "homeWinRate": 0.526
     },
     {
-      "league": "CH",
-      "referee": "R Madley",
-      "matches": 36,
-      "yellowPg": 3.78,
-      "redPg": 0.222,
-      "bookingPointsPg": 43.3,
-      "foulsPg": 21.6,
-      "goalsPg": 2.25,
-      "homeWinRate": 0.417
-    },
-    {
       "league": "PL",
       "referee": "A Madley",
       "matches": 45,
@@ -706,6 +684,28 @@
       "foulsPg": 23,
       "goalsPg": 2.89,
       "homeWinRate": 0.378
+    },
+    {
+      "league": "CH",
+      "referee": "J Bell",
+      "matches": 39,
+      "yellowPg": 3.77,
+      "redPg": 0.128,
+      "bookingPointsPg": 40.9,
+      "foulsPg": 21.6,
+      "goalsPg": 2.64,
+      "homeWinRate": 0.462
+    },
+    {
+      "league": "CH",
+      "referee": "R Madley",
+      "matches": 35,
+      "yellowPg": 3.77,
+      "redPg": 0.229,
+      "bookingPointsPg": 43.4,
+      "foulsPg": 21.7,
+      "goalsPg": 2.29,
+      "homeWinRate": 0.4
     },
     {
       "league": "EL1",
@@ -809,24 +809,13 @@
     {
       "league": "EL1",
       "referee": "S Mather",
-      "matches": 36,
+      "matches": 35,
       "yellowPg": 3.69,
-      "redPg": 0.167,
+      "redPg": 0.171,
       "bookingPointsPg": 41.1,
-      "foulsPg": 22.4,
-      "goalsPg": 2.64,
-      "homeWinRate": 0.528
-    },
-    {
-      "league": "EL1",
-      "referee": "E Duckworth",
-      "matches": 34,
-      "yellowPg": 3.68,
-      "redPg": 0.176,
-      "bookingPointsPg": 41.2,
-      "foulsPg": 22.7,
-      "goalsPg": 3.12,
-      "homeWinRate": 0.618
+      "foulsPg": 22.2,
+      "goalsPg": 2.63,
+      "homeWinRate": 0.543
     },
     {
       "league": "EL1",
@@ -852,6 +841,17 @@
     },
     {
       "league": "EL1",
+      "referee": "E Duckworth",
+      "matches": 33,
+      "yellowPg": 3.64,
+      "redPg": 0.182,
+      "bookingPointsPg": 40.9,
+      "foulsPg": 22.7,
+      "goalsPg": 3.18,
+      "homeWinRate": 0.606
+    },
+    {
+      "league": "EL1",
       "referee": "S Tallis",
       "matches": 11,
       "yellowPg": 3.64,
@@ -860,6 +860,17 @@
       "foulsPg": 22.3,
       "goalsPg": 1.64,
       "homeWinRate": 0.455
+    },
+    {
+      "league": "CH",
+      "referee": "M Salisbury",
+      "matches": 11,
+      "yellowPg": 3.64,
+      "redPg": 0.182,
+      "bookingPointsPg": 40.9,
+      "foulsPg": 23.5,
+      "goalsPg": 2.64,
+      "homeWinRate": 0.545
     },
     {
       "league": "CH",
@@ -884,17 +895,6 @@
       "homeWinRate": 0.429
     },
     {
-      "league": "PL",
-      "referee": "C Pawson",
-      "matches": 47,
-      "yellowPg": 3.62,
-      "redPg": 0.128,
-      "bookingPointsPg": 39.4,
-      "foulsPg": 22.6,
-      "goalsPg": 2.79,
-      "homeWinRate": 0.383
-    },
-    {
       "league": "CH",
       "referee": "J Linington",
       "matches": 37,
@@ -915,17 +915,6 @@
       "foulsPg": 21.3,
       "goalsPg": 2.57,
       "homeWinRate": 0.459
-    },
-    {
-      "league": "PL",
-      "referee": "M Oliver",
-      "matches": 60,
-      "yellowPg": 3.6,
-      "redPg": 0.133,
-      "bookingPointsPg": 39.3,
-      "foulsPg": 22.9,
-      "goalsPg": 2.62,
-      "homeWinRate": 0.333
     },
     {
       "league": "SC",
@@ -950,6 +939,17 @@
       "homeWinRate": 0.4
     },
     {
+      "league": "PL",
+      "referee": "M Oliver",
+      "matches": 59,
+      "yellowPg": 3.59,
+      "redPg": 0.136,
+      "bookingPointsPg": 39.3,
+      "foulsPg": 22.9,
+      "goalsPg": 2.63,
+      "homeWinRate": 0.339
+    },
+    {
       "league": "SC",
       "referee": "D Robertson",
       "matches": 46,
@@ -961,37 +961,26 @@
       "homeWinRate": 0.326
     },
     {
-      "league": "CH",
-      "referee": "M Salisbury",
-      "matches": 12,
+      "league": "PL",
+      "referee": "T Harrington",
+      "matches": 31,
       "yellowPg": 3.58,
-      "redPg": 0.167,
-      "bookingPointsPg": 40,
-      "foulsPg": 23.7,
-      "goalsPg": 2.83,
-      "homeWinRate": 0.583
+      "redPg": 0.161,
+      "bookingPointsPg": 39.8,
+      "foulsPg": 21.1,
+      "goalsPg": 2.61,
+      "homeWinRate": 0.355
     },
     {
       "league": "PL",
-      "referee": "T Harrington",
-      "matches": 32,
-      "yellowPg": 3.56,
-      "redPg": 0.156,
-      "bookingPointsPg": 39.5,
-      "foulsPg": 21.3,
-      "goalsPg": 2.63,
-      "homeWinRate": 0.344
-    },
-    {
-      "league": "CH",
-      "referee": "S Allison",
-      "matches": 45,
-      "yellowPg": 3.56,
-      "redPg": 0.089,
-      "bookingPointsPg": 37.8,
-      "foulsPg": 22.8,
-      "goalsPg": 2.4,
-      "homeWinRate": 0.467
+      "referee": "C Pawson",
+      "matches": 46,
+      "yellowPg": 3.57,
+      "redPg": 0.109,
+      "bookingPointsPg": 38.4,
+      "foulsPg": 22.4,
+      "goalsPg": 2.83,
+      "homeWinRate": 0.37
     },
     {
       "league": "CH",
@@ -1002,6 +991,17 @@
       "bookingPointsPg": 36.6,
       "foulsPg": 20.5,
       "goalsPg": 2.34,
+      "homeWinRate": 0.477
+    },
+    {
+      "league": "CH",
+      "referee": "S Allison",
+      "matches": 44,
+      "yellowPg": 3.55,
+      "redPg": 0.091,
+      "bookingPointsPg": 37.7,
+      "foulsPg": 22.8,
+      "goalsPg": 2.45,
       "homeWinRate": 0.477
     },
     {
@@ -1029,13 +1029,13 @@
     {
       "league": "CH",
       "referee": "T Nield",
-      "matches": 51,
-      "yellowPg": 3.51,
-      "redPg": 0.078,
-      "bookingPointsPg": 37.1,
-      "foulsPg": 23.3,
+      "matches": 50,
+      "yellowPg": 3.5,
+      "redPg": 0.08,
+      "bookingPointsPg": 37,
+      "foulsPg": 23.2,
       "goalsPg": 2.78,
-      "homeWinRate": 0.471
+      "homeWinRate": 0.46
     },
     {
       "league": "EL1",
@@ -1071,17 +1071,6 @@
       "homeWinRate": 0.5
     },
     {
-      "league": "CH",
-      "referee": "J Busby",
-      "matches": 51,
-      "yellowPg": 3.49,
-      "redPg": 0.098,
-      "bookingPointsPg": 37.4,
-      "foulsPg": 21.4,
-      "goalsPg": 2.69,
-      "homeWinRate": 0.373
-    },
-    {
       "league": "EL1",
       "referee": "P Howard",
       "matches": 23,
@@ -1113,6 +1102,17 @@
       "foulsPg": 21.9,
       "goalsPg": 3.5,
       "homeWinRate": 0.5
+    },
+    {
+      "league": "CH",
+      "referee": "J Busby",
+      "matches": 50,
+      "yellowPg": 3.46,
+      "redPg": 0.08,
+      "bookingPointsPg": 36.6,
+      "foulsPg": 21.3,
+      "goalsPg": 2.74,
+      "homeWinRate": 0.38
     },
     {
       "league": "PL",
@@ -1336,17 +1336,6 @@
     },
     {
       "league": "EL1",
-      "referee": "N Hair",
-      "matches": 18,
-      "yellowPg": 3.22,
-      "redPg": 0.111,
-      "bookingPointsPg": 35,
-      "foulsPg": 24.3,
-      "goalsPg": 2.56,
-      "homeWinRate": 0.444
-    },
-    {
-      "league": "EL1",
       "referee": "D Baines",
       "matches": 6,
       "yellowPg": 3.17,
@@ -1421,6 +1410,17 @@
       "foulsPg": 22.3,
       "goalsPg": 3.63,
       "homeWinRate": 0.5
+    },
+    {
+      "league": "EL1",
+      "referee": "N Hair",
+      "matches": 17,
+      "yellowPg": 3.12,
+      "redPg": 0.118,
+      "bookingPointsPg": 34.1,
+      "foulsPg": 24.1,
+      "goalsPg": 2.71,
+      "homeWinRate": 0.471
     },
     {
       "league": "CH",
@@ -1524,13 +1524,13 @@
     {
       "league": "EL1",
       "referee": "M Coy",
-      "matches": 32,
-      "yellowPg": 2.75,
-      "redPg": 0.031,
-      "bookingPointsPg": 28.3,
+      "matches": 31,
+      "yellowPg": 2.77,
+      "redPg": 0.032,
+      "bookingPointsPg": 28.5,
       "foulsPg": 22.7,
-      "goalsPg": 2.56,
-      "homeWinRate": 0.531
+      "goalsPg": 2.55,
+      "homeWinRate": 0.548
     },
     {
       "league": "CH",
@@ -1586,17 +1586,6 @@
       "foulsPg": 21.5,
       "goalsPg": 2.13,
       "homeWinRate": 0.267
-    },
-    {
-      "league": "EL1",
-      "referee": "J Smith",
-      "matches": 5,
-      "yellowPg": 2.4,
-      "redPg": 0.2,
-      "bookingPointsPg": 29,
-      "foulsPg": 21,
-      "goalsPg": 2.6,
-      "homeWinRate": 0.8
     }
   ]
 }
