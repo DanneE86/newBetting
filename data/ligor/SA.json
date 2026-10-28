@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T08:16:27.699Z",
+ "updatedAt": "2026-10-28T08:50:51.723Z",
  "league": "SA",
  "fotmobId": 55,
  "name": "Serie A",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Lazio",
+   "fotmobName": "Lazio",
+   "fotmobId": 8543,
+   "group": null,
+   "played": 9,
+   "won": 8,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "22-7",
+   "gd": 15,
+   "pts": 25
+  },
+  {
+   "rank": 2,
    "team": "Inter",
    "fotmobName": "Inter",
    "fotmobId": 8636,
@@ -20,35 +34,35 @@
    "pts": 22
   },
   {
-   "rank": 2,
-   "team": "Lazio",
-   "fotmobName": "Lazio",
-   "fotmobId": 8543,
-   "group": null,
-   "played": 8,
-   "won": 7,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "16-5",
-   "gd": 11,
-   "pts": 22
-  },
-  {
    "rank": 3,
    "team": "Roma",
    "fotmobName": "Roma",
    "fotmobId": 8686,
    "group": null,
-   "played": 8,
-   "won": 5,
+   "played": 9,
+   "won": 6,
    "drawn": 3,
    "lost": 0,
-   "goals": "19-6",
-   "gd": 13,
-   "pts": 18
+   "goals": "23-8",
+   "gd": 15,
+   "pts": 21
   },
   {
    "rank": 4,
+   "team": "Como",
+   "fotmobName": "Como",
+   "fotmobId": 10171,
+   "group": null,
+   "played": 9,
+   "won": 6,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "17-8",
+   "gd": 9,
+   "pts": 20
+  },
+  {
+   "rank": 5,
    "team": "Milan",
    "fotmobName": "Milan",
    "fotmobId": 8564,
@@ -60,20 +74,6 @@
    "goals": "16-7",
    "gd": 9,
    "pts": 18
-  },
-  {
-   "rank": 5,
-   "team": "Como",
-   "fotmobName": "Como",
-   "fotmobId": 10171,
-   "group": null,
-   "played": 8,
-   "won": 5,
-   "drawn": 2,
-   "lost": 1,
-   "goals": "14-7",
-   "gd": 7,
-   "pts": 17
   },
   {
    "rank": 6,
@@ -109,12 +109,12 @@
    "fotmobName": "Torino",
    "fotmobId": 9804,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 4,
    "drawn": 1,
-   "lost": 3,
-   "goals": "13-11",
-   "gd": 2,
+   "lost": 4,
+   "goals": "14-14",
+   "gd": 0,
    "pts": 13
   },
   {
@@ -123,12 +123,12 @@
    "fotmobName": "Cagliari",
    "fotmobId": 8529,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 4,
    "drawn": 1,
-   "lost": 3,
-   "goals": "6-9",
-   "gd": -3,
+   "lost": 4,
+   "goals": "8-13",
+   "gd": -5,
    "pts": 13
   },
   {
@@ -193,12 +193,12 @@
    "fotmobName": "Sassuolo",
    "fotmobId": 7943,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 2,
-   "lost": 4,
-   "goals": "12-16",
-   "gd": -4,
+   "lost": 5,
+   "goals": "14-22",
+   "gd": -8,
    "pts": 8
   },
   {
@@ -1521,6 +1521,148 @@
     8,
     8,
     -4
+   ],
+   [
+    "Monza",
+    15,
+    8,
+    7,
+    -3
+   ],
+   [
+    "Genoa",
+    16,
+    8,
+    7,
+    -7
+   ],
+   [
+    "Udinese",
+    17,
+    8,
+    4,
+    -9
+   ],
+   [
+    "Fiorentina",
+    18,
+    8,
+    4,
+    -10
+   ],
+   [
+    "Parma",
+    19,
+    8,
+    4,
+    -10
+   ],
+   [
+    "Venezia",
+    20,
+    8,
+    3,
+    -11
+   ]
+  ],
+  "2026-10-28": [
+   [
+    "Lazio",
+    1,
+    9,
+    25,
+    15
+   ],
+   [
+    "Inter",
+    2,
+    8,
+    22,
+    13
+   ],
+   [
+    "Roma",
+    3,
+    9,
+    21,
+    15
+   ],
+   [
+    "Como",
+    4,
+    9,
+    20,
+    9
+   ],
+   [
+    "Milan",
+    5,
+    8,
+    18,
+    9
+   ],
+   [
+    "Frosinone",
+    6,
+    8,
+    14,
+    4
+   ],
+   [
+    "Juventus",
+    7,
+    8,
+    14,
+    3
+   ],
+   [
+    "Torino",
+    8,
+    9,
+    13,
+    0
+   ],
+   [
+    "Cagliari",
+    9,
+    9,
+    13,
+    -5
+   ],
+   [
+    "Napoli",
+    10,
+    8,
+    11,
+    3
+   ],
+   [
+    "Atalanta",
+    11,
+    8,
+    10,
+    -1
+   ],
+   [
+    "Lecce",
+    12,
+    8,
+    9,
+    -5
+   ],
+   [
+    "Bologna",
+    13,
+    8,
+    8,
+    -2
+   ],
+   [
+    "Sassuolo",
+    14,
+    9,
+    8,
+    -8
    ],
    [
     "Monza",

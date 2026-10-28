@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T08:16:27.699Z",
+ "updatedAt": "2026-10-28T08:50:51.723Z",
  "league": "AS",
  "fotmobId": 67,
  "name": "Allsvenskan",
@@ -67,13 +67,13 @@
    "fotmobName": "Elfsborg",
    "fotmobId": 8014,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 11,
-   "drawn": 9,
+   "drawn": 10,
    "lost": 5,
-   "goals": "37-24",
+   "goals": "39-26",
    "gd": 13,
-   "pts": 42
+   "pts": 43
   },
   {
    "rank": 6,
@@ -91,6 +91,20 @@
   },
   {
    "rank": 7,
+   "team": "AIK",
+   "fotmobName": "AIK",
+   "fotmobId": 8349,
+   "group": null,
+   "played": 26,
+   "won": 10,
+   "drawn": 8,
+   "lost": 8,
+   "goals": "42-45",
+   "gd": -3,
+   "pts": 38
+  },
+  {
+   "rank": 8,
    "team": "Malmo FF",
    "fotmobName": "Malmö FF",
    "fotmobId": 10237,
@@ -101,20 +115,6 @@
    "lost": 10,
    "goals": "38-34",
    "gd": 4,
-   "pts": 37
-  },
-  {
-   "rank": 8,
-   "team": "AIK",
-   "fotmobName": "AIK",
-   "fotmobId": 8349,
-   "group": null,
-   "played": 25,
-   "won": 10,
-   "drawn": 7,
-   "lost": 8,
-   "goals": "40-43",
-   "gd": -3,
    "pts": 37
   },
   {
@@ -1313,6 +1313,120 @@
     25,
     37,
     -3
+   ],
+   [
+    "Goteborg",
+    9,
+    25,
+    37,
+    -9
+   ],
+   [
+    "Brommapojkarna",
+    10,
+    25,
+    33,
+    -4
+   ],
+   [
+    "GAIS",
+    11,
+    25,
+    31,
+    5
+   ],
+   [
+    "Mjallby",
+    12,
+    25,
+    23,
+    -14
+   ],
+   [
+    "Kalmar",
+    13,
+    25,
+    22,
+    -18
+   ],
+   [
+    "Degerfors",
+    14,
+    25,
+    20,
+    -20
+   ],
+   [
+    "Orgryte",
+    15,
+    25,
+    19,
+    -25
+   ],
+   [
+    "Halmstad",
+    16,
+    25,
+    17,
+    -28
+   ]
+  ],
+  "2026-10-28": [
+   [
+    "Sirius",
+    1,
+    25,
+    55,
+    24
+   ],
+   [
+    "Hammarby",
+    2,
+    25,
+    49,
+    31
+   ],
+   [
+    "Djurgarden",
+    3,
+    25,
+    48,
+    29
+   ],
+   [
+    "Hacken",
+    4,
+    25,
+    45,
+    17
+   ],
+   [
+    "Elfsborg",
+    5,
+    26,
+    43,
+    13
+   ],
+   [
+    "Vasteras SK",
+    6,
+    25,
+    38,
+    -2
+   ],
+   [
+    "AIK",
+    7,
+    26,
+    38,
+    -3
+   ],
+   [
+    "Malmo FF",
+    8,
+    25,
+    37,
+    4
    ],
    [
     "Goteborg",

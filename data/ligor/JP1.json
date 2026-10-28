@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-28T08:50:51.723Z",
  "league": "JP1",
  "fotmobId": 223,
  "name": "J. League",
@@ -21,6 +21,20 @@
   },
   {
    "rank": 2,
+   "team": "FC Tokyo",
+   "fotmobName": "FC Tokyo",
+   "fotmobId": 4399,
+   "group": null,
+   "played": 12,
+   "won": 8,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "27-8",
+   "gd": 19,
+   "pts": 27
+  },
+  {
+   "rank": 3,
    "team": "Sanfrecce Hiroshima",
    "fotmobName": "Sanfrecce Hiroshima",
    "fotmobId": 6224,
@@ -34,7 +48,7 @@
    "pts": 26
   },
   {
-   "rank": 3,
+   "rank": 4,
    "team": "Kashiwa Reysol",
    "fotmobName": "Kashiwa Reysol",
    "fotmobId": 8699,
@@ -46,20 +60,6 @@
    "goals": "25-19",
    "gd": 6,
    "pts": 25
-  },
-  {
-   "rank": 4,
-   "team": "FC Tokyo",
-   "fotmobName": "FC Tokyo",
-   "fotmobId": 4399,
-   "group": null,
-   "played": 11,
-   "won": 7,
-   "drawn": 3,
-   "lost": 1,
-   "goals": "21-8",
-   "gd": 13,
-   "pts": 24
   },
   {
    "rank": 5,
@@ -77,6 +77,34 @@
   },
   {
    "rank": 6,
+   "team": "Kawasaki Frontale",
+   "fotmobName": "Kawasaki Frontale",
+   "fotmobId": 6304,
+   "group": null,
+   "played": 12,
+   "won": 6,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "25-18",
+   "gd": 7,
+   "pts": 22
+  },
+  {
+   "rank": 7,
+   "team": "Urawa Reds",
+   "fotmobName": "Urawa Red Diamonds",
+   "fotmobId": 6244,
+   "group": null,
+   "played": 12,
+   "won": 7,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "21-23",
+   "gd": -2,
+   "pts": 21
+  },
+  {
+   "rank": 8,
    "team": "Kashima Antlers",
    "fotmobName": "Kashima Antlers",
    "fotmobId": 4397,
@@ -90,46 +118,18 @@
    "pts": 20
   },
   {
-   "rank": 7,
-   "team": "Kawasaki Frontale",
-   "fotmobName": "Kawasaki Frontale",
-   "fotmobId": 6304,
-   "group": null,
-   "played": 11,
-   "won": 5,
-   "drawn": 4,
-   "lost": 2,
-   "goals": "23-17",
-   "gd": 6,
-   "pts": 19
-  },
-  {
-   "rank": 8,
-   "team": "Urawa Reds",
-   "fotmobName": "Urawa Red Diamonds",
-   "fotmobId": 6244,
-   "group": null,
-   "played": 11,
-   "won": 6,
-   "drawn": 0,
-   "lost": 5,
-   "goals": "20-23",
-   "gd": -3,
-   "pts": 18
-  },
-  {
    "rank": 9,
    "team": "Yokohama F. Marinos",
    "fotmobName": "Yokohama F.Marinos",
    "fotmobId": 6581,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 4,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 2,
-   "goals": "15-11",
+   "goals": "16-12",
    "gd": 4,
-   "pts": 17
+   "pts": 18
   },
   {
    "rank": 10,
@@ -137,16 +137,44 @@
    "fotmobName": "Fagiano Okayama FC",
    "fotmobId": 164739,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 5,
    "drawn": 1,
-   "lost": 5,
-   "goals": "14-15",
-   "gd": -1,
+   "lost": 6,
+   "goals": "15-17",
+   "gd": -2,
    "pts": 16
   },
   {
    "rank": 11,
+   "team": "Nagoya Grampus",
+   "fotmobName": "Nagoya Grampus",
+   "fotmobId": 8006,
+   "group": null,
+   "played": 12,
+   "won": 4,
+   "drawn": 2,
+   "lost": 6,
+   "goals": "14-18",
+   "gd": -4,
+   "pts": 14
+  },
+  {
+   "rank": 12,
+   "team": "Cerezo Osaka",
+   "fotmobName": "Cerezo Osaka",
+   "fotmobId": 4692,
+   "group": null,
+   "played": 12,
+   "won": 3,
+   "drawn": 5,
+   "lost": 4,
+   "goals": "12-19",
+   "gd": -7,
+   "pts": 14
+  },
+  {
+   "rank": 13,
    "team": "Shimizu S-Pulse",
    "fotmobName": "Shimizu S-Pulse",
    "fotmobId": 4426,
@@ -160,45 +188,17 @@
    "pts": 14
   },
   {
-   "rank": 12,
-   "team": "Nagoya Grampus",
-   "fotmobName": "Nagoya Grampus",
-   "fotmobId": 8006,
-   "group": null,
-   "played": 11,
-   "won": 4,
-   "drawn": 1,
-   "lost": 6,
-   "goals": "13-17",
-   "gd": -4,
-   "pts": 13
-  },
-  {
-   "rank": 13,
-   "team": "Cerezo Osaka",
-   "fotmobName": "Cerezo Osaka",
-   "fotmobId": 4692,
-   "group": null,
-   "played": 11,
-   "won": 3,
-   "drawn": 4,
-   "lost": 4,
-   "goals": "10-17",
-   "gd": -7,
-   "pts": 13
-  },
-  {
    "rank": 14,
    "team": "V-Varen Nagasaki",
    "fotmobName": "V-Varen Nagasaki",
    "fotmobId": 194016,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 3,
    "drawn": 3,
-   "lost": 5,
-   "goals": "15-18",
-   "gd": -3,
+   "lost": 6,
+   "goals": "15-19",
+   "gd": -4,
    "pts": 12
   },
   {
@@ -235,12 +235,12 @@
    "fotmobName": "Mito Hollyhock",
    "fotmobId": 162195,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 3,
-   "lost": 6,
-   "goals": "12-16",
-   "gd": -4,
+   "lost": 7,
+   "goals": "12-22",
+   "gd": -10,
    "pts": 9
   },
   {
@@ -277,13 +277,13 @@
    "fotmobName": "JEF United Chiba",
    "fotmobId": 9756,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 1,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 7,
-   "goals": "10-22",
+   "goals": "12-24",
    "gd": -12,
-   "pts": 6
+   "pts": 7
   }
  ],
  "tableHistory": {
@@ -1278,6 +1278,148 @@
     20,
     11,
     6,
+    -12
+   ]
+  ],
+  "2026-10-28": [
+   [
+    "Machida",
+    1,
+    12,
+    27,
+    20
+   ],
+   [
+    "FC Tokyo",
+    2,
+    12,
+    27,
+    19
+   ],
+   [
+    "Sanfrecce Hiroshima",
+    3,
+    12,
+    26,
+    19
+   ],
+   [
+    "Kashiwa Reysol",
+    4,
+    12,
+    25,
+    6
+   ],
+   [
+    "Vissel Kobe",
+    5,
+    12,
+    23,
+    7
+   ],
+   [
+    "Kawasaki Frontale",
+    6,
+    12,
+    22,
+    7
+   ],
+   [
+    "Urawa Reds",
+    7,
+    12,
+    21,
+    -2
+   ],
+   [
+    "Kashima Antlers",
+    8,
+    12,
+    20,
+    4
+   ],
+   [
+    "Yokohama F. Marinos",
+    9,
+    12,
+    18,
+    4
+   ],
+   [
+    "Okayama",
+    10,
+    12,
+    16,
+    -2
+   ],
+   [
+    "Nagoya Grampus",
+    11,
+    12,
+    14,
+    -4
+   ],
+   [
+    "Cerezo Osaka",
+    12,
+    12,
+    14,
+    -7
+   ],
+   [
+    "Shimizu S-Pulse",
+    13,
+    12,
+    14,
+    -10
+   ],
+   [
+    "V-Varen Nagasaki",
+    14,
+    12,
+    12,
+    -4
+   ],
+   [
+    "Gamba Osaka",
+    15,
+    12,
+    11,
+    -7
+   ],
+   [
+    "Kyoto",
+    16,
+    12,
+    10,
+    -8
+   ],
+   [
+    "Mito",
+    17,
+    12,
+    9,
+    -10
+   ],
+   [
+    "Verdy",
+    18,
+    12,
+    8,
+    -12
+   ],
+   [
+    "Avispa Fukuoka",
+    19,
+    12,
+    7,
+    -8
+   ],
+   [
+    "Chiba",
+    20,
+    12,
+    7,
     -12
    ]
   ]
