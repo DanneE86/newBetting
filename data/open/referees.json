@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T19:39:46.955Z",
+  "updatedAt": "2026-10-28T08:53:49.447Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 144,
   "referees": [
@@ -411,17 +411,6 @@
       "homeWinRate": 0.313
     },
     {
-      "league": "PL",
-      "referee": "S Barrott",
-      "matches": 51,
-      "yellowPg": 4.08,
-      "redPg": 0.039,
-      "bookingPointsPg": 41.8,
-      "foulsPg": 20.2,
-      "goalsPg": 3.1,
-      "homeWinRate": 0.392
-    },
-    {
       "league": "EL1",
       "referee": "S Jackson",
       "matches": 13,
@@ -464,6 +453,17 @@
       "foulsPg": 24.4,
       "goalsPg": 2.67,
       "homeWinRate": 0.444
+    },
+    {
+      "league": "PL",
+      "referee": "S Barrott",
+      "matches": 50,
+      "yellowPg": 4.04,
+      "redPg": 0.04,
+      "bookingPointsPg": 41.4,
+      "foulsPg": 20.2,
+      "goalsPg": 3.1,
+      "homeWinRate": 0.38
     },
     {
       "league": "EL1",
@@ -1104,6 +1104,17 @@
       "homeWinRate": 0.5
     },
     {
+      "league": "PL",
+      "referee": "A Taylor",
+      "matches": 60,
+      "yellowPg": 3.47,
+      "redPg": 0.133,
+      "bookingPointsPg": 38,
+      "foulsPg": 20.9,
+      "goalsPg": 3.33,
+      "homeWinRate": 0.35
+    },
+    {
       "league": "CH",
       "referee": "J Busby",
       "matches": 50,
@@ -1113,17 +1124,6 @@
       "foulsPg": 21.3,
       "goalsPg": 2.74,
       "homeWinRate": 0.38
-    },
-    {
-      "league": "PL",
-      "referee": "A Taylor",
-      "matches": 61,
-      "yellowPg": 3.44,
-      "redPg": 0.131,
-      "bookingPointsPg": 37.7,
-      "foulsPg": 20.9,
-      "goalsPg": 3.31,
-      "homeWinRate": 0.344
     },
     {
       "league": "CH",
@@ -1271,24 +1271,24 @@
     {
       "league": "CH",
       "referee": "D Whitestone",
-      "matches": 44,
+      "matches": 43,
       "yellowPg": 3.3,
-      "redPg": 0.068,
-      "bookingPointsPg": 34.7,
-      "foulsPg": 23.1,
-      "goalsPg": 2.39,
-      "homeWinRate": 0.341
+      "redPg": 0.07,
+      "bookingPointsPg": 34.8,
+      "foulsPg": 23.2,
+      "goalsPg": 2.35,
+      "homeWinRate": 0.326
     },
     {
       "league": "EL1",
       "referee": "B Speedie",
-      "matches": 38,
-      "yellowPg": 3.29,
-      "redPg": 0.053,
-      "bookingPointsPg": 34.2,
+      "matches": 37,
+      "yellowPg": 3.3,
+      "redPg": 0.054,
+      "bookingPointsPg": 34.3,
       "foulsPg": 24.2,
-      "goalsPg": 2.42,
-      "homeWinRate": 0.368
+      "goalsPg": 2.49,
+      "homeWinRate": 0.378
     },
     {
       "league": "EL1",

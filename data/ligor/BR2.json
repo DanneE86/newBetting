@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T08:16:27.699Z",
+ "updatedAt": "2026-10-28T08:50:51.723Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Série B",
@@ -119,6 +119,20 @@
   },
   {
    "rank": 9,
+   "team": "Goiás",
+   "fotmobName": "Goiás",
+   "fotmobId": 9862,
+   "group": null,
+   "played": 35,
+   "won": 15,
+   "drawn": 7,
+   "lost": 13,
+   "goals": "36-40",
+   "gd": -4,
+   "pts": 52
+  },
+  {
+   "rank": 10,
    "team": "Operário PR",
    "fotmobName": "Operário-PR",
    "fotmobId": 197429,
@@ -130,20 +144,6 @@
    "goals": "45-46",
    "gd": -1,
    "pts": 51
-  },
-  {
-   "rank": 10,
-   "team": "Goiás",
-   "fotmobName": "Goiás",
-   "fotmobId": 9862,
-   "group": null,
-   "played": 34,
-   "won": 14,
-   "drawn": 7,
-   "lost": 13,
-   "goals": "34-40",
-   "gd": -6,
-   "pts": 49
   },
   {
    "rank": 11,
@@ -203,20 +203,6 @@
   },
   {
    "rank": 15,
-   "team": "Ceará",
-   "fotmobName": "Ceará",
-   "fotmobId": 172341,
-   "group": null,
-   "played": 34,
-   "won": 11,
-   "drawn": 10,
-   "lost": 13,
-   "goals": "37-42",
-   "gd": -5,
-   "pts": 43
-  },
-  {
-   "rank": 16,
    "team": "Náutico",
    "fotmobName": "Náutico",
    "fotmobId": 2369,
@@ -226,6 +212,20 @@
    "drawn": 10,
    "lost": 14,
    "goals": "39-46",
+   "gd": -7,
+   "pts": 43
+  },
+  {
+   "rank": 16,
+   "team": "Ceará",
+   "fotmobName": "Ceará",
+   "fotmobId": 172341,
+   "group": null,
+   "played": 35,
+   "won": 11,
+   "drawn": 10,
+   "lost": 14,
+   "goals": "37-44",
    "gd": -7,
    "pts": 43
   },
@@ -1673,6 +1673,148 @@
    ],
    [
     "Náutico",
+    16,
+    35,
+    43,
+    -7
+   ],
+   [
+    "Avaí",
+    17,
+    35,
+    37,
+    -12
+   ],
+   [
+    "Londrina",
+    18,
+    35,
+    32,
+    -7
+   ],
+   [
+    "América Mineiro",
+    19,
+    35,
+    23,
+    -31
+   ],
+   [
+    "Ponte Preta",
+    20,
+    35,
+    15,
+    -55
+   ]
+  ],
+  "2026-10-28": [
+   [
+    "Novorizontino",
+    1,
+    35,
+    64,
+    32
+   ],
+   [
+    "Juventude",
+    2,
+    35,
+    64,
+    22
+   ],
+   [
+    "Vila Nova",
+    3,
+    35,
+    62,
+    14
+   ],
+   [
+    "Fortaleza",
+    4,
+    35,
+    61,
+    12
+   ],
+   [
+    "Criciúma",
+    5,
+    35,
+    59,
+    6
+   ],
+   [
+    "CRB",
+    6,
+    35,
+    55,
+    4
+   ],
+   [
+    "Sport",
+    7,
+    35,
+    54,
+    9
+   ],
+   [
+    "Atlético Goianiense",
+    8,
+    35,
+    54,
+    9
+   ],
+   [
+    "Goiás",
+    9,
+    35,
+    52,
+    -4
+   ],
+   [
+    "Operário PR",
+    10,
+    35,
+    51,
+    -1
+   ],
+   [
+    "São Bernardo",
+    11,
+    35,
+    49,
+    10
+   ],
+   [
+    "Botafogo-SP",
+    12,
+    35,
+    47,
+    2
+   ],
+   [
+    "Cuiabá",
+    13,
+    35,
+    47,
+    4
+   ],
+   [
+    "Athletic",
+    14,
+    35,
+    44,
+    0
+   ],
+   [
+    "Náutico",
+    15,
+    35,
+    43,
+    -7
+   ],
+   [
+    "Ceará",
     16,
     35,
     43,

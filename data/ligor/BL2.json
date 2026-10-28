@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-28T08:50:51.723Z",
  "league": "BL2",
  "fotmobId": 146,
  "name": "2. Bundesliga",
@@ -105,6 +105,20 @@
   },
   {
    "rank": 8,
+   "team": "Osnabruck",
+   "fotmobName": "VfL Osnabrück",
+   "fotmobId": 9775,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "14-15",
+   "gd": -1,
+   "pts": 11
+  },
+  {
+   "rank": 9,
    "team": "Bielefeld",
    "fotmobName": "Arminia Bielefeld",
    "fotmobId": 9912,
@@ -118,7 +132,21 @@
    "pts": 11
   },
   {
-   "rank": 9,
+   "rank": 10,
+   "team": "Braunschweig",
+   "fotmobName": "Eintracht Braunschweig",
+   "fotmobId": 9776,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "15-15",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 11,
    "team": "Cottbus",
    "fotmobName": "Energie Cottbus",
    "fotmobId": 8398,
@@ -132,49 +160,35 @@
    "pts": 10
   },
   {
-   "rank": 10,
+   "rank": 12,
    "team": "Greuther Furth",
    "fotmobName": "Greuther Fürth",
    "fotmobId": 8357,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 3,
-   "lost": 3,
-   "goals": "12-13",
-   "gd": -1,
+   "lost": 4,
+   "goals": "12-16",
+   "gd": -4,
    "pts": 9
   },
   {
-   "rank": 11,
-   "team": "Dresden",
-   "fotmobName": "Dynamo Dresden",
-   "fotmobId": 8480,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "11-15",
-   "gd": -4,
-   "pts": 8
-  },
-  {
-   "rank": 12,
-   "team": "Osnabruck",
-   "fotmobName": "VfL Osnabrück",
-   "fotmobId": 9775,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "11-15",
-   "gd": -4,
-   "pts": 8
-  },
-  {
    "rank": 13,
+   "team": "Holstein Kiel",
+   "fotmobName": "Holstein Kiel",
+   "fotmobId": 8150,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 5,
+   "lost": 3,
+   "goals": "10-11",
+   "gd": -1,
+   "pts": 8
+  },
+  {
+   "rank": 14,
    "team": "Bochum",
    "fotmobName": "Bochum",
    "fotmobId": 9911,
@@ -188,21 +202,35 @@
    "pts": 8
   },
   {
-   "rank": 14,
+   "rank": 15,
+   "team": "Dresden",
+   "fotmobName": "Dynamo Dresden",
+   "fotmobId": 8480,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "11-18",
+   "gd": -7,
+   "pts": 8
+  },
+  {
+   "rank": 16,
    "team": "Hannover",
    "fotmobName": "Hannover 96",
    "fotmobId": 9904,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 2,
-   "lost": 4,
-   "goals": "8-13",
-   "gd": -5,
+   "lost": 5,
+   "goals": "8-15",
+   "gd": -7,
    "pts": 8
   },
   {
-   "rank": 15,
+   "rank": 17,
    "team": "Karlsruhe",
    "fotmobName": "Karlsruher SC",
    "fotmobId": 8295,
@@ -216,7 +244,7 @@
    "pts": 8
   },
   {
-   "rank": 16,
+   "rank": 18,
    "team": "Darmstadt",
    "fotmobName": "Darmstadt",
    "fotmobId": 8262,
@@ -228,34 +256,6 @@
    "goals": "8-18",
    "gd": -10,
    "pts": 8
-  },
-  {
-   "rank": 17,
-   "team": "Braunschweig",
-   "fotmobName": "Eintracht Braunschweig",
-   "fotmobId": 9776,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 1,
-   "lost": 5,
-   "goals": "13-15",
-   "gd": -2,
-   "pts": 7
-  },
-  {
-   "rank": 18,
-   "team": "Holstein Kiel",
-   "fotmobName": "Holstein Kiel",
-   "fotmobId": 8150,
-   "group": null,
-   "played": 8,
-   "won": 0,
-   "drawn": 5,
-   "lost": 3,
-   "goals": "7-11",
-   "gd": -4,
-   "pts": 5
   }
  ],
  "tableHistory": {
@@ -1281,6 +1281,134 @@
     8,
     5,
     -4
+   ]
+  ],
+  "2026-10-28": [
+   [
+    "Hertha",
+    1,
+    9,
+    25,
+    12
+   ],
+   [
+    "Nurnberg",
+    2,
+    9,
+    18,
+    9
+   ],
+   [
+    "Kaiserslautern",
+    3,
+    9,
+    18,
+    5
+   ],
+   [
+    "Wolfsburg",
+    4,
+    9,
+    16,
+    9
+   ],
+   [
+    "Magdeburg",
+    5,
+    9,
+    16,
+    8
+   ],
+   [
+    "Heidenheim",
+    6,
+    9,
+    15,
+    0
+   ],
+   [
+    "St Pauli",
+    7,
+    9,
+    12,
+    2
+   ],
+   [
+    "Osnabruck",
+    8,
+    9,
+    11,
+    -1
+   ],
+   [
+    "Bielefeld",
+    9,
+    9,
+    11,
+    -1
+   ],
+   [
+    "Braunschweig",
+    10,
+    9,
+    10,
+    0
+   ],
+   [
+    "Cottbus",
+    11,
+    9,
+    10,
+    -1
+   ],
+   [
+    "Greuther Furth",
+    12,
+    9,
+    9,
+    -4
+   ],
+   [
+    "Holstein Kiel",
+    13,
+    9,
+    8,
+    -1
+   ],
+   [
+    "Bochum",
+    14,
+    9,
+    8,
+    -4
+   ],
+   [
+    "Dresden",
+    15,
+    9,
+    8,
+    -7
+   ],
+   [
+    "Hannover",
+    16,
+    9,
+    8,
+    -7
+   ],
+   [
+    "Karlsruhe",
+    17,
+    9,
+    8,
+    -9
+   ],
+   [
+    "Darmstadt",
+    18,
+    9,
+    8,
+    -10
    ]
   ]
  }

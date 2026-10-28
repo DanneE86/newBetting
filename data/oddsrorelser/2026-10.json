@@ -1798,7 +1798,120 @@
    },
    "flagged": [],
    "savedAt": "2026-10-27T19:39:55.154Z"
+  },
+  "2026-10-28|SA|Milan|Bologna": {
+   "key": "2026-10-28|SA|Milan|Bologna",
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Milan",
+   "away": "Bologna",
+   "kickoffUtc": "2026-10-28T17:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-27T19:39:11.887Z",
+   "lastAt": "2026-10-28T08:53:14.771Z",
+   "minBeforeKick": 517,
+   "moves": {
+    "home": {
+     "from": 1.64,
+     "to": 1.64,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4,
+     "to": 4,
+     "pp": 0
+    },
+    "away": {
+     "from": 5.75,
+     "to": 5.75,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.85,
+     "to": 1.85,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2,
+     "to": 2,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-28T08:53:57.919Z"
+  },
+  "2026-10-28|SA|Parma|Udinese": {
+   "key": "2026-10-28|SA|Parma|Udinese",
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Parma",
+   "away": "Udinese",
+   "kickoffUtc": "2026-10-28T17:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-27T19:38:57.061Z",
+   "lastAt": "2026-10-28T08:53:05.372Z",
+   "minBeforeKick": 517,
+   "moves": {
+    "home": {
+     "from": 2.88,
+     "to": 2.75,
+     "pp": 1.2
+    },
+    "draw": {
+     "from": 3.2,
+     "to": 3.25,
+     "pp": -0.8
+    },
+    "away": {
+     "from": 2.7,
+     "to": 2.7,
+     "pp": -0.4
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-28T08:53:57.919Z"
+  },
+  "2026-10-28|SA|Venezia|Inter": {
+   "key": "2026-10-28|SA|Venezia|Inter",
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Venezia",
+   "away": "Inter",
+   "kickoffUtc": "2026-10-28T17:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-27T19:39:11.887Z",
+   "lastAt": "2026-10-28T08:53:14.771Z",
+   "minBeforeKick": 517,
+   "moves": {
+    "home": {
+     "from": 8.5,
+     "to": 8.5,
+     "pp": 0
+    },
+    "draw": {
+     "from": 5.75,
+     "to": 5.75,
+     "pp": 0
+    },
+    "away": {
+     "from": 1.36,
+     "to": 1.36,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.37,
+     "to": 1.37,
+     "pp": 0
+    },
+    "under25": {
+     "from": 3.3,
+     "to": 3.3,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-28T08:53:57.919Z"
   }
  },
- "updatedAt": "2026-10-27T19:39:55.155Z"
+ "updatedAt": "2026-10-28T08:53:57.920Z"
 }
