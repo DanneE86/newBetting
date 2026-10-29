@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "AS",
  "fotmobId": 67,
  "name": "Allsvenskan",
@@ -39,13 +39,13 @@
    "fotmobName": "Djurgården",
    "fotmobId": 9802,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 15,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 7,
-   "goals": "52-23",
+   "goals": "53-24",
    "gd": 29,
-   "pts": 48
+   "pts": 49
   },
   {
    "rank": 4,
@@ -53,13 +53,13 @@
    "fotmobName": "Häcken",
    "fotmobId": 8428,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 12,
-   "drawn": 9,
+   "drawn": 10,
    "lost": 4,
    "goals": "47-30",
    "gd": 17,
-   "pts": 45
+   "pts": 46
   },
   {
    "rank": 5,
@@ -81,16 +81,30 @@
    "fotmobName": "Västerås SK",
    "fotmobId": 6194,
    "group": null,
-   "played": 25,
-   "won": 11,
+   "played": 26,
+   "won": 12,
    "drawn": 5,
    "lost": 9,
-   "goals": "36-38",
-   "gd": -2,
-   "pts": 38
+   "goals": "39-38",
+   "gd": 1,
+   "pts": 41
   },
   {
    "rank": 7,
+   "team": "Malmo FF",
+   "fotmobName": "Malmö FF",
+   "fotmobId": 10237,
+   "group": null,
+   "played": 26,
+   "won": 12,
+   "drawn": 4,
+   "lost": 10,
+   "goals": "41-34",
+   "gd": 7,
+   "pts": 40
+  },
+  {
+   "rank": 8,
    "team": "AIK",
    "fotmobName": "AIK",
    "fotmobId": 8349,
@@ -104,32 +118,18 @@
    "pts": 38
   },
   {
-   "rank": 8,
-   "team": "Malmo FF",
-   "fotmobName": "Malmö FF",
-   "fotmobId": 10237,
-   "group": null,
-   "played": 25,
-   "won": 11,
-   "drawn": 4,
-   "lost": 10,
-   "goals": "38-34",
-   "gd": 4,
-   "pts": 37
-  },
-  {
    "rank": 9,
    "team": "Goteborg",
    "fotmobName": "IFK Göteborg",
    "fotmobId": 9893,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 10,
-   "drawn": 7,
+   "drawn": 8,
    "lost": 8,
-   "goals": "35-44",
+   "goals": "36-45",
    "gd": -9,
-   "pts": 37
+   "pts": 38
   },
   {
    "rank": 10,
@@ -137,13 +137,13 @@
    "fotmobName": "Brommapojkarna",
    "fotmobId": 8501,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 9,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 10,
    "goals": "39-43",
    "gd": -4,
-   "pts": 33
+   "pts": 34
   },
   {
    "rank": 11,
@@ -193,12 +193,12 @@
    "fotmobName": "Degerfors",
    "fotmobId": 6544,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 5,
    "drawn": 5,
-   "lost": 15,
-   "goals": "21-41",
-   "gd": -20,
+   "lost": 16,
+   "goals": "21-44",
+   "gd": -23,
    "pts": 20
   },
   {
@@ -221,12 +221,12 @@
    "fotmobName": "Halmstads BK",
    "fotmobId": 8310,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 4,
    "drawn": 5,
-   "lost": 16,
-   "goals": "18-46",
-   "gd": -28,
+   "lost": 17,
+   "goals": "18-49",
+   "gd": -31,
    "pts": 17
   }
  ],
@@ -1483,6 +1483,120 @@
     25,
     17,
     -28
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Sirius",
+    1,
+    25,
+    55,
+    24
+   ],
+   [
+    "Hammarby",
+    2,
+    25,
+    49,
+    31
+   ],
+   [
+    "Djurgarden",
+    3,
+    26,
+    49,
+    29
+   ],
+   [
+    "Hacken",
+    4,
+    26,
+    46,
+    17
+   ],
+   [
+    "Elfsborg",
+    5,
+    26,
+    43,
+    13
+   ],
+   [
+    "Vasteras SK",
+    6,
+    26,
+    41,
+    1
+   ],
+   [
+    "Malmo FF",
+    7,
+    26,
+    40,
+    7
+   ],
+   [
+    "AIK",
+    8,
+    26,
+    38,
+    -3
+   ],
+   [
+    "Goteborg",
+    9,
+    26,
+    38,
+    -9
+   ],
+   [
+    "Brommapojkarna",
+    10,
+    26,
+    34,
+    -4
+   ],
+   [
+    "GAIS",
+    11,
+    25,
+    31,
+    5
+   ],
+   [
+    "Mjallby",
+    12,
+    25,
+    23,
+    -14
+   ],
+   [
+    "Kalmar",
+    13,
+    25,
+    22,
+    -18
+   ],
+   [
+    "Degerfors",
+    14,
+    26,
+    20,
+    -23
+   ],
+   [
+    "Orgryte",
+    15,
+    25,
+    19,
+    -25
+   ],
+   [
+    "Halmstad",
+    16,
+    26,
+    17,
+    -31
    ]
   ]
  }

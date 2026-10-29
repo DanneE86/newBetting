@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "BR",
  "fotmobId": 268,
  "name": "Série A",
@@ -25,13 +25,13 @@
    "fotmobName": "Palmeiras",
    "fotmobId": 10283,
    "group": null,
-   "played": 32,
+   "played": 33,
    "won": 20,
-   "drawn": 9,
+   "drawn": 10,
    "lost": 3,
    "goals": "56-22",
    "gd": 34,
-   "pts": 69
+   "pts": 70
   },
   {
    "rank": 3,
@@ -67,16 +67,30 @@
    "fotmobName": "Fluminense",
    "fotmobId": 9863,
    "group": null,
-   "played": 32,
-   "won": 14,
+   "played": 33,
+   "won": 15,
    "drawn": 9,
    "lost": 9,
-   "goals": "50-41",
-   "gd": 9,
-   "pts": 51
+   "goals": "52-42",
+   "gd": 10,
+   "pts": 54
   },
   {
    "rank": 6,
+   "team": "Bahia",
+   "fotmobName": "Bahia",
+   "fotmobId": 7877,
+   "group": null,
+   "played": 33,
+   "won": 14,
+   "drawn": 11,
+   "lost": 8,
+   "goals": "48-42",
+   "gd": 6,
+   "pts": 53
+  },
+  {
+   "rank": 7,
    "team": "Atletico-MG",
    "fotmobName": "Atlético-MG",
    "fotmobId": 10272,
@@ -90,60 +104,46 @@
    "pts": 50
   },
   {
-   "rank": 7,
-   "team": "Bahia",
-   "fotmobName": "Bahia",
-   "fotmobId": 7877,
-   "group": null,
-   "played": 32,
-   "won": 13,
-   "drawn": 11,
-   "lost": 8,
-   "goals": "45-40",
-   "gd": 5,
-   "pts": 50
-  },
-  {
    "rank": 8,
    "team": "Santos",
    "fotmobName": "Santos",
    "fotmobId": 8514,
    "group": null,
-   "played": 32,
+   "played": 33,
    "won": 12,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 10,
    "goals": "49-47",
    "gd": 2,
-   "pts": 46
+   "pts": 47
   },
   {
    "rank": 9,
-   "team": "Sao Paulo",
-   "fotmobName": "São Paulo",
-   "fotmobId": 10277,
-   "group": null,
-   "played": 32,
-   "won": 12,
-   "drawn": 7,
-   "lost": 13,
-   "goals": "37-36",
-   "gd": 1,
-   "pts": 43
-  },
-  {
-   "rank": 10,
    "team": "Bragantino",
    "fotmobName": "RB Bragantino",
    "fotmobId": 109705,
    "group": null,
-   "played": 32,
-   "won": 11,
+   "played": 33,
+   "won": 12,
    "drawn": 8,
    "lost": 13,
-   "goals": "39-38",
-   "gd": 1,
-   "pts": 41
+   "goals": "42-38",
+   "gd": 4,
+   "pts": 44
+  },
+  {
+   "rank": 10,
+   "team": "Sao Paulo",
+   "fotmobName": "São Paulo",
+   "fotmobId": 10277,
+   "group": null,
+   "played": 33,
+   "won": 12,
+   "drawn": 7,
+   "lost": 14,
+   "goals": "39-39",
+   "gd": 0,
+   "pts": 43
   },
   {
    "rank": 11,
@@ -151,12 +151,12 @@
    "fotmobName": "Botafogo",
    "fotmobId": 8517,
    "group": null,
-   "played": 32,
+   "played": 33,
    "won": 10,
    "drawn": 9,
-   "lost": 13,
-   "goals": "44-51",
-   "gd": -7,
+   "lost": 14,
+   "goals": "45-53",
+   "gd": -8,
    "pts": 39
   },
   {
@@ -221,12 +221,12 @@
    "fotmobName": "Internacional",
    "fotmobId": 8702,
    "group": null,
-   "played": 32,
+   "played": 33,
    "won": 8,
    "drawn": 11,
-   "lost": 13,
-   "goals": "36-40",
-   "gd": -4,
+   "lost": 14,
+   "goals": "37-42",
+   "gd": -5,
    "pts": 35
   },
   {
@@ -263,13 +263,13 @@
    "fotmobName": "Remo",
    "fotmobId": 1626,
    "group": null,
-   "played": 32,
-   "won": 5,
+   "played": 33,
+   "won": 6,
    "drawn": 11,
    "lost": 16,
-   "goals": "34-50",
-   "gd": -16,
-   "pts": 26
+   "goals": "36-51",
+   "gd": -15,
+   "pts": 29
   },
   {
    "rank": 20,
@@ -277,12 +277,12 @@
    "fotmobName": "Chapecoense",
    "fotmobId": 197693,
    "group": null,
-   "played": 31,
+   "played": 32,
    "won": 4,
    "drawn": 9,
-   "lost": 18,
-   "goals": "32-63",
-   "gd": -31,
+   "lost": 19,
+   "goals": "32-66",
+   "gd": -34,
    "pts": 21
   }
  ],
@@ -1705,6 +1705,148 @@
     31,
     21,
     -31
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Flamengo RJ",
+    1,
+    32,
+    70,
+    37
+   ],
+   [
+    "Palmeiras",
+    2,
+    33,
+    70,
+    34
+   ],
+   [
+    "Cruzeiro",
+    3,
+    32,
+    54,
+    5
+   ],
+   [
+    "Athletico-PR",
+    4,
+    32,
+    54,
+    12
+   ],
+   [
+    "Fluminense",
+    5,
+    33,
+    54,
+    10
+   ],
+   [
+    "Bahia",
+    6,
+    33,
+    53,
+    6
+   ],
+   [
+    "Atletico-MG",
+    7,
+    32,
+    50,
+    6
+   ],
+   [
+    "Santos",
+    8,
+    33,
+    47,
+    2
+   ],
+   [
+    "Bragantino",
+    9,
+    33,
+    44,
+    4
+   ],
+   [
+    "Sao Paulo",
+    10,
+    33,
+    43,
+    0
+   ],
+   [
+    "Botafogo RJ",
+    11,
+    33,
+    39,
+    -8
+   ],
+   [
+    "Coritiba",
+    12,
+    32,
+    39,
+    -12
+   ],
+   [
+    "Vasco",
+    13,
+    31,
+    38,
+    -6
+   ],
+   [
+    "Vitoria",
+    14,
+    32,
+    38,
+    -11
+   ],
+   [
+    "Mirassol",
+    15,
+    32,
+    37,
+    -8
+   ],
+   [
+    "Internacional",
+    16,
+    33,
+    35,
+    -5
+   ],
+   [
+    "Gremio",
+    17,
+    32,
+    34,
+    -9
+   ],
+   [
+    "Corinthians",
+    18,
+    32,
+    33,
+    -8
+   ],
+   [
+    "Remo",
+    19,
+    33,
+    29,
+    -15
+   ],
+   [
+    "Chapecoense-SC",
+    20,
+    32,
+    21,
+    -34
    ]
   ]
  }

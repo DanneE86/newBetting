@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "MX",
  "fotmobId": 230,
  "name": "Liga MX",
@@ -11,13 +11,13 @@
    "fotmobName": "CF América",
    "fotmobId": 6576,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 8,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 2,
-   "goals": "33-18",
+   "goals": "34-19",
    "gd": 15,
-   "pts": 27
+   "pts": 28
   },
   {
    "rank": 2,
@@ -91,6 +91,20 @@
   },
   {
    "rank": 7,
+   "team": "Club Tijuana",
+   "fotmobName": "Tijuana",
+   "fotmobId": 162418,
+   "group": null,
+   "played": 14,
+   "won": 5,
+   "drawn": 6,
+   "lost": 3,
+   "goals": "22-18",
+   "gd": 4,
+   "pts": 21
+  },
+  {
+   "rank": 8,
    "team": "Monterrey",
    "fotmobName": "Monterrey",
    "fotmobId": 7849,
@@ -101,20 +115,6 @@
    "lost": 5,
    "goals": "23-18",
    "gd": 5,
-   "pts": 20
-  },
-  {
-   "rank": 8,
-   "team": "Club Tijuana",
-   "fotmobName": "Tijuana",
-   "fotmobId": 162418,
-   "group": null,
-   "played": 13,
-   "won": 5,
-   "drawn": 5,
-   "lost": 3,
-   "goals": "21-17",
-   "gd": 4,
    "pts": 20
   },
   {
@@ -1595,6 +1595,134 @@
     13,
     20,
     4
+   ],
+   [
+    "Queretaro",
+    9,
+    13,
+    20,
+    -1
+   ],
+   [
+    "Santos Laguna",
+    10,
+    14,
+    19,
+    0
+   ],
+   [
+    "Atl. San Luis",
+    11,
+    14,
+    19,
+    -3
+   ],
+   [
+    "UNAM Pumas",
+    12,
+    14,
+    17,
+    -3
+   ],
+   [
+    "Pachuca",
+    13,
+    14,
+    16,
+    3
+   ],
+   [
+    "Puebla",
+    14,
+    14,
+    16,
+    -5
+   ],
+   [
+    "Tigres UANL",
+    15,
+    14,
+    15,
+    -4
+   ],
+   [
+    "Atlante",
+    16,
+    14,
+    14,
+    -6
+   ],
+   [
+    "Necaxa",
+    17,
+    14,
+    10,
+    -11
+   ],
+   [
+    "Juarez",
+    18,
+    14,
+    5,
+    -24
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Club America",
+    1,
+    14,
+    28,
+    15
+   ],
+   [
+    "Cruz Azul",
+    2,
+    14,
+    26,
+    9
+   ],
+   [
+    "Guadalajara Chivas",
+    3,
+    14,
+    26,
+    9
+   ],
+   [
+    "Atlas",
+    4,
+    14,
+    24,
+    -1
+   ],
+   [
+    "Toluca",
+    5,
+    14,
+    23,
+    10
+   ],
+   [
+    "Club Leon",
+    6,
+    14,
+    22,
+    3
+   ],
+   [
+    "Club Tijuana",
+    7,
+    14,
+    21,
+    4
+   ],
+   [
+    "Monterrey",
+    8,
+    13,
+    20,
+    5
    ],
    [
     "Queretaro",

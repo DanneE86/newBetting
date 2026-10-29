@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "SA",
  "fotmobId": 55,
  "name": "Serie A",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Inter",
+   "fotmobName": "Inter",
+   "fotmobId": 8636,
+   "group": null,
+   "played": 9,
+   "won": 8,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "25-10",
+   "gd": 15,
+   "pts": 25
+  },
+  {
+   "rank": 2,
    "team": "Lazio",
    "fotmobName": "Lazio",
    "fotmobId": 8543,
@@ -18,20 +32,6 @@
    "goals": "22-7",
    "gd": 15,
    "pts": 25
-  },
-  {
-   "rank": 2,
-   "team": "Inter",
-   "fotmobName": "Inter",
-   "fotmobId": 8636,
-   "group": null,
-   "played": 8,
-   "won": 7,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "23-10",
-   "gd": 13,
-   "pts": 22
   },
   {
    "rank": 3,
@@ -67,16 +67,30 @@
    "fotmobName": "Milan",
    "fotmobId": 8564,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 5,
    "drawn": 3,
-   "lost": 0,
-   "goals": "16-7",
-   "gd": 9,
+   "lost": 1,
+   "goals": "18-11",
+   "gd": 7,
    "pts": 18
   },
   {
    "rank": 6,
+   "team": "Napoli",
+   "fotmobName": "Napoli",
+   "fotmobId": 9875,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "17-11",
+   "gd": 6,
+   "pts": 14
+  },
+  {
+   "rank": 7,
    "team": "Frosinone",
    "fotmobName": "Frosinone",
    "fotmobId": 9891,
@@ -90,21 +104,21 @@
    "pts": 14
   },
   {
-   "rank": 7,
+   "rank": 8,
    "team": "Juventus",
    "fotmobName": "Juventus",
    "fotmobId": 9885,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 4,
    "drawn": 2,
-   "lost": 2,
-   "goals": "11-8",
-   "gd": 3,
+   "lost": 3,
+   "goals": "11-10",
+   "gd": 1,
    "pts": 14
   },
   {
-   "rank": 8,
+   "rank": 9,
    "team": "Torino",
    "fotmobName": "Torino",
    "fotmobId": 9804,
@@ -118,7 +132,7 @@
    "pts": 13
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "Cagliari",
    "fotmobName": "Cagliari",
    "fotmobId": 8529,
@@ -132,21 +146,21 @@
    "pts": 13
   },
   {
-   "rank": 10,
-   "team": "Napoli",
-   "fotmobName": "Napoli",
-   "fotmobId": 9875,
+   "rank": 11,
+   "team": "Bologna",
+   "fotmobName": "Bologna",
+   "fotmobId": 9857,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
    "drawn": 2,
-   "lost": 3,
-   "goals": "13-10",
-   "gd": 3,
+   "lost": 4,
+   "goals": "12-12",
+   "gd": 0,
    "pts": 11
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Atalanta",
    "fotmobName": "Atalanta",
    "fotmobId": 8524,
@@ -160,7 +174,21 @@
    "pts": 10
   },
   {
-   "rank": 12,
+   "rank": 13,
+   "team": "Genoa",
+   "fotmobName": "Genoa",
+   "fotmobId": 10233,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "8-13",
+   "gd": -5,
+   "pts": 10
+  },
+  {
+   "rank": 14,
    "team": "Lecce",
    "fotmobName": "Lecce",
    "fotmobId": 9888,
@@ -174,21 +202,7 @@
    "pts": 9
   },
   {
-   "rank": 13,
-   "team": "Bologna",
-   "fotmobName": "Bologna",
-   "fotmobId": 9857,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "8-10",
-   "gd": -2,
-   "pts": 8
-  },
-  {
-   "rank": 14,
+   "rank": 15,
    "team": "Sassuolo",
    "fotmobName": "Sassuolo",
    "fotmobId": 7943,
@@ -202,31 +216,17 @@
    "pts": 8
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Monza",
    "fotmobName": "Monza",
    "fotmobId": 6504,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 2,
    "drawn": 1,
-   "lost": 5,
-   "goals": "15-18",
-   "gd": -3,
-   "pts": 7
-  },
-  {
-   "rank": 16,
-   "team": "Genoa",
-   "fotmobName": "Genoa",
-   "fotmobId": 10233,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 1,
-   "lost": 5,
-   "goals": "6-13",
-   "gd": -7,
+   "lost": 6,
+   "goals": "16-22",
+   "gd": -6,
    "pts": 7
   },
   {
@@ -235,16 +235,30 @@
    "fotmobName": "Udinese",
    "fotmobId": 8600,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 1,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 6,
    "goals": "9-18",
    "gd": -9,
-   "pts": 4
+   "pts": 5
   },
   {
    "rank": 18,
+   "team": "Parma",
+   "fotmobName": "Parma",
+   "fotmobId": 10167,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 2,
+   "lost": 6,
+   "goals": "5-15",
+   "gd": -10,
+   "pts": 5
+  },
+  {
+   "rank": 19,
    "team": "Fiorentina",
    "fotmobName": "Fiorentina",
    "fotmobId": 8535,
@@ -258,31 +272,17 @@
    "pts": 4
   },
   {
-   "rank": 19,
-   "team": "Parma",
-   "fotmobName": "Parma",
-   "fotmobId": 10167,
-   "group": null,
-   "played": 8,
-   "won": 1,
-   "drawn": 1,
-   "lost": 6,
-   "goals": "5-15",
-   "gd": -10,
-   "pts": 4
-  },
-  {
    "rank": 20,
    "team": "Venezia",
    "fotmobName": "Venezia",
    "fotmobId": 7881,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 1,
    "drawn": 0,
-   "lost": 7,
-   "goals": "6-17",
-   "gd": -11,
+   "lost": 8,
+   "goals": "6-19",
+   "gd": -13,
    "pts": 3
   }
  ],
@@ -1705,6 +1705,148 @@
     8,
     3,
     -11
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Inter",
+    1,
+    9,
+    25,
+    15
+   ],
+   [
+    "Lazio",
+    2,
+    9,
+    25,
+    15
+   ],
+   [
+    "Roma",
+    3,
+    9,
+    21,
+    15
+   ],
+   [
+    "Como",
+    4,
+    9,
+    20,
+    9
+   ],
+   [
+    "Milan",
+    5,
+    9,
+    18,
+    7
+   ],
+   [
+    "Napoli",
+    6,
+    9,
+    14,
+    6
+   ],
+   [
+    "Frosinone",
+    7,
+    8,
+    14,
+    4
+   ],
+   [
+    "Juventus",
+    8,
+    9,
+    14,
+    1
+   ],
+   [
+    "Torino",
+    9,
+    9,
+    13,
+    0
+   ],
+   [
+    "Cagliari",
+    10,
+    9,
+    13,
+    -5
+   ],
+   [
+    "Bologna",
+    11,
+    9,
+    11,
+    0
+   ],
+   [
+    "Atalanta",
+    12,
+    8,
+    10,
+    -1
+   ],
+   [
+    "Genoa",
+    13,
+    9,
+    10,
+    -5
+   ],
+   [
+    "Lecce",
+    14,
+    8,
+    9,
+    -5
+   ],
+   [
+    "Sassuolo",
+    15,
+    9,
+    8,
+    -8
+   ],
+   [
+    "Monza",
+    16,
+    9,
+    7,
+    -6
+   ],
+   [
+    "Udinese",
+    17,
+    9,
+    5,
+    -9
+   ],
+   [
+    "Parma",
+    18,
+    9,
+    5,
+    -10
+   ],
+   [
+    "Fiorentina",
+    19,
+    8,
+    4,
+    -10
+   ],
+   [
+    "Venezia",
+    20,
+    9,
+    3,
+    -13
    ]
   ]
  }

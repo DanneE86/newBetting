@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T08:16:27.699Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "EL1",
  "fotmobId": 108,
  "name": "League One",
@@ -25,16 +25,30 @@
    "fotmobName": "Stockport County",
    "fotmobId": 10007,
    "group": null,
-   "played": 12,
+   "played": 13,
    "won": 7,
    "drawn": 2,
-   "lost": 3,
-   "goals": "24-12",
-   "gd": 12,
+   "lost": 4,
+   "goals": "24-13",
+   "gd": 11,
    "pts": 23
   },
   {
    "rank": 3,
+   "team": "Oxford",
+   "fotmobName": "Oxford United",
+   "fotmobId": 8653,
+   "group": null,
+   "played": 11,
+   "won": 6,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "19-10",
+   "gd": 9,
+   "pts": 22
+  },
+  {
+   "rank": 4,
    "team": "Bradford",
    "fotmobName": "Bradford City",
    "fotmobId": 8484,
@@ -48,7 +62,7 @@
    "pts": 22
   },
   {
-   "rank": 4,
+   "rank": 5,
    "team": "Plymouth",
    "fotmobName": "Plymouth Argyle",
    "fotmobId": 8401,
@@ -62,7 +76,7 @@
    "pts": 22
   },
   {
-   "rank": 5,
+   "rank": 6,
    "team": "Reading",
    "fotmobName": "Reading",
    "fotmobId": 9798,
@@ -76,49 +90,49 @@
    "pts": 21
   },
   {
-   "rank": 6,
+   "rank": 7,
    "team": "Cambridge",
    "fotmobName": "Cambridge United",
    "fotmobId": 9834,
    "group": null,
-   "played": 12,
+   "played": 13,
    "won": 5,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 2,
-   "goals": "20-17",
+   "goals": "21-18",
    "gd": 3,
-   "pts": 20
-  },
-  {
-   "rank": 7,
-   "team": "Oxford",
-   "fotmobName": "Oxford United",
-   "fotmobId": 8653,
-   "group": null,
-   "played": 10,
-   "won": 5,
-   "drawn": 4,
-   "lost": 1,
-   "goals": "18-10",
-   "gd": 8,
-   "pts": 19
+   "pts": 21
   },
   {
    "rank": 8,
+   "team": "Luton",
+   "fotmobName": "Luton Town",
+   "fotmobId": 8346,
+   "group": null,
+   "played": 12,
+   "won": 6,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "24-20",
+   "gd": 4,
+   "pts": 20
+  },
+  {
+   "rank": 9,
    "team": "Sheffield Weds",
    "fotmobName": "Sheffield Wednesday",
    "fotmobId": 10163,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 5,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 3,
-   "goals": "20-12",
+   "goals": "21-13",
    "gd": 8,
-   "pts": 18
+   "pts": 19
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "Mansfield",
    "fotmobName": "Mansfield Town",
    "fotmobId": 9818,
@@ -132,21 +146,21 @@
    "pts": 18
   },
   {
-   "rank": 10,
-   "team": "Luton",
-   "fotmobName": "Luton Town",
-   "fotmobId": 8346,
+   "rank": 11,
+   "team": "Leicester",
+   "fotmobName": "Leicester City",
+   "fotmobId": 8197,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 5,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 4,
-   "goals": "21-19",
-   "gd": 2,
-   "pts": 17
+   "goals": "20-17",
+   "gd": 3,
+   "pts": 18
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Burton",
    "fotmobName": "Burton Albion",
    "fotmobId": 9792,
@@ -160,7 +174,7 @@
    "pts": 17
   },
   {
-   "rank": 12,
+   "rank": 13,
    "team": "Stevenage",
    "fotmobName": "Stevenage",
    "fotmobId": 10253,
@@ -174,21 +188,21 @@
    "pts": 15
   },
   {
-   "rank": 13,
-   "team": "Leicester",
-   "fotmobName": "Leicester City",
-   "fotmobId": 8197,
+   "rank": 14,
+   "team": "Milton Keynes Dons",
+   "fotmobName": "Milton Keynes Dons",
+   "fotmobId": 8645,
    "group": null,
-   "played": 11,
-   "won": 4,
-   "drawn": 3,
-   "lost": 4,
-   "goals": "17-17",
-   "gd": 0,
+   "played": 12,
+   "won": 3,
+   "drawn": 6,
+   "lost": 3,
+   "goals": "16-19",
+   "gd": -3,
    "pts": 15
   },
   {
-   "rank": 14,
+   "rank": 15,
    "team": "Wycombe",
    "fotmobName": "Wycombe Wanderers",
    "fotmobId": 8676,
@@ -202,7 +216,7 @@
    "pts": 15
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Leyton Orient",
    "fotmobName": "Leyton Orient",
    "fotmobId": 8351,
@@ -216,7 +230,7 @@
    "pts": 14
   },
   {
-   "rank": 16,
+   "rank": 17,
    "team": "AFC Wimbledon",
    "fotmobName": "AFC Wimbledon",
    "fotmobId": 158319,
@@ -230,31 +244,17 @@
    "pts": 13
   },
   {
-   "rank": 17,
+   "rank": 18,
    "team": "Doncaster",
    "fotmobName": "Doncaster Rovers",
    "fotmobId": 9903,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 3,
    "drawn": 3,
-   "lost": 5,
-   "goals": "12-13",
-   "gd": -1,
-   "pts": 12
-  },
-  {
-   "rank": 18,
-   "team": "Milton Keynes Dons",
-   "fotmobName": "Milton Keynes Dons",
-   "fotmobId": 8645,
-   "group": null,
-   "played": 11,
-   "won": 2,
-   "drawn": 6,
-   "lost": 3,
-   "goals": "12-18",
-   "gd": -6,
+   "lost": 6,
+   "goals": "13-16",
+   "gd": -3,
    "pts": 12
   },
   {
@@ -305,12 +305,12 @@
    "fotmobName": "Bromley",
    "fotmobId": 45729,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 3,
-   "lost": 6,
-   "goals": "10-26",
-   "gd": -16,
+   "lost": 7,
+   "goals": "11-30",
+   "gd": -19,
    "pts": 9
   },
   {
@@ -333,12 +333,12 @@
    "fotmobName": "Wigan Athletic",
    "fotmobId": 8528,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 1,
-   "lost": 8,
-   "goals": "8-17",
-   "gd": -9,
+   "lost": 9,
+   "goals": "8-20",
+   "gd": -12,
    "pts": 7
   }
  ],
@@ -2211,6 +2211,176 @@
     11,
     7,
     -9
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Huddersfield",
+    1,
+    12,
+    25,
+    13
+   ],
+   [
+    "Stockport",
+    2,
+    13,
+    23,
+    11
+   ],
+   [
+    "Oxford",
+    3,
+    11,
+    22,
+    9
+   ],
+   [
+    "Bradford",
+    4,
+    12,
+    22,
+    5
+   ],
+   [
+    "Plymouth",
+    5,
+    13,
+    22,
+    2
+   ],
+   [
+    "Reading",
+    6,
+    12,
+    21,
+    12
+   ],
+   [
+    "Cambridge",
+    7,
+    13,
+    21,
+    3
+   ],
+   [
+    "Luton",
+    8,
+    12,
+    20,
+    4
+   ],
+   [
+    "Sheffield Weds",
+    9,
+    12,
+    19,
+    8
+   ],
+   [
+    "Mansfield",
+    10,
+    11,
+    18,
+    4
+   ],
+   [
+    "Leicester",
+    11,
+    12,
+    18,
+    3
+   ],
+   [
+    "Burton",
+    12,
+    13,
+    17,
+    -1
+   ],
+   [
+    "Stevenage",
+    13,
+    11,
+    15,
+    4
+   ],
+   [
+    "Milton Keynes Dons",
+    14,
+    12,
+    15,
+    -3
+   ],
+   [
+    "Wycombe",
+    15,
+    12,
+    15,
+    -4
+   ],
+   [
+    "Leyton Orient",
+    16,
+    12,
+    14,
+    2
+   ],
+   [
+    "AFC Wimbledon",
+    17,
+    12,
+    13,
+    -11
+   ],
+   [
+    "Doncaster",
+    18,
+    12,
+    12,
+    -3
+   ],
+   [
+    "Notts County",
+    19,
+    11,
+    11,
+    -3
+   ],
+   [
+    "Blackpool",
+    20,
+    11,
+    11,
+    -4
+   ],
+   [
+    "Peterboro",
+    21,
+    12,
+    10,
+    -10
+   ],
+   [
+    "Bromley",
+    22,
+    12,
+    9,
+    -19
+   ],
+   [
+    "Barnsley",
+    23,
+    11,
+    8,
+    -10
+   ],
+   [
+    "Wigan",
+    24,
+    12,
+    7,
+    -12
    ]
   ]
  }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "SB",
  "fotmobId": 86,
  "name": "Serie B",
@@ -11,13 +11,13 @@
    "fotmobName": "Palermo",
    "fotmobId": 8540,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 7,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 0,
-   "goals": "18-8",
+   "goals": "21-11",
    "gd": 10,
-   "pts": 22
+   "pts": 23
   },
   {
    "rank": 2,
@@ -81,13 +81,13 @@
    "fotmobName": "Pisa",
    "fotmobId": 6479,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 4,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 2,
-   "goals": "15-10",
+   "goals": "18-13",
    "gd": 5,
-   "pts": 14
+   "pts": 15
   },
   {
    "rank": 7,
@@ -119,6 +119,20 @@
   },
   {
    "rank": 9,
+   "team": "Verona",
+   "fotmobName": "Hellas Verona",
+   "fotmobId": 9876,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "16-13",
+   "gd": 3,
+   "pts": 12
+  },
+  {
+   "rank": 10,
    "team": "Avellino",
    "fotmobName": "Avellino",
    "fotmobId": 6722,
@@ -132,7 +146,7 @@
    "pts": 12
   },
   {
-   "rank": 10,
+   "rank": 11,
    "team": "Cesena",
    "fotmobName": "Cesena",
    "fotmobId": 584022,
@@ -146,7 +160,7 @@
    "pts": 11
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Virtus Entella",
    "fotmobName": "Virtus Entella",
    "fotmobId": 208932,
@@ -160,35 +174,35 @@
    "pts": 10
   },
   {
-   "rank": 12,
+   "rank": 13,
+   "team": "Carrarese",
+   "fotmobName": "Carrarese",
+   "fotmobId": 6488,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "9-10",
+   "gd": -1,
+   "pts": 10
+  },
+  {
+   "rank": 14,
    "team": "Arezzo",
    "fotmobName": "Arezzo",
    "fotmobId": 9849,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
    "drawn": 1,
-   "lost": 4,
-   "goals": "8-17",
-   "gd": -9,
+   "lost": 5,
+   "goals": "9-19",
+   "gd": -10,
    "pts": 10
   },
   {
-   "rank": 13,
-   "team": "Verona",
-   "fotmobName": "Hellas Verona",
-   "fotmobId": 9876,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 3,
-   "lost": 3,
-   "goals": "15-13",
-   "gd": 2,
-   "pts": 9
-  },
-  {
-   "rank": 14,
+   "rank": 15,
    "team": "Cremonese",
    "fotmobName": "Cremonese",
    "fotmobId": 7801,
@@ -202,7 +216,7 @@
    "pts": 9
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Vicenza",
    "fotmobName": "LR Vicenza",
    "fotmobId": 145007,
@@ -216,32 +230,18 @@
    "pts": 9
   },
   {
-   "rank": 16,
+   "rank": 17,
    "team": "Juve Stabia",
    "fotmobName": "Juve Stabia",
    "fotmobId": 6106,
    "group": null,
-   "played": 8,
+   "played": 9,
    "won": 3,
    "drawn": 3,
-   "lost": 2,
-   "goals": "9-8",
-   "gd": 1,
+   "lost": 3,
+   "goals": "9-9",
+   "gd": 0,
    "pts": 8
-  },
-  {
-   "rank": 17,
-   "team": "Carrarese",
-   "fotmobName": "Carrarese",
-   "fotmobId": 6488,
-   "group": null,
-   "played": 8,
-   "won": 2,
-   "drawn": 1,
-   "lost": 5,
-   "goals": "7-9",
-   "gd": -2,
-   "pts": 7
   },
   {
    "rank": 18,
@@ -1684,6 +1684,148 @@
     8,
     7,
     -2
+   ],
+   [
+    "Empoli",
+    18,
+    9,
+    7,
+    -7
+   ],
+   [
+    "Sampdoria",
+    19,
+    9,
+    5,
+    -10
+   ],
+   [
+    "Catanzaro",
+    20,
+    9,
+    5,
+    -11
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Palermo",
+    1,
+    9,
+    23,
+    10
+   ],
+   [
+    "Modena",
+    2,
+    9,
+    19,
+    8
+   ],
+   [
+    "Ascoli",
+    3,
+    9,
+    18,
+    10
+   ],
+   [
+    "Mantova",
+    4,
+    9,
+    17,
+    4
+   ],
+   [
+    "Benevento",
+    5,
+    9,
+    15,
+    6
+   ],
+   [
+    "Pisa",
+    6,
+    9,
+    15,
+    5
+   ],
+   [
+    "Sudtirol",
+    7,
+    9,
+    13,
+    1
+   ],
+   [
+    "Padova",
+    8,
+    9,
+    13,
+    -1
+   ],
+   [
+    "Verona",
+    9,
+    9,
+    12,
+    3
+   ],
+   [
+    "Avellino",
+    10,
+    9,
+    12,
+    3
+   ],
+   [
+    "Cesena",
+    11,
+    9,
+    11,
+    -3
+   ],
+   [
+    "Virtus Entella",
+    12,
+    9,
+    10,
+    1
+   ],
+   [
+    "Carrarese",
+    13,
+    9,
+    10,
+    -1
+   ],
+   [
+    "Arezzo",
+    14,
+    9,
+    10,
+    -10
+   ],
+   [
+    "Cremonese",
+    15,
+    9,
+    9,
+    -3
+   ],
+   [
+    "Vicenza",
+    16,
+    9,
+    9,
+    -5
+   ],
+   [
+    "Juve Stabia",
+    17,
+    9,
+    8,
+    0
    ],
    [
     "Empoli",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "ED",
  "fotmobId": 57,
  "name": "Eredivisie",
@@ -11,27 +11,27 @@
    "fotmobName": "Feyenoord",
    "fotmobId": 10235,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 7,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 0,
-   "goals": "31-10",
+   "goals": "32-11",
    "gd": 21,
-   "pts": 23
+   "pts": 24
   },
   {
    "rank": 2,
-   "team": "AZ Alkmaar",
-   "fotmobName": "AZ Alkmaar",
-   "fotmobId": 10229,
+   "team": "Ajax",
+   "fotmobName": "Ajax",
+   "fotmobId": 8593,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 6,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 1,
-   "goals": "20-10",
-   "gd": 10,
-   "pts": 20
+   "goals": "29-13",
+   "gd": 16,
+   "pts": 21
   },
   {
    "rank": 3,
@@ -39,41 +39,41 @@
    "fotmobName": "PSV Eindhoven",
    "fotmobId": 8640,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 6,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 2,
-   "goals": "27-12",
+   "goals": "28-13",
    "gd": 15,
-   "pts": 19
+   "pts": 20
   },
   {
    "rank": 4,
-   "team": "Ajax",
-   "fotmobName": "Ajax",
-   "fotmobId": 8593,
-   "group": null,
-   "played": 9,
-   "won": 5,
-   "drawn": 3,
-   "lost": 1,
-   "goals": "27-12",
-   "gd": 15,
-   "pts": 18
-  },
-  {
-   "rank": 5,
    "team": "Twente",
    "fotmobName": "FC Twente",
    "fotmobId": 8611,
    "group": null,
-   "played": 9,
-   "won": 5,
+   "played": 10,
+   "won": 6,
    "drawn": 2,
    "lost": 2,
-   "goals": "17-10",
-   "gd": 7,
-   "pts": 17
+   "goals": "19-10",
+   "gd": 9,
+   "pts": 20
+  },
+  {
+   "rank": 5,
+   "team": "AZ Alkmaar",
+   "fotmobName": "AZ Alkmaar",
+   "fotmobId": 10229,
+   "group": null,
+   "played": 10,
+   "won": 6,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "20-12",
+   "gd": 8,
+   "pts": 20
   },
   {
    "rank": 6,
@@ -82,12 +82,12 @@
    "fotmobId": 6422,
    "group": null,
    "played": 10,
-   "won": 4,
-   "drawn": 4,
+   "won": 5,
+   "drawn": 3,
    "lost": 2,
-   "goals": "16-17",
-   "gd": -1,
-   "pts": 16
+   "goals": "17-17",
+   "gd": 0,
+   "pts": 18
   },
   {
    "rank": 7,
@@ -109,13 +109,13 @@
    "fotmobName": "FC Groningen",
    "fotmobId": 8674,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 4,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 3,
-   "goals": "22-19",
+   "goals": "24-21",
    "gd": 3,
-   "pts": 14
+   "pts": 15
   },
   {
    "rank": 9,
@@ -133,20 +133,6 @@
   },
   {
    "rank": 10,
-   "team": "Excelsior",
-   "fotmobName": "Excelsior",
-   "fotmobId": 10218,
-   "group": null,
-   "played": 10,
-   "won": 3,
-   "drawn": 3,
-   "lost": 4,
-   "goals": "16-18",
-   "gd": -2,
-   "pts": 12
-  },
-  {
-   "rank": 11,
    "team": "Cambuur",
    "fotmobName": "Cambuur",
    "fotmobId": 7788,
@@ -160,7 +146,7 @@
    "pts": 12
   },
   {
-   "rank": 12,
+   "rank": 11,
    "team": "Utrecht",
    "fotmobName": "FC Utrecht",
    "fotmobId": 9908,
@@ -174,18 +160,32 @@
    "pts": 12
   },
   {
-   "rank": 13,
+   "rank": 12,
    "team": "Nijmegen",
    "fotmobName": "NEC Nijmegen",
    "fotmobId": 8464,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 2,
-   "drawn": 4,
+   "drawn": 5,
    "lost": 3,
-   "goals": "15-16",
+   "goals": "17-18",
    "gd": -1,
-   "pts": 10
+   "pts": 11
+  },
+  {
+   "rank": 13,
+   "team": "Excelsior",
+   "fotmobName": "Excelsior",
+   "fotmobId": 10218,
+   "group": null,
+   "played": 10,
+   "won": 3,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "16-19",
+   "gd": -3,
+   "pts": 11
   },
   {
    "rank": 14,
@@ -193,12 +193,12 @@
    "fotmobName": "Sparta Rotterdam",
    "fotmobId": 8614,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 2,
    "drawn": 3,
-   "lost": 4,
-   "goals": "16-22",
-   "gd": -6,
+   "lost": 5,
+   "goals": "17-24",
+   "gd": -7,
    "pts": 9
   },
   {
@@ -1125,6 +1125,134 @@
     9,
     9,
     -6
+   ],
+   [
+    "Zwolle",
+    15,
+    10,
+    8,
+    -12
+   ],
+   [
+    "Telstar",
+    16,
+    10,
+    6,
+    -9
+   ],
+   [
+    "Den Haag",
+    17,
+    10,
+    6,
+    -10
+   ],
+   [
+    "Willem II",
+    18,
+    10,
+    2,
+    -22
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Feyenoord",
+    1,
+    10,
+    24,
+    21
+   ],
+   [
+    "Ajax",
+    2,
+    10,
+    21,
+    16
+   ],
+   [
+    "PSV Eindhoven",
+    3,
+    10,
+    20,
+    15
+   ],
+   [
+    "Twente",
+    4,
+    10,
+    20,
+    9
+   ],
+   [
+    "AZ Alkmaar",
+    5,
+    10,
+    20,
+    8
+   ],
+   [
+    "For Sittard",
+    6,
+    10,
+    18,
+    0
+   ],
+   [
+    "Heerenveen",
+    7,
+    10,
+    15,
+    5
+   ],
+   [
+    "Groningen",
+    8,
+    10,
+    15,
+    3
+   ],
+   [
+    "Go Ahead Eagles",
+    9,
+    10,
+    14,
+    0
+   ],
+   [
+    "Cambuur",
+    10,
+    10,
+    12,
+    -3
+   ],
+   [
+    "Utrecht",
+    11,
+    10,
+    12,
+    -10
+   ],
+   [
+    "Nijmegen",
+    12,
+    10,
+    11,
+    -1
+   ],
+   [
+    "Excelsior",
+    13,
+    10,
+    11,
+    -3
+   ],
+   [
+    "Sparta Rotterdam",
+    14,
+    10,
+    9,
+    -7
    ],
    [
     "Zwolle",

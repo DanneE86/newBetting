@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T08:53:49.447Z",
+  "updatedAt": "2026-10-29T13:16:35.547Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 144,
   "referees": [
@@ -378,6 +378,17 @@
       "homeWinRate": 0.489
     },
     {
+      "league": "PL",
+      "referee": "C Kavanagh",
+      "matches": 58,
+      "yellowPg": 4.1,
+      "redPg": 0.19,
+      "bookingPointsPg": 45.8,
+      "foulsPg": 22.2,
+      "goalsPg": 2.41,
+      "homeWinRate": 0.431
+    },
+    {
       "league": "EL1",
       "referee": "L Doughty",
       "matches": 10,
@@ -420,17 +431,6 @@
       "foulsPg": 22.8,
       "goalsPg": 2.08,
       "homeWinRate": 0.462
-    },
-    {
-      "league": "PL",
-      "referee": "C Kavanagh",
-      "matches": 59,
-      "yellowPg": 4.07,
-      "redPg": 0.186,
-      "bookingPointsPg": 45.3,
-      "foulsPg": 22.2,
-      "goalsPg": 2.41,
-      "homeWinRate": 0.424
     },
     {
       "league": "PL",
