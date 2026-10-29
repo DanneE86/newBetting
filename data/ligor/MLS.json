@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T08:50:51.723Z",
+ "updatedAt": "2026-10-29T13:13:20.209Z",
  "league": "MLS",
  "fotmobId": 130,
  "name": "MLS",
@@ -11,13 +11,13 @@
    "fotmobName": "Nashville SC",
    "fotmobId": 915807,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 21,
-   "drawn": 7,
+   "drawn": 8,
    "lost": 3,
    "goals": "66-23",
    "gd": 43,
-   "pts": 70
+   "pts": 71
   },
   {
    "rank": 2,
@@ -25,13 +25,13 @@
    "fotmobName": "New England Revolution",
    "fotmobId": 6580,
    "group": "Eastern",
-   "played": 31,
-   "won": 17,
+   "played": 32,
+   "won": 18,
    "drawn": 4,
    "lost": 10,
-   "goals": "51-42",
-   "gd": 9,
-   "pts": 55
+   "goals": "54-44",
+   "gd": 10,
+   "pts": 58
   },
   {
    "rank": 3,
@@ -39,13 +39,13 @@
    "fotmobName": "Inter Miami CF",
    "fotmobId": 960720,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 15,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 6,
-   "goals": "73-53",
+   "goals": "75-55",
    "gd": 20,
-   "pts": 55
+   "pts": 56
   },
   {
    "rank": 4,
@@ -53,13 +53,13 @@
    "fotmobName": "Chicago Fire FC",
    "fotmobId": 6397,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 15,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 10,
-   "goals": "55-46",
+   "goals": "57-48",
    "gd": 9,
-   "pts": 51
+   "pts": 52
   },
   {
    "rank": 5,
@@ -67,13 +67,13 @@
    "fotmobName": "Charlotte FC",
    "fotmobId": 1323940,
    "group": "Eastern",
-   "played": 31,
-   "won": 13,
+   "played": 32,
+   "won": 14,
    "drawn": 8,
    "lost": 10,
-   "goals": "55-48",
-   "gd": 7,
-   "pts": 47
+   "goals": "59-48",
+   "gd": 11,
+   "pts": 50
   },
   {
    "rank": 6,
@@ -81,13 +81,13 @@
    "fotmobName": "Philadelphia Union",
    "fotmobId": 191716,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 13,
-   "drawn": 7,
+   "drawn": 8,
    "lost": 11,
    "goals": "62-50",
    "gd": 12,
-   "pts": 46
+   "pts": 47
   },
   {
    "rank": 7,
@@ -95,13 +95,13 @@
    "fotmobName": "Orlando City",
    "fotmobId": 267810,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 12,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 13,
-   "goals": "60-72",
+   "goals": "62-74",
    "gd": -12,
-   "pts": 42
+   "pts": 43
   },
   {
    "rank": 8,
@@ -109,41 +109,41 @@
    "fotmobName": "FC Cincinnati",
    "fotmobId": 722265,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 11,
-   "drawn": 9,
+   "drawn": 10,
    "lost": 11,
-   "goals": "64-71",
+   "goals": "66-73",
    "gd": -7,
-   "pts": 42
+   "pts": 43
   },
   {
    "rank": 9,
-   "team": "New York Red Bulls",
-   "fotmobName": "Red Bull New York",
-   "fotmobId": 6514,
-   "group": "Eastern",
-   "played": 31,
-   "won": 11,
-   "drawn": 6,
-   "lost": 14,
-   "goals": "41-56",
-   "gd": -15,
-   "pts": 39
-  },
-  {
-   "rank": 10,
    "team": "Columbus Crew",
    "fotmobName": "Columbus Crew",
    "fotmobId": 6001,
    "group": "Eastern",
-   "played": 31,
-   "won": 11,
+   "played": 32,
+   "won": 12,
    "drawn": 5,
    "lost": 15,
-   "goals": "50-49",
-   "gd": 1,
-   "pts": 38
+   "goals": "52-49",
+   "gd": 3,
+   "pts": 41
+  },
+  {
+   "rank": 10,
+   "team": "New York Red Bulls",
+   "fotmobName": "Red Bull New York",
+   "fotmobId": 6514,
+   "group": "Eastern",
+   "played": 32,
+   "won": 11,
+   "drawn": 6,
+   "lost": 15,
+   "goals": "43-59",
+   "gd": -16,
+   "pts": 39
   },
   {
    "rank": 11,
@@ -151,13 +151,13 @@
    "fotmobName": "Toronto FC",
    "fotmobId": 56453,
    "group": "Eastern",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 12,
    "lost": 11,
-   "goals": "48-59",
-   "gd": -11,
-   "pts": 36
+   "goals": "50-60",
+   "gd": -10,
+   "pts": 39
   },
   {
    "rank": 12,
@@ -165,13 +165,13 @@
    "fotmobName": "New York City FC",
    "fotmobId": 546238,
    "group": "Eastern",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 11,
    "lost": 12,
-   "goals": "45-43",
-   "gd": 2,
-   "pts": 35
+   "goals": "47-44",
+   "gd": 3,
+   "pts": 38
   },
   {
    "rank": 13,
@@ -179,12 +179,12 @@
    "fotmobName": "DC United",
    "fotmobId": 6602,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 7,
    "drawn": 12,
-   "lost": 12,
-   "goals": "38-55",
-   "gd": -17,
+   "lost": 13,
+   "goals": "39-57",
+   "gd": -18,
    "pts": 33
   },
   {
@@ -193,12 +193,12 @@
    "fotmobName": "Atlanta United",
    "fotmobId": 773958,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 8,
    "drawn": 6,
-   "lost": 17,
-   "goals": "39-54",
-   "gd": -15,
+   "lost": 18,
+   "goals": "40-56",
+   "gd": -16,
    "pts": 30
   },
   {
@@ -207,12 +207,12 @@
    "fotmobName": "CF Montréal",
    "fotmobId": 161195,
    "group": "Eastern",
-   "played": 31,
+   "played": 32,
    "won": 6,
    "drawn": 7,
-   "lost": 18,
-   "goals": "36-62",
-   "gd": -26,
+   "lost": 19,
+   "goals": "36-66",
+   "gd": -30,
    "pts": 25
   },
   {
@@ -221,13 +221,13 @@
    "fotmobName": "Vancouver Whitecaps",
    "fotmobId": 307691,
    "group": "Western",
-   "played": 31,
-   "won": 16,
+   "played": 32,
+   "won": 17,
    "drawn": 7,
    "lost": 8,
-   "goals": "63-32",
-   "gd": 31,
-   "pts": 55
+   "goals": "67-33",
+   "gd": 34,
+   "pts": 58
   },
   {
    "rank": 2,
@@ -235,12 +235,12 @@
    "fotmobName": "FC Dallas",
    "fotmobId": 6399,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 15,
    "drawn": 9,
-   "lost": 7,
-   "goals": "58-47",
-   "gd": 11,
+   "lost": 8,
+   "goals": "58-49",
+   "gd": 9,
    "pts": 54
   },
   {
@@ -249,41 +249,41 @@
    "fotmobName": "St. Louis City",
    "fotmobId": 1427963,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 14,
    "drawn": 9,
-   "lost": 8,
-   "goals": "56-44",
-   "gd": 12,
+   "lost": 9,
+   "goals": "58-47",
+   "gd": 11,
    "pts": 51
   },
   {
    "rank": 4,
-   "team": "San Jose Earthquakes",
-   "fotmobName": "San Jose Earthquakes",
-   "fotmobId": 6603,
-   "group": "Western",
-   "played": 31,
-   "won": 13,
-   "drawn": 9,
-   "lost": 9,
-   "goals": "52-45",
-   "gd": 7,
-   "pts": 48
-  },
-  {
-   "rank": 5,
    "team": "Houston Dynamo",
    "fotmobName": "Houston Dynamo FC",
    "fotmobId": 8259,
    "group": "Western",
-   "played": 31,
-   "won": 13,
+   "played": 32,
+   "won": 14,
    "drawn": 9,
    "lost": 9,
-   "goals": "41-39",
-   "gd": 2,
-   "pts": 48
+   "goals": "42-39",
+   "gd": 3,
+   "pts": 51
+  },
+  {
+   "rank": 5,
+   "team": "San Jose Earthquakes",
+   "fotmobName": "San Jose Earthquakes",
+   "fotmobId": 6603,
+   "group": "Western",
+   "played": 32,
+   "won": 13,
+   "drawn": 10,
+   "lost": 9,
+   "goals": "54-47",
+   "gd": 7,
+   "pts": 49
   },
   {
    "rank": 6,
@@ -301,34 +301,48 @@
   },
   {
    "rank": 7,
-   "team": "Seattle Sounders",
-   "fotmobName": "Seattle Sounders FC",
-   "fotmobId": 130394,
-   "group": "Western",
-   "played": 31,
-   "won": 11,
-   "drawn": 10,
-   "lost": 10,
-   "goals": "41-39",
-   "gd": 2,
-   "pts": 43
-  },
-  {
-   "rank": 8,
    "team": "Colorado Rapids",
    "fotmobName": "Colorado Rapids",
    "fotmobId": 8314,
    "group": "Western",
-   "played": 31,
+   "played": 32,
+   "won": 12,
+   "drawn": 7,
+   "lost": 13,
+   "goals": "44-43",
+   "gd": 1,
+   "pts": 43
+  },
+  {
+   "rank": 8,
+   "team": "Seattle Sounders",
+   "fotmobName": "Seattle Sounders FC",
+   "fotmobId": 130394,
+   "group": "Western",
+   "played": 32,
+   "won": 11,
+   "drawn": 10,
+   "lost": 11,
+   "goals": "41-40",
+   "gd": 1,
+   "pts": 43
+  },
+  {
+   "rank": 9,
+   "team": "Real Salt Lake",
+   "fotmobName": "Real Salt Lake",
+   "fotmobId": 6606,
+   "group": "Western",
+   "played": 32,
    "won": 12,
    "drawn": 6,
-   "lost": 13,
-   "goals": "42-41",
+   "lost": 14,
+   "goals": "50-49",
    "gd": 1,
    "pts": 42
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "Los Angeles Galaxy",
    "fotmobName": "LA Galaxy",
    "fotmobId": 6637,
@@ -342,59 +356,45 @@
    "pts": 41
   },
   {
-   "rank": 10,
-   "team": "Real Salt Lake",
-   "fotmobName": "Real Salt Lake",
-   "fotmobId": 6606,
-   "group": "Western",
-   "played": 31,
-   "won": 11,
-   "drawn": 6,
-   "lost": 14,
-   "goals": "48-48",
-   "gd": 0,
-   "pts": 39
-  },
-  {
    "rank": 11,
    "team": "Portland Timbers",
    "fotmobName": "Portland Timbers",
    "fotmobId": 307690,
    "group": "Western",
-   "played": 31,
-   "won": 10,
+   "played": 32,
+   "won": 11,
    "drawn": 7,
    "lost": 14,
-   "goals": "54-58",
-   "gd": -4,
-   "pts": 37
+   "goals": "57-60",
+   "gd": -3,
+   "pts": 40
   },
   {
    "rank": 12,
-   "team": "San Diego FC",
-   "fotmobName": "San Diego FC",
-   "fotmobId": 1701119,
-   "group": "Western",
-   "played": 31,
-   "won": 8,
-   "drawn": 11,
-   "lost": 12,
-   "goals": "55-58",
-   "gd": -3,
-   "pts": 35
-  },
-  {
-   "rank": 13,
    "team": "Minnesota United",
    "fotmobName": "Minnesota United",
    "fotmobId": 207242,
    "group": "Western",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 11,
    "lost": 12,
-   "goals": "47-55",
-   "gd": -8,
+   "goals": "50-56",
+   "gd": -6,
+   "pts": 38
+  },
+  {
+   "rank": 13,
+   "team": "San Diego FC",
+   "fotmobName": "San Diego FC",
+   "fotmobId": 1701119,
+   "group": "Western",
+   "played": 32,
+   "won": 8,
+   "drawn": 11,
+   "lost": 13,
+   "goals": "56-62",
+   "gd": -6,
    "pts": 35
   },
   {
@@ -403,12 +403,12 @@
    "fotmobName": "Austin FC",
    "fotmobId": 1218886,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 8,
    "drawn": 10,
-   "lost": 13,
-   "goals": "40-57",
-   "gd": -17,
+   "lost": 14,
+   "goals": "41-59",
+   "gd": -18,
    "pts": 34
   },
   {
@@ -417,12 +417,12 @@
    "fotmobName": "Sporting Kansas City",
    "fotmobId": 6604,
    "group": "Western",
-   "played": 31,
+   "played": 32,
    "won": 6,
    "drawn": 4,
-   "lost": 21,
-   "goals": "37-77",
-   "gd": -40,
+   "lost": 22,
+   "goals": "38-80",
+   "gd": -42,
    "pts": 22
   },
   {
@@ -431,13 +431,13 @@
    "fotmobName": "Nashville SC",
    "fotmobId": 915807,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 21,
-   "drawn": 7,
+   "drawn": 8,
    "lost": 3,
    "goals": "66-23",
    "gd": 43,
-   "pts": 70
+   "pts": 71
   },
   {
    "rank": 2,
@@ -445,13 +445,13 @@
    "fotmobName": "New England Revolution",
    "fotmobId": 6580,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 17,
+   "played": 32,
+   "won": 18,
    "drawn": 4,
    "lost": 10,
-   "goals": "51-42",
-   "gd": 9,
-   "pts": 55
+   "goals": "54-44",
+   "gd": 10,
+   "pts": 58
   },
   {
    "rank": 3,
@@ -459,13 +459,13 @@
    "fotmobName": "Vancouver Whitecaps",
    "fotmobId": 307691,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 16,
+   "played": 32,
+   "won": 17,
    "drawn": 7,
    "lost": 8,
-   "goals": "63-32",
-   "gd": 31,
-   "pts": 55
+   "goals": "67-33",
+   "gd": 34,
+   "pts": 58
   },
   {
    "rank": 4,
@@ -473,13 +473,13 @@
    "fotmobName": "Inter Miami CF",
    "fotmobId": 960720,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 15,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 6,
-   "goals": "73-53",
+   "goals": "75-55",
    "gd": 20,
-   "pts": 55
+   "pts": 56
   },
   {
    "rank": 5,
@@ -487,12 +487,12 @@
    "fotmobName": "FC Dallas",
    "fotmobId": 6399,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 15,
    "drawn": 9,
-   "lost": 7,
-   "goals": "58-47",
-   "gd": 11,
+   "lost": 8,
+   "goals": "58-49",
+   "gd": 9,
    "pts": 54
   },
   {
@@ -501,13 +501,13 @@
    "fotmobName": "Chicago Fire FC",
    "fotmobId": 6397,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 15,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 10,
-   "goals": "55-46",
+   "goals": "57-48",
    "gd": 9,
-   "pts": 51
+   "pts": 52
   },
   {
    "rank": 7,
@@ -515,58 +515,72 @@
    "fotmobName": "St. Louis City",
    "fotmobId": 1427963,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 14,
    "drawn": 9,
-   "lost": 8,
-   "goals": "56-44",
-   "gd": 12,
+   "lost": 9,
+   "goals": "58-47",
+   "gd": 11,
    "pts": 51
   },
   {
    "rank": 8,
-   "team": "San Jose Earthquakes",
-   "fotmobName": "San Jose Earthquakes",
-   "fotmobId": 6603,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 13,
-   "drawn": 9,
-   "lost": 9,
-   "goals": "52-45",
-   "gd": 7,
-   "pts": 48
-  },
-  {
-   "rank": 9,
    "team": "Houston Dynamo",
    "fotmobName": "Houston Dynamo FC",
    "fotmobId": 8259,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 13,
+   "played": 32,
+   "won": 14,
    "drawn": 9,
    "lost": 9,
-   "goals": "41-39",
-   "gd": 2,
-   "pts": 48
+   "goals": "42-39",
+   "gd": 3,
+   "pts": 51
   },
   {
-   "rank": 10,
+   "rank": 9,
    "team": "Charlotte",
    "fotmobName": "Charlotte FC",
    "fotmobId": 1323940,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 13,
+   "played": 32,
+   "won": 14,
    "drawn": 8,
    "lost": 10,
-   "goals": "55-48",
+   "goals": "59-48",
+   "gd": 11,
+   "pts": 50
+  },
+  {
+   "rank": 10,
+   "team": "San Jose Earthquakes",
+   "fotmobName": "San Jose Earthquakes",
+   "fotmobId": 6603,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 13,
+   "drawn": 10,
+   "lost": 9,
+   "goals": "54-47",
    "gd": 7,
-   "pts": 47
+   "pts": 49
   },
   {
    "rank": 11,
+   "team": "Philadelphia Union",
+   "fotmobName": "Philadelphia Union",
+   "fotmobId": 191716,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 13,
+   "drawn": 8,
+   "lost": 11,
+   "goals": "62-50",
+   "gd": 12,
+   "pts": 47
+  },
+  {
+   "rank": 12,
    "team": "Los Angeles FC",
    "fotmobName": "Los Angeles FC",
    "fotmobId": 867280,
@@ -580,60 +594,46 @@
    "pts": 47
   },
   {
-   "rank": 12,
-   "team": "Philadelphia Union",
-   "fotmobName": "Philadelphia Union",
-   "fotmobId": 191716,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 13,
-   "drawn": 7,
-   "lost": 11,
-   "goals": "62-50",
-   "gd": 12,
-   "pts": 46
-  },
-  {
    "rank": 13,
-   "team": "Seattle Sounders",
-   "fotmobName": "Seattle Sounders FC",
-   "fotmobId": 130394,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 11,
-   "drawn": 10,
-   "lost": 10,
-   "goals": "41-39",
-   "gd": 2,
-   "pts": 43
-  },
-  {
-   "rank": 14,
    "team": "Colorado Rapids",
    "fotmobName": "Colorado Rapids",
    "fotmobId": 8314,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 12,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 13,
-   "goals": "42-41",
+   "goals": "44-43",
    "gd": 1,
-   "pts": 42
+   "pts": 43
   },
   {
-   "rank": 15,
+   "rank": 14,
    "team": "Orlando City",
    "fotmobName": "Orlando City",
    "fotmobId": 267810,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 12,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 13,
-   "goals": "60-72",
+   "goals": "62-74",
    "gd": -12,
-   "pts": 42
+   "pts": 43
+  },
+  {
+   "rank": 15,
+   "team": "Seattle Sounders",
+   "fotmobName": "Seattle Sounders FC",
+   "fotmobId": 130394,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 11,
+   "drawn": 10,
+   "lost": 11,
+   "goals": "41-40",
+   "gd": 1,
+   "pts": 43
   },
   {
    "rank": 16,
@@ -641,16 +641,44 @@
    "fotmobName": "FC Cincinnati",
    "fotmobId": 722265,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 11,
-   "drawn": 9,
+   "drawn": 10,
    "lost": 11,
-   "goals": "64-71",
+   "goals": "66-73",
    "gd": -7,
-   "pts": 42
+   "pts": 43
   },
   {
    "rank": 17,
+   "team": "Real Salt Lake",
+   "fotmobName": "Real Salt Lake",
+   "fotmobId": 6606,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 12,
+   "drawn": 6,
+   "lost": 14,
+   "goals": "50-49",
+   "gd": 1,
+   "pts": 42
+  },
+  {
+   "rank": 18,
+   "team": "Columbus Crew",
+   "fotmobName": "Columbus Crew",
+   "fotmobId": 6001,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 12,
+   "drawn": 5,
+   "lost": 15,
+   "goals": "52-49",
+   "gd": 3,
+   "pts": 41
+  },
+  {
+   "rank": 19,
    "team": "Los Angeles Galaxy",
    "fotmobName": "LA Galaxy",
    "fotmobId": 6637,
@@ -664,60 +692,32 @@
    "pts": 41
   },
   {
-   "rank": 18,
-   "team": "Real Salt Lake",
-   "fotmobName": "Real Salt Lake",
-   "fotmobId": 6606,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 11,
-   "drawn": 6,
-   "lost": 14,
-   "goals": "48-48",
-   "gd": 0,
-   "pts": 39
-  },
-  {
-   "rank": 19,
-   "team": "New York Red Bulls",
-   "fotmobName": "Red Bull New York",
-   "fotmobId": 6514,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 11,
-   "drawn": 6,
-   "lost": 14,
-   "goals": "41-56",
-   "gd": -15,
-   "pts": 39
-  },
-  {
    "rank": 20,
-   "team": "Columbus Crew",
-   "fotmobName": "Columbus Crew",
-   "fotmobId": 6001,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 11,
-   "drawn": 5,
-   "lost": 15,
-   "goals": "50-49",
-   "gd": 1,
-   "pts": 38
-  },
-  {
-   "rank": 21,
    "team": "Portland Timbers",
    "fotmobName": "Portland Timbers",
    "fotmobId": 307690,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 10,
+   "played": 32,
+   "won": 11,
    "drawn": 7,
    "lost": 14,
-   "goals": "54-58",
-   "gd": -4,
-   "pts": 37
+   "goals": "57-60",
+   "gd": -3,
+   "pts": 40
+  },
+  {
+   "rank": 21,
+   "team": "New York Red Bulls",
+   "fotmobName": "Red Bull New York",
+   "fotmobId": 6514,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 11,
+   "drawn": 6,
+   "lost": 15,
+   "goals": "43-59",
+   "gd": -16,
+   "pts": 39
   },
   {
    "rank": 22,
@@ -725,13 +725,13 @@
    "fotmobName": "Toronto FC",
    "fotmobId": 56453,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 12,
    "lost": 11,
-   "goals": "48-59",
-   "gd": -11,
-   "pts": 36
+   "goals": "50-60",
+   "gd": -10,
+   "pts": 39
   },
   {
    "rank": 23,
@@ -739,40 +739,40 @@
    "fotmobName": "New York City FC",
    "fotmobId": 546238,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 11,
    "lost": 12,
-   "goals": "45-43",
-   "gd": 2,
-   "pts": 35
+   "goals": "47-44",
+   "gd": 3,
+   "pts": 38
   },
   {
    "rank": 24,
-   "team": "San Diego FC",
-   "fotmobName": "San Diego FC",
-   "fotmobId": 1701119,
-   "group": "Supporters Shield",
-   "played": 31,
-   "won": 8,
-   "drawn": 11,
-   "lost": 12,
-   "goals": "55-58",
-   "gd": -3,
-   "pts": 35
-  },
-  {
-   "rank": 25,
    "team": "Minnesota United",
    "fotmobName": "Minnesota United",
    "fotmobId": 207242,
    "group": "Supporters Shield",
-   "played": 31,
-   "won": 8,
+   "played": 32,
+   "won": 9,
    "drawn": 11,
    "lost": 12,
-   "goals": "47-55",
-   "gd": -8,
+   "goals": "50-56",
+   "gd": -6,
+   "pts": 38
+  },
+  {
+   "rank": 25,
+   "team": "San Diego FC",
+   "fotmobName": "San Diego FC",
+   "fotmobId": 1701119,
+   "group": "Supporters Shield",
+   "played": 32,
+   "won": 8,
+   "drawn": 11,
+   "lost": 13,
+   "goals": "56-62",
+   "gd": -6,
    "pts": 35
   },
   {
@@ -781,12 +781,12 @@
    "fotmobName": "Austin FC",
    "fotmobId": 1218886,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 8,
    "drawn": 10,
-   "lost": 13,
-   "goals": "40-57",
-   "gd": -17,
+   "lost": 14,
+   "goals": "41-59",
+   "gd": -18,
    "pts": 34
   },
   {
@@ -795,12 +795,12 @@
    "fotmobName": "DC United",
    "fotmobId": 6602,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 7,
    "drawn": 12,
-   "lost": 12,
-   "goals": "38-55",
-   "gd": -17,
+   "lost": 13,
+   "goals": "39-57",
+   "gd": -18,
    "pts": 33
   },
   {
@@ -809,12 +809,12 @@
    "fotmobName": "Atlanta United",
    "fotmobId": 773958,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 8,
    "drawn": 6,
-   "lost": 17,
-   "goals": "39-54",
-   "gd": -15,
+   "lost": 18,
+   "goals": "40-56",
+   "gd": -16,
    "pts": 30
   },
   {
@@ -823,12 +823,12 @@
    "fotmobName": "CF Montréal",
    "fotmobId": 161195,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 6,
    "drawn": 7,
-   "lost": 18,
-   "goals": "36-62",
-   "gd": -26,
+   "lost": 19,
+   "goals": "36-66",
+   "gd": -30,
    "pts": 25
   },
   {
@@ -837,12 +837,12 @@
    "fotmobName": "Sporting Kansas City",
    "fotmobId": 6604,
    "group": "Supporters Shield",
-   "played": 31,
+   "played": 32,
    "won": 6,
    "drawn": 4,
-   "lost": 21,
-   "goals": "37-77",
-   "gd": -40,
+   "lost": 22,
+   "goals": "38-80",
+   "gd": -42,
    "pts": 22
   }
  ],
@@ -5487,6 +5487,428 @@
     31,
     22,
     -40
+   ]
+  ],
+  "2026-10-29": [
+   [
+    "Nashville SC",
+    1,
+    32,
+    71,
+    43
+   ],
+   [
+    "New England Revolution",
+    2,
+    32,
+    58,
+    10
+   ],
+   [
+    "Inter Miami",
+    3,
+    32,
+    56,
+    20
+   ],
+   [
+    "Chicago Fire",
+    4,
+    32,
+    52,
+    9
+   ],
+   [
+    "Charlotte",
+    5,
+    32,
+    50,
+    11
+   ],
+   [
+    "Philadelphia Union",
+    6,
+    32,
+    47,
+    12
+   ],
+   [
+    "Orlando City",
+    7,
+    32,
+    43,
+    -12
+   ],
+   [
+    "FC Cincinnati",
+    8,
+    32,
+    43,
+    -7
+   ],
+   [
+    "Columbus Crew",
+    9,
+    32,
+    41,
+    3
+   ],
+   [
+    "New York Red Bulls",
+    10,
+    32,
+    39,
+    -16
+   ],
+   [
+    "Toronto FC",
+    11,
+    32,
+    39,
+    -10
+   ],
+   [
+    "New York City",
+    12,
+    32,
+    38,
+    3
+   ],
+   [
+    "DC United",
+    13,
+    32,
+    33,
+    -18
+   ],
+   [
+    "Atlanta Utd",
+    14,
+    32,
+    30,
+    -16
+   ],
+   [
+    "CF Montreal",
+    15,
+    32,
+    25,
+    -30
+   ],
+   [
+    "Vancouver Whitecaps",
+    1,
+    32,
+    58,
+    34
+   ],
+   [
+    "FC Dallas",
+    2,
+    32,
+    54,
+    9
+   ],
+   [
+    "St. Louis City",
+    3,
+    32,
+    51,
+    11
+   ],
+   [
+    "Houston Dynamo",
+    4,
+    32,
+    51,
+    3
+   ],
+   [
+    "San Jose Earthquakes",
+    5,
+    32,
+    49,
+    7
+   ],
+   [
+    "Los Angeles FC",
+    6,
+    32,
+    47,
+    15
+   ],
+   [
+    "Colorado Rapids",
+    7,
+    32,
+    43,
+    1
+   ],
+   [
+    "Seattle Sounders",
+    8,
+    32,
+    43,
+    1
+   ],
+   [
+    "Real Salt Lake",
+    9,
+    32,
+    42,
+    1
+   ],
+   [
+    "Los Angeles Galaxy",
+    10,
+    32,
+    41,
+    -9
+   ],
+   [
+    "Portland Timbers",
+    11,
+    32,
+    40,
+    -3
+   ],
+   [
+    "Minnesota United",
+    12,
+    32,
+    38,
+    -6
+   ],
+   [
+    "San Diego FC",
+    13,
+    32,
+    35,
+    -6
+   ],
+   [
+    "Austin FC",
+    14,
+    32,
+    34,
+    -18
+   ],
+   [
+    "Sporting Kansas City",
+    15,
+    32,
+    22,
+    -42
+   ],
+   [
+    "Nashville SC",
+    1,
+    32,
+    71,
+    43
+   ],
+   [
+    "New England Revolution",
+    2,
+    32,
+    58,
+    10
+   ],
+   [
+    "Vancouver Whitecaps",
+    3,
+    32,
+    58,
+    34
+   ],
+   [
+    "Inter Miami",
+    4,
+    32,
+    56,
+    20
+   ],
+   [
+    "FC Dallas",
+    5,
+    32,
+    54,
+    9
+   ],
+   [
+    "Chicago Fire",
+    6,
+    32,
+    52,
+    9
+   ],
+   [
+    "St. Louis City",
+    7,
+    32,
+    51,
+    11
+   ],
+   [
+    "Houston Dynamo",
+    8,
+    32,
+    51,
+    3
+   ],
+   [
+    "Charlotte",
+    9,
+    32,
+    50,
+    11
+   ],
+   [
+    "San Jose Earthquakes",
+    10,
+    32,
+    49,
+    7
+   ],
+   [
+    "Philadelphia Union",
+    11,
+    32,
+    47,
+    12
+   ],
+   [
+    "Los Angeles FC",
+    12,
+    32,
+    47,
+    15
+   ],
+   [
+    "Colorado Rapids",
+    13,
+    32,
+    43,
+    1
+   ],
+   [
+    "Orlando City",
+    14,
+    32,
+    43,
+    -12
+   ],
+   [
+    "Seattle Sounders",
+    15,
+    32,
+    43,
+    1
+   ],
+   [
+    "FC Cincinnati",
+    16,
+    32,
+    43,
+    -7
+   ],
+   [
+    "Real Salt Lake",
+    17,
+    32,
+    42,
+    1
+   ],
+   [
+    "Columbus Crew",
+    18,
+    32,
+    41,
+    3
+   ],
+   [
+    "Los Angeles Galaxy",
+    19,
+    32,
+    41,
+    -9
+   ],
+   [
+    "Portland Timbers",
+    20,
+    32,
+    40,
+    -3
+   ],
+   [
+    "New York Red Bulls",
+    21,
+    32,
+    39,
+    -16
+   ],
+   [
+    "Toronto FC",
+    22,
+    32,
+    39,
+    -10
+   ],
+   [
+    "New York City",
+    23,
+    32,
+    38,
+    3
+   ],
+   [
+    "Minnesota United",
+    24,
+    32,
+    38,
+    -6
+   ],
+   [
+    "San Diego FC",
+    25,
+    32,
+    35,
+    -6
+   ],
+   [
+    "Austin FC",
+    26,
+    32,
+    34,
+    -18
+   ],
+   [
+    "DC United",
+    27,
+    32,
+    33,
+    -18
+   ],
+   [
+    "Atlanta Utd",
+    28,
+    32,
+    30,
+    -16
+   ],
+   [
+    "CF Montreal",
+    29,
+    32,
+    25,
+    -30
+   ],
+   [
+    "Sporting Kansas City",
+    30,
+    32,
+    22,
+    -42
    ]
   ]
  }
