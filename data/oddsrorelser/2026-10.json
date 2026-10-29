@@ -1911,7 +1911,48 @@
    },
    "flagged": [],
    "savedAt": "2026-10-28T08:53:57.919Z"
+  },
+  "2026-10-29|SA|Fiorentina|Atalanta": {
+   "key": "2026-10-29|SA|Fiorentina|Atalanta",
+   "league": "SA",
+   "date": "2026-10-29",
+   "home": "Fiorentina",
+   "away": "Atalanta",
+   "kickoffUtc": "2026-10-29T19:45:00Z",
+   "src": "api",
+   "firstAt": "2026-10-29T13:16:00.012Z",
+   "lastAt": "2026-10-29T18:59:54.229Z",
+   "minBeforeKick": 45,
+   "moves": {
+    "home": {
+     "from": 2.25,
+     "to": 2.25,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.8,
+     "to": 3.8,
+     "pp": 0
+    },
+    "away": {
+     "from": 3.1,
+     "to": 3.1,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.62,
+     "to": 1.62,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.38,
+     "to": 2.38,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-29T19:00:38.485Z"
   }
  },
- "updatedAt": "2026-10-28T08:53:57.920Z"
+ "updatedAt": "2026-10-29T19:00:38.485Z"
 }

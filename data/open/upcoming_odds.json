@@ -2,9 +2,9 @@
   "loaded": true,
   "source": "the-odds-api.com v4 (sparad) + football-data fixtures (reserv)",
   "note": "Pinnacle saknas i football-data sedan 2025/26 -> Betfair Exchange ar facit. Basta pris = marknadens max, kontrollera hos ditt bolag.",
-  "updatedAt": "2026-10-29T13:16:00.012Z",
-  "eventCount": 148,
-  "keptApiEvents": 86,
+  "updatedAt": "2026-10-29T18:59:54.229Z",
+  "eventCount": 145,
+  "keptApiEvents": 82,
   "events": [
     {
       "league": "EL1",
@@ -611,162 +611,44 @@
       "away": "Lecce",
       "homeRaw": "Frosinone",
       "awayRaw": "Lecce",
-      "bookmaker": "Unibet (FR)",
+      "bookmaker": "Snitt (football-data)",
       "odds": {
-        "away": 3.4,
-        "over25": null,
-        "draw": 3.6,
-        "under25": null,
-        "home": 1.8
+        "home": 1.66,
+        "draw": 4.13,
+        "away": 4.49,
+        "over25": 1.44,
+        "under25": 2.67
       },
       "books": [
         {
-          "key": "pinnacle",
-          "bookmaker": "Pinnacle",
-          "home": 1.96,
-          "draw": 3.58,
-          "away": 3.81,
-          "over25": null,
-          "under25": null
+          "key": "betfair_ex_eu",
+          "bookmaker": "Betfair Exchange",
+          "home": 1.73,
+          "draw": 4.3,
+          "away": 5.1,
+          "over25": 1.48,
+          "under25": 3
         },
         {
-          "key": "unibet_fr",
-          "bookmaker": "Unibet (FR)",
-          "home": 1.8,
-          "draw": 3.6,
-          "away": 3.4,
-          "over25": null,
-          "under25": null
+          "key": "market_max",
+          "bookmaker": "Marknadens basta (football-data)",
+          "home": 1.7,
+          "draw": 4.33,
+          "away": 5,
+          "over25": 1.48,
+          "under25": 2.75
         },
         {
-          "key": "betclic_fr",
-          "bookmaker": "Betclic (FR)",
-          "home": 1.84,
-          "draw": 3.55,
-          "away": 3.38,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_fr",
-          "bookmaker": "Winamax (FR)",
-          "home": 1.82,
-          "draw": 3.45,
-          "away": 3.15,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "winamax_de",
-          "bookmaker": "Winamax (DE)",
-          "home": 1.92,
-          "draw": 3.75,
-          "away": 3.35,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "onexbet",
-          "bookmaker": "1xBet",
-          "home": 2.01,
-          "draw": 3.85,
-          "away": 3.88,
-          "over25": 1.69,
-          "under25": 2.37
-        },
-        {
-          "key": "marathonbet",
-          "bookmaker": "Marathon Bet",
-          "home": 1.95,
-          "draw": 3.74,
-          "away": 3.76,
-          "over25": 1.63,
-          "under25": 2.29
-        },
-        {
-          "key": "tipico_de",
-          "bookmaker": "Tipico",
-          "home": 1.9,
-          "draw": 3.7,
-          "away": 3.8,
-          "over25": 1.55,
-          "under25": 2.4
-        },
-        {
-          "key": "sport888",
-          "bookmaker": "888sport",
-          "home": 1.91,
-          "draw": 3.5,
-          "away": 3.5,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "williamhill",
-          "bookmaker": "William Hill",
-          "home": 1.91,
-          "draw": 3.5,
-          "away": 3.5,
-          "over25": 1.57,
-          "under25": 2.3
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 1.88,
-          "draw": 3.85,
-          "away": 3.8,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 1.83,
-          "draw": 3.7,
-          "away": 3.65,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 1.92,
-          "draw": 3.95,
-          "away": 3.9,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 1.81,
-          "draw": 3.6,
-          "away": 3.55,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "betsson",
-          "bookmaker": "Betsson",
-          "home": 1.98,
-          "draw": 3.75,
-          "away": 3.6,
-          "over25": 1.58,
-          "under25": 2.41
-        },
-        {
-          "key": "nordicbet",
-          "bookmaker": "Nordic Bet",
-          "home": 1.95,
-          "draw": 3.7,
-          "away": 3.6,
-          "over25": 1.55,
-          "under25": 2.38
+          "key": "bet365",
+          "bookmaker": "Bet365",
+          "home": 1.65,
+          "draw": 4,
+          "away": 5,
+          "over25": 1.44,
+          "under25": 2.75
         }
       ],
-      "sourceEventId": "667cf69986b200753742c90cb9c5126c",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
+      "source": "football-data fixtures"
     },
     {
       "league": "SA",
@@ -4496,174 +4378,6 @@
         }
       ],
       "sourceEventId": "da159a6b84dbb548b4d7b94c722caac5",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
-      "league": "AS",
-      "commence": "2026-10-29T17:30:00Z",
-      "home": "Hammarby IF",
-      "away": "IK Sirius",
-      "homeRaw": "Hammarby IF",
-      "awayRaw": "IK Sirius",
-      "bookmaker": "Unibet (NL)",
-      "odds": {
-        "away": 5.3,
-        "over25": null,
-        "draw": 4.4,
-        "under25": null,
-        "home": 1.51
-      },
-      "books": [
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 1.45,
-          "draw": 4.1,
-          "away": 5,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 1.51,
-          "draw": 4.4,
-          "away": 5.3,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 1.51,
-          "draw": 4.4,
-          "away": 5.3,
-          "over25": null,
-          "under25": null
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 1.56,
-          "draw": 4.7,
-          "away": 5.75,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "sourceEventId": "a7e7366dd8ba9240b59b1cc238eda9ed",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
-      "league": "AS",
-      "commence": "2026-10-29T18:00:00Z",
-      "home": "Kalmar FF",
-      "away": "GAIS",
-      "homeRaw": "Kalmar FF",
-      "awayRaw": "GAIS",
-      "bookmaker": "Unibet (NL)",
-      "odds": {
-        "away": 2.16,
-        "over25": 1.88,
-        "draw": 3.35,
-        "under25": 1.79,
-        "home": 3.2
-      },
-      "books": [
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 3.2,
-          "draw": 3.35,
-          "away": 2.16,
-          "over25": 1.88,
-          "under25": 1.79
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 3.35,
-          "draw": 3.5,
-          "away": 2.23,
-          "over25": 1.88,
-          "under25": 1.79
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 3.2,
-          "draw": 3.35,
-          "away": 2.16,
-          "over25": 1.93,
-          "under25": 1.82
-        },
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 3.05,
-          "draw": 3.15,
-          "away": 2.07,
-          "over25": 1.81,
-          "under25": 1.71
-        }
-      ],
-      "sourceEventId": "f62a37ff2172709ec1598cffd080cc8d",
-      "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
-    },
-    {
-      "league": "AS",
-      "commence": "2026-10-29T18:00:00Z",
-      "home": "Örgryte IS",
-      "away": "Mjällby AIF",
-      "homeRaw": "Örgryte IS",
-      "awayRaw": "Mjällby AIF",
-      "bookmaker": "Unibet (NL)",
-      "odds": {
-        "away": 2.02,
-        "over25": 1.63,
-        "draw": 3.6,
-        "under25": 2.1,
-        "home": 3.35
-      },
-      "books": [
-        {
-          "key": "pmu_fr",
-          "bookmaker": "PMU (FR)",
-          "home": 3.15,
-          "draw": 3.4,
-          "away": 1.93,
-          "over25": 1.56,
-          "under25": 2.02
-        },
-        {
-          "key": "unibet_nl",
-          "bookmaker": "Unibet (NL)",
-          "home": 3.35,
-          "draw": 3.6,
-          "away": 2.02,
-          "over25": 1.63,
-          "under25": 2.1
-        },
-        {
-          "key": "leovegas_se",
-          "bookmaker": "LeoVegas (SE)",
-          "home": 3.35,
-          "draw": 3.6,
-          "away": 2.02,
-          "over25": 1.67,
-          "under25": 2.14
-        },
-        {
-          "key": "unibet_se",
-          "bookmaker": "Unibet (SE)",
-          "home": 3.5,
-          "draw": 3.8,
-          "away": 2.1,
-          "over25": 1.63,
-          "under25": 2.1
-        }
-      ],
-      "sourceEventId": "469414b1f7140ce19e5bdd1ae77ffff2",
       "fetchedAt": "2026-10-20T17:19:06.1245155+02:00"
     },
     {
