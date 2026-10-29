@@ -13855,7 +13855,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6363,
@@ -14141,7 +14141,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4366,
@@ -14448,7 +14448,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5436,
@@ -14774,7 +14774,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.526,
@@ -15060,7 +15060,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4565,
@@ -15385,7 +15385,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3829,
@@ -15691,7 +15691,7 @@
         "date": "2026-10-29",
         "league": "AS",
         "kickoffUtc": "2026-10-29T17:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5447,
@@ -15989,7 +15989,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5549,
@@ -20683,377 +20683,6 @@
       "keyNotes": [
         "Benfica: Leandro Barreiro (2 mål, 1 assist) skadad, åter Early July 2027 (FotMob)"
       ]
-    },
-    {
-      "date": "2026-10-29",
-      "kickoffUtc": "2026-10-29T17:30:00Z",
-      "league": "SA",
-      "round": "Matchday 9",
-      "home": "Frosinone",
-      "away": "Lecce",
-      "match": "Frosinone vs Lecce",
-      "tips": {
-        "1X2": {
-          "pick": "1",
-          "confidence": 0.606,
-          "probs": {
-            "home": 0.606,
-            "draw": 0.199,
-            "away": 0.195
-          }
-        },
-        "BTTS": {
-          "pick": null,
-          "confidence": null,
-          "pYes": null
-        },
-        "OU25": {
-          "pick": null,
-          "confidence": null,
-          "pOver": null
-        },
-        "CARDS": {
-          "line": 3.5,
-          "pick": "UNDER 3.5",
-          "pOver": {
-            "3.5": 0.43,
-            "4.5": 0.258,
-            "5.5": 0.139
-          },
-          "confidence": 0.57,
-          "expCards": 3.37,
-          "lambdaHome": 1.53,
-          "lambdaAway": 1.85,
-          "leagueAvg": 3.45,
-          "dataTo": "2026-10-19",
-          "referee": null,
-          "dispersion": 24.67,
-          "pBoth": 0.707
-        },
-        "BOTH_CARDS": {
-          "pick": "JA",
-          "pYes": 0.707,
-          "confidence": 0.707
-        }
-      },
-      "tipScore": 0.606,
-      "marketOnly": true,
-      "dataSource": "dc",
-      "marketSource": "Pinnacle",
-      "note": "1X2 ur lagmodellen (Dixon-Coles) - inget eget modelltips for matchen, oddsen bara vardefacit",
-      "pro": {
-        "match": "Frosinone vs Lecce",
-        "date": "2026-10-29",
-        "league": "SA",
-        "kickoffUtc": "2026-10-29T17:30:00Z",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00",
-        "oddsSrc": "api",
-        "dc": {
-          "home": 0.6061,
-          "draw": 0.199,
-          "away": 0.195,
-          "over25": 0.6572,
-          "btts": 0.6162,
-          "lambdaHome": 2.2,
-          "lambdaAway": 1.18,
-          "knownTeams": true
-        },
-        "blended": {
-          "home": 0.606,
-          "draw": 0.199,
-          "away": 0.195,
-          "over25": 0.6572,
-          "btts": 0.6162
-        },
-        "data": {
-          "home": 0.606,
-          "draw": 0.199,
-          "away": 0.195,
-          "source": "dc"
-        },
-        "marketLed": null,
-        "market": {
-          "fairSource": "pinnacle",
-          "fairSourceOu": "snitt av 6 bolag",
-          "minEv": 0.03,
-          "booksCount": 16,
-          "myBooks": [
-            "LeoVegas (SE)",
-            "Unibet (SE)",
-            "Betsson",
-            "Nordic Bet"
-          ],
-          "overround1x2": 0.052,
-          "fair": {
-            "home": 0.485,
-            "draw": 0.2655,
-            "away": 0.2495,
-            "over25": 0.5966,
-            "under25": 0.4034
-          },
-          "learned": null
-        },
-        "valueBets": [
-          {
-            "market": "1X2",
-            "pick": "X",
-            "odds": 3.95,
-            "bookmaker": "Unibet (SE)",
-            "strategy": "consensusAtBestPrice",
-            "fairSource": "pinnacle",
-            "p": 0.2655,
-            "modelP": 0.199,
-            "ev": 0.0488,
-            "stakeSek": 500
-          }
-        ],
-        "verdicts": {
-          "home": {
-            "market": "1X2",
-            "pick": "1",
-            "odds": 1.98,
-            "bookmaker": "Betsson",
-            "p": 0.485,
-            "ev": -0.0397,
-            "fairSource": "pinnacle",
-            "minOdds": 2.13,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 490,
-              "ratio": 0.98,
-              "breakEven": 0.5051,
-              "edge": -0.0201,
-              "evSek": -20
-            }
-          },
-          "draw": {
-            "market": "1X2",
-            "pick": "X",
-            "odds": 3.95,
-            "bookmaker": "Unibet (SE)",
-            "p": 0.2655,
-            "ev": 0.0488,
-            "fairSource": "pinnacle",
-            "minOdds": 3.88,
-            "value": true,
-            "riskReward": {
-              "stake": 500,
-              "win": 1475,
-              "ratio": 2.95,
-              "breakEven": 0.2532,
-              "edge": 0.0124,
-              "evSek": 24
-            }
-          },
-          "away": {
-            "market": "1X2",
-            "pick": "2",
-            "odds": 3.9,
-            "bookmaker": "Unibet (SE)",
-            "p": 0.2495,
-            "ev": -0.027,
-            "fairSource": "pinnacle",
-            "minOdds": 4.13,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 1450,
-              "ratio": 2.9,
-              "breakEven": 0.2564,
-              "edge": -0.0069,
-              "evSek": -13
-            }
-          },
-          "over25": {
-            "market": "OU25",
-            "pick": "OVER 2.5",
-            "odds": 1.58,
-            "bookmaker": "Betsson",
-            "p": 0.5966,
-            "ev": -0.0574,
-            "fairSource": "snitt av 6 bolag",
-            "minOdds": 1.77,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 290,
-              "ratio": 0.58,
-              "breakEven": 0.6329,
-              "edge": -0.0363,
-              "evSek": -29
-            }
-          },
-          "under25": {
-            "market": "OU25",
-            "pick": "UNDER 2.5",
-            "odds": 2.41,
-            "bookmaker": "Betsson",
-            "p": 0.4034,
-            "ev": -0.0277,
-            "fairSource": "snitt av 6 bolag",
-            "minOdds": 2.61,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 705,
-              "ratio": 1.41,
-              "breakEven": 0.4149,
-              "edge": -0.0115,
-              "evSek": -14
-            }
-          }
-        },
-        "odds": {
-          "home": 1.98,
-          "draw": 3.95,
-          "away": 3.9,
-          "over25": 1.58,
-          "under25": 2.41
-        },
-        "oddsBooks": {
-          "home": "Betsson",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Betsson",
-          "under25": "Betsson"
-        },
-        "rest": {
-          "home": {
-            "lastMatch": "2026-10-25",
-            "restDays": 4,
-            "matches7d": 1,
-            "matches14d": 2,
-            "congested": false
-          },
-          "away": {
-            "lastMatch": "2026-10-25",
-            "restDays": 4,
-            "matches7d": 1,
-            "matches14d": 3,
-            "congested": false
-          }
-        },
-        "availability": {
-          "alpha": 0,
-          "home": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Antonio Raimondo",
-                "share": 0.21
-              },
-              {
-                "name": "Giorgi Kvernadze",
-                "share": 0.192
-              },
-              {
-                "name": "Giacomo Calo",
-                "share": 0.107
-              }
-            ]
-          },
-          "away": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0.023,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Nikola Stulic",
-                "share": 0.103
-              },
-              {
-                "name": "Ivan Ilic",
-                "share": 0.097
-              },
-              {
-                "name": "Santiago Pierotti",
-                "share": 0.094
-              }
-            ]
-          }
-        }
-      },
-      "referee": null,
-      "keyAbsences": {
-        "lastMatch": {
-          "home": "2026-10-25",
-          "away": "2026-10-25"
-        },
-        "home": [],
-        "away": [
-          {
-            "id": 664587,
-            "name": "Lassana Coulibaly",
-            "starts": 7,
-            "of": 8,
-            "status": "injured",
-            "pStart": null,
-            "share": 0.06,
-            "goals": 2,
-            "assists": 1,
-            "lastMin": 0,
-            "injury": {
-              "name": null,
-              "expectedReturn": "Early November 2026",
-              "source": "FotMob"
-            }
-          },
-          {
-            "id": 1039403,
-            "name": "Santiago Pierotti",
-            "starts": 5,
-            "of": 8,
-            "status": "injured",
-            "pStart": null,
-            "share": 0.057,
-            "goals": 1,
-            "assists": 2,
-            "lastMin": 0,
-            "injury": {
-              "name": null,
-              "expectedReturn": "Mid November 2026",
-              "source": "FotMob"
-            }
-          }
-        ]
-      },
-      "keyNotes": [
-        "Lecce: Lassana Coulibaly (2 mål, 1 assist, 6 % av anfallet) skadad, åter Early November 2026 (FotMob)",
-        "Lecce: Santiago Pierotti (1 mål, 2 assist, 6 % av anfallet) skadad, åter Mid November 2026 (FotMob)"
-      ],
-      "teamElo": {
-        "home": {
-          "elo": 1692,
-          "rank": 12,
-          "country": "ITA"
-        },
-        "away": {
-          "elo": 1626,
-          "rank": 21,
-          "country": "ITA"
-        }
-      },
-      "squadValue": {
-        "home": {
-          "value": 53058638,
-          "players": 30
-        },
-        "away": {
-          "value": 63713806,
-          "players": 30
-        }
-      },
-      "oddsStale": {
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00",
-        "ageH": 214
-      }
     },
     {
       "date": "2026-11-02",
@@ -125693,7 +125322,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3993,
@@ -126038,7 +125667,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4563,
@@ -126380,7 +126009,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3808,
@@ -126734,7 +126363,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3932,
@@ -127144,7 +126773,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.374,
@@ -127749,7 +127378,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3691,
@@ -128091,7 +127720,7 @@
         "date": "2026-10-27",
         "league": "SB",
         "kickoffUtc": "2026-10-27T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2778,
@@ -128789,7 +128418,7 @@
         "date": "2026-10-27",
         "league": "EL1",
         "kickoffUtc": "2026-10-27T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4692,
@@ -129133,7 +128762,7 @@
         "date": "2026-10-27",
         "league": "EL1",
         "kickoffUtc": "2026-10-27T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3722,
@@ -129476,7 +129105,7 @@
         "date": "2026-10-27",
         "league": "EL1",
         "kickoffUtc": "2026-10-27T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5324,
@@ -129820,7 +129449,7 @@
         "date": "2026-10-27",
         "league": "EL1",
         "kickoffUtc": "2026-10-27T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4704,
@@ -130164,7 +129793,7 @@
         "date": "2026-10-27",
         "league": "EL1",
         "kickoffUtc": "2026-10-27T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5879,
@@ -130890,7 +130519,7 @@
         "date": "2026-10-27",
         "league": "AR",
         "kickoffUtc": "2026-10-27T22:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4858,
@@ -131315,7 +130944,7 @@
         "date": "2026-10-27",
         "league": "AS",
         "kickoffUtc": "2026-10-27T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3453,
@@ -131822,7 +131451,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4039,
@@ -132168,7 +131797,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5436,
@@ -132494,7 +132123,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4366,
@@ -132801,7 +132430,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5493,
@@ -133107,7 +132736,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6363,
@@ -133393,7 +133022,7 @@
         "date": "2026-10-28",
         "league": "AS",
         "kickoffUtc": "2026-10-28T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2228,
@@ -133728,7 +133357,7 @@
         "date": "2026-10-28",
         "league": "AS",
         "kickoffUtc": "2026-10-28T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3197,
@@ -134061,7 +133690,7 @@
         "date": "2026-10-28",
         "league": "MLS",
         "kickoffUtc": "2026-10-28T23:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4777,
@@ -134347,7 +133976,7 @@
         "date": "2026-10-28",
         "league": "AS",
         "kickoffUtc": "2026-10-28T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2794,
@@ -134682,7 +134311,7 @@
         "date": "2026-10-28",
         "league": "AS",
         "kickoffUtc": "2026-10-28T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2488,
@@ -135027,7 +134656,7 @@
         "date": "2026-10-28",
         "league": "SB",
         "kickoffUtc": "2026-10-28T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4663,
@@ -135418,7 +135047,7 @@
         "date": "2026-10-28",
         "league": "SB",
         "kickoffUtc": "2026-10-28T19:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3881,
@@ -135815,7 +135444,7 @@
         "date": "2026-10-28",
         "league": "SB",
         "kickoffUtc": "2026-10-28T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3695,
@@ -136639,7 +136268,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2713,
@@ -136983,7 +136612,7 @@
         "date": "2026-10-28",
         "league": "BR",
         "kickoffUtc": "2026-10-28T22:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6427,
@@ -137406,7 +137035,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.7685,
@@ -137762,7 +137391,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T20:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3825,
@@ -138138,7 +137767,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3241,
@@ -138514,7 +138143,7 @@
         "date": "2026-10-28",
         "league": "SC",
         "kickoffUtc": "2026-10-28T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.487,
@@ -138868,7 +138497,7 @@
         "date": "2026-10-28",
         "league": "BR",
         "kickoffUtc": "2026-10-28T22:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5007,
@@ -139258,7 +138887,7 @@
         "date": "2026-10-28",
         "league": "BR",
         "kickoffUtc": "2026-10-28T22:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.328,
@@ -139662,7 +139291,7 @@
         "date": "2026-10-29",
         "league": "BR",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3224,
@@ -139987,7 +139616,7 @@
         "date": "2026-10-29",
         "league": "AS",
         "kickoffUtc": "2026-10-29T17:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5447,
@@ -140285,7 +139914,7 @@
         "date": "2026-10-29",
         "league": "BR",
         "kickoffUtc": "2026-10-29T22:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4031,
@@ -140504,7 +140133,44 @@
       },
       "keyNotes": [
         "Atletico-MG: Tomás Cuello (3 mål, 1 assist, 11 % av anfallet) skadad, åter About 1-2 weeks (FotMob)"
-      ]
+      ],
+      "oddsMove": {
+        "src": "api",
+        "firstAt": "2026-10-29T13:16:00.012Z",
+        "lastAt": "2026-10-29T18:59:54.229Z",
+        "moves": {
+          "home": {
+            "from": 2.5,
+            "to": 2.5,
+            "pp": 0
+          },
+          "draw": {
+            "from": 3.5,
+            "to": 3.5,
+            "pp": 0
+          },
+          "away": {
+            "from": 2.75,
+            "to": 2.75,
+            "pp": 0
+          }
+        },
+        "flagged": [],
+        "series": [
+          {
+            "at": "2026-10-29T13:16:00.012Z",
+            "home": 2.5,
+            "draw": 3.5,
+            "away": 2.75
+          },
+          {
+            "at": "2026-10-29T18:59:54.229Z",
+            "home": 2.5,
+            "draw": 3.5,
+            "away": 2.75
+          }
+        ]
+      }
     },
     {
       "date": "2026-10-29",
@@ -140590,7 +140256,7 @@
         "date": "2026-10-29",
         "league": "BR",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4771,
@@ -140915,7 +140581,7 @@
         "date": "2026-10-29",
         "league": "AS",
         "kickoffUtc": "2026-10-29T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3474,
@@ -141232,7 +140898,7 @@
         "date": "2026-10-29",
         "league": "BR",
         "kickoffUtc": "2026-10-29T23:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2622,
@@ -141453,7 +141119,44 @@
       },
       "keyNotes": [
         "Vasco: Andrés Gómez (2 mål, 1 assist, 8 % av anfallet) skadad, åter A few days (FotMob)"
-      ]
+      ],
+      "oddsMove": {
+        "src": "api",
+        "firstAt": "2026-10-29T13:16:00.012Z",
+        "lastAt": "2026-10-29T18:59:54.229Z",
+        "moves": {
+          "home": {
+            "from": 3.9,
+            "to": 3.9,
+            "pp": 0
+          },
+          "draw": {
+            "from": 3.8,
+            "to": 3.8,
+            "pp": 0
+          },
+          "away": {
+            "from": 1.92,
+            "to": 1.92,
+            "pp": 0
+          }
+        },
+        "flagged": [],
+        "series": [
+          {
+            "at": "2026-10-29T13:16:00.012Z",
+            "home": 3.9,
+            "draw": 3.8,
+            "away": 1.92
+          },
+          {
+            "at": "2026-10-29T18:59:54.229Z",
+            "home": 3.9,
+            "draw": 3.8,
+            "away": 1.92
+          }
+        ]
+      }
     },
     {
       "date": "2026-10-29",
@@ -142079,7 +141782,7 @@
         "date": "2026-10-29",
         "league": "AS",
         "kickoffUtc": "2026-10-29T18:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3543,
@@ -142376,7 +142079,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T02:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4356,
@@ -142701,7 +142404,7 @@
         "date": "2026-10-29",
         "league": "MX",
         "kickoffUtc": "2026-10-29T03:00:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6041,
@@ -143022,7 +142725,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T02:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6418,
@@ -143529,6 +143232,10 @@
           "players": 20
         }
       },
+      "oddsStale": {
+        "oddsAt": "2026-10-20T15:39:02.048Z",
+        "ageH": 219.4
+      },
       "modelTips": {
         "OU25": {
           "confidence": 0.557,
@@ -143581,11 +143288,7 @@
       },
       "keyNotes": [
         "América de Cali: Marcos Mina (1 mål) skadad, åter A few days (FotMob)"
-      ],
-      "oddsStale": {
-        "oddsAt": "2026-10-20T15:39:02.048Z",
-        "ageH": 213.6
-      }
+      ]
     },
     {
       "date": "2026-10-29",
@@ -143874,7 +143577,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T02:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4519,
@@ -144159,7 +143862,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3829,
@@ -144465,7 +144168,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3084,
@@ -144789,7 +144492,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.6392,
@@ -145115,7 +144818,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.5549,
@@ -145440,7 +145143,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.4565,
@@ -145765,7 +145468,7 @@
         "date": "2026-10-29",
         "league": "MLS",
         "kickoffUtc": "2026-10-29T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.526,
@@ -147549,7 +147252,7 @@
         "date": "2026-10-30",
         "league": "BR",
         "kickoffUtc": "2026-10-30T00:30:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.3295,
@@ -147786,7 +147489,44 @@
       "keyNotes": [
         "Gremio: Cristian Pavón (3 mål, 3 assist, 9 % av anfallet) skadad, åter About 1-2 weeks (FotMob)",
         "Gremio: Diego Caito (startat 6 av 8) skadad, åter About 1-2 weeks (FotMob)"
-      ]
+      ],
+      "oddsMove": {
+        "src": "api",
+        "firstAt": "2026-10-29T13:16:00.012Z",
+        "lastAt": "2026-10-29T18:59:54.229Z",
+        "moves": {
+          "home": {
+            "from": 2.66,
+            "to": 2.66,
+            "pp": 0
+          },
+          "draw": {
+            "from": 3.4,
+            "to": 3.4,
+            "pp": 0
+          },
+          "away": {
+            "from": 2.66,
+            "to": 2.66,
+            "pp": 0
+          }
+        },
+        "flagged": [],
+        "series": [
+          {
+            "at": "2026-10-29T13:16:00.012Z",
+            "home": 2.66,
+            "draw": 3.4,
+            "away": 2.66
+          },
+          {
+            "at": "2026-10-29T18:59:54.229Z",
+            "home": 2.66,
+            "draw": 3.4,
+            "away": 2.66
+          }
+        ]
+      }
     },
     {
       "date": "2026-10-30",
@@ -227138,377 +226878,6 @@
     },
     {
       "date": "2026-10-29",
-      "kickoffUtc": "2026-10-29T17:30:00Z",
-      "league": "SA",
-      "round": "Matchday 9",
-      "home": "Frosinone",
-      "away": "Lecce",
-      "match": "Frosinone vs Lecce",
-      "tips": {
-        "1X2": {
-          "pick": "1",
-          "confidence": 0.606,
-          "probs": {
-            "home": 0.606,
-            "draw": 0.199,
-            "away": 0.195
-          }
-        },
-        "BTTS": {
-          "pick": null,
-          "confidence": null,
-          "pYes": null
-        },
-        "OU25": {
-          "pick": null,
-          "confidence": null,
-          "pOver": null
-        },
-        "CARDS": {
-          "line": 3.5,
-          "pick": "UNDER 3.5",
-          "pOver": {
-            "3.5": 0.43,
-            "4.5": 0.258,
-            "5.5": 0.139
-          },
-          "confidence": 0.57,
-          "expCards": 3.37,
-          "lambdaHome": 1.53,
-          "lambdaAway": 1.85,
-          "leagueAvg": 3.45,
-          "dataTo": "2026-10-19",
-          "referee": null,
-          "dispersion": 24.67,
-          "pBoth": 0.707
-        },
-        "BOTH_CARDS": {
-          "pick": "JA",
-          "pYes": 0.707,
-          "confidence": 0.707
-        }
-      },
-      "tipScore": 0.606,
-      "marketOnly": true,
-      "dataSource": "dc",
-      "marketSource": "Pinnacle",
-      "note": "1X2 ur lagmodellen (Dixon-Coles) - inget eget modelltips for matchen, oddsen bara vardefacit",
-      "pro": {
-        "match": "Frosinone vs Lecce",
-        "date": "2026-10-29",
-        "league": "SA",
-        "kickoffUtc": "2026-10-29T17:30:00Z",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00",
-        "oddsSrc": "api",
-        "dc": {
-          "home": 0.6061,
-          "draw": 0.199,
-          "away": 0.195,
-          "over25": 0.6572,
-          "btts": 0.6162,
-          "lambdaHome": 2.2,
-          "lambdaAway": 1.18,
-          "knownTeams": true
-        },
-        "blended": {
-          "home": 0.606,
-          "draw": 0.199,
-          "away": 0.195,
-          "over25": 0.6572,
-          "btts": 0.6162
-        },
-        "data": {
-          "home": 0.606,
-          "draw": 0.199,
-          "away": 0.195,
-          "source": "dc"
-        },
-        "marketLed": null,
-        "market": {
-          "fairSource": "pinnacle",
-          "fairSourceOu": "snitt av 6 bolag",
-          "minEv": 0.03,
-          "booksCount": 16,
-          "myBooks": [
-            "LeoVegas (SE)",
-            "Unibet (SE)",
-            "Betsson",
-            "Nordic Bet"
-          ],
-          "overround1x2": 0.052,
-          "fair": {
-            "home": 0.485,
-            "draw": 0.2655,
-            "away": 0.2495,
-            "over25": 0.5966,
-            "under25": 0.4034
-          },
-          "learned": null
-        },
-        "valueBets": [
-          {
-            "market": "1X2",
-            "pick": "X",
-            "odds": 3.95,
-            "bookmaker": "Unibet (SE)",
-            "strategy": "consensusAtBestPrice",
-            "fairSource": "pinnacle",
-            "p": 0.2655,
-            "modelP": 0.199,
-            "ev": 0.0488,
-            "stakeSek": 500
-          }
-        ],
-        "verdicts": {
-          "home": {
-            "market": "1X2",
-            "pick": "1",
-            "odds": 1.98,
-            "bookmaker": "Betsson",
-            "p": 0.485,
-            "ev": -0.0397,
-            "fairSource": "pinnacle",
-            "minOdds": 2.13,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 490,
-              "ratio": 0.98,
-              "breakEven": 0.5051,
-              "edge": -0.0201,
-              "evSek": -20
-            }
-          },
-          "draw": {
-            "market": "1X2",
-            "pick": "X",
-            "odds": 3.95,
-            "bookmaker": "Unibet (SE)",
-            "p": 0.2655,
-            "ev": 0.0488,
-            "fairSource": "pinnacle",
-            "minOdds": 3.88,
-            "value": true,
-            "riskReward": {
-              "stake": 500,
-              "win": 1475,
-              "ratio": 2.95,
-              "breakEven": 0.2532,
-              "edge": 0.0124,
-              "evSek": 24
-            }
-          },
-          "away": {
-            "market": "1X2",
-            "pick": "2",
-            "odds": 3.9,
-            "bookmaker": "Unibet (SE)",
-            "p": 0.2495,
-            "ev": -0.027,
-            "fairSource": "pinnacle",
-            "minOdds": 4.13,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 1450,
-              "ratio": 2.9,
-              "breakEven": 0.2564,
-              "edge": -0.0069,
-              "evSek": -13
-            }
-          },
-          "over25": {
-            "market": "OU25",
-            "pick": "OVER 2.5",
-            "odds": 1.58,
-            "bookmaker": "Betsson",
-            "p": 0.5966,
-            "ev": -0.0574,
-            "fairSource": "snitt av 6 bolag",
-            "minOdds": 1.77,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 290,
-              "ratio": 0.58,
-              "breakEven": 0.6329,
-              "edge": -0.0363,
-              "evSek": -29
-            }
-          },
-          "under25": {
-            "market": "OU25",
-            "pick": "UNDER 2.5",
-            "odds": 2.41,
-            "bookmaker": "Betsson",
-            "p": 0.4034,
-            "ev": -0.0277,
-            "fairSource": "snitt av 6 bolag",
-            "minOdds": 2.61,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 705,
-              "ratio": 1.41,
-              "breakEven": 0.4149,
-              "edge": -0.0115,
-              "evSek": -14
-            }
-          }
-        },
-        "odds": {
-          "home": 1.98,
-          "draw": 3.95,
-          "away": 3.9,
-          "over25": 1.58,
-          "under25": 2.41
-        },
-        "oddsBooks": {
-          "home": "Betsson",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Betsson",
-          "under25": "Betsson"
-        },
-        "rest": {
-          "home": {
-            "lastMatch": "2026-10-25",
-            "restDays": 4,
-            "matches7d": 1,
-            "matches14d": 2,
-            "congested": false
-          },
-          "away": {
-            "lastMatch": "2026-10-25",
-            "restDays": 4,
-            "matches7d": 1,
-            "matches14d": 3,
-            "congested": false
-          }
-        },
-        "availability": {
-          "alpha": 0,
-          "home": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Antonio Raimondo",
-                "share": 0.21
-              },
-              {
-                "name": "Giorgi Kvernadze",
-                "share": 0.192
-              },
-              {
-                "name": "Giacomo Calo",
-                "share": 0.107
-              }
-            ]
-          },
-          "away": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0.023,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Nikola Stulic",
-                "share": 0.103
-              },
-              {
-                "name": "Ivan Ilic",
-                "share": 0.097
-              },
-              {
-                "name": "Santiago Pierotti",
-                "share": 0.094
-              }
-            ]
-          }
-        }
-      },
-      "referee": null,
-      "keyAbsences": {
-        "lastMatch": {
-          "home": "2026-10-25",
-          "away": "2026-10-25"
-        },
-        "home": [],
-        "away": [
-          {
-            "id": 664587,
-            "name": "Lassana Coulibaly",
-            "starts": 7,
-            "of": 8,
-            "status": "injured",
-            "pStart": null,
-            "share": 0.06,
-            "goals": 2,
-            "assists": 1,
-            "lastMin": 0,
-            "injury": {
-              "name": null,
-              "expectedReturn": "Early November 2026",
-              "source": "FotMob"
-            }
-          },
-          {
-            "id": 1039403,
-            "name": "Santiago Pierotti",
-            "starts": 5,
-            "of": 8,
-            "status": "injured",
-            "pStart": null,
-            "share": 0.057,
-            "goals": 1,
-            "assists": 2,
-            "lastMin": 0,
-            "injury": {
-              "name": null,
-              "expectedReturn": "Mid November 2026",
-              "source": "FotMob"
-            }
-          }
-        ]
-      },
-      "keyNotes": [
-        "Lecce: Lassana Coulibaly (2 mål, 1 assist, 6 % av anfallet) skadad, åter Early November 2026 (FotMob)",
-        "Lecce: Santiago Pierotti (1 mål, 2 assist, 6 % av anfallet) skadad, åter Mid November 2026 (FotMob)"
-      ],
-      "teamElo": {
-        "home": {
-          "elo": 1692,
-          "rank": 12,
-          "country": "ITA"
-        },
-        "away": {
-          "elo": 1626,
-          "rank": 21,
-          "country": "ITA"
-        }
-      },
-      "squadValue": {
-        "home": {
-          "value": 53058638,
-          "players": 30
-        },
-        "away": {
-          "value": 63713806,
-          "players": 30
-        }
-      },
-      "oddsStale": {
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00",
-        "ageH": 214
-      }
-    },
-    {
-      "date": "2026-10-29",
       "kickoffUtc": "2026-10-29T19:45:00Z",
       "league": "SA",
       "round": "Matchday 9",
@@ -227569,7 +226938,7 @@
         "date": "2026-10-29",
         "league": "SA",
         "kickoffUtc": "2026-10-29T19:45:00Z",
-        "oddsAt": "2026-10-29T13:16:00.012Z",
+        "oddsAt": "2026-10-29T18:59:54.229Z",
         "oddsSrc": "api",
         "dc": {
           "home": 0.2974,
@@ -227839,6 +227208,53 @@
           "value": 314271820,
           "players": 23
         }
+      },
+      "oddsMove": {
+        "src": "api",
+        "firstAt": "2026-10-29T13:16:00.012Z",
+        "lastAt": "2026-10-29T18:59:54.229Z",
+        "moves": {
+          "home": {
+            "from": 2.25,
+            "to": 2.25,
+            "pp": 0
+          },
+          "draw": {
+            "from": 3.8,
+            "to": 3.8,
+            "pp": 0
+          },
+          "away": {
+            "from": 3.1,
+            "to": 3.1,
+            "pp": 0
+          },
+          "over25": {
+            "from": 1.62,
+            "to": 1.62,
+            "pp": 0
+          },
+          "under25": {
+            "from": 2.38,
+            "to": 2.38,
+            "pp": 0
+          }
+        },
+        "flagged": [],
+        "series": [
+          {
+            "at": "2026-10-29T13:16:00.012Z",
+            "home": 2.25,
+            "draw": 3.8,
+            "away": 3.1
+          },
+          {
+            "at": "2026-10-29T18:59:54.229Z",
+            "home": 2.25,
+            "draw": 3.8,
+            "away": 3.1
+          }
+        ]
       }
     },
     {
@@ -235577,27 +234993,13 @@
           ],
           "overround1x2": 0.065,
           "fair": {
-            "home": 0.0907,
-            "draw": 0.1328,
-            "away": 0.7764,
+            "home": 0.102,
+            "draw": 0.1408,
+            "away": 0.7573,
             "over25": 0.7147,
             "under25": 0.2853
           },
-          "learned": {
-            "applied": [
-              "liga-kalibrering"
-            ],
-            "before": [
-              0.102,
-              0.1408,
-              0.7573
-            ],
-            "after": [
-              0.0907,
-              0.1328,
-              0.7764
-            ]
-          }
+          "learned": null
         },
         "valueBets": [],
         "verdicts": {
@@ -235606,18 +235008,18 @@
             "pick": "1",
             "odds": 11.5,
             "bookmaker": "Unibet (SE)",
-            "p": 0.0907,
-            "ev": 0.0431,
+            "p": 0.102,
+            "ev": 0.1725,
             "fairSource": "pinnacle",
-            "minOdds": 11.36,
+            "minOdds": 10.11,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 5250,
               "ratio": 10.5,
               "breakEven": 0.087,
-              "edge": 0.0037,
-              "evSek": 22
+              "edge": 0.015,
+              "evSek": 86
             },
             "reason": "odds över 5 (skräll)"
           },
@@ -235626,18 +235028,18 @@
             "pick": "X",
             "odds": 6.7,
             "bookmaker": "Nordic Bet",
-            "p": 0.1328,
-            "ev": -0.1099,
+            "p": 0.1408,
+            "ev": -0.0568,
             "fairSource": "pinnacle",
-            "minOdds": 7.76,
+            "minOdds": 7.32,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 2850,
               "ratio": 5.7,
               "breakEven": 0.1493,
-              "edge": -0.0164,
-              "evSek": -55
+              "edge": -0.0085,
+              "evSek": -28
             },
             "reason": "odds över 5 (skräll)"
           },
@@ -235646,18 +235048,18 @@
             "pick": "2",
             "odds": 1.28,
             "bookmaker": "Unibet (SE)",
-            "p": 0.7764,
-            "ev": -0.0061,
+            "p": 0.7573,
+            "ev": -0.0307,
             "fairSource": "pinnacle",
-            "minOdds": 1.33,
+            "minOdds": 1.37,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 140,
               "ratio": 0.28,
               "breakEven": 0.7813,
-              "edge": -0.0048,
-              "evSek": -3
+              "edge": -0.024,
+              "evSek": -15
             }
           },
           "over25": {
@@ -235844,6 +235246,10 @@
           "value": 963454989,
           "players": 23
         }
+      },
+      "oddsStale": {
+        "oddsAt": "2026-10-20T17:19:06.1245155+02:00",
+        "ageH": 219.7
       }
     },
     {
@@ -251220,7 +250626,7 @@
         "date": "2026-10-31",
         "league": "SA",
         "kickoffUtc": "2026-10-31T14:00:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.5292,
@@ -251531,7 +250937,7 @@
         "date": "2026-10-31",
         "league": "SA",
         "kickoffUtc": "2026-10-31T17:00:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.1751,
@@ -251842,7 +251248,7 @@
         "date": "2026-10-31",
         "league": "SA",
         "kickoffUtc": "2026-10-31T19:45:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.287,
@@ -251878,9 +251284,9 @@
           ],
           "overround1x2": null,
           "fair": {
-            "home": 0.2341,
-            "draw": 0.2583,
-            "away": 0.5075,
+            "home": 0.2283,
+            "draw": 0.2603,
+            "away": 0.5114,
             "over25": null,
             "under25": null
           },
@@ -251889,14 +251295,14 @@
               "liga-kalibrering"
             ],
             "before": [
-              0.2715,
-              0.2534,
-              0.4751
+              0.266,
+              0.2553,
+              0.4787
             ],
             "after": [
-              0.2341,
-              0.2583,
-              0.5075
+              0.2283,
+              0.2603,
+              0.5114
             ]
           }
         },
@@ -251905,39 +251311,40 @@
           "home": {
             "market": "1X2",
             "pick": "1",
-            "odds": 3.5,
+            "odds": 3.6,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.2341,
-            "ev": -0.1806,
+            "p": 0.2283,
+            "ev": -0.1781,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 4.62,
+            "minOdds": 4.74,
             "value": false,
             "riskReward": {
               "stake": 500,
-              "win": 1250,
-              "ratio": 2.5,
-              "breakEven": 0.2857,
-              "edge": -0.0516,
-              "evSek": -90
-            }
+              "win": 1300,
+              "ratio": 2.6,
+              "breakEven": 0.2778,
+              "edge": -0.0495,
+              "evSek": -89
+            },
+            "reason": "odds över 3,5 (skräll)"
           },
           "draw": {
             "market": "1X2",
             "pick": "X",
             "odds": 3.75,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.2583,
-            "ev": -0.0313,
+            "p": 0.2603,
+            "ev": -0.0239,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 4.19,
+            "minOdds": 4.15,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 1375,
               "ratio": 2.75,
               "breakEven": 0.2667,
-              "edge": -0.0083,
-              "evSek": -16
+              "edge": -0.0064,
+              "evSek": -12
             },
             "reason": "odds över 3,5 (skräll)"
           },
@@ -251946,23 +251353,23 @@
             "pick": "2",
             "odds": 2,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.5075,
-            "ev": 0.0151,
+            "p": 0.5114,
+            "ev": 0.0228,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 2.13,
+            "minOdds": 2.12,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 500,
               "ratio": 1,
               "breakEven": 0.5,
-              "edge": 0.0075,
-              "evSek": 8
+              "edge": 0.0114,
+              "evSek": 11
             }
           }
         },
         "odds": {
-          "home": 3.5,
+          "home": 3.6,
           "draw": 3.75,
           "away": 2,
           "over25": null,
@@ -252124,317 +251531,6 @@
     },
     {
       "date": "2026-11-01",
-      "kickoffUtc": "2026-11-01T14:00:00.000Z",
-      "league": "SA",
-      "round": "Matchday 10",
-      "home": "Lazio",
-      "away": "Cagliari",
-      "match": "Lazio vs Cagliari",
-      "tips": {
-        "1X2": {
-          "pick": "1",
-          "confidence": 0.556,
-          "probs": {
-            "home": 0.556,
-            "draw": 0.245,
-            "away": 0.2
-          }
-        },
-        "BTTS": {
-          "pick": null,
-          "confidence": null,
-          "pYes": null
-        },
-        "OU25": {
-          "pick": null,
-          "confidence": null,
-          "pOver": null
-        },
-        "CARDS": {
-          "line": 3.5,
-          "pick": "OVER 3.5",
-          "pOver": {
-            "3.5": 0.553,
-            "4.5": 0.372,
-            "5.5": 0.227
-          },
-          "confidence": 0.553,
-          "expCards": 4,
-          "lambdaHome": 1.74,
-          "lambdaAway": 2.26,
-          "leagueAvg": 3.45,
-          "dataTo": "2026-10-19",
-          "referee": null,
-          "dispersion": 24.67,
-          "pBoth": 0.782
-        },
-        "BOTH_CARDS": {
-          "pick": "JA",
-          "pYes": 0.782,
-          "confidence": 0.782
-        }
-      },
-      "tipScore": 0.556,
-      "marketOnly": true,
-      "dataSource": "dc",
-      "marketSource": "snitt av 1 bolag",
-      "note": "1X2 ur lagmodellen (Dixon-Coles) - inget eget modelltips for matchen, oddsen bara vardefacit",
-      "pro": {
-        "match": "Lazio vs Cagliari",
-        "date": "2026-11-01",
-        "league": "SA",
-        "kickoffUtc": "2026-11-01T14:00:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
-        "oddsSrc": "op",
-        "dc": {
-          "home": 0.5559,
-          "draw": 0.2445,
-          "away": 0.1995,
-          "over25": 0.4645,
-          "btts": 0.4732,
-          "lambdaHome": 1.65,
-          "lambdaAway": 0.88,
-          "knownTeams": true
-        },
-        "blended": {
-          "home": 0.5557,
-          "draw": 0.2446,
-          "away": 0.1997,
-          "over25": 0.4645,
-          "btts": 0.4732
-        },
-        "data": {
-          "home": 0.5557,
-          "draw": 0.2446,
-          "away": 0.1997,
-          "source": "dc"
-        },
-        "marketLed": null,
-        "market": {
-          "fairSource": "OddsPortal-snitt",
-          "fairSourceOu": null,
-          "minEv": 0.08,
-          "booksCount": 1,
-          "myBooks": [
-            "OddsPortal (snitt)"
-          ],
-          "overround1x2": null,
-          "fair": {
-            "home": 0.6734,
-            "draw": 0.2144,
-            "away": 0.1122,
-            "over25": null,
-            "under25": null
-          },
-          "learned": {
-            "applied": [
-              "liga-kalibrering"
-            ],
-            "before": [
-              0.6614,
-              0.2116,
-              0.127
-            ],
-            "after": [
-              0.6734,
-              0.2144,
-              0.1122
-            ]
-          }
-        },
-        "valueBets": [],
-        "verdicts": {
-          "home": {
-            "market": "1X2",
-            "pick": "1",
-            "odds": 1.44,
-            "bookmaker": "OddsPortal (snitt)",
-            "p": 0.6734,
-            "ev": -0.0302,
-            "fairSource": "OddsPortal-snitt",
-            "minOdds": 1.61,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 220,
-              "ratio": 0.44,
-              "breakEven": 0.6944,
-              "edge": -0.021,
-              "evSek": -15
-            }
-          },
-          "draw": {
-            "market": "1X2",
-            "pick": "X",
-            "odds": 4.5,
-            "bookmaker": "OddsPortal (snitt)",
-            "p": 0.2144,
-            "ev": -0.0353,
-            "fairSource": "OddsPortal-snitt",
-            "minOdds": 5.04,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 1750,
-              "ratio": 3.5,
-              "breakEven": 0.2222,
-              "edge": -0.0078,
-              "evSek": -18
-            },
-            "reason": "odds över 3,5 (skräll)"
-          },
-          "away": {
-            "market": "1X2",
-            "pick": "2",
-            "odds": 7.5,
-            "bookmaker": "OddsPortal (snitt)",
-            "p": 0.1122,
-            "ev": -0.1587,
-            "fairSource": "OddsPortal-snitt",
-            "minOdds": 9.63,
-            "value": false,
-            "riskReward": {
-              "stake": 500,
-              "win": 3250,
-              "ratio": 6.5,
-              "breakEven": 0.1333,
-              "edge": -0.0212,
-              "evSek": -79
-            },
-            "reason": "odds över 3,5 (skräll)"
-          }
-        },
-        "odds": {
-          "home": 1.44,
-          "draw": 4.5,
-          "away": 7.5,
-          "over25": null,
-          "under25": null
-        },
-        "oddsBooks": {
-          "home": "OddsPortal (snitt)",
-          "draw": "OddsPortal (snitt)",
-          "away": "OddsPortal (snitt)",
-          "over25": null,
-          "under25": null
-        },
-        "rest": {
-          "home": {
-            "lastMatch": "2026-10-27",
-            "restDays": 5,
-            "matches7d": 1,
-            "matches14d": 4,
-            "congested": false
-          },
-          "away": {
-            "lastMatch": "2026-10-27",
-            "restDays": 5,
-            "matches7d": 1,
-            "matches14d": 4,
-            "congested": false
-          }
-        },
-        "availability": {
-          "alpha": 0,
-          "home": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0.088,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Davide Frattesi",
-                "share": 0.15
-              },
-              {
-                "name": "Mattia Zaccagni",
-                "share": 0.133
-              },
-              {
-                "name": "Tijjani Noslin",
-                "share": 0.108
-              }
-            ]
-          },
-          "away": {
-            "source": "ingen franvarokalla",
-            "missingShare": 0,
-            "typicalMissing": 0.052,
-            "attackFactor": 1,
-            "players": [],
-            "topPlayers": [
-              {
-                "name": "Daniel Maldini",
-                "share": 0.244
-              },
-              {
-                "name": "Paul Mendy",
-                "share": 0.11
-              },
-              {
-                "name": "Jacopo Fazzini",
-                "share": 0.091
-              }
-            ]
-          }
-        }
-      },
-      "referee": null,
-      "keyAbsences": {
-        "lastMatch": {
-          "home": "2026-10-27",
-          "away": "2026-10-27"
-        },
-        "home": [],
-        "away": [
-          {
-            "id": 528453,
-            "name": "Harry Winks",
-            "starts": 7,
-            "of": 8,
-            "status": "injured",
-            "pStart": null,
-            "share": 0.016,
-            "goals": 0,
-            "assists": 0,
-            "lastMin": 0,
-            "injury": {
-              "name": null,
-              "expectedReturn": "Early November 2026",
-              "source": "FotMob"
-            }
-          }
-        ]
-      },
-      "keyNotes": [
-        "Cagliari: Harry Winks (startat 7 av 8) skadad, åter Early November 2026 (FotMob)"
-      ],
-      "teamElo": {
-        "home": {
-          "elo": 1795,
-          "rank": 8,
-          "country": "ITA"
-        },
-        "away": {
-          "elo": 1668,
-          "rank": 15,
-          "country": "ITA"
-        }
-      },
-      "squadValue": {
-        "home": {
-          "value": 207237491,
-          "players": 30
-        },
-        "away": {
-          "value": 88805473,
-          "players": 28
-        }
-      }
-    },
-    {
-      "date": "2026-11-01",
       "kickoffUtc": "2026-11-01T11:30:00.000Z",
       "league": "SA",
       "round": "Matchday 10",
@@ -252495,7 +251591,7 @@
         "date": "2026-11-01",
         "league": "SA",
         "kickoffUtc": "2026-11-01T11:30:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.7097,
@@ -252767,6 +251863,317 @@
       "kickoffUtc": "2026-11-01T14:00:00.000Z",
       "league": "SA",
       "round": "Matchday 10",
+      "home": "Lazio",
+      "away": "Cagliari",
+      "match": "Lazio vs Cagliari",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.556,
+          "probs": {
+            "home": 0.556,
+            "draw": 0.245,
+            "away": 0.2
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        },
+        "CARDS": {
+          "line": 3.5,
+          "pick": "OVER 3.5",
+          "pOver": {
+            "3.5": 0.553,
+            "4.5": 0.372,
+            "5.5": 0.227
+          },
+          "confidence": 0.553,
+          "expCards": 4,
+          "lambdaHome": 1.74,
+          "lambdaAway": 2.26,
+          "leagueAvg": 3.45,
+          "dataTo": "2026-10-19",
+          "referee": null,
+          "dispersion": 24.67,
+          "pBoth": 0.782
+        },
+        "BOTH_CARDS": {
+          "pick": "JA",
+          "pYes": 0.782,
+          "confidence": 0.782
+        }
+      },
+      "tipScore": 0.556,
+      "marketOnly": true,
+      "dataSource": "dc",
+      "marketSource": "snitt av 1 bolag",
+      "note": "1X2 ur lagmodellen (Dixon-Coles) - inget eget modelltips for matchen, oddsen bara vardefacit",
+      "pro": {
+        "match": "Lazio vs Cagliari",
+        "date": "2026-11-01",
+        "league": "SA",
+        "kickoffUtc": "2026-11-01T14:00:00.000Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
+        "oddsSrc": "op",
+        "dc": {
+          "home": 0.5559,
+          "draw": 0.2445,
+          "away": 0.1995,
+          "over25": 0.4645,
+          "btts": 0.4732,
+          "lambdaHome": 1.65,
+          "lambdaAway": 0.88,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.5557,
+          "draw": 0.2446,
+          "away": 0.1997,
+          "over25": 0.4645,
+          "btts": 0.4732
+        },
+        "data": {
+          "home": 0.5557,
+          "draw": 0.2446,
+          "away": 0.1997,
+          "source": "dc"
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "OddsPortal-snitt",
+          "fairSourceOu": null,
+          "minEv": 0.08,
+          "booksCount": 1,
+          "myBooks": [
+            "OddsPortal (snitt)"
+          ],
+          "overround1x2": null,
+          "fair": {
+            "home": 0.6734,
+            "draw": 0.2144,
+            "away": 0.1122,
+            "over25": null,
+            "under25": null
+          },
+          "learned": {
+            "applied": [
+              "liga-kalibrering"
+            ],
+            "before": [
+              0.6614,
+              0.2116,
+              0.127
+            ],
+            "after": [
+              0.6734,
+              0.2144,
+              0.1122
+            ]
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 1.44,
+            "bookmaker": "OddsPortal (snitt)",
+            "p": 0.6734,
+            "ev": -0.0302,
+            "fairSource": "OddsPortal-snitt",
+            "minOdds": 1.61,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 220,
+              "ratio": 0.44,
+              "breakEven": 0.6944,
+              "edge": -0.021,
+              "evSek": -15
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.5,
+            "bookmaker": "OddsPortal (snitt)",
+            "p": 0.2144,
+            "ev": -0.0353,
+            "fairSource": "OddsPortal-snitt",
+            "minOdds": 5.04,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1750,
+              "ratio": 3.5,
+              "breakEven": 0.2222,
+              "edge": -0.0078,
+              "evSek": -18
+            },
+            "reason": "odds över 3,5 (skräll)"
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 7.5,
+            "bookmaker": "OddsPortal (snitt)",
+            "p": 0.1122,
+            "ev": -0.1587,
+            "fairSource": "OddsPortal-snitt",
+            "minOdds": 9.63,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 3250,
+              "ratio": 6.5,
+              "breakEven": 0.1333,
+              "edge": -0.0212,
+              "evSek": -79
+            },
+            "reason": "odds över 3,5 (skräll)"
+          }
+        },
+        "odds": {
+          "home": 1.44,
+          "draw": 4.5,
+          "away": 7.5,
+          "over25": null,
+          "under25": null
+        },
+        "oddsBooks": {
+          "home": "OddsPortal (snitt)",
+          "draw": "OddsPortal (snitt)",
+          "away": "OddsPortal (snitt)",
+          "over25": null,
+          "under25": null
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-27",
+            "restDays": 5,
+            "matches7d": 1,
+            "matches14d": 4,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-27",
+            "restDays": 5,
+            "matches7d": 1,
+            "matches14d": 4,
+            "congested": false
+          }
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.088,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Davide Frattesi",
+                "share": 0.15
+              },
+              {
+                "name": "Mattia Zaccagni",
+                "share": 0.133
+              },
+              {
+                "name": "Tijjani Noslin",
+                "share": 0.108
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.052,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Daniel Maldini",
+                "share": 0.244
+              },
+              {
+                "name": "Paul Mendy",
+                "share": 0.11
+              },
+              {
+                "name": "Jacopo Fazzini",
+                "share": 0.091
+              }
+            ]
+          }
+        }
+      },
+      "referee": null,
+      "keyAbsences": {
+        "lastMatch": {
+          "home": "2026-10-27",
+          "away": "2026-10-27"
+        },
+        "home": [],
+        "away": [
+          {
+            "id": 528453,
+            "name": "Harry Winks",
+            "starts": 7,
+            "of": 8,
+            "status": "injured",
+            "pStart": null,
+            "share": 0.016,
+            "goals": 0,
+            "assists": 0,
+            "lastMin": 0,
+            "injury": {
+              "name": null,
+              "expectedReturn": "Early November 2026",
+              "source": "FotMob"
+            }
+          }
+        ]
+      },
+      "keyNotes": [
+        "Cagliari: Harry Winks (startat 7 av 8) skadad, åter Early November 2026 (FotMob)"
+      ],
+      "teamElo": {
+        "home": {
+          "elo": 1795,
+          "rank": 8,
+          "country": "ITA"
+        },
+        "away": {
+          "elo": 1668,
+          "rank": 15,
+          "country": "ITA"
+        }
+      },
+      "squadValue": {
+        "home": {
+          "value": 207237491,
+          "players": 30
+        },
+        "away": {
+          "value": 88805473,
+          "players": 28
+        }
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "kickoffUtc": "2026-11-01T14:00:00.000Z",
+      "league": "SA",
+      "round": "Matchday 10",
       "home": "Frosinone",
       "away": "Torino",
       "match": "Frosinone vs Torino",
@@ -252824,7 +252231,7 @@
         "date": "2026-11-01",
         "league": "SA",
         "kickoffUtc": "2026-11-01T14:00:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.5043,
@@ -253134,7 +252541,7 @@
         "date": "2026-11-01",
         "league": "SA",
         "kickoffUtc": "2026-11-01T17:00:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.3286,
@@ -253170,9 +252577,9 @@
           ],
           "overround1x2": null,
           "fair": {
-            "home": 0.2917,
-            "draw": 0.3173,
-            "away": 0.391,
+            "home": 0.2843,
+            "draw": 0.3271,
+            "away": 0.3886,
             "over25": null,
             "under25": null
           },
@@ -253181,14 +252588,14 @@
               "liga-kalibrering"
             ],
             "before": [
-              0.3248,
-              0.2994,
-              0.3758
+              0.318,
+              0.3078,
+              0.3742
             ],
             "after": [
-              0.2917,
-              0.3173,
-              0.391
+              0.2843,
+              0.3271,
+              0.3886
             ]
           }
         },
@@ -253197,39 +252604,39 @@
           "home": {
             "market": "1X2",
             "pick": "1",
-            "odds": 2.95,
+            "odds": 3,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.2917,
-            "ev": -0.1395,
+            "p": 0.2843,
+            "ev": -0.1472,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 3.71,
+            "minOdds": 3.8,
             "value": false,
             "riskReward": {
               "stake": 500,
-              "win": 975,
-              "ratio": 1.95,
-              "breakEven": 0.339,
-              "edge": -0.0473,
-              "evSek": -70
+              "win": 1000,
+              "ratio": 2,
+              "breakEven": 0.3333,
+              "edge": -0.0491,
+              "evSek": -74
             }
           },
           "draw": {
             "market": "1X2",
             "pick": "X",
-            "odds": 3.2,
+            "odds": 3.1,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.3173,
-            "ev": 0.0153,
+            "p": 0.3271,
+            "ev": 0.0141,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 3.41,
+            "minOdds": 3.31,
             "value": false,
             "riskReward": {
               "stake": 500,
-              "win": 1100,
-              "ratio": 2.2,
-              "breakEven": 0.3125,
-              "edge": 0.0048,
-              "evSek": 8
+              "win": 1050,
+              "ratio": 2.1,
+              "breakEven": 0.3226,
+              "edge": 0.0045,
+              "evSek": 7
             }
           },
           "away": {
@@ -253237,24 +252644,24 @@
             "pick": "2",
             "odds": 2.55,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.391,
-            "ev": -0.0029,
+            "p": 0.3886,
+            "ev": -0.0091,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 2.77,
+            "minOdds": 2.78,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 775,
               "ratio": 1.55,
               "breakEven": 0.3922,
-              "edge": -0.0011,
-              "evSek": -1
+              "edge": -0.0036,
+              "evSek": -5
             }
           }
         },
         "odds": {
-          "home": 2.95,
-          "draw": 3.2,
+          "home": 3,
+          "draw": 3.1,
           "away": 2.55,
           "over25": null,
           "under25": null
@@ -253461,7 +252868,7 @@
         "date": "2026-11-01",
         "league": "SA",
         "kickoffUtc": "2026-11-01T19:45:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.4101,
@@ -253497,9 +252904,9 @@
           ],
           "overround1x2": null,
           "fair": {
-            "home": 0.4097,
-            "draw": 0.3032,
-            "away": 0.2871,
+            "home": 0.4056,
+            "draw": 0.3002,
+            "away": 0.2943,
             "over25": null,
             "under25": null
           },
@@ -253508,14 +252915,14 @@
               "liga-kalibrering"
             ],
             "before": [
-              0.4304,
-              0.2848,
-              0.2848
+              0.4267,
+              0.2824,
+              0.2909
             ],
             "after": [
-              0.4097,
-              0.3032,
-              0.2871
+              0.4056,
+              0.3002,
+              0.2943
             ]
           }
         },
@@ -253526,18 +252933,18 @@
             "pick": "1",
             "odds": 2.25,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.4097,
-            "ev": -0.0782,
+            "p": 0.4056,
+            "ev": -0.0875,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 2.64,
+            "minOdds": 2.67,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 625,
               "ratio": 1.25,
               "breakEven": 0.4444,
-              "edge": -0.0348,
-              "evSek": -39
+              "edge": -0.0389,
+              "evSek": -44
             }
           },
           "draw": {
@@ -253545,44 +252952,44 @@
             "pick": "X",
             "odds": 3.4,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.3032,
-            "ev": 0.0309,
+            "p": 0.3002,
+            "ev": 0.0206,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 3.57,
+            "minOdds": 3.6,
             "value": false,
             "riskReward": {
               "stake": 500,
               "win": 1200,
               "ratio": 2.4,
               "breakEven": 0.2941,
-              "edge": 0.0091,
-              "evSek": 15
+              "edge": 0.0061,
+              "evSek": 10
             }
           },
           "away": {
             "market": "1X2",
             "pick": "2",
-            "odds": 3.4,
+            "odds": 3.3,
             "bookmaker": "OddsPortal (snitt)",
-            "p": 0.2871,
-            "ev": -0.0238,
+            "p": 0.2943,
+            "ev": -0.029,
             "fairSource": "OddsPortal-snitt",
-            "minOdds": 3.77,
+            "minOdds": 3.68,
             "value": false,
             "riskReward": {
               "stake": 500,
-              "win": 1200,
-              "ratio": 2.4,
-              "breakEven": 0.2941,
-              "edge": -0.007,
-              "evSek": -12
+              "win": 1150,
+              "ratio": 2.3,
+              "breakEven": 0.303,
+              "edge": -0.0088,
+              "evSek": -14
             }
           }
         },
         "odds": {
           "home": 2.25,
           "draw": 3.4,
-          "away": 3.4,
+          "away": 3.3,
           "over25": null,
           "under25": null
         },
@@ -253806,7 +253213,7 @@
         "date": "2026-11-02",
         "league": "SA",
         "kickoffUtc": "2026-11-02T17:30:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.4267,
@@ -254116,7 +253523,7 @@
         "date": "2026-11-02",
         "league": "SA",
         "kickoffUtc": "2026-11-02T19:45:00.000Z",
-        "oddsAt": "2026-10-29T13:15:45.603Z",
+        "oddsAt": "2026-10-29T18:59:41.870Z",
         "oddsSrc": "op",
         "dc": {
           "home": 0.6498,
@@ -255240,7 +254647,7 @@
     "source": "the-odds-api.com v4"
   },
   "proMeta": {
-    "updatedAt": "2026-10-29T13:16:43.708Z",
+    "updatedAt": "2026-10-29T19:00:38.186Z",
     "config": {
       "dcWeight": 0.5,
       "minEv": 0.03,
@@ -258958,21 +258365,6 @@
       "p": 0.2383,
       "modelP": 0.2411,
       "ev": 0.0726,
-      "stakeSek": 500
-    },
-    {
-      "match": "Frosinone vs Lecce",
-      "date": "2026-10-29",
-      "league": "SA",
-      "market": "1X2",
-      "pick": "X",
-      "odds": 3.95,
-      "bookmaker": "Unibet (SE)",
-      "strategy": "consensusAtBestPrice",
-      "fairSource": "pinnacle",
-      "p": 0.2655,
-      "modelP": 0.199,
-      "ev": 0.0488,
       "stakeSek": 500
     },
     {
