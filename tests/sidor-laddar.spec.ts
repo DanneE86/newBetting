@@ -226,6 +226,13 @@ test('Stryktipset i mobil: inget sticker ut, lagnamn och Lås syns hela', async 
     expect(r.away.top, `${sel}: bortalaget under hemmalaget`).toBeGreaterThanOrEqual(r.home.bottom - 1);
     expect(r.elo.left, `${sel}: Elo till höger om namnet`).toBeGreaterThanOrEqual(r.name.right - 1);
     expect(r.vs, `${sel}: inget streck mellan lagen på mobil`).toBe(0);
+    // Varje lag är en enda rad: kan falla/risklag visas bara som ⚠ (texten dold), så blocket är inte högre än ett lag på två rader
+    const flaggor = view.locator(`${sel} .st-team .tag-txt`);
+    if (await flaggor.count()) await expect(flaggor.first()).toBeHidden();
+    for (const lag of ['.st-team-home', '.st-team-away']) {
+      const h = await block.locator(lag).evaluate((el) => el.getBoundingClientRect().height);
+      expect(h, `${sel} ${lag}: en rad`).toBeLessThan(40);
+    }
   }
   await view.locator('.sb-seal').first().scrollIntoViewIfNeeded();
   await expect(view.locator('.sb-seal').first()).toBeInViewport({ ratio: 1 });
