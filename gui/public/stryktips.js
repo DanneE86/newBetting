@@ -52,6 +52,16 @@ function oddsUnder(e, i) {
   const tip = `${src}${p != null ? ` · ${pct(p)}` : ""}`;
   return `<small class="sb-odd" title="${esc(tip)}">${dec(o)}</small>`;
 }
+// Folkets streck under oddset (användaren 2026-10-30: "visa upp vad folket har"). Överstreckat = folket minst
+// FOLK_OVER över vår chans – utdelningsvikten flyttar då rader från tecknet.
+export const FOLK_OVER = 0.1;
+export function folkUnder(e, i) {
+  const f = e.folk?.[i];
+  if (f == null) return "";
+  const over = e.final?.[i] != null && f - e.final[i] >= FOLK_OVER - 1e-9;
+  const tip = over ? `Folket ${pct(f)}, vår chans ${pct(e.final[i])} – överstreckat, betalar lite` : `Svenska folkets streck ${pct(f)}`;
+  return `<small class="sb-folk${over ? " over" : ""}" title="${esc(tip)}">F ${pct(f)}</small>`;
+}
 
 function kickoff(iso) {
   if (!iso) return "tid saknas";
@@ -864,7 +874,7 @@ function kravRow(e, krav, pick, seal = null, share = null) {
     <span class="st-num">${e.eventNumber}</span>
     <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} <span class="st-vs">–</span> ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
-      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}</button>`).join("")}</div>
+      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}${folkUnder(e, i)}</button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
       ${seal ? sealButton(e, sealed) : ""}
     </div>
@@ -914,8 +924,8 @@ function couponCard(c, label, p) {
   // Egna spikar: kupongen spikar inga andra matcher
   const own = c.picks.some((x) => x.locked && x.signs.length === 1);
   const nSpik = c.picks.filter((x) => x.signs.length === 1).length;
-  // Stryktipset väger utdelningen (chans × √utdelning, 2026-10-30): underspelade tecken får plats, överstreckade favoriter straffas
-  const urval = c.rules.utdVikt ? `de ${c.rules.rowsTarget} raderna med bäst chans × √utdelning (underspelade tecken väger upp)` : `de ${c.rules.rowsTarget} troligaste raderna`;
+  // Stryktipset väger utdelningen (chans × utdelning^vikt, 2026-10-30, vikt 0,35): underspelade tecken får plats, överstreckade favoriter straffas
+  const urval = c.rules.utdVikt ? `de ${c.rules.rowsTarget} raderna med bäst chans × utdelning^${String(c.rules.utdVikt).replace(".", ",")} (underspelade tecken väger upp)` : `de ${c.rules.rowsTarget} troligaste raderna`;
   const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${nSpik} ${nSpik === 1 ? "spik" : "spikar"}: högst ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} favoriter med minst ${Math.round(FILE_RULES.spikDataMin * 100)} % på data och 1 skrällspik`}, sedan ${urval} med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
   return `<div class="sb-coupon is-main ds-card">
     ${tag}

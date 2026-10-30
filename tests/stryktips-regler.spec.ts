@@ -100,7 +100,7 @@ test('filkupong A: 500 rader, minst 30 000 kr per rad, starka spikar på data (h
       expect(red.rows, at).toBe(FILE_RULES.rows);
       expect(red.cost, at).toBe(FILE_RULES.rows * (red.rowPrice || 1));
       expect(red.rules.payoutMin, at).toBe(FILE_RULES.payoutMin);
-      // Utdelningsvikt (2026-10-30): Stryktipset chans × √utdelning, Europatipset bara chans. Saknas i filer byggda före ändringen.
+      // Utdelningsvikt (2026-10-30): Stryktipset chans × utdelning^0,35, Europatipset bara chans. Saknas i filer byggda före ändringen.
       if (red.rules.utdVikt != null) expect(red.rules.utdVikt, at).toBe(FILE_RULES.utdVikt[p.product]);
       expect(new Set(red.rowList).size, `${at}: unika rader`).toBe(red.rows);
       for (const row of red.rowList) row.split('').forEach((c: string, i: number) => expect(picks[i], `${at} rad ${row}`).toContain(c));

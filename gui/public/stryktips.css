@@ -418,6 +418,8 @@ body.view-stryktips main { display: none !important; }
 .sb-sign { display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; width: 3.55rem; min-width: 3.55rem; min-height: var(--target-min); padding: 6px 2px 5px; border: 1px solid var(--color-text-muted); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); line-height: 1.15; text-align: center; cursor: pointer; transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing); }
 .sb-sign small { display: block; width: 100%; margin: 0; color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); line-height: 1.2; text-align: center; font-variant-numeric: tabular-nums; }
 .sb-sign small.sb-odd { margin-top: 3px; padding-top: 3px; border-top: 1px solid var(--color-border); letter-spacing: 0; }
+.sb-sign small.sb-folk { margin-top: 2px; font-weight: var(--font-weight-regular); white-space: nowrap; }
+.sb-sign small.sb-folk.over { color: var(--color-warning); font-weight: var(--font-weight-bold); }
 .sb-sign:hover { border-color: var(--color-text); background: var(--color-surface-muted); }
 .sb-sign.on { background: var(--color-success-solid); border-color: var(--color-success); color: var(--color-text-on-brand); }
 .sb-sign.on small { color: var(--color-text-on-brand); }

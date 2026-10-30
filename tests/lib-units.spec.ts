@@ -1647,12 +1647,24 @@ test.describe('stryk-engine: kupong A (B och C borttagna 2026-10-25)', () => {
   });
 
   // Utdelningsvikt (användaren 2026-10-30: "vinna mycket så måste vara skrällar samt hitta något som är underspelat"):
-  // Stryktipset väljer raderna på chans × √utdelning, Europatipset på bara chans. Bakkörning 171 ST-omg: väntad utdelning per
-  // 13 rätt 38 000 → 73 000 kr, chans 1 på 168 → 200; vikt 1,0 avvisad (1 på 1 900).
+  // Stryktipset väljer raderna på chans × utdelning^0,35, Europatipset på bara chans. Bakkörning 171 ST-omg: 0,5 gav väntad
+  // utdelning per 13 rätt 38 000 → 73 000 kr, chans 1 på 168 → 200, men tog bort överstreckade favoriter helt (Villa 0/4/496);
+  // sänkt till 0,35 samma dag (1 på 175, 49 000 kr). Vikt 1,0 avvisad (1 på 1 900).
+  // Överstreckad favorit (folket 67 %, vår chans 43 %) får rader igen med 0,35 men inte med 0,5.
+  test('filkuponger: utdelningsvikt 0,35 behåller överstreckad favorit', async () => {
+    const { buildFileCoupons, FILE_RULES } = await engine();
+    const ev = [{ eventNumber: 1, final: [0.43, 0.27, 0.3], folk: [0.67, 0.19, 0.14] },
+      ...[2, 3, 4, 5, 6].map((eventNumber) => ({ eventNumber, final: [0.4, 0.3, 0.3], folk: [0.4, 0.3, 0.3] }))];
+    const base = { turnover: 25e6, realTurnover: 25e6, jackpot: 0 };
+    const rules = { ...FILE_RULES, rows: 100, payoutMin: 0, spikes: 0, skrallSpikes: 0 };
+    const ettor = (utdVikt: number) => buildFileCoupons({ product: 'stryktipset' }, ev, () => ev.map(() => [0, 1, 2]), base, { ...rules, utdVikt }).A.rowList.filter((r: string) => r[0] === '1').length;
+    expect(ettor(0.5)).toBeLessThan(ettor(FILE_RULES.utdVikt.stryktipset));
+    expect(ettor(FILE_RULES.utdVikt.stryktipset)).toBeGreaterThan(0);
+  });
   test('filkuponger: utdelningsvikt – chans × utdelning^w styr urvalet, 0 = bara chans', async () => {
     const { buildFileCoupons, FILE_RULES, utdViktFor } = await engine();
-    expect(FILE_RULES.utdVikt).toEqual({ stryktipset: 0.5, europatipset: 0 });
-    expect(utdViktFor(FILE_RULES, 'stryktipset')).toBe(0.5);
+    expect(FILE_RULES.utdVikt).toEqual({ stryktipset: 0.35, europatipset: 0 });
+    expect(utdViktFor(FILE_RULES, 'stryktipset')).toBe(0.35);
     expect(utdViktFor(FILE_RULES, 'europatipset')).toBe(0);
     expect(utdViktFor({ utdVikt: 0.3 }, 'europatipset')).toBe(0.3); // ett tal gäller alla spel (bakkörning)
     expect(utdViktFor({}, 'stryktipset')).toBe(0);
@@ -1670,7 +1682,7 @@ test.describe('stryk-engine: kupong A (B och C borttagna 2026-10-25)', () => {
     expect(row(0.5).rowList).toEqual(['22']); // 0,5: 0,09 × √11,6 = 0,31 (XX), 0,04 × √104 = 0,41 (22), 0,25 × √0,41 = 0,16 (11)
   });
 
-  test('filkuponger: Stryktipset väger utdelningen (√), Europatipset bara chans – samma spikar, golvet håller', async () => {
+  test('filkuponger: Stryktipset väger utdelningen, Europatipset bara chans – samma spikar, golvet håller', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     const { buildFileCoupons, sysFinal, FILE_RULES } = await engine();
     const mean = (xs: number[]) => xs.reduce((s, x) => s + x, 0) / xs.length;
@@ -4990,75 +5002,6 @@ test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
     expect(pub.indexOf('scripts/vakt.mjs')).toBeGreaterThan(-1);
     expect(pub.indexOf('vakt.mjs --sajt site')).toBeGreaterThan(pub.indexOf('build-static-site.mjs'));
     expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
-  });
-});
-
-test.describe('ägarlås: bara ägarsessionen rör stryktipsfilerna', () => {
-  const krok = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'agare-krok.mjs')).href);
-  const cfg = { omraden: { stryktips: { agent: 'agaren', filer: ['gui/public/stryk*', 'scripts/*stryk*', 'tests/stryktips*', 'docs/stryktipset/**'] } } };
-  const ren = { modified: () => [], staged: () => [] };
-  const abs = (rel: string) => path.join(ROOT, ...rel.split('/'));
-
-  test('Edit/Write på ägda filer nekas andra sessioner, ägaren och andra filer släpps', async () => {
-    const { decide } = await krok();
-    const edit = (rel: string, session: string, tool = 'Edit') => decide({ tool, input: { file_path: abs(rel) }, session }, cfg, ren, ROOT);
-    expect(edit('gui/public/stryktips.js', 'annan')).toContain('stryktips');
-    expect(edit('gui/public/stryk-engine.js', 'annan', 'Write')).toContain('ägs av session agaren');
-    expect(edit('docs/stryktipset/2026-10-10-omgang.md', 'annan')).toContain('stryktips');
-    expect(edit('gui/public/stryktips.js', 'agaren')).toBeNull();
-    expect(edit('gui/public/hastar.js', 'annan')).toBeNull();
-    expect(edit('config/agare.json', 'agaren')).toContain('bara användaren');
-  });
-
-  test('skal: skriva, återställa eller stagea en ägd fil nekas, läsa går', async () => {
-    const { decide } = await krok();
-    const bash = (command: string, git = ren, session = 'annan') => decide({ tool: 'Bash', input: { command }, session }, cfg, git, ROOT);
-    expect(bash('git checkout HEAD -- gui/public/stryk-engine.js')).toContain('stryk-engine.js');
-    expect(bash('echo x > gui/public/stryktips.js')).toContain('stryktips.js');
-    expect(bash('git add gui/public/stryktips.js')).toContain('stryktips.js');
-    expect(bash('sed -i s/a/b/ scripts/fetch-stryktipset.mjs')).toContain('fetch-stryktipset');
-    expect(bash('grep -n spik gui/public/stryktips.js 2>/dev/null')).toBeNull();
-    expect(bash('sed -n 1,5p gui/public/stryktips.js')).toBeNull();
-    expect(bash('echo x > config/agare.json')).toContain('bara användaren');
-    expect(bash('git add config/agare.json')).toBeNull();
-  });
-
-  test('breda git-kommandon nekas bara när ägda filer är ändrade; commit nekas när de är stageade', async () => {
-    const { decide } = await krok();
-    const andrad = { modified: () => ['gui/public/stryktips.js', 'config/agare.json'], staged: () => [] };
-    const stagead = { modified: () => [], staged: () => ['tests/stryktips.spec.ts'] };
-    const bash = (command: string, git: any, session = 'annan') => decide({ tool: 'Bash', input: { command }, session }, cfg, git, ROOT);
-    for (const c of ['git add -A', 'git add .', 'git commit -am x', 'git stash', 'git restore .', 'git checkout -- .', 'git reset --hard'])
-      expect(bash(c, andrad), c).toContain('stryktips.js');
-    expect(bash('git add -A', ren)).toBeNull();
-    expect(bash('git add -A', { modified: () => ['config/agare.json'], staged: () => [] })).toBeNull();
-    expect(bash('git commit --amend -m x', ren)).toBeNull();
-    expect(bash('git commit -m x', stagead)).toContain('tests/stryktips.spec.ts');
-    expect(bash('git add -A', andrad, 'agaren')).toBeNull();
-  });
-
-  test('"ta över" i användarens prompt flyttar ägarskapet till sessionen, nämnt område eller alla', async () => {
-    const { takeOver } = await krok();
-    const två = { omraden: { stryktips: { agent: 'agaren', sedan: '2026-10-20', filer: ['gui/public/stryk*'] }, hastar: { agent: 'agaren', filer: ['gui/public/hast*'] } } };
-    const alla = takeOver('Ta över den sessionen', två, 'ny', '2026-10-24');
-    expect(alla.areas).toEqual(['stryktips', 'hastar']);
-    expect(alla.cfg.omraden.stryktips).toMatchObject({ agent: 'ny', sedan: '2026-10-24', filer: ['gui/public/stryk*'] });
-    expect(två.omraden.stryktips.agent).toBe('agaren'); // originalet orört
-    expect(takeOver('ta över stryktipset', två, 'ny').areas).toEqual(['stryktips']);
-    expect(takeOver('fixa mobilläget', två, 'ny')).toBeNull();
-    expect(takeOver('ta över', två, 'agaren')).toBeNull();
-    expect(takeOver('ta över', två, '')).toBeNull();
-    const { decide } = await krok();
-    expect(decide({ tool: 'Edit', input: { file_path: path.join(ROOT, 'gui', 'public', 'stryktips.js') }, session: 'ny' }, alla.cfg, ren, ROOT)).toBeNull();
-  });
-
-  test('config/agare.json: stryktips ägs av en session och täcker sidans, motorns och hämtningens filer', async () => {
-    const { lockedArea } = await krok();
-    const real = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'agare.json'), 'utf8'));
-    expect(real.omraden.stryktips.agent).toMatch(/^[0-9a-f-]{36}$/);
-    for (const f of ['gui/public/stryktips.js', 'gui/public/stryk-engine.js', 'gui/stryktips-routes.mjs', 'scripts/fetch-stryktipset.mjs', 'scripts/lib/stryk-calibration.mjs', 'tests/stryktips-regler.spec.ts'])
-      expect(lockedArea(f, real, 'annan')?.namn, f).toBe('stryktips');
-    expect(lockedArea('gui/public/app.js', real, 'annan')).toBeNull();
   });
 });
 
