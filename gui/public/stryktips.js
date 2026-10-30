@@ -519,15 +519,16 @@ function teamName(e, side) {
   const s = t?.season;
   const elo = eloTag(e, side);
   const flags = (f?.side === side ? fallTag(f) : "")
-    + (t ? `<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)">⚠ risklag</span>` : "");
-  // Elo bredvid namnet; kan falla/risklag på egen rad under på mobil så att namnet får plats
-  return `<span class="st-team st-team-${side}"><span class="st-team-name">${esc(e[side])}</span>${elo ? `<span class="st-team-elo">${elo}</span>` : ""}${flags ? `<span class="st-team-flags">${flags}</span>` : ""}</span>`;
+    + (t ? `<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)"><span class="tag-ico">⚠</span><span class="tag-txt"> risklag</span></span>` : "");
+  // Elo bredvid namnet; på mobil visas kan falla/risklag bara som ⚠ på samma rad (användaren 2026-10-30: "mindre text eller
+  // en symbol") – texten finns kvar som förklaring vid tryck
+  return `<span class="st-team st-team-${side}"><span class="st-team-name">${esc(e[side])}</span>${flags ? `<span class="st-team-flags">${flags}</span>` : ""}${elo ? `<span class="st-team-elo">${elo}</span>` : ""}</span>`;
 }
 
 // "Kan falla" (2026-10-03): favorit som folket tror på (minst 50 %) men som har under 55 % chans hos oss, se canFall.
 // Bara Stryktipset: testat på PL/Championship/League One.
 const fallOf = (e) => (product === "stryktipset" ? canFall(e) : null);
-const fallTag = (f) => `<span class="fall-tag" title="Kan falla: folket streckar ${pct(f.folk)} men vår chans är ${pct(f.p)} (kryss ${pct(f.x)}). Sådana favoriter föll 57 % av gångerna i bakkörningen.">⚠ kan falla</span>`;
+const fallTag = (f) => `<span class="fall-tag" title="Kan falla: folket streckar ${pct(f.folk)} men vår chans är ${pct(f.p)} (kryss ${pct(f.x)}). Sådana favoriter föll 57 % av gångerna i bakkörningen."><span class="tag-ico">⚠</span><span class="tag-txt"> kan falla</span></span>`;
 // Kupongen spikar en favorit som kan falla (A–C: tecken = bara favoriten; D/E: nästan alla rader på favoriten)
 const fallMark = (e, signs, sys) => {
   const f = fallOf(e);

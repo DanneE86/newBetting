@@ -817,11 +817,13 @@ body.view-stryktips main { display: none !important; }
      kupongraden (.sb-match b) och på matchkortet (.st-title h3) */
   .sb-match b, .st-title h3 { display: flex; flex-direction: column; gap: 2px; }
   .st-vs { display: none; }
-  .st-team { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--space-2); row-gap: 2px; align-items: center; min-width: 0; }
-  .st-team-name { min-width: 0; overflow-wrap: anywhere; }
-  .st-team-elo { justify-self: end; white-space: nowrap; }
-  .st-team-flags { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px; }
+  .st-team { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .st-team-name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+  .st-team-elo, .st-team-flags { flex: none; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
   .st-team .team-elo, .st-team .fall-tag, .st-team .risk-tag { margin: 0; }
+  /* Kan falla/risklag bara som ⚠ på mobil – förklaringen finns kvar i title (visas vid tryck) */
+  .st-team .fall-tag, .st-team .risk-tag { padding: 0 5px; }
+  .st-team .tag-txt { display: none; }
   .sb-krav { flex-wrap: wrap; }
   .sb-signs { flex: 1 1 100%; min-width: 0; }
   .sb-sign { width: auto; min-width: 0; }
