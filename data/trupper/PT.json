@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "PT",
  "fotmobId": 61,
  "source": "FotMob",
@@ -605,7 +605,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Francesco Farioli",
@@ -995,7 +995,7 @@
      "id": 310768,
      "name": "Fredrik Aursnes",
      "role": "midfielders",
-     "position": "CDM,RB,RW,CM,LW",
+     "position": "CDM,RW,RB,CM,LW",
      "number": 8,
      "age": 30,
      "born": "1995-12-10",
@@ -1014,7 +1014,7 @@
      "id": 1192398,
      "name": "Georgiy Sudakov",
      "role": "midfielders",
-     "position": "CAM,LW",
+     "position": "CAM,LW,CM",
      "number": 10,
      "age": 24,
      "born": "2002-09-01",
@@ -1033,7 +1033,7 @@
      "id": 1067260,
      "name": "Jakub Kamiński",
      "role": "midfielders",
-     "position": "CAM,LW,LM,CM,RWB,RM,CDM",
+     "position": "CAM,LW,LM,RWB,CM,RM,CDM",
      "number": 13,
      "age": 24,
      "born": "2002-06-05",
@@ -1096,7 +1096,7 @@
      "id": 524434,
      "name": "João Palhinha",
      "role": "midfielders",
-     "position": "CDM,CB,CM",
+     "position": "CDM,CM,CB",
      "number": 36,
      "age": 31,
      "born": "1995-07-09",
@@ -1340,7 +1340,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Marco Silva",
@@ -1831,7 +1831,7 @@
      "id": 1327214,
      "name": "Nestory Irankunda",
      "role": "midfielders",
-     "position": "RM,LW,LM,ST,CAM",
+     "position": "RM,LW,CAM,RW,ST",
      "number": 19,
      "age": 20,
      "born": "2006-02-09",
@@ -2046,7 +2046,7 @@
      "id": 1458757,
      "name": "Luís Guilherme",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "LW,RW,CAM",
      "number": 31,
      "age": 20,
      "born": "2006-02-09",
@@ -2065,7 +2065,7 @@
      "id": 1691190,
      "name": "Flávio Gonçalves",
      "role": "attackers",
-     "position": "LW,LM,RW",
+     "position": "LW,RW,LM",
      "number": 58,
      "age": 19,
      "born": "2007-05-30",
@@ -2119,7 +2119,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rui Borges",
@@ -2483,12 +2483,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1077665,
@@ -2890,7 +2885,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Petit",
@@ -3616,7 +3611,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vasco Seabra",
@@ -4281,7 +4276,7 @@
      "role": "attackers",
      "position": "RW,LW",
      "number": 31,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-30",
      "country": "Brazil",
      "height": 180,
@@ -4352,7 +4347,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Bruno Pinheiro",
@@ -4767,7 +4762,7 @@
      "role": "midfielders",
      "position": "CDM",
      "number": 6,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-30",
      "country": "Portugal",
      "height": 172,
@@ -4852,6 +4847,25 @@
      "height": 170,
      "value": 278946,
      "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1688253,
+     "name": "Guilherme Gomes",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 19,
+     "age": 20,
+     "born": "2006-02-02",
+     "country": "Brazil",
+     "height": null,
+     "value": null,
+     "rating": 6.16,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4947,25 +4961,6 @@
      "height": 172,
      "value": 1279768,
      "rating": 6.59,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1688253,
-     "name": "Guilherme Gomes",
-     "role": "attackers",
-     "position": "ST",
-     "number": 19,
-     "age": 20,
-     "born": "2006-02-02",
-     "country": "Brazil",
-     "height": null,
-     "value": null,
-     "rating": 6.16,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5088,7 +5083,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luís Pinto",
@@ -5566,7 +5561,7 @@
      "id": 1158933,
      "name": "Sabit Abdulai",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CM,CDM",
      "number": 5,
      "age": 27,
      "born": "1999-05-11",
@@ -5588,7 +5583,7 @@
      "id": 1707494,
      "name": "Davy Gui",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 6,
      "age": 20,
      "born": "2006-06-15",
@@ -5908,7 +5903,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sérgio Ferreira",
@@ -6262,12 +6257,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1242261,
@@ -6351,7 +6341,7 @@
      "role": "midfielders",
      "position": "CM",
      "number": 16,
-     "age": 19,
+     "age": 20,
      "born": "2006-10-30",
      "country": "Spain",
      "height": 186,
@@ -6463,7 +6453,7 @@
      "id": 1287941,
      "name": "Gabri Martínez",
      "role": "midfielders",
-     "position": "LM,LWB,LW,RM",
+     "position": "LM,LWB,LW",
      "number": 77,
      "age": 23,
      "born": "2003-01-22",
@@ -6631,7 +6621,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Carlos Vicens",
@@ -7045,7 +7035,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 1437856,
@@ -7216,7 +7209,10 @@
      "penalties": 1,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "74",
+      "expectedReturn": "Early November 2026"
+     }
     },
     {
      "id": 1150871,
@@ -7390,7 +7386,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vasco Botelho da Costa",
@@ -7601,7 +7597,7 @@
      "id": 1670611,
      "name": "Gabriel Cabral",
      "role": "keepers",
-     "position": "Keeper",
+     "position": "GK",
      "number": 22,
      "age": 23,
      "born": "2003-04-19",
@@ -8073,7 +8069,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Carlos Carvalhal",
@@ -8506,7 +8502,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Early November 2026"
+     }
     },
     {
      "id": 1259680,
@@ -8778,7 +8777,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pepa",
@@ -9455,7 +9454,7 @@
      "id": 1435443,
      "name": "Patrick Ouotro",
      "role": "attackers",
-     "position": "ST",
+     "position": "LW",
      "number": 29,
      "age": 21,
      "born": "2005-09-13",
@@ -9471,7 +9470,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Tiago Margarido",
@@ -9968,7 +9967,7 @@
      "id": 1757280,
      "name": "Ibrahim Alani",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM",
      "number": 21,
      "age": 20,
      "born": "2006-07-29",
@@ -10234,7 +10233,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Mitchell van der Gaag",
@@ -11037,7 +11036,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alexandre Santos",
@@ -11540,7 +11539,7 @@
      "id": 309353,
      "name": "Seba Pérez",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CM,CDM",
      "number": 24,
      "age": 33,
      "born": "1993-03-29",
@@ -11730,7 +11729,7 @@
      "id": 1418747,
      "name": "João Rego",
      "role": "attackers",
-     "position": "LW,CAM,RW,CM",
+     "position": "CAM,LW,RW,CM",
      "number": 70,
      "age": 21,
      "born": "2005-06-20",
@@ -11784,7 +11783,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Filipe Coelho",
@@ -11970,7 +11969,7 @@
      "role": "keepers",
      "position": "GK",
      "number": 1,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-30",
      "country": "Poland",
      "height": 192,
@@ -12030,7 +12029,7 @@
      "role": "keepers",
      "position": "Keeper",
      "number": 98,
-     "age": 17,
+     "age": 18,
      "born": "2008-10-30",
      "country": "Portugal",
      "height": null,
@@ -12471,7 +12470,7 @@
      "id": 1210508,
      "name": "Diogo Nascimento",
      "role": "midfielders",
-     "position": "CDM,CAM,CM",
+     "position": "CDM,CM,CAM",
      "number": 90,
      "age": 23,
      "born": "2002-11-02",
@@ -12658,7 +12657,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sotiris Sylaidopoulos",
@@ -12962,7 +12961,7 @@
      "id": 1232793,
      "name": "Fernando Medrano",
      "role": "defenders",
-     "position": "LB,LWB,CB,LM",
+     "position": "LB,LWB,LM",
      "number": 3,
      "age": 26,
      "born": "2000-03-26",
@@ -13318,10 +13317,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
+      "typeId": "71",
+      "expectedReturn": "Day to day"
      }
     },
     {
@@ -13437,8 +13434,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": "6",
-      "expectedReturn": "Day to day"
+      "typeId": "71",
+      "expectedReturn": "Late November 2026"
      }
     },
     {
@@ -13461,7 +13458,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vasco Matos",

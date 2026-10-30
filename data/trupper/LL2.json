@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "LL2",
  "fotmobId": 140,
  "source": "FotMob",
@@ -554,7 +554,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pablo Hernández",
@@ -1328,7 +1328,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "García Pimienta",
@@ -1843,7 +1843,7 @@
      "id": 920095,
      "name": "Pejiño",
      "role": "midfielders",
-     "position": "RM,LW,LM,RW",
+     "position": "LM,RM,LW,RW",
      "number": 17,
      "age": 30,
      "born": "1996-07-29",
@@ -2071,7 +2071,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jokin Aranbarri",
@@ -2859,7 +2859,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Quique Alvarez",
@@ -3096,7 +3096,7 @@
      "id": 1403389,
      "name": "Diego Hormigo",
      "role": "defenders",
-     "position": "LB,CB,CM",
+     "position": "LB,CM,CB",
      "number": 3,
      "age": 23,
      "born": "2003-04-16",
@@ -3327,7 +3327,7 @@
      "id": 913184,
      "name": "Abdoul Kader Bamba",
      "role": "midfielders",
-     "position": "LW,CAM,LM,ST",
+     "position": "CAM,LM,LW,ST",
      "number": 17,
      "age": 32,
      "born": "1994-04-25",
@@ -3425,7 +3425,7 @@
      "id": 639133,
      "name": "José Arnáiz",
      "role": "attackers",
-     "position": "LW,ST,CM",
+     "position": "LW,CM,ST",
      "number": 11,
      "age": 31,
      "born": "1995-04-15",
@@ -3482,7 +3482,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pacheta",
@@ -3979,28 +3979,6 @@
      "injury": null
     },
     {
-     "id": 964579,
-     "name": "Kévin Appin",
-     "role": "midfielders",
-     "position": "LM,ST,RW",
-     "number": 10,
-     "age": 28,
-     "born": "1998-01-20",
-     "country": "Martinique",
-     "height": 177,
-     "value": 412556,
-     "rating": 6.38,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "Doubtful"
-     }
-    },
-    {
      "id": 1007717,
      "name": "Unai Vencedor",
      "role": "midfielders",
@@ -4159,10 +4137,32 @@
      "injury": null
     },
     {
+     "id": 964579,
+     "name": "Kévin Appin",
+     "role": "attackers",
+     "position": "ST,LM,RW",
+     "number": 10,
+     "age": 28,
+     "born": "1998-01-20",
+     "country": "Martinique",
+     "height": 177,
+     "value": 412556,
+     "rating": 6.38,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
+    },
+    {
      "id": 867647,
      "name": "Víctor Mollejo",
      "role": "attackers",
-     "position": "ST,RM,RW",
+     "position": "RM,ST,RW",
      "number": 11,
      "age": 25,
      "born": "2001-01-21",
@@ -4235,7 +4235,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sergio Francisco",
@@ -5024,7 +5024,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luis García",
@@ -5764,7 +5764,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Nicolás Larcamón",
@@ -6217,7 +6217,7 @@
      "id": 1323510,
      "name": "Alberto Reina",
      "role": "midfielders",
-     "position": "CAM,CM,ST,CDM,RW,LW",
+     "position": "CAM,ST,LW,RW",
      "number": 10,
      "age": 29,
      "born": "1997-09-09",
@@ -6397,7 +6397,7 @@
      "id": 1370087,
      "name": "Pablo Sáenz",
      "role": "attackers",
-     "position": "RW,ST,LW",
+     "position": "RW,LW,ST",
      "number": 20,
      "age": 25,
      "born": "2001-05-22",
@@ -6470,7 +6470,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Julián Calero",
@@ -6909,12 +6909,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "23/11/2026",
-      "name": "Ankle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1127218,
@@ -7224,7 +7219,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ferran Costa",
@@ -7533,12 +7528,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "01/11/2026",
-      "name": "Ankle surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 717021,
@@ -7772,12 +7762,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "02/11/2026",
-      "name": "Inflammation of the biceps tendon in the thigh",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1422602,
@@ -7976,7 +7961,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Iván Ania",
@@ -8712,7 +8697,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Javier Calleja",
@@ -9141,6 +9126,25 @@
      "injury": null
     },
     {
+     "id": 1292869,
+     "name": "Noel López",
+     "role": "midfielders",
+     "position": "RM",
+     "number": 11,
+     "age": 23,
+     "born": "2003-03-17",
+     "country": "Spain",
+     "height": null,
+     "value": 291458,
+     "rating": 6.43,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 670416,
      "name": "Gerard Valentín",
      "role": "midfielders",
@@ -9290,12 +9294,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Tendon rupture",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1285858,
@@ -9347,25 +9346,6 @@
      "height": 189,
      "value": 510335,
      "rating": 6.04,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1292869,
-     "name": "Noel López",
-     "role": "attackers",
-     "position": "RW",
-     "number": 11,
-     "age": 23,
-     "born": "2003-03-17",
-     "country": "Spain",
-     "height": null,
-     "value": 291458,
-     "rating": 6.43,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9450,7 +9430,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Álvaro Cervera",
@@ -10375,7 +10355,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ruben de la Barrera",
@@ -11160,7 +11140,7 @@
      "id": 926293,
      "name": "Kaj de Rooij",
      "role": "attackers",
-     "position": "LW",
+     "position": "LW,RW",
      "number": 22,
      "age": 25,
      "born": "2000-11-25",
@@ -11233,7 +11213,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fran Escribá",
@@ -11772,12 +11752,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1910012,
@@ -12030,7 +12005,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fredi Alvarez",
@@ -12591,7 +12566,7 @@
      "id": 1323207,
      "name": "Álex Sancris",
      "role": "midfielders",
-     "position": "LM,RW,RM",
+     "position": "LM,RM",
      "number": 22,
      "age": 29,
      "born": "1997-01-18",
@@ -12778,7 +12753,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rubén Albés",
@@ -13562,7 +13537,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Albert Celades",
@@ -14296,7 +14271,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Carles Manso",
@@ -14889,12 +14864,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "01/05/2027",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1436231,
@@ -15030,7 +15000,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ion Ansotegui",
@@ -15881,7 +15851,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José Juan Romero",
@@ -16486,7 +16456,7 @@
      "id": 1446819,
      "name": "Víctor Valverde",
      "role": "midfielders",
-     "position": "LM,ST,RM",
+     "position": "LM,ST",
      "number": 11,
      "age": 24,
      "born": "2001-12-26",
@@ -16837,7 +16807,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alberto González",

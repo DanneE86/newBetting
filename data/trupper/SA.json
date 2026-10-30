@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "SA",
  "fotmobId": 55,
  "source": "FotMob",
@@ -500,7 +500,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Cristian Chivu",
@@ -715,12 +715,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 541556,
@@ -1283,7 +1278,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Gennaro Gattuso",
@@ -1578,7 +1573,7 @@
      "id": 726345,
      "name": "Nahuel Molina",
      "role": "defenders",
-     "position": "RB,RWB,LWB",
+     "position": "RB,RWB,LWB,LM",
      "number": 20,
      "age": 28,
      "born": "1998-04-06",
@@ -1872,7 +1867,7 @@
      "id": 1800491,
      "name": "Emanuele Lulli",
      "role": "midfielders",
-     "position": "RWB",
+     "position": "RWB,RM",
      "number": 77,
      "age": 19,
      "born": "2007-08-17",
@@ -1964,7 +1959,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Gian Piero Gasperini",
@@ -2454,7 +2449,7 @@
      "id": 846000,
      "name": "Maxence Caqueret",
      "role": "midfielders",
-     "position": "CDM,CAM,LW",
+     "position": "CAM,CDM,LW",
      "number": 8,
      "age": 26,
      "born": "2000-02-15",
@@ -2671,11 +2666,11 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Cesc Fàbregas",
@@ -2970,7 +2965,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 1048023,
@@ -3008,10 +3006,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "30",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1988780,
@@ -3169,10 +3164,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "101",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 31097,
@@ -3414,7 +3406,7 @@
      "role": "attackers",
      "position": "RW,RM,CAM,LW",
      "number": 20,
-     "age": 22,
+     "age": 23,
      "born": "2003-10-30",
      "country": "England",
      "height": 174,
@@ -3444,10 +3436,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1794177,
@@ -3488,7 +3477,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ruben Amorim",
@@ -3718,7 +3707,7 @@
      "country": "Italy",
      "height": 196,
      "value": 5002418,
-     "rating": 7.41,
+     "rating": 7.44,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3775,7 +3764,7 @@
      "country": "Italy",
      "height": 179,
      "value": 2536363,
-     "rating": 7.12,
+     "rating": 7.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3813,7 +3802,7 @@
      "country": "Gabon",
      "height": 176,
      "value": 1250269,
-     "rating": 7.18,
+     "rating": 7.24,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -3851,7 +3840,7 @@
      "country": "Italy",
      "height": 188,
      "value": 1736283,
-     "rating": 6.68,
+     "rating": 6.73,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3870,7 +3859,7 @@
      "country": "Serbia",
      "height": 185,
      "value": 1697678,
-     "rating": 6.73,
+     "rating": 7.05,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3889,7 +3878,7 @@
      "country": "Egypt",
      "height": 192,
      "value": 767772,
-     "rating": 6.16,
+     "rating": 5.65,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3946,9 +3935,9 @@
      "country": "Austria",
      "height": 167,
      "value": 14235575,
-     "rating": 7.39,
+     "rating": 7.48,
      "goals": 2,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
@@ -3965,10 +3954,10 @@
      "country": "Italy",
      "height": 180,
      "value": 1859238,
-     "rating": 7.84,
-     "goals": 3,
+     "rating": 7.91,
+     "goals": 4,
      "assists": 1,
-     "penalties": 0,
+     "penalties": 1,
      "yellow": 0,
      "red": 0,
      "injury": null
@@ -3984,8 +3973,8 @@
      "country": "Italy",
      "height": 169,
      "value": 3468523,
-     "rating": 6.26,
-     "goals": 0,
+     "rating": 6.46,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -4030,7 +4019,7 @@
      "red": 0,
      "injury": {
       "typeId": "47",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -4044,7 +4033,7 @@
      "country": "Netherlands",
      "height": 181,
      "value": 1296806,
-     "rating": null,
+     "rating": 6.33,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4063,7 +4052,7 @@
      "country": "Albania",
      "height": 172,
      "value": 4044244,
-     "rating": 6.57,
+     "rating": 6.63,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4094,7 +4083,7 @@
      "id": 908328,
      "name": "Benjamin Lhassine Kone",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM",
      "number": 92,
      "age": 26,
      "born": "2000-03-14",
@@ -4139,9 +4128,9 @@
      "country": "Algeria",
      "height": 183,
      "value": 4523692,
-     "rating": 7.38,
+     "rating": 7.43,
      "goals": 0,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -4158,8 +4147,8 @@
      "country": "Italy",
      "height": 185,
      "value": 5460249,
-     "rating": 7.33,
-     "goals": 7,
+     "rating": 7.37,
+     "goals": 8,
      "assists": 0,
      "penalties": 0,
      "yellow": 3,
@@ -4177,8 +4166,8 @@
      "country": "Romania",
      "height": 181,
      "value": 4372151,
-     "rating": 6.38,
-     "goals": 0,
+     "rating": 7.43,
+     "goals": 2,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -4196,9 +4185,9 @@
      "country": "Georgia",
      "height": 183,
      "value": 4175625,
-     "rating": 7.52,
+     "rating": 7.73,
      "goals": 3,
-     "assists": 1,
+     "assists": 3,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
@@ -4215,7 +4204,7 @@
      "country": "Italy",
      "height": 178,
      "value": 3918712,
-     "rating": 6.56,
+     "rating": 6.53,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4243,7 +4232,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Massimiliano Alvini",
@@ -4489,7 +4478,7 @@
      "country": "Serbia",
      "height": 202,
      "value": 21244457,
-     "rating": 7.35,
+     "rating": 7.42,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4516,7 +4505,7 @@
      "red": 0,
      "injury": {
       "typeId": "70",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -4674,7 +4663,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -4715,7 +4704,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -4813,7 +4802,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -4856,10 +4845,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "09/12/2026",
-      "name": "Injury to the ankle",
-      "source": "Transfermarkt"
+      "typeId": "30",
+      "expectedReturn": "Late December 2026"
      }
     },
     {
@@ -4923,7 +4910,7 @@
      "id": 1355574,
      "name": "Giovane Nascimento",
      "role": "attackers",
-     "position": "ST,CAM",
+     "position": "ST,CAM,RW",
      "number": 23,
      "age": 22,
      "born": "2003-11-24",
@@ -4958,7 +4945,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Massimiliano Allegri",
@@ -5268,7 +5255,7 @@
      "id": 1131217,
      "name": "Pierre Kalulu",
      "role": "defenders",
-     "position": "CB,RB",
+     "position": "CB,RB,RWB",
      "number": 15,
      "age": 26,
      "born": "2000-06-05",
@@ -5340,7 +5327,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -5429,7 +5416,7 @@
      "id": 1078846,
      "name": "Andrea Cambiaso",
      "role": "midfielders",
-     "position": "LWB,LB,LM,RWB,RM",
+     "position": "LWB,LB,LM,RM,RWB",
      "number": 20,
      "age": 26,
      "born": "2000-02-20",
@@ -5448,7 +5435,7 @@
      "id": 848266,
      "name": "Weston McKennie",
      "role": "midfielders",
-     "position": "CAM,RWB,CM,RW,CDM,RM,LWB",
+     "position": "CAM,RWB,CM,RW,RM,LWB,CDM",
      "number": 22,
      "age": 28,
      "born": "1998-08-28",
@@ -5501,7 +5488,7 @@
      "red": 0,
      "injury": {
       "typeId": "101",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -5641,12 +5628,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Muscle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1684401,
@@ -5686,7 +5668,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -5709,7 +5691,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luciano Spalletti",
@@ -5949,12 +5931,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "04/12/2026",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1112684,
@@ -6032,7 +6009,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -6092,7 +6069,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -6190,14 +6167,14 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
      "id": 557677,
      "name": "Nikola Vlašić",
      "role": "midfielders",
-     "position": "CM,CAM,RW,ST",
+     "position": "CAM,CM,ST,RW",
      "number": 10,
      "age": 29,
      "born": "1997-10-04",
@@ -6216,7 +6193,7 @@
      "id": 1014980,
      "name": "Daniel Bragança",
      "role": "midfielders",
-     "position": "CDM,CAM,CM",
+     "position": "CDM,CM,CAM",
      "number": 21,
      "age": 27,
      "born": "1999-05-27",
@@ -6254,7 +6231,7 @@
      "id": 1218556,
      "name": "Kian Fitz-Jim",
      "role": "midfielders",
-     "position": "CM,CDM,CAM",
+     "position": "CM,CDM",
      "number": 28,
      "age": 23,
      "born": "2003-07-05",
@@ -6460,7 +6437,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ignazio Abate",
@@ -6763,7 +6740,7 @@
      "id": 924610,
      "name": "Yukinari Sugawara",
      "role": "defenders",
-     "position": "RB,RWB,RM",
+     "position": "RB,RM,RWB",
      "number": 28,
      "age": 26,
      "born": "2000-06-28",
@@ -6782,7 +6759,7 @@
      "id": 1289961,
      "name": "Adam Obert",
      "role": "defenders",
-     "position": "LB,LM,CB,LWB",
+     "position": "LB,LM,CB",
      "number": 33,
      "age": 24,
      "born": "2002-08-23",
@@ -6864,7 +6841,7 @@
      "id": 936164,
      "name": "Michel Ndary Adopo",
      "role": "midfielders",
-     "position": "CM,CDM,RW,RWB,CAM",
+     "position": "CM,CDM,CAM,RW",
      "number": 8,
      "age": 26,
      "born": "2000-07-19",
@@ -6924,7 +6901,7 @@
      "id": 485634,
      "name": "Roberto Gagliardini",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM",
      "number": 21,
      "age": 32,
      "born": "1994-04-07",
@@ -7190,7 +7167,7 @@
      "id": 1159233,
      "name": "Alieu Fadera",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "LW,RW,CAM",
      "number": 39,
      "age": 24,
      "born": "2001-11-03",
@@ -7225,7 +7202,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fabio Pisacane",
@@ -7567,7 +7544,7 @@
      "id": 1080669,
      "name": "Nadir Zortea",
      "role": "defenders",
-     "position": "RB,RM",
+     "position": "RB,RM,RWB",
      "number": 20,
      "age": 27,
      "born": "1999-06-19",
@@ -7639,6 +7616,25 @@
      "assists": 4,
      "penalties": 0,
      "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 46820,
+     "name": "Matteo Darmian",
+     "role": "defenders",
+     "position": "CB,RM",
+     "number": 36,
+     "age": 36,
+     "born": "1989-12-02",
+     "country": "Italy",
+     "height": 182,
+     "value": 782731,
+     "rating": 6.57,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -7795,25 +7791,6 @@
      "injury": null
     },
     {
-     "id": 46820,
-     "name": "Matteo Darmian",
-     "role": "midfielders",
-     "position": "CB,RM",
-     "number": 36,
-     "age": 36,
-     "born": "1989-12-02",
-     "country": "Italy",
-     "height": 182,
-     "value": 782731,
-     "rating": 6.57,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 661761,
      "name": "Riccardo Orsolini",
      "role": "attackers",
@@ -7877,7 +7854,7 @@
      "id": 1402900,
      "name": "Samuel Mbangula",
      "role": "attackers",
-     "position": "LW,LM,CAM",
+     "position": "LW,CAM,LM",
      "number": 11,
      "age": 22,
      "born": "2004-01-16",
@@ -7975,7 +7952,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Raffaele Palladino",
@@ -8167,7 +8144,7 @@
      "red": 0,
      "injury": {
       "typeId": "16",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8181,7 +8158,7 @@
      "country": "Italy",
      "height": 193,
      "value": 32215246,
-     "rating": 7.32,
+     "rating": 7.2,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8246,7 +8223,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8310,7 +8287,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 1692456,
@@ -8323,11 +8303,11 @@
      "country": "Slovenia",
      "height": 177,
      "value": 1384239,
-     "rating": 6.03,
+     "rating": 6.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -8342,7 +8322,7 @@
      "country": "Italy",
      "height": 194,
      "value": 41104345,
-     "rating": 6.69,
+     "rating": 6.71,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8399,7 +8379,7 @@
      "country": "Croatia",
      "height": 186,
      "value": 4458791,
-     "rating": 6.42,
+     "rating": 6.39,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8437,7 +8417,7 @@
      "country": "Brazil",
      "height": 183,
      "value": 43922555,
-     "rating": 6.88,
+     "rating": 6.84,
      "goals": 2,
      "assists": 0,
      "penalties": 1,
@@ -8464,7 +8444,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8478,9 +8458,9 @@
      "country": "Belgium",
      "height": 192,
      "value": 42844691,
-     "rating": 7.12,
-     "goals": 0,
-     "assists": 2,
+     "rating": 7.29,
+     "goals": 1,
+     "assists": 3,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -8505,7 +8485,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8527,7 +8507,7 @@
      "red": 0,
      "injury": {
       "typeId": "101",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8541,7 +8521,7 @@
      "country": "Italy",
      "height": 190,
      "value": 12551652,
-     "rating": 6.48,
+     "rating": 6.5,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8553,16 +8533,16 @@
      "id": 1053714,
      "name": "Nicola Zalewski",
      "role": "midfielders",
-     "position": "CAM,LWB,LM,LW,RW",
+     "position": "CAM,LWB,LW,LM,RW",
      "number": 59,
      "age": 24,
      "born": "2002-01-23",
      "country": "Poland",
      "height": 175,
      "value": 23228976,
-     "rating": 6.77,
-     "goals": 0,
-     "assists": 2,
+     "rating": 7.05,
+     "goals": 1,
+     "assists": 3,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -8579,13 +8559,16 @@
      "country": "Italy",
      "height": 183,
      "value": 7230126,
-     "rating": 6.8,
+     "rating": 6.83,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 1,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 244811,
@@ -8598,7 +8581,7 @@
      "country": "Italy",
      "height": 185,
      "value": 2797925,
-     "rating": 6.81,
+     "rating": 6.76,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -8617,11 +8600,11 @@
      "country": "North Macedonia",
      "height": 184,
      "value": 13141307,
-     "rating": 7.01,
+     "rating": 6.97,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 1,
      "injury": null
     },
@@ -8658,7 +8641,7 @@
      "country": "England",
      "height": 173,
      "value": 32148084,
-     "rating": 6.82,
+     "rating": 6.74,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8677,7 +8660,7 @@
      "country": "Montenegro",
      "height": 185,
      "value": 33404241,
-     "rating": 7.18,
+     "rating": 7.14,
      "goals": 6,
      "assists": 2,
      "penalties": 0,
@@ -8686,7 +8669,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Maurizio Sarri",
@@ -8968,12 +8951,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 914103,
@@ -9166,6 +9144,25 @@
      "injury": null
     },
     {
+     "id": 1677025,
+     "name": "Franz-Ethan Meichtry",
+     "role": "midfielders",
+     "position": "RW,RM,CAM",
+     "number": 11,
+     "age": 21,
+     "born": "2005-07-08",
+     "country": "Switzerland",
+     "height": 186,
+     "value": 6912231,
+     "rating": 6.2,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 364104,
      "name": "Stefano Sabelli",
      "role": "midfielders",
@@ -9188,7 +9185,7 @@
      "id": 875672,
      "name": "Hamed Traorè",
      "role": "midfielders",
-     "position": "CAM,LW,CM",
+     "position": "CAM,LW,CDM",
      "number": 25,
      "age": 26,
      "born": "2000-02-16",
@@ -9245,7 +9242,7 @@
      "id": 942193,
      "name": "Mikael Egill Ellertsson",
      "role": "midfielders",
-     "position": "RM,CM,RWB,LB,LM,LWB",
+     "position": "RM,CM,RWB,LB,LWB,LM",
      "number": 77,
      "age": 24,
      "born": "2002-03-11",
@@ -9258,12 +9255,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ankle sprain",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 161328,
@@ -9323,25 +9315,6 @@
      "injury": null
     },
     {
-     "id": 1677025,
-     "name": "Franz-Ethan Meichtry",
-     "role": "attackers",
-     "position": "RW,RM,CAM",
-     "number": 11,
-     "age": 21,
-     "born": "2005-07-08",
-     "country": "Switzerland",
-     "height": 186,
-     "value": 6912231,
-     "rating": 6.2,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1231904,
      "name": "Elias Havel",
      "role": "attackers",
@@ -9360,7 +9333,7 @@
      "red": 0,
      "injury": {
       "typeId": "30",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -9462,7 +9435,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Daniele De Rossi",
@@ -9668,7 +9641,7 @@
      "country": "Italy",
      "height": 195,
      "value": 2797925,
-     "rating": 6.83,
+     "rating": 6.73,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9782,7 +9755,7 @@
      "country": "Ireland",
      "height": 188,
      "value": 875806,
-     "rating": 6.06,
+     "rating": 6.16,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9820,11 +9793,11 @@
      "country": "Germany",
      "height": 193,
      "value": 4197882,
-     "rating": 6.52,
+     "rating": 6.3,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -9839,7 +9812,7 @@
      "country": "Portugal",
      "height": 183,
      "value": 3273154,
-     "rating": 6.84,
+     "rating": 6.85,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -9877,7 +9850,7 @@
      "country": "Italy",
      "height": 183,
      "value": 2994878,
-     "rating": 6.89,
+     "rating": 6.84,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -9934,11 +9907,11 @@
      "country": "Portugal",
      "height": 194,
      "value": 16729608,
-     "rating": 7.15,
+     "rating": 6.97,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -9980,21 +9953,21 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
      "id": 789243,
      "name": "Youssef Maleh",
      "role": "midfielders",
-     "position": "CM,CAM",
+     "position": "CM,CAM,CDM",
      "number": 14,
      "age": 28,
      "born": "1998-08-22",
      "country": "Morocco",
      "height": 177,
      "value": 1127913,
-     "rating": 6.5,
+     "rating": 6.54,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10013,7 +9986,7 @@
      "country": "Israel",
      "height": 188,
      "value": 2296813,
-     "rating": 6.4,
+     "rating": 6.49,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10054,9 +10027,9 @@
      "country": "Netherlands",
      "height": null,
      "value": 606946,
-     "rating": 6.28,
+     "rating": 6.45,
      "goals": 1,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -10066,7 +10039,7 @@
      "id": 664587,
      "name": "Lassana Coulibaly",
      "role": "midfielders",
-     "position": "CAM,CM,CDM,RW",
+     "position": "CAM,CDM,CM,RW",
      "number": 29,
      "age": 30,
      "born": "1996-04-10",
@@ -10081,7 +10054,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -10114,11 +10087,11 @@
      "country": "Mauritania",
      "height": 184,
      "value": 2090556,
-     "rating": 6.81,
+     "rating": 6.74,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -10152,7 +10125,7 @@
      "country": "Sweden",
      "height": 180,
      "value": null,
-     "rating": 6.56,
+     "rating": 6.52,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -10171,7 +10144,7 @@
      "country": "Serbia",
      "height": 188,
      "value": 4884749,
-     "rating": 6.09,
+     "rating": 6.1,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10190,7 +10163,7 @@
      "country": "Niger",
      "height": 174,
      "value": 941593,
-     "rating": 6.77,
+     "rating": 6.72,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -10209,7 +10182,7 @@
      "country": "Spain",
      "height": null,
      "value": null,
-     "rating": 6.19,
+     "rating": 6.24,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10276,25 +10249,23 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Adductor pain",
-      "source": "Transfermarkt"
+      "typeId": "121",
+      "expectedReturn": "Doubtful"
      }
     },
     {
      "id": 1187691,
      "name": "Joël Monteiro",
      "role": "attackers",
-     "position": "LW,LM",
+     "position": "LW,LM,CAM",
      "number": 99,
      "age": 27,
      "born": "1999-08-05",
      "country": "Switzerland",
      "height": 192,
      "value": 3651082,
-     "rating": 6.43,
-     "goals": 0,
+     "rating": 6.58,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -10302,7 +10273,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Eusebio Di Francesco",
@@ -10793,18 +10764,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1055183,
      "name": "Andrea Ghion",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM,CM",
      "number": 8,
      "age": 26,
      "born": "2000-02-23",
@@ -10993,7 +10959,7 @@
      "red": 0,
      "injury": {
       "typeId": "23",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -11168,7 +11134,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alberto Aquilani",
@@ -11473,7 +11439,7 @@
      "red": 0,
      "injury": {
       "typeId": "21",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -11711,7 +11677,7 @@
      "id": 480021,
      "name": "Patrick Ciurria",
      "role": "midfielders",
-     "position": "CAM,RM,RWB",
+     "position": "RM,CAM,RWB",
      "number": 26,
      "age": 31,
      "born": "1995-02-09",
@@ -11797,7 +11763,7 @@
      "country": "England",
      "height": null,
      "value": 10416297,
-     "rating": 7.09,
+     "rating": 7.11,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -11841,7 +11807,10 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 1585676,
@@ -11885,7 +11854,7 @@
      "id": 994403,
      "name": "Cyril Ngonge",
      "role": "attackers",
-     "position": "ST,RW",
+     "position": "ST,RW,CAM",
      "number": 16,
      "age": 26,
      "born": "2000-05-26",
@@ -11958,7 +11927,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ivan Jurić",
@@ -12212,7 +12181,7 @@
      "id": 1258292,
      "name": "Nicolò Bertola",
      "role": "defenders",
-     "position": "CB,LM",
+     "position": "CB,LM,RWB",
      "number": 13,
      "age": 23,
      "born": "2003-03-23",
@@ -12462,7 +12431,7 @@
      "id": 837847,
      "name": "Giorgi Chakvetadze",
      "role": "midfielders",
-     "position": "LM,CAM,ST,LW",
+     "position": "LM,CAM,ST,LW,CDM",
      "number": 30,
      "age": 27,
      "born": "1999-08-29",
@@ -12677,7 +12646,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Kosta Runjaić",
@@ -12886,7 +12855,7 @@
      "country": "Spain",
      "height": 192,
      "value": 2573155,
-     "rating": 6.31,
+     "rating": 6.39,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -12936,7 +12905,7 @@
      "id": 750734,
      "name": "Dodô",
      "role": "defenders",
-     "position": "RB,RM,CAM",
+     "position": "RB,RM",
      "number": 2,
      "age": 27,
      "born": "1998-11-17",
@@ -12962,7 +12931,7 @@
      "country": "Romania",
      "height": 191,
      "value": 17205192,
-     "rating": 6.57,
+     "rating": 6.53,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -13025,8 +12994,8 @@
      "country": "Portugal",
      "height": 178,
      "value": 9078433,
-     "rating": 6.53,
-     "goals": 0,
+     "rating": 6.9,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -13044,9 +13013,9 @@
      "country": "Spain",
      "height": 177,
      "value": 21591100,
-     "rating": 6.9,
+     "rating": 7.09,
      "goals": 2,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -13082,11 +13051,11 @@
      "country": "Brazil",
      "height": 185,
      "value": 2028192,
-     "rating": 6.17,
+     "rating": 6.27,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -13094,14 +13063,14 @@
      "id": 950596,
      "name": "Marco Brescianini",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM,CDM,CAM",
      "number": 4,
      "age": 26,
      "born": "2000-01-20",
      "country": "Italy",
      "height": 188,
      "value": 10023126,
-     "rating": 6.25,
+     "rating": 6.27,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -13142,7 +13111,7 @@
      "country": "Italy",
      "height": 190,
      "value": 15018293,
-     "rating": 6.94,
+     "rating": 6.96,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -13161,7 +13130,7 @@
      "country": "Ivory Coast",
      "height": 173,
      "value": 5477078,
-     "rating": 6.64,
+     "rating": 6.62,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -13180,7 +13149,7 @@
      "country": "Italy",
      "height": 178,
      "value": 14421951,
-     "rating": 7.07,
+     "rating": 6.99,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -13256,9 +13225,9 @@
      "country": "Sweden",
      "height": 185,
      "value": 5943872,
-     "rating": 6.88,
-     "goals": 0,
-     "assists": 0,
+     "rating": 7.09,
+     "goals": 1,
+     "assists": 1,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -13294,11 +13263,11 @@
      "country": "Italy",
      "height": 170,
      "value": 18465455,
-     "rating": 6.32,
+     "rating": 6.29,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -13313,7 +13282,7 @@
      "country": "Argentina",
      "height": 180,
      "value": 51873721,
-     "rating": 7.16,
+     "rating": 7.21,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -13332,11 +13301,11 @@
      "country": "Argentina",
      "height": 190,
      "value": 17048914,
-     "rating": 6.57,
+     "rating": 6.56,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -13401,7 +13370,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Paolo Vanoli",
@@ -13698,7 +13667,7 @@
      "id": 935380,
      "name": "Enrico Del Prato",
      "role": "defenders",
-     "position": "CB,RM,RB",
+     "position": "CB,RB,RM,RWB",
      "number": 15,
      "age": 26,
      "born": "1999-11-10",
@@ -13774,7 +13743,7 @@
      "id": 634310,
      "name": "Vincent Sierro",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 4,
      "age": 31,
      "born": "1995-10-08",
@@ -13793,7 +13762,7 @@
      "id": 951714,
      "name": "Adrián Bernabé",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM,CAM,CDM,RW",
      "number": 10,
      "age": 25,
      "born": "2001-05-26",
@@ -13850,7 +13819,7 @@
      "id": 1693531,
      "name": "Sascha Britschgi",
      "role": "midfielders",
-     "position": "RM,LB,RB,RWB",
+     "position": "RM,RB,RWB,LB",
      "number": 27,
      "age": 20,
      "born": "2006-08-27",
@@ -13869,7 +13838,7 @@
      "id": 1199360,
      "name": "Franco Carboni",
      "role": "midfielders",
-     "position": "CM",
+     "position": "LM",
      "number": 29,
      "age": 23,
      "born": "2003-04-04",
@@ -13945,7 +13914,7 @@
      "id": 1276505,
      "name": "Giovanni Fabbian",
      "role": "midfielders",
-     "position": "CM,CAM",
+     "position": "CAM,CM",
      "number": 80,
      "age": 23,
      "born": "2003-01-14",
@@ -14135,7 +14104,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alberto Gilardino",
@@ -14986,7 +14955,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Giovanni Stroppa",

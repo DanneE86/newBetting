@@ -1952,7 +1952,100 @@
    },
    "flagged": [],
    "savedAt": "2026-10-29T19:00:38.485Z"
+  },
+  "2026-10-30|L1|Lille|Lens": {
+   "key": "2026-10-30|L1|Lille|Lens",
+   "league": "L1",
+   "date": "2026-10-30",
+   "home": "Lille",
+   "away": "Lens",
+   "kickoffUtc": "2026-10-30T20:05:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T08:53:23.687Z",
+   "lastAt": "2026-10-30T15:53:31.240Z",
+   "minBeforeKick": 251,
+   "moves": {
+    "home": {
+     "from": 2.85,
+     "to": 2.65,
+     "pp": 1.2
+    },
+    "draw": {
+     "from": 3.55,
+     "to": 3.4,
+     "pp": 0.1
+    },
+    "away": {
+     "from": 2.7,
+     "to": 2.7,
+     "pp": -1.4
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-30T15:54:54.331Z"
+  },
+  "2026-10-30|BL|Elversberg|Mainz": {
+   "key": "2026-10-30|BL|Elversberg|Mainz",
+   "league": "BL",
+   "date": "2026-10-30",
+   "home": "Elversberg",
+   "away": "Mainz",
+   "kickoffUtc": "2026-10-30T19:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T08:53:23.687Z",
+   "lastAt": "2026-10-30T15:53:31.240Z",
+   "minBeforeKick": 216,
+   "moves": {
+    "home": {
+     "from": 3.3,
+     "to": 3.3,
+     "pp": -0.4
+    },
+    "draw": {
+     "from": 3.95,
+     "to": 3.8,
+     "pp": 0.6
+    },
+    "away": {
+     "from": 2.12,
+     "to": 2.1,
+     "pp": -0.2
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-30T15:54:54.332Z"
+  },
+  "2026-10-31|L1|Nice|Rennes": {
+   "key": "2026-10-31|L1|Nice|Rennes",
+   "league": "L1",
+   "date": "2026-10-31",
+   "home": "Nice",
+   "away": "Rennes",
+   "kickoffUtc": "2026-10-30T18:00:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T08:53:23.687Z",
+   "lastAt": "2026-10-30T15:53:31.240Z",
+   "minBeforeKick": 126,
+   "moves": {
+    "home": {
+     "from": 2.65,
+     "to": 2.5,
+     "pp": 0.4
+    },
+    "draw": {
+     "from": 4,
+     "to": 3.6,
+     "pp": 1.5
+    },
+    "away": {
+     "from": 2.68,
+     "to": 2.7,
+     "pp": -2
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-30T15:54:54.332Z"
   }
  },
- "updatedAt": "2026-10-29T19:00:38.485Z"
+ "updatedAt": "2026-10-30T15:54:54.332Z"
 }

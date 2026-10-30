@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "COL",
  "fotmobId": 274,
  "source": "FotMob",
@@ -706,7 +706,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Lucas González",
@@ -972,25 +972,6 @@
      "injury": null
     },
     {
-     "id": 2019795,
-     "name": "Duván Mina",
-     "role": "defenders",
-     "position": "Defender",
-     "number": null,
-     "age": 18,
-     "born": "2008-10-10",
-     "country": "Colombia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 879810,
      "name": "Marlon Torres",
      "role": "defenders",
@@ -1159,6 +1140,25 @@
      "country": "Colombia",
      "height": 174,
      "value": 526832,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2019795,
+     "name": "Duván Mina",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 32,
+     "age": 18,
+     "born": "2008-10-10",
+     "country": "Colombia",
+     "height": null,
+     "value": null,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1472,7 +1472,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "93",
+      "expectedReturn": "A few days"
+     }
     },
     {
      "id": 1897460,
@@ -1513,7 +1516,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "David González",
@@ -2116,25 +2119,6 @@
      }
     },
     {
-     "id": 1433044,
-     "name": "Johan Martínez",
-     "role": "midfielders",
-     "position": "RW,LM,ST,CAM,RM,LW,CM",
-     "number": 19,
-     "age": 24,
-     "born": "2002-03-15",
-     "country": "Colombia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1838701,
      "name": "Santiago Colonia",
      "role": "midfielders",
@@ -2268,6 +2252,25 @@
      "injury": null
     },
     {
+     "id": 1433044,
+     "name": "Johan Martínez",
+     "role": "attackers",
+     "position": "RW,LM,ST,CAM,RM,LW,CM",
+     "number": 19,
+     "age": 24,
+     "born": "2002-03-15",
+     "country": "Colombia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 495825,
      "name": "Eduard Bello",
      "role": "attackers",
@@ -2344,7 +2347,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rafael Dudamel",
@@ -2640,12 +2643,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1097612,
@@ -2664,10 +2662,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 845721,
@@ -2762,7 +2757,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 282301,
@@ -3211,7 +3209,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pablo Repetto",
@@ -4027,7 +4025,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alberto Gamero",
@@ -4776,7 +4774,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pablo Peirano",
@@ -5504,7 +5502,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Hernán Herrera",
@@ -5929,12 +5927,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Torn knee ligaments",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 207617,
@@ -6304,7 +6297,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luis Perea",
@@ -7040,7 +7033,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Flavio Robatto",
@@ -7790,7 +7783,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Nicolás Chiesa",
@@ -8687,7 +8680,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sebastián Oliveros",
@@ -9421,7 +9414,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ricardo Valiño",
@@ -9879,7 +9872,7 @@
      "id": 1531184,
      "name": "Jhildrey Lasso",
      "role": "defenders",
-     "position": "LB,LWB,CDM",
+     "position": "LB,LWB,CDM,LM",
      "number": 33,
      "age": 24,
      "born": "2002-07-14",
@@ -10316,7 +10309,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Flabio Torres",
@@ -11110,7 +11103,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José Luis García",
@@ -11844,7 +11837,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sebastián Viera",
@@ -12730,7 +12723,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jhon Gómez",
@@ -13640,7 +13633,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Arturo Reyes",
@@ -14469,7 +14462,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Hubert Bodhert",
@@ -15266,7 +15259,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Diego Arias",
@@ -16142,7 +16135,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Diego Merino",

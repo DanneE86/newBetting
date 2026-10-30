@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "L1",
  "fotmobId": 53,
  "source": "FotMob",
@@ -26,12 +26,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Dead leg",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1177131,
@@ -483,7 +478,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luis Enrique",
@@ -1117,7 +1112,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Franck Haise",
@@ -1827,7 +1822,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Davide Ancelotti",
@@ -2549,7 +2544,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Filipe Luís",
@@ -3308,7 +3303,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Paulo Fonseca",
@@ -3978,7 +3973,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Liam Rosenior",
@@ -4694,7 +4689,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Yannick Cahuzac",
@@ -5353,7 +5348,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Bruno Génésio",
@@ -6006,7 +6001,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alexandre Dujeux",
@@ -6728,7 +6723,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Olivier Pantaloni",
@@ -7368,7 +7363,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jens Berthel Askou",
@@ -8136,7 +8131,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Will Still",
@@ -8847,7 +8842,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Julien Lachuer",
@@ -9461,7 +9456,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Stéphane Gilli",
@@ -9819,7 +9814,7 @@
      "id": 1039807,
      "name": "Alexandre Lauray",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM,CAM",
      "number": 8,
      "age": 29,
      "born": "1997-03-18",
@@ -10015,7 +10010,7 @@
      "id": 2409733,
      "name": "Lenny Videira",
      "role": "midfielders",
-     "position": "Midfielder",
+     "position": "CB",
      "number": 36,
      "age": 20,
      "born": "2006-07-05",
@@ -10072,7 +10067,7 @@
      "id": 717270,
      "name": "Antoine Rabillard",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,CAM",
      "number": 9,
      "age": 31,
      "born": "1995-09-22",
@@ -10186,7 +10181,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Patrick Videira",
@@ -10549,7 +10544,7 @@
      "id": 1575945,
      "name": "Oso",
      "role": "defenders",
-     "position": "LB,LWB,LM,LW",
+     "position": "LWB,LB,LM,LW",
      "number": 36,
      "age": 23,
      "born": "2003-07-09",
@@ -10957,7 +10952,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Hugo Oliveira",
@@ -11249,7 +11244,7 @@
      "id": 1039458,
      "name": "Paolo Gozzi",
      "role": "defenders",
-     "position": "CB,LB",
+     "position": "LB,CB",
      "number": 5,
      "age": 25,
      "born": "2001-04-25",
@@ -11445,7 +11440,7 @@
      "id": 1342983,
      "name": "Antoine Mille",
      "role": "midfielders",
-     "position": "CAM,CDM,CM,RW",
+     "position": "CAM,CM,CDM,RW",
      "number": 17,
      "age": 29,
      "born": "1997-08-14",
@@ -11502,7 +11497,7 @@
      "id": 1276315,
      "name": "Dermane Karim",
      "role": "midfielders",
-     "position": "CAM,CDM,CM",
+     "position": "CAM,CM,LM,CDM",
      "number": 29,
      "age": 22,
      "born": "2003-12-26",
@@ -11648,15 +11643,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Stéphane Dumont",
@@ -12386,7 +12376,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Didier Digard",
