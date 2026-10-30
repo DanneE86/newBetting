@@ -211,6 +211,22 @@ test('Stryktipset i mobil: inget sticker ut, lagnamn och Lås syns hela', async 
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
   const namn = view.locator('.sb-match b').first();
   expect(await namn.evaluate((el) => el.scrollWidth <= el.clientWidth + 1), 'lagnamnen klipps inte').toBe(true);
+  // Lagen under varandra med Elo till höger om namnet (användaren 2026-10-30), i kupongraden och på matchkortet
+  // (matchkorten ligger hopfällda i details.st-fold – fäll upp så att måtten är verkliga, inte nollor)
+  await page.evaluate(() => document.querySelectorAll<HTMLDetailsElement>('details.st-fold').forEach((d) => { d.open = true; }));
+  for (const sel of ['.sb-match b', '.st-title h3']) {
+    const block = view.locator(sel).filter({ has: page.locator('.st-team-home .team-elo') }).first();
+    if (!(await block.count())) continue;
+    await block.scrollIntoViewIfNeeded();
+    await expect(block, `${sel}: synligt`).toBeVisible();
+    const r = await block.evaluate((el) => {
+      const box = (q: string) => { const b = el.querySelector(q)!.getBoundingClientRect(); return { top: b.top, bottom: b.bottom, left: b.left, right: b.right }; };
+      return { home: box('.st-team-home'), away: box('.st-team-away'), name: box('.st-team-home .st-team-name'), elo: box('.st-team-home .team-elo'), vs: el.querySelector('.st-vs')!.getBoundingClientRect().width };
+    });
+    expect(r.away.top, `${sel}: bortalaget under hemmalaget`).toBeGreaterThanOrEqual(r.home.bottom - 1);
+    expect(r.elo.left, `${sel}: Elo till höger om namnet`).toBeGreaterThanOrEqual(r.name.right - 1);
+    expect(r.vs, `${sel}: inget streck mellan lagen på mobil`).toBe(0);
+  }
   await view.locator('.sb-seal').first().scrollIntoViewIfNeeded();
   await expect(view.locator('.sb-seal').first()).toBeInViewport({ ratio: 1 });
   expect(fel, fel.join('\n')).toEqual([]);

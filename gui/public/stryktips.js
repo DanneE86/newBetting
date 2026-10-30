@@ -511,14 +511,17 @@ function eloTag(e, side) {
     + `<span class="elo-k">Elo</span> <span class="elo-n">${me}</span>${stronger ? ` <span class="elo-diff">+${diff}</span>` : ""}</span>`;
 }
 
-// Etikett vid lagnamnet: laget är ett risklag (streckfavorit som sällan vinner denna säsong)
+// Lagnamn med märken (Elo, kan falla, risklag). Ett block per lag: på mobil staplas hemma- och bortalag under varandra
+// med märkena till höger om namnet (användaren 2026-10-30: "lagen under varandra, Elo till höger om lagen")
 function teamName(e, side) {
   const t = e.streckFlop?.[side];
   const f = fallOf(e);
-  const name = esc(e[side]) + eloTag(e, side) + (f?.side === side ? fallTag(f) : "");
-  if (!t) return name;
-  const s = t.season;
-  return `${name}<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)">⚠ risklag</span>`;
+  const s = t?.season;
+  const elo = eloTag(e, side);
+  const flags = (f?.side === side ? fallTag(f) : "")
+    + (t ? `<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)">⚠ risklag</span>` : "");
+  // Elo bredvid namnet; kan falla/risklag på egen rad under på mobil så att namnet får plats
+  return `<span class="st-team st-team-${side}"><span class="st-team-name">${esc(e[side])}</span>${elo ? `<span class="st-team-elo">${elo}</span>` : ""}${flags ? `<span class="st-team-flags">${flags}</span>` : ""}</span>`;
 }
 
 // "Kan falla" (2026-10-03): favorit som folket tror på (minst 50 %) men som har under 55 % chans hos oss, se canFall.
@@ -590,7 +593,7 @@ function matchCard(p, e) {
     <header class="st-match-head">
       <span class="st-num">${e.eventNumber}</span>
       <div class="st-title">
-        <h3>${teamName(e, "home")} <span>–</span> ${teamName(e, "away")}</h3>
+        <h3>${teamName(e, "home")} <span class="st-vs">–</span> ${teamName(e, "away")}</h3>
         <p><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</p>
       </div>
       <div class="st-verdict">
@@ -858,7 +861,7 @@ function kravRow(e, krav, pick, seal = null, share = null) {
   const dis = sealed ? " disabled" : "";
   return `<div class="sb-row${krav ? " locked" : ""}${share?.raw ? " has-defall" : ""}${sealed ? " is-sealed" : ""}${seal?.error ? " is-error" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
-    <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} – ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
+    <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} <span class="st-vs">–</span> ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
       <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}</button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
