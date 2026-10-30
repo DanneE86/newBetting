@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T13:13:20.209Z",
+ "updatedAt": "2026-10-30T08:59:53.532Z",
  "league": "AS",
  "fotmobId": 67,
  "name": "Allsvenskan",
@@ -11,12 +11,12 @@
    "fotmobName": "Sirius",
    "fotmobId": 6694,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 17,
    "drawn": 4,
-   "lost": 4,
-   "goals": "56-32",
-   "gd": 24,
+   "lost": 5,
+   "goals": "56-34",
+   "gd": 22,
    "pts": 55
   },
   {
@@ -25,13 +25,13 @@
    "fotmobName": "Hammarby",
    "fotmobId": 8248,
    "group": null,
-   "played": 25,
-   "won": 15,
+   "played": 26,
+   "won": 16,
    "drawn": 4,
    "lost": 6,
-   "goals": "52-21",
-   "gd": 31,
-   "pts": 49
+   "goals": "54-21",
+   "gd": 33,
+   "pts": 52
   },
   {
    "rank": 3,
@@ -133,6 +133,20 @@
   },
   {
    "rank": 10,
+   "team": "GAIS",
+   "fotmobName": "GAIS",
+   "fotmobId": 8297,
+   "group": null,
+   "played": 26,
+   "won": 9,
+   "drawn": 7,
+   "lost": 10,
+   "goals": "32-26",
+   "gd": 6,
+   "pts": 34
+  },
+  {
+   "rank": 11,
    "team": "Brommapojkarna",
    "fotmobName": "Brommapojkarna",
    "fotmobId": 8501,
@@ -146,32 +160,18 @@
    "pts": 34
   },
   {
-   "rank": 11,
-   "team": "GAIS",
-   "fotmobName": "GAIS",
-   "fotmobId": 8297,
-   "group": null,
-   "played": 25,
-   "won": 8,
-   "drawn": 7,
-   "lost": 10,
-   "goals": "31-26",
-   "gd": 5,
-   "pts": 31
-  },
-  {
    "rank": 12,
    "team": "Mjallby",
    "fotmobName": "Mjällby",
    "fotmobId": 8127,
    "group": null,
-   "played": 25,
-   "won": 5,
+   "played": 26,
+   "won": 6,
    "drawn": 8,
    "lost": 12,
-   "goals": "28-42",
-   "gd": -14,
-   "pts": 23
+   "goals": "30-43",
+   "gd": -13,
+   "pts": 26
   },
   {
    "rank": 13,
@@ -179,12 +179,12 @@
    "fotmobName": "Kalmar FF",
    "fotmobId": 9892,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 6,
    "drawn": 4,
-   "lost": 15,
-   "goals": "23-41",
-   "gd": -18,
+   "lost": 16,
+   "goals": "23-42",
+   "gd": -19,
    "pts": 22
   },
   {
@@ -207,12 +207,12 @@
    "fotmobName": "Örgryte",
    "fotmobId": 10002,
    "group": null,
-   "played": 25,
+   "played": 26,
    "won": 4,
    "drawn": 7,
-   "lost": 14,
-   "goals": "31-56",
-   "gd": -25,
+   "lost": 15,
+   "goals": "32-58",
+   "gd": -26,
    "pts": 19
   },
   {
@@ -1590,6 +1590,120 @@
     25,
     19,
     -25
+   ],
+   [
+    "Halmstad",
+    16,
+    26,
+    17,
+    -31
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Sirius",
+    1,
+    26,
+    55,
+    22
+   ],
+   [
+    "Hammarby",
+    2,
+    26,
+    52,
+    33
+   ],
+   [
+    "Djurgarden",
+    3,
+    26,
+    49,
+    29
+   ],
+   [
+    "Hacken",
+    4,
+    26,
+    46,
+    17
+   ],
+   [
+    "Elfsborg",
+    5,
+    26,
+    43,
+    13
+   ],
+   [
+    "Vasteras SK",
+    6,
+    26,
+    41,
+    1
+   ],
+   [
+    "Malmo FF",
+    7,
+    26,
+    40,
+    7
+   ],
+   [
+    "AIK",
+    8,
+    26,
+    38,
+    -3
+   ],
+   [
+    "Goteborg",
+    9,
+    26,
+    38,
+    -9
+   ],
+   [
+    "GAIS",
+    10,
+    26,
+    34,
+    6
+   ],
+   [
+    "Brommapojkarna",
+    11,
+    26,
+    34,
+    -4
+   ],
+   [
+    "Mjallby",
+    12,
+    26,
+    26,
+    -13
+   ],
+   [
+    "Kalmar",
+    13,
+    26,
+    22,
+    -19
+   ],
+   [
+    "Degerfors",
+    14,
+    26,
+    20,
+    -23
+   ],
+   [
+    "Orgryte",
+    15,
+    26,
+    19,
+    -26
    ],
    [
     "Halmstad",
