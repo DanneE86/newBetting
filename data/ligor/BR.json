@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T13:13:20.209Z",
+ "updatedAt": "2026-10-30T08:59:53.532Z",
  "league": "BR",
  "fotmobId": 268,
  "name": "Série A",
@@ -11,13 +11,13 @@
    "fotmobName": "Flamengo",
    "fotmobId": 9770,
    "group": null,
-   "played": 32,
-   "won": 21,
+   "played": 33,
+   "won": 22,
    "drawn": 7,
    "lost": 4,
-   "goals": "64-27",
-   "gd": 37,
-   "pts": 70
+   "goals": "68-28",
+   "gd": 40,
+   "pts": 73
   },
   {
    "rank": 2,
@@ -39,30 +39,16 @@
    "fotmobName": "Cruzeiro",
    "fotmobId": 9781,
    "group": null,
-   "played": 32,
-   "won": 16,
+   "played": 33,
+   "won": 17,
    "drawn": 6,
    "lost": 10,
-   "goals": "51-46",
-   "gd": 5,
-   "pts": 54
+   "goals": "52-46",
+   "gd": 6,
+   "pts": 57
   },
   {
    "rank": 4,
-   "team": "Athletico-PR",
-   "fotmobName": "Athletico Paranaense",
-   "fotmobId": 10273,
-   "group": null,
-   "played": 32,
-   "won": 15,
-   "drawn": 9,
-   "lost": 8,
-   "goals": "50-38",
-   "gd": 12,
-   "pts": 54
-  },
-  {
-   "rank": 5,
    "team": "Fluminense",
    "fotmobName": "Fluminense",
    "fotmobId": 9863,
@@ -72,6 +58,20 @@
    "drawn": 9,
    "lost": 9,
    "goals": "52-42",
+   "gd": 10,
+   "pts": 54
+  },
+  {
+   "rank": 5,
+   "team": "Athletico-PR",
+   "fotmobName": "Athletico Paranaense",
+   "fotmobId": 10273,
+   "group": null,
+   "played": 33,
+   "won": 15,
+   "drawn": 9,
+   "lost": 9,
+   "goals": "50-40",
    "gd": 10,
    "pts": 54
   },
@@ -95,12 +95,12 @@
    "fotmobName": "Atlético-MG",
    "fotmobId": 10272,
    "group": null,
-   "played": 32,
+   "played": 33,
    "won": 14,
    "drawn": 8,
-   "lost": 10,
-   "goals": "44-38",
-   "gd": 6,
+   "lost": 11,
+   "goals": "44-39",
+   "gd": 5,
    "pts": 50
   },
   {
@@ -179,12 +179,12 @@
    "fotmobName": "Vasco da Gama",
    "fotmobId": 10276,
    "group": null,
-   "played": 31,
+   "played": 32,
    "won": 10,
    "drawn": 8,
-   "lost": 13,
-   "goals": "39-45",
-   "gd": -6,
+   "lost": 14,
+   "goals": "40-49",
+   "gd": -9,
    "pts": 38
   },
   {
@@ -203,6 +203,20 @@
   },
   {
    "rank": 15,
+   "team": "Gremio",
+   "fotmobName": "Grêmio",
+   "fotmobId": 9769,
+   "group": null,
+   "played": 33,
+   "won": 9,
+   "drawn": 10,
+   "lost": 14,
+   "goals": "37-44",
+   "gd": -7,
+   "pts": 37
+  },
+  {
+   "rank": 16,
    "team": "Mirassol",
    "fotmobName": "Mirassol",
    "fotmobId": 163782,
@@ -216,7 +230,7 @@
    "pts": 37
   },
   {
-   "rank": 16,
+   "rank": 17,
    "team": "Internacional",
    "fotmobName": "Internacional",
    "fotmobId": 8702,
@@ -228,20 +242,6 @@
    "goals": "37-42",
    "gd": -5,
    "pts": 35
-  },
-  {
-   "rank": 17,
-   "team": "Gremio",
-   "fotmobName": "Grêmio",
-   "fotmobId": 9769,
-   "group": null,
-   "played": 32,
-   "won": 8,
-   "drawn": 10,
-   "lost": 14,
-   "goals": "35-44",
-   "gd": -9,
-   "pts": 34
   },
   {
    "rank": 18,
@@ -1826,6 +1826,148 @@
     32,
     34,
     -9
+   ],
+   [
+    "Corinthians",
+    18,
+    32,
+    33,
+    -8
+   ],
+   [
+    "Remo",
+    19,
+    33,
+    29,
+    -15
+   ],
+   [
+    "Chapecoense-SC",
+    20,
+    32,
+    21,
+    -34
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Flamengo RJ",
+    1,
+    33,
+    73,
+    40
+   ],
+   [
+    "Palmeiras",
+    2,
+    33,
+    70,
+    34
+   ],
+   [
+    "Cruzeiro",
+    3,
+    33,
+    57,
+    6
+   ],
+   [
+    "Fluminense",
+    4,
+    33,
+    54,
+    10
+   ],
+   [
+    "Athletico-PR",
+    5,
+    33,
+    54,
+    10
+   ],
+   [
+    "Bahia",
+    6,
+    33,
+    53,
+    6
+   ],
+   [
+    "Atletico-MG",
+    7,
+    33,
+    50,
+    5
+   ],
+   [
+    "Santos",
+    8,
+    33,
+    47,
+    2
+   ],
+   [
+    "Bragantino",
+    9,
+    33,
+    44,
+    4
+   ],
+   [
+    "Sao Paulo",
+    10,
+    33,
+    43,
+    0
+   ],
+   [
+    "Botafogo RJ",
+    11,
+    33,
+    39,
+    -8
+   ],
+   [
+    "Coritiba",
+    12,
+    32,
+    39,
+    -12
+   ],
+   [
+    "Vasco",
+    13,
+    32,
+    38,
+    -9
+   ],
+   [
+    "Vitoria",
+    14,
+    32,
+    38,
+    -11
+   ],
+   [
+    "Gremio",
+    15,
+    33,
+    37,
+    -7
+   ],
+   [
+    "Mirassol",
+    16,
+    32,
+    37,
+    -8
+   ],
+   [
+    "Internacional",
+    17,
+    33,
+    35,
+    -5
    ],
    [
     "Corinthians",

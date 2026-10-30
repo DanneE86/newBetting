@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T13:13:20.209Z",
+ "updatedAt": "2026-10-30T08:59:53.532Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -7,6 +7,34 @@
  "table": [
   {
    "rank": 1,
+   "team": "Al Qadsiah",
+   "fotmobName": "Al Qadsiah",
+   "fotmobId": 101919,
+   "group": null,
+   "played": 12,
+   "won": 9,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "32-12",
+   "gd": 20,
+   "pts": 28
+  },
+  {
+   "rank": 2,
+   "team": "Al Nassr",
+   "fotmobName": "Al Nassr FC",
+   "fotmobId": 101918,
+   "group": null,
+   "played": 11,
+   "won": 9,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "28-11",
+   "gd": 17,
+   "pts": 28
+  },
+  {
+   "rank": 3,
    "team": "Al Hilal",
    "fotmobName": "Al Hilal",
    "fotmobId": 2529,
@@ -18,34 +46,6 @@
    "goals": "30-9",
    "gd": 21,
    "pts": 27
-  },
-  {
-   "rank": 2,
-   "team": "Al Nassr",
-   "fotmobName": "Al Nassr FC",
-   "fotmobId": 101918,
-   "group": null,
-   "played": 10,
-   "won": 8,
-   "drawn": 1,
-   "lost": 1,
-   "goals": "23-8",
-   "gd": 15,
-   "pts": 25
-  },
-  {
-   "rank": 3,
-   "team": "Al Qadsiah",
-   "fotmobName": "Al Qadsiah",
-   "fotmobId": 101919,
-   "group": null,
-   "played": 11,
-   "won": 8,
-   "drawn": 1,
-   "lost": 2,
-   "goals": "26-12",
-   "gd": 14,
-   "pts": 25
   },
   {
    "rank": 4,
@@ -119,30 +119,30 @@
   },
   {
    "rank": 9,
-   "team": "Al Kholood",
-   "fotmobName": "Al Kholood",
-   "fotmobId": 1523706,
-   "group": null,
-   "played": 10,
-   "won": 3,
-   "drawn": 3,
-   "lost": 4,
-   "goals": "14-21",
-   "gd": -7,
-   "pts": 12
-  },
-  {
-   "rank": 10,
    "team": "Al Khaleej",
    "fotmobName": "Al Khaleej",
    "fotmobId": 550433,
    "group": null,
-   "played": 11,
-   "won": 2,
+   "played": 12,
+   "won": 3,
    "drawn": 6,
    "lost": 3,
-   "goals": "10-17",
-   "gd": -7,
+   "goals": "14-19",
+   "gd": -5,
+   "pts": 15
+  },
+  {
+   "rank": 10,
+   "team": "Al Kholood",
+   "fotmobName": "Al Kholood",
+   "fotmobId": 1523706,
+   "group": null,
+   "played": 11,
+   "won": 3,
+   "drawn": 3,
+   "lost": 5,
+   "goals": "17-26",
+   "gd": -9,
    "pts": 12
   },
   {
@@ -151,12 +151,12 @@
    "fotmobName": "Al Riyadh",
    "fotmobId": 582739,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 3,
    "drawn": 3,
-   "lost": 4,
-   "goals": "11-19",
-   "gd": -8,
+   "lost": 5,
+   "goals": "11-25",
+   "gd": -14,
    "pts": 12
   },
   {
@@ -179,12 +179,12 @@
    "fotmobName": "Al Hazem",
    "fotmobId": 101911,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 4,
-   "lost": 5,
-   "goals": "12-16",
-   "gd": -4,
+   "lost": 6,
+   "goals": "14-20",
+   "gd": -6,
    "pts": 10
   },
   {
@@ -1502,6 +1502,134 @@
     11,
     10,
     -4
+   ],
+   [
+    "Al Faisaly",
+    14,
+    11,
+    10,
+    -8
+   ],
+   [
+    "Al Fayha",
+    15,
+    11,
+    8,
+    -7
+   ],
+   [
+    "Al Fateh",
+    16,
+    11,
+    6,
+    -13
+   ],
+   [
+    "Al Taawoun",
+    17,
+    11,
+    4,
+    -14
+   ],
+   [
+    "Abha",
+    18,
+    10,
+    2,
+    -12
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Al Qadsiah",
+    1,
+    12,
+    28,
+    20
+   ],
+   [
+    "Al Nassr",
+    2,
+    11,
+    28,
+    17
+   ],
+   [
+    "Al Hilal",
+    3,
+    10,
+    27,
+    21
+   ],
+   [
+    "Al Ittihad",
+    4,
+    10,
+    23,
+    10
+   ],
+   [
+    "Al Ahli",
+    5,
+    10,
+    21,
+    14
+   ],
+   [
+    "Neom SC",
+    6,
+    11,
+    19,
+    7
+   ],
+   [
+    "Al Ettifaq",
+    7,
+    11,
+    18,
+    1
+   ],
+   [
+    "Al Diriyah",
+    8,
+    11,
+    15,
+    -2
+   ],
+   [
+    "Al Khaleej",
+    9,
+    12,
+    15,
+    -5
+   ],
+   [
+    "Al Kholood",
+    10,
+    11,
+    12,
+    -9
+   ],
+   [
+    "Al Riyadh",
+    11,
+    11,
+    12,
+    -14
+   ],
+   [
+    "Al Shabab",
+    12,
+    10,
+    11,
+    0
+   ],
+   [
+    "Al Hazem",
+    13,
+    12,
+    10,
+    -6
    ],
    [
     "Al Faisaly",
