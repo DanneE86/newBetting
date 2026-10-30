@@ -874,7 +874,7 @@ function kravRow(e, krav, pick, seal = null, share = null) {
     <span class="st-num">${e.eventNumber}</span>
     <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} <span class="st-vs">–</span> ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
-      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}${folkUnder(e, i)}</button>`).join("")}</div>
+      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small title="Modellens chans (vår procent)">M ${pct(e.final[i])}</small>${oddsUnder(e, i)}${folkUnder(e, i)}</button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
       ${seal ? sealButton(e, sealed) : ""}
     </div>
@@ -1183,7 +1183,7 @@ function renderB(p, head, top = "", extras = "") {
     <div class="sb-panel-head">
       <div>
         <h3>1. Välj dina krav <small>valfritt</small></h3>
-        <p class="st-sub">Klicka på tecknen i en match för att låsa dem. Procenten är vår sannolikhet, ● = mest sannolika tecknet.</p>
+        <p class="st-sub">Klicka på tecknen i en match för att låsa dem. M = modellens chans (vår sannolikhet), F = folkets streck (gult = överstreckat), siffran däremellan = oddset, ● = mest sannolika tecknet.</p>
         <details class="sb-howto"${keep("howto-krav")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
