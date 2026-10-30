@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "SAU",
  "fotmobId": 536,
  "source": "FotMob",
@@ -108,7 +108,7 @@
      "id": 392208,
      "name": "Yasser Al Shahrani",
      "role": "defenders",
-     "position": "LB,CB",
+     "position": "CB,LB",
      "number": 12,
      "age": 34,
      "born": "1992-05-25",
@@ -159,12 +159,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/12/2026",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 523985,
@@ -566,7 +561,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Brendan Rodgers",
@@ -1174,7 +1169,7 @@
      "id": 1199757,
      "name": "Ângelo",
      "role": "midfielders",
-     "position": "CM,CAM,CDM,LM,RM",
+     "position": "CM,CAM,LM,CDM,RM",
      "number": 20,
      "age": 21,
      "born": "2004-12-21",
@@ -1310,7 +1305,7 @@
      "id": 794427,
      "name": "João Félix",
      "role": "attackers",
-     "position": "CAM,ST,LW",
+     "position": "ST,CAM,LW",
      "number": 79,
      "age": 26,
      "born": "1999-11-10",
@@ -1326,7 +1321,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ange Postecoglou",
@@ -2090,7 +2085,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Simone Inzaghi",
@@ -2539,7 +2534,7 @@
      "role": "midfielders",
      "position": "CM,CDM",
      "number": 8,
-     "age": 28,
+     "age": 29,
      "born": "1997-10-30",
      "country": "Saudi Arabia",
      "height": 187,
@@ -2588,12 +2583,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/12/2026",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 108038,
@@ -2729,12 +2719,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/03/2027",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1431516,
@@ -2849,9 +2834,28 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 2425608,
+     "name": "Suhaib Al Hawsawi",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 38,
+     "age": 19,
+     "born": "2007-05-06",
+     "country": "Saudi Arabia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jens Wissing",
@@ -3008,6 +3012,11 @@
      "name": "Mohammed Fallatah",
      "firstSeen": "2026-10-16",
      "lastSeen": "2026-10-30"
+    },
+    "2425608": {
+     "name": "Suhaib Al Hawsawi",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -3091,12 +3100,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Partial damage to the cruciate ligament",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 862538,
@@ -3609,12 +3613,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1946265,
@@ -3636,7 +3635,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Marino Pušić",
@@ -4322,7 +4321,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Christophe Galtier",
@@ -5064,7 +5063,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Arthur Papas",
@@ -5844,7 +5843,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Bruno Lage",
@@ -6667,7 +6666,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José Gomes",
@@ -7307,12 +7306,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1701697,
@@ -7429,7 +7423,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Des Buckingham",
@@ -7840,12 +7834,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Pelvic injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 2406175,
@@ -8244,15 +8233,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Heel injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Maurício Dulac",
@@ -8876,12 +8860,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring muscle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 824687,
@@ -9112,7 +9091,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Thomas Letsch",
@@ -9912,6 +9891,25 @@
      "injury": null
     },
     {
+     "id": 2356611,
+     "name": "Khalid Abduljawad",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 88,
+     "age": 21,
+     "born": "2005-02-10",
+     "country": "Saudi Arabia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1085329,
      "name": "Ayman Al Hujaili",
      "role": "attackers",
@@ -9931,7 +9929,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jalel Kadri",
@@ -10102,6 +10100,11 @@
     "2174970": {
      "name": "Jaser Ateeq",
      "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2356611": {
+     "name": "Khalid Abduljawad",
+     "firstSeen": "2026-10-30",
      "lastSeen": "2026-10-30"
     }
    },
@@ -10718,15 +10721,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Giovanni Solinas",
@@ -11501,15 +11499,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "09/03/2027",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fábio Carille",
@@ -12289,7 +12282,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jamal Sellami",
@@ -13146,7 +13139,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vuk Rašović",
@@ -13335,7 +13328,7 @@
   "Abha": {
    "fotmobName": "Abha",
    "fotmobId": 150414,
-   "coach": "Damir Burić",
+   "coach": null,
    "players": [
     {
      "id": 279866,
@@ -13601,12 +13594,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/01/2027",
-      "name": "Pelvic injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1617145,
@@ -13745,7 +13733,7 @@
      "id": 955808,
      "name": "Loreintz Rosier",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM,CB",
      "number": 32,
      "age": 28,
      "born": "1998-08-14",
@@ -13859,7 +13847,7 @@
      "id": 473855,
      "name": "Georges-Kévin N'Koudou",
      "role": "attackers",
-     "position": "LW,LM,RW",
+     "position": "LM,LW,RW",
      "number": 14,
      "age": 31,
      "born": "1995-02-13",
@@ -13929,15 +13917,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring muscle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Damir Burić",

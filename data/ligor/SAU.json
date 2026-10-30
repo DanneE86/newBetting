@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -53,13 +53,13 @@
    "fotmobName": "Al Ittihad",
    "fotmobId": 8577,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 7,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 1,
-   "goals": "20-10",
+   "goals": "21-11",
    "gd": 10,
-   "pts": 23
+   "pts": 24
   },
   {
    "rank": 5,
@@ -81,13 +81,13 @@
    "fotmobName": "Neom SC",
    "fotmobId": 1699505,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 6,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 4,
-   "goals": "16-9",
+   "goals": "17-10",
    "gd": 7,
-   "pts": 19
+   "pts": 20
   },
   {
    "rank": 7,
@@ -109,13 +109,13 @@
    "fotmobName": "Al Diriyah",
    "fotmobId": 1787233,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 4,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 4,
-   "goals": "9-11",
+   "goals": "10-12",
    "gd": -2,
-   "pts": 15
+   "pts": 16
   },
   {
    "rank": 9,
@@ -249,13 +249,13 @@
    "fotmobName": "Abha",
    "fotmobId": 150414,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 0,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 8,
-   "goals": "6-18",
+   "goals": "7-19",
    "gd": -12,
-   "pts": 2
+   "pts": 3
   }
  ],
  "tableHistory": {
@@ -1564,8 +1564,8 @@
    [
     "Al Ittihad",
     4,
-    10,
-    23,
+    11,
+    24,
     10
    ],
    [
@@ -1578,8 +1578,8 @@
    [
     "Neom SC",
     6,
-    11,
-    19,
+    12,
+    20,
     7
    ],
    [
@@ -1592,8 +1592,8 @@
    [
     "Al Diriyah",
     8,
-    11,
-    15,
+    12,
+    16,
     -2
    ],
    [
@@ -1662,8 +1662,8 @@
    [
     "Abha",
     18,
-    10,
-    2,
+    11,
+    3,
     -12
    ]
   ]

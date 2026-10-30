@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "LL",
  "fotmobId": 87,
  "source": "FotMob",
@@ -203,10 +203,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "38",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 940573,
@@ -541,7 +538,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Hans-Dieter Flick",
@@ -932,7 +929,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Back in training"
      }
     },
     {
@@ -1167,7 +1164,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Diego Simeone",
@@ -1343,10 +1340,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "92",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 800882,
@@ -1817,7 +1811,7 @@
      "id": 1735453,
      "name": "Yan Diomande",
      "role": "attackers",
-     "position": "RW,LW,LM,RM",
+     "position": "RW,LW,RM,LM",
      "number": 25,
      "age": 19,
      "born": "2006-11-14",
@@ -1833,7 +1827,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José Mourinho",
@@ -2179,12 +2173,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "01/11/2026",
-      "name": "Muscle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 676533,
@@ -2285,7 +2274,7 @@
      "id": 1315711,
      "name": "Nelson Deossa",
      "role": "midfielders",
-     "position": "CDM,CM,CAM,ST",
+     "position": "CDM,ST,CM,CAM",
      "number": 18,
      "age": 26,
      "born": "2000-02-06",
@@ -2433,7 +2422,7 @@
      "red": 0,
      "injury": {
       "typeId": "101",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -2513,7 +2502,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Manuel Pellegrini",
@@ -2958,7 +2947,7 @@
      "id": 1323827,
      "name": "Jon Gorrotxategi",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 4,
      "age": 24,
      "born": "2002-09-02",
@@ -3034,7 +3023,7 @@
      "id": 959597,
      "name": "Luka Sučić",
      "role": "midfielders",
-     "position": "CAM,ST,RM,RW",
+     "position": "ST,CAM,RM,RW",
      "number": 24,
      "age": 24,
      "born": "2002-09-08",
@@ -3110,7 +3099,7 @@
      "id": 536455,
      "name": "Gonçalo Guedes",
      "role": "attackers",
-     "position": "LW,LM,RM,RW,ST",
+     "position": "LM,LW,RW,RM",
      "number": 11,
      "age": 29,
      "born": "1996-11-29",
@@ -3221,7 +3210,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pellegrino Matarazzo",
@@ -3644,7 +3633,7 @@
      "id": 1428849,
      "name": "Manu Bueno",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CDM",
      "number": 14,
      "age": 22,
      "born": "2004-07-27",
@@ -3675,6 +3664,25 @@
      "assists": 0,
      "penalties": 1,
      "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 837270,
+     "name": "Chidera Ejuke",
+     "role": "midfielders",
+     "position": "RW,LM,RM",
+     "number": 21,
+     "age": 28,
+     "born": "1998-01-02",
+     "country": "Nigeria",
+     "height": 176,
+     "value": 1924225,
+     "rating": 6.65,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -3720,7 +3728,7 @@
      "id": 926643,
      "name": "Alfon González",
      "role": "attackers",
-     "position": "LW,LM",
+     "position": "LM,LW",
      "number": 7,
      "age": 27,
      "born": "1999-05-04",
@@ -3758,7 +3766,7 @@
      "id": 860752,
      "name": "Rubén Vargas",
      "role": "attackers",
-     "position": "LW,RM,RW,CAM",
+     "position": "LW,RW,RM",
      "number": 11,
      "age": 28,
      "born": "1998-08-05",
@@ -3831,25 +3839,6 @@
      "injury": null
     },
     {
-     "id": 837270,
-     "name": "Chidera Ejuke",
-     "role": "attackers",
-     "position": "RW,LM",
-     "number": 21,
-     "age": 28,
-     "born": "1998-01-02",
-     "country": "Nigeria",
-     "height": 176,
-     "value": 1924225,
-     "rating": 6.65,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1797904,
      "name": "Miguel Sierra",
      "role": "attackers",
@@ -3872,7 +3861,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luis García",
@@ -4271,7 +4260,7 @@
      "id": 1563022,
      "name": "Ángel Pérez",
      "role": "midfielders",
-     "position": "RM,RWB,RW,RB",
+     "position": "RM,RWB,RB,RW",
      "number": 7,
      "age": 24,
      "born": "2002-08-29",
@@ -4518,7 +4507,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Quique Sánchez Flores",
@@ -5002,7 +4991,7 @@
      "id": 1553099,
      "name": "Mikel Jauregizar",
      "role": "midfielders",
-     "position": "CDM",
+     "position": "CDM,CAM",
      "number": 18,
      "age": 22,
      "born": "2003-11-13",
@@ -5230,7 +5219,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Edin Terzić",
@@ -5486,7 +5475,7 @@
      "red": 0,
      "injury": {
       "typeId": "42",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -5708,7 +5697,7 @@
      "id": 1310440,
      "name": "Javi Rueda",
      "role": "midfielders",
-     "position": "RM,RWB,RW",
+     "position": "RM,RWB",
      "number": 17,
      "age": 24,
      "born": "2002-05-08",
@@ -5828,7 +5817,7 @@
      "id": 1226783,
      "name": "Hugo González",
      "role": "attackers",
-     "position": "RW,ST",
+     "position": "RW",
      "number": 16,
      "age": 23,
      "born": "2003-02-07",
@@ -5901,7 +5890,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Claudio Giráldez",
@@ -6126,7 +6115,7 @@
      "id": 1338696,
      "name": "Alex Freeman",
      "role": "defenders",
-     "position": "RB,CB,LB",
+     "position": "RB,CB",
      "number": 3,
      "age": 22,
      "born": "2004-08-09",
@@ -6234,10 +6223,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 1059657,
@@ -6389,10 +6375,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "61",
-      "expectedReturn": "Unknown"
-     }
+     "injury": null
     },
     {
      "id": 1216798,
@@ -6473,7 +6456,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -6534,7 +6517,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Inigo Pérez",
@@ -6988,7 +6971,7 @@
      "id": 970566,
      "name": "Riki Rodríguez",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM,CDM,LM",
      "number": 14,
      "age": 29,
      "born": "1997-09-25",
@@ -7064,7 +7047,7 @@
      "id": 1323483,
      "name": "Yayo",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM,CM",
      "number": 36,
      "age": 22,
      "born": "2004-07-30",
@@ -7083,7 +7066,7 @@
      "id": 1821442,
      "name": "Noé",
      "role": "midfielders",
-     "position": "RM",
+     "position": "LM",
      "number": 37,
      "age": 19,
      "born": "2006-12-28",
@@ -7238,7 +7221,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Antonio Hidalgo",
@@ -7663,7 +7646,7 @@
      "role": "defenders",
      "position": "CB",
      "number": 29,
-     "age": 21,
+     "age": 22,
      "born": "2004-10-30",
      "country": "Spain",
      "height": 186,
@@ -7892,7 +7875,7 @@
      "id": 1169596,
      "name": "Raúl Moro",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "LW",
      "number": 18,
      "age": 23,
      "born": "2002-12-05",
@@ -7933,7 +7916,7 @@
      "id": 1242139,
      "name": "Jonathan Dubasin",
      "role": "attackers",
-     "position": "RW,ST,LW,RM",
+     "position": "RW,ST,LW,RM,CAM",
      "number": 21,
      "age": 26,
      "born": "2000-02-02",
@@ -7949,7 +7932,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luis Ramis",
@@ -8129,10 +8112,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "32",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 1280020,
@@ -8176,7 +8156,7 @@
      "id": 863169,
      "name": "Manu",
      "role": "defenders",
-     "position": "CB",
+     "position": "CB,RB",
      "number": 4,
      "age": 28,
      "born": "1998-07-19",
@@ -8328,7 +8308,7 @@
      "id": 777028,
      "name": "André Almeida",
      "role": "midfielders",
-     "position": "CAM,CM,LM",
+     "position": "CAM,CM,LM,CDM",
      "number": 8,
      "age": 26,
      "born": "2000-05-30",
@@ -8379,10 +8359,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 150649,
@@ -8575,7 +8552,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José López",
@@ -9044,7 +9021,7 @@
      "red": 0,
      "injury": {
       "typeId": "42",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -9102,10 +9079,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1209441,
@@ -9225,7 +9199,7 @@
      "id": 1649293,
      "name": "Paco Cortés",
      "role": "attackers",
-     "position": "LW,LM",
+     "position": "LW",
      "number": 27,
      "age": 19,
      "born": "2007-08-11",
@@ -9241,7 +9215,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Luís Castro",
@@ -9515,7 +9489,7 @@
      "id": 1277343,
      "name": "Federico Redondo",
      "role": "defenders",
-     "position": "CB,CM",
+     "position": "CB",
      "number": 5,
      "age": 23,
      "born": "2003-01-18",
@@ -9547,7 +9521,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1206583,
@@ -9689,7 +9666,7 @@
      "id": 1102708,
      "name": "Germán Valera",
      "role": "midfielders",
-     "position": "LM,LWB,RW,LW,LB",
+     "position": "LM,LWB,LW,RW,LB",
      "number": 11,
      "age": 24,
      "born": "2002-03-16",
@@ -9955,7 +9932,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Martín Anselmi",
@@ -10235,7 +10212,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -10302,7 +10279,7 @@
      "id": 927646,
      "name": "Adrià Pedrosa",
      "role": "defenders",
-     "position": "LB,LWB,RB",
+     "position": "LB,RB,LWB",
      "number": 17,
      "age": 28,
      "born": "1998-05-13",
@@ -10321,7 +10298,7 @@
      "id": 264885,
      "name": "Iván Balliu",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,LB",
      "number": 20,
      "age": 34,
      "born": "1992-01-01",
@@ -10397,7 +10374,7 @@
      "id": 715069,
      "name": "Pedro Díaz",
      "role": "midfielders",
-     "position": "CAM,CM,CDM",
+     "position": "CM,CAM,CDM",
      "number": 4,
      "age": 28,
      "born": "1998-06-05",
@@ -10456,7 +10433,7 @@
      "role": "midfielders",
      "position": "CDM,CM",
      "number": 8,
-     "age": 30,
+     "age": 31,
      "born": "1995-10-30",
      "country": "Spain",
      "height": 169,
@@ -10524,12 +10501,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 924300,
@@ -10554,7 +10526,7 @@
      "id": 980422,
      "name": "Sergio Camello",
      "role": "attackers",
-     "position": "ST,CAM,LW",
+     "position": "ST,LW,CAM",
      "number": 10,
      "age": 25,
      "born": "2001-02-10",
@@ -10684,7 +10656,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Beñat San José",
@@ -11017,7 +10989,7 @@
      "id": 282674,
      "name": "Daniel Carvajal",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,CB",
      "number": 14,
      "age": 34,
      "born": "1992-01-11",
@@ -11134,7 +11106,7 @@
      "id": 1321605,
      "name": "Mario Martín",
      "role": "midfielders",
-     "position": "CM,ST,CAM,CDM",
+     "position": "CM,ST,CDM,CAM",
      "number": 6,
      "age": 22,
      "born": "2004-03-05",
@@ -11153,7 +11125,7 @@
      "id": 1202587,
      "name": "Ramón Terrats",
      "role": "midfielders",
-     "position": "LM,CAM,CM,LW,ST,RM,RW",
+     "position": "LM,CAM,CM,ST,RM",
      "number": 11,
      "age": 26,
      "born": "2000-10-18",
@@ -11232,7 +11204,7 @@
      "id": 1637438,
      "name": "Alberto Risco",
      "role": "midfielders",
-     "position": "CM",
+     "position": "LM",
      "number": 28,
      "age": 21,
      "born": "2005-08-30",
@@ -11368,7 +11340,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "José Bordalás",
@@ -11781,7 +11753,7 @@
      "role": "defenders",
      "position": "CB,RB",
      "number": 16,
-     "age": 26,
+     "age": 27,
      "born": "1999-10-30",
      "country": "Slovenia",
      "height": 185,
@@ -12124,7 +12096,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Manolo González",
@@ -12355,10 +12327,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "70",
-      "expectedReturn": "Back in training"
-     }
+     "injury": null
     },
     {
      "id": 561198,
@@ -12453,16 +12422,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "14",
-      "expectedReturn": "Back in training"
-     }
+     "injury": null
     },
     {
      "id": 1220187,
      "name": "Jesus Vázquez",
      "role": "defenders",
-     "position": "LB,LM,LWB",
+     "position": "LB,LWB,RWB",
      "number": 21,
      "age": 23,
      "born": "2003-01-02",
@@ -12557,7 +12523,7 @@
      "id": 1284429,
      "name": "Javier Guerra",
      "role": "midfielders",
-     "position": "CDM,CM,ST,CAM,LM",
+     "position": "ST,CM,CDM,CAM,LM",
      "number": 8,
      "age": 23,
      "born": "2003-05-13",
@@ -12614,7 +12580,7 @@
      "id": 723148,
      "name": "Aliou Dieng",
      "role": "midfielders",
-     "position": "CDM,CM,RW",
+     "position": "CM,CDM,RW",
      "number": 15,
      "age": 29,
      "born": "1997-10-16",
@@ -12645,6 +12611,25 @@
      "assists": 0,
      "penalties": 1,
      "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 784246,
+     "name": "Dani Raba",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 19,
+     "age": 31,
+     "born": "1995-10-29",
+     "country": "Spain",
+     "height": 184,
+     "value": 650400,
+     "rating": 6.69,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -12766,16 +12751,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "42",
-      "expectedReturn": "Back in training"
-     }
+     "injury": null
     },
     {
      "id": 704151,
      "name": "Arnaut Danjuma",
      "role": "attackers",
-     "position": "LM,LW,ST",
+     "position": "LM,ST,LW",
      "number": 7,
      "age": 29,
      "born": "1997-01-31",
@@ -12830,28 +12812,9 @@
       "typeId": "76",
       "expectedReturn": "Mid February 2027"
      }
-    },
-    {
-     "id": 784246,
-     "name": "Dani Raba",
-     "role": "attackers",
-     "position": "RW",
-     "number": 19,
-     "age": 31,
-     "born": "1995-10-29",
-     "country": "Spain",
-     "height": 184,
-     "value": 650400,
-     "rating": 6.69,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Javier Aguirre",
@@ -13232,7 +13195,7 @@
      "id": 1573563,
      "name": "Adam Aznou",
      "role": "defenders",
-     "position": "LB",
+     "position": "LB,LW",
      "number": 39,
      "age": 20,
      "born": "2006-06-02",
@@ -13308,7 +13271,7 @@
      "id": 1209421,
      "name": "Carlos Dotor",
      "role": "midfielders",
-     "position": "CM,CAM,ST,CDM",
+     "position": "CM,ST,CAM",
      "number": 8,
      "age": 25,
      "born": "2001-03-15",
@@ -13361,7 +13324,7 @@
      "red": 0,
      "injury": {
       "typeId": "101",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -13401,7 +13364,7 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": "121",
+      "typeId": "87",
       "expectedReturn": "Back in training"
      }
     },
@@ -13567,7 +13530,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Juan Funes",

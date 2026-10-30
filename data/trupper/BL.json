@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "BL",
  "fotmobId": 54,
  "source": "FotMob",
@@ -28,7 +28,7 @@
      "red": 0,
      "injury": {
       "typeId": "21",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -143,12 +143,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Groin problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 469700,
@@ -173,7 +168,7 @@
      "id": 1395447,
      "name": "Nathaniel Brown",
      "role": "defenders",
-     "position": "LB,LWB,CAM,LM,RB",
+     "position": "LB,LWB,LM,CAM,RB",
      "number": 11,
      "age": 23,
      "born": "2003-06-16",
@@ -325,7 +320,7 @@
      "id": 1286183,
      "name": "Tom Bischof",
      "role": "midfielders",
-     "position": "LB,CDM,CM,RB",
+     "position": "CDM,LB,CM,RB",
      "number": 8,
      "age": 21,
      "born": "2005-06-28",
@@ -421,25 +416,6 @@
       "typeId": "138",
       "expectedReturn": "Mid November 2026"
      }
-    },
-    {
-     "id": 1737700,
-     "name": "Lennart Karl",
-     "role": "midfielders",
-     "position": "RW,CAM",
-     "number": 42,
-     "age": 18,
-     "born": "2008-02-22",
-     "country": "Germany",
-     "height": 168,
-     "value": 64140072,
-     "rating": 7.13,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
     },
     {
      "id": 1473580,
@@ -538,9 +514,28 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1737700,
+     "name": "Lennart Karl",
+     "role": "attackers",
+     "position": "RW,CAM",
+     "number": 42,
+     "age": 18,
+     "born": "2008-02-22",
+     "country": "Germany",
+     "height": 168,
+     "value": 64140072,
+     "rating": 7.13,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vincent Kompany",
@@ -788,12 +783,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ill",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1845215,
@@ -888,12 +878,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Thigh problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1479742,
@@ -1114,7 +1099,7 @@
      "id": 215151,
      "name": "Marcel Sabitzer",
      "role": "midfielders",
-     "position": "CDM,LW,CM,CAM",
+     "position": "CDM,LW,CAM,CM",
      "number": 20,
      "age": 32,
      "born": "1994-03-17",
@@ -1133,7 +1118,7 @@
      "id": 1209228,
      "name": "Daniel Svensson",
      "role": "midfielders",
-     "position": "LWB,RWB,LM,LB,CB,RB",
+     "position": "LWB,LM,RWB,CB,LB,RB,RM",
      "number": 24,
      "age": 24,
      "born": "2002-02-12",
@@ -1266,12 +1251,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1845228,
@@ -1330,7 +1310,7 @@
      "red": 0,
      "injury": {
       "typeId": "30",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -1372,7 +1352,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Niko Kovač",
@@ -1696,12 +1676,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 303912,
@@ -1739,7 +1714,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "30",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 355358,
@@ -1777,12 +1755,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1281107,
@@ -1820,12 +1793,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1075815,
@@ -1980,12 +1948,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Foot injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 556524,
@@ -2102,7 +2065,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Julian Schuster",
@@ -2330,6 +2293,25 @@
      "injury": null
     },
     {
+     "id": 942379,
+     "name": "Miguel Gutiérrez",
+     "role": "defenders",
+     "position": "LB,LWB,RWB",
+     "number": 3,
+     "age": 25,
+     "born": "2001-07-27",
+     "country": "Spain",
+     "height": 180,
+     "value": 22713894,
+     "rating": 7.42,
+     "goals": 1,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1107620,
      "name": "Jarell Quansah",
      "role": "defenders",
@@ -2365,12 +2347,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Head injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 411851,
@@ -2452,25 +2429,6 @@
      }
     },
     {
-     "id": 942379,
-     "name": "Miguel Gutiérrez",
-     "role": "midfielders",
-     "position": "LB,LWB,RWB",
-     "number": 3,
-     "age": 25,
-     "born": "2001-07-27",
-     "country": "Spain",
-     "height": 180,
-     "value": 22713894,
-     "rating": 7.42,
-     "goals": 1,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1199959,
      "name": "Equi Fernández",
      "role": "midfielders",
@@ -2499,7 +2457,7 @@
      "born": "1992-07-14",
      "country": "Germany",
      "height": 176,
-     "value": 1076985,
+     "value": 828702,
      "rating": 6.48,
      "goals": 0,
      "assists": 0,
@@ -2594,7 +2552,7 @@
      "id": 877700,
      "name": "Nathan Tella",
      "role": "midfielders",
-     "position": "CAM",
+     "position": "CAM,LW",
      "number": 23,
      "age": 27,
      "born": "1999-07-05",
@@ -2847,7 +2805,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Carles Martínez",
@@ -3118,12 +3076,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 278856,
@@ -3398,7 +3351,7 @@
      "id": 1482209,
      "name": "Andrija Maksimović",
      "role": "midfielders",
-     "position": "RW,CM",
+     "position": "RW,CM,RM",
      "number": 30,
      "age": 19,
      "born": "2007-06-05",
@@ -3515,7 +3468,7 @@
      "id": 1482733,
      "name": "Tidiam Gomis",
      "role": "attackers",
-     "position": "ST,LW",
+     "position": "LW,ST",
      "number": 27,
      "age": 20,
      "born": "2006-08-08",
@@ -3591,7 +3544,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Martín Demichelis",
@@ -3867,12 +3820,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 765998,
@@ -4036,7 +3984,7 @@
      "id": 1353457,
      "name": "Arthur",
      "role": "midfielders",
-     "position": "RWB,RB,RM",
+     "position": "RWB,RB",
      "number": 13,
      "age": 23,
      "born": "2003-03-17",
@@ -4093,7 +4041,7 @@
      "id": 1146376,
      "name": "Eren Dinkçi",
      "role": "midfielders",
-     "position": "CAM,RW,RM",
+     "position": "RW,CAM,RM",
      "number": 18,
      "age": 24,
      "born": "2001-12-13",
@@ -4286,10 +4234,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Late October 2026"
-     }
+     "injury": null
     },
     {
      "id": 1024292,
@@ -4388,14 +4333,12 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ankle injury",
-      "source": "Transfermarkt"
+      "typeId": "30",
+      "expectedReturn": "Mid November 2026"
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Daniel Thioune",
@@ -4856,7 +4799,7 @@
      "id": 1199283,
      "name": "Eric Martel",
      "role": "midfielders",
-     "position": "CDM,CB,CM",
+     "position": "CDM,CM,CB",
      "number": 5,
      "age": 24,
      "born": "2002-04-29",
@@ -4946,10 +4889,8 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee problems",
-      "source": "Transfermarkt"
+      "typeId": "14",
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -5016,7 +4957,7 @@
      "id": 275034,
      "name": "Silvan Widmer",
      "role": "midfielders",
-     "position": "RM,LM,LWB,RB",
+     "position": "RM,LM,RB,LWB",
      "number": 30,
      "age": 33,
      "born": "1993-03-05",
@@ -5168,7 +5109,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Urs Fischer",
@@ -5465,12 +5406,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Syndesmosis ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1280560,
@@ -5862,7 +5798,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vincent Wagner",
@@ -6371,7 +6307,7 @@
      "id": 1185609,
      "name": "Robin Fellhauer",
      "role": "midfielders",
-     "position": "RWB,CDM,CAM,LWB,RM",
+     "position": "RWB,CAM,CDM,LWB,RM",
      "number": 19,
      "age": 28,
      "born": "1998-01-21",
@@ -6403,10 +6339,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1327150,
@@ -6453,7 +6386,7 @@
      "id": 556029,
      "name": "Marius Wolf",
      "role": "midfielders",
-     "position": "RWB,LWB",
+     "position": "RWB",
      "number": 27,
      "age": 31,
      "born": "1995-05-27",
@@ -6472,7 +6405,7 @@
      "id": 1310103,
      "name": "Anton Kade",
      "role": "midfielders",
-     "position": "CAM,ST,RWB,RW,RM",
+     "position": "CAM,ST,RW,RM,RWB",
      "number": 30,
      "age": 22,
      "born": "2004-01-17",
@@ -6624,7 +6557,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Manuel Baum",
@@ -6908,10 +6841,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Broken fibula",
-      "source": "Transfermarkt"
+      "typeId": "23",
+      "expectedReturn": "Early January 2027"
      }
     },
     {
@@ -6953,7 +6884,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "121",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1445416,
@@ -6978,7 +6912,7 @@
      "id": 1478148,
      "name": "Leon Avdullahu",
      "role": "midfielders",
-     "position": "CDM,CM,CB",
+     "position": "CDM,CM",
      "number": 7,
      "age": 22,
      "born": "2004-02-23",
@@ -7019,7 +6953,7 @@
      "id": 947884,
      "name": "Wouter Burger",
      "role": "midfielders",
-     "position": "CDM,CM,CAM",
+     "position": "CDM,CM",
      "number": 18,
      "age": 25,
      "born": "2001-02-16",
@@ -7130,12 +7064,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Head injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 969870,
@@ -7212,14 +7141,12 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
+      "typeId": "6",
+      "expectedReturn": "Doubtful"
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Christian Ilzer",
@@ -7420,7 +7347,7 @@
      "id": 1049679,
      "name": "David Møller Wolfe",
      "role": "defenders",
-     "position": "LB,LWB,LM,RM",
+     "position": "LB,LM,LWB,RM",
      "number": 3,
      "age": 24,
      "born": "2002-04-23",
@@ -7439,7 +7366,7 @@
      "id": 1287871,
      "name": "Zakaria El Ouahdi",
      "role": "defenders",
-     "position": "RB,RWB,RM",
+     "position": "RB,RM,RWB",
      "number": 7,
      "age": 24,
      "born": "2001-12-31",
@@ -7491,10 +7418,8 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -7640,7 +7565,7 @@
      "id": 1324082,
      "name": "Martin Adeline",
      "role": "midfielders",
-     "position": "CAM,CM,ST",
+     "position": "CAM,CM",
      "number": 5,
      "age": 22,
      "born": "2003-12-02",
@@ -7950,7 +7875,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Merlin Polzin",
@@ -8748,7 +8673,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rene Wagner",
@@ -9045,7 +8970,7 @@
      "id": 1520469,
      "name": "Jano ter Horst",
      "role": "defenders",
-     "position": "RB,CB,RM",
+     "position": "RB,CB,RWB",
      "number": 21,
      "age": 24,
      "born": "2002-06-19",
@@ -9181,7 +9106,7 @@
      "id": 1362492,
      "name": "Santiago Castañeda",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CDM,CM,CB",
      "number": 5,
      "age": 21,
      "born": "2004-11-13",
@@ -9200,7 +9125,7 @@
      "id": 658444,
      "name": "Tom Baack",
      "role": "midfielders",
-     "position": "CM,CDM,LM",
+     "position": "CDM,CM,LM",
      "number": 6,
      "age": 27,
      "born": "1999-03-13",
@@ -9232,12 +9157,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1426060,
@@ -9245,7 +9165,7 @@
      "role": "midfielders",
      "position": "RWB,RM,CAM",
      "number": 17,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-30",
      "country": "Germany",
      "height": 185,
@@ -9281,7 +9201,7 @@
      "id": 784225,
      "name": "Raphael Obermair",
      "role": "midfielders",
-     "position": "LWB,LW,LM",
+     "position": "LWB,LM",
      "number": 23,
      "age": 30,
      "born": "1996-04-01",
@@ -9322,7 +9242,7 @@
      "id": 1367587,
      "name": "Laurin Ulrich",
      "role": "midfielders",
-     "position": "CM,RW,CAM",
+     "position": "CM",
      "number": 28,
      "age": 21,
      "born": "2005-01-31",
@@ -9374,10 +9294,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Foot injury",
-      "source": "Transfermarkt"
+      "typeId": "21",
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -9504,7 +9422,7 @@
      "id": 1321553,
      "name": "Stefano Marino",
      "role": "attackers",
-     "position": "ST,CAM",
+     "position": "ST,RW",
      "number": 30,
      "age": 22,
      "born": "2004-03-12",
@@ -9536,12 +9454,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Back problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1580112,
@@ -9563,7 +9476,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ralf Kettemann",
@@ -10021,7 +9934,7 @@
      "id": 1345875,
      "name": "Farès Chaïbi",
      "role": "midfielders",
-     "position": "CDM,LW,CM,CAM,LM",
+     "position": "CDM,LW,CM,CAM,LM,RM",
      "number": 8,
      "age": 23,
      "born": "2002-11-28",
@@ -10287,7 +10200,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Adolf Hütter",
@@ -10715,7 +10628,7 @@
      "red": 0,
      "injury": {
       "typeId": "47",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -10877,7 +10790,7 @@
      "id": 1074968,
      "name": "Jamie Leweling",
      "role": "attackers",
-     "position": "RW,LW,RWB,CAM",
+     "position": "LW,RW,RWB,CAM",
      "number": 18,
      "age": 25,
      "born": "2001-02-26",
@@ -10929,14 +10842,12 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Muscle injury",
-      "source": "Transfermarkt"
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sebastian Hoeneß",
@@ -11163,12 +11074,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Injury to abdominal muscles",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1684959,
@@ -11284,7 +11190,7 @@
      "red": 0,
      "injury": {
       "typeId": "85",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -11430,7 +11336,7 @@
      "id": 560976,
      "name": "Janik Bachmann",
      "role": "midfielders",
-     "position": "RW",
+     "position": "CM",
      "number": 14,
      "age": 30,
      "born": "1996-05-06",
@@ -11444,10 +11350,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
+      "typeId": "6",
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -11467,12 +11371,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 469763,
@@ -11531,7 +11430,7 @@
      "red": 0,
      "injury": {
       "typeId": "12",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -11557,7 +11456,7 @@
      "id": 721091,
      "name": "Finn Porath",
      "role": "midfielders",
-     "position": "LM,RWB",
+     "position": "RWB",
      "number": 27,
      "age": 29,
      "born": "1997-02-23",
@@ -11576,7 +11475,7 @@
      "id": 1659420,
      "name": "Vitalie Becker",
      "role": "midfielders",
-     "position": "LWB,LB",
+     "position": "LWB",
      "number": 33,
      "age": 21,
      "born": "2005-03-03",
@@ -11614,7 +11513,7 @@
      "id": 1842512,
      "name": "Luca Vozar",
      "role": "midfielders",
-     "position": "Midfielder",
+     "position": "CM",
      "number": 38,
      "age": 19,
      "born": "2007-05-06",
@@ -11652,7 +11551,7 @@
      "id": 620026,
      "name": "Hee-Chan Hwang",
      "role": "attackers",
-     "position": "ST,CAM,LW,LM",
+     "position": "ST,CAM,LM,LW",
      "number": 7,
      "age": 30,
      "born": "1996-01-26",
@@ -11744,12 +11643,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Achilles tendon surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 882163,
@@ -11774,7 +11668,7 @@
      "id": 1040889,
      "name": "Junior Dina Ebimbe",
      "role": "attackers",
-     "position": "LW,RWB,CAM,RM",
+     "position": "LW,RWB,CAM",
      "number": 29,
      "age": 25,
      "born": "2000-11-21",
@@ -11790,7 +11684,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Miron Muslić",
@@ -12055,12 +11949,7 @@
      "penalties": 0,
      "yellow": 3,
      "red": 1,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1796861,
@@ -12569,7 +12458,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Mauro Lustrinelli",
@@ -12848,10 +12737,8 @@
      "yellow": 3,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "02/11/2026",
-      "name": "Fitness",
-      "source": "Transfermarkt"
+      "typeId": "137",
+      "expectedReturn": "A few days"
      }
     },
     {
@@ -13185,10 +13072,8 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
      }
     },
     {
@@ -13227,16 +13112,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "42",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 501543,
      "name": "Franck Honorat",
      "role": "attackers",
-     "position": "CAM,ST,RW,RM",
+     "position": "CAM,ST,RW",
      "number": 9,
      "age": 30,
      "born": "1996-08-11",
@@ -13312,10 +13194,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "Back in training"
-     }
+     "injury": null
     },
     {
      "id": 884919,
@@ -13356,7 +13235,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alexander Blessin",

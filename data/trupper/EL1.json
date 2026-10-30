@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "EL1",
  "fotmobId": 108,
  "source": "FotMob",
@@ -121,12 +121,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Calf injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 957358,
@@ -335,12 +330,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Torn thigh muscle",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 759581,
@@ -359,12 +349,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "30/06/2027",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 746408,
@@ -410,7 +395,7 @@
      "role": "midfielders",
      "position": "CDM,CM",
      "number": 20,
-     "age": 22,
+     "age": 23,
      "born": "2003-10-30",
      "country": "England",
      "height": 178,
@@ -538,7 +523,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Martin Drury",
@@ -941,12 +926,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1113904,
@@ -1041,12 +1021,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 966022,
@@ -1258,7 +1233,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jim McNulty",
@@ -1537,12 +1512,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/05/2027",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 488960,
@@ -1963,7 +1933,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Aaron Ramsey",
@@ -2205,12 +2175,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1113778,
@@ -2656,7 +2621,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Graham Alexander",
@@ -3094,6 +3059,25 @@
      "injury": null
     },
     {
+     "id": 1407205,
+     "name": "Oliver Irow",
+     "role": "midfielders",
+     "position": "LM,LW,CAM,ST",
+     "number": 14,
+     "age": 20,
+     "born": "2006-05-10",
+     "country": "England",
+     "height": null,
+     "value": 414720,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1108610,
      "name": "Caleb Watts",
      "role": "midfielders",
@@ -3148,12 +3132,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "01/11/2026",
-      "name": "Achilles tendon contusion",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1330873,
@@ -3178,32 +3157,13 @@
      "id": 795404,
      "name": "Will Evans",
      "role": "attackers",
-     "position": "ST,LW,CAM",
+     "position": "ST,CAM,LW",
      "number": 9,
      "age": 29,
      "born": "1997-07-01",
      "country": "Wales",
      "height": 185,
      "value": 501909,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1407205,
-     "name": "Oliver Irow",
-     "role": "attackers",
-     "position": "LW,LM,CAM,ST",
-     "number": 14,
-     "age": 20,
-     "born": "2006-05-10",
-     "country": "England",
-     "height": null,
-     "value": 414720,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3251,7 +3211,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Tom Cleverley",
@@ -3849,7 +3809,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Leam Richardson",
@@ -4479,7 +4439,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Neil Harris",
@@ -5005,12 +4965,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 740171,
@@ -5184,7 +5139,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jack Wilshere",
@@ -5614,12 +5569,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1799262,
@@ -5885,12 +5835,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ankle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1113688,
@@ -6026,7 +5971,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Henrik Pedersen",
@@ -6715,7 +6660,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Nigel Clough",
@@ -6878,12 +6823,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "30/06/2027",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 165518,
@@ -6959,12 +6899,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1006676,
@@ -7366,7 +7301,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Russell Martin",
@@ -8098,7 +8033,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Gary Bowyer",
@@ -8728,7 +8663,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alex Revell",
@@ -8991,12 +8926,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1306239,
@@ -9230,7 +9160,7 @@
      "id": 664506,
      "name": "Ryan Wintle",
      "role": "midfielders",
-     "position": "CDM,CM,CAM,RW",
+     "position": "CDM,CAM,CM,RW",
      "number": 24,
      "age": 29,
      "born": "1997-06-13",
@@ -9439,7 +9369,7 @@
      "id": 820094,
      "name": "Cohen Bramall",
      "role": "attackers",
-     "position": "LW,LB,LWB,LM",
+     "position": "LW,LB,LWB",
      "number": 15,
      "age": 30,
      "born": "1996-04-02",
@@ -9512,7 +9442,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Paul Warne",
@@ -9743,12 +9673,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 598114,
@@ -10245,7 +10170,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Tom Hounsell",
@@ -10442,12 +10367,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1288116,
@@ -10580,12 +10500,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1637435,
@@ -10968,7 +10883,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Richie Wellens",
@@ -11525,6 +11440,25 @@
      "injury": null
     },
     {
+     "id": 1498722,
+     "name": "Dujuan Richards",
+     "role": "midfielders",
+     "position": "RM",
+     "number": 31,
+     "age": 20,
+     "born": "2005-11-10",
+     "country": "Jamaica",
+     "height": 189,
+     "value": 399347,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 2298022,
      "name": "Robin Ashamu",
      "role": "midfielders",
@@ -11606,7 +11540,7 @@
      "role": "attackers",
      "position": "ST",
      "number": 19,
-     "age": 20,
+     "age": 21,
      "born": "2005-10-30",
      "country": "England",
      "height": null,
@@ -11656,28 +11590,9 @@
      "yellow": 0,
      "red": 0,
      "injury": null
-    },
-    {
-     "id": 1498722,
-     "name": "Dujuan Richards",
-     "role": "attackers",
-     "position": "RW",
-     "number": 31,
-     "age": 20,
-     "born": "2005-11-10",
-     "country": "Jamaica",
-     "height": 189,
-     "value": 399347,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Johnnie Jackson",
@@ -12227,7 +12142,7 @@
      "id": 189075,
      "name": "James Collins",
      "role": "attackers",
-     "position": "ST,CAM",
+     "position": "ST",
      "number": null,
      "age": 35,
      "born": "1990-12-01",
@@ -12240,12 +12155,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1235094,
@@ -12438,7 +12348,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Grant McCann",
@@ -12772,25 +12682,6 @@
      "injury": null
     },
     {
-     "id": 1419974,
-     "name": "Ishé Samuels-Smith",
-     "role": "defenders",
-     "position": "LWB,CB,LB",
-     "number": 26,
-     "age": 20,
-     "born": "2006-06-05",
-     "country": "England",
-     "height": 186,
-     "value": 751797,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1130810,
      "name": "Lewis Macari",
      "role": "defenders",
@@ -13038,6 +12929,25 @@
      "injury": null
     },
     {
+     "id": 1419974,
+     "name": "Ishé Samuels-Smith",
+     "role": "midfielders",
+     "position": "LWB,CB,LB",
+     "number": 26,
+     "age": 20,
+     "born": "2006-06-05",
+     "country": "England",
+     "height": 186,
+     "value": 751797,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1593438,
      "name": "Rory Finneran",
      "role": "midfielders",
@@ -13190,7 +13100,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Martin Paterson",
@@ -13850,7 +13760,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ian Evatt",
@@ -14567,7 +14477,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ryan Harley",
@@ -15278,7 +15188,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Andy Woodman",
@@ -16066,7 +15976,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Daniel Stendel",
@@ -16696,7 +16606,7 @@
      "id": 1199868,
      "name": "Sonny Perkins",
      "role": "attackers",
-     "position": "ST,RW,CAM",
+     "position": "ST,CAM,RW",
      "number": 9,
      "age": 22,
      "born": "2004-02-10",
@@ -16807,7 +16717,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Gary Caldwell",

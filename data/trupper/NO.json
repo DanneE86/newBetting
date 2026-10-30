@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "NO",
  "fotmobId": 59,
  "source": "FotMob",
@@ -156,7 +156,7 @@
      "country": "Australia",
      "height": 185,
      "value": 1136200,
-     "rating": 7.34,
+     "rating": 7.35,
      "goals": 4,
      "assists": 0,
      "penalties": 0,
@@ -257,7 +257,7 @@
      "country": "Norway",
      "height": 194,
      "value": 6744649,
-     "rating": 7.46,
+     "rating": 7.49,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -276,7 +276,7 @@
      "country": "Norway",
      "height": 189,
      "value": 1204192,
-     "rating": 6.3,
+     "rating": 6.32,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -333,7 +333,7 @@
      "country": "New Zealand",
      "height": 182,
      "value": 2184890,
-     "rating": 6.91,
+     "rating": 6.92,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -345,14 +345,14 @@
      "id": 440313,
      "name": "Henrik Rørvik Bjørdal",
      "role": "midfielders",
-     "position": "RM,ST,CM",
+     "position": "RM,CM,ST",
      "number": 16,
      "age": 29,
      "born": "1997-02-04",
      "country": "Norway",
      "height": 188,
      "value": 656355,
-     "rating": 7.42,
+     "rating": 7.41,
      "goals": 3,
      "assists": 8,
      "penalties": 0,
@@ -371,7 +371,7 @@
      "country": "Norway",
      "height": null,
      "value": 2488913,
-     "rating": 7.21,
+     "rating": 7.2,
      "goals": 9,
      "assists": 3,
      "penalties": 0,
@@ -390,7 +390,7 @@
      "country": "Norway",
      "height": null,
      "value": null,
-     "rating": 6.57,
+     "rating": 6.58,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -595,7 +595,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Morten Jensen",
@@ -778,7 +778,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 625360,
@@ -835,12 +838,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1677228,
@@ -1128,25 +1126,6 @@
      "injury": null
     },
     {
-     "id": 1049665,
-     "name": "Joel Mvuka",
-     "role": "midfielders",
-     "position": "RWB,RW",
-     "number": 22,
-     "age": 23,
-     "born": "2002-11-12",
-     "country": "Norway",
-     "height": 173,
-     "value": 1238980,
-     "rating": 6.64,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1126421,
      "name": "Magnus Bech Riisnæs",
      "role": "midfielders",
@@ -1286,6 +1265,25 @@
      "injury": null
     },
     {
+     "id": 1049665,
+     "name": "Joel Mvuka",
+     "role": "attackers",
+     "position": "RW",
+     "number": 22,
+     "age": 23,
+     "born": "2002-11-12",
+     "country": "Norway",
+     "height": 173,
+     "value": 1238980,
+     "rating": 6.64,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 954167,
      "name": "August Mikkelsen",
      "role": "attackers",
@@ -1308,7 +1306,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Kjetil Knutsen",
@@ -1516,7 +1514,7 @@
      "country": "Poland",
      "height": 191,
      "value": 1017695,
-     "rating": 6.83,
+     "rating": 6.84,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -1598,7 +1596,7 @@
      "country": "Norway",
      "height": 180,
      "value": 446125,
-     "rating": 6.99,
+     "rating": 6.97,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1617,7 +1615,7 @@
      "country": "Norway",
      "height": 177,
      "value": 193057,
-     "rating": 7.07,
+     "rating": 7.08,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -1655,9 +1653,28 @@
      "country": "Norway",
      "height": 184,
      "value": 461817,
-     "rating": 6.82,
+     "rating": 6.84,
      "goals": 0,
      "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1898680,
+     "name": "Viktor Bender",
+     "role": "defenders",
+     "position": "CDM",
+     "number": 28,
+     "age": 19,
+     "born": "2007-07-12",
+     "country": "Denmark",
+     "height": null,
+     "value": null,
+     "rating": 6.52,
+     "goals": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -1781,25 +1798,6 @@
      "injury": null
     },
     {
-     "id": 1898680,
-     "name": "Viktor Bender",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 28,
-     "age": 19,
-     "born": "2007-07-12",
-     "country": "Denmark",
-     "height": null,
-     "value": null,
-     "rating": 6.52,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1432897,
      "name": "Daniel Daga",
      "role": "midfielders",
@@ -1851,7 +1849,7 @@
      "country": "Ghana",
      "height": 186,
      "value": 1968861,
-     "rating": 6.82,
+     "rating": 6.84,
      "goals": 3,
      "assists": 3,
      "penalties": 0,
@@ -1996,7 +1994,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sindre Tjelmeland",
@@ -2158,7 +2156,7 @@
      "country": "Sweden",
      "height": 190,
      "value": 672323,
-     "rating": 6.81,
+     "rating": 6.82,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2310,7 +2308,7 @@
      "country": "Norway",
      "height": 185,
      "value": 918966,
-     "rating": 7.05,
+     "rating": 7.04,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -2417,7 +2415,7 @@
      "id": 1087476,
      "name": "Mathias Kjølø",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 6,
      "age": 25,
      "born": "2001-06-27",
@@ -2484,31 +2482,12 @@
      "country": "Norway",
      "height": 187,
      "value": 455569,
-     "rating": 7.71,
+     "rating": 7.7,
      "goals": 1,
      "assists": 8,
      "penalties": 0,
      "yellow": 2,
      "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1343933,
-     "name": "Noah Sahsah",
-     "role": "midfielders",
-     "position": "RM,RW,LW",
-     "number": 11,
-     "age": 21,
-     "born": "2005-07-08",
-     "country": "Denmark",
-     "height": 173,
-     "value": 523116,
-     "rating": 7.02,
-     "goals": 5,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
      "injury": null
     },
     {
@@ -2522,7 +2501,7 @@
      "country": "Denmark",
      "height": 178,
      "value": 1948034,
-     "rating": 7.21,
+     "rating": 7.22,
      "goals": 2,
      "assists": 5,
      "penalties": 0,
@@ -2588,18 +2567,32 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
+    },
+    {
+     "id": 1343933,
+     "name": "Noah Sahsah",
+     "role": "attackers",
+     "position": "RW,RM,LW",
+     "number": 11,
+     "age": 21,
+     "born": "2005-07-08",
+     "country": "Denmark",
+     "height": 173,
+     "value": 523116,
+     "rating": 7.01,
+     "goals": 5,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
     },
     {
      "id": 1463470,
      "name": "Jesper Reitan-Sunde",
      "role": "attackers",
-     "position": "RM,RW,RB",
+     "position": "RW,RB",
      "number": 14,
      "age": 20,
      "born": "2006-01-31",
@@ -2637,7 +2630,7 @@
      "id": 962390,
      "name": "Dávid Ďuriš",
      "role": "attackers",
-     "position": "RW,CM,CAM",
+     "position": "RW,CM",
      "number": 29,
      "age": 27,
      "born": "1999-03-22",
@@ -2691,7 +2684,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Freyr Alexandersson",
@@ -3063,7 +3056,7 @@
      "country": "Norway",
      "height": null,
      "value": 1108287,
-     "rating": 6.77,
+     "rating": 6.76,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3087,6 +3080,25 @@
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1353091,
+     "name": "Sander Håvik Innvær",
+     "role": "defenders",
+     "position": "LWB,LM,RM,RWB",
+     "number": 37,
+     "age": 22,
+     "born": "2004-10-11",
+     "country": "Norway",
+     "height": null,
+     "value": 644508,
+     "rating": 6.87,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -3120,7 +3132,7 @@
      "country": "Norway",
      "height": 178,
      "value": 465718,
-     "rating": 7.09,
+     "rating": 7.13,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3139,7 +3151,7 @@
      "country": "Norway",
      "height": 173,
      "value": 211662,
-     "rating": 7.21,
+     "rating": 7.19,
      "goals": 1,
      "assists": 8,
      "penalties": 0,
@@ -3158,7 +3170,7 @@
      "country": "Sweden",
      "height": 171,
      "value": 517513,
-     "rating": 7.06,
+     "rating": 7.01,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -3186,25 +3198,6 @@
      "injury": null
     },
     {
-     "id": 1353091,
-     "name": "Sander Håvik Innvær",
-     "role": "midfielders",
-     "position": "LM,LWB,RM,RWB",
-     "number": 37,
-     "age": 22,
-     "born": "2004-10-11",
-     "country": "Norway",
-     "height": null,
-     "value": 644508,
-     "rating": 6.87,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 635465,
      "name": "Morten Bjørlo",
      "role": "midfielders",
@@ -3215,7 +3208,7 @@
      "country": "Norway",
      "height": 176,
      "value": 427826,
-     "rating": 6.53,
+     "rating": 6.52,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -3234,7 +3227,7 @@
      "country": "Norway",
      "height": 175,
      "value": 622029,
-     "rating": 6.75,
+     "rating": 6.74,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -3253,7 +3246,7 @@
      "country": "Norway",
      "height": 190,
      "value": 701269,
-     "rating": 6.38,
+     "rating": 6.37,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -3280,7 +3273,7 @@
      "red": 0,
      "injury": {
       "typeId": "74",
-      "expectedReturn": "Mid November 2026"
+      "expectedReturn": "Out for season"
      }
     },
     {
@@ -3360,7 +3353,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jørgen Vik",
@@ -4045,7 +4038,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Hans Erik Ødegaard",
@@ -4250,7 +4243,7 @@
      "country": "Norway",
      "height": 182,
      "value": 285510,
-     "rating": 6.95,
+     "rating": 6.98,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4269,7 +4262,7 @@
      "country": "Norway",
      "height": 185,
      "value": 192857,
-     "rating": 6.45,
+     "rating": 6.43,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4345,7 +4338,7 @@
      "country": "Norway",
      "height": 186,
      "value": 205665,
-     "rating": 6.61,
+     "rating": 6.65,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4402,7 +4395,7 @@
      "country": "Norway",
      "height": 181,
      "value": 193057,
-     "rating": 6.51,
+     "rating": 6.5,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -4459,7 +4452,7 @@
      "country": "Norway",
      "height": 185,
      "value": 597871,
-     "rating": 7.04,
+     "rating": 7.03,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -4497,7 +4490,7 @@
      "country": "Norway",
      "height": null,
      "value": 1032410,
-     "rating": 6.78,
+     "rating": 6.79,
      "goals": 3,
      "assists": 2,
      "penalties": 0,
@@ -4573,7 +4566,7 @@
      "country": "Norway",
      "height": 178,
      "value": 358869,
-     "rating": 7.01,
+     "rating": 7,
      "goals": 2,
      "assists": 0,
      "penalties": 1,
@@ -4606,7 +4599,7 @@
      "role": "attackers",
      "position": "RW,RM",
      "number": 10,
-     "age": 30,
+     "age": 31,
      "born": "1995-10-30",
      "country": "Norway",
      "height": 178,
@@ -4702,7 +4695,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Even Sel",
@@ -5418,7 +5411,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jørgen Isnes",
@@ -5791,14 +5784,14 @@
      "red": 0,
      "injury": {
       "typeId": "76",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
      "id": 942362,
      "name": "Leo Cornic",
      "role": "midfielders",
-     "position": "RM,RWB",
+     "position": "RM,RWB,RB",
      "number": 2,
      "age": 25,
      "born": "2001-01-02",
@@ -5975,7 +5968,7 @@
      "id": 313825,
      "name": "Bård Finne",
      "role": "attackers",
-     "position": "RW,ST,LW",
+     "position": "ST,RW,LW",
      "number": 11,
      "age": 31,
      "born": "1995-02-13",
@@ -6089,7 +6082,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Eirik Horneland",
@@ -6517,7 +6510,7 @@
      "id": 1034997,
      "name": "Odin Thiago Holm",
      "role": "midfielders",
-     "position": "CM",
+     "position": "RM,CM",
      "number": 15,
      "age": 23,
      "born": "2003-01-18",
@@ -6555,7 +6548,7 @@
      "id": 1458877,
      "name": "Fidel Brice Ambina",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM",
      "number": 29,
      "age": 24,
      "born": "2001-11-17",
@@ -6568,12 +6561,7 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1162511,
@@ -6753,7 +6741,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Johannes Moesgaard",
@@ -6948,7 +6936,7 @@
      "country": "Norway",
      "height": 194,
      "value": 1234623,
-     "rating": 6.62,
+     "rating": 6.63,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7027,7 +7015,7 @@
      "country": "Norway",
      "height": 189,
      "value": 406738,
-     "rating": 6.98,
+     "rating": 6.97,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -7144,7 +7132,7 @@
      "country": "Norway",
      "height": 185,
      "value": 509689,
-     "rating": 6.7,
+     "rating": 6.69,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7182,7 +7170,7 @@
      "country": "Norway",
      "height": 187,
      "value": 415718,
-     "rating": 6.63,
+     "rating": 6.64,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -7201,7 +7189,7 @@
      "country": "Sweden",
      "height": null,
      "value": 843835,
-     "rating": 7.09,
+     "rating": 7.1,
      "goals": 2,
      "assists": 1,
      "penalties": 1,
@@ -7239,7 +7227,7 @@
      "country": "Norway",
      "height": 175,
      "value": 978414,
-     "rating": 6.54,
+     "rating": 6.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7327,7 +7315,7 @@
      "id": 537936,
      "name": "Johannes Nuñez",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,LW",
      "number": 10,
      "age": 29,
      "born": "1996-12-14",
@@ -7353,7 +7341,7 @@
      "country": "Norway",
      "height": null,
      "value": null,
-     "rating": 6.57,
+     "rating": 6.56,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7372,7 +7360,7 @@
      "country": "Norway",
      "height": 182,
      "value": 275691,
-     "rating": 7.04,
+     "rating": 7.01,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -7410,7 +7398,7 @@
      "country": "USA",
      "height": null,
      "value": null,
-     "rating": 6.85,
+     "rating": 6.84,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -7419,7 +7407,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Casper Røjkjær",
@@ -7593,7 +7581,7 @@
      "country": "Norway",
      "height": 191,
      "value": 378483,
-     "rating": 6.67,
+     "rating": 6.66,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7745,7 +7733,7 @@
      "country": "Norway",
      "height": null,
      "value": 762033,
-     "rating": 6.75,
+     "rating": 6.73,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -7931,7 +7919,7 @@
      "id": 1643943,
      "name": "Blerton Isufi",
      "role": "midfielders",
-     "position": "ST,CAM,CM",
+     "position": "ST,CM",
      "number": 29,
      "age": 20,
      "born": "2006-02-14",
@@ -8052,7 +8040,7 @@
      "country": "Nigeria",
      "height": null,
      "value": 638175,
-     "rating": 6.28,
+     "rating": 6.27,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -8061,7 +8049,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Thomas Myhre",
@@ -8251,7 +8239,7 @@
      "country": "Norway",
      "height": 175,
      "value": 384285,
-     "rating": 6.48,
+     "rating": 6.5,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -8308,7 +8296,7 @@
      "country": "Denmark",
      "height": 187,
      "value": 414517,
-     "rating": 6.74,
+     "rating": 6.75,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8466,7 +8454,7 @@
      "country": "Norway",
      "height": null,
      "value": 530619,
-     "rating": 6.87,
+     "rating": 6.86,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -8485,7 +8473,7 @@
      "country": "Norway",
      "height": 189,
      "value": 333051,
-     "rating": 7.06,
+     "rating": 7.03,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -8504,7 +8492,7 @@
      "country": "Sweden",
      "height": null,
      "value": 752493,
-     "rating": 6.93,
+     "rating": 6.95,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -8516,14 +8504,14 @@
      "id": 1436906,
      "name": "Edvard Sundbø Pettersen",
      "role": "midfielders",
-     "position": "CAM,CDM,CM",
+     "position": "CM,CAM,CDM",
      "number": 14,
      "age": 20,
      "born": "2006-07-07",
      "country": "Norway",
      "height": null,
      "value": 1101368,
-     "rating": 6.72,
+     "rating": 6.73,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -8659,7 +8647,7 @@
      "country": "Norway",
      "height": 190,
      "value": 480033,
-     "rating": 6.92,
+     "rating": 6.93,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -8706,7 +8694,10 @@
      "penalties": 0,
      "yellow": 4,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "Late November 2026"
+     }
     },
     {
      "id": 1258452,
@@ -8776,7 +8767,7 @@
      "country": "Norway",
      "height": 174,
      "value": 602270,
-     "rating": 6.81,
+     "rating": 6.8,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -8804,7 +8795,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Andreas Tegström",
@@ -8986,7 +8977,7 @@
      "country": "Germany",
      "height": 198,
      "value": 498556,
-     "rating": 6.94,
+     "rating": 6.99,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9043,7 +9034,7 @@
      "country": "Iceland",
      "height": 188,
      "value": 407710,
-     "rating": 6.55,
+     "rating": 6.54,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9144,7 +9135,7 @@
      "country": "Senegal",
      "height": 185,
      "value": 1593183,
-     "rating": 6.85,
+     "rating": 6.83,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9185,7 +9176,7 @@
      "country": "Norway",
      "height": null,
      "value": 385099,
-     "rating": 6.9,
+     "rating": 6.89,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -9254,7 +9245,7 @@
      "id": 1351897,
      "name": "Uba Charles",
      "role": "midfielders",
-     "position": "RM,LWB,RWB,LM",
+     "position": "RM,LWB,LM,RWB",
      "number": 14,
      "age": 24,
      "born": "2002-10-10",
@@ -9273,7 +9264,7 @@
      "id": 1460652,
      "name": "Endre Osenbroch",
      "role": "midfielders",
-     "position": "ST,CM",
+     "position": "CM,ST",
      "number": 15,
      "age": 22,
      "born": "2004-05-12",
@@ -9318,7 +9309,7 @@
      "country": "Norway",
      "height": 188,
      "value": 518713,
-     "rating": 7.03,
+     "rating": 7.04,
      "goals": 4,
      "assists": 1,
      "penalties": 0,
@@ -9381,12 +9372,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1048395,
@@ -9418,7 +9404,7 @@
      "country": "Denmark",
      "height": 190,
      "value": 587142,
-     "rating": 6.88,
+     "rating": 6.85,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -9475,7 +9461,7 @@
      "country": "Sweden",
      "height": 183,
      "value": 389267,
-     "rating": 6.4,
+     "rating": 6.36,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -9544,7 +9530,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Kjetil Rekdal",
@@ -9918,7 +9904,7 @@
      "id": 773750,
      "name": "Jesper Isaksen",
      "role": "midfielders",
-     "position": "LB,CM,RM,CDM",
+     "position": "LB,CM,CDM",
      "number": 6,
      "age": 27,
      "born": "1999-10-13",
@@ -10032,7 +10018,7 @@
      "id": 630258,
      "name": "Tobias Hammer Svendsen",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CM,CAM",
      "number": 23,
      "age": 27,
      "born": "1999-08-31",
@@ -10051,7 +10037,7 @@
      "id": 1081684,
      "name": "Marius Elvius",
      "role": "midfielders",
-     "position": "LM,LWB,RWB,RB",
+     "position": "LM,RB,LWB,RWB",
      "number": 59,
      "age": 24,
      "born": "2002-06-01",
@@ -10127,7 +10113,7 @@
      "id": 1345042,
      "name": "Gustav Christensen",
      "role": "attackers",
-     "position": "LW,LWB,RWB,ST,RM,RW",
+     "position": "LW,LWB,RWB,RW,ST,RM",
      "number": 24,
      "age": 22,
      "born": "2004-09-07",
@@ -10146,7 +10132,7 @@
      "id": 1500343,
      "name": "Adrian Kurd Rønning",
      "role": "attackers",
-     "position": "CM,RW,ST",
+     "position": "CM,RW,LW,ST",
      "number": 27,
      "age": 20,
      "born": "2006-03-17",
@@ -10162,7 +10148,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Amund Skiri",
@@ -10309,7 +10295,7 @@
      "country": "Norway",
      "height": 196,
      "value": 327586,
-     "rating": 6.18,
+     "rating": 6.17,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10565,7 +10551,7 @@
      "country": "Norway",
      "height": 181,
      "value": 317234,
-     "rating": 6.75,
+     "rating": 6.74,
      "goals": 1,
      "assists": 4,
      "penalties": 0,
@@ -10584,7 +10570,7 @@
      "country": "Norway",
      "height": null,
      "value": 365805,
-     "rating": 6.75,
+     "rating": 6.74,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -10660,7 +10646,7 @@
      "country": "Cyprus",
      "height": 180,
      "value": 834284,
-     "rating": 6.46,
+     "rating": 6.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -10745,7 +10731,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Azar Karadaş",

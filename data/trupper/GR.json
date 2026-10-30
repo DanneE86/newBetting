@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "GR",
  "fotmobId": 135,
  "source": "FotMob",
@@ -567,12 +567,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Tibia and fibula fracture",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1073402,
@@ -670,7 +665,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jacob Neestrup",
@@ -1471,7 +1466,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Imanol Alguacil",
@@ -2240,7 +2235,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Marko Nikolić",
@@ -3044,7 +3039,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Michalis Grigoriou",
@@ -3910,7 +3905,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Alessio Lisci",
@@ -4355,25 +4350,6 @@
      "injury": null
     },
     {
-     "id": 1782726,
-     "name": "Pavlos Kenourgiakis",
-     "role": "defenders",
-     "position": "LWB",
-     "number": 90,
-     "age": 18,
-     "born": "2008-03-06",
-     "country": "Greece",
-     "height": null,
-     "value": 439820,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1225435,
      "name": "Nikolaos Athanasiou",
      "role": "midfielders",
@@ -4453,7 +4429,7 @@
      "id": 784493,
      "name": "Thanasis Androutsos",
      "role": "midfielders",
-     "position": "CM,CDM,CAM,RB,RM",
+     "position": "CM,CDM,CAM,RM",
      "number": 14,
      "age": 29,
      "born": "1997-05-06",
@@ -4491,7 +4467,7 @@
      "id": 1318668,
      "name": "Giannis Apostolakis",
      "role": "midfielders",
-     "position": "CM,LWB,CDM,RW,RM,CAM",
+     "position": "LWB,CM,CDM,RM,CAM",
      "number": 21,
      "age": 22,
      "born": "2004-09-24",
@@ -4593,6 +4569,25 @@
      "country": "Greece",
      "height": null,
      "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1782726,
+     "name": "Pavlos Kenourgiakis",
+     "role": "midfielders",
+     "position": "LWB",
+     "number": 90,
+     "age": 18,
+     "born": "2008-03-06",
+     "country": "Greece",
+     "height": null,
+     "value": 534069,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4725,7 +4720,7 @@
      "id": 1398146,
      "name": "Giannis Theodosoulakis",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,CAM",
      "number": 46,
      "age": 22,
      "born": "2004-09-11",
@@ -4741,7 +4736,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Christos Kontis",
@@ -5559,7 +5554,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Sebastián Leto",
@@ -6377,7 +6372,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Panagiotis Christofileas",
@@ -7233,7 +7228,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Walter Mazzarri",
@@ -7867,12 +7862,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring strain",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1457935,
@@ -8027,7 +8017,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Giannis Anastasiou",
@@ -8729,12 +8719,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "muscular problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 908534,
@@ -8870,7 +8855,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Giorgos Antonopoulos",
@@ -9676,7 +9661,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Elias Charalampous",
@@ -10474,7 +10459,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Dušan Kerkez",
@@ -11139,7 +11124,7 @@
      "id": 815187,
      "name": "Yvan Neyou Noupa",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM",
      "number": 91,
      "age": 29,
      "born": "1997-01-03",
@@ -11231,12 +11216,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 2139580,
@@ -11258,7 +11238,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Konstantinos Bratsos",

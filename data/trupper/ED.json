@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "ED",
  "fotmobId": 57,
  "source": "FotMob",
@@ -674,7 +674,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Giovanni van Bronckhorst",
@@ -1035,12 +1035,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Back injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1789791,
@@ -1249,12 +1244,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 640742,
@@ -1314,12 +1304,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 209786,
@@ -1340,7 +1325,7 @@
      "red": 0,
      "injury": {
       "typeId": "6",
-      "expectedReturn": "Back in training"
+      "expectedReturn": "Day to day"
      }
     },
     {
@@ -1401,7 +1386,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Míchel",
@@ -1786,7 +1771,7 @@
      "red": 0,
      "injury": {
       "typeId": "21",
-      "expectedReturn": "About a week"
+      "expectedReturn": "Day to day"
      }
     },
     {
@@ -2027,7 +2012,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Peter Bosz",
@@ -2777,7 +2762,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "John van den Brom",
@@ -3091,12 +3076,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "minor knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1329774,
@@ -3269,7 +3249,7 @@
      "red": 0,
      "injury": {
       "typeId": "6",
-      "expectedReturn": "About a week"
+      "expectedReturn": "Day to day"
      }
     },
     {
@@ -3488,7 +3468,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Leeroy Echteld",
@@ -3788,7 +3768,7 @@
      "id": 1184695,
      "name": "Jasper Dahlhaus",
      "role": "defenders",
-     "position": "LB,LWB",
+     "position": "LB,LWB,LM",
      "number": 8,
      "age": 24,
      "born": "2001-11-27",
@@ -3885,7 +3865,7 @@
      "role": "defenders",
      "position": "Defender",
      "number": 35,
-     "age": 18,
+     "age": 19,
      "born": "2007-10-30",
      "country": "Netherlands",
      "height": null,
@@ -3934,18 +3914,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 1,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ankle sprain",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1389662,
      "name": "Sven Simons",
      "role": "midfielders",
-     "position": "CM,CDM,ST,RM",
+     "position": "CM,CDM,ST,RW,RM",
      "number": 14,
      "age": 22,
      "born": "2004-03-02",
@@ -4094,25 +4069,6 @@
      "injury": null
     },
     {
-     "id": 1015183,
-     "name": "Mohammed Ihattaren",
-     "role": "midfielders",
-     "position": "RW,CAM,RM,CM",
-     "number": 52,
-     "age": 24,
-     "born": "2002-02-12",
-     "country": "Morocco",
-     "height": 182,
-     "value": 2070960,
-     "rating": 7.28,
-     "goals": 3,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 510399,
      "name": "Kristoffer Peterson",
      "role": "attackers",
@@ -4206,9 +4162,28 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1015183,
+     "name": "Mohammed Ihattaren",
+     "role": "attackers",
+     "position": "RW,CAM,RM,CM",
+     "number": 52,
+     "age": 24,
+     "born": "2002-02-12",
+     "country": "Morocco",
+     "height": 182,
+     "value": 2070960,
+     "rating": 7.28,
+     "goals": 3,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Danny Buijs",
@@ -4556,7 +4531,7 @@
      "id": 1162008,
      "name": "Hristiyan Petrov",
      "role": "defenders",
-     "position": "LB",
+     "position": "LB,CB",
      "number": 28,
      "age": 24,
      "born": "2002-06-24",
@@ -4758,7 +4733,7 @@
      "born": "2006-12-22",
      "country": "Netherlands",
      "height": null,
-     "value": 626303,
+     "value": 329830,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4939,7 +4914,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Robin Veldman",
@@ -5197,12 +5172,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "01/07/2027",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 2172378,
@@ -5667,12 +5637,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1797835,
@@ -5694,7 +5659,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Dick Lukkien",
@@ -6435,7 +6400,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Joseph Oosting",
@@ -6638,10 +6603,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hand injury",
-      "source": "Transfermarkt"
+      "typeId": "35",
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -7243,7 +7206,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Johan Plat",
@@ -7441,12 +7404,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 156553,
@@ -8012,15 +7970,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ill",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Anthony Correia",
@@ -8437,7 +8390,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "6",
+      "expectedReturn": "Mid November 2026"
+     }
     },
     {
      "id": 1928271,
@@ -8593,10 +8549,8 @@
      "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Calf injury",
-      "source": "Transfermarkt"
+      "typeId": "101",
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -8641,7 +8595,7 @@
      "id": 1667708,
      "name": "Adam Tahaui",
      "role": "midfielders",
-     "position": "CAM,CM,RWB,ST,RW",
+     "position": "CAM,CM,RWB,RW",
      "number": 19,
      "age": 21,
      "born": "2005-07-21",
@@ -8828,7 +8782,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Dick Schreuder",
@@ -9504,7 +9458,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Ruben den Uil",
@@ -9755,12 +9709,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1804213,
@@ -10146,7 +10095,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rogier Meijer",
@@ -10430,12 +10379,7 @@
      "penalties": 0,
      "yellow": 3,
      "red": 1,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1327791,
@@ -10878,7 +10822,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Henry van der Vegt",
@@ -11327,12 +11271,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1668214,
@@ -11601,7 +11540,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Henk Brugge",
@@ -12085,7 +12024,7 @@
      "id": 1599289,
      "name": "Finn de Bruin",
      "role": "midfielders",
-     "position": "CM,CAM",
+     "position": "CM",
      "number": 16,
      "age": 22,
      "born": "2004-04-05",
@@ -12161,7 +12100,7 @@
      "id": 277609,
      "name": "Daryl van Mieghem",
      "role": "attackers",
-     "position": "RW,RM",
+     "position": "RW,RM,LW",
      "number": 7,
      "age": 36,
      "born": "1989-12-05",
@@ -12218,7 +12157,7 @@
      "id": 1189519,
      "name": "Luka Reischl",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,CAM",
      "number": 19,
      "age": 22,
      "born": "2004-01-10",
@@ -12354,7 +12293,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Robin Peter",
@@ -12771,7 +12710,7 @@
      "id": 1460076,
      "name": "Amine Et-Taïbi",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,LB",
      "number": 15,
      "age": 23,
      "born": "2003-02-05",
@@ -13205,12 +13144,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Broken toe",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 519829,
@@ -13289,7 +13223,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "John Stegeman",

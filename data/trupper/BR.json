@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "BR",
  "fotmobId": 268,
  "source": "FotMob",
@@ -187,7 +187,7 @@
      "id": 797908,
      "name": "Emerson Royal",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,LB",
      "number": 22,
      "age": 27,
      "born": "1999-01-14",
@@ -334,10 +334,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
+      "typeId": "69",
+      "expectedReturn": "About a week"
      }
     },
     {
@@ -377,10 +375,8 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Eye injury",
-      "source": "Transfermarkt"
+      "typeId": "92",
+      "expectedReturn": "About a week"
      }
     },
     {
@@ -476,10 +472,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1931786,
@@ -710,7 +703,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Leonardo Jardim",
@@ -1574,7 +1567,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Abel Ferreira",
@@ -2197,7 +2190,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Artur Jorge",
@@ -3130,7 +3123,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Marcão",
@@ -3784,12 +3777,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Pubic bone bruise",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1636609,
@@ -3925,7 +3913,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Odair Hellmann",
@@ -4730,7 +4718,7 @@
      "id": 1136409,
      "name": "Cristian Olivera",
      "role": "attackers",
-     "position": "RW,LW,RWB",
+     "position": "RW,RWB,LW",
      "number": 99,
      "age": 24,
      "born": "2002-04-17",
@@ -4746,7 +4734,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rogério Ceni",
@@ -5393,7 +5381,7 @@
      "id": 832171,
      "name": "Alan Franco",
      "role": "midfielders",
-     "position": "CDM,RB,CM,CB,RM,RWB",
+     "position": "CDM,RB,CM,CB,RWB,RM",
      "number": 21,
      "age": 28,
      "born": "1998-08-21",
@@ -5438,6 +5426,25 @@
      "country": "Brazil",
      "height": 177,
      "value": 9321170,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 174531,
+     "name": "Dudu",
+     "role": "midfielders",
+     "position": "CAM,LW",
+     "number": 92,
+     "age": 34,
+     "born": "1992-01-07",
+     "country": "Brazil",
+     "height": 167,
+     "value": 855483,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5530,28 +5537,9 @@
       "typeId": "77",
       "expectedReturn": "About 1-2 weeks"
      }
-    },
-    {
-     "id": 174531,
-     "name": "Dudu",
-     "role": "attackers",
-     "position": "CAM,LW",
-     "number": 92,
-     "age": 34,
-     "born": "1992-01-07",
-     "country": "Brazil",
-     "height": 167,
-     "value": 855483,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Eduardo Domínguez",
@@ -6088,7 +6076,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "About a week"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -6129,7 +6117,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -6405,7 +6393,7 @@
      "id": 796732,
      "name": "Rony",
      "role": "attackers",
-     "position": "ST,LW,RWB,CAM,RW,RM",
+     "position": "ST,LW,RWB,CAM,RM",
      "number": 33,
      "age": 31,
      "born": "1995-05-11",
@@ -6421,7 +6409,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Cuca",
@@ -6893,12 +6881,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Injury to the ankle",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1132936,
@@ -7192,12 +7175,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Tonsillitis",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 789877,
@@ -7371,7 +7349,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Vágner Mancini",
@@ -8064,10 +8042,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "30",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 469295,
@@ -8206,7 +8181,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Dorival Júnior",
@@ -9012,7 +8987,7 @@
      "id": 360559,
      "name": "Hakim Ziyech",
      "role": "attackers",
-     "position": "RW,CAM",
+     "position": "RW,CM,CAM",
      "number": 22,
      "age": 33,
      "born": "1993-03-19",
@@ -9031,7 +9006,7 @@
      "id": 931862,
      "name": "Danilo",
      "role": "attackers",
-     "position": "ST,RW,LW",
+     "position": "ST,LW",
      "number": 90,
      "age": 27,
      "born": "1999-04-07",
@@ -9047,7 +9022,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Tite",
@@ -9941,12 +9916,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee problems",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 638652,
@@ -10025,7 +9995,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fernando Seabra",
@@ -10747,12 +10717,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Torn knee ligaments",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1459657,
@@ -10833,7 +10798,7 @@
      "red": 0,
      "injury": {
       "typeId": "30",
-      "expectedReturn": "A few days"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -10970,7 +10935,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Pedro Emanuel",
@@ -12074,7 +12039,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jair Ventura",
@@ -12574,7 +12539,7 @@
      "id": 581563,
      "name": "João Pedro",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,RM",
      "number": 18,
      "age": 29,
      "born": "1996-11-15",
@@ -12593,7 +12558,7 @@
      "id": 863158,
      "name": "Marlon",
      "role": "defenders",
-     "position": "LB",
+     "position": "LB,LM",
      "number": 23,
      "age": 29,
      "born": "1997-05-20",
@@ -12925,7 +12890,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Renato Gaúcho",
@@ -13940,7 +13905,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rafael Guanaes",
@@ -14420,7 +14385,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 690362,
@@ -14445,7 +14413,7 @@
      "id": 1104156,
      "name": "Alexandro Bernabéi",
      "role": "midfielders",
-     "position": "LB,LM,LWB,CAM,LW",
+     "position": "LB,LM,CAM,LWB,LW",
      "number": 26,
      "age": 26,
      "born": "2000-09-24",
@@ -14515,7 +14483,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1174300,
@@ -14638,7 +14609,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Eduardo Baptista",
@@ -15370,12 +15341,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Muscle fatigue",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 890637,
@@ -15479,7 +15445,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fernando Diniz",
@@ -16210,10 +16176,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "101",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 576129,
@@ -16314,7 +16277,7 @@
      "id": 535944,
      "name": "Zé Welison",
      "role": "midfielders",
-     "position": "CDM,CB",
+     "position": "CDM,CM,CB",
      "number": 28,
      "age": 31,
      "born": "1995-03-11",
@@ -16501,10 +16464,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Early November 2026"
-     }
+     "injury": null
     },
     {
      "id": 1041427,
@@ -16586,7 +16546,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Thiago Carpini",
@@ -16844,12 +16804,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Cruciate ligament tear",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1738042,
@@ -17203,7 +17158,7 @@
      "id": 1216339,
      "name": "Bruno Matias",
      "role": "midfielders",
-     "position": "CDM",
+     "position": "CDM,CM",
      "number": 16,
      "age": 27,
      "born": "1999-02-24",
@@ -17235,12 +17190,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Inflammation of ligaments in the knee",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1235079,
@@ -17382,7 +17332,7 @@
      "id": 833990,
      "name": "Marcinho",
      "role": "attackers",
-     "position": "LW,RW,ST,CAM,LM",
+     "position": "LW,RW,ST,CAM,LM,RM",
      "number": 7,
      "age": 31,
      "born": "1995-06-08",
@@ -17512,7 +17462,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Lacerda",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-10-30T15:47:46.164Z",
  "league": "DK",
  "fotmobId": 46,
  "source": "FotMob",
@@ -152,7 +152,7 @@
      "id": 722207,
      "name": "Rasmus Kristensen",
      "role": "defenders",
-     "position": "CB,RB,RWB",
+     "position": "CB,RB,RWB,RW",
      "number": 5,
      "age": 29,
      "born": "1997-07-11",
@@ -304,12 +304,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/10/2026",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1477417,
@@ -543,12 +538,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/12/2026",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1328716,
@@ -586,15 +576,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/10/2026",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Mike Tullberg",
@@ -882,25 +867,6 @@
      "injury": null
     },
     {
-     "id": 1244640,
-     "name": "Rodrigo Huescas",
-     "role": "defenders",
-     "position": "RWB",
-     "number": 13,
-     "age": 23,
-     "born": "2003-09-18",
-     "country": "Mexico",
-     "height": 172,
-     "value": 7841256,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 823209,
      "name": "Marcos López",
      "role": "defenders",
@@ -942,7 +908,7 @@
      "id": 1337765,
      "name": "Junnosuke Suzuki",
      "role": "defenders",
-     "position": "RB,CB,LB",
+     "position": "RB,CB",
      "number": 20,
      "age": 23,
      "born": "2003-07-12",
@@ -1002,7 +968,7 @@
      "id": 261936,
      "name": "Mohamed Elyounoussi",
      "role": "midfielders",
-     "position": "CAM,RW,ST,RM,CM,LW",
+     "position": "CAM,RW,ST,RM,LW,CM",
      "number": 10,
      "age": 32,
      "born": "1994-08-04",
@@ -1018,10 +984,29 @@
      "injury": null
     },
     {
+     "id": 1244640,
+     "name": "Rodrigo Huescas",
+     "role": "midfielders",
+     "position": "RWB",
+     "number": 13,
+     "age": 23,
+     "born": "2003-09-18",
+     "country": "Mexico",
+     "height": 172,
+     "value": 7841256,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 775246,
      "name": "Mads Madsen",
      "role": "midfielders",
-     "position": "CM,CDM,CAM",
+     "position": "CDM,CM,CAM",
      "number": 21,
      "age": 28,
      "born": "1998-01-14",
@@ -1034,12 +1019,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Mononucleation",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 170218,
@@ -1102,7 +1082,7 @@
      "id": 1320887,
      "name": "William Clem",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM,CM",
      "number": 36,
      "age": 22,
      "born": "2004-06-20",
@@ -1121,7 +1101,7 @@
      "id": 1618860,
      "name": "Maher Carrizo",
      "role": "attackers",
-     "position": "RW",
+     "position": "RW,CAM",
      "number": 7,
      "age": 20,
      "born": "2006-02-19",
@@ -1181,7 +1161,7 @@
      "id": 1494913,
      "name": "Robert",
      "role": "attackers",
-     "position": "LW,LM,RM,CAM",
+     "position": "LW,LM,CAM",
      "number": 16,
      "age": 21,
      "born": "2005-04-13",
@@ -1194,12 +1174,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1509069,
@@ -1240,7 +1215,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Bo Svensson",
@@ -1867,7 +1842,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Nickolai Lund",
@@ -2044,12 +2019,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "unknown injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 320668,
@@ -2125,12 +2095,7 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1579475,
@@ -2149,12 +2114,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Ankle injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1713875,
@@ -2192,12 +2152,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Shoulder injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1819927,
@@ -2336,7 +2291,7 @@
      "id": 1717551,
      "name": "Markus Walker",
      "role": "midfielders",
-     "position": "RM",
+     "position": "LM,RM",
      "number": 28,
      "age": 19,
      "born": "2006-11-23",
@@ -2450,7 +2405,7 @@
      "id": 1713876,
      "name": "Villum Berthelsen",
      "role": "attackers",
-     "position": "ST,RW",
+     "position": "ST,RW,LW",
      "number": 29,
      "age": 20,
      "born": "2006-04-14",
@@ -2564,7 +2519,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jens Olsen",
@@ -2907,12 +2862,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1024169,
@@ -2937,7 +2887,7 @@
      "id": 1681833,
      "name": "Lukas Larsen",
      "role": "defenders",
-     "position": "LB,LM",
+     "position": "LB,RB,LM",
      "number": 34,
      "age": 20,
      "born": "2006-03-11",
@@ -3219,7 +3169,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Thomas Nørgaard",
@@ -3956,7 +3906,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Niki Zimling",
@@ -4681,7 +4631,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Thomas Thomasberg",
@@ -5044,18 +4994,13 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Achilles tendon irritation",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 742410,
      "name": "Markus Solbakken",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM,CM",
      "number": 7,
      "age": 26,
      "born": "2000-07-25",
@@ -5302,12 +5247,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1759271,
@@ -5389,7 +5329,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Jakob Poulsen",
@@ -5774,12 +5714,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/12/2026",
-      "name": "Broken collarbone",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1273309,
@@ -6013,7 +5948,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Morten Dahm Kjærgaard",
@@ -6314,7 +6249,7 @@
      "id": 1451493,
      "name": "Sabil Hansen",
      "role": "defenders",
-     "position": "RB,RM",
+     "position": "RB,RWB",
      "number": 24,
      "age": 20,
      "born": "2005-11-14",
@@ -6507,6 +6442,25 @@
      "injury": null
     },
     {
+     "id": 1239553,
+     "name": "Axel Henriksson",
+     "role": "midfielders",
+     "position": "ST,CAM,CM",
+     "number": 21,
+     "age": 24,
+     "born": "2002-04-16",
+     "country": "Sweden",
+     "height": 189,
+     "value": 1116496,
+     "rating": 6.36,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
      "id": 1792258,
      "name": "Ousseynou Fall Seck",
      "role": "midfielders",
@@ -6548,7 +6502,7 @@
      "id": 1614318,
      "name": "Mike Themsen",
      "role": "attackers",
-     "position": "CAM,RW,LW,LM",
+     "position": "CAM,LW,RW,LM",
      "number": 7,
      "age": 20,
      "born": "2006-03-01",
@@ -6561,12 +6515,7 @@
      "penalties": 1,
      "yellow": 3,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 630488,
@@ -6604,25 +6553,6 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1239553,
-     "name": "Axel Henriksson",
-     "role": "attackers",
-     "position": "ST,RW,CAM",
-     "number": 21,
-     "age": 24,
-     "born": "2002-04-16",
-     "country": "Sweden",
-     "height": 189,
-     "value": 1116496,
-     "rating": 6.36,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 1,
      "injury": null
     },
     {
@@ -6702,7 +6632,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Rasmus Bertelsen",
@@ -6954,12 +6884,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knock",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 623169,
@@ -7054,12 +6979,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Knee injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 1434859,
@@ -7119,29 +7039,10 @@
      "injury": null
     },
     {
-     "id": 975446,
-     "name": "Simon Colyn",
-     "role": "midfielders",
-     "position": "LM,ST",
-     "number": 7,
-     "age": 24,
-     "born": "2002-03-23",
-     "country": "Canada",
-     "height": 182,
-     "value": 754573,
-     "rating": 7.46,
-     "goals": 5,
-     "assists": 2,
-     "penalties": 1,
-     "yellow": 3,
-     "red": 1,
-     "injury": null
-    },
-    {
      "id": 539586,
      "name": "Mathias Hebo",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM",
      "number": 8,
      "age": 31,
      "born": "1995-08-02",
@@ -7230,6 +7131,25 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
+     "injury": null
+    },
+    {
+     "id": 975446,
+     "name": "Simon Colyn",
+     "role": "attackers",
+     "position": "ST,LM",
+     "number": 7,
+     "age": 24,
+     "born": "2002-03-23",
+     "country": "Canada",
+     "height": 182,
+     "value": 754573,
+     "rating": 7.46,
+     "goals": 5,
+     "assists": 2,
+     "penalties": 1,
+     "yellow": 3,
+     "red": 1,
      "injury": null
     },
     {
@@ -7328,7 +7248,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Mikkel Jespersen",
@@ -7671,12 +7591,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "31/12/2026",
-      "name": "Ankle surgery",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 852424,
@@ -8040,7 +7955,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-29T13:13:20.209Z",
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
    "coachHistory": [
     {
      "name": "Fatah Abdirahman",
