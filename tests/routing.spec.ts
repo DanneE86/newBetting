@@ -72,13 +72,14 @@ test('Stryktipset: en sida, egna krav genererar kupong A', async ({ page }) => {
   await expect(page.locator('#stryktips-view h2')).toContainText('Stryktipset', { timeout: 30_000 });
   const rows = page.locator('.sb-row');
   await expect(rows).toHaveCount(13, { timeout: 240_000 });
-  // Folkets streck syns i varje ruta (2026-10-30); överstreckat (folket ≥ 10 enh. över vår chans) markeras
+  // Modellens procent märkt M och folkets streck F i varje ruta (2026-10-30); överstreckat (folket ≥ 10 enh. över vår chans) markeras
   const folk = await page.locator('.sb-row .sb-sign').evaluateAll((bs) => bs.map((b) => ({
     txt: b.querySelector('.sb-folk')?.textContent || '', over: !!b.querySelector('.sb-folk.over'),
-    p: parseInt(b.querySelector('small')!.textContent!, 10), f: parseInt((b.querySelector('.sb-folk')?.textContent || '').replace(/\D/g, ''), 10),
+    m: b.querySelector('small')!.textContent!, p: parseInt(b.querySelector('small')!.textContent!.replace(/\D/g, ''), 10), f: parseInt((b.querySelector('.sb-folk')?.textContent || '').replace(/\D/g, ''), 10),
   })));
   expect(folk).toHaveLength(39);
   for (const x of folk) {
+    expect(x.m, 'modellens procent märkt M').toMatch(/^M \d+ %$/);
     expect(x.txt).toMatch(/^F \d+ %$/);
     if (Math.abs(x.f - x.p) >= 2 && Math.abs(x.f - x.p - 10) >= 2) expect(x.over, `${x.txt} mot ${x.p} %`).toBe(x.f - x.p >= 10); // avrundning: bara tydliga fall
   }
