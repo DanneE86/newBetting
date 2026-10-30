@@ -128,7 +128,7 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
 //   spikar: 4 st (användaren 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig") – omgångens 3
 //      starkaste favoriter (vår procent) + omgångens bästa skrällspik (skrallTips förstaval, på en annan match) – har du
 //      egna spikar spikas inga andra matcher
-//   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt – på Stryktipset sedan 2026-10-30 vägda med √utdelning
+//   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt – på Stryktipset sedan 2026-10-30 vägda med utdelning^0,35
 //      (FILE_RULES.utdVikt), så underspelade tecken får plats och överstreckade favoriter straffas
 // Bakkört 2026-10-11 (kupongarkivet, ST 169 / ET 183 omg, scripts/backtest-stryk-fil.mjs): A chans 1 på 170 / 162 med 2 spikar
 // (0 spikar 1 på 168 / 159, 4 spikar 1 på 181 / 174); A+B bäst med 2 (1 på 96 / 92). Båda spikarna satt i 80 / 90 omg.
@@ -141,7 +141,10 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
 // Bakkörning 171 ST-omg: 0,5 ger väntad utdelning per 13 rätt 38 000 → 73 000 kr mot chans 1 på 168 → 200; 1,0 dödar chansen
 // (1 på 1 900). Europatipset: för svagt underlag (189 omg, sämre utfall) – bara chans där. Användaren 2026-10-30: "vinna mycket
 // så måste vara skrällar samt hitta något som är underspelat".
-export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, spikDataMin: 0.55, utdVikt: { stryktipset: 0.5, europatipset: 0 } };
+// Sänkt till 0,35 samma dag: 0,5 tog bort vår favorit helt när folket överstreckade den (omg 4977 Villa–Fulham 43/27/30, folket
+// 67/19/14 → 0/4/496 rader). 0,35 ger 101/73/326; bakkörning 171 omg: chans 1 på 175, väntad utdelning per 13 rätt 49 000 kr.
+// Favoritgolv (favoriten minst g × vår chans av raderna) testat samtidigt och sämre i alla varianter (1 på 193–291).
+export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, spikDataMin: 0.55, utdVikt: { stryktipset: 0.35, europatipset: 0 } };
 /** Utdelningsvikten för ett spel: ett tal i reglerna gäller alla spel (bakkörning), annars per spel. */
 export function utdViktFor(r, product) {
   return typeof r.utdVikt === "number" ? r.utdVikt : (r.utdVikt?.[product] ?? 0);
