@@ -5,7 +5,9 @@ export default defineConfig({
   timeout: 180_000,
   expect: { timeout: 15_000 },
   retries: 0,
-  reporter: [['list'], ['html', { open: 'never', outputFolder: 'playwright-report' }]],
+  // PW_OUT: egen utdatamapp (commit-kroken sätter en i TEMP), så att två körningar samtidigt inte raderar varandras test-results
+  outputDir: process.env.PW_OUT || 'test-results',
+  reporter: [['list'], ['html', { open: 'never', outputFolder: process.env.PW_OUT ? `${process.env.PW_OUT}-report` : 'playwright-report' }]],
   use: {
     headless: true,
     screenshot: 'only-on-failure',

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "BE",
  "fotmobId": 40,
  "source": "FotMob",
@@ -333,7 +333,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 629112,
@@ -2442,7 +2447,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 2130883,
@@ -5252,7 +5262,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Partial muscle tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1839169,
@@ -5309,7 +5324,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1680585,
@@ -6816,7 +6836,12 @@
      "penalties": 1,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Calf muscle tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 642230,
@@ -6911,7 +6936,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1098807,
@@ -7298,7 +7328,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1898389,
@@ -10234,7 +10269,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Adductor pain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1412700,
@@ -10462,7 +10502,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 1,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Achilles tendon contusion",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1011149,
@@ -11602,7 +11647,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Muscle injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -11908,7 +11958,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hip injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1189794,
@@ -12136,7 +12191,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 1,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "minor knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 789532,
@@ -12237,7 +12297,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1187362,

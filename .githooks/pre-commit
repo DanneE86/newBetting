@@ -2,4 +2,9 @@
 # Före varje commit: vakten (tomma filer, syntaxfel, trasig JSON, halverade filer) och testerna.
 # Commit stoppas om något fallerar. Hoppa aldrig över med --no-verify – laga felet.
 node scripts/vakt.mjs --staged || exit 1
-npm run --silent test:commit || { echo; echo "TESTERNA GICK INTE IGENOM – commit stoppad. Laga koden, inte testerna."; exit 1; }
+# Egen utdatamapp i TEMP: en testkörning i ett annat fönster raderar annars test-results mitt i denna.
+# Snedstreck framåt (\134 = bakstreck) så att både node och git-bash läser sökvägen.
+PW_OUT="$(printf "%s" "${TEMP:-/tmp}" | tr '\134' /)/pw-commit-$$"
+export PW_OUT
+npm run --silent test:commit || { echo; echo "TESTERNA GICK INTE IGENOM – commit stoppad. Laga koden, inte testerna."; echo "Utdata: $PW_OUT"; exit 1; }
+case "$PW_OUT" in */pw-commit-[0-9]*) rm -rf "$PW_OUT" "$PW_OUT-report" ;; esac

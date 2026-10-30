@@ -44,7 +44,7 @@ Gardera mer sällan vid:
 ## Filkuponger (fasta regler sedan 2026-10-11)
 
 - **Utdelning för 13 rätt** per rad = (26 % × omsättning + jackpot) / (omsättning × radens streckprodukt + 1), med verklig omsättning (minst den typiska: 25 milj kr Stryktipset, 10 milj kr Europatipset).
-- **A:** de 500 troligaste raderna med minst 30 000 kr. **B:** de 500 nästa utanför A. **C:** underspelade tecken uppviktade. **Spikar:** de 2 starkaste favoriterna.
+- **A:** de 500 raderna med bäst chans × utdelning^w med minst 30 000 kr (`FILE_RULES.utdVikt`: Stryktipset 0,5, Europatipset 0 – sedan 2026-10-30). B och C borttagna 2026-10-25. **Spikar:** högst 3 favoriter med ≥ 55 % på data + 1 skrällspik.
 - Filen till Svenska Spels Egna rader: första raden spelets namn, sedan en rad per kupongrad: `E,1,X,2,…` (13 tecken).
 - Inga Gambling Cabin-regler (färger, tecken, utdelningsband, länkar) – borttagna 2026-10-11 på användarens begäran.
 - **Vinstklasser i praktiken:** 10 rätt ger ofta 0 kr och 11 rätt ofta under 100 kr. Det är 13 (och 12) som räknas.

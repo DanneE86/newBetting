@@ -1,9 +1,15 @@
-// Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
+// Flik "Hästar": V75/V85/V86/V64/V65/GS75/V4 + Dagens Dubbel/Lunch Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
 import { rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem, skrallOmgang } from "/hast-engine.js";
+// Tider, RT/FT/LI, Travsport-delpoäng och Fa/Fo-jämförelsen: bara visning, aldrig chans, ranking eller system
+import { raceTimes, distanceLabel, timeFactors, recentRecordDate } from "/hastar-times.js";
+import { presentationRace } from "/hastar-source.js";
+import { presentationParts } from "/hastar-parts.js";
+import { faComparison, normalizeFaWeight, normalizeFoWeight, FA_WEIGHT_MULTIPLIER, FO_WEIGHT_MULTIPLIER } from "/hastar-fa.js";
 
 const view = document.getElementById("hastar-view");
-const GAME_NAME = { dd: "Dagens Dubbel" };
+const GAME_NAME = { dd: "Dagens Dubbel", ld: "Lunch Dubbel" };
+const isDouble = (type) => ["dd", "ld"].includes(type);
 const RANK_TEXT = { A: "A · stark vinstkandidat", B: "B · realistisk utmanare", C: "C · skräll/gardering", D: "D · låg vinstchans" };
 
 let state = null; // { analysis, index, backtest, hasRaw }
@@ -11,6 +17,15 @@ let games = null; // { date, games }
 let busy = null; // text medan något körs
 let msg = null; // { kind: "error" | "ok", text }
 let loaded = false;
+// Tidsvisningen: antal giltiga lopp, vikterna i Fa/Fo-jämförelsen, källa (travsport | atg) och historikläsningen
+let timeCount = 5;
+let timeWeight = FA_WEIGHT_MULTIPLIER;
+let formWeight = FO_WEIGHT_MULTIPLIER;
+let timeSource = "travsport";
+let historyLeg = "1";
+let historyProgress = null;
+let historyPoll = null;
+let timeOpen = false; // kortet Tider och Fa/Fo-delpoäng öppet mellan omritningar
 const today = () => new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
 let date = today();
 const ALPHA = { traff: 0, lag: 0.25, normal: 0.5, hog: 1 };
@@ -72,6 +87,7 @@ async function api(path, method = "GET") {
 async function load(id) {
   try {
     state = await api(`/api/hastar${id ? `?id=${encodeURIComponent(id)}` : ""}`);
+    syncTimeState();
     if (id && state.analysis?.date) {
       date = state.analysis.date;
       games = null;
@@ -83,13 +99,96 @@ async function load(id) {
   if (!games) loadGames(false);
 }
 
+/** Tidskällan och historikläsningen ur serverns svar (webbversionen: alltid ATG, ingen läsning). */
+function syncTimeState() {
+  timeSource = state?.timeSource === "atg" ? "atg" : "travsport";
+  historyProgress = state?.historyJob || null;
+  if (historyProgress?.status === "running") pollHistory();
+}
+
+async function fetchHistory() {
+  try {
+    const leg = view.querySelector("#hs-history-leg")?.value || "1";
+    const refresh = view.querySelector("#hs-history-refresh")?.checked;
+    const q = `?id=${encodeURIComponent(state.analysis.id)}${leg === "all" ? "" : `&leg=${leg}`}${refresh ? "&refresh=1" : ""}`;
+    ({ job: historyProgress } = await api(`/api/hastar/history-fetch${q}`, "POST"));
+    msg = null;
+    render();
+    pollHistory();
+  } catch (e) {
+    msg = { kind: "error", text: e.message };
+    render();
+  }
+}
+
+function pollHistory() {
+  clearTimeout(historyPoll);
+  historyPoll = setTimeout(async () => {
+    try {
+      ({ job: historyProgress } = await api("/api/hastar/history-status"));
+      if (historyProgress?.status === "running") {
+        render();
+        pollHistory();
+      } else {
+        state = await api(`/api/hastar?id=${encodeURIComponent(state.analysis.id)}`);
+        render();
+      }
+    } catch (e) {
+      msg = { kind: "error", text: `Historikläsning: ${e.message}` };
+      render();
+    }
+  }, 1500);
+}
+
+const HISTORY_STATUS = { complete: "Klart", cancelled: "Avbruten", failed: "Avbruten med fel", partial: "Klart med luckor" };
+function historyStatus(p) {
+  if (!p) return "";
+  const what = p.status === "running" ? (p.cancelRequested ? "Avbryter" : "Läser") : HISTORY_STATUS[p.status] || p.status;
+  const where = p.currentLeg != null ? ` · avd ${p.currentLeg}${p.currentRaceNumber != null ? ` / lopp ${p.currentRaceNumber}` : ""}` : "";
+  return `${what}${where}: ${p.done}/${p.total} hästar · ${p.fetched} hämtade · ${p.cached} fanns redan${p.currentHorse ? ` · ${p.currentHorse}` : ""}`;
+}
+
+/** Inställningar för tiderna och delpoängen, ovanför avdelningarna. */
+function timeControls(a) {
+  const p = historyProgress;
+  const local = state?.local !== false;
+  const running = p?.status === "running";
+  return `<details class="hs-time-controls hs-fold"${running || timeOpen ? " open" : ""}><summary><h3>Tider och Fa/Fo-delpoäng</h3></summary>
+    <p class="hs-kort-inline"><b>Kort sagt:</b> tiderna, RT/FT/LI och talet inom parentes vid poängen är bara visning. Chans, rank och systemen räknas som förut.</p>
+    ${local ? `<label for="hs-time-source">Källa för tider och delpoäng <select id="hs-time-source"><option value="travsport" ${timeSource === "travsport" ? "selected" : ""}>Travsport (Sportinfo) – full historik</option><option value="atg" ${timeSource === "atg" ? "selected" : ""}>ATG – sparade omgångar</option></select></label>` : ""}
+    <label for="hs-time-count">Antal lopp med giltig tid <input id="hs-time-count" type="number" min="1" max="100" step="1" value="${timeCount}"></label>
+    <span class="hs-weight-controls">
+      <label for="hs-time-weight">Tidsvikt (Fa) <input id="hs-time-weight" type="number" min="0" max="100" step="0.1" value="${timeWeight}" title="Gånger modellens fartvikt i parentespoängen: 0 = ingen, 1 = som modellen, 2 = dubbel"></label>
+      <label for="hs-form-weight">Formvikt (Fo) <input id="hs-form-weight" type="number" min="0" max="100" step="0.1" value="${formWeight}" title="Gånger modellens formvikt i parentespoängen: 0 = ingen, 1 = som modellen, 2 = dubbel"></label>
+    </span>
+    ${local ? `<div class="hs-history-row"><label for="hs-history-leg">Läs Travsport-historik för <select id="hs-history-leg">${a.races.map((r) => `<option value="${r.leg}" ${historyLeg === String(r.leg) ? "selected" : ""}>Avd ${r.leg}</option>`).join("")}<option value="all" ${historyLeg === "all" ? "selected" : ""}>Hela omgången</option></select></label>
+      <label><input id="hs-history-refresh" type="checkbox"> Hämta på nytt</label>
+      <button type="button" class="ds-btn ds-btn--secondary" data-act="history" ${running ? "disabled" : ""}>Läs Travsport-historik</button>
+      ${running ? '<button type="button" class="ds-btn ds-btn--secondary" data-act="history-cancel">Avbryt</button>' : ""}</div>
+    <p class="hs-note">Läses med scripts/fetch-travsport-hast.mjs, en häst i taget med 20–45 s paus, så en hel omgång tar ungefär en timme. Redan sparade hästar läses inte om (om du inte kryssar i Hämta på nytt). Hästar utan Travsport-historik använder ATG som reserv och markeras gult.</p>` : '<p class="hs-note">Webbversionen visar tider ur ATG:s sparade omgångar. Travsport-historiken finns bara i den lokala appen.</p>'}
+    ${p ? `<p role="status" class="hs-note">${esc(historyStatus(p))}</p>` : ""}
+    ${p?.errors?.length ? `<details><summary>${p.errors.length} meddelanden från historikläsningen</summary><ul>${p.errors.map((e) => `<li>${esc(e.horse)}: ${esc(e.message)}</li>`).join("")}</ul></details>` : ""}
+    <details class="hs-help"><summary>Så läser du tiderna</summary><ul>
+      <li><b>Livstidsrekord, Senaste N, Aktuell distans</b>: bästa tid omräknad till dagens distans, startmetod och tillägg. K/M/L = ursprunglig distans (under 1 800 m, 1 800–2 300 m, över 2 300 m). Nr = plats i kolumnen.</li>
+      <li><span class="hs-time is-green">Grönt</span> = inom 0,5 s från loppets bästa tid. <span class="hs-time is-red">Rött</span> med * = minst 0,5 s före näst bästa, eller en långdistanstid inom 0,5 s från bästa. Gul siffra = färre giltiga lopp än valt.</li>
+      <li>Omräkning: 1,0 s per distanssteg, 0,5 s för startmetod, 0,5 s per 20 m tillägg, dubbelt för kallblod. Galopp med placering räknas med 0,5 s avdrag, galopp utan placering och diskning hoppas över.</li>
+      <li><b>RT</b> = hur många av loppen som var under 0,5 s från hästens tidigare rekord. <b>FT</b> = antal lopp i rad med bättre (grönt) eller sämre (rött) tid. <b>LI</b> = karriärstarter, grönt för de tre med minst erfarenhet.</li>
+      <li><b>Poäng (tal)</b>: talet inom parentes är poängen om tiderna (Fa) och formen (Fo) ersätter modellens egna tids- och formfaktorer. Högre än ordinarie poäng = tiderna talar mer för hästen än modellen tror. (—) = underlag saknas.</li>
+      <li>Delpoängen Fo–Te räknas ur Travsport-loppen när de finns (docs/travsport-delpoang.md). St är alltid dagens ATG-streck.</li>
+    </ul></details>
+  </details>`;
+}
+
 /** Byt till den kommande omgångens analys om den redan är hämtad. */
 async function alignAnalysis() {
   const id = games?.upcomingId || games?.games?.[0]?.id;
   if (!id || state?.analysis?.id === id) return;
   if (!state?.index?.analyses?.some((x) => x.id === id)) return;
   const st = await api(`/api/hastar?id=${encodeURIComponent(id)}`);
-  if (st?.analysis?.id === id) state = st;
+  if (st?.analysis?.id === id) {
+    state = st;
+    syncTimeState();
+  }
 }
 
 /** Första visningen: spellistan och datumet är den kommande omgången, inte den senaste sparade. */
@@ -97,6 +196,7 @@ async function boot() {
   render();
   try {
     state = await api("/api/hastar");
+    syncTimeState();
   } catch (e) {
     msg = { kind: "error", text: `Kunde inte läsa sparad analys: ${e.message}` };
   }
@@ -183,7 +283,7 @@ function kortSagt(a) {
   const w = a.races.map((r) => r.oddsWeight).filter((x) => x != null);
   const oddsW = w.length ? w.reduce((s, x) => s + x, 0) / w.length : null;
   const first = a.races[0]?.startTime;
-  const isV = a.type !== "dd";
+  const isV = !isDouble(a.type);
   const lines = [
     `${gameName(a.type)} på ${esc(a.track)}, första start ${esc(startTime(first))}. Data hämtad ${esc(clock(a.fetchedAt))}.`,
     safest ? `Säkraste hästen: <b>${esc(safest.horse)}</b> (avd ${safest.leg}) med ${pct(safest.p)} vinstchans enligt modellen, folket ${pct(safest.marketPct)}.` : "",
@@ -456,7 +556,7 @@ function ownResult(a, b) {
 }
 
 function systemBuilder(a) {
-  if (a.type === "dd" || !a.races.length) return "";
+  if (isDouble(a.type) || !a.races.length) return "";
   const price = rowPrice(a.type, a.date);
   const hasIb = a.races.some((r) => r.horses.some((h) => h.ibP != null));
   const ibW = hasIb ? sys.ibWeight / 100 : 0;
@@ -651,18 +751,44 @@ const PART_TEXT = { form: "Form", fart: "Fart", klass: "Klass", spar: "Spår", k
 const PART_SHORT = { form: "Fo", fart: "Fa", klass: "Kl", spar: "Sp", kusk: "Ku", tranare: "Tr", utrustning: "Ut", tempo: "Te", marknad: "St" };
 const scoreOf = (h) => h.poang?.total ?? (h.p == null ? null : Math.round(Math.max(0, Math.min(100, (100 * Math.log(Math.max(h.p, 1e-9) / 0.005)) / Math.log(0.6 / 0.005)))));
 const scoreLevel = (x) => (x >= 80 ? "is-top" : x >= 60 ? "is-good" : x >= 40 ? "is-mid" : "is-low");
-function scoreCell(h) {
+/** Hästpoängen + Fa/Fo-jämförelsen inom parentes (hastar-fa.js, bara visning). */
+function scoreCell(h, cmp) {
   const t = scoreOf(h);
   if (t == null) return "—";
-  return `<span class="hs-score ${scoreLevel(t)}" title="Hästpoäng ${t} av 100 (chans ${pct(h.p, 1)})"><b>${t}</b><span class="hs-score-bar" aria-hidden="true"><span style="width:${t}%"></span></span></span>`;
+  const alt = cmp
+    ? `<span class="hs-fa-total" title="${esc(`Poäng med Fa och Fo i stället för modellens tids- och formfaktorer: ${cmp.total} (chans ${pct(cmp.p, 1)}). Fa-tid ${cmp.time.toFixed(2)} s/km, vikt ${cmp.multiplier} × modellens fartvikt. Fo ${cmp.formScore ?? "saknas"}${cmp.formFallback ? " (ATG-reserv)" : ""}, vikt ${cmp.formMultiplier} × modellens formvikt. Ändrar inte rank, chans eller system.`)}">(${cmp.total})</span>`
+    : '<span class="hs-fa-total is-missing" title="Fa-jämförelsen saknar tider eller referens till den sparade modellen">(—)</span>';
+  return `<span class="hs-score ${scoreLevel(t)}" title="Hästpoäng ${t} av 100 (chans ${pct(h.p, 1)})"><b>${t} ${alt}</b><span class="hs-score-bar" aria-hidden="true"><span style="width:${t}%"></span></span></span>`;
 }
-function partsCell(h) {
-  const pg = h.poang;
+/** Delpoängen (Travsport där underlag finns, annars ATG, gul = reserv) + RT, FT och LI. */
+function partsCell(h, factors, parts) {
+  const pg = parts?.scores || h.poang;
   if (!pg) return "—";
+  const extra = factors
+    ? [
+        { label: "RT", text: factors.compared ? `${factors.near}/${factors.compared} (${factors.percent} %)` : "—", cls: factors.compared < factors.requested ? " is-missing" : "",
+          title: `RT: ${factors.near} av ${factors.compared} jämförbara lopp under 0,5 s från hästens tidigare rekord (${factors.count}/${factors.requested} giltiga lopp).` },
+        { label: "FT", text: factors.streak ?? "—", cls: factors.streak == null ? " is-missing" : factors.direction < 0 ? " is-hi" : factors.direction > 0 ? " is-lo" : "",
+          title: `FT: ${factors.streak ?? "—"} lopp i rad med ${factors.direction < 0 ? "bättre" : factors.direction > 0 ? "sämre" : "samma"} omräknade tid, bakåt från senaste loppet.` },
+        { label: "LI", text: factors.lifeStarts ?? "—", cls: factors.lifeStarts == null ? " is-missing" : factors.leastStarts ? " is-hi" : "",
+          title: "LI: karriärstarter före omgången. Grönt = en av de tre med minst erfarenhet i loppet." },
+      ].map((x) => `<span class="hs-part${x.cls}" title="${esc(x.title)}">${x.label} <b>${esc(x.text)}</b></span>`).join("")
+    : "";
   return `<span class="hs-parts">${Object.keys(PART_TEXT)
-    .filter((k) => pg[k] != null)
-    .map((k) => `<span class="hs-part${pg[k] >= 70 ? " is-hi" : pg[k] <= 30 ? " is-lo" : ""}" title="${PART_TEXT[k]} ${pg[k]} (50 = loppets snitt)">${PART_SHORT[k]} <b>${pg[k]}</b></span>`)
-    .join("")}</span>`;
+    .filter((k) => pg[k] != null || parts)
+    .map((k) => `<span class="hs-part${pg[k] == null || parts?.fallback[k] ? " is-missing" : pg[k] >= 70 ? " is-hi" : pg[k] <= 30 ? " is-lo" : ""}" title="${esc(parts?.titles[k] || `${PART_TEXT[k]} (50 = loppets snitt)`)}">${PART_SHORT[k]} <b>${pg[k] ?? "—"}</b></span>`)
+    .join("")}${extra}</span>`;
+}
+
+/** En tid i tidskolumnerna (hastar-times.js raceTimes). */
+function timeCell(t, count = null, reference = null) {
+  if (!t) return '<span class="hs-time-count is-short" title="Ingen giltig jämförbar tid">0</span>';
+  const shown = `${(t.time - 60).toFixed(1).replace(".", ",")}${distanceLabel(t.distance)}${t.star ? "*" : ""}`;
+  const title = `Ursprunglig tid ${(t.original - 60).toFixed(1).replace(".", ",")} · ${t.distance} m · ${t.method === "auto" ? "autostart" : "voltstart"}${t.gallopCorrection ? " · galopp med placering: −0,5 s" : ""}`;
+  const date = t.date || (t.year ? `${t.year} · datum saknas` : "datum saknas");
+  const recent = recentRecordDate(t.date, reference);
+  const cover = count == null ? "" : ` <small class="hs-time-count${count < timeCount ? " is-short" : ""}" title="${count} av ${timeCount} önskade lopp med giltig tid">${count}/${timeCount}</small>`;
+  return `<span class="hs-time${t.red ? " is-red" : t.green ? " is-green" : ""}" title="${esc(title)}"><b>${shown}</b> <small>nr ${t.rank}</small></span><small class="hs-time-date"><span${recent ? ' class="hs-record-date-recent" title="Högst tre månader före omgången"' : ""}>${esc(date)}</span>${cover}</small>`;
 }
 
 // Galopp de 10 senaste starterna (nyast till vänster). Risknivå ur gallopRisk (andel galopp senaste 10, krympt mot 10 %).
@@ -736,33 +862,44 @@ const raceNav = (leg, next) =>
   </nav>`;
 
 function race(r, a, nav = null) {
+  const shown = presentationRace(r, timeSource, a.date);
+  const times = raceTimes(shown, timeCount, a.date);
+  const factors = timeFactors(shown, timeCount, a.date);
+  const parts = presentationParts(shown, timeCount, a.date);
+  const cmp = faComparison(shown, timeCount, a.date, timeWeight, formWeight);
+  const stCount = shown.horses.filter((h) => !h.scratched && h.timeSource === "travsport").length;
   const live = r.horses.filter((h) => !h.scratched);
   const fav = r.favorite;
   const favCls = fav ? { "STARK FAVORIT": "is-strong", "NORMAL FAVORIT": "is-normal", "SÅRBAR FAVORIT": "is-weak" }[fav.status] : "";
   const srcLabel = live[0]?.marketSource === "odds" ? "Odds %" : "Streck";
-  const id = `hs-avd-${r.leg}`;
+  const id = `hs-avd-${r.presentationId || r.leg}`;
   return `<details class="hs-race hs-fold" id="${id}"${openRaces.has(id) ? " open" : ""}>
     <summary class="hs-race-head">
-      <h4>${a.type === "dd" ? `DD-lopp ${r.leg}` : `Avd ${r.leg}`} <small>lopp ${r.number} · ${r.distance} m ${r.startMethod === "auto" ? "autostart" : "voltstart"} · start ${esc(startTime(r.startTime))}</small></h4>${nav ? racePicks(r.leg) : ""}
+      <h4>${isDouble(a.type) ? `${a.type.toUpperCase()}-lopp ${r.leg}` : `Avd ${r.leg}`} <small>lopp ${r.number} · ${r.distance} m ${r.startMethod === "auto" ? "autostart" : "voltstart"} · start ${esc(startTime(r.startTime))}</small></h4>${nav ? racePicks(r.leg) : ""}
     </summary>
       ${fav ? `<p class="hs-fav ${favCls}"><b>${esc(fav.status.toLowerCase().replace(/^./, (c) => c.toUpperCase()))}:</b> ${fav.nr} ${esc(fav.horse)} – ${esc(fav.why.join(" · "))}</p>` : ""}
+    <p class="hs-note">Tider: ${timeSource === "travsport" ? `Travsport för ${stCount} av ${live.length} hästar, ATG för övriga.` : "ATG:s sparade omgångar."}</p>
     <div class="hs-table-wrap"><table class="hs-table">
       <thead><tr><th scope="col">Rank</th><th scope="col">Nr</th><th scope="col">Häst / kusk</th><th scope="col" title="De 10 senaste starterna, nyast till vänster. G = galopp, D = diskad, siffra = placering">Galopp</th><th scope="col">Chans mot ${srcLabel.toLowerCase()}</th><th scope="col">Chans</th><th scope="col">${srcLabel}</th><th scope="col">Spelvärde</th>
-        <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp">Poäng</th><th scope="col" title="0–100 jämfört med loppet, 50 = snitt">Delpoäng</th>${live.some((h) => h.streckDrift != null || h.poolTrend != null) ? `<th scope="col" title="Strecket nu / strecket förmiddag (↑↑ = fördubblat) eller ATG:s pool-rörelseriktning live">Drift / trend</th>` : ""}<th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
+        <th scope="col">Livstidsrekord</th><th scope="col">Senaste ${timeCount} giltiga</th><th scope="col">Aktuell distans</th>
+        <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp. Inom parentes: med Fa och Fo">Poäng</th><th scope="col" title="Fo–St 0–100 jämfört med loppet, 50 = snitt. RT, FT och LI påverkar inte modellen">Delpoäng</th>${live.some((h) => h.streckDrift != null || h.poolTrend != null) ? `<th scope="col" title="Strecket nu / strecket förmiddag (↑↑ = fördubblat) eller ATG:s pool-rörelseriktning live">Drift / trend</th>` : ""}<th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
       <tbody>${r.horses
         .map((h) =>
           h.scratched
-            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="10">${esc(h.horse)} · struken</td></tr>`
+            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="13">${esc(h.horse)} · struken</td></tr>`
             : `<tr>
           <td><span class="hs-rank rank-${h.rank}" title="${esc(RANK_TEXT[h.rank])}">${h.rank}</span></td>
           <td>${h.nr}<small class="hs-post">spår ${h.post}</small></td>
-          <td class="hs-name"><b>${esc(h.horse)}</b><small>${esc(h.driver || "")}${h.trainer ? ` · tr ${esc(h.trainer)}` : ""}${h.horseHome && h.horseHome !== a.track ? ` · borta fr ${esc(h.horseHome)}` : ""}</small></td>
+          <td class="hs-name"><b>${esc(h.horse)}</b><small>${esc(h.driver || "")}${h.trainer ? ` · tr ${esc(h.trainer)}` : ""}${h.horseHome && h.horseHome !== a.track ? ` · borta fr ${esc(h.horseHome)}` : ""}</small>${timeSource === "travsport" ? `<small class="${h.travsportHistory ? "" : "hs-history-fallback"}">${h.travsportHistory ? `Travsport · ${h.travsportHistory.records.filter((s) => s.date < a.date).length} starter${h.travsportHistory.complete ? "" : " · ofullständigt"}` : "ATG-reserv · Travsport saknas"}</small>` : ""}</td>
           <td>${galoppCell(h)}</td>
           <td>${bars(h)}</td>
           <td class="num"><b>${pct(h.p)}</b></td>
           <td class="num">${pct(h.marketPct)}</td>
           <td>${verdict(h)}</td>
-          <td>${scoreCell(h)}</td><td>${partsCell(h)}</td>
+          <td>${timeCell(times.get(h.nr)?.lifetime, null, a.date)}</td>
+          <td>${timeCell(times.get(h.nr)?.last5, times.get(h.nr)?.count, a.date)}</td>
+          <td>${timeCell(times.get(h.nr)?.current, null, a.date)}</td>
+          <td>${scoreCell(h, cmp.get(h.nr))}</td><td>${partsCell(h, factors.get(h.nr), parts.get(h.nr))}</td>
           ${live.some((x) => x.streckDrift != null || x.poolTrend != null) ? `<td>${driftCell(h)}</td>` : ""}
           <td>${esc(h.position || "—")}</td>
           <td class="hs-comment">${esc((h.comments || []).join(" · "))}${h.last5?.length ? `<small>Senaste: ${h.last5.map((x) => (x.galloped ? "g" : x.place ?? "–")).join(" ")}</small>` : ""}</td>
@@ -782,21 +919,23 @@ const tempoBlock = (t) =>
     <p class="hs-note">${esc(t.note)}</p></details>`
     : "";
 
-// ---------- Dagens Dubbel ----------
+// ---------- Dagens Dubbel / Lunch Dubbel ----------
 function ddBlock(a) {
   const dd = a.dd;
   if (!dd) return "";
+  const type = dd.type || (isDouble(a.type) ? a.type : "dd");
+  const name = gameName(type);
   const row = (c) => `<tr><td><b>${esc(c.combo)}</b><small>${esc(c.h1)} – ${esc(c.h2)}</small></td><td class="num">${pct(c.p, 1)}</td><td class="num">${dec(c.odds)}</td><td class="num">${dec(c.fair)}</td>
     <td class="num">${c.ev == null ? "—" : `${c.ev > 0 ? "+" : ""}${pct(c.ev)}`}</td><td>${c.ev != null && c.ev > 0.1 ? `<span class="hs-verdict is-value">Värde</span>` : `<span class="hs-verdict is-none">Ej värde</span>`}</td></tr>`;
   const table = (list) => `<div class="hs-table-wrap"><table class="hs-table hs-dd-table"><thead><tr><th scope="col">Kombination</th><th scope="col">Sannolikhet</th><th scope="col">Aktuellt odds</th><th scope="col">Fair odds</th><th scope="col">Beräknat EV</th><th scope="col">Värde</th></tr></thead>
     <tbody>${list.map(row).join("")}</tbody></table></div>`;
-  return `<section class="hs-dd" aria-label="Dagens Dubbel">
-    <h3>Dagens Dubbel <small>lopp ${dd.races.join(" + ")}</small></h3>
+  return `<section class="hs-dd" aria-label="${esc(name)}">
+    <h3>${esc(name)} <small>lopp ${dd.races.join(" + ")}</small></h3>
     <p class="hs-lead">Sannolikhet = modellens chans i lopp 1 × chans i lopp 2. Fair odds = 1 / sannolikhet. EV = sannolikhet × odds − 1 (per spelad krona). Värde = EV över +10 %.
-    ${dd.hasOdds ? "" : "<b>Inga DD-odds ännu</b> – visar bara sannolikheter."}</p>
+    ${dd.hasOdds ? "" : `<b>Inga ${type.toUpperCase()}-odds ännu</b> – visar bara sannolikheter.`}</p>
     <div class="hs-dd-grid"><div><h4>Bäst EV</h4>${dd.byEv.length ? table(dd.byEv.slice(0, 12)) : "<p>Inga odds att jämföra mot.</p>"}</div>
     <div><h4>Mest sannolika</h4>${table(dd.byP.slice(0, 12))}</div></div>
-    ${dd.extraRaces?.length ? dd.extraRaces.map((r) => race({ ...r, leg: `DD ${r.number}` }, { type: "dd" })).join("") : ""}
+    ${dd.extraRaces?.length ? dd.extraRaces.map((r, i) => race({ ...r, leg: i + 1, presentationId: `${type}-${r.number}` }, { type, date: a.date })).join("") : ""}
   </section>`;
 }
 
@@ -915,8 +1054,9 @@ function render() {
       state ? "Ingen omgång är hämtad än. Välj datum och spel och tryck <b>Hämta data</b>." : "Läser sparad analys …"
     }</p></details>${help()}`;
   } else {
-    view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
-    <nav class="hs-jump" aria-label="Avdelningar">${a.races.map((r) => `<a href="#hs-avd-${r.leg}">Avd ${r.leg}</a>`).join("")}${a.dd ? `<a href="#hs-dd">DD</a>` : ""}</nav>
+    view.innerHTML = `${head}${kortSagt(a)}${help()}${isDouble(a.type) ? "" : highlights(a)}${systemBuilder(a)}
+    <nav class="hs-jump" aria-label="Avdelningar">${a.races.map((r) => `<a href="#hs-avd-${r.leg}">Avd ${r.leg}</a>`).join("")}${a.dd ? `<a href="#hs-dd">${(a.dd.type || "dd").toUpperCase()}</a>` : ""}</nav>
+    ${timeControls(a)}
     <section class="hs-races">${a.races.map((r, i) => race(r, a, { next: a.races[i + 1]?.leg ?? null })).join("")}</section>
     <div id="hs-dd">${ddBlock(a)}</div>${followBlock(state.uppfoljning)}${backtestBlock(state.backtest)}${methodBlock(a)}`;
   }
@@ -955,6 +1095,19 @@ view.addEventListener("click", (ev) => {
   if (t.dataset.act === "fetch") return action("fetch", view.querySelector("#hs-game")?.value || null);
   if (t.dataset.act === "analyze") return action("analyze", state?.analysis?.id);
   if (t.dataset.act === "resultat") return action("resultat");
+  if (t.dataset.act === "history") return fetchHistory();
+  if (t.dataset.act === "history-cancel") {
+    api("/api/hastar/history-cancel", "POST")
+      .then(({ job }) => {
+        historyProgress = job;
+        render();
+      })
+      .catch((e) => {
+        msg = { kind: "error", text: e.message };
+        render();
+      });
+    return;
+  }
   if (t.dataset.act === "own-build" && state?.analysis) {
     ownBuilt.add(state.analysis.id);
     ownOpen = true;
@@ -1039,6 +1192,7 @@ view.addEventListener(
     if (Date.now() < ignoreToggleUntil) return;
     const d = ev.target;
     if (d.matches?.("details.hs-egna")) ownOpen = d.open;
+    if (d.matches?.("details.hs-time-controls")) timeOpen = d.open;
     if (!d.matches?.("details.hs-race[id]")) return;
     if (d.open) openRaces.add(d.id);
     else openRaces.delete(d.id);
@@ -1048,7 +1202,24 @@ view.addEventListener(
 
 view.addEventListener("change", (ev) => {
   const t = ev.target;
-  if (t.id === "hs-date") {
+  if (t.id === "hs-time-source") {
+    timeSource = t.value === "atg" ? "atg" : "travsport";
+    api(`/api/hastar/time-source?source=${timeSource}`, "POST").catch((e) => {
+      msg = { kind: "error", text: `Källvalet kunde inte sparas: ${e.message}` };
+      render();
+    });
+    render();
+  } else if (t.id === "hs-history-leg") historyLeg = t.value;
+  else if (t.id === "hs-time-count") {
+    timeCount = Math.max(1, Math.min(100, Math.floor(Number(t.value)) || 5));
+    render();
+  } else if (t.id === "hs-time-weight") {
+    timeWeight = normalizeFaWeight(t.value);
+    render();
+  } else if (t.id === "hs-form-weight") {
+    formWeight = normalizeFoWeight(t.value);
+    render();
+  } else if (t.id === "hs-date") {
     date = t.value || today();
     games = null;
     render();

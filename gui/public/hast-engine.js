@@ -13,7 +13,7 @@
 // Reducerat system: ett större utgångssystem (budget × utgång) skrivs ut rad för rad, villkoren filtrerar,
 // och om det fortfarande är för många rader behålls raderna med högst värdeviktad sannolikhet.
 
-export const ROW_PRICE = { V85: 0.5, V75: 0.5, V86: 0.25, GS75: 1, V65: 1, V64: 1 };
+export const ROW_PRICE = { V85: 0.5, V75: 0.5, V86: 0.25, GS75: 1, V65: 1, V64: 1, V4: 2 };
 // Radpriset ändras från ett datum (nya V75 från 2026-11-28: 60 öre, 65 % återbetalning, 40 % av potten till 7 rätt –
 // travsport.se 2026-09-17). Äldre omgångar räknas med det gamla priset, så bakkörningen rättas mot rätt insats.
 export const ROW_PRICE_FROM = { V75: [["2026-11-28", 0.6]] };
@@ -28,7 +28,8 @@ export const BUDGETS = [100, 200, 500, 1000, 2000, 5000];
 // 500 kr ojämnt, 1 000 kr plus alla tre. Knappen väljer därför minst 1 000 kr och varnar under det.
 export const SKRALL_MIN_BUDGET = 1000;
 // Högsta vinstnivåns andel av omsättningen utan jackpott (ATG-data 2025–2026, 10:e percentilen/vanligaste värdet)
-export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0.34, V65: 0.355 };
+// V4: 4 rätt får ~75 % av omsättningen (ATG 2026-10-28, 6 omgångar 0,71–0,75)
+export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0.34, V65: 0.355, V4: 0.75 };
 // Alla system ska alltid kunna ge minst MIN_TOP kr vid alla rätt (användarens krav 2026-10-03); högre spärr kan väljas
 export const MIN_TOP = 50000;
 export const TOP_LEVELS = [50000, 250000, 1000000];
@@ -38,9 +39,10 @@ export const TOP_LEVELS = [50000, 250000, 1000000];
 // +740 % men utan 3 största −64 %. 1000 kr +91 % (utan 3 −44 %), 500 kr +127 % (utan 3 −54 %). Därför minst RAD_TOP_MIN_BUDGET.
 export const RAD_TOP = 50000;
 export const RAD_TOP_MIN_BUDGET = 2000;
-// Raderna i 50 000-systemet sorteras efter chans (p) i stället för värdevikt (w) sedan 2026-10-15. Offline-test 2026-10-11
-// (488 omg 2024–26): 1000 kr +118 % mot +2 % (utan 3 största −4 %), 2000 kr +56 % mot +54 %, 500 kr +58 % mot +51 %.
-export const RAD_TOP_SORT = "p";
+// Raderna i 50 000-systemet sorteras efter värdevikt (w) igen sedan 2026-10-30 (användarens val). Efter chans (p)
+// 2026-10-15–10-30. Offline-test 2026-10-11 (488 omg 2024–26), p mot w: 1000 kr +118 % mot +2 % (utan 3 största −4 %),
+// 2000 kr +56 % mot +54 %, 500 kr +58 % mot +51 %. "p" finns kvar som val (sortBy, --radsort p).
+export const RAD_TOP_SORT = "w";
 export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräll i systemvillkoren
 // Standard per spelform (bakkörning 2026-10-04: V75 2021–2025 370 omg + V85 74 omg, riktig utdelning, spärr 50 000 kr):
 // Värdefokus Hög (alpha 1) slog Normal (0,5) i 3 av 4 perioder på 1000 och 2000 kr och 2 av 4 på 200 och 500 kr,
@@ -541,6 +543,7 @@ export const atgFileName = (base, xml) => `${base}-${crc16(xml)}.xml`;
 // där P_folket(k) räknas ur strecken på avdelningarnas vinnare (en rad "har" varje häst med sannolikheten strecket).
 // Under ATG:s lägsta utdelning (TIER_MIN, lägsta som setts) blir nivån jackpott = 0 kr.
 export const TIER_SHARE = {
+  V4: { 4: 0.75 },
   V85: { 8: 0.194, 7: 0.097, 6: 0.094, 5: 0.204 },
   V86: { 8: 0.256, 7: 0.128, 6: 0.253 },
   V75: { 7: 0.257, 6: 0.128, 5: 0.252 },

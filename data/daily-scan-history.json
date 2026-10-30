@@ -80,7 +80,45 @@
       "pick": "2",
       "odds": 3.95,
       "ev": 0.0882,
-      "scannedAt": "2026-10-13T19:11:18.711Z"
+      "scannedAt": "2026-10-13T19:11:18.711Z",
+      "result": "lost",
+      "score": "2-2"
+    },
+    {
+      "id": "MLS|2026-10-31|St. Louis City|San Diego FC|away",
+      "league": "MLS",
+      "date": "2026-10-31",
+      "home": "St. Louis City",
+      "away": "San Diego FC",
+      "key": "away",
+      "pick": "2",
+      "odds": 3.95,
+      "ev": 0.1041,
+      "scannedAt": "2026-10-30T08:58:59.186Z"
+    },
+    {
+      "id": "SB|2026-10-31|Cremonese|Benevento|draw",
+      "league": "SB",
+      "date": "2026-10-31",
+      "home": "Cremonese",
+      "away": "Benevento",
+      "key": "draw",
+      "pick": "X",
+      "odds": 3.3,
+      "ev": 0.0997,
+      "scannedAt": "2026-10-30T08:58:59.186Z"
+    },
+    {
+      "id": "SB|2026-10-31|Catanzaro|Padova|draw",
+      "league": "SB",
+      "date": "2026-10-31",
+      "home": "Catanzaro",
+      "away": "Padova",
+      "key": "draw",
+      "pick": "X",
+      "odds": 3.5,
+      "ev": 0.0985,
+      "scannedAt": "2026-10-30T08:58:59.186Z"
     }
   ]
 }

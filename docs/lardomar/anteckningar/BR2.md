@@ -4,29 +4,31 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR2.csv`.
+Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR2.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
-| 2025/26 | 323 | 43,3 % | 45,6 % | −2,2 pe (−0,8) | 44,0 % | 98 / 85 | modell (inga odds) |
-| 2026/27 | 310 | 48,4 % | 42,9 % | +5,5 pe (2,0) | 45,2 % | 83 / 77 | modell (inga odds) |
+| 2025/26 | 323 | 42,7 % | 45,9 % | −3,1 pe (−1,1) | 44,0 % | 101 / 84 | modell (inga odds) |
+| 2026/27 | 349 | 46,7 % | 43,6 % | +3,1 pe (1,2) | 44,4 % | 94 / 92 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 2,0). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,2). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
 | Säsong | Matcher | Favoriten vann | Oddsens förväntan | z | Kryss | Kryss väntat | z |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 11 | 63,6 % | 51,3 % | 0,9 | 9,1 % | 26,0 % | −1,3 |
+| 2026/27 | 31 | 54,8 % | 51,9 % | 0,3 | 19,4 % | 25,9 % | −0,8 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 1 av 11 (9,1 %) mot väntat 2,9 (z −1,3).
-- Hemmafavoriter vann 5 av 9 (väntat 4,8), bortafavoriter 2 av 2 (väntat 0,8), favoriter ≥ 60 % 3 av 3 (väntat 2,2).
-- Grundmodellen och oddsen var oense i 2 matcher: grundmodellen rätt 0, oddsen rätt 2.
-- Dixon-Coles och oddsen var oense i 2 matcher: DC rätt 1.
+- Kryss: 6 av 31 (19,4 %) mot väntat 8,0 (z −0,8).
+- Hemmafavoriter vann 12 av 25 (väntat 13,1), bortafavoriter 5 av 6 (väntat 3,0), favoriter ≥ 60 % 6 av 8 (väntat 5,7).
+- Lag sämst mot oddsen (poäng mot förväntat): Operário PR −4,2 (3 m), América Mineiro −3,3 (4 m), Athletic −2,9 (3 m), Náutico −2,8 (3 m).
+- Lag bäst mot oddsen: Novorizontino +3,0 (3 m), Vila Nova +2,7 (3 m), Botafogo-SP +2,5 (4 m), Fortaleza +2,4 (3 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Grundmodellen och oddsen var oense i 6 matcher: grundmodellen rätt 0, oddsen rätt 5.
+- Dixon-Coles och oddsen var oense i 5 matcher: DC rätt 1.
 
 Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/BR2.md](../ligor/BR2.md).
 

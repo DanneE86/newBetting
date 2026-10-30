@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T14:56:49.368Z",
+  "updatedAt": "2026-10-30T08:21:21.147Z",
   "leagues": {
     "PL": {
       "name": "Premier League",
@@ -12,7 +12,7 @@
     "EL1": {
       "name": "League One",
       "history": "fd-main",
-      "upcoming": 43
+      "upcoming": 26
     },
     "LL": {
       "name": "La Liga",
@@ -21,7 +21,7 @@
     "LL2": {
       "name": "LaLiga 2",
       "history": "fd-main",
-      "upcoming": 33
+      "upcoming": 34
     },
     "SA": {
       "name": "Serie A",
@@ -30,7 +30,7 @@
     "SB": {
       "name": "Serie B",
       "history": "fd-main",
-      "upcoming": 40
+      "upcoming": 21
     },
     "BL": {
       "name": "Bundesliga",
@@ -39,7 +39,7 @@
     "BL2": {
       "name": "2. Bundesliga",
       "history": "fd-main",
-      "upcoming": 27
+      "upcoming": 20
     },
     "L1": {
       "name": "Ligue 1",
@@ -52,198 +52,198 @@
     "AS": {
       "name": "Allsvenskan",
       "history": "fd-new",
-      "historyMatches": 3576,
-      "upcoming": 32
+      "historyMatches": 3592,
+      "upcoming": 16
     },
     "SE2": {
       "name": "Superettan",
       "history": "fotmob",
-      "historyMatches": 454,
-      "upcoming": 25
+      "historyMatches": 463,
+      "upcoming": 16
     },
     "SE3N": {
       "name": "Div 1 Norra",
       "history": "tsdb",
-      "historyMatches": 456,
-      "callsNow": 4,
-      "upcoming": 24
+      "historyMatches": 464,
+      "callsNow": 3,
+      "upcoming": 16
     },
     "SE3S": {
       "name": "Div 1 Södra",
       "history": "tsdb",
-      "historyMatches": 456,
-      "callsNow": 4,
-      "upcoming": 24
+      "historyMatches": 464,
+      "callsNow": 3,
+      "upcoming": 16
     },
     "BR": {
       "name": "Brasileirão Série A",
       "history": "fd-new",
-      "historyMatches": 5629,
-      "upcoming": 30
+      "historyMatches": 5647,
+      "upcoming": 22
     },
     "BR2": {
       "name": "Brasileirão Série B",
       "history": "espn",
-      "historyMatches": 719,
+      "historyMatches": 729,
       "daysFetchedNow": 5,
-      "upcoming": 31
+      "upcoming": 30
     },
     "CL": {
       "name": "Champions League",
       "history": "none",
-      "upcoming": 36
+      "upcoming": 18
     },
     "EL": {
       "name": "Europa League",
       "history": "none",
-      "upcoming": 36
+      "upcoming": 18
     },
     "ECL": {
       "name": "Conference League",
       "history": "none",
-      "upcoming": 36
+      "upcoming": 18
     },
     "ACL": {
       "name": "AFC Champions League Elite",
       "history": "none",
-      "upcoming": 32
+      "upcoming": 16
     },
     "ACL2": {
       "name": "AFC Champions League Two",
       "history": "none",
-      "upcoming": 32
+      "upcoming": 16
     },
     "LIB": {
       "name": "Copa Libertadores",
       "history": "none",
-      "upcoming": 2
+      "upcoming": 0
     },
     "SUD": {
       "name": "Copa Sudamericana",
       "history": "none",
-      "upcoming": 2
+      "upcoming": 0
     },
     "NO": {
       "name": "Eliteserien",
       "history": "fd-new",
-      "historyMatches": 3566,
-      "upcoming": 24
+      "historyMatches": 3574,
+      "upcoming": 17
     },
     "NO2": {
       "name": "OBOS-ligaen",
       "history": "tsdb",
-      "historyMatches": 455,
-      "callsNow": 5,
-      "upcoming": 25
+      "historyMatches": 464,
+      "callsNow": 4,
+      "upcoming": 16
     },
     "EK": {
       "name": "Ekstraklasa",
       "history": "fd-new",
-      "historyMatches": 4179,
-      "upcoming": 27
+      "historyMatches": 4188,
+      "upcoming": 20
     },
     "DK": {
       "name": "Superligaen",
       "history": "fd-new",
-      "historyMatches": 3018,
-      "upcoming": 18
+      "historyMatches": 3024,
+      "upcoming": 13
     },
     "PT": {
       "name": "Primeira Liga",
       "history": "fd-main",
-      "upcoming": 27
+      "upcoming": 18
     },
     "GR": {
       "name": "Super League",
       "history": "fd-main",
-      "upcoming": 21
+      "upcoming": 14
     },
     "HR": {
       "name": "HNL",
       "history": "tsdb",
-      "historyMatches": 237,
-      "error": "UNKNOWN: unknown error, open 'C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\ESPN_HR.json'",
-      "upcoming": 15
+      "historyMatches": 242,
+      "callsNow": 27,
+      "upcoming": 10
     },
     "JP1": {
       "name": "J1 League",
       "history": "fd-new",
-      "historyMatches": 4623,
-      "upcoming": 40
+      "historyMatches": 4643,
+      "upcoming": 23
     },
     "MX": {
       "name": "Liga MX",
       "history": "fd-new",
-      "historyMatches": 4761,
-      "upcoming": 37
+      "historyMatches": 4780,
+      "upcoming": 22
     },
     "MLS": {
       "name": "MLS",
       "history": "fd-new",
-      "historyMatches": 6266,
-      "upcoming": 60
+      "historyMatches": 6296,
+      "upcoming": 30
     },
     "CZ": {
       "name": "Chance Liga",
       "history": "tsdb",
-      "historyMatches": 357,
+      "historyMatches": 364,
       "callsNow": 30,
-      "upcoming": 24
+      "upcoming": 16
     },
     "COL": {
       "name": "Primera A",
       "history": "espn",
-      "historyMatches": 791,
-      "daysFetchedNow": 5,
-      "upcoming": 54
+      "historyMatches": 810,
+      "daysFetchedNow": 10,
+      "upcoming": 31
     },
     "AR": {
       "name": "Liga Profesional",
       "history": "fd-new",
-      "historyMatches": 6430,
-      "upcoming": 45
+      "historyMatches": 6445,
+      "upcoming": 30
     },
     "BE": {
       "name": "Pro League",
       "history": "fd-main",
-      "upcoming": 27
+      "upcoming": 20
     },
     "SC": {
       "name": "Premiership",
       "history": "fd-main",
-      "upcoming": 21
+      "upcoming": 9
     },
     "SAU": {
       "name": "Saudi Pro League",
       "history": "espn",
-      "historyMatches": 387,
+      "historyMatches": 400,
       "daysFetchedNow": 6,
-      "upcoming": 32
+      "upcoming": 24
     },
     "AUS": {
       "name": "A-League",
       "history": "espn",
-      "historyMatches": 168,
-      "daysFetchedNow": 2,
-      "upcoming": 18
+      "historyMatches": 174,
+      "daysFetchedNow": 4,
+      "upcoming": 14
     },
     "KR": {
       "name": "K League 1",
       "history": "fotmob",
-      "historyMatches": 420,
-      "upcoming": 6
+      "historyMatches": 426,
+      "upcoming": 12
     },
     "CAN": {
       "name": "Canadian Premier League",
       "history": "fotmob",
-      "historyMatches": 225,
+      "historyMatches": 229,
       "upcoming": 4
     },
     "URU": {
       "name": "Primera División",
       "history": "espn",
-      "historyMatches": 565,
-      "daysFetchedNow": 4,
+      "historyMatches": 573,
+      "daysFetchedNow": 3,
       "upcoming": 8
     }
   }

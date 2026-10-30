@@ -1646,6 +1646,55 @@ test.describe('stryk-engine: kupong A (B och C borttagna 2026-10-25)', () => {
     }
   });
 
+  // Utdelningsvikt (användaren 2026-10-30: "vinna mycket så måste vara skrällar samt hitta något som är underspelat"):
+  // Stryktipset väljer raderna på chans × √utdelning, Europatipset på bara chans. Bakkörning 171 ST-omg: väntad utdelning per
+  // 13 rätt 38 000 → 73 000 kr, chans 1 på 168 → 200; vikt 1,0 avvisad (1 på 1 900).
+  test('filkuponger: utdelningsvikt – chans × utdelning^w styr urvalet, 0 = bara chans', async () => {
+    const { buildFileCoupons, FILE_RULES, utdViktFor } = await engine();
+    expect(FILE_RULES.utdVikt).toEqual({ stryktipset: 0.5, europatipset: 0 });
+    expect(utdViktFor(FILE_RULES, 'stryktipset')).toBe(0.5);
+    expect(utdViktFor(FILE_RULES, 'europatipset')).toBe(0);
+    expect(utdViktFor({ utdVikt: 0.3 }, 'europatipset')).toBe(0.3); // ett tal gäller alla spel (bakkörning)
+    expect(utdViktFor({}, 'stryktipset')).toBe(0);
+    // Två matcher, en rad, inget golv (11 ger bara 0,41 kr här): bara chans ger 11 (0,25), vikt 1 ger 22 – lägst streck,
+    // högst utdelning (0,04 × 104 kr). Matcherna låses som helgarderingar (krav) så att omgörningen "spik av sig själv" inte
+    // rör den enda raden.
+    const ev = [1, 2].map((eventNumber) => ({ eventNumber, final: [0.5, 0.3, 0.2], folk: [0.8, 0.15, 0.05] }));
+    const base = { turnover: 1e6, realTurnover: 1e6, jackpot: 0 };
+    const rules = { ...FILE_RULES, rows: 1, payoutMin: 0, spikes: 0, skrallSpikes: 0 };
+    const row = (utdVikt: number) => buildFileCoupons({ product: 'stryktipset' }, ev, () => ev.map(() => [0, 1, 2]), base, { ...rules, utdVikt }).A;
+    expect(row(0).rowList).toEqual(['11']);
+    expect(row(0).rules.utdVikt).toBe(0);
+    expect(row(1).rowList).toEqual(['22']);
+    expect(row(1).rules.utdVikt).toBe(1);
+    expect(row(0.5).rowList).toEqual(['22']); // 0,5: 0,09 × √11,6 = 0,31 (XX), 0,04 × √104 = 0,41 (22), 0,25 × √0,41 = 0,16 (11)
+  });
+
+  test('filkuponger: Stryktipset väger utdelningen (√), Europatipset bara chans – samma spikar, golvet håller', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    const { buildFileCoupons, sysFinal, FILE_RULES } = await engine();
+    const mean = (xs: number[]) => xs.reduce((s, x) => s + x, 0) / xs.length;
+    const spikar = (c: any) => c.picks.map((x: any) => x.signs).filter((s: string) => s.length === 1);
+    for (const p of products.slice(0, 2)) {
+      const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
+      const r = p.reduced?.rules || {};
+      const base = { turnover: r.turnover || 25e6, realTurnover: r.realTurnover || r.turnover || 25e6, jackpot: r.jackpot || 0 };
+      const vikt = buildFileCoupons(p, ev, () => ev.map(() => null), base, FILE_RULES).A;
+      const bara = buildFileCoupons(p, ev, () => ev.map(() => null), base, { ...FILE_RULES, utdVikt: 0 }).A;
+      const at = p.product;
+      expect(vikt.rules.utdVikt, at).toBe(FILE_RULES.utdVikt[p.product]);
+      expect(spikar(vikt), `${at}: vikten rör inte spikarna`).toEqual(spikar(bara));
+      expect(Math.min(...vikt.rowReal), at).toBeGreaterThanOrEqual(FILE_RULES.payoutMin);
+      if (p.product === 'stryktipset') {
+        expect(vikt.rowList, at).not.toEqual(bara.rowList);
+        expect(mean(vikt.rowReal), `${at}: högre utdelning per rad`).toBeGreaterThan(mean(bara.rowReal));
+        expect(vikt.hitAll, `${at}: bara chans är det exakta maximum`).toBeLessThanOrEqual(bara.hitAll + 1e-12);
+      } else {
+        expect(vikt.rowList, at).toEqual(bara.rowList);
+      }
+    }
+  });
+
   // Egen summa per kupong (2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad, 1–10 000 kr
   test('filkuponger: egen summa för kupong A', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');

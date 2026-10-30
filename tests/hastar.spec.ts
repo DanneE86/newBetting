@@ -524,9 +524,9 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(reduceSystem(legs, { minRowTop: '' }, { budget: 50, price: 0.5, expand: 8, topShare: 0.2 }).passed).toBe(free.passed);
   });
 
-  test('50 000-systemet behåller raderna med högst chans (RAD_TOP_SORT = p), annars värdevikten', async () => {
+  test('50 000-systemet sorterar efter värdevikt (RAD_TOP_SORT = w sedan 2026-10-30); sortBy p behåller raderna med högst chans', async () => {
     const { reduceSystem, RAD_TOP_SORT } = await engine();
-    expect(RAD_TOP_SORT).toBe('p');
+    expect(RAD_TOP_SORT).toBe('w');
     const legs = legsFixture();
     const opts = { budget: 5, price: 0.5, expand: 8, topShare: 0.2, alpha: 2 };
     const pRow = (r: number[]) => r.reduce((p, nr, i) => p * legs[i].horses.find((h: any) => h.nr === nr).p, 1);
@@ -1807,5 +1807,278 @@ test.describe('Interbet stannar lokalt (logiken kommer ur en app)', () => {
     expect(files.filter((f) => /\.apk$|interbet-model|hastar-compare|compare-interbet|data\/hastar\/interbet\//i.test(f))).toEqual([]);
     const analyser = files.filter((f) => /^data\/hastar\/(analys\/.*|index|backtest|uppfoljning)\.?json$|^data\/hastar\/analys\//.test(f));
     for (const f of analyser) expect(fs.readFileSync(path.join(ROOT, f), 'utf8'), f).not.toMatch(/"ibP"/);
+  });
+});
+
+test.describe('V4 och Lunch Dubbel', () => {
+  test('V4 kostar 2 kr per rad och 4 rätt får 75 % av omsättningen; V4 kan lämnas in som fil', async () => {
+    const { ROW_PRICE, rowPrice, TOP_SHARE, TIER_SHARE, ATG_FILE_TYPES } = await engine();
+    expect(ROW_PRICE.V4).toBe(2);
+    expect(rowPrice('V4', '2026-10-30')).toBe(2);
+    expect(TOP_SHARE.V4).toBe(0.75);
+    expect(TIER_SHARE.V4).toEqual({ 4: 0.75 });
+    expect(ATG_FILE_TYPES.V4.legs).toBe(4);
+  });
+
+  test('V4 hämtas med Lunch Dubbel, övriga V-spel med Dagens Dubbel; dubbelspelen står sist i spellistan', async () => {
+    const { GAME_TYPES, companionDoubleType, pickUpcoming } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-hastar.mjs')).href);
+    expect(GAME_TYPES).toEqual(expect.arrayContaining(['V4', 'ld', 'dd']));
+    expect(companionDoubleType('V4')).toBe('ld');
+    expect(companionDoubleType('V85')).toBe('dd');
+    expect(companionDoubleType('dd')).toBeNull();
+    expect(companionDoubleType('ld')).toBeNull();
+    const day = { date: '2026-10-31', games: [
+      { id: 'ld_2026-10-31_78_3', type: 'ld', status: 'bettable' },
+      { id: 'V4_2026-10-31_78_1', type: 'V4', status: 'bettable' },
+      { id: 'V85_2026-10-31_7_5', type: 'V85', status: 'bettable' },
+      { id: 'dd_2026-10-31_7_9', type: 'dd', status: 'bettable' },
+    ] };
+    const hit = pickUpcoming([day]);
+    expect(hit.upcomingId).toBe('V85_2026-10-31_7_5');
+    expect(hit.games.map((g: { id: string }) => g.id)).toEqual(['V85_2026-10-31_7_5', 'V4_2026-10-31_78_1', 'ld_2026-10-31_78_3', 'dd_2026-10-31_7_9']);
+    // bara V4 och LD: V4 är kommande spel, LD aldrig
+    expect(pickUpcoming([{ date: day.date, games: day.games.slice(0, 2) }]).upcomingId).toBe('V4_2026-10-31_78_1');
+  });
+
+  test('Lunch Dubbel analyseras som Dagens Dubbel: kombinationsodds ur LD-potten, dd.type = ld', async () => {
+    const { normalizeGame, analyzeGame } = await model();
+    const odds = [[1500, 3000, 4000, 9000], [2500, 5000, 6000, 12000], [3000, 6000, 8000, 15000], [9000, 20000, 25000, 40000]];
+    const g = normalizeGame({ ...game(), id: 'ld_2026-10-03_5_1', type: 'ld', pools: { ld: { comboOdds: odds }, dd: { comboOdds: [[1]] } } });
+    expect(g.comboOdds).toEqual(odds);
+    const a = analyzeGame(g);
+    expect(a.dd.type).toBe('ld');
+    expect(a.dd.hasOdds).toBe(true);
+    expect(a.dd.byP[0].combo).toBe('1-1');
+    expect(a.dd.byP[0].odds).toBe(15);
+    // V85 med DD-spel: dubbelspelet är dd
+    const v = normalizeGame(game());
+    const dd = normalizeGame({ ...game(), id: 'dd_2026-10-03_5_1', type: 'dd' });
+    expect(analyzeGame(v, dd).dd.type).toBe('dd');
+  });
+});
+
+test.describe('Fa/Fo-delpoäng och tider (bara visning)', () => {
+  const pub = (f: string) => import(pathToFileURL(path.join(ROOT, 'gui', 'public', f)).href);
+
+  test('analysen sparar Fa-referensen med samma chans; chanserna ändras inte av den', async () => {
+    const { normalizeGame, analyzeGame, FA_REPLACED_FACTORS } = await model();
+    expect(FA_REPLACED_FACTORS).toEqual(['fart', 'rekord', 'bastKm3', 'kmSenast', 'efterSenast', 'efterSnitt3', 'naraUtanPlats', 'motFalt3']);
+    for (const opts of [{}, { learned: false }]) {
+      const a = analyzeGame(normalizeGame(game()), null, opts);
+      for (const h of a.races[0].horses.filter((x: any) => !x.scratched)) {
+        expect(h.faBaseline.version).toBe(3);
+        expect(h.faBaseline.p).toBeCloseTo(h.p, 3); // h.p sparas avrundad, referensen oavrundad
+        for (const k of ['timeContribution', 'formContribution', 'formWeight', 'weight', 'speedZ']) expect(Number.isFinite(h.faBaseline[k]), k).toBe(true);
+        expect(h.faBaseline.formWeight).toBeGreaterThanOrEqual(0);
+      }
+    }
+    const without = analyzeGame(normalizeGame(game()));
+    const p = without.races[0].horses.map((h: any) => h.p);
+    for (const r of without.races) for (const h of r.horses) delete h.faBaseline;
+    expect(analyzeGame(normalizeGame(game())).races[0].horses.map((h: any) => h.p)).toEqual(p);
+  });
+
+  test('omräknad tid: distansklass, startmetod, tillägg och galopp med placering −0,5 s; ogiltiga starter utanför', async () => {
+    const { convertedTime, distanceClass, faTime } = await pub('hastar-times.js');
+    expect([distanceClass(1640), distanceClass(2140), distanceClass(2640), distanceClass(null)]).toEqual(['short', 'medium', 'long', null]);
+    const race = { distance: 2140, startMethod: 'auto' };
+    const horse = { distance: 2140 };
+    expect(convertedTime({ km: 72, distance: 2140, startMethod: 'auto' }, race, horse).time).toBe(72);
+    // kort → medel: +1,0 s, volt → auto: −0,5 s
+    expect(convertedTime({ km: 72, distance: 1640, startMethod: 'volte' }, race, horse).time).toBe(72.5);
+    // 20 m tillägg i dag: +0,5 s
+    expect(convertedTime({ km: 72, distance: 2140, startMethod: 'auto' }, race, { distance: 2160 }).time).toBe(72.5);
+    // galopp med placering räknas med 0,5 s avdrag, galopp utan placering och diskning inte alls
+    expect(convertedTime({ km: 72, distance: 2140, startMethod: 'auto', galloped: true, place: 3 }, race, horse).time).toBe(71.5);
+    expect(convertedTime({ km: 72, distance: 2140, startMethod: 'auto', galloped: true, place: 0 }, race, horse)).toBeNull();
+    expect(convertedTime({ km: 72, distance: 2140, startMethod: 'auto', disqualified: true }, race, horse)).toBeNull();
+    // kallblod: dubbla justeringar
+    expect(convertedTime({ km: 80, distance: 1640, startMethod: 'auto' }, { ...race, breed: 'kallblod' }, horse).time).toBe(82);
+    // Fa = 50/30/20, saknad kolumn räknas bort
+    expect(faTime({ last5: { time: 70 }, current: { time: 72 }, lifetime: { time: 74 } })).toBeCloseTo(0.5 * 70 + 0.3 * 72 + 0.2 * 74, 9);
+    expect(faTime({ last5: { time: 70 }, lifetime: { time: 75 } })).toBeCloseTo((0.5 * 70 + 0.2 * 75) / 0.7, 9);
+    expect(faTime({})).toBeNull();
+  });
+
+  const fakeRace = () => {
+    const rs = (km: number[]) => km.map((k, i) => ({ date: `2026-09-${String(20 - i).padStart(2, '0')}`, raceId: `r${k}${i}`, km: k, distance: 2140, startMethod: 'auto', place: i + 1 }));
+    const horse = (nr: number, km: number[], p: number) => ({ nr, horse: `H${nr}`, p, marketPct: p, distance: 2140, timeHistory: rs(km), lifeRecords: [],
+      poang: { total: 50, form: 50 }, faBaseline: { version: 3, p, speedZ: 0, timeContribution: 0, formContribution: 0, formWeight: 0.08, weight: 0.06 } });
+    return { distance: 2140, startMethod: 'auto', horses: [horse(1, [71, 72, 73], 0.5), horse(2, [73, 74, 75], 0.3), horse(3, [75, 76, 77], 0.2)] };
+  };
+
+  test('Fa/Fo-jämförelsen: chanserna summerar till 1, snabbast höjs, vikt 0 = ingen ändring, saknad referens = inget tal', async () => {
+    const { faComparison } = await pub('hastar-fa.js');
+    const race = fakeRace();
+    const c = faComparison(race, 5, '2026-10-01');
+    expect(sum([1, 2, 3].map((nr) => c.get(nr).p))).toBeCloseTo(1, 9);
+    expect(c.get(1).p).toBeGreaterThan(0.5);
+    expect(c.get(3).p).toBeLessThan(0.2);
+    // tids- och formvikt 0 och inga gamla bidrag: tillbaka till modellens chans
+    const zero = faComparison(race, 5, '2026-10-01', 0, 0);
+    for (const h of race.horses) expect(zero.get(h.nr).p).toBeCloseTo(h.p, 9);
+    // modellens chans och fält ändras aldrig
+    expect(race.horses.map((h) => h.p)).toEqual([0.5, 0.3, 0.2]);
+    const old = { ...race, horses: race.horses.map((h) => ({ ...h, faBaseline: { ...h.faBaseline, version: 2 } })) };
+    expect([...faComparison(old, 5, '2026-10-01').values()]).toEqual([null, null, null]);
+  });
+
+  test('tider och RT/FT/LI: starter på eller efter omgångens dag räknas inte, bästa tiden rankas 1', async () => {
+    const { raceTimes, timeFactors } = await pub('hastar-times.js');
+    const race = fakeRace();
+    const t = raceTimes(race, 5, '2026-10-01');
+    expect(t.get(1).last5.time).toBe(71);
+    expect(t.get(1).last5.rank).toBe(1);
+    expect(t.get(3).last5.rank).toBe(3);
+    expect(t.get(1).last5.star).toBe(true); // 2 s före näst bästa
+    // cutoff före alla starter: inga tider
+    expect(raceTimes(race, 5, '2026-09-01').get(1).last5).toBeNull();
+    const f = timeFactors(race, 5, '2026-10-01');
+    // tiderna blir sämre för varje äldre lopp = bättre för varje nyare: förbättring i rad
+    expect(f.get(1).direction).toBe(-1);
+    expect(f.get(1).streak).toBe(2);
+    expect(f.get(1).count).toBe(3);
+  });
+
+  test('Travsport-tidskällan ersätter ATG-starterna bara i visningen; utan historik är ATG reserv', async () => {
+    const { presentationRace } = await pub('hastar-source.js');
+    const race = fakeRace();
+    race.horses[0] = { ...race.horses[0], travsportHistory: { complete: true, records: [{ date: '2026-09-25', km: 70 }, { date: '2026-10-05', km: 69 }] } } as any;
+    const shown = presentationRace(race, 'travsport', '2026-10-01');
+    expect(shown.horses[0].timeSource).toBe('travsport');
+    expect(shown.horses[0].timeHistory).toEqual([{ date: '2026-09-25', km: 70 }]);
+    expect(shown.horses[1].timeSource).toBe('atg');
+    expect(presentationRace(race, 'atg', '2026-10-01').horses[0].timeHistory).toBe(race.horses[0].timeHistory);
+    expect(race.horses[0].timeHistory.length).toBe(3); // originalet orört
+  });
+});
+
+test.describe('Travsport-historik ur Sportinfo-filerna', () => {
+  const lib = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'travsport-history.mjs')).href);
+  const job = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'travsport-history-job.mjs')).href);
+  const doc = {
+    kalla: 'https://sportapp.travsport.se/sportinfo/horse/ts743074/results', hamtad: '2026-10-15',
+    hast: { namn: 'Ersa Frej' },
+    sasong: [{ ar: 'Livs', starter: 5 }],
+    starter: [
+      { datum: '2026-10-17', lopp: 9, bana: 'Gävle', kategori: 'r', spar: 3, distans: '2160', resultat: null, tid: null, km_tid: null },
+      { datum: '2026-09-29', lopp: 3, bana: 'Romme', kategori: null, spar: 2, distans: '2200', resultat: 'd', tid: '11g', km_tid: null, skor: 'Barfota fram', vagn: 'Sulky' },
+      { datum: '2026-09-12', lopp: 6, bana: 'Hagmyren', kategori: 'r', spar: 7, distans: '2160', resultat: '0', tid: '25,6', km_tid: '1.25,6', autostart: false, galopp: false, kusk: 'Blom Nathalie', vinst_kr: 2500 },
+      { datum: '2026-07-24', lopp: 10, bana: 'Romme', kategori: null, spar: 5, distans: '2640', resultat: '3', tid: '26,4a', km_tid: '1.26,4', autostart: true, galopp: false, vagn: 'Amerikansk sulky', skor: 'Barfota runt om' },
+      { datum: '2026-07-06', lopp: 4, bana: 'Rättvik', kategori: null, spar: 9, distans: '1640', resultat: '0', tid: '24,1ag', km_tid: '1.24,1', autostart: true, galopp: true },
+      { datum: '2026-06-12', lopp: 3, bana: 'Bollnäs', kategori: 'm', spar: 5, distans: '2140', resultat: '6', tid: '31,2ag', km_tid: '1.31,2', autostart: true, galopp: true },
+      { datum: '2026-05-01', lopp: 1, bana: 'Romme', kategori: 'k', distans: '2140', resultat: '1', tid: '30,0', km_tid: '1.30,0' },
+      { datum: '2026-04-01', lopp: 2, bana: 'Romme', kategori: null, distans: '2140', resultat: 'str, feber', tid: null, km_tid: null },
+    ],
+  };
+
+  test('starterna: km-tid, startmetod, galopp, diskning, utrustning; kval, strykning och kommande räknas bort', async () => {
+    const { historyFromSportinfo, kmOf } = await lib();
+    expect(kmOf('1.25,6')).toBeCloseTo(85.6, 9);
+    expect(kmOf('1.09,9')).toBeCloseTo(69.9, 9);
+    expect(kmOf(null)).toBeNull();
+    const h = historyFromSportinfo(doc, 743074);
+    expect(h.records.map((r: any) => r.date)).toEqual(['2026-09-29', '2026-09-12', '2026-07-24', '2026-07-06', '2026-06-12']);
+    expect(h.complete).toBe(true);
+    expect(h.lifeStarts).toBe(5);
+    const [disq, unplaced, third, gallop, monte] = h.records;
+    expect(disq).toMatchObject({ disqualified: true, km: null, place: null, galloped: true, shoeKey: '01', sulkyKey: 'normal' });
+    expect(unplaced).toMatchObject({ place: 0, startMethod: 'volte', distance: 2160, driver: 'Blom Nathalie', prize: 2500 });
+    expect(unplaced.km).toBeCloseTo(85.6, 9);
+    expect(third).toMatchObject({ place: 3, startMethod: 'auto', sulkyKey: 'american', shoeKey: '00' });
+    expect(gallop).toMatchObject({ galloped: true, place: 0 });
+    expect(monte.sport).toBe('monte');
+    expect(historyFromSportinfo({ ...doc, sasong: [{ ar: 'Livs', starter: 9 }] }, 743074).complete).toBe(false);
+  });
+
+  test('readHistory läser data/hastar/travsport/ts<id>.json, null för okänd häst eller ogiltigt id', async () => {
+    const { readHistory, cachePath, validHorseId } = await lib();
+    const root = fs.mkdtempSync(path.join((await import('os')).tmpdir(), 'trav-hist-'));
+    fs.mkdirSync(path.join(root, 'data', 'hastar', 'travsport'), { recursive: true });
+    fs.writeFileSync(cachePath(root, 743074), JSON.stringify(doc));
+    expect(path.basename(cachePath(root, 743074))).toBe('ts743074.json');
+    expect(readHistory(root, 743074).name).toBe('Ersa Frej');
+    expect(readHistory(root, 111111)).toBeNull();
+    expect(readHistory(root, '../x')).toBeNull();
+    expect([validHorseId(743074), validHorseId('0123'), validHorseId(null)]).toEqual([true, false, false]);
+    fs.rmSync(root, { recursive: true, force: true });
+  });
+
+  test('historikjobbet följer fetch-travsport-hast.mjs: hämtade, redan sparade, fel och robotkontroll', async () => {
+    const { startHistoryJob, historyJob, cancelHistoryJob, parseLine } = await job();
+    expect(parseLine('Sparade data/hastar/travsport/ts780569.json (40 starter, Häst)')).toEqual({ id: 'ts780569', kind: 'fetched' });
+    expect(parseLine('ts780569 finns redan, hoppar över (data/hastar/travsport/ts780569.json)')).toEqual({ id: 'ts780569', kind: 'cached' });
+    expect(parseLine('ts780569: sidan saknar hästnamn, hoppar över')).toMatchObject({ id: 'ts780569', kind: 'error' });
+    expect(parseLine('Sportinfo visar fortfarande robotkontroll. Körningen avbryts.')).toMatchObject({ id: null, kind: 'error' });
+    expect(parseLine('Väntar innan nästa häst (25.0 s)')).toBeNull();
+    const { EventEmitter } = await import('events');
+    let args: string[] = [];
+    let proc: any;
+    const run = (a: string[]) => {
+      args = a;
+      proc = Object.assign(new EventEmitter(), { stdout: new EventEmitter(), stderr: new EventEmitter(), kill: () => proc.emit('close', null) });
+      return proc;
+    };
+    const analysis = { id: 'V85_x', races: [
+      { leg: 1, number: 5, horses: [{ nr: 1, horse: 'A', horseId: 780569 }, { nr: 2, horse: 'B', horseId: 780570 }, { nr: 3, horse: 'C', horseId: 780571, scratched: true }] },
+      { leg: 2, number: 6, horses: [{ nr: 1, horse: 'D', horseId: 780572 }] },
+    ] };
+    expect(() => startHistoryJob(ROOT, analysis, { leg: 9, run })).toThrow('Avdelningen finns inte');
+    startHistoryJob(ROOT, analysis, { leg: 1, force: true, run });
+    expect(args).toEqual(['ts780569', 'ts780570', '--igen']);
+    expect(() => startHistoryJob(ROOT, analysis, { run })).toThrow('pågår redan');
+    proc.stdout.emit('data', 'Öppnar https://sportapp.travsport.se/sportinfo/horse/ts780569/results\nSparade data/hastar/travsport/ts780569.json (4');
+    expect(historyJob()).toMatchObject({ currentHorse: 'A', currentLeg: 1, currentRaceNumber: 5, done: 0 });
+    proc.stdout.emit('data', '0 starter, A)\nts780570 finns redan, hoppar över\n');
+    proc.emit('close', 0);
+    expect(historyJob()).toMatchObject({ status: 'complete', total: 2, done: 2, fetched: 1, cached: 1, errors: [] });
+    // hela omgången, robotkontroll på stderr, avbrott
+    startHistoryJob(ROOT, analysis, { run });
+    expect(args).toEqual(['ts780569', 'ts780570', 'ts780572']);
+    proc.stderr.emit('data', 'Sportinfo visar fortfarande robotkontroll. Körningen avbryts.\n');
+    cancelHistoryJob();
+    expect(historyJob().status).toBe('cancelled');
+    expect(historyJob().errors.length).toBe(1);
+  });
+
+  test('webbsidan får aldrig Travsport-historiken; lokalt fästs den vid hästen och tidskällan sparas', async () => {
+    const { hastarState } = await import(pathToFileURL(path.join(ROOT, 'gui', 'hastar-routes.mjs')).href);
+    const { normalizeGame, analyzeGame } = await model();
+    const root = fs.mkdtempSync(path.join((await import('os')).tmpdir(), 'trav-state-'));
+    const dir = path.join(root, 'data', 'hastar');
+    for (const d of ['analys', 'travsport']) fs.mkdirSync(path.join(dir, d), { recursive: true });
+    fs.mkdirSync(path.join(root, 'config'));
+    const a = analyzeGame(normalizeGame(game()));
+    a.id = 'V85_2026-10-03_5_1';
+    a.date = '2026-10-03';
+    a.races[0].horses[0].horseId = 743074;
+    fs.writeFileSync(path.join(dir, 'analys', `${a.id}.json`), JSON.stringify(a));
+    fs.writeFileSync(path.join(dir, 'index.json'), JSON.stringify({ latest: a.id, analyses: [{ id: a.id }] }));
+    fs.writeFileSync(path.join(dir, 'travsport', 'ts743074.json'), JSON.stringify(doc));
+    const local = hastarState(root, a.id);
+    expect(local.analysis.races[0].horses[0].travsportHistory.name).toBe('Ersa Frej');
+    expect(local).toMatchObject({ local: true, timeSource: 'travsport' });
+    const web = hastarState(root, a.id, { publik: true });
+    expect(JSON.stringify(web)).not.toMatch(/travsportHistory|Ersa Frej/);
+    expect(web).toMatchObject({ local: false, timeSource: 'atg', historyJob: null });
+    fs.writeFileSync(path.join(root, 'config', 'hastar-presentation.json'), JSON.stringify({ timeSource: 'atg' }));
+    expect(hastarState(root, a.id).timeSource).toBe('atg');
+    // ATG-starterna ur sparade analyser blir tidshistorik
+    expect(local.analysis.races[0].horses[0].timeHistory.length).toBeGreaterThan(0);
+    fs.rmSync(root, { recursive: true, force: true });
+  });
+
+  test('Sportinfo-filer och tidskällan är gitignorerade', async () => {
+    const { execFileSync } = await import('child_process');
+    const ignored = (f: string) => {
+      try {
+        execFileSync('git', ['check-ignore', '-q', f], { cwd: ROOT });
+        return true;
+      } catch {
+        return false;
+      }
+    };
+    expect(ignored('data/hastar/travsport/ts743074.json')).toBe(true);
+    expect(ignored('config/hastar-presentation.json')).toBe(true);
   });
 });

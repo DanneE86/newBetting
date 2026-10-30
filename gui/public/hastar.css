@@ -333,3 +333,23 @@ body.view-hastar main { display: none !important; }
 .hs-omg.is-mitt .hs-omg-bar .is-on { background: var(--color-warning); border-color: var(--color-warning); color: #111; font-weight: 600; }
 .hs-omg.is-osaker .hs-omg-bar .is-on { background: var(--color-success); border-color: var(--color-success); color: #111; font-weight: 600; }
 .hs-omg.is-osaker { border-color: var(--color-success); }
+
+/* Tider, RT/FT/LI och Fa/Fo-delpoäng (hastar-times.js, hastar-parts.js, hastar-fa.js) – bara visning */
+.hs-part.is-missing b { color: var(--color-warning); background: var(--color-warning-bg); padding: 0 3px; border-radius: var(--radius-sm); }
+.hs-time { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.hs-time.is-red { color: var(--color-danger); font-weight: var(--font-weight-bold); }
+.hs-time.is-green { color: var(--color-success); font-weight: var(--font-weight-bold); }
+.hs-time-count.is-short { color: var(--color-warning); background: var(--color-warning-bg); border-radius: var(--radius-sm); padding: 1px 4px; font-weight: var(--font-weight-bold); }
+.hs-time-date { display: block; font-size: var(--font-size-xs, 11px); white-space: nowrap; color: var(--color-text-muted); }
+.hs-record-date-recent { color: var(--color-success); font-weight: var(--font-weight-bold); }
+.hs-time-controls { margin: var(--space-4) 0; }
+.hs-time-controls label { display: inline-block; margin: 0 var(--space-3) var(--space-2) 0; }
+.hs-time-controls input { width: 75px; padding: 6px; }
+.hs-time-controls input[type="checkbox"] { width: auto; }
+.hs-time-controls select { padding: 6px; max-width: 100%; }
+.hs-weight-controls { display: inline-flex; flex-direction: column; vertical-align: top; }
+.hs-weight-controls label { display: block; }
+.hs-history-row { margin-top: var(--space-2); }
+.hs-history-fallback { color: var(--color-warning); }
+.hs-fa-total { white-space: nowrap; font-size: var(--font-size-sm, 12px); font-weight: var(--font-weight-medium); }
+.hs-fa-total.is-missing { color: var(--color-warning); }

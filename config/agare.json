@@ -2,8 +2,8 @@
   "_om": "Ägda filer: bara ägarsessionen (Claude Code session_id) får ändra, återställa, stagea eller committa dem. Kontrolleras av scripts/agare-krok.mjs (PreToolUse i .claude/settings.json). Bara användaren byter ägare – ändra 'agent' här för hand.",
   "omraden": {
     "stryktips": {
-      "agent": "de88c3c6-4658-48f3-b910-e6e892109b02",
-      "sedan": "2026-10-20",
+      "agent": "9c7bd5fb-2f00-492d-83d3-05257fedd041",
+      "sedan": "2026-10-30",
       "filer": [
         "gui/public/stryk*",
         "gui/stryktips-routes.mjs",

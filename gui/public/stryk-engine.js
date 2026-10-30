@@ -128,14 +128,24 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
 //   spikar: 4 st (användaren 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig") – omgångens 3
 //      starkaste favoriter (vår procent) + omgångens bästa skrällspik (skrallTips förstaval, på en annan match) – har du
 //      egna spikar spikas inga andra matcher
-//   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt
+//   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt – på Stryktipset sedan 2026-10-30 vägda med √utdelning
+//      (FILE_RULES.utdVikt), så underspelade tecken får plats och överstreckade favoriter straffas
 // Bakkört 2026-10-11 (kupongarkivet, ST 169 / ET 183 omg, scripts/backtest-stryk-fil.mjs): A chans 1 på 170 / 162 med 2 spikar
 // (0 spikar 1 på 168 / 159, 4 spikar 1 på 181 / 174); A+B bäst med 2 (1 på 96 / 92). Båda spikarna satt i 80 / 90 omg.
 // C: bonus 1,3 gav 1 på 177 / 167 (2: 1 på 220 / 195). 4 spikar varav 1 skräll sedan 2026-10-20 (användarens val).
 // Starka spikar bedöms match för match på data (användaren 2026-10-25 efter Chelsea–Tottenham 0–2: "spik baserat på data
 // inte på streck i första hand ... alla matcher enskilt först bedöms på data"): favoriten måste ha minst spikDataMin enligt
 // vår oddsfria modell (e.model) och vara samma tecken som favoriten i vår procent. Färre matcher klarar det -> färre spikar.
-export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, spikDataMin: 0.55 };
+// utdVikt: raderna väljs på chans × utdelning^utdVikt (utdelning för 13 rätt enligt folkets streck) i stället för bara chans.
+// Underspelade tecken går inte in oftare än oddsen säger men betalar 1,35–1,6× mer än folket prissätter (158 omg, 2026-10-30).
+// Bakkörning 171 ST-omg: 0,5 ger väntad utdelning per 13 rätt 38 000 → 73 000 kr mot chans 1 på 168 → 200; 1,0 dödar chansen
+// (1 på 1 900). Europatipset: för svagt underlag (189 omg, sämre utfall) – bara chans där. Användaren 2026-10-30: "vinna mycket
+// så måste vara skrällar samt hitta något som är underspelat".
+export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, spikDataMin: 0.55, utdVikt: { stryktipset: 0.5, europatipset: 0 } };
+/** Utdelningsvikten för ett spel: ett tal i reglerna gäller alla spel (bakkörning), annars per spel. */
+export function utdViktFor(r, product) {
+  return typeof r.utdVikt === "number" ? r.utdVikt : (r.utdVikt?.[product] ?? 0);
+}
 /** Datachansen för favoriten om matchen duger som stark spik på data, annars null (ingen modell, under spikDataMin eller
  *  datan har en annan favorit än vår procent). */
 export function dataSpikP(e, r = FILE_RULES) {
@@ -177,7 +187,8 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
     // in i de 4 – annars blev det 5 spikar (användaren 2026-10-21: "vill ha 4 spikar om jag inte valt 5 av egen vilja")
     const planSpikes = plan.filter((s) => s && s.filter((x) => x > 0).length === 1).length;
     const forced = strongSpikeForced(events, forcedFor(sys).map((f, i) => f ?? (plan[i] ? [0, 1, 2] : null)), Math.max(0, r.spikes - planSpikes));
-    const select = () => selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, ...extra });
+    const utdVikt = utdViktFor(r, p.product);
+    const select = () => selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, utdVikt, ...extra });
     let picked = select();
     if (!picked) return null;
     // Egna spikar: en fri match där alla rader ändå fick samma tecken (stark favorit) görs om med vår chans som fördelning,
@@ -203,7 +214,7 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
     redo.sort((a, b) => a - b);
     // turnover = typisk omsättning: sidan räknar live med max(live-omsättning, typisk), annars blir omsättningen tidigt i veckan
     // så låg att inga rader når 30 000 kr (Europatipset 2026-10-11)
-    const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover });
+    const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover, utdVikt });
     c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, spikSkrall: forced[i]?.length === 1 && forcedFor(sys)[i] == null && forced[i][0] !== favIdx(events[i]), shares: plan[i] || null }));
     if (redo.length) c.relaxed = [...c.relaxed, `match ${redo.map((i) => events[i].eventNumber).join(", ")} blev spik av sig själv och är omgjord efter vår chans – ${own ? "bara dina spikar är spikar" : "bara datastarka favoriter och skrällspiken spikas"}`];
     if (nPlan) c.relaxed = [...c.relaxed, `${nPlan} ${nPlan === 1 ? "match" : "matcher"} med din egen fördelning (${sys} %)`];
@@ -222,13 +233,15 @@ const decodeRow = (code, n) => {
 /**
  * Topp-N rader med utdelning ≥ payoutMin.
  * exclude = Set av radkoder att hoppa över.
- * score(pr, code) = sorteringsvikt (högre = bättre); scoreMaxFactor ≥ max score(pr,code)/pr (för grenkapning).
+ * utdVikt = w: raderna rangordnas på chans × utdelning^w (0 = bara chans). Grenkapningen använder högsta möjliga chans
+ * (pRest) och lägsta möjliga streck (fRest = högsta utdelning) i resten av raden, så urvalet är exakt även med vikt.
  */
-function selectTopRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1 } = {}) {
+function selectTopRows(events, forced, base, { rows: N, payoutMin, exclude = null, utdVikt = 0 } = {}) {
   const n = events.length;
   const RT = base.realTurnover || base.turnover, J = base.jackpot || 0;
   const pot = PAYOUT_13 * RT + J;
   const fMax = (pot / payoutMin - 1) / RT;
+  const sc = utdVikt ? (pr, f) => pr * Math.pow(pot / (1 + RT * f), utdVikt) : (pr) => pr;
   const P = events.map((e) => e.final);
   const F = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
   // Högst chans först → snabbare heap-kapning
@@ -270,10 +283,10 @@ function selectTopRows(events, forced, base, { rows: N, payoutMin, exclude = nul
   const hasEx = exclude && exclude.size > 0;
   const walk = (i, pr, f, code) => {
     if (f * fRest[i] > fMax) return;
-    if (size === N && pr * pRest[i] * scoreMaxFactor <= hs[0]) return;
+    if (size === N && sc(pr * pRest[i], f * fRest[i]) <= hs[0]) return;
     if (i === n) {
       if (hasEx && exclude.has(code)) return;
-      push(score(pr, code), pr, f, code);
+      push(sc(pr, f), pr, f, code);
       return;
     }
     for (const k of opts[i]) walk(i + 1, pr * P[i][k], f * F[i][k], code * 3 + k);
@@ -356,7 +369,7 @@ export function buildFallSharePlan(p, events, forced, sys = "A") {
 }
 
 /** Exakt N rader med given andel på match mi (tvingar tecknet per delmängd). */
-function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, score, scoreMaxFactor, mi, shares }) {
+function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, utdVikt, mi, shares }) {
   const allowed = forced[mi] || [0, 1, 2];
   const targets = fallShareTargets(N, shares, allowed);
   const used = new Set(exclude || []);
@@ -366,7 +379,7 @@ function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, 
     const need = targets[k];
     if (need <= 0) continue;
     const f2 = events.map((_, i) => (i === mi ? [k] : (forced[i] || [0, 1, 2])));
-    const sel = selectTopRows(events, f2, base, { rows: need, payoutMin, exclude: used, score, scoreMaxFactor });
+    const sel = selectTopRows(events, f2, base, { rows: need, payoutMin, exclude: used, utdVikt });
     if (!sel?.size) continue;
     pot = sel.pot; RT = sel.RT; J = sel.J;
     for (let j = 0; j < sel.size; j++) {
@@ -376,7 +389,7 @@ function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, 
   }
   // Fyll om något tecken saknade rader (utdelningsgolvet) – utan att förstöra kvoterna mer än nödvändigt
   if (parts.length < N) {
-    const fill = selectTopRows(events, forced, base, { rows: N - parts.length, payoutMin, exclude: used, score, scoreMaxFactor });
+    const fill = selectTopRows(events, forced, base, { rows: N - parts.length, payoutMin, exclude: used, utdVikt });
     if (fill) {
       pot = pot ?? fill.pot; RT = RT ?? fill.RT; J = J ?? fill.J;
       for (let j = 0; j < fill.size; j++) {
@@ -402,7 +415,7 @@ function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, 
  * N rader där varje match med fallPlan får exakt de andelarna (byte mellan två rader behåller kvoterna).
  * En gemensam pool räckte inte: senare matcher kom aldrig ner i filen.
  */
-function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, fallPlan }) {
+function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = null, utdVikt = 0, fallPlan }) {
   const n = events.length;
   const P = events.map((e) => e.final);
   const Folk = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
@@ -446,6 +459,8 @@ function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = nu
     for (let i = 0; i < n; i++) pr *= P[i][sign[j][i]];
     return pr;
   };
+  // Radens vikt vid bytena nedan: chans × utdelning^utdVikt, samma som selectTopRows
+  const scAt = (j) => (utdVikt ? pAt(j) * Math.pow(pot / (1 + RT * fAt(j)), utdVikt) : pAt(j));
   for (let j = 0; j < N; j++) {
     let f = 1;
     for (let i = 0; i < n; i++) if (quota[i]) f *= Folk[i][sign[j][i]];
@@ -525,13 +540,13 @@ function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = nu
     if (j === o) continue;
     const i = Math.floor(rnd() * n);
     if (sign[j][i] === sign[o][i]) continue;
-    const before = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const before = scAt(j) + scAt(o);
     const fj = fAt(j), fo = fAt(o);
     const a = sign[j][i], b = sign[o][i];
     const cj0 = codeAt(j), co0 = codeAt(o);
     used.delete(cj0); used.delete(co0);
     sign[j][i] = b; sign[o][i] = a;
-    const after = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const after = scAt(j) + scAt(o);
     const payOk = fAt(j) <= fMax && fAt(o) <= fMax;
     const wasBad = fj > fMax || fo > fMax;
     if (payOk && !used.has(codeAt(j)) && !used.has(codeAt(o)) && (after > before || wasBad)) {
@@ -575,16 +590,16 @@ function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = nu
  * Välj N rader. Utan egna andelar: de troligaste med utdelningsgolv.
  * En match med andelar: exakt stratifiering. Flera matcher: kvoter så varje matchs procent finns i filen.
  */
-function selectEgnaRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1, fallPlan = null } = {}) {
+function selectEgnaRows(events, forced, base, { rows: N, payoutMin, exclude = null, utdVikt = 0, fallPlan = null } = {}) {
   const fallIdx = (fallPlan || []).map((s, i) => (s ? i : -1)).filter((i) => i >= 0);
-  if (!fallIdx.length) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+  if (!fallIdx.length) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, utdVikt });
   if (fallIdx.length === 1) {
     const primary = fallIdx[0];
     return selectStratifiedOnMatch(events, forced, base, {
-      N, payoutMin, exclude, score, scoreMaxFactor, mi: primary, shares: fallPlan[primary],
-    }) || selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+      N, payoutMin, exclude, utdVikt, mi: primary, shares: fallPlan[primary],
+    }) || selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, utdVikt });
   }
-  return selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude, score, fallPlan });
+  return selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude, utdVikt, fallPlan });
 }
 
 function mulberry32(seed) {

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "HR",
  "fotmobId": 252,
  "name": "HNL",
@@ -11,13 +11,13 @@
    "fotmobName": "Hajduk Split",
    "fotmobId": 10154,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 7,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 2,
-   "goals": "19-9",
+   "goals": "21-11",
    "gd": 10,
-   "pts": 22
+   "pts": 23
   },
   {
    "rank": 2,
@@ -25,13 +25,13 @@
    "fotmobName": "Dinamo Zagreb",
    "fotmobId": 10156,
    "group": null,
-   "played": 9,
-   "won": 6,
+   "played": 10,
+   "won": 7,
    "drawn": 1,
    "lost": 2,
-   "goals": "23-12",
-   "gd": 11,
-   "pts": 19
+   "goals": "25-13",
+   "gd": 12,
+   "pts": 22
   },
   {
    "rank": 3,
@@ -39,12 +39,12 @@
    "fotmobName": "NK Varaždin",
    "fotmobId": 10165,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 5,
    "drawn": 3,
-   "lost": 2,
-   "goals": "14-8",
-   "gd": 6,
+   "lost": 3,
+   "goals": "15-10",
+   "gd": 5,
    "pts": 18
   },
   {
@@ -53,12 +53,12 @@
    "fotmobName": "Osijek",
    "fotmobId": 10157,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 5,
    "drawn": 2,
-   "lost": 3,
-   "goals": "19-15",
-   "gd": 4,
+   "lost": 4,
+   "goals": "19-16",
+   "gd": 3,
    "pts": 17
   },
   {
@@ -67,12 +67,12 @@
    "fotmobName": "Rijeka",
    "fotmobId": 10162,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 5,
    "drawn": 2,
-   "lost": 2,
-   "goals": "16-12",
-   "gd": 4,
+   "lost": 3,
+   "goals": "17-14",
+   "gd": 3,
    "pts": 17
   },
   {
@@ -81,41 +81,41 @@
    "fotmobName": "NK Istra 1961",
    "fotmobId": 6038,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 3,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 4,
-   "goals": "17-16",
+   "goals": "19-18",
    "gd": 1,
-   "pts": 12
+   "pts": 13
   },
   {
    "rank": 7,
-   "team": "Lokomotiva Zagreb",
-   "fotmobName": "NK Lokomotiva",
-   "fotmobId": 175388,
-   "group": null,
-   "played": 10,
-   "won": 3,
-   "drawn": 1,
-   "lost": 6,
-   "goals": "13-17",
-   "gd": -4,
-   "pts": 10
-  },
-  {
-   "rank": 8,
    "team": "Slaven Belupo Koprivnica",
    "fotmobName": "Slaven",
    "fotmobId": 1581,
    "group": null,
-   "played": 10,
-   "won": 3,
+   "played": 11,
+   "won": 4,
    "drawn": 1,
    "lost": 6,
-   "goals": "12-22",
-   "gd": -10,
-   "pts": 10
+   "goals": "14-23",
+   "gd": -9,
+   "pts": 13
+  },
+  {
+   "rank": 8,
+   "team": "Lokomotiva Zagreb",
+   "fotmobName": "NK Lokomotiva",
+   "fotmobId": 175388,
+   "group": null,
+   "played": 11,
+   "won": 3,
+   "drawn": 2,
+   "lost": 6,
+   "goals": "13-17",
+   "gd": -4,
+   "pts": 11
   },
   {
    "rank": 9,
@@ -123,13 +123,13 @@
    "fotmobName": "Rudeš",
    "fotmobId": 187866,
    "group": null,
-   "played": 10,
-   "won": 2,
+   "played": 11,
+   "won": 3,
    "drawn": 1,
    "lost": 7,
-   "goals": "13-27",
-   "gd": -14,
-   "pts": 7
+   "goals": "14-27",
+   "gd": -13,
+   "pts": 10
   },
   {
    "rank": 10,
@@ -137,13 +137,13 @@
    "fotmobName": "HNK Gorica",
    "fotmobId": 206560,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 1,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 6,
    "goals": "7-15",
    "gd": -8,
-   "pts": 6
+   "pts": 7
   }
  ],
  "tableHistory": {
@@ -576,6 +576,78 @@
     10,
     10,
     6,
+    -8
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Hajduk Split",
+    1,
+    11,
+    23,
+    10
+   ],
+   [
+    "Dinamo Zagreb",
+    2,
+    10,
+    22,
+    12
+   ],
+   [
+    "Varaždin",
+    3,
+    11,
+    18,
+    5
+   ],
+   [
+    "Osijek",
+    4,
+    11,
+    17,
+    3
+   ],
+   [
+    "Rijeka",
+    5,
+    10,
+    17,
+    3
+   ],
+   [
+    "Istra 1961",
+    6,
+    11,
+    13,
+    1
+   ],
+   [
+    "Slaven Belupo Koprivnica",
+    7,
+    11,
+    13,
+    -9
+   ],
+   [
+    "Lokomotiva Zagreb",
+    8,
+    11,
+    11,
+    -4
+   ],
+   [
+    "Rudeš",
+    9,
+    11,
+    10,
+    -13
+   ],
+   [
+    "HNK Gorica",
+    10,
+    11,
+    7,
     -8
    ]
   ]

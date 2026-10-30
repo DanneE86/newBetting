@@ -4,14 +4,14 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AS.csv`.
+Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AS.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
-| 2025/26 | 240 | 53,3 % | 50,5 % | +2,8 pe (0,9) | 40,0 % | 53 / 59 | odds |
-| 2026/27 | 176 | 51,7 % | 52,4 % | −0,7 pe (−0,2) | 41,5 % | 41 / 44 | odds |
+| 2025/26 | 240 | 51,7 % | 48,6 % | +3,1 pe (1,0) | 40,0 % | 53 / 63 | modell (inga odds) |
+| 2026/27 | 208 | 46,2 % | 46,9 % | −0,8 pe (−0,2) | 38,9 % | 50 / 62 | modell (inga odds) |
 
 Bedömning 2026/27: inom slumpen (z −0,2). Tipsen slår att alltid tippa hemma.
 
@@ -22,15 +22,15 @@ Bedömning 2026/27: inom slumpen (z −0,2). Tipsen slår att alltid tippa hemma
 | 2022 | 242 | 52,5 % | 53,1 % | −0,2 | 24,8 % | 24,6 % | 0,1 |
 | 2023 | 240 | 53,8 % | 51,7 % | 0,6 | 19,6 % | 25,0 % | −1,9 |
 | 2024 | 242 | 47,5 % | 50,1 % | −0,8 | 21,9 % | 25,0 % | −1,1 |
-| 2025 | 240 | 53,3 % | 50,4 % | 0,9 | 22,1 % | 25,0 % | −1,1 |
-| 2026 | 176 | 50,6 % | 51,6 % | −0,3 | 23,3 % | 24,4 % | −0,3 |
+| 2025 | 240 | 53,3 % | 50,5 % | 0,9 | 22,1 % | 25,0 % | −1,0 |
+| 2026 | 208 | 51,0 % | 52,7 % | −0,5 | 24,0 % | 24,0 % | 0,0 |
 
 ### 2026: vad gick fel
 
-- Kryss: 41 av 176 (23,3 %) mot väntat 43,0 (z −0,3).
-- Hemmafavoriter vann 56 av 105 (väntat 57,1), bortafavoriter 33 av 71 (väntat 33,7), favoriter ≥ 60 % 29 av 46 (väntat 30,8).
-- Lag sämst mot oddsen (poäng mot förväntat): Kalmar −8,8 (22 m), Mjallby −8,1 (22 m), Halmstad −5,4 (22 m), Degerfors −4,2 (22 m).
-- Lag bäst mot oddsen: Vasteras SK +11,3 (22 m), Sirius +10,4 (22 m), Elfsborg +5,6 (22 m), Brommapojkarna +3,2 (22 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 50 av 208 (24,0 %) mot väntat 49,9 (z 0,0).
+- Hemmafavoriter vann 65 av 127 (väntat 69,7), bortafavoriter 41 av 81 (väntat 39,9), favoriter ≥ 60 % 42 av 65 (väntat 44,1).
+- Lag sämst mot oddsen (poäng mot förväntat): Kalmar −11,7 (26 m), Mjallby −9,2 (26 m), Degerfors −6,9 (26 m), Halmstad −4,3 (26 m).
+- Lag bäst mot oddsen: Vasteras SK +11,8 (26 m), Sirius +8,3 (26 m), Brommapojkarna +7,3 (26 m), Elfsborg +4,9 (26 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -38,10 +38,10 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
-| Omgång 1–5 | 462 / 162 | +0,1 pe (0,0) | +1,1 pe (0,3) | +0,5 pe (0,2) | −5,0 pe (−1,5) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 907 / 345 | −1,0 pe (−0,6) | −3,3 pe (−1,3) | +2,2 pe (1,5) | −1,8 pe (−0,7) | ingen säker effekt |
-| Bortafavorit | 876 / 316 | +2,5 pe (1,5) | +3,1 pe (1,1) | −0,4 pe (−0,3) | −3,4 pe (−1,4) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 235 / 62 | +5,3 pe (1,9) | +9,2 pe (1,7) | −0,6 pe (−0,2) | −4,4 pe (−1,0) | ingen säker effekt |
+| Omgång 1–5 | 462 / 162 | +0,1 pe (0,0) | +1,6 pe (0,4) | +0,5 pe (0,2) | −5,0 pe (−1,5) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 907 / 350 | −1,0 pe (−0,6) | −3,3 pe (−1,2) | +2,2 pe (1,5) | −1,3 pe (−0,5) | ingen säker effekt |
+| Bortafavorit | 876 / 326 | +2,5 pe (1,5) | +3,6 pe (1,3) | −0,4 pe (−0,3) | −3,0 pe (−1,2) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 235 / 70 | +5,3 pe (1,9) | +5,1 pe (1,0) | −0,6 pe (−0,2) | −2,8 pe (−0,6) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

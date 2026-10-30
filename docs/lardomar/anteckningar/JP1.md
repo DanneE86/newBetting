@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/JP1.csv`.
+Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/JP1.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
-| 2025/26 | 380 | 49,5 % | 44,4 % | +5,1 pe (2,0) | 44,2 % | 94 / 98 | odds |
-| 2026/27 | 80 | 56,3 % | 48,6 % | +7,7 pe (1,4) | 46,3 % | 17 / 18 | odds |
+| 2025/26 | 380 | 49,7 % | 46,2 % | +3,6 pe (1,4) | 44,2 % | 96 / 95 | modell (inga odds) |
+| 2026/27 | 120 | 49,2 % | 47,5 % | +1,7 pe (0,4) | 44,2 % | 29 / 32 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,4). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 0,4). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,16 +23,16 @@ Bedömning 2026/27: inom slumpen (z 1,4). Tipsen slår att alltid tippa hemma.
 | 2023 | 306 | 45,4 % | 46,6 % | −0,4 | 25,5 % | 26,8 % | −0,5 |
 | 2024 | 380 | 40,8 % | 46,1 % | −2,1 | 27,4 % | 27,3 % | 0,0 |
 | 2025 | 380 | 49,5 % | 44,4 % | 2,0 | 25,5 % | 28,4 % | −1,2 |
-| 2026/27 | 80 | 56,3 % | 47,9 % | 1,5 | 21,3 % | 26,7 % | −1,1 |
+| 2026/27 | 120 | 54,2 % | 49,1 % | 1,1 | 24,2 % | 26,3 % | −0,5 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 17 av 80 (21,3 %) mot väntat 21,4 (z −1,1).
-- Hemmafavoriter vann 28 av 48 (väntat 23,5), bortafavoriter 17 av 32 (väntat 14,9), favoriter ≥ 60 % 7 av 8 (väntat 5,0).
-- Lag sämst mot oddsen (poäng mot förväntat): Avispa Fukuoka −6,1 (8 m), Verdy −4,4 (8 m), Gamba Osaka −4,1 (8 m), Nagoya Grampus −3,8 (8 m).
-- Lag bäst mot oddsen: Vissel Kobe +6,3 (8 m), Machida +4,0 (8 m), Yokohama F. Marinos +4,0 (8 m), Kashiwa Reysol +3,6 (8 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
-- Grundmodellen och oddsen var oense i 16 matcher: grundmodellen rätt 5, oddsen rätt 8.
-- Dixon-Coles och oddsen var oense i 18 matcher: DC rätt 5.
+- Kryss: 29 av 120 (24,2 %) mot väntat 31,5 (z −0,5).
+- Hemmafavoriter vann 40 av 71 (väntat 36,2), bortafavoriter 25 av 49 (väntat 22,8), favoriter ≥ 60 % 15 av 17 (väntat 11,1).
+- Lag sämst mot oddsen (poäng mot förväntat): Avispa Fukuoka −8,0 (12 m), Gamba Osaka −4,7 (12 m), Verdy −3,9 (12 m), Chiba −3,8 (12 m).
+- Lag bäst mot oddsen: Machida +7,3 (12 m), Vissel Kobe +4,9 (12 m), Kashiwa Reysol +4,7 (12 m), FC Tokyo +4,2 (12 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Grundmodellen och oddsen var oense i 26 matcher: grundmodellen rätt 7, oddsen rätt 13.
+- Dixon-Coles och oddsen var oense i 29 matcher: DC rätt 6.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -40,9 +40,9 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
-| Omgång 1–5 | 521 / 198 | +0,1 pe (0,1) | +2,9 pe (0,8) | −0,0 pe (−0,0) | +0,1 pe (0,0) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 1638 / 626 | +1,2 pe (1,0) | −1,7 pe (−0,9) | −1,8 pe (−1,6) | −0,9 pe (−0,5) | ingen säker effekt |
-| Bortafavorit | 1254 / 405 | +2,6 pe (1,9) | −2,1 pe (−0,9) | −1,3 pe (−1,0) | −0,3 pe (−0,1) | ingen säker effekt |
+| Omgång 1–5 | 521 / 198 | +0,1 pe (0,1) | +2,8 pe (0,8) | −0,0 pe (−0,0) | +0,1 pe (0,0) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 1638 / 639 | +1,2 pe (1,0) | −2,0 pe (−1,1) | −1,8 pe (−1,6) | −0,7 pe (−0,4) | ingen säker effekt |
+| Bortafavorit | 1254 / 422 | +2,6 pe (1,9) | −2,0 pe (−0,8) | −1,3 pe (−1,0) | −0,1 pe (−0,1) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

@@ -1,61 +1,299 @@
 {
   "leagues": {
     "AS": {
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-30",
       "src": "espn",
-      "listed": 657,
-      "fetched": 657,
-      "withTeam": 552
+      "listed": 448,
+      "fetched": 31,
+      "withTeam": 31
     },
     "SE2": {
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-30",
       "src": "365",
-      "listed": 233,
+      "listed": 241,
+      "fetched": 24,
+      "withTeam": 24
+    },
+    "NO2": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 243,
+      "fetched": 34,
+      "withTeam": 34
+    },
+    "EK": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 300,
+      "fetched": 26,
+      "withTeam": 26
+    },
+    "HR": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 179,
+      "fetched": 14,
+      "withTeam": 14
+    },
+    "CZ": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 270,
+      "fetched": 22,
+      "withTeam": 22
+    },
+    "KR": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 226,
+      "fetched": 15,
+      "withTeam": 15
+    },
+    "CAN": {
+      "updatedAt": "2026-10-30",
+      "src": "365",
+      "listed": 114,
+      "fetched": 12,
+      "withTeam": 12
+    },
+    "PL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 652,
+      "fetched": 30,
+      "withTeam": 30
+    },
+    "CH": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 974,
+      "fetched": 48,
+      "withTeam": 48
+    },
+    "EL1": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 993,
+      "fetched": 53,
+      "withTeam": 53
+    },
+    "LL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 678,
+      "fetched": 29,
+      "withTeam": 29
+    },
+    "LL2": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 828,
+      "fetched": 33,
+      "withTeam": 33
+    },
+    "SA": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 672,
+      "fetched": 40,
+      "withTeam": 40
+    },
+    "SB": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 670,
+      "fetched": 39,
+      "withTeam": 39
+    },
+    "BL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 540,
+      "fetched": 26,
+      "withTeam": 26
+    },
+    "BL2": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 540,
+      "fetched": 25,
+      "withTeam": 25
+    },
+    "L1": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 547,
+      "fetched": 26,
+      "withTeam": 26
+    },
+    "ED": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 556,
+      "fetched": 26,
+      "withTeam": 26
+    },
+    "BR": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 707,
+      "fetched": 38,
+      "withTeam": 38
+    },
+    "BR2": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 730,
+      "fetched": 30,
+      "withTeam": 29
+    },
+    "CL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 324,
+      "fetched": 36,
+      "withTeam": 36
+    },
+    "EL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 324,
+      "fetched": 36,
+      "withTeam": 36
+    },
+    "ECL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 234,
+      "fetched": 36,
+      "withTeam": 36
+    },
+    "ACL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 207,
+      "fetched": 207,
+      "withTeam": 207
+    },
+    "ACL2": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 194,
+      "fetched": 194,
+      "withTeam": 166
+    },
+    "LIB": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 308,
+      "fetched": 308,
+      "withTeam": 157
+    },
+    "SUD": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 312,
+      "fetched": 303,
+      "withTeam": 303
+    },
+    "NO": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 432,
+      "fetched": 21,
+      "withTeam": 21
+    },
+    "DK": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 199,
       "fetched": 0,
       "withTeam": 0
     },
-    "NO2": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 234,
-      "fetched": 234,
-      "withTeam": 232
+    "PT": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     },
-    "EK": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 292,
-      "fetched": 292,
-      "withTeam": 292
+    "GR": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     },
-    "HR": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 175,
-      "fetched": 175,
-      "withTeam": 174
+    "JP1": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     },
-    "CZ": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 265,
-      "fetched": 265,
-      "withTeam": 265
+    "MX": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     },
-    "KR": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 223,
-      "fetched": 223,
-      "withTeam": 213
+    "MLS": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     },
-    "CAN": {
-      "updatedAt": "2026-10-10",
-      "src": "365",
-      "listed": 112,
-      "fetched": 112,
-      "withTeam": 112
+    "COL": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "AR": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "BE": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "SC": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "SAU": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "AUS": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
+    },
+    "URU": {
+      "updatedAt": "2026-10-30",
+      "src": "espn",
+      "listed": 0,
+      "fetched": 0,
+      "withTeam": 0
     }
   },
-  "updatedAt": "2026-10-10T13:17:34.259Z"
+  "updatedAt": "2026-10-30T09:15:09.430Z"
 }

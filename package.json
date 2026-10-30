@@ -85,7 +85,7 @@
     "bet365:uppfoljning": "node scripts/bet365-uppfoljning.mjs"
   },
   "devDependencies": {
-    "@playwright/test": "^1.51.0"
+    "@playwright/test": "^1.64.1"
   },
   "dependencies": {
     "zod": "^4.6.5"

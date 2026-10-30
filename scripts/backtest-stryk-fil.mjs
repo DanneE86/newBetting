@@ -1,7 +1,8 @@
 // Bakkörning av filkupongerna A, B och C (gui/public/stryk-engine.js buildFileCoupons) mot kupongarkivet
 // data/tips-archive/systems. Samma procent, streck, omsättning och jackpot som arkivets kupong A, verkliga vinstklasser.
 // Användaren 2026-10-11: inga Gambling Cabin-regler, bara fil.
-//   node scripts/backtest-stryk-fil.mjs [stryktipset|europatipset] [--rows 500] [--utd 30000] [--spikes 4] [--bonus 2]
+//   node scripts/backtest-stryk-fil.mjs [stryktipset|europatipset] [--rows 500] [--utd 30000] [--spikes 4] [--bonus 2] [--utdvikt 0.5]
+//   --utdvikt w: raderna väljs på chans × utdelning^w (utan flaggan gäller FILE_RULES.utdVikt per spel)
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -11,7 +12,8 @@ const { buildFileCoupons, FILE_RULES } = await import(pathToFileURL(path.join(ro
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? Number(args[i + 1]) : d; };
 const product = args.find((a) => !a.startsWith('--') && !/^[\d.]+$/.test(a)) || 'stryktipset';
-const R = { ...FILE_RULES, rows: opt('--rows', FILE_RULES.rows), payoutMin: opt('--utd', FILE_RULES.payoutMin), spikes: opt('--spikes', FILE_RULES.spikes), underBonus: opt('--bonus', FILE_RULES.underBonus) };
+const R = { ...FILE_RULES, rows: opt('--rows', FILE_RULES.rows), payoutMin: opt('--utd', FILE_RULES.payoutMin), spikes: opt('--spikes', FILE_RULES.spikes), underBonus: opt('--bonus', FILE_RULES.underBonus), utdVikt: args.includes('--utdvikt') ? opt('--utdvikt', 0) : FILE_RULES.utdVikt };
+const utdVikt = typeof R.utdVikt === 'number' ? R.utdVikt : (R.utdVikt?.[product] ?? 0);
 const dir = path.join(root, 'data', 'tips-archive', 'systems');
 const num = (s) => Number(String(s ?? '').replace(/\s/g, '').replace(',', '.')) || 0;
 const kr = (x) => Math.round(x).toLocaleString('sv-SE');
@@ -57,7 +59,7 @@ for (const f of fs.readdirSync(dir).filter((x) => x.startsWith(product + '-') &&
   spik.draws++; spik.allHit += all;
   for (const k of ['A', 'B']) if (j[k]?.evaluation) { arch.cost += j[k].evaluation.cost; arch.win += j[k].evaluation.winnings; arch.chance += j[k].hitAll || 0; }
 }
-console.log(`${product}: ${acc.A.draws} omgångar · ${R.rows} rader · minst ${kr(R.payoutMin)} kr · ${R.spikes} spikar · C-bonus ${R.underBonus}`);
+console.log(`${product}: ${acc.A.draws} omgångar · ${R.rows} rader · minst ${kr(R.payoutMin)} kr · ${R.spikes} spikar · utdelningsvikt ${utdVikt}`);
 for (const [k, a] of Object.entries(acc)) {
   if (!a.draws) continue;
   console.log(`${k.padEnd(3)}: chans 13 rätt 1 på ${Math.round(a.draws / a.chance)} per omg (väntat ${a.chance.toFixed(2)} st), insats ${kr(a.cost)}, vinst ${kr(a.win)}, netto ${kr(a.win - a.cost)} (${Math.round((100 * a.win) / a.cost)} % tillbaka), 13/12/11/10 ${a.classes[13]}/${a.classes[12]}/${a.classes[11]}/${a.classes[10]}${a.c13.length ? ` – 13 rätt i ${a.c13.join(', ')}` : ''}`);

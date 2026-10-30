@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BL.csv`.
+Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BL.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
-| 2025/26 | 306 | 56,5 % | 52,1 % | +4,4 pe (1,6) | 43,8 % | 75 / 58 | odds |
-| 2026/27 | 36 | 50,0 % | 55,3 % | −5,3 pe (−0,7) | 52,8 % | 7 / 11 | odds |
+| 2025/26 | 306 | 54,9 % | 52,1 % | +2,8 pe (1,0) | 43,8 % | 75 / 63 | modell (inga odds) |
+| 2026/27 | 63 | 55,6 % | 50,5 % | +5,0 pe (0,8) | 50,8 % | 13 / 15 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z −0,7). Tipsen träffar sämre än att alltid tippa hemma – granska.
+Bedömning 2026/27: inom slumpen (z 0,8). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -22,16 +22,16 @@ Bedömning 2026/27: inom slumpen (z −0,7). Tipsen träffar sämre än att allt
 | 2022/23 | 306 | 53,3 % | 52,0 % | 0,5 | 24,5 % | 24,2 % | 0,1 |
 | 2023/24 | 306 | 56,2 % | 54,7 % | 0,6 | 26,5 % | 22,7 % | 1,6 |
 | 2024/25 | 306 | 52,6 % | 54,0 % | −0,5 | 25,2 % | 23,5 % | 0,7 |
-| 2025/26 | 306 | 56,5 % | 51,8 % | 1,7 | 24,5 % | 23,8 % | 0,3 |
-| 2026/27 | 36 | 50,0 % | 54,7 % | −0,6 | 19,4 % | 21,7 % | −0,3 |
+| 2025/26 | 306 | 56,5 % | 52,1 % | 1,6 | 24,5 % | 23,9 % | 0,3 |
+| 2026/27 | 63 | 54,0 % | 55,7 % | −0,3 | 20,6 % | 21,8 % | −0,2 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 7 av 36 (19,4 %) mot väntat 7,8 (z −0,3).
-- Hemmafavoriter vann 14 av 24 (väntat 13,4), bortafavoriter 4 av 12 (väntat 6,3), favoriter ≥ 60 % 9 av 11 (väntat 8,0).
-- Lag sämst mot oddsen (poäng mot förväntat): M'gladbach −4,5 (4 m), Hoffenheim −3,3 (4 m), Union Berlin −2,5 (4 m), Stuttgart −2,3 (4 m).
-- Lag bäst mot oddsen: Dortmund +4,6 (4 m), Elversberg +3,8 (4 m), Freiburg +3,2 (4 m), Werder Bremen +2,5 (4 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
-- Grundmodellen och oddsen var oense i 4 matcher: grundmodellen rätt 1, oddsen rätt 2.
+- Kryss: 13 av 63 (20,6 %) mot väntat 13,7 (z −0,2).
+- Hemmafavoriter vann 25 av 42 (väntat 23,7), bortafavoriter 9 av 21 (väntat 11,3), favoriter ≥ 60 % 15 av 22 (väntat 15,7).
+- Lag sämst mot oddsen (poäng mot förväntat): Stuttgart −5,4 (7 m), M'gladbach −4,2 (7 m), Hoffenheim −2,4 (7 m), Schalke 04 −1,7 (7 m).
+- Lag bäst mot oddsen: Werder Bremen +4,3 (7 m), Elversberg +3,5 (7 m), Dortmund +3,1 (7 m), Hamburg +2,7 (7 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Grundmodellen och oddsen var oense i 9 matcher: grundmodellen rätt 2, oddsen rätt 6.
 - Dixon-Coles och oddsen var oense i 4 matcher: DC rätt 2.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
@@ -40,11 +40,11 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
-| Oddsen rör sig bort från favoriten (öppning → stängning) | 746 / 347 | −4,8 pe (−2,7) | −2,2 pe (−0,9) | +2,5 pe (1,6) | +3,7 pe (1,7) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 244 / 132 | −1,1 pe (−0,4) | +2,2 pe (0,6) | −0,2 pe (−0,1) | +1,2 pe (0,4) | ingen säker effekt |
-| Omgång 1–5 | 270 / 171 | −3,0 pe (−1,0) | +4,9 pe (1,3) | +3,7 pe (1,4) | −2,8 pe (−0,9) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 620 / 330 | −2,1 pe (−1,1) | +0,1 pe (0,0) | +1,0 pe (0,5) | +2,0 pe (0,8) | ingen säker effekt |
-| Bortafavorit | 643 / 312 | −2,1 pe (−1,1) | +3,8 pe (1,4) | −0,6 pe (−0,4) | +1,3 pe (0,6) | ingen säker effekt |
+| Oddsen rör sig bort från favoriten (öppning → stängning) | 746 / 337 | −4,8 pe (−2,7) | −2,0 pe (−0,8) | +2,5 pe (1,6) | +4,0 pe (1,7) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 244 / 136 | −1,1 pe (−0,4) | +0,6 pe (0,2) | −0,2 pe (−0,1) | +2,2 pe (0,8) | ingen säker effekt |
+| Omgång 1–5 | 270 / 180 | −3,0 pe (−1,0) | +5,1 pe (1,4) | +3,7 pe (1,4) | −2,6 pe (−0,8) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 620 / 336 | −2,1 pe (−1,1) | +0,9 pe (0,3) | +1,0 pe (0,5) | +1,5 pe (0,6) | ingen säker effekt |
+| Bortafavorit | 643 / 321 | −2,1 pe (−1,1) | +3,8 pe (1,4) | −0,6 pe (−0,4) | +1,3 pe (0,6) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 
