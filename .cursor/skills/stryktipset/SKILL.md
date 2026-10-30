@@ -18,7 +18,7 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 - **Bara fil, inga Gambling Cabin-regler (användaren 2026-10-11):** "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill bara köra på fil". Inga färg- eller teckenregler, inga utdelningsband, inga GC-länkar, inga kuponger D/E/F. Föreslå dem aldrig igen.
 - **Tre filkuponger à 500 kr (500 rader, 1 kr/rad)**, spelas via Svenska Spels **Egna rader** (`buildFileCoupons` i `gui/public/stryk-engine.js`; servern anropar samma funktion, så raderna blir identiska):
   - **Spikar:** omgångens **2 starkaste favoriter** (vår procent), i alla tre kupongerna. Folkets streck spelar ingen roll för spikvalet. Låsta egna spikar räknas in.
-  - **A:** de 500 troligaste raderna där 13 rätt ger **minst 30 000 kr** (verklig omsättning och jackpot).
+  - **A:** de 500 raderna med bäst chans × utdelning^w där 13 rätt ger **minst 30 000 kr** (verklig omsättning och jackpot). `FILE_RULES.utdVikt`: Stryktipset w = 0,5 (underspelade tecken får plats, överstreckade favoriter straffas; bakkört 171 omg: väntad utdelning per 13 rätt 38 000 → 73 000 kr, chans 1 på 168 → 200), Europatipset w = 0 (bara chans). Sedan 2026-10-30.
   - **B:** de 500 nästa raderna som inte finns i A, med vikt på tecken A saknar.
   - **C:** 500 rader där underspelade tecken (vår chans minst 20 % och minst 1,3 × folkets streck, inte favoriten) väger 1,3 per tecken.
 - Bakkört (kupongarkivet, ST 169 / ET 183 omg, `node scripts/backtest-stryk-fil.mjs`): A chans 1 på 170 / 162; A+B 1 på 96 / 92. Med 4 tvingade spikar var A sämre (1 på 181 / 174).

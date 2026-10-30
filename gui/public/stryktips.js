@@ -910,7 +910,9 @@ function couponCard(c, label, p) {
   // Egna spikar: kupongen spikar inga andra matcher
   const own = c.picks.some((x) => x.locked && x.signs.length === 1);
   const nSpik = c.picks.filter((x) => x.signs.length === 1).length;
-  const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${nSpik} ${nSpik === 1 ? "spik" : "spikar"}: högst ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} favoriter med minst ${Math.round(FILE_RULES.spikDataMin * 100)} % på data och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
+  // Stryktipset väger utdelningen (chans × √utdelning, 2026-10-30): underspelade tecken får plats, överstreckade favoriter straffas
+  const urval = c.rules.utdVikt ? `de ${c.rules.rowsTarget} raderna med bäst chans × √utdelning (underspelade tecken väger upp)` : `de ${c.rules.rowsTarget} troligaste raderna`;
+  const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${nSpik} ${nSpik === 1 ? "spik" : "spikar"}: högst ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} favoriter med minst ${Math.round(FILE_RULES.spikDataMin * 100)} % på data och 1 skrällspik`}, sedan ${urval} med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
   return `<div class="sb-coupon is-main ds-card">
     ${tag}
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>

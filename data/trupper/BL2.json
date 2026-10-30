@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "BL2",
  "fotmobId": 146,
  "source": "FotMob",
@@ -1557,7 +1557,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Eye injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 488564,
@@ -1633,7 +1638,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Torn muscle fiber",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 767256,
@@ -1652,7 +1662,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 560410,
@@ -2035,7 +2050,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Achilles tendon irritation",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 597737,
@@ -2883,7 +2903,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -3266,7 +3291,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Achilles tendon rupture",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 641181,
@@ -3304,7 +3334,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Calf injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1690072,
@@ -4195,7 +4230,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Torn muscle fiber",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 557805,
@@ -4634,7 +4674,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 258245,
@@ -4957,7 +5002,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -6256,7 +6306,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "02/11/2026",
+      "name": "Hamstring strain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 865066,
@@ -6732,7 +6787,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1382008,
@@ -6884,7 +6944,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Inner ligament injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1532192,
@@ -6922,7 +6987,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 865059,
@@ -6998,7 +7068,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ligament injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1368656,
@@ -8117,7 +8192,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1661176,
@@ -9100,7 +9180,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "strain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1257990,
@@ -11116,7 +11201,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 860609,
@@ -11192,7 +11282,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "06/11/2026",
+      "name": "Torn muscle fiber in the adductor area",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1600334,
@@ -11461,7 +11556,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Calf problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1263675,

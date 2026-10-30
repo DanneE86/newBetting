@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "PL",
  "fotmobId": 47,
  "source": "FotMob",
@@ -2048,7 +2048,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1236818,
@@ -3832,7 +3837,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Shoulder injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1302005,
@@ -4882,7 +4892,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 958010,
@@ -4939,7 +4954,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1695681,
@@ -5075,7 +5095,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 760359,
@@ -8483,7 +8508,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "06/11/2026",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1449690,
@@ -10278,7 +10308,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Back problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 769895,
@@ -13355,7 +13390,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1287010,

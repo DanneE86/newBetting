@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "MX",
  "fotmobId": 230,
  "source": "FotMob",
@@ -1150,7 +1150,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "01/03/2027",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1625189,
@@ -1283,7 +1288,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Meniscus injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -3462,7 +3472,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1610383,

@@ -31,15 +31,19 @@
 //    40–49 5 %, 30–39 3 %, under 10 0,4 % – i nivå med chansen. Delpoängen (groupScores) är jämförelser inom loppet.
 // Vikterna är startvärden och ska bara ändras efter backtest (data/hastar/backtest.json), aldrig efter enstaka omgångar.
 
-import { learnedProbs, driverIndex, shoeChange, raceRow, groupScores } from "./trav-features.mjs";
+import { learnedProbs, driverIndex, shoeChange, raceRow, groupScores, SCORE_GROUPS } from "./trav-features.mjs";
 import { LEARNED } from "./trav-weights.mjs";
 
 export const BASE_WEIGHTS = { form: 0.18, fart: 0.15, kusk: 0.12, tranare: 0.06, klass: 0.1, spar: 0.12, galopp: -0.1, tillagg: -0.08 };
 export const WEIGHT_SCALE = 0.15;
 export const WEIGHTS = Object.fromEntries(Object.entries(BASE_WEIGHTS).map(([k, w]) => [k, Math.round(w * WEIGHT_SCALE * 1e4) / 1e4]));
 export const MARKET_EXP = 0.85;
+// Tidsfaktorer som Fa-jämförelsen (gui/public/hastar-fa.js) byter ut mot Fa. Bara visning, modellen använder alla.
+export const FA_REPLACED_FACTORS = ["fart", "rekord", "bastKm3", "kmSenast", "efterSenast", "efterSnitt3", "naraUtanPlats", "motFalt3"];
 export const VALUE_MIN = 1.15;
 export const ODDS_POOL_HALF = 300000; // kr, vinnarpott där oddsen och strecket väger lika
+// Dubbelspel: Dagens Dubbel och Lunch Dubbel (två lopp, kombinationsodds)
+export const DOUBLE_TYPES = ["dd", "ld"];
 export const RANK_LIMITS = { A: 0.2, B: 0.09, C: 0.035 };
 const FORM_PTS = { 1: 1, 2: 0.7, 3: 0.5, 4: 0.3, 5: 0.2, 6: 0.1, 7: 0.1, 8: 0.1 };
 const FORM_W = [1, 0.85, 0.7, 0.6, 0.5];
@@ -91,6 +95,7 @@ export function normRecord(r) {
     track: r.track?.name || null,
     startMethod: r.race?.startMethod || null,
     distance: r.start?.distance ?? null,
+    baseDistance: r.race?.distance ?? null,
     post: r.start?.postPosition ?? null,
     driverId: r.start?.driver?.id ?? null,
     driver: fullName(r.start?.driver),
@@ -154,6 +159,7 @@ export function startExtras(s) {
   const ped = h.pedigree || {};
   return {
     horseId: h.id ?? null,
+    ...(h.breed ? { breed: typeof h.breed === "string" ? h.breed : h.breed.name || h.breed.text || "" } : {}),
     father: ped.father?.name || null,
     grandfather: ped.grandfather?.name || null, // morfar (ATG:s "grandfather" = moderns far)
     horseHome: h.homeTrack?.name || null,
@@ -162,7 +168,7 @@ export function startExtras(s) {
     driverHome: s?.driver?.homeTrack?.name || null,
     avgOdds5: h.statistics?.lastFiveStarts?.averageOdds ? h.statistics.lastFiveStarts.averageOdds / 100 : null,
     lifeRecords: (h.statistics?.life?.records || [])
-      .map((r) => ({ method: r.startMethod || null, dist: r.distance || null, km: kmSeconds(r.time), year: r.year ? Number(r.year) : null }))
+      .map((r) => ({ method: r.startMethod || null, dist: r.distance || null, km: kmSeconds(r.time), year: r.year ? Number(r.year) : null, ...(r.date ? { date: r.date } : {}) }))
       .filter((r) => r.km != null),
   };
 }
@@ -245,7 +251,7 @@ export function normalizeGame(game, details = {}) {
     track: races[0]?.track || null,
     status: game.status || null,
     turnover: game.pools?.[type]?.turnover != null ? game.pools[type].turnover / 100 : null,
-    comboOdds: game.pools?.dd?.comboOdds || null,
+    comboOdds: game.pools?.[type]?.comboOdds || null,
     payouts: game.pools?.[type]?.result?.payouts || null,
     races,
   };
@@ -506,6 +512,20 @@ export function analyzeRace(race, posts = {}, opts = {}) {
   }
   live.forEach((h, i) => {
     h.p = pOf(i);
+    // Referens för Fa/Fo-jämförelsen (gui/public/hastar-fa.js): tids- och formbidragen i hästens logit. Bara visning.
+    const li = lp ? lp.nrs.indexOf(h.nr) : -1;
+    const lw = (k) => learned.weights[k] || 0;
+    h.faBaseline = {
+      version: 3,
+      p: h.p,
+      speedZ: lp ? lp.X.fart?.[li] ?? 0 : z.fart[i],
+      timeContribution: lp ? FA_REPLACED_FACTORS.reduce((s, k) => s + lw(k) * (lp.X[k]?.[li] || 0), 0) : (weights.fart || 0) * wMul * z.fart[i],
+      formContribution: lp
+        ? Object.keys(SCORE_GROUPS.form).reduce((s, k) => s + lw(k) * (lp.X[k]?.[li] || 0), 0)
+        : (weights.form || 0) * wMul * z.form[i] + (weights.galopp || 0) * wMul * z.galopp[i],
+      formWeight: Math.abs(lp ? lw("form") : (weights.form || 0) * wMul),
+      weight: lp ? lw("fart") : (weights.fart || 0) * wMul,
+    };
     h.marketP = r3(qOdds[i]); // vinnaroddsens sannolikhet (utan streck)
     // Spelprocent: V-spelets streck om det finns, annars vinnaroddsens sannolikhet (t.ex. Dagens Dubbel)
     h.marketPct = streckSum > 0 ? (h.streck || 0) / streckSum : qOdds[i] ?? q[i];
@@ -666,7 +686,7 @@ export function analyzeGame(game, ddGame = null, opts = {}) {
   opts = { driverForm: driverIndex([game, ...(ddGame ? [ddGame] : [])]), ...opts };
   const races = game.races.map((r) => analyzeRace(r, posts, opts));
   let dd = null;
-  if (game.type === "dd") dd = analyzeDD(races[0], races[1], game.comboOdds);
+  if (DOUBLE_TYPES.includes(game.type)) dd = analyzeDD(races[0], races[1], game.comboOdds);
   else if (ddGame) {
     const [n1, n2] = ddGame.races.map((r) => r.number);
     const ddRaces = ddGame.races.map((r) => races.find((x) => x.number === r.number) || analyzeRace(r, posts, opts));
@@ -674,6 +694,7 @@ export function analyzeGame(game, ddGame = null, opts = {}) {
     if (dd) dd.races = [n1, n2];
     if (dd) dd.extraRaces = ddRaces.filter((r) => !races.some((x) => x.number === r.number));
   }
+  if (dd) dd.type = DOUBLE_TYPES.includes(game.type) ? game.type : ddGame?.type || "dd";
   const spikes = pickSpikes(races);
   const upsets = pickUpsets(races);
   const folketMissar = pickFolketMissar(races);

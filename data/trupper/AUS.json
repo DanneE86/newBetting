@@ -1,9 +1,432 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "AUS",
  "fotmobId": 113,
  "source": "FotMob",
  "teams": {
+  "Wellington Phoenix FC": {
+   "fotmobName": "Wellington Phoenix",
+   "fotmobId": 78785,
+   "coach": "Chris Greenacre",
+   "players": [
+    {
+     "id": 1325762,
+     "name": "Henry Gray",
+     "role": "keepers",
+     "position": "GK",
+     "number": 13,
+     "age": 21,
+     "born": "2005-03-29",
+     "country": "New Zealand",
+     "height": 193,
+     "value": 354491,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 914814,
+     "name": "Walter Scott",
+     "role": "defenders",
+     "position": "LB",
+     "number": 5,
+     "age": 27,
+     "born": "1999-10-02",
+     "country": "Australia",
+     "height": 176,
+     "value": 159723,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1436840,
+     "name": "Isaac Hughes",
+     "role": "defenders",
+     "position": "CB,LB",
+     "number": 15,
+     "age": 22,
+     "born": "2004-03-25",
+     "country": "New Zealand",
+     "height": 183,
+     "value": 438721,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 1477435,
+     "name": "Lukas Kelly-Heald",
+     "role": "defenders",
+     "position": "CB,LB,LM",
+     "number": 18,
+     "age": 21,
+     "born": "2005-03-18",
+     "country": "New Zealand",
+     "height": 198,
+     "value": 587330,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 686053,
+     "name": "James McGarry",
+     "role": "defenders",
+     "position": "LB,LWB,CB",
+     "number": 23,
+     "age": 28,
+     "born": "1998-04-09",
+     "country": "New Zealand",
+     "height": 180,
+     "value": 226825,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1541879,
+     "name": "Matthew Sheridan",
+     "role": "defenders",
+     "position": "CB,RB,LB,RM,RWB",
+     "number": 27,
+     "age": 22,
+     "born": "2004-05-09",
+     "country": "New Zealand",
+     "height": 178,
+     "value": 420653,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 505792,
+     "name": "Bill Tuiloma",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 28,
+     "age": 31,
+     "born": "1995-03-27",
+     "country": "New Zealand",
+     "height": 178,
+     "value": 149299,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1134447,
+     "name": "Bryce Duke",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 7,
+     "age": 25,
+     "born": "2001-02-28",
+     "country": "USA",
+     "height": 170,
+     "value": 483295,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1050300,
+     "name": "Max Anderson",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 8,
+     "age": 25,
+     "born": "2001-05-17",
+     "country": "Scotland",
+     "height": 167,
+     "value": 304879,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 519240,
+     "name": "Alex Rufer",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 14,
+     "age": 30,
+     "born": "1996-06-12",
+     "country": "New Zealand",
+     "height": 184,
+     "value": 384970,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 459493,
+     "name": "Kazuki Nagasawa",
+     "role": "midfielders",
+     "position": "CM,LM,CDM,CAM",
+     "number": 25,
+     "age": 34,
+     "born": "1991-12-16",
+     "country": "Japan",
+     "height": 172,
+     "value": 123506,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1838724,
+     "name": "Anaru Cassidy",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 37,
+     "age": 20,
+     "born": "2006-02-26",
+     "country": "New Zealand",
+     "height": null,
+     "value": 222075,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1680420,
+     "name": "Corban Piper",
+     "role": "attackers",
+     "position": "ST",
+     "number": 3,
+     "age": 24,
+     "born": "2002-09-10",
+     "country": "New Zealand",
+     "height": null,
+     "value": 291155,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1477441,
+     "name": "Fin Conchie",
+     "role": "attackers",
+     "position": "RW",
+     "number": 6,
+     "age": 23,
+     "born": "2003-08-10",
+     "country": "New Zealand",
+     "height": 176,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 861895,
+     "name": "Rafael Durán",
+     "role": "attackers",
+     "position": "ST,LW,RW,RM,LM",
+     "number": 9,
+     "age": 29,
+     "born": "1997-08-20",
+     "country": "Mexico",
+     "height": 185,
+     "value": 267627,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1353588,
+     "name": "Riley Bidois",
+     "role": "attackers",
+     "position": "ST",
+     "number": 11,
+     "age": 24,
+     "born": "2002-03-12",
+     "country": "New Zealand",
+     "height": 185,
+     "value": 83260,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "coachHistory": [
+    {
+     "name": "Chris Greenacre",
+     "firstSeen": "2026-10-16"
+    }
+   ],
+   "history": {
+    "459493": {
+     "name": "Kazuki Nagasawa",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "505792": {
+     "name": "Bill Tuiloma",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "519240": {
+     "name": "Alex Rufer",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "686053": {
+     "name": "James McGarry",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "861895": {
+     "name": "Rafael Durán",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-30"
+    },
+    "914814": {
+     "name": "Walter Scott",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1050300": {
+     "name": "Max Anderson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1134447": {
+     "name": "Bryce Duke",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1325762": {
+     "name": "Henry Gray",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1353588": {
+     "name": "Riley Bidois",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1436840": {
+     "name": "Isaac Hughes",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1477435": {
+     "name": "Lukas Kelly-Heald",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1477441": {
+     "name": "Fin Conchie",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1541879": {
+     "name": "Matthew Sheridan",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1680420": {
+     "name": "Corban Piper",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1823222": {
+     "name": "Dan Edwards",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-16"
+    },
+    "1838724": {
+     "name": "Anaru Cassidy",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    }
+   },
+   "left": [
+    {
+     "id": "1823222",
+     "name": "Dan Edwards",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-16"
+    }
+   ]
+  },
   "Western Sydney Wanderers": {
    "fotmobName": "Western Sydney Wanderers FC",
    "fotmobId": 323834,
@@ -83,7 +506,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1137943,
@@ -222,7 +650,7 @@
      "id": 464349,
      "name": "Steven Ugarković",
      "role": "midfielders",
-     "position": "RM,CDM,CAM,CM",
+     "position": "CDM,RM,CAM,CM",
      "number": 6,
      "age": 32,
      "born": "1994-08-19",
@@ -298,7 +726,7 @@
      "id": 1435045,
      "name": "Liam Gillion",
      "role": "midfielders",
-     "position": "LM",
+     "position": "LM,LW",
      "number": 21,
      "age": 24,
      "born": "2002-10-17",
@@ -393,7 +821,7 @@
      "id": 1466656,
      "name": "Miguel Di Pizio",
      "role": "attackers",
-     "position": "ST,CAM,LW,LM",
+     "position": "ST,CAM,LW,CM,LM",
      "number": 10,
      "age": 20,
      "born": "2006-01-04",
@@ -520,10 +948,15 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "03/12/2026",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Ufuk Talay",
@@ -534,137 +967,137 @@
     "170453": {
      "name": "Hiroshi Ibusuki",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "254469": {
      "name": "Lawrence Thomas",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "464349": {
      "name": "Steven Ugarković",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "494312": {
      "name": "Brandon Borrello",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "589816": {
      "name": "Alex Gersbach",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "616154": {
      "name": "Germán Ferreyra",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "750901": {
      "name": "Jordan Holmes",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "913132": {
      "name": "Angus Thurgate",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1137943": {
      "name": "Jarrod Carluccio",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1217265": {
      "name": "Nicolas Milanović",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1409119": {
      "name": "Panashe Madanha",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1421822": {
      "name": "Dylan Scicluna",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1435045": {
      "name": "Liam Gillion",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1466656": {
      "name": "Miguel Di Pizio",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565853": {
      "name": "Anthony Pantazopoulos",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1609284": {
      "name": "Aydan Hammond",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1622778": {
      "name": "Nathan Barrie",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1688570": {
      "name": "Tristan Vidackovic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1717482": {
      "name": "Alaat Abdul-Rahman",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823202": {
      "name": "Ricky Fransen",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1832578": {
      "name": "Awan Lual",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1881172": {
      "name": "Jai Rose",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1910414": {
      "name": "Atiya Waraga",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1945877": {
      "name": "Oscar Morrison",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2091892": {
      "name": "Georgio Hassarati",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2105660": {
      "name": "Joshua Cetinic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2105668": {
      "name": "Marcus Savic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -691,7 +1124,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1928513,
@@ -767,13 +1205,18 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Wrist fracture",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1555042,
      "name": "Nathan Paull",
      "role": "defenders",
-     "position": "CB",
+     "position": "CB,LB",
      "number": 21,
      "age": 23,
      "born": "2003-08-21",
@@ -843,7 +1286,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 2019399,
@@ -868,7 +1316,7 @@
      "id": 1686134,
      "name": "Oliver Randazzo",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CDM",
      "number": 17,
      "age": 19,
      "born": "2006-11-12",
@@ -906,7 +1354,7 @@
      "id": 588426,
      "name": "Liam Rose",
      "role": "midfielders",
-     "position": "CDM,CM,CB,CAM",
+     "position": "CDM,CM,CB",
      "number": 22,
      "age": 29,
      "born": "1997-04-07",
@@ -941,25 +1389,6 @@
      "injury": null
     },
     {
-     "id": 1688759,
-     "name": "Dean Bosnjak",
-     "role": "midfielders",
-     "position": "CAM,LW,ST",
-     "number": 24,
-     "age": 20,
-     "born": "2006-10-11",
-     "country": "Australia",
-     "height": null,
-     "value": 670086,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1112688,
      "name": "Kai Kennedy",
      "role": "attackers",
@@ -976,13 +1405,18 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 426142,
      "name": "Connor Pain",
      "role": "attackers",
-     "position": "LW,LB,RB,RW",
+     "position": "LW,LB,RW,RB",
      "number": 7,
      "age": 32,
      "born": "1993-11-11",
@@ -1003,7 +1437,7 @@
      "role": "attackers",
      "position": "RW,RM",
      "number": 8,
-     "age": 20,
+     "age": 21,
      "born": "2005-10-25",
      "country": "Indonesia",
      "height": null,
@@ -1096,7 +1530,7 @@
      "id": 891956,
      "name": "Apostolos Stamatelopoulos",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,CAM",
      "number": 16,
      "age": 27,
      "born": "1999-04-09",
@@ -1131,6 +1565,25 @@
      "injury": null
     },
     {
+     "id": 1688759,
+     "name": "Dean Bosnjak",
+     "role": "attackers",
+     "position": "CAM,LW,ST",
+     "number": 24,
+     "age": 20,
+     "born": "2006-10-11",
+     "country": "Australia",
+     "height": null,
+     "value": 670086,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1261660,
      "name": "Jing Reec",
      "role": "attackers",
@@ -1147,7 +1600,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1823291,
@@ -1188,7 +1646,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Saša Ognenovski",
@@ -1199,553 +1657,140 @@
     "230916": {
      "name": "Ryan Fraser",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "309463": {
      "name": "Tatsuki Nara",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "426142": {
      "name": "Connor Pain",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "588426": {
      "name": "Liam Rose",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "622901": {
      "name": "Jonathan Aspropotamitis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "891956": {
      "name": "Apostolos Stamatelopoulos",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "913821": {
      "name": "Kosta Grozos",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1112688": {
      "name": "Kai Kennedy",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1227258": {
      "name": "Callum Talbot",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1261660": {
      "name": "Jing Reec",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1312752": {
      "name": "Bernardo Oliveira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1348516": {
      "name": "Harry Politidis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1412744": {
      "name": "Musa Touré",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1555042": {
      "name": "Nathan Paull",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1612270": {
      "name": "Luke Vickery",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686134": {
      "name": "Oliver Randazzo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1688566": {
      "name": "Ben Gibson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1688759": {
      "name": "Dean Bosnjak",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1715701": {
      "name": "Henrique Oliveira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823291": {
      "name": "Zane Helweh",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823292": {
      "name": "Sebastian Kršlović",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823293": {
      "name": "Will McKay",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1824102": {
      "name": "Dylan Rose",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1824128": {
      "name": "Michael Pratezina",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1824338": {
      "name": "James Hilton",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1928513": {
      "name": "Joshua Lakkis",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2019399": {
      "name": "Harry Menham",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
-  },
-  "Wellington Phoenix FC": {
-   "fotmobName": "Wellington Phoenix",
-   "fotmobId": 78785,
-   "coach": "Chris Greenacre",
-   "players": [
-    {
-     "id": 1325762,
-     "name": "Henry Gray",
-     "role": "keepers",
-     "position": "GK",
-     "number": 13,
-     "age": 21,
-     "born": "2005-03-29",
-     "country": "New Zealand",
-     "height": 193,
-     "value": 354491,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 914814,
-     "name": "Walter Scott",
-     "role": "defenders",
-     "position": "LB",
-     "number": 5,
-     "age": 27,
-     "born": "1999-10-02",
-     "country": "Australia",
-     "height": 176,
-     "value": 159723,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1134447,
-     "name": "Bryce Duke",
-     "role": "defenders",
-     "position": "RB",
-     "number": 7,
-     "age": 25,
-     "born": "2001-02-28",
-     "country": "USA",
-     "height": 170,
-     "value": 483295,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1436840,
-     "name": "Isaac Hughes",
-     "role": "defenders",
-     "position": "CB,LB",
-     "number": 15,
-     "age": 22,
-     "born": "2004-03-25",
-     "country": "New Zealand",
-     "height": 183,
-     "value": 438721,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1477435,
-     "name": "Lukas Kelly-Heald",
-     "role": "defenders",
-     "position": "CB,LB,LM",
-     "number": 18,
-     "age": 21,
-     "born": "2005-03-18",
-     "country": "New Zealand",
-     "height": 198,
-     "value": 587330,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 686053,
-     "name": "James McGarry",
-     "role": "defenders",
-     "position": "LB,LWB",
-     "number": 23,
-     "age": 28,
-     "born": "1998-04-09",
-     "country": "New Zealand",
-     "height": 180,
-     "value": 226825,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1541879,
-     "name": "Matthew Sheridan",
-     "role": "defenders",
-     "position": "CB,RB,LB,RM,RWB",
-     "number": 27,
-     "age": 22,
-     "born": "2004-05-09",
-     "country": "New Zealand",
-     "height": 178,
-     "value": 420653,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 505792,
-     "name": "Bill Tuiloma",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 28,
-     "age": 31,
-     "born": "1995-03-27",
-     "country": "New Zealand",
-     "height": 178,
-     "value": 149299,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1477441,
-     "name": "Fin Conchie",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 6,
-     "age": 23,
-     "born": "2003-08-10",
-     "country": "New Zealand",
-     "height": 176,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1050300,
-     "name": "Max Anderson",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 8,
-     "age": 25,
-     "born": "2001-05-17",
-     "country": "Scotland",
-     "height": 167,
-     "value": 304879,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 519240,
-     "name": "Alex Rufer",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 14,
-     "age": 30,
-     "born": "1996-06-12",
-     "country": "New Zealand",
-     "height": 184,
-     "value": 384970,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 459493,
-     "name": "Kazuki Nagasawa",
-     "role": "midfielders",
-     "position": "CM,LM,CDM,CAM",
-     "number": 25,
-     "age": 34,
-     "born": "1991-12-16",
-     "country": "Japan",
-     "height": 172,
-     "value": 123506,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1838724,
-     "name": "Anaru Cassidy",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 37,
-     "age": 20,
-     "born": "2006-02-26",
-     "country": "New Zealand",
-     "height": null,
-     "value": 222075,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1680420,
-     "name": "Corban Piper",
-     "role": "attackers",
-     "position": "ST",
-     "number": 3,
-     "age": 24,
-     "born": "2002-09-10",
-     "country": "New Zealand",
-     "height": null,
-     "value": 291155,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 861895,
-     "name": "Rafael Durán",
-     "role": "attackers",
-     "position": "ST,LW,LM,RM,RW",
-     "number": 9,
-     "age": 29,
-     "born": "1997-08-20",
-     "country": "Mexico",
-     "height": 185,
-     "value": 267627,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1353588,
-     "name": "Riley Bidois",
-     "role": "attackers",
-     "position": "ST",
-     "number": 11,
-     "age": 24,
-     "born": "2002-03-12",
-     "country": "New Zealand",
-     "height": 185,
-     "value": 83260,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Chris Greenacre",
-     "firstSeen": "2026-10-16"
-    }
-   ],
-   "history": {
-    "459493": {
-     "name": "Kazuki Nagasawa",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "505792": {
-     "name": "Bill Tuiloma",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "519240": {
-     "name": "Alex Rufer",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "686053": {
-     "name": "James McGarry",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "861895": {
-     "name": "Rafael Durán",
-     "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
-    },
-    "914814": {
-     "name": "Walter Scott",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1050300": {
-     "name": "Max Anderson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1134447": {
-     "name": "Bryce Duke",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1325762": {
-     "name": "Henry Gray",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1353588": {
-     "name": "Riley Bidois",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1436840": {
-     "name": "Isaac Hughes",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1477435": {
-     "name": "Lukas Kelly-Heald",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1477441": {
-     "name": "Fin Conchie",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1541879": {
-     "name": "Matthew Sheridan",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1680420": {
-     "name": "Corban Piper",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1823222": {
-     "name": "Dan Edwards",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-16"
-    },
-    "1838724": {
-     "name": "Anaru Cassidy",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": [
-    {
-     "id": "1823222",
-     "name": "Dan Edwards",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-16"
-    }
-   ]
   },
   "Brisbane Roar": {
    "fotmobName": "Brisbane Roar FC",
@@ -1791,6 +1836,25 @@
      "injury": null
     },
     {
+     "id": 1750321,
+     "name": "George Plusnin",
+     "role": "keepers",
+     "position": "GK",
+     "number": 40,
+     "age": 18,
+     "born": "2007-12-27",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1899854,
      "name": "Jacob Nasso",
      "role": "defenders",
@@ -1826,7 +1890,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 184449,
@@ -1910,7 +1979,7 @@
      "role": "defenders",
      "position": "LB",
      "number": 16,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-30",
      "country": "Australia",
      "height": 179,
@@ -1946,7 +2015,7 @@
      "id": 894805,
      "name": "Tyrese Francois",
      "role": "midfielders",
-     "position": "CDM,CAM",
+     "position": "CDM,CM,CAM",
      "number": 8,
      "age": 26,
      "born": "2000-07-16",
@@ -2117,7 +2186,7 @@
      "id": 1469770,
      "name": "Sabit Ngor",
      "role": "attackers",
-     "position": "ST,RM,RW,LM",
+     "position": "ST,LM,RW,RM",
      "number": 19,
      "age": 25,
      "born": "2001-01-05",
@@ -2152,7 +2221,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Michael Valkanis",
@@ -2163,1946 +2232,112 @@
     "69302": {
      "name": "Dean Bouzanis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "180292": {
      "name": "Nam Tae-Hee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "184449": {
      "name": "Tom Aldred",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "862700": {
      "name": "Hosine Bility",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "894805": {
      "name": "Tyrese Francois",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "949215": {
      "name": "Virgiliu Postolachi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "970573": {
      "name": "Tate Russell",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1017151": {
      "name": "Joel King",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1409696": {
      "name": "Marko Ilic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1411353": {
      "name": "Emin Durakovic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1469770": {
      "name": "Sabit Ngor",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565863": {
      "name": "Justin Vidić",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565868": {
      "name": "Nathan Amanatidis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1609081": {
      "name": "Jordan Lauton",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1665588": {
      "name": "Noah Maieroni",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1711766": {
      "name": "Oscar Page",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
+    },
+    "1750321": {
+     "name": "George Plusnin",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-10-30"
     },
     "1787569": {
      "name": "Milorad Stajić",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1798777": {
      "name": "Dimitri Valkanis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1824857": {
      "name": "Max Court",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1883411": {
      "name": "Emmett Shaw",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1899854": {
      "name": "Jacob Nasso",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": []
-  },
-  "Auckland FC": {
-   "fotmobName": "Auckland FC",
-   "fotmobId": 1642068,
-   "coach": "Pedro Moreira",
-   "players": [
-    {
-     "id": 848317,
-     "name": "Michael Woud",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 27,
-     "born": "1999-01-16",
-     "country": "New Zealand",
-     "height": 196,
-     "value": 207209,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1541878,
-     "name": "Joseph Knowles",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 30,
-     "age": 21,
-     "born": "2004-11-02",
-     "country": "New Zealand",
-     "height": 188,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 116645,
-     "name": "Hiroki Sakai",
-     "role": "defenders",
-     "position": "RB,CB,RWB",
-     "number": 2,
-     "age": 36,
-     "born": "1990-04-12",
-     "country": "Japan",
-     "height": 185,
-     "value": 111465,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1053731,
-     "name": "Nando Pijnaker",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 27,
-     "born": "1999-02-25",
-     "country": "New Zealand",
-     "height": 191,
-     "value": 135593,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 825593,
-     "name": "Francis de Vries",
-     "role": "defenders",
-     "position": "LB",
-     "number": 15,
-     "age": 31,
-     "born": "1994-11-28",
-     "country": "New Zealand",
-     "height": 188,
-     "value": 381805,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1013276,
-     "name": "Callan Elliot",
-     "role": "defenders",
-     "position": "RB,LB,LWB,RWB",
-     "number": 17,
-     "age": 27,
-     "born": "1999-07-07",
-     "country": "New Zealand",
-     "height": 177,
-     "value": 143622,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 419514,
-     "name": "Aaron Calver",
-     "role": "defenders",
-     "position": "CB",
-     "number": 28,
-     "age": 30,
-     "born": "1996-01-12",
-     "country": "Australia",
-     "height": 186,
-     "value": 106707,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 312764,
-     "name": "Cameron Howieson",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 7,
-     "age": 31,
-     "born": "1994-12-22",
-     "country": "New Zealand",
-     "height": 180,
-     "value": 129798,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 206847,
-     "name": "Luis Felipe Gallegos",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 8,
-     "age": 34,
-     "born": "1991-12-03",
-     "country": "Chile",
-     "height": 173,
-     "value": 119729,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1565865,
-     "name": "Lachlan Bayliss",
-     "role": "midfielders",
-     "position": "CAM,CM,ST",
-     "number": 10,
-     "age": 24,
-     "born": "2002-07-24",
-     "country": "New Zealand",
-     "height": 178,
-     "value": 461359,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1566308,
-     "name": "Oliver Middleton",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 19,
-     "age": 21,
-     "born": "2005-09-19",
-     "country": "New Zealand",
-     "height": 180,
-     "value": 182646,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 760713,
-     "name": "Jake Brimmer",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 22,
-     "age": 28,
-     "born": "1998-04-03",
-     "country": "Malta",
-     "height": 169,
-     "value": 324221,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 845381,
-     "name": "Lachlan Brook",
-     "role": "midfielders",
-     "position": "RM,CAM,RW,ST",
-     "number": 77,
-     "age": 25,
-     "born": "2001-02-08",
-     "country": "Australia",
-     "height": 178,
-     "value": 518965,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 609501,
-     "name": "Sam Cosgrove",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 29,
-     "born": "1996-12-02",
-     "country": "England",
-     "height": 194,
-     "value": 389409,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 676431,
-     "name": "Logan Rogerson",
-     "role": "attackers",
-     "position": "RM,RW,LW",
-     "number": 27,
-     "age": 28,
-     "born": "1998-05-28",
-     "country": "New Zealand",
-     "height": 182,
-     "value": 188176,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Pedro Moreira",
-     "firstSeen": "2026-10-16"
-    }
-   ],
-   "history": {
-    "116645": {
-     "name": "Hiroki Sakai",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "206847": {
-     "name": "Luis Felipe Gallegos",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "312764": {
-     "name": "Cameron Howieson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "419514": {
-     "name": "Aaron Calver",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "609501": {
-     "name": "Sam Cosgrove",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "676431": {
-     "name": "Logan Rogerson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "760713": {
-     "name": "Jake Brimmer",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "825593": {
-     "name": "Francis de Vries",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "845381": {
-     "name": "Lachlan Brook",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "848317": {
-     "name": "Michael Woud",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1013276": {
-     "name": "Callan Elliot",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1053731": {
-     "name": "Nando Pijnaker",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1541878": {
-     "name": "Joseph Knowles",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1565865": {
-     "name": "Lachlan Bayliss",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1566308": {
-     "name": "Oliver Middleton",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    }
-   },
-   "left": []
-  },
-  "Newcastle Jets": {
-   "fotmobName": "Newcastle Jets",
-   "fotmobId": 6454,
-   "coach": "Mark Milligan",
-   "players": [
-    {
-     "id": 1012192,
-     "name": "James Delianov",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 27,
-     "born": "1999-10-20",
-     "country": "Australia",
-     "height": 188,
-     "value": 245908,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1750126,
-     "name": "Alex Nassiep",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 20,
-     "age": 20,
-     "born": "2006-05-17",
-     "country": "Australia",
-     "height": 194,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1740783,
-     "name": "Jordan Baylis",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 40,
-     "age": 21,
-     "born": "2005-10-17",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 316694,
-     "name": "Alex Grant",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 32,
-     "born": "1994-01-23",
-     "country": "Australia",
-     "height": 191,
-     "value": 142872,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 189927,
-     "name": "Joe Shaughnessy",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 34,
-     "born": "1992-07-06",
-     "country": "Republic of Ireland",
-     "height": 183,
-     "value": 100394,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1690873,
-     "name": "Will Kennedy",
-     "role": "defenders",
-     "position": "LB",
-     "number": 16,
-     "age": 21,
-     "born": "2005-02-14",
-     "country": "Australia",
-     "height": null,
-     "value": 281274,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1437063,
-     "name": "Joel Bertolissio",
-     "role": "defenders",
-     "position": "RB",
-     "number": 22,
-     "age": 23,
-     "born": "2003-05-27",
-     "country": "Australia",
-     "height": null,
-     "value": 643962,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1031032,
-     "name": "Daniel Wilmering",
-     "role": "defenders",
-     "position": "LB",
-     "number": 23,
-     "age": 25,
-     "born": "2000-12-19",
-     "country": "Australia",
-     "height": 178,
-     "value": 305211,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2236975,
-     "name": "Angus Reid",
-     "role": "defenders",
-     "position": "CB",
-     "number": 34,
-     "age": 19,
-     "born": "2007-03-18",
-     "country": "Australia",
-     "height": 185,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1220079,
-     "name": "Thomas Aquilina",
-     "role": "defenders",
-     "position": "RM,RB,CB",
-     "number": 39,
-     "age": 25,
-     "born": "2001-02-02",
-     "country": "Australia",
-     "height": 178,
-     "value": 295763,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1823250,
-     "name": "Max Cooper",
-     "role": "defenders",
-     "position": "CB",
-     "number": 42,
-     "age": 19,
-     "born": "2007-01-14",
-     "country": "Australia",
-     "height": null,
-     "value": 340629,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2237477,
-     "name": "Kaiden Walshe",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 65,
-     "age": 16,
-     "born": "2010-04-22",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1543679,
-     "name": "Zane Schreiber",
-     "role": "midfielders",
-     "position": "CM,CDM,CAM",
-     "number": 6,
-     "age": 21,
-     "born": "2005-05-31",
-     "country": "Australia",
-     "height": null,
-     "value": 521820,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 471149,
-     "name": "Joe Lolley",
-     "role": "midfielders",
-     "position": "RM,RW",
-     "number": 11,
-     "age": 34,
-     "born": "1992-08-25",
-     "country": "England",
-     "height": 178,
-     "value": 544120,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 590367,
-     "name": "Max Burgess",
-     "role": "midfielders",
-     "position": "CDM,CAM,CM",
-     "number": 14,
-     "age": 31,
-     "born": "1995-01-16",
-     "country": "Australia",
-     "height": 185,
-     "value": 142038,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1312639,
-     "name": "Alex Badolato",
-     "role": "midfielders",
-     "position": "CAM,CM",
-     "number": 19,
-     "age": 21,
-     "born": "2005-02-23",
-     "country": "Australia",
-     "height": 175,
-     "value": 482958,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1750231,
-     "name": "Alex Nunes",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 24,
-     "age": 19,
-     "born": "2007-02-22",
-     "country": "Australia",
-     "height": null,
-     "value": 398279,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2237422,
-     "name": "Julian Recchia",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 27,
-     "age": 18,
-     "born": "2008-10-06",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1688565,
-     "name": "Will Dobson",
-     "role": "midfielders",
-     "position": "CAM,RW,LW,CM",
-     "number": 28,
-     "age": 19,
-     "born": "2007-09-07",
-     "country": "Australia",
-     "height": null,
-     "value": 803146,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2237582,
-     "name": "Nicholas Badolato",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 52,
-     "age": 18,
-     "born": "2007-10-29",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1208173,
-     "name": "Patrick Wood",
-     "role": "attackers",
-     "position": "ST",
-     "number": 8,
-     "age": 24,
-     "born": "2002-09-16",
-     "country": "Australia",
-     "height": 178,
-     "value": 355739,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 521755,
-     "name": "Nikos Vergos",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 30,
-     "born": "1996-01-13",
-     "country": "Greece",
-     "height": 184,
-     "value": 261902,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 568580,
-     "name": "Zach Clough",
-     "role": "attackers",
-     "position": "LW,CAM",
-     "number": 10,
-     "age": 31,
-     "born": "1995-03-08",
-     "country": "England",
-     "height": 170,
-     "value": 329537,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1824403,
-     "name": "Ethan Debono",
-     "role": "attackers",
-     "position": "RM",
-     "number": 17,
-     "age": 20,
-     "born": "2005-12-15",
-     "country": "Malta",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1750237,
-     "name": "Oscar Fryer",
-     "role": "attackers",
-     "position": "RW",
-     "number": 25,
-     "age": 20,
-     "born": "2006-04-16",
-     "country": "Australia",
-     "height": null,
-     "value": 243282,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1824856,
-     "name": "Oscar Gonzalez",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 26,
-     "age": 18,
-     "born": "2008-07-21",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2332182,
-     "name": "Jake Goodwin",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 29,
-     "age": 19,
-     "born": "2007-08-05",
-     "country": "Australia",
-     "height": 178,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1869398,
-     "name": "Oliver Cockle",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 37,
-     "age": 17,
-     "born": "2008-11-22",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1799002,
-     "name": "Xavier Bertoncello",
-     "role": "attackers",
-     "position": "LW,RW",
-     "number": 43,
-     "age": 21,
-     "born": "2005-10-08",
-     "country": "Australia",
-     "height": null,
-     "value": 457166,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2237454,
-     "name": "Callan Prestwidge",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 63,
-     "age": 18,
-     "born": "2008-08-31",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1824552,
-     "name": "Jesse Hill",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 64,
-     "age": 19,
-     "born": "2007-02-11",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "Mark Milligan",
-     "firstSeen": "2026-10-16"
-    }
-   ],
-   "history": {
-    "189927": {
-     "name": "Joe Shaughnessy",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "316694": {
-     "name": "Alex Grant",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "471149": {
-     "name": "Joe Lolley",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "521755": {
-     "name": "Nikos Vergos",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "568580": {
-     "name": "Zach Clough",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "590367": {
-     "name": "Max Burgess",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1012192": {
-     "name": "James Delianov",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1031032": {
-     "name": "Daniel Wilmering",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1208173": {
-     "name": "Patrick Wood",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1220079": {
-     "name": "Thomas Aquilina",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1312639": {
-     "name": "Alex Badolato",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1437063": {
-     "name": "Joel Bertolissio",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1543679": {
-     "name": "Zane Schreiber",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1688565": {
-     "name": "Will Dobson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1690873": {
-     "name": "Will Kennedy",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1740783": {
-     "name": "Jordan Baylis",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1750126": {
-     "name": "Alex Nassiep",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1750231": {
-     "name": "Alex Nunes",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1750237": {
-     "name": "Oscar Fryer",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1799002": {
-     "name": "Xavier Bertoncello",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1823250": {
-     "name": "Max Cooper",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1824403": {
-     "name": "Ethan Debono",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1824552": {
-     "name": "Jesse Hill",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1824856": {
-     "name": "Oscar Gonzalez",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1869398": {
-     "name": "Oliver Cockle",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2236975": {
-     "name": "Angus Reid",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2237422": {
-     "name": "Julian Recchia",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2237454": {
-     "name": "Callan Prestwidge",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2237477": {
-     "name": "Kaiden Walshe",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2237582": {
-     "name": "Nicholas Badolato",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2332182": {
-     "name": "Jake Goodwin",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2339623": {
-     "name": "Archie Brideson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-23"
-    }
-   },
-   "left": [
-    {
-     "id": "2339623",
-     "name": "Archie Brideson",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-23"
-    }
-   ]
-  },
-  "Central Coast Mariners": {
-   "fotmobName": "Central Coast Mariners",
-   "fotmobId": 8164,
-   "coach": "John Hutchinson",
-   "players": [
-    {
-     "id": 1817689,
-     "name": "Rufai Abubakar",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 20,
-     "age": 18,
-     "born": "2008-01-05",
-     "country": "Nigeria",
-     "height": 177,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 110616,
-     "name": "Andrew Redmayne",
-     "role": "keepers",
-     "position": "GK",
-     "number": 30,
-     "age": 37,
-     "born": "1989-01-13",
-     "country": "Australia",
-     "height": 194,
-     "value": 131561,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1565719,
-     "name": "Dylan Peraić-Cullen",
-     "role": "keepers",
-     "position": "GK",
-     "number": 40,
-     "age": 20,
-     "born": "2006-07-25",
-     "country": "Australia",
-     "height": 196,
-     "value": 699563,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1686125,
-     "name": "Jai Ajanovic",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 50,
-     "age": 18,
-     "born": "2008-08-31",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1414871,
-     "name": "Diesel Herrington",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 22,
-     "born": "2004-08-04",
-     "country": "Australia",
-     "height": 188,
-     "value": 337982,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 207021,
-     "name": "Trent Sainsbury",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 34,
-     "born": "1992-01-05",
-     "country": "Australia",
-     "height": 184,
-     "value": 105463,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1170521,
-     "name": "Lucas Mauragis",
-     "role": "defenders",
-     "position": "LB,LW",
-     "number": 5,
-     "age": 25,
-     "born": "2001-09-04",
-     "country": "Australia",
-     "height": 181,
-     "value": 273580,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1797425,
-     "name": "Noah McCann",
-     "role": "defenders",
-     "position": "CB",
-     "number": 12,
-     "age": 21,
-     "born": "2005-09-01",
-     "country": "Scotland",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 424603,
-     "name": "Storm Roux",
-     "role": "defenders",
-     "position": "RB",
-     "number": 15,
-     "age": 33,
-     "born": "1993-01-13",
-     "country": "New Zealand",
-     "height": 181,
-     "value": 117291,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2353149,
-     "name": "Daniel Scarlet",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 21,
-     "age": 18,
-     "born": "2007-11-24",
-     "country": "Jamaica",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1030312,
-     "name": "Kristian Popović",
-     "role": "defenders",
-     "position": "CB",
-     "number": 29,
-     "age": 25,
-     "born": "2001-08-14",
-     "country": "Australia",
-     "height": 184,
-     "value": 231798,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2347479,
-     "name": "Alexander Bolton",
-     "role": "defenders",
-     "position": "LW",
-     "number": 39,
-     "age": 18,
-     "born": "2008-05-12",
-     "country": "Australia",
-     "height": 171,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1833005,
-     "name": "Shumba Mutokoyi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 41,
-     "age": 18,
-     "born": "2008-08-13",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2308260,
-     "name": "Stevan Rujak",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 47,
-     "age": 17,
-     "born": "2009-08-27",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1824097,
-     "name": "Gabriel Tilo",
-     "role": "defenders",
-     "position": "CB",
-     "number": 49,
-     "age": 18,
-     "born": "2008-10-18",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2384391,
-     "name": "Ty Mckibbin",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 51,
-     "age": 19,
-     "born": "2007-05-25",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1678528,
-     "name": "Haine Eames",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 6,
-     "age": 18,
-     "born": "2008-02-27",
-     "country": "Australia",
-     "height": null,
-     "value": 840584,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1316579,
-     "name": "Chris Donnell",
-     "role": "midfielders",
-     "position": "CM,CAM,CDM",
-     "number": 8,
-     "age": 22,
-     "born": "2004-01-24",
-     "country": "Australia",
-     "height": null,
-     "value": 240894,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1315433,
-     "name": "Harrison Steele",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 16,
-     "age": 24,
-     "born": "2002-10-12",
-     "country": "Australia",
-     "height": null,
-     "value": 219845,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1678529,
-     "name": "Arthur De Lima",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 22,
-     "age": 19,
-     "born": "2007-06-11",
-     "country": "Australia",
-     "height": null,
-     "value": 648491,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1949001,
-     "name": "Jesse Mantell",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 45,
-     "age": 19,
-     "born": "2007-10-10",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1125140,
-     "name": "Ali Auglah",
-     "role": "midfielders",
-     "position": "RM,RW,CAM",
-     "number": 72,
-     "age": 24,
-     "born": "2002-03-11",
-     "country": "Australia",
-     "height": 175,
-     "value": 209477,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1635566,
-     "name": "Oliver Lavale",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 21,
-     "born": "2005-04-05",
-     "country": "Australia",
-     "height": null,
-     "value": 292145,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1169591,
-     "name": "John-Kymani Gordon",
-     "role": "attackers",
-     "position": "LW",
-     "number": 11,
-     "age": 23,
-     "born": "2003-02-13",
-     "country": "England",
-     "height": 181,
-     "value": 233817,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1824871,
-     "name": "Presley Ortiz",
-     "role": "attackers",
-     "position": "ST",
-     "number": 17,
-     "age": 23,
-     "born": "2003-03-04",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1603555,
-     "name": "Bailey Brandtman",
-     "role": "attackers",
-     "position": "LW,ST,LM,RW",
-     "number": 37,
-     "age": 21,
-     "born": "2005-06-28",
-     "country": "Australia",
-     "height": null,
-     "value": 300014,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1820424,
-     "name": "Luke Becvinovski",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 43,
-     "age": 17,
-     "born": "2009-05-04",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2347501,
-     "name": "Noah Hooper",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 48,
-     "age": 16,
-     "born": "2010-06-17",
-     "country": "Australia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
-   "coachHistory": [
-    {
-     "name": "John Hutchinson",
-     "firstSeen": "2026-10-16"
-    }
-   ],
-   "history": {
-    "110616": {
-     "name": "Andrew Redmayne",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "207021": {
-     "name": "Trent Sainsbury",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "424603": {
-     "name": "Storm Roux",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1030312": {
-     "name": "Kristian Popović",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1125140": {
-     "name": "Ali Auglah",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1169591": {
-     "name": "John-Kymani Gordon",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1170521": {
-     "name": "Lucas Mauragis",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1315433": {
-     "name": "Harrison Steele",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1316579": {
-     "name": "Chris Donnell",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1414871": {
-     "name": "Diesel Herrington",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1565719": {
-     "name": "Dylan Peraić-Cullen",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1603555": {
-     "name": "Bailey Brandtman",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1635566": {
-     "name": "Oliver Lavale",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1678528": {
-     "name": "Haine Eames",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1678529": {
-     "name": "Arthur De Lima",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1686125": {
-     "name": "Jai Ajanovic",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1797425": {
-     "name": "Noah McCann",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1817689": {
-     "name": "Rufai Abubakar",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1820424": {
-     "name": "Luke Becvinovski",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1824097": {
-     "name": "Gabriel Tilo",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1824871": {
-     "name": "Presley Ortiz",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1833005": {
-     "name": "Shumba Mutokoyi",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "1949001": {
-     "name": "Jesse Mantell",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2308260": {
-     "name": "Stevan Rujak",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2347479": {
-     "name": "Alexander Bolton",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2347501": {
-     "name": "Noah Hooper",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2353149": {
-     "name": "Daniel Scarlet",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
-    },
-    "2384391": {
-     "name": "Ty Mckibbin",
-     "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -4129,7 +2364,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Wrist injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1307327,
@@ -4137,7 +2377,7 @@
      "role": "keepers",
      "position": "GK",
      "number": 12,
-     "age": 29,
+     "age": 30,
      "born": "1996-10-27",
      "country": "Australia",
      "height": 190,
@@ -4205,7 +2445,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 523747,
@@ -4357,7 +2602,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1621335,
@@ -4490,7 +2740,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "30/06/2027",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1539120,
@@ -4509,7 +2764,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1069829,
@@ -4553,7 +2813,7 @@
      "id": 1079940,
      "name": "Al Hassan Touré",
      "role": "attackers",
-     "position": "LM,RW,LW",
+     "position": "RW,LM,LW",
      "number": 35,
      "age": 26,
      "born": "2000-05-30",
@@ -4588,7 +2848,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Patrick Kisnorbo",
@@ -4599,130 +2859,1310 @@
     "161657": {
      "name": "Rhyan Grant",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "396259": {
      "name": "Ben Garuccio",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "523747": {
      "name": "Takahiro Sekine",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "800817": {
      "name": "Víctor Campuzano",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1069829": {
      "name": "Gabriel Popovic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1079940": {
      "name": "Al Hassan Touré",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1101031": {
      "name": "Jordan Courtney-Perkins",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1217249": {
      "name": "Jake Hollman",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1307327": {
      "name": "Harrison Devenish-Meares",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1312751": {
      "name": "Alexandar Popovic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1315434": {
      "name": "Jacob Farrell",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1338845": {
      "name": "Oriola Sunday",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1417672": {
      "name": "Rhys Youlley",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1539120": {
      "name": "Abel Walatee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565861": {
      "name": "Gus Hoefsloot",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565867": {
      "name": "Wataru Kamijo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1572125": {
      "name": "Joe Lacey",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1621335": {
      "name": "Tiago Quintal",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1637273": {
      "name": "Marin France",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1648069": {
      "name": "James Overy",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1720106": {
      "name": "Mathias Macallister",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823245": {
      "name": "Nickolas Alfaro",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823246": {
      "name": "Tyler Williams",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823247": {
      "name": "Akol Akon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2108921": {
      "name": "Ethan Dyer",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
+  },
+  "Auckland FC": {
+   "fotmobName": "Auckland FC",
+   "fotmobId": 1642068,
+   "coach": "Pedro Moreira",
+   "players": [
+    {
+     "id": 848317,
+     "name": "Michael Woud",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 27,
+     "born": "1999-01-16",
+     "country": "New Zealand",
+     "height": 196,
+     "value": 207209,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1541878,
+     "name": "Joseph Knowles",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 30,
+     "age": 21,
+     "born": "2004-11-02",
+     "country": "New Zealand",
+     "height": 188,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 116645,
+     "name": "Hiroki Sakai",
+     "role": "defenders",
+     "position": "RB,CB,RWB",
+     "number": 2,
+     "age": 36,
+     "born": "1990-04-12",
+     "country": "Japan",
+     "height": 185,
+     "value": 111465,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1053731,
+     "name": "Nando Pijnaker",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 27,
+     "born": "1999-02-25",
+     "country": "New Zealand",
+     "height": 191,
+     "value": 135593,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 825593,
+     "name": "Francis de Vries",
+     "role": "defenders",
+     "position": "LB",
+     "number": 15,
+     "age": 31,
+     "born": "1994-11-28",
+     "country": "New Zealand",
+     "height": 188,
+     "value": 381805,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1013276,
+     "name": "Callan Elliot",
+     "role": "defenders",
+     "position": "RB,LB,LWB,RWB",
+     "number": 17,
+     "age": 27,
+     "born": "1999-07-07",
+     "country": "New Zealand",
+     "height": 177,
+     "value": 143622,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 419514,
+     "name": "Aaron Calver",
+     "role": "defenders",
+     "position": "CB",
+     "number": 28,
+     "age": 30,
+     "born": "1996-01-12",
+     "country": "Australia",
+     "height": 186,
+     "value": 106707,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 312764,
+     "name": "Cameron Howieson",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 7,
+     "age": 31,
+     "born": "1994-12-22",
+     "country": "New Zealand",
+     "height": 180,
+     "value": 129798,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Calf injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 206847,
+     "name": "Luis Felipe Gallegos",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 8,
+     "age": 34,
+     "born": "1991-12-03",
+     "country": "Chile",
+     "height": 173,
+     "value": 119729,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1565865,
+     "name": "Lachlan Bayliss",
+     "role": "midfielders",
+     "position": "CAM,CM,ST",
+     "number": 10,
+     "age": 24,
+     "born": "2002-07-24",
+     "country": "New Zealand",
+     "height": 178,
+     "value": 461359,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1566308,
+     "name": "Oliver Middleton",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 19,
+     "age": 21,
+     "born": "2005-09-19",
+     "country": "New Zealand",
+     "height": 180,
+     "value": 182646,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 760713,
+     "name": "Jake Brimmer",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 22,
+     "age": 28,
+     "born": "1998-04-03",
+     "country": "Malta",
+     "height": 169,
+     "value": 324221,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 676431,
+     "name": "Logan Rogerson",
+     "role": "midfielders",
+     "position": "RM,RW,LW,LM",
+     "number": 27,
+     "age": 28,
+     "born": "1998-05-28",
+     "country": "New Zealand",
+     "height": 182,
+     "value": 188176,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 845381,
+     "name": "Lachlan Brook",
+     "role": "midfielders",
+     "position": "RM,CAM,RW,ST",
+     "number": 77,
+     "age": 25,
+     "born": "2001-02-08",
+     "country": "Australia",
+     "height": 178,
+     "value": 518965,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 609501,
+     "name": "Sam Cosgrove",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 29,
+     "born": "1996-12-02",
+     "country": "England",
+     "height": 194,
+     "value": 389409,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "coachHistory": [
+    {
+     "name": "Pedro Moreira",
+     "firstSeen": "2026-10-16"
+    }
+   ],
+   "history": {
+    "116645": {
+     "name": "Hiroki Sakai",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "206847": {
+     "name": "Luis Felipe Gallegos",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "312764": {
+     "name": "Cameron Howieson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "419514": {
+     "name": "Aaron Calver",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "609501": {
+     "name": "Sam Cosgrove",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "676431": {
+     "name": "Logan Rogerson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "760713": {
+     "name": "Jake Brimmer",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "825593": {
+     "name": "Francis de Vries",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "845381": {
+     "name": "Lachlan Brook",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "848317": {
+     "name": "Michael Woud",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1013276": {
+     "name": "Callan Elliot",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1053731": {
+     "name": "Nando Pijnaker",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1541878": {
+     "name": "Joseph Knowles",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1565865": {
+     "name": "Lachlan Bayliss",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1566308": {
+     "name": "Oliver Middleton",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    }
+   },
+   "left": []
+  },
+  "Newcastle Jets": {
+   "fotmobName": "Newcastle Jets",
+   "fotmobId": 6454,
+   "coach": "Mark Milligan",
+   "players": [
+    {
+     "id": 1012192,
+     "name": "James Delianov",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 27,
+     "born": "1999-10-20",
+     "country": "Australia",
+     "height": 188,
+     "value": 245908,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1750126,
+     "name": "Alex Nassiep",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 20,
+     "age": 20,
+     "born": "2006-05-17",
+     "country": "Australia",
+     "height": 194,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1740783,
+     "name": "Jordan Baylis",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 40,
+     "age": 21,
+     "born": "2005-10-17",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 316694,
+     "name": "Alex Grant",
+     "role": "defenders",
+     "position": "CB",
+     "number": 2,
+     "age": 32,
+     "born": "1994-01-23",
+     "country": "Australia",
+     "height": 191,
+     "value": 142872,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 189927,
+     "name": "Joe Shaughnessy",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 34,
+     "born": "1992-07-06",
+     "country": "Republic of Ireland",
+     "height": 183,
+     "value": 100394,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1690873,
+     "name": "Will Kennedy",
+     "role": "defenders",
+     "position": "LB",
+     "number": 16,
+     "age": 21,
+     "born": "2005-02-14",
+     "country": "Australia",
+     "height": null,
+     "value": 281274,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 1437063,
+     "name": "Joel Bertolissio",
+     "role": "defenders",
+     "position": "RB",
+     "number": 22,
+     "age": 23,
+     "born": "2003-05-27",
+     "country": "Australia",
+     "height": null,
+     "value": 643962,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1031032,
+     "name": "Daniel Wilmering",
+     "role": "defenders",
+     "position": "LB",
+     "number": 23,
+     "age": 25,
+     "born": "2000-12-19",
+     "country": "Australia",
+     "height": 178,
+     "value": 305211,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2236975,
+     "name": "Angus Reid",
+     "role": "defenders",
+     "position": "CB",
+     "number": 34,
+     "age": 19,
+     "born": "2007-03-18",
+     "country": "Australia",
+     "height": 185,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1220079,
+     "name": "Thomas Aquilina",
+     "role": "defenders",
+     "position": "RB,CB",
+     "number": 39,
+     "age": 25,
+     "born": "2001-02-02",
+     "country": "Australia",
+     "height": 178,
+     "value": 295763,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1823250,
+     "name": "Max Cooper",
+     "role": "defenders",
+     "position": "CB",
+     "number": 42,
+     "age": 19,
+     "born": "2007-01-14",
+     "country": "Australia",
+     "height": null,
+     "value": 340629,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 2237477,
+     "name": "Kaiden Walshe",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 65,
+     "age": 16,
+     "born": "2010-04-22",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1543679,
+     "name": "Zane Schreiber",
+     "role": "midfielders",
+     "position": "CM,CDM,CAM",
+     "number": 6,
+     "age": 21,
+     "born": "2005-05-31",
+     "country": "Australia",
+     "height": null,
+     "value": 521820,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 590367,
+     "name": "Max Burgess",
+     "role": "midfielders",
+     "position": "CDM,CAM,CM",
+     "number": 14,
+     "age": 31,
+     "born": "1995-01-16",
+     "country": "Australia",
+     "height": 185,
+     "value": 142038,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1312639,
+     "name": "Alex Badolato",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 19,
+     "age": 21,
+     "born": "2005-02-23",
+     "country": "Australia",
+     "height": 175,
+     "value": 482958,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1750231,
+     "name": "Alex Nunes",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 24,
+     "age": 19,
+     "born": "2007-02-22",
+     "country": "Australia",
+     "height": null,
+     "value": 398279,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2237422,
+     "name": "Julian Recchia",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 27,
+     "age": 18,
+     "born": "2008-10-06",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1688565,
+     "name": "Will Dobson",
+     "role": "midfielders",
+     "position": "CAM,LW,RW,CM",
+     "number": 28,
+     "age": 19,
+     "born": "2007-09-07",
+     "country": "Australia",
+     "height": null,
+     "value": 803146,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2237582,
+     "name": "Nicholas Badolato",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 52,
+     "age": 19,
+     "born": "2007-10-29",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1208173,
+     "name": "Patrick Wood",
+     "role": "attackers",
+     "position": "ST",
+     "number": 8,
+     "age": 24,
+     "born": "2002-09-16",
+     "country": "Australia",
+     "height": 178,
+     "value": 355739,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 521755,
+     "name": "Nikos Vergos",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 30,
+     "born": "1996-01-13",
+     "country": "Greece",
+     "height": 184,
+     "value": 261902,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 568580,
+     "name": "Zach Clough",
+     "role": "attackers",
+     "position": "LW",
+     "number": 10,
+     "age": 31,
+     "born": "1995-03-08",
+     "country": "England",
+     "height": 170,
+     "value": 329537,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 471149,
+     "name": "Joe Lolley",
+     "role": "attackers",
+     "position": "RW,RM",
+     "number": 11,
+     "age": 34,
+     "born": "1992-08-25",
+     "country": "England",
+     "height": 178,
+     "value": 544120,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1824403,
+     "name": "Ethan Debono",
+     "role": "attackers",
+     "position": "RM",
+     "number": 17,
+     "age": 20,
+     "born": "2005-12-15",
+     "country": "Malta",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1750237,
+     "name": "Oscar Fryer",
+     "role": "attackers",
+     "position": "RW",
+     "number": 25,
+     "age": 20,
+     "born": "2006-04-16",
+     "country": "Australia",
+     "height": null,
+     "value": 243282,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 1824856,
+     "name": "Oscar Gonzalez",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 26,
+     "age": 18,
+     "born": "2008-07-21",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2332182,
+     "name": "Jake Goodwin",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 29,
+     "age": 19,
+     "born": "2007-08-05",
+     "country": "Australia",
+     "height": 178,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1869398,
+     "name": "Oliver Cockle",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 37,
+     "age": 17,
+     "born": "2008-11-22",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1799002,
+     "name": "Xavier Bertoncello",
+     "role": "attackers",
+     "position": "LW,RW",
+     "number": 43,
+     "age": 21,
+     "born": "2005-10-08",
+     "country": "Australia",
+     "height": null,
+     "value": 457166,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2237454,
+     "name": "Callan Prestwidge",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 63,
+     "age": 18,
+     "born": "2008-08-31",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1824552,
+     "name": "Jesse Hill",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 64,
+     "age": 19,
+     "born": "2007-02-11",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "coachHistory": [
+    {
+     "name": "Mark Milligan",
+     "firstSeen": "2026-10-16"
+    }
+   ],
+   "history": {
+    "189927": {
+     "name": "Joe Shaughnessy",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "316694": {
+     "name": "Alex Grant",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "471149": {
+     "name": "Joe Lolley",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "521755": {
+     "name": "Nikos Vergos",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "568580": {
+     "name": "Zach Clough",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "590367": {
+     "name": "Max Burgess",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1012192": {
+     "name": "James Delianov",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1031032": {
+     "name": "Daniel Wilmering",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1208173": {
+     "name": "Patrick Wood",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1220079": {
+     "name": "Thomas Aquilina",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1312639": {
+     "name": "Alex Badolato",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1437063": {
+     "name": "Joel Bertolissio",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1543679": {
+     "name": "Zane Schreiber",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1688565": {
+     "name": "Will Dobson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1690873": {
+     "name": "Will Kennedy",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1740783": {
+     "name": "Jordan Baylis",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1750126": {
+     "name": "Alex Nassiep",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1750231": {
+     "name": "Alex Nunes",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1750237": {
+     "name": "Oscar Fryer",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1799002": {
+     "name": "Xavier Bertoncello",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1823250": {
+     "name": "Max Cooper",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1824403": {
+     "name": "Ethan Debono",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1824552": {
+     "name": "Jesse Hill",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1824856": {
+     "name": "Oscar Gonzalez",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1869398": {
+     "name": "Oliver Cockle",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2236975": {
+     "name": "Angus Reid",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2237422": {
+     "name": "Julian Recchia",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2237454": {
+     "name": "Callan Prestwidge",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2237477": {
+     "name": "Kaiden Walshe",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2237582": {
+     "name": "Nicholas Badolato",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2332182": {
+     "name": "Jake Goodwin",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2339623": {
+     "name": "Archie Brideson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-23"
+    }
+   },
+   "left": [
+    {
+     "id": "2339623",
+     "name": "Archie Brideson",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-23"
+    }
+   ]
   },
   "Melbourne Victory": {
    "fotmobName": "Melbourne Victory",
@@ -4879,7 +4319,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Back injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1565855,
@@ -4904,7 +4349,7 @@
      "id": 1554828,
      "name": "Harrison Shillington",
      "role": "defenders",
-     "position": "RB",
+     "position": "RB,LB",
      "number": 36,
      "age": 21,
      "born": "2005-06-30",
@@ -4936,7 +4381,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring strain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1332670,
@@ -4961,7 +4411,7 @@
      "id": 814530,
      "name": "Denis Genreau",
      "role": "midfielders",
-     "position": "CDM,CM,CAM",
+     "position": "CDM,CM",
      "number": 10,
      "age": 27,
      "born": "1999-05-21",
@@ -5186,7 +4636,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Giovanni Savarese",
@@ -5197,122 +4647,122 @@
     "192303": {
      "name": "Jason Davidson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "207037": {
      "name": "Brendan Hamill",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "240056": {
      "name": "Jack Duncan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "276711": {
      "name": "Philipp Ziereis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "369761": {
      "name": "Tom Lockyer",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "814530": {
      "name": "Denis Genreau",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "821489": {
      "name": "Harry Sawyer",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "915630": {
      "name": "Louis D'Arrigo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "979800": {
      "name": "Guillermo May",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1224986": {
      "name": "Keegan Jelacic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1241593": {
      "name": "Charles Nduka",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1332670": {
      "name": "Jordi Valadon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1356317": {
      "name": "Jack Warshawsky",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1368342": {
      "name": "Clarismario Santos",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1467027": {
      "name": "Joshua Inserra",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1534818": {
      "name": "Matthew Grimaldi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1554828": {
      "name": "Harrison Shillington",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1565855": {
      "name": "Franco Lino",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686140": {
      "name": "Daniel Graskoski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1702590": {
      "name": "Michael Ghossaini",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823286": {
      "name": "Jack Mihailidis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823288": {
      "name": "Oliver Dragicevic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823290": {
      "name": "Xavier Stella",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2386415": {
      "name": "Malik Olukhale",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -5491,7 +4941,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Collateral ligament injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1686128,
@@ -5548,13 +5003,18 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Leg injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 185014,
      "name": "Mathew Leckie",
      "role": "midfielders",
-     "position": "CM,RM",
+     "position": "RM",
      "number": 7,
      "age": 35,
      "born": "1991-02-04",
@@ -5592,7 +5052,7 @@
      "id": 421328,
      "name": "Awer Mabil",
      "role": "midfielders",
-     "position": "RM,RW",
+     "position": "RM,RW,LW",
      "number": 11,
      "age": 31,
      "born": "1995-09-15",
@@ -5611,7 +5071,7 @@
      "id": 1750128,
      "name": "Besian Kutleshi",
      "role": "midfielders",
-     "position": "RB,CM,CDM",
+     "position": "RB,CDM,CM",
      "number": 14,
      "age": 17,
      "born": "2009-02-28",
@@ -5662,7 +5122,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1688569,
@@ -5719,13 +5184,18 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 398901,
      "name": "Andrew Nabbout",
      "role": "attackers",
-     "position": "RW,ST",
+     "position": "ST,RW",
      "number": 15,
      "age": 33,
      "born": "1992-12-17",
@@ -5757,7 +5227,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle sprain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1554827,
@@ -5839,7 +5314,7 @@
      "id": 431277,
      "name": "Takeshi Kanamori",
      "role": "attackers",
-     "position": "LW,CM,RW",
+     "position": "LW,RW,CM",
      "number": 77,
      "age": 32,
      "born": "1994-04-04",
@@ -5855,7 +5330,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Aurelio Vidmar",
@@ -5866,142 +5341,884 @@
     "185014": {
      "name": "Mathew Leckie",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "192735": {
      "name": "Aziz Behich",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "279274": {
      "name": "Julio Cascante",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "343316": {
      "name": "Emiliano Marcondes",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "398901": {
      "name": "Andrew Nabbout",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "421328": {
      "name": "Awer Mabil",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "431277": {
      "name": "Takeshi Kanamori",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "630865": {
      "name": "Harrison Delbridge",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "764133": {
      "name": "Matheus Rossetto",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "907799": {
      "name": "Nathaniel Atkinson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1020310": {
      "name": "Macklin Freke",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1217272": {
      "name": "Alessandro Lopane",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1261990": {
      "name": "Max Caputo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1327400": {
      "name": "James Nieuwenhuizen",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1531562": {
      "name": "Quinn MacNicol",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1554827": {
      "name": "Medin Memeti",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1561040": {
      "name": "Benjamin Mazzeo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686128": {
      "name": "Jayden Necovski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686130": {
      "name": "Peter Antoniou",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686133": {
      "name": "Lawrence Wong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1688569": {
      "name": "Kavian Rahmani",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1750128": {
      "name": "Besian Kutleshi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1814029": {
      "name": "Mathew Baker",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1814030": {
      "name": "Liam Bonetig",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1814032": {
      "name": "Ryan Kalms",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1820423": {
      "name": "Beckham Baker",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1820425": {
      "name": "Akeem Gerald",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2384319": {
      "name": "Roland Ballah",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
+    }
+   },
+   "left": []
+  },
+  "Central Coast Mariners": {
+   "fotmobName": "Central Coast Mariners",
+   "fotmobId": 8164,
+   "coach": "John Hutchinson",
+   "players": [
+    {
+     "id": 1817689,
+     "name": "Rufai Abubakar",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 20,
+     "age": 18,
+     "born": "2008-01-05",
+     "country": "Nigeria",
+     "height": 177,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 110616,
+     "name": "Andrew Redmayne",
+     "role": "keepers",
+     "position": "GK",
+     "number": 30,
+     "age": 37,
+     "born": "1989-01-13",
+     "country": "Australia",
+     "height": 194,
+     "value": 131561,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1565719,
+     "name": "Dylan Peraić-Cullen",
+     "role": "keepers",
+     "position": "GK",
+     "number": 40,
+     "age": 20,
+     "born": "2006-07-25",
+     "country": "Australia",
+     "height": 196,
+     "value": 699563,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1686125,
+     "name": "Jai Ajanovic",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 50,
+     "age": 18,
+     "born": "2008-08-31",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1414871,
+     "name": "Diesel Herrington",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 22,
+     "born": "2004-08-04",
+     "country": "Australia",
+     "height": 188,
+     "value": 337982,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 207021,
+     "name": "Trent Sainsbury",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 34,
+     "born": "1992-01-05",
+     "country": "Australia",
+     "height": 184,
+     "value": 105463,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1170521,
+     "name": "Lucas Mauragis",
+     "role": "defenders",
+     "position": "LB,LW",
+     "number": 5,
+     "age": 25,
+     "born": "2001-09-04",
+     "country": "Australia",
+     "height": 181,
+     "value": 273580,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1797425,
+     "name": "Noah McCann",
+     "role": "defenders",
+     "position": "CB",
+     "number": 12,
+     "age": 21,
+     "born": "2005-09-01",
+     "country": "Scotland",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 424603,
+     "name": "Storm Roux",
+     "role": "defenders",
+     "position": "RB",
+     "number": 15,
+     "age": 33,
+     "born": "1993-01-13",
+     "country": "New Zealand",
+     "height": 181,
+     "value": 117291,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2353149,
+     "name": "Daniel Scarlet",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 21,
+     "age": 18,
+     "born": "2007-11-24",
+     "country": "Jamaica",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1030312,
+     "name": "Kristian Popović",
+     "role": "defenders",
+     "position": "CB",
+     "number": 29,
+     "age": 25,
+     "born": "2001-08-14",
+     "country": "Australia",
+     "height": 184,
+     "value": 231798,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 1833005,
+     "name": "Shumba Mutokoyi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 41,
+     "age": 18,
+     "born": "2008-08-13",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2407288,
+     "name": "Callum McCaskey",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 46,
+     "age": 17,
+     "born": "2009-03-20",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2308260,
+     "name": "Stevan Rujak",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 47,
+     "age": 17,
+     "born": "2009-08-27",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1824097,
+     "name": "Gabriel Tilo",
+     "role": "defenders",
+     "position": "CB",
+     "number": 49,
+     "age": 18,
+     "born": "2008-10-18",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2384391,
+     "name": "Ty Mckibbin",
+     "role": "defenders",
+     "position": "RB",
+     "number": 51,
+     "age": 19,
+     "born": "2007-05-25",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1678528,
+     "name": "Haine Eames",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 6,
+     "age": 18,
+     "born": "2008-02-27",
+     "country": "Australia",
+     "height": null,
+     "value": 840584,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1316579,
+     "name": "Chris Donnell",
+     "role": "midfielders",
+     "position": "CM,CDM,CAM",
+     "number": 8,
+     "age": 22,
+     "born": "2004-01-24",
+     "country": "Australia",
+     "height": null,
+     "value": 240894,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1315433,
+     "name": "Harrison Steele",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 16,
+     "age": 24,
+     "born": "2002-10-12",
+     "country": "Australia",
+     "height": null,
+     "value": 219845,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1678529,
+     "name": "Arthur De Lima",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 22,
+     "age": 19,
+     "born": "2007-06-11",
+     "country": "Australia",
+     "height": null,
+     "value": 648491,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1949001,
+     "name": "Jesse Mantell",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 45,
+     "age": 19,
+     "born": "2007-10-10",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1125140,
+     "name": "Ali Auglah",
+     "role": "midfielders",
+     "position": "RM,RW,CAM",
+     "number": 72,
+     "age": 24,
+     "born": "2002-03-11",
+     "country": "Australia",
+     "height": 175,
+     "value": 209477,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1635566,
+     "name": "Oliver Lavale",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 21,
+     "born": "2005-04-05",
+     "country": "Australia",
+     "height": null,
+     "value": 292145,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1169591,
+     "name": "John-Kymani Gordon",
+     "role": "attackers",
+     "position": "LW",
+     "number": 11,
+     "age": 23,
+     "born": "2003-02-13",
+     "country": "England",
+     "height": 181,
+     "value": 233817,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1824871,
+     "name": "Presley Ortiz",
+     "role": "attackers",
+     "position": "ST",
+     "number": 17,
+     "age": 23,
+     "born": "2003-03-04",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1603555,
+     "name": "Bailey Brandtman",
+     "role": "attackers",
+     "position": "LW,ST,RW,LM",
+     "number": 37,
+     "age": 21,
+     "born": "2005-06-28",
+     "country": "Australia",
+     "height": null,
+     "value": 300014,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2347479,
+     "name": "Alexander Bolton",
+     "role": "attackers",
+     "position": "LW",
+     "number": 39,
+     "age": 18,
+     "born": "2008-05-12",
+     "country": "Australia",
+     "height": 171,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2407289,
+     "name": "Max Naylor",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 42,
+     "age": 18,
+     "born": "2008-02-25",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1820424,
+     "name": "Luke Becvinovski",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 43,
+     "age": 17,
+     "born": "2009-05-04",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2347501,
+     "name": "Noah Hooper",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 48,
+     "age": 16,
+     "born": "2010-06-17",
+     "country": "Australia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "coachHistory": [
+    {
+     "name": "John Hutchinson",
+     "firstSeen": "2026-10-16"
+    }
+   ],
+   "history": {
+    "110616": {
+     "name": "Andrew Redmayne",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "207021": {
+     "name": "Trent Sainsbury",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "424603": {
+     "name": "Storm Roux",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1030312": {
+     "name": "Kristian Popović",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1125140": {
+     "name": "Ali Auglah",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1169591": {
+     "name": "John-Kymani Gordon",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1170521": {
+     "name": "Lucas Mauragis",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1315433": {
+     "name": "Harrison Steele",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1316579": {
+     "name": "Chris Donnell",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1414871": {
+     "name": "Diesel Herrington",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1565719": {
+     "name": "Dylan Peraić-Cullen",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1603555": {
+     "name": "Bailey Brandtman",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1635566": {
+     "name": "Oliver Lavale",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1678528": {
+     "name": "Haine Eames",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1678529": {
+     "name": "Arthur De Lima",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1686125": {
+     "name": "Jai Ajanovic",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1797425": {
+     "name": "Noah McCann",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1817689": {
+     "name": "Rufai Abubakar",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1820424": {
+     "name": "Luke Becvinovski",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1824097": {
+     "name": "Gabriel Tilo",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1824871": {
+     "name": "Presley Ortiz",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1833005": {
+     "name": "Shumba Mutokoyi",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "1949001": {
+     "name": "Jesse Mantell",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2308260": {
+     "name": "Stevan Rujak",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2347479": {
+     "name": "Alexander Bolton",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2347501": {
+     "name": "Noah Hooper",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2353149": {
+     "name": "Daniel Scarlet",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-30"
+    },
+    "2384391": {
+     "name": "Ty Mckibbin",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-30"
+    },
+    "2407288": {
+     "name": "Callum McCaskey",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-10-30"
+    },
+    "2407289": {
+     "name": "Max Naylor",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -6085,7 +6302,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Leg injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1432502,
@@ -6180,7 +6402,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Broken leg",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1724151,
@@ -6193,25 +6420,6 @@
      "country": "Australia",
      "height": null,
      "value": 409635,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1713669,
-     "name": "Harry Crawford",
-     "role": "defenders",
-     "position": "RB,RW",
-     "number": 58,
-     "age": 19,
-     "born": "2007-02-03",
-     "country": "Australia",
-     "height": null,
-     "value": 411392,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6351,7 +6559,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1409525,
@@ -6465,7 +6678,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1686105,
@@ -6503,7 +6721,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "30/11/2026",
+      "name": "Collateral ligament injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 2333079,
@@ -6522,7 +6745,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1894010,
@@ -6535,6 +6763,25 @@
      "country": "Australia",
      "height": null,
      "value": 387346,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1713669,
+     "name": "Harry Crawford",
+     "role": "attackers",
+     "position": "RW,RB",
+     "number": 58,
+     "age": 19,
+     "born": "2007-02-03",
+     "country": "Australia",
+     "height": null,
+     "value": 411392,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6582,7 +6829,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Airton Andrioli",
@@ -6593,152 +6840,152 @@
     "2855": {
      "name": "Juan Muñiz",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "150589": {
      "name": "Bart Vriends",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "202343": {
      "name": "Anselmo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "279120": {
      "name": "Joshua Smits",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "305033": {
      "name": "Craig Goodwin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "497657": {
      "name": "Ryan Kitto",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "823541": {
      "name": "Dylan Pierias",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "874601": {
      "name": "Ben Folami",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1016844": {
      "name": "Jay Barnett",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1101267": {
      "name": "Luke Đuzel",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1225025": {
      "name": "Jonny Yull",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1352508": {
      "name": "Max Vartuli",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1352512": {
      "name": "Ethan Cox",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1394949": {
      "name": "Ajak Riak",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1409174": {
      "name": "Jake Najdovski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1409525": {
      "name": "Ethan Alagich",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1432502": {
      "name": "Panagiotis Kikianis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686104": {
      "name": "Fabian Talladira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686105": {
      "name": "Amlani Tatu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686108": {
      "name": "Malual Nichola",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686110": {
      "name": "Feyzo Kasumovic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686120": {
      "name": "Jacob Brazete",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1689513": {
      "name": "Ryan White",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1713669": {
      "name": "Harry Crawford",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1724151": {
      "name": "Sotirios Phillis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823326": {
      "name": "Israel Mbula-Monga",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823327": {
      "name": "Joey Garuccio",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823328": {
      "name": "Vinko Stanisic",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1894010": {
      "name": "Brody Burkitt",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2333079": {
      "name": "Mitchell Smith",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []
@@ -6822,7 +7069,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1101260,
@@ -6898,7 +7150,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1686121,
@@ -6923,7 +7180,7 @@
      "id": 1607419,
      "name": "Andriano Lebib",
      "role": "defenders",
-     "position": "CB",
+     "position": "LB,CB",
      "number": 24,
      "age": 20,
      "born": "2006-01-29",
@@ -7034,25 +7291,6 @@
      "injury": null
     },
     {
-     "id": 1409554,
-     "name": "Jaiden Kucharski",
-     "role": "midfielders",
-     "position": "RM,ST",
-     "number": 9,
-     "age": 24,
-     "born": "2002-06-25",
-     "country": "Australia",
-     "height": null,
-     "value": 377084,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1312753,
      "name": "Henry Hore",
      "role": "midfielders",
@@ -7069,7 +7307,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1686122,
@@ -7164,7 +7407,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1875183,
@@ -7196,6 +7444,25 @@
      "country": "North Macedonia",
      "height": null,
      "value": 207181,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1409554,
+     "name": "Jaiden Kucharski",
+     "role": "attackers",
+     "position": "ST,RM",
+     "number": 9,
+     "age": 24,
+     "born": "2002-06-25",
+     "country": "Australia",
+     "height": null,
+     "value": 377084,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7246,7 +7513,7 @@
      "id": 2360187,
      "name": "Pieter Jacobsz",
      "role": "attackers",
-     "position": "Attacker",
+     "position": "ST",
      "number": 17,
      "age": 25,
      "born": "2001-05-31",
@@ -7278,7 +7545,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1752002,
@@ -7319,7 +7591,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-24T09:51:13.029Z",
+   "fetchedAt": "2026-10-30T09:04:03.955Z",
    "coachHistory": [
     {
      "name": "Adam David Griffiths",
@@ -7330,152 +7602,152 @@
     "75688": {
      "name": "Jay O'Shea",
      "firstSeen": "2026-10-24",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "229675": {
      "name": "Scott Wootton",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "309646": {
      "name": "Brandon O'Neill",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "494435": {
      "name": "Tom Lawrence",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "505932": {
      "name": "Brian Kaltak",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "624510": {
      "name": "Lachlan Jackson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "915413": {
      "name": "Matthew Sutton",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1101136": {
      "name": "Trent Ostler",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1101260": {
      "name": "Sam Sutton",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1101904": {
      "name": "Stefan Colakovski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1123206": {
      "name": "Calem Nieuwenhof",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1312753": {
      "name": "Henry Hore",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1409554": {
      "name": "Jaiden Kucharski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1420208": {
      "name": "Matt Dench",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1435048": {
      "name": "Matthew Ellis",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1607419": {
      "name": "Andriano Lebib",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1610770": {
      "name": "Charbel Shamoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686121": {
      "name": "Cher Deng",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1686122": {
      "name": "Lucas Scicluna",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1701526": {
      "name": "William Freney",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1702865": {
      "name": "Daniel Solsky",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1752002": {
      "name": "Sebastian Despotovski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1791878": {
      "name": "Tadiwanashe Kuzamba",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1823248": {
      "name": "Oliver Evans",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1838265": {
      "name": "Ryan Warner",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1853368": {
      "name": "Riley Foxe",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1875183": {
      "name": "Giovanni De Abreu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "1921661": {
      "name": "Anthony Didulica",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2360187": {
      "name": "Pieter Jacobsz",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     },
     "2360230": {
      "name": "Sebastian Kukucka",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-24"
+     "lastSeen": "2026-10-30"
     }
    },
    "left": []

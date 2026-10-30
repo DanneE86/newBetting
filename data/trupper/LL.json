@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "LL",
  "fotmobId": 87,
  "source": "FotMob",
@@ -2179,7 +2179,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "01/11/2026",
+      "name": "Muscle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 676533,
@@ -10519,7 +10524,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 924300,

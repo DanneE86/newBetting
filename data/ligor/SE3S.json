@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "SE3S",
  "fotmobId": 169,
  "name": "Ettan",
@@ -11,13 +11,13 @@
    "fotmobName": "Trelleborgs FF",
    "fotmobId": 8333,
    "group": "Soedra",
-   "played": 27,
-   "won": 18,
+   "played": 28,
+   "won": 19,
    "drawn": 6,
    "lost": 3,
-   "goals": "61-30",
-   "gd": 31,
-   "pts": 60
+   "goals": "64-31",
+   "gd": 33,
+   "pts": 63
   },
   {
    "rank": 2,
@@ -25,41 +25,41 @@
    "fotmobName": "Hässleholms IF",
    "fotmobId": 418688,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 16,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 8,
-   "goals": "49-31",
+   "goals": "50-32",
    "gd": 18,
-   "pts": 51
+   "pts": 52
   },
   {
    "rank": 3,
-   "team": "Åtvidaberg",
-   "fotmobName": "Åtvidaberg",
-   "fotmobId": 6622,
-   "group": "Soedra",
-   "played": 27,
-   "won": 13,
-   "drawn": 8,
-   "lost": 6,
-   "goals": "51-38",
-   "gd": 13,
-   "pts": 47
-  },
-  {
-   "rank": 4,
    "team": "Lund",
    "fotmobName": "Lunds BK",
    "fotmobId": 6174,
    "group": "Soedra",
-   "played": 27,
-   "won": 12,
+   "played": 28,
+   "won": 13,
    "drawn": 8,
    "lost": 7,
-   "goals": "52-36",
-   "gd": 16,
-   "pts": 44
+   "goals": "56-37",
+   "gd": 19,
+   "pts": 47
+  },
+  {
+   "rank": 4,
+   "team": "Åtvidaberg",
+   "fotmobName": "Åtvidaberg",
+   "fotmobId": 6622,
+   "group": "Soedra",
+   "played": 28,
+   "won": 13,
+   "drawn": 8,
+   "lost": 7,
+   "goals": "52-41",
+   "gd": 11,
+   "pts": 47
   },
   {
    "rank": 5,
@@ -67,12 +67,12 @@
    "fotmobName": "AFC Malmoe",
    "fotmobId": 1331261,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 12,
    "drawn": 8,
-   "lost": 7,
-   "goals": "50-39",
-   "gd": 11,
+   "lost": 8,
+   "goals": "52-42",
+   "gd": 10,
    "pts": 44
   },
   {
@@ -81,30 +81,44 @@
    "fotmobName": "FC Rosengård",
    "fotmobId": 6170,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 10,
    "drawn": 10,
-   "lost": 7,
-   "goals": "43-39",
-   "gd": 4,
+   "lost": 8,
+   "goals": "44-41",
+   "gd": 3,
    "pts": 40
   },
   {
    "rank": 7,
+   "team": "Jönköping Södra",
+   "fotmobName": "Jönköping S.",
+   "fotmobId": 8510,
+   "group": "Soedra",
+   "played": 28,
+   "won": 11,
+   "drawn": 6,
+   "lost": 11,
+   "goals": "35-30",
+   "gd": 5,
+   "pts": 39
+  },
+  {
+   "rank": 8,
    "team": "Trollhättan",
    "fotmobName": "Trollhättan FC",
    "fotmobId": 6183,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 10,
    "drawn": 8,
-   "lost": 9,
-   "goals": "46-44",
-   "gd": 2,
+   "lost": 10,
+   "goals": "48-48",
+   "gd": 0,
    "pts": 38
   },
   {
-   "rank": 8,
+   "rank": 9,
    "team": "Tvååker",
    "fotmobName": "Tvååkers IF",
    "fotmobId": 241285,
@@ -118,31 +132,17 @@
    "pts": 38
   },
   {
-   "rank": 9,
-   "team": "Jönköping Södra",
-   "fotmobName": "Jönköping S.",
-   "fotmobId": 8510,
-   "group": "Soedra",
-   "played": 27,
-   "won": 10,
-   "drawn": 6,
-   "lost": 11,
-   "goals": "31-28",
-   "gd": 3,
-   "pts": 36
-  },
-  {
    "rank": 10,
    "team": "BK Olympic",
    "fotmobName": "BK Olympic",
    "fotmobId": 241064,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 11,
    "drawn": 3,
-   "lost": 13,
-   "goals": "52-51",
-   "gd": 1,
+   "lost": 14,
+   "goals": "53-56",
+   "gd": -3,
    "pts": 36
   },
   {
@@ -151,41 +151,41 @@
    "fotmobName": "Skövde AIK",
    "fotmobId": 6153,
    "group": "Soedra",
-   "played": 27,
+   "played": 28,
    "won": 8,
-   "drawn": 10,
+   "drawn": 11,
    "lost": 9,
-   "goals": "35-44",
+   "goals": "36-45",
    "gd": -9,
-   "pts": 34
+   "pts": 35
   },
   {
    "rank": 12,
-   "team": "Eskilsminne",
-   "fotmobName": "Eskilsminne IF",
-   "fotmobId": 303470,
-   "group": "Soedra",
-   "played": 27,
-   "won": 9,
-   "drawn": 6,
-   "lost": 12,
-   "goals": "44-53",
-   "gd": -9,
-   "pts": 33
-  },
-  {
-   "rank": 13,
    "team": "Kristianstad",
    "fotmobName": "Kristianstad FC",
    "fotmobId": 1965,
    "group": "Soedra",
-   "played": 27,
-   "won": 8,
+   "played": 28,
+   "won": 9,
    "drawn": 6,
    "lost": 13,
-   "goals": "32-40",
-   "gd": -8,
-   "pts": 30
+   "goals": "34-41",
+   "gd": -7,
+   "pts": 33
+  },
+  {
+   "rank": 13,
+   "team": "Eskilsminne",
+   "fotmobName": "Eskilsminne IF",
+   "fotmobId": 303470,
+   "group": "Soedra",
+   "played": 28,
+   "won": 9,
+   "drawn": 6,
+   "lost": 13,
+   "goals": "45-57",
+   "gd": -12,
+   "pts": 33
   },
   {
    "rank": 14,
@@ -193,13 +193,13 @@
    "fotmobName": "Laholms FK",
    "fotmobId": 6173,
    "group": "Soedra",
-   "played": 27,
-   "won": 8,
+   "played": 28,
+   "won": 9,
    "drawn": 5,
    "lost": 14,
-   "goals": "34-44",
-   "gd": -10,
-   "pts": 29
+   "goals": "39-45",
+   "gd": -6,
+   "pts": 32
   },
   {
    "rank": 15,
@@ -207,13 +207,13 @@
    "fotmobName": "Ängelholms FF",
    "fotmobId": 8189,
    "group": "Soedra",
-   "played": 27,
-   "won": 5,
+   "played": 28,
+   "won": 6,
    "drawn": 9,
    "lost": 13,
-   "goals": "33-48",
-   "gd": -15,
-   "pts": 24
+   "goals": "36-50",
+   "gd": -14,
+   "pts": 27
   },
   {
    "rank": 16,
@@ -1020,6 +1020,120 @@
     27,
     24,
     -15
+   ],
+   [
+    "Utsikten",
+    16,
+    28,
+    12,
+    -45
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Trelleborg",
+    1,
+    28,
+    63,
+    33
+   ],
+   [
+    "Hässleholm",
+    2,
+    28,
+    52,
+    18
+   ],
+   [
+    "Lund",
+    3,
+    28,
+    47,
+    19
+   ],
+   [
+    "Åtvidaberg",
+    4,
+    28,
+    47,
+    11
+   ],
+   [
+    "AFC Malmö",
+    5,
+    28,
+    44,
+    10
+   ],
+   [
+    "Rosengård",
+    6,
+    28,
+    40,
+    3
+   ],
+   [
+    "Jönköping Södra",
+    7,
+    28,
+    39,
+    5
+   ],
+   [
+    "Trollhättan",
+    8,
+    28,
+    38,
+    0
+   ],
+   [
+    "Tvååker",
+    9,
+    28,
+    38,
+    -3
+   ],
+   [
+    "BK Olympic",
+    10,
+    28,
+    36,
+    -3
+   ],
+   [
+    "Skövde AIK",
+    11,
+    28,
+    35,
+    -9
+   ],
+   [
+    "Kristianstad",
+    12,
+    28,
+    33,
+    -7
+   ],
+   [
+    "Eskilsminne",
+    13,
+    28,
+    33,
+    -12
+   ],
+   [
+    "Laholm",
+    14,
+    28,
+    32,
+    -6
+   ],
+   [
+    "Ängelholm",
+    15,
+    28,
+    27,
+    -14
    ],
    [
     "Utsikten",

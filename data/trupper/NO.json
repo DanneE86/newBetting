@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "NO",
  "fotmobId": 59,
  "source": "FotMob",
@@ -835,7 +835,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1677228,
@@ -2583,7 +2588,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1463470,
@@ -6558,7 +6568,12 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1162511,
@@ -9366,7 +9381,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1048395,

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "BR",
  "fotmobId": 268,
  "source": "FotMob",
@@ -333,7 +333,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 438647,
@@ -371,7 +376,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Eye injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 751198,
@@ -3774,7 +3784,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Pubic bone bruise",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1636609,
@@ -6878,7 +6893,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Injury to the ankle",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1132936,
@@ -7172,7 +7192,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Tonsillitis",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 789877,
@@ -9916,7 +9941,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 638652,
@@ -10717,7 +10747,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Torn knee ligaments",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1459657,
@@ -15335,7 +15370,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Muscle fatigue",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 890637,
@@ -16804,7 +16844,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1738042,
@@ -17190,7 +17235,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Inflammation of ligaments in the knee",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1235079,

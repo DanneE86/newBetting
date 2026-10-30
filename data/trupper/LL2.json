@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "LL2",
  "fotmobId": 140,
  "source": "FotMob",
@@ -6909,7 +6909,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "23/11/2026",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1127218,
@@ -7528,7 +7533,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "01/11/2026",
+      "name": "Ankle surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 717021,
@@ -7762,7 +7772,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "02/11/2026",
+      "name": "Inflammation of the biceps tendon in the thigh",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1422602,
@@ -9275,7 +9290,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Tendon rupture",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1285858,
@@ -11752,7 +11772,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1910012,
@@ -14864,7 +14889,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "01/05/2027",
+      "name": "Cruciate ligament tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1436231,

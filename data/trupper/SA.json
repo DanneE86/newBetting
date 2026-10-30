@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "SA",
  "fotmobId": 55,
  "source": "FotMob",
@@ -715,7 +715,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Cruciate ligament surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 541556,
@@ -4850,7 +4855,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "09/12/2026",
+      "name": "Injury to the ankle",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 612863,
@@ -5631,7 +5641,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Muscle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1684401,
@@ -5934,7 +5949,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "04/12/2026",
+      "name": "Shoulder injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1112684,
@@ -8948,7 +8968,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 914103,
@@ -9233,7 +9258,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle sprain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 161328,
@@ -10245,7 +10275,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Adductor pain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1187691,
@@ -10758,7 +10793,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1055183,

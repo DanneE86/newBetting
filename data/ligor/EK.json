@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T12:27:09.239Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "EK",
  "fotmobId": 196,
  "name": "Ekstraklasa",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Lech Poznan",
+   "fotmobName": "Lech Poznań",
+   "fotmobId": 2182,
+   "group": null,
+   "played": 11,
+   "won": 9,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "29-10",
+   "gd": 19,
+   "pts": 28
+  },
+  {
+   "rank": 2,
    "team": "Gornik Zabrze",
    "fotmobName": "Górnik Zabrze",
    "fotmobId": 8020,
@@ -18,20 +32,6 @@
    "goals": "21-11",
    "gd": 10,
    "pts": 27
-  },
-  {
-   "rank": 2,
-   "team": "Lech Poznan",
-   "fotmobName": "Lech Poznań",
-   "fotmobId": 2182,
-   "group": null,
-   "played": 10,
-   "won": 8,
-   "drawn": 1,
-   "lost": 1,
-   "goals": "27-9",
-   "gd": 18,
-   "pts": 25
   },
   {
    "rank": 3,
@@ -53,12 +53,12 @@
    "fotmobName": "Legia Warszawa",
    "fotmobId": 8673,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 6,
    "drawn": 5,
-   "lost": 0,
-   "goals": "22-9",
-   "gd": 13,
+   "lost": 1,
+   "goals": "23-11",
+   "gd": 12,
    "pts": 23
   },
   {
@@ -133,20 +133,34 @@
   },
   {
    "rank": 10,
+   "team": "Jagiellonia",
+   "fotmobName": "Jagiellonia Białystok",
+   "fotmobId": 1957,
+   "group": null,
+   "played": 11,
+   "won": 5,
+   "drawn": 0,
+   "lost": 6,
+   "goals": "14-17",
+   "gd": -3,
+   "pts": 15
+  },
+  {
+   "rank": 11,
    "team": "Wisla Plock",
    "fotmobName": "Wisła Płock",
    "fotmobId": 8243,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 4,
    "drawn": 2,
-   "lost": 4,
-   "goals": "10-15",
-   "gd": -5,
+   "lost": 5,
+   "goals": "10-16",
+   "gd": -6,
    "pts": 14
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Motor Lublin",
    "fotmobName": "Motor Lublin",
    "fotmobId": 89466,
@@ -158,20 +172,6 @@
    "goals": "17-21",
    "gd": -4,
    "pts": 13
-  },
-  {
-   "rank": 12,
-   "team": "Jagiellonia",
-   "fotmobName": "Jagiellonia Białystok",
-   "fotmobId": 1957,
-   "group": null,
-   "played": 10,
-   "won": 4,
-   "drawn": 0,
-   "lost": 6,
-   "goals": "13-17",
-   "gd": -4,
-   "pts": 12
   },
   {
    "rank": 13,
@@ -1238,6 +1238,134 @@
     12,
     10,
     12,
+    -4
+   ],
+   [
+    "Cracovia",
+    13,
+    12,
+    12,
+    -5
+   ],
+   [
+    "Widzew Lodz",
+    14,
+    12,
+    11,
+    -1
+   ],
+   [
+    "Slask Wroclaw",
+    15,
+    12,
+    9,
+    -6
+   ],
+   [
+    "Wieczysta Krakow",
+    16,
+    12,
+    8,
+    -7
+   ],
+   [
+    "Radomiak Radom",
+    17,
+    12,
+    8,
+    -16
+   ],
+   [
+    "Rakow",
+    18,
+    12,
+    6,
+    -12
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Lech Poznan",
+    1,
+    11,
+    28,
+    19
+   ],
+   [
+    "Gornik Zabrze",
+    2,
+    12,
+    27,
+    10
+   ],
+   [
+    "Pogon Szczecin",
+    3,
+    11,
+    24,
+    10
+   ],
+   [
+    "Legia",
+    4,
+    12,
+    23,
+    12
+   ],
+   [
+    "Wisla",
+    5,
+    12,
+    21,
+    4
+   ],
+   [
+    "Piast Gliwice",
+    6,
+    12,
+    20,
+    4
+   ],
+   [
+    "Zaglebie",
+    7,
+    12,
+    19,
+    0
+   ],
+   [
+    "GKS Katowice",
+    8,
+    12,
+    18,
+    5
+   ],
+   [
+    "Korona Kielce",
+    9,
+    12,
+    18,
+    -4
+   ],
+   [
+    "Jagiellonia",
+    10,
+    11,
+    15,
+    -3
+   ],
+   [
+    "Wisla Plock",
+    11,
+    11,
+    14,
+    -6
+   ],
+   [
+    "Motor Lublin",
+    12,
+    12,
+    13,
     -4
    ],
    [

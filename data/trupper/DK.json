@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "DK",
  "fotmobId": 46,
  "source": "FotMob",
@@ -304,7 +304,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/10/2026",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1477417,
@@ -538,7 +543,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1328716,
@@ -576,7 +586,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/10/2026",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -1019,7 +1034,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Mononucleation",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 170218,
@@ -1174,7 +1194,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1509069,
@@ -2019,7 +2044,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 320668,
@@ -2095,7 +2125,12 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1579475,
@@ -2114,7 +2149,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1713875,
@@ -2152,7 +2192,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Shoulder injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1819927,
@@ -2862,7 +2907,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1024169,
@@ -4994,7 +5044,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Achilles tendon irritation",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 742410,
@@ -5247,7 +5302,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1759271,
@@ -5714,7 +5774,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Broken collarbone",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1273309,
@@ -6496,7 +6561,12 @@
      "penalties": 1,
      "yellow": 3,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 630488,
@@ -6884,7 +6954,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 623169,
@@ -6979,7 +7054,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1434859,
@@ -7591,7 +7671,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Ankle surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 852424,

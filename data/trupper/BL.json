@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "BL",
  "fotmobId": 54,
  "source": "FotMob",
@@ -143,7 +143,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Groin problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 469700,
@@ -783,7 +788,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ill",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1845215,
@@ -878,7 +888,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Thigh problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1479742,
@@ -1251,7 +1266,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Shoulder injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1845228,
@@ -1676,7 +1696,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 303912,
@@ -1752,7 +1777,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1281107,
@@ -1790,7 +1820,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1075815,
@@ -1945,7 +1980,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 556524,
@@ -2325,7 +2365,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Head injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 411851,
@@ -3073,7 +3118,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 278856,
@@ -3817,7 +3867,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 765998,
@@ -4332,7 +4387,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -4885,7 +4945,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 771401,
@@ -5400,7 +5465,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Syndesmosis ligament tear",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1280560,
@@ -6837,7 +6907,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Broken fibula",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1186015,
@@ -7055,7 +7130,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Head injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 969870,
@@ -7131,7 +7211,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -7405,7 +7490,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1018564,
@@ -9142,7 +9232,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1426060,
@@ -9278,7 +9373,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 978381,
@@ -9436,7 +9536,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Back problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1580112,
@@ -10823,7 +10928,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Muscle injury",
+      "source": "Transfermarkt"
+     }
     }
    ],
    "fetchedAt": "2026-10-29T13:13:20.209Z",
@@ -11053,7 +11163,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Injury to abdominal muscles",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1684959,
@@ -11328,7 +11443,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knock",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1179182,
@@ -11347,7 +11467,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 469763,
@@ -11619,7 +11744,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Achilles tendon surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 882163,
@@ -11925,7 +12055,12 @@
      "penalties": 0,
      "yellow": 3,
      "red": 1,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1796861,
@@ -12712,7 +12847,12 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "02/11/2026",
+      "name": "Fitness",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1660228,
@@ -13044,7 +13184,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1337143,

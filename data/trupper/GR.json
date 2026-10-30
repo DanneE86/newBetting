@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T08:59:53.532Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "GR",
  "fotmobId": 135,
  "source": "FotMob",
@@ -567,7 +567,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Tibia and fibula fracture",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1073402,
@@ -7862,7 +7867,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Hamstring strain",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1457935,
@@ -8719,7 +8729,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "muscular problems",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 908534,
@@ -11216,7 +11231,12 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 2139580,

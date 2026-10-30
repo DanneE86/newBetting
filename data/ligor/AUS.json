@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T09:51:13.029Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "AUS",
  "fotmobId": 113,
  "name": "A-League",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Wellington Phoenix FC",
+   "fotmobName": "Wellington Phoenix",
+   "fotmobId": 78785,
+   "group": null,
+   "played": 2,
+   "won": 2,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "4-1",
+   "gd": 3,
+   "pts": 6
+  },
+  {
+   "rank": 2,
    "team": "Western Sydney Wanderers",
    "fotmobName": "Western Sydney Wanderers FC",
    "fotmobId": 323834,
@@ -20,7 +34,7 @@
    "pts": 4
   },
   {
-   "rank": 2,
+   "rank": 3,
    "team": "Macarthur FC",
    "fotmobName": "Macarthur FC",
    "fotmobId": 1209973,
@@ -34,49 +48,49 @@
    "pts": 4
   },
   {
-   "rank": 3,
-   "team": "Wellington Phoenix FC",
-   "fotmobName": "Wellington Phoenix",
-   "fotmobId": 78785,
-   "group": null,
-   "played": 1,
-   "won": 1,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "2-1",
-   "gd": 1,
-   "pts": 3
-  },
-  {
    "rank": 4,
    "team": "Brisbane Roar",
    "fotmobName": "Brisbane Roar FC",
    "fotmobId": 8118,
    "group": null,
-   "played": 1,
+   "played": 2,
    "won": 1,
-   "drawn": 0,
+   "drawn": 1,
    "lost": 0,
    "goals": "2-1",
    "gd": 1,
-   "pts": 3
+   "pts": 4
   },
   {
    "rank": 5,
+   "team": "Sydney FC",
+   "fotmobName": "Sydney FC",
+   "fotmobId": 10164,
+   "group": null,
+   "played": 2,
+   "won": 1,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 4
+  },
+  {
+   "rank": 6,
    "team": "Auckland FC",
    "fotmobName": "Auckland FC",
    "fotmobId": 1642068,
    "group": null,
-   "played": 2,
+   "played": 3,
    "won": 1,
-   "drawn": 0,
+   "drawn": 1,
    "lost": 1,
    "goals": "5-6",
    "gd": -1,
-   "pts": 3
+   "pts": 4
   },
   {
-   "rank": 6,
+   "rank": 7,
    "team": "Newcastle Jets",
    "fotmobName": "Newcastle Jets",
    "fotmobId": 6454,
@@ -90,35 +104,7 @@
    "pts": 2
   },
   {
-   "rank": 7,
-   "team": "Central Coast Mariners",
-   "fotmobName": "Central Coast Mariners",
-   "fotmobId": 8164,
-   "group": null,
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "2-2",
-   "gd": 0,
-   "pts": 1
-  },
-  {
    "rank": 8,
-   "team": "Sydney FC",
-   "fotmobName": "Sydney FC",
-   "fotmobId": 10164,
-   "group": null,
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 1
-  },
-  {
-   "rank": 9,
    "team": "Melbourne Victory",
    "fotmobName": "Melbourne Victory",
    "fotmobId": 6230,
@@ -132,10 +118,24 @@
    "pts": 1
   },
   {
-   "rank": 10,
+   "rank": 9,
    "team": "Melbourne City FC",
    "fotmobName": "Melbourne City FC",
    "fotmobId": 203576,
+   "group": null,
+   "played": 2,
+   "won": 0,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "2-4",
+   "gd": -2,
+   "pts": 1
+  },
+  {
+   "rank": 10,
+   "team": "Central Coast Mariners",
+   "fotmobName": "Central Coast Mariners",
+   "fotmobId": 8164,
    "group": null,
    "played": 2,
    "won": 0,
@@ -151,12 +151,12 @@
    "fotmobName": "Adelaide United",
    "fotmobId": 8008,
    "group": null,
-   "played": 0,
+   "played": 1,
    "won": 0,
    "drawn": 0,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
+   "lost": 1,
+   "goals": "1-2",
+   "gd": -1,
    "pts": 0
   },
   {
@@ -596,6 +596,92 @@
     0,
     0,
     0
+   ],
+   [
+    "Perth Glory",
+    12,
+    2,
+    0,
+    -2
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Wellington Phoenix FC",
+    1,
+    2,
+    6,
+    3
+   ],
+   [
+    "Western Sydney Wanderers",
+    2,
+    2,
+    4,
+    3
+   ],
+   [
+    "Macarthur FC",
+    3,
+    2,
+    4,
+    1
+   ],
+   [
+    "Brisbane Roar",
+    4,
+    2,
+    4,
+    1
+   ],
+   [
+    "Sydney FC",
+    5,
+    2,
+    4,
+    1
+   ],
+   [
+    "Auckland FC",
+    6,
+    3,
+    4,
+    -1
+   ],
+   [
+    "Newcastle Jets",
+    7,
+    2,
+    2,
+    0
+   ],
+   [
+    "Melbourne Victory",
+    8,
+    2,
+    1,
+    -1
+   ],
+   [
+    "Melbourne City FC",
+    9,
+    2,
+    1,
+    -2
+   ],
+   [
+    "Central Coast Mariners",
+    10,
+    2,
+    1,
+    -2
+   ],
+   [
+    "Adelaide United",
+    11,
+    1,
+    0,
+    -1
    ],
    [
     "Perth Glory",

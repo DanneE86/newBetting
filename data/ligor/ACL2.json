@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T04:20:37.019Z",
+ "updatedAt": "2026-10-30T09:04:03.955Z",
  "league": "ACL2",
  "fotmobId": 9469,
  "name": "AFC Champions League Two",
@@ -11,167 +11,167 @@
    "fotmobName": "Al-Wahda",
    "fotmobId": 102122,
    "group": "Group A",
-   "played": 1,
-   "won": 1,
+   "played": 3,
+   "won": 3,
    "drawn": 0,
    "lost": 0,
-   "goals": "3-2",
-   "gd": 1,
-   "pts": 3
+   "goals": "7-4",
+   "gd": 3,
+   "pts": 9
   },
   {
    "rank": 2,
-   "team": "Nasaf Qarshi",
-   "fotmobName": "Nasaf Qarshi",
-   "fotmobId": 102153,
-   "group": "Group A",
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 1
-  },
-  {
-   "rank": 3,
-   "team": "Khaldiya",
-   "fotmobName": "Al Khalidiyah",
-   "fotmobId": 1288463,
-   "group": "Group A",
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 1
-  },
-  {
-   "rank": 4,
    "team": "Kuwait SC",
    "fotmobName": "Kuwait SC",
    "fotmobId": 101713,
    "group": "Group A",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 2,
    "drawn": 0,
    "lost": 1,
-   "goals": "2-3",
-   "gd": -1,
-   "pts": 0
+   "goals": "6-4",
+   "gd": 2,
+   "pts": 6
+  },
+  {
+   "rank": 3,
+   "team": "Nasaf Qarshi",
+   "fotmobName": "Nasaf Qarshi",
+   "fotmobId": 102153,
+   "group": "Group A",
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "1-3",
+   "gd": -2,
+   "pts": 1
+  },
+  {
+   "rank": 4,
+   "team": "Khaldiya",
+   "fotmobName": "Al Khalidiyah",
+   "fotmobId": 1288463,
+   "group": "Group A",
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "2-5",
+   "gd": -3,
+   "pts": 1
   },
   {
    "rank": 1,
-   "team": "Arkadag",
-   "fotmobName": "Arkadag",
-   "fotmobId": 1689659,
-   "group": "Group B",
-   "played": 1,
-   "won": 1,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "1-0",
-   "gd": 1,
-   "pts": 3
-  },
-  {
-   "rank": 2,
    "team": "Al-Jazira",
    "fotmobName": "Al-Jazira",
    "fotmobId": 102101,
    "group": "Group B",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 2,
    "drawn": 1,
    "lost": 0,
-   "goals": "0-0",
+   "goals": "6-3",
+   "gd": 3,
+   "pts": 7
+  },
+  {
+   "rank": 2,
+   "team": "Arkadag",
+   "fotmobName": "Arkadag",
+   "fotmobId": 1689659,
+   "group": "Group B",
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "2-2",
    "gd": 0,
-   "pts": 1
+   "pts": 4
   },
   {
    "rank": 3,
-   "team": "Gol Gohar FC Sirjan",
-   "fotmobName": "Gol Gohar",
-   "fotmobId": 389880,
-   "group": "Group B",
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 1
-  },
-  {
-   "rank": 4,
    "team": "Al Muharraq",
    "fotmobName": "Muharraq",
    "fotmobId": 101598,
    "group": "Group B",
-   "played": 1,
-   "won": 0,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "0-1",
-   "gd": -1,
-   "pts": 0
-  },
-  {
-   "rank": 1,
-   "team": "Al Rayyan",
-   "fotmobName": "Al-Rayyan",
-   "fotmobId": 101898,
-   "group": "Group C",
-   "played": 1,
+   "played": 3,
    "won": 1,
    "drawn": 0,
-   "lost": 0,
-   "goals": "4-3",
-   "gd": 1,
+   "lost": 2,
+   "goals": "4-5",
+   "gd": -1,
    "pts": 3
   },
   {
-   "rank": 2,
-   "team": "Al-Nahda Muscat Club",
-   "fotmobName": "Al-Nahda",
-   "fotmobId": 101748,
-   "group": "Group C",
-   "played": 1,
+   "rank": 4,
+   "team": "Gol Gohar FC Sirjan",
+   "fotmobName": "Gol Gohar",
+   "fotmobId": 389880,
+   "group": "Group B",
+   "played": 3,
    "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
+   "drawn": 2,
+   "lost": 1,
+   "goals": "0-2",
+   "gd": -2,
+   "pts": 2
   },
   {
-   "rank": 3,
+   "rank": 1,
    "team": "Al Taawoun",
    "fotmobName": "Al-Taawoun",
    "fotmobId": 205686,
    "group": "Group C",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 2,
    "drawn": 1,
    "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
+   "goals": "5-2",
+   "gd": 3,
+   "pts": 7
   },
   {
-   "rank": 4,
+   "rank": 2,
+   "team": "Al Rayyan",
+   "fotmobName": "Al-Rayyan",
+   "fotmobId": 101898,
+   "group": "Group C",
+   "played": 3,
+   "won": 2,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "9-6",
+   "gd": 3,
+   "pts": 6
+  },
+  {
+   "rank": 3,
    "team": "Al-Faisaly",
    "fotmobName": "Al-Faisaly",
    "fotmobId": 101665,
    "group": "Group C",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 1,
    "drawn": 0,
-   "lost": 1,
-   "goals": "3-4",
+   "lost": 2,
+   "goals": "5-6",
    "gd": -1,
-   "pts": 0
+   "pts": 3
+  },
+  {
+   "rank": 4,
+   "team": "Al-Nahda Muscat Club",
+   "fotmobName": "Al-Nahda",
+   "fotmobId": 101748,
+   "group": "Group C",
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "2-7",
+   "gd": -5,
+   "pts": 1
   },
   {
    "rank": 1,
@@ -179,13 +179,13 @@
    "fotmobName": "Al Shorta",
    "fotmobId": 101655,
    "group": "Group D",
-   "played": 1,
-   "won": 1,
-   "drawn": 0,
+   "played": 3,
+   "won": 2,
+   "drawn": 1,
    "lost": 0,
-   "goals": "1-0",
-   "gd": 1,
-   "pts": 3
+   "goals": "5-3",
+   "gd": 2,
+   "pts": 7
   },
   {
    "rank": 2,
@@ -193,13 +193,13 @@
    "fotmobName": "Al-Hussein SC",
    "fotmobId": 101688,
    "group": "Group D",
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
+   "played": 3,
+   "won": 1,
+   "drawn": 2,
    "lost": 0,
-   "goals": "2-2",
-   "gd": 0,
-   "pts": 1
+   "goals": "6-3",
+   "gd": 3,
+   "pts": 5
   },
   {
    "rank": 3,
@@ -207,13 +207,13 @@
    "fotmobName": "East Bengal FC",
    "fotmobId": 165184,
    "group": "Group D",
-   "played": 1,
+   "played": 3,
    "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "2-2",
-   "gd": 0,
-   "pts": 1
+   "drawn": 2,
+   "lost": 1,
+   "goals": "4-5",
+   "gd": -1,
+   "pts": 2
   },
   {
    "rank": 4,
@@ -221,13 +221,13 @@
    "fotmobName": "Al-Seeb",
    "fotmobId": 101759,
    "group": "Group D",
-   "played": 1,
+   "played": 3,
    "won": 0,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "0-1",
-   "gd": -1,
-   "pts": 0
+   "drawn": 1,
+   "lost": 2,
+   "goals": "0-4",
+   "gd": -4,
+   "pts": 1
   },
   {
    "rank": 1,
@@ -235,13 +235,13 @@
    "fotmobName": "Persib Bandung",
    "fotmobId": 165196,
    "group": "Group E",
-   "played": 1,
-   "won": 1,
+   "played": 3,
+   "won": 3,
    "drawn": 0,
    "lost": 0,
-   "goals": "1-0",
-   "gd": 1,
-   "pts": 3
+   "goals": "4-0",
+   "gd": 4,
+   "pts": 9
   },
   {
    "rank": 2,
@@ -249,69 +249,69 @@
    "fotmobName": "Melbourne Victory",
    "fotmobId": 6230,
    "group": "Group E",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 1,
    "drawn": 1,
-   "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
+   "lost": 1,
+   "goals": "4-3",
+   "gd": 1,
+   "pts": 4
   },
   {
    "rank": 3,
-   "team": "Viettel",
-   "fotmobName": "Viettel",
-   "fotmobId": 743070,
-   "group": "Group E",
-   "played": 1,
-   "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
-  },
-  {
-   "rank": 4,
    "team": "FC Seoul",
    "fotmobName": "FC Seoul",
    "fotmobId": 92630,
    "group": "Group E",
-   "played": 1,
-   "won": 0,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "0-1",
-   "gd": -1,
-   "pts": 0
-  },
-  {
-   "rank": 1,
-   "team": "Adelaide United",
-   "fotmobName": "Adelaide United",
-   "fotmobId": 8008,
-   "group": "Group F",
-   "played": 1,
+   "played": 3,
    "won": 1,
    "drawn": 0,
-   "lost": 0,
-   "goals": "3-0",
-   "gd": 3,
+   "lost": 2,
+   "goals": "5-4",
+   "gd": 1,
    "pts": 3
   },
   {
-   "rank": 2,
+   "rank": 4,
+   "team": "Viettel",
+   "fotmobName": "Viettel",
+   "fotmobId": 743070,
+   "group": "Group E",
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "1-7",
+   "gd": -6,
+   "pts": 1
+  },
+  {
+   "rank": 1,
    "team": "Lion City Sailors FC",
    "fotmobName": "Lion City Sailors FC",
    "fotmobId": 67366,
    "group": "Group F",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 2,
    "drawn": 1,
    "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
+   "goals": "4-1",
+   "gd": 3,
+   "pts": 7
+  },
+  {
+   "rank": 2,
+   "team": "Adelaide United",
+   "fotmobName": "Adelaide United",
+   "fotmobId": 8008,
+   "group": "Group F",
+   "played": 3,
+   "won": 2,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "5-3",
+   "gd": 2,
+   "pts": 6
   },
   {
    "rank": 3,
@@ -319,13 +319,13 @@
    "fotmobName": "BG Pathum United",
    "fotmobId": 165250,
    "group": "Group F",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 1,
    "drawn": 1,
-   "lost": 0,
-   "goals": "1-1",
-   "gd": 0,
-   "pts": 1
+   "lost": 1,
+   "goals": "5-3",
+   "gd": 2,
+   "pts": 4
   },
   {
    "rank": 4,
@@ -333,12 +333,12 @@
    "fotmobName": "Tai Po",
    "fotmobId": 165169,
    "group": "Group F",
-   "played": 1,
+   "played": 3,
    "won": 0,
    "drawn": 0,
-   "lost": 1,
-   "goals": "0-3",
-   "gd": -3,
+   "lost": 3,
+   "goals": "0-7",
+   "gd": -7,
    "pts": 0
   },
   {
@@ -347,54 +347,54 @@
    "fotmobName": "Machida Zelvia",
    "fotmobId": 194011,
    "group": "Group G",
-   "played": 1,
-   "won": 1,
+   "played": 3,
+   "won": 3,
    "drawn": 0,
    "lost": 0,
-   "goals": "2-0",
-   "gd": 2,
-   "pts": 3
+   "goals": "4-0",
+   "gd": 4,
+   "pts": 9
   },
   {
    "rank": 2,
-   "team": "Shanghai Shenhua",
-   "fotmobName": "Shanghai Shenhua",
-   "fotmobId": 6628,
-   "group": "Group G",
-   "played": 1,
-   "won": 1,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "2-1",
-   "gd": 1,
-   "pts": 3
-  },
-  {
-   "rank": 3,
-   "team": "BG Tampines Rovers FC",
-   "fotmobName": "Tampines Rovers FC",
-   "fotmobId": 67386,
-   "group": "Group G",
-   "played": 1,
-   "won": 0,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "1-2",
-   "gd": -1,
-   "pts": 0
-  },
-  {
-   "rank": 4,
    "team": "Preah Khan Reach Svay Rieng FC",
    "fotmobName": "Svay Rieng",
    "fotmobId": 542025,
    "group": "Group G",
-   "played": 1,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "5-3",
+   "gd": 2,
+   "pts": 4
+  },
+  {
+   "rank": 3,
+   "team": "Shanghai Shenhua",
+   "fotmobName": "Shanghai Shenhua",
+   "fotmobId": 6628,
+   "group": "Group G",
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "2-2",
+   "gd": 0,
+   "pts": 4
+  },
+  {
+   "rank": 4,
+   "team": "BG Tampines Rovers FC",
+   "fotmobName": "Tampines Rovers FC",
+   "fotmobId": 67386,
+   "group": "Group G",
+   "played": 3,
    "won": 0,
    "drawn": 0,
-   "lost": 1,
-   "goals": "0-2",
-   "gd": -2,
+   "lost": 3,
+   "goals": "2-8",
+   "gd": -6,
    "pts": 0
   },
   {
@@ -403,13 +403,13 @@
    "fotmobName": "Phnom Penh",
    "fotmobId": 202520,
    "group": "Group H",
-   "played": 1,
-   "won": 1,
+   "played": 3,
+   "won": 3,
    "drawn": 0,
    "lost": 0,
-   "goals": "2-1",
-   "gd": 1,
-   "pts": 3
+   "goals": "6-2",
+   "gd": 4,
+   "pts": 9
   },
   {
    "rank": 2,
@@ -417,13 +417,13 @@
    "fotmobName": "Gangwon FC",
    "fotmobId": 164734,
    "group": "Group H",
-   "played": 1,
-   "won": 0,
+   "played": 3,
+   "won": 1,
    "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
+   "lost": 1,
+   "goals": "2-2",
    "gd": 0,
-   "pts": 1
+   "pts": 4
   },
   {
    "rank": 3,
@@ -431,13 +431,13 @@
    "fotmobName": "Kitchee",
    "fotmobId": 165165,
    "group": "Group H",
-   "played": 1,
+   "played": 3,
    "won": 0,
-   "drawn": 1,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 1
+   "drawn": 2,
+   "lost": 1,
+   "goals": "1-3",
+   "gd": -2,
+   "pts": 2
   },
   {
    "rank": 4,
@@ -445,13 +445,13 @@
    "fotmobName": "Kuching City",
    "fotmobId": 1114226,
    "group": "Group H",
-   "played": 1,
+   "played": 3,
    "won": 0,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "1-2",
-   "gd": -1,
-   "pts": 0
+   "drawn": 1,
+   "lost": 2,
+   "goals": "2-4",
+   "gd": -2,
+   "pts": 1
   }
  ],
  "tableHistory": {
@@ -679,6 +679,232 @@
     1,
     0,
     -1
+   ]
+  ],
+  "2026-10-30": [
+   [
+    "Al-Wahda",
+    1,
+    3,
+    9,
+    3
+   ],
+   [
+    "Kuwait SC",
+    2,
+    3,
+    6,
+    2
+   ],
+   [
+    "Nasaf Qarshi",
+    3,
+    3,
+    1,
+    -2
+   ],
+   [
+    "Khaldiya",
+    4,
+    3,
+    1,
+    -3
+   ],
+   [
+    "Al-Jazira",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Arkadag",
+    2,
+    3,
+    4,
+    0
+   ],
+   [
+    "Al Muharraq",
+    3,
+    3,
+    3,
+    -1
+   ],
+   [
+    "Gol Gohar FC Sirjan",
+    4,
+    3,
+    2,
+    -2
+   ],
+   [
+    "Al Taawoun",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Al Rayyan",
+    2,
+    3,
+    6,
+    3
+   ],
+   [
+    "Al-Faisaly",
+    3,
+    3,
+    3,
+    -1
+   ],
+   [
+    "Al-Nahda Muscat Club",
+    4,
+    3,
+    1,
+    -5
+   ],
+   [
+    "Al-Shorta",
+    1,
+    3,
+    7,
+    2
+   ],
+   [
+    "Al Hussein",
+    2,
+    3,
+    5,
+    3
+   ],
+   [
+    "SC East Bengal",
+    3,
+    3,
+    2,
+    -1
+   ],
+   [
+    "Al-Seeb",
+    4,
+    3,
+    1,
+    -4
+   ],
+   [
+    "Persib",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "Melbourne Victory",
+    2,
+    3,
+    4,
+    1
+   ],
+   [
+    "FC Seoul",
+    3,
+    3,
+    3,
+    1
+   ],
+   [
+    "Viettel",
+    4,
+    3,
+    1,
+    -6
+   ],
+   [
+    "Lion City Sailors FC",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Adelaide United",
+    2,
+    3,
+    6,
+    2
+   ],
+   [
+    "BG Pathum United",
+    3,
+    3,
+    4,
+    2
+   ],
+   [
+    "Tai Po FC",
+    4,
+    3,
+    0,
+    -7
+   ],
+   [
+    "Machida Zelvia",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "Preah Khan Reach Svay Rieng FC",
+    2,
+    3,
+    4,
+    2
+   ],
+   [
+    "Shanghai Shenhua",
+    3,
+    3,
+    4,
+    0
+   ],
+   [
+    "BG Tampines Rovers FC",
+    4,
+    3,
+    0,
+    -6
+   ],
+   [
+    "Phnom Penh Crown",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "Gangwon FC",
+    2,
+    3,
+    4,
+    0
+   ],
+   [
+    "Kitchee",
+    3,
+    3,
+    2,
+    -2
+   ],
+   [
+    "Kuching City",
+    4,
+    3,
+    1,
+    -2
    ]
   ]
  }

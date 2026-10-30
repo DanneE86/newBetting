@@ -1,4 +1,4 @@
-// Fliken "Hästar": hämtar V75/V85/V86/V64/V65/GS75/Dagens Dubbel från ATG:s öppna racinginfo-API och analyserar.
+// Fliken "Hästar": hämtar V75/V85/V86/V64/V65/GS75/V4/Dagens Dubbel/Lunch Dubbel från ATG:s öppna racinginfo-API och analyserar.
 //
 //   node scripts/fetch-hastar.mjs                         dagens största V-spel (+ DD samma bana)
 //   node scripts/fetch-hastar.mjs --datum 2026-10-03 --spel V85
@@ -13,7 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeGame, analyzeGame, backtest, resultsOf, streckSnapshot } from "./lib/trav-model.mjs";
+import { normalizeGame, analyzeGame, backtest, resultsOf, streckSnapshot, DOUBLE_TYPES } from "./lib/trav-model.mjs";
 import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
 import { request } from "./lib/http.mjs";
 import { atgSchemas } from "./lib/api-schemas.mjs";
@@ -39,7 +39,10 @@ async function tipslogg(a) {
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "hastar");
 const API = "https://www.atg.se/services/racinginfo/v1/api";
-export const GAME_TYPES = ["V86", "V85", "V75", "GS75", "V65", "V64", "dd"];
+export const GAME_TYPES = ["V86", "V85", "V75", "GS75", "V65", "V64", "V4", "dd", "ld"];
+const isDouble = (type) => DOUBLE_TYPES.includes(type);
+/** Dubbelspelet som hämtas med ett V-spel på samma bana: Lunch Dubbel till V4, annars Dagens Dubbel. */
+export const companionDoubleType = (type) => (isDouble(type) ? null : type === "V4" ? "ld" : "dd");
 
 const args = process.argv.slice(2);
 const arg = (k) => {
@@ -81,17 +84,17 @@ export function pickUpcoming(days) {
   const open = (day) => (day.games || []).filter((g) => g.id && g.status !== "results");
   for (const day of days) {
     const all = open(day);
-    const live = all.filter((g) => g.type !== "dd");
+    const live = all.filter((g) => !isDouble(g.type));
     const big = BIG_TYPES.map((t) => live.find((g) => g.type === t)).filter(Boolean);
     if (!big.length) continue;
     const rest = live.filter((g) => !big.includes(g));
-    return { date: day.date, games: [...big, ...rest, ...all.filter((g) => g.type === "dd")], upcomingId: big[0].id };
+    return { date: day.date, games: [...big, ...rest, ...all.filter((g) => isDouble(g.type))], upcomingId: big[0].id };
   }
   for (const day of days) {
     const all = open(day);
-    const live = all.filter((g) => g.type !== "dd");
+    const live = all.filter((g) => !isDouble(g.type));
     if (!live.length) continue;
-    return { date: day.date, games: [...live, ...all.filter((g) => g.type === "dd")], upcomingId: live[0].id };
+    return { date: day.date, games: [...live, ...all.filter((g) => isDouble(g.type))], upcomingId: live[0].id };
   }
   return null;
 }
@@ -160,15 +163,15 @@ async function fetchPastRaces(fetched, have) {
   return [...byId.values()];
 }
 
-/** Hämtar spelet (+ DD samma dag och bana) och sparar ALLT i en rådatafil. */
+/** Hämtar spelet (+ DD, till V4 LD, samma dag och bana) och sparar ALLT i en rådatafil. */
 export async function fetchAll(id, calendarEntry) {
   log(`Hämtar ${id} …`);
   const main = await fetchGame(id);
   let dd = null;
   const [type, date, trackId] = id.split("_");
-  if (type !== "dd") {
+  if (companionDoubleType(type)) {
     const list = calendarEntry || (await listGames(date));
-    const ddId = list.games.find((g) => g.type === "dd" && g.id.split("_")[2] === trackId)?.id;
+    const ddId = list.games.find((g) => g.type === companionDoubleType(type) && g.id.split("_")[2] === trackId)?.id;
     if (ddId) {
       log(`Hämtar ${ddId} …`);
       dd = await fetchGame(ddId);
@@ -249,10 +252,10 @@ export async function updateResults() {
     if (!a.results && a.date < today()) {
       const g = await get(`${API}/games/${a.id}`).catch(() => null);
       const res = g ? resultsOf(g) : {};
-      if (a.dd && a.type !== "dd") {
+      if (a.dd && companionDoubleType(a.type)) {
         const [, date, trackId] = a.id.split("_");
         const list = await listGames(date).catch(() => ({ games: [] }));
-        const ddId = list.games.find((x) => x.type === "dd" && x.id.split("_")[2] === trackId)?.id;
+        const ddId = list.games.find((x) => x.type === (a.dd.type || companionDoubleType(a.type)) && x.id.split("_")[2] === trackId)?.id;
         if (ddId) Object.assign(res, resultsOf((await get(`${API}/games/${ddId}`).catch(() => null)) || {}));
       }
       if (Object.keys(res).length) {
@@ -309,7 +312,7 @@ async function main() {
     list = await listGames(date);
     const want = typeof arg("spel") === "string" ? arg("spel").toLowerCase() : null;
     const g = want ? list.games.find((x) => x.type.toLowerCase() === want) : GAME_TYPES.map((t) => list.games.find((x) => x.type === t)).find(Boolean);
-    if (!g) throw new Error(`Inget ${want ? arg("spel") : "V75/V85/V86/V64/V65/DD"}-spel ${date}`);
+    if (!g) throw new Error(`Inget ${want ? arg("spel") : "V75/V85/V86/V64/V65/V4/DD/LD"}-spel ${date}`);
     id = g.id;
   }
   await analyzeRaw(await fetchAll(id, list));
