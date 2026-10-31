@@ -901,7 +901,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     // Streckfavorit utan seger: minst 2 ggr streckat >= 50 % denna sasong och minst halften utan seger
     a.streckFlop = streckFlopFlags(streckStats(), { home, away, date: (a.kickoff || new Date().toISOString()).slice(0, 10), country });
     // Matchkontexten (FotMob) ligger sist i analysen
-    a.analysis = [...narrative({ ...a, final: a.final }), ...streckFlopNotes(a.streckFlop, home, away), ...refereeAwayNotes(a.refereeAway, home, away), ...newCoachNotes(a.newCoach?.home, a.newCoach?.away, home, away), ...contextNotes(a.context, home, away), ...refereeNotes(a.refereeStreak, home, away)];
+    a.analysis = [...narrative({ ...a, final: a.final }), ...streckFlopNotes(a.streckFlop, home, away), ...refereeAwayNotes(a.refereeAway, home, away), ...newCoachNotes(a.newCoach?.home, a.newCoach?.away, home, away), ...refereeNotes(a.refereeStreak, home, away), ...contextNotes(a.context, home, away)];
     // Facit (avgjord kupong)
     const r = result?.events?.find((x) => x.eventNumber === ev.eventNumber);
     if (r?.outcome) a.result = { outcome: r.outcome, score: r.outcomeScore ? `${r.outcomeScore.home}-${r.outcomeScore.away}` : null };
