@@ -4,6 +4,7 @@
 import { generateCoupons, kravSigns, canFall, skrallTips, skrallKryss, clampFileRows, FILE_BUDGET, FILE_RULES } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
 import { svsInfoPanel, svsDrawAnalysis } from "/svs-matchinfo.js";
+import { needsReload, staleDrawKeys } from "/stryk-cache.js";
 
 // Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
 const seKey = (p, e) => ["svs", p.product, p.drawNumber, e.eventNumber].join("|");
@@ -14,6 +15,7 @@ const SIGNS = ["1", "X", "2"];
  // kupong A, samma som fetch-stryktipset.mjs (Stryktipset 15k sedan 2026-10-04)
 
 let data = null;
+let loadedAt = 0; // när datan senast hämtades (stryk-cache.js needsReload)
 let product = null;
 // Adresser: /tips, /stryktipset, /europatipset.
 // Undersidor: /stryktipset/backtest öppnar backtestet. Gamla adresser (/<spel>/b, /<spel>/reducera, #stryktips,
@@ -97,7 +99,7 @@ function setView(v, push = false) {
     /* privat lage */
   }
   if (st) {
-    if (!data && !loading) load();
+    if (!loading && needsReload(loadedAt)) load();
     else render();
   }
 }
@@ -120,7 +122,10 @@ async function load(force = false) {
     const res = await fetch(force ? "/api/stryktips/fetch" : "/api/stryktips", { method: force ? "POST" : "GET" });
     const body = await res.json();
     if (!res.ok || body.error) throw new Error(body.error || `HTTP ${res.status}`);
+    const prev = data;
     data = body;
+    loadedAt = Date.now();
+    dropOldDraws(prev);
     // Spelet styrs av adressen (/stryktipset eller /europatipset), se setView
   } catch (e) {
     data = { ...(data || {}), error: e.message };
@@ -129,6 +134,29 @@ async function load(force = false) {
     render();
   }
 }
+
+// Ny omgång inladdad: gamla omgångars krav, lås och kuponger rensas (minnet och webbläsaren) och en pågående
+// uträkning för den gamla omgången avbryts. Samma omgång: live-strecken från förra hämtningen behålls.
+function dropOldDraws(prev) {
+  for (const p of data.products || []) {
+    const old = prev?.products?.find((x) => x.product === p.product);
+    if (old && old.drawNumber === p.drawNumber && old.live) p.live = old.live;
+    else if (old) {
+      engineJob.get(p.product)?.(new Error("ny omgång"));
+      workers.get(p.product)?.terminate();
+    }
+  }
+  for (const k of staleDrawKeys([...bStates.keys()], data.products)) bStates.delete(k);
+  try {
+    for (const k of staleDrawKeys(Object.keys(localStorage), data.products)) localStorage.removeItem(k);
+  } catch {
+    /* privat läge */
+  }
+}
+// Fliken har legat i bakgrunden: hämta om när den visas igen
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && !view.hidden && !loading && needsReload(loadedAt)) load();
+});
 
 // ---------- Rendering ----------
 const COLOR_LABEL = { green: "Grön · favorit", yellow: "Blå · fri", red: "Röd · skräll", spik: "Blå · spik", blue: "Blå · fri" };
