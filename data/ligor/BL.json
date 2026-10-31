@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "BL",
  "fotmobId": 54,
  "name": "Bundesliga",
@@ -63,6 +63,20 @@
   },
   {
    "rank": 5,
+   "team": "Elversberg",
+   "fotmobName": "Elversberg",
+   "fotmobId": 8232,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "16-16",
+   "gd": 0,
+   "pts": 13
+  },
+  {
+   "rank": 6,
    "team": "RB Leipzig",
    "fotmobName": "RB Leipzig",
    "fotmobId": 178475,
@@ -76,7 +90,7 @@
    "pts": 12
   },
   {
-   "rank": 6,
+   "rank": 7,
    "team": "Werder Bremen",
    "fotmobName": "Werder Bremen",
    "fotmobId": 8697,
@@ -90,31 +104,17 @@
    "pts": 12
   },
   {
-   "rank": 7,
+   "rank": 8,
    "team": "Mainz",
    "fotmobName": "Mainz 05",
    "fotmobId": 9905,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 3,
    "drawn": 1,
-   "lost": 3,
-   "goals": "16-13",
-   "gd": 3,
-   "pts": 10
-  },
-  {
-   "rank": 8,
-   "team": "Elversberg",
-   "fotmobName": "Elversberg",
-   "fotmobId": 8232,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 1,
-   "lost": 3,
-   "goals": "12-15",
-   "gd": -3,
+   "lost": 4,
+   "goals": "17-17",
+   "gd": 0,
    "pts": 10
   },
   {
@@ -1467,6 +1467,134 @@
     7,
     10,
     -3
+   ],
+   [
+    "Augsburg",
+    9,
+    7,
+    9,
+    4
+   ],
+   [
+    "Hoffenheim",
+    10,
+    7,
+    9,
+    0
+   ],
+   [
+    "Hamburg",
+    11,
+    7,
+    9,
+    -10
+   ],
+   [
+    "FC Koln",
+    12,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Paderborn",
+    13,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Ein Frankfurt",
+    14,
+    7,
+    8,
+    -7
+   ],
+   [
+    "Stuttgart",
+    15,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Schalke 04",
+    16,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Union Berlin",
+    17,
+    7,
+    6,
+    -12
+   ],
+   [
+    "M'gladbach",
+    18,
+    7,
+    3,
+    -11
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Bayern Munich",
+    1,
+    7,
+    17,
+    19
+   ],
+   [
+    "Dortmund",
+    2,
+    7,
+    17,
+    8
+   ],
+   [
+    "Freiburg",
+    3,
+    7,
+    13,
+    7
+   ],
+   [
+    "Leverkusen",
+    4,
+    7,
+    13,
+    4
+   ],
+   [
+    "Elversberg",
+    5,
+    8,
+    13,
+    0
+   ],
+   [
+    "RB Leipzig",
+    6,
+    7,
+    12,
+    9
+   ],
+   [
+    "Werder Bremen",
+    7,
+    7,
+    12,
+    1
+   ],
+   [
+    "Mainz",
+    8,
+    8,
+    10,
+    0
    ],
    [
     "Augsburg",

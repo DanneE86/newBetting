@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "DK",
  "fotmobId": 46,
  "name": "Superligaen",
@@ -137,12 +137,12 @@
    "fotmobName": "Randers FC",
    "fotmobId": 8410,
    "group": null,
-   "played": 12,
+   "played": 13,
    "won": 3,
    "drawn": 2,
-   "lost": 7,
-   "goals": "12-19",
-   "gd": -7,
+   "lost": 8,
+   "goals": "13-21",
+   "gd": -8,
    "pts": 11
   },
   {
@@ -151,13 +151,13 @@
    "fotmobName": "Lyngby",
    "fotmobId": 9907,
    "group": null,
-   "played": 12,
-   "won": 1,
+   "played": 13,
+   "won": 2,
    "drawn": 5,
    "lost": 6,
-   "goals": "17-27",
-   "gd": -10,
-   "pts": 8
+   "goals": "19-28",
+   "gd": -9,
+   "pts": 11
   },
   {
    "rank": 12,
@@ -1198,6 +1198,92 @@
     12,
     8,
     -10
+   ],
+   [
+    "Sonderjyske",
+    12,
+    12,
+    8,
+    -12
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Midtjylland",
+    1,
+    12,
+    28,
+    11
+   ],
+   [
+    "FC Copenhagen",
+    2,
+    12,
+    26,
+    14
+   ],
+   [
+    "Viborg",
+    3,
+    12,
+    20,
+    7
+   ],
+   [
+    "Nordsjaelland",
+    4,
+    12,
+    20,
+    4
+   ],
+   [
+    "Brondby",
+    5,
+    12,
+    19,
+    1
+   ],
+   [
+    "Horsens",
+    6,
+    12,
+    16,
+    3
+   ],
+   [
+    "Odense",
+    7,
+    12,
+    14,
+    -5
+   ],
+   [
+    "Aarhus",
+    8,
+    12,
+    12,
+    -2
+   ],
+   [
+    "Silkeborg",
+    9,
+    12,
+    12,
+    -4
+   ],
+   [
+    "Randers FC",
+    10,
+    13,
+    11,
+    -8
+   ],
+   [
+    "Lyngby",
+    11,
+    13,
+    11,
+    -9
    ],
    [
     "Sonderjyske",

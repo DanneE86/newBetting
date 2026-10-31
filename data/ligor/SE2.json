@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "SE2",
  "fotmobId": 168,
  "name": "Superettan",
@@ -63,6 +63,20 @@
   },
   {
    "rank": 5,
+   "team": "IK Oddevold",
+   "fotmobName": "IK Oddevold",
+   "fotmobId": 6160,
+   "group": null,
+   "played": 29,
+   "won": 12,
+   "drawn": 9,
+   "lost": 8,
+   "goals": "50-38",
+   "gd": 12,
+   "pts": 45
+  },
+  {
+   "rank": 6,
    "team": "Landskrona BoIS",
    "fotmobName": "Landskrona BoIS",
    "fotmobId": 8511,
@@ -74,20 +88,6 @@
    "goals": "46-33",
    "gd": 13,
    "pts": 44
-  },
-  {
-   "rank": 6,
-   "team": "IK Oddevold",
-   "fotmobName": "IK Oddevold",
-   "fotmobId": 6160,
-   "group": null,
-   "played": 28,
-   "won": 11,
-   "drawn": 9,
-   "lost": 8,
-   "goals": "48-37",
-   "gd": 11,
-   "pts": 42
   },
   {
    "rank": 7,
@@ -207,12 +207,12 @@
    "fotmobName": "IK Brage",
    "fotmobId": 6690,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 6,
    "drawn": 8,
-   "lost": 14,
-   "goals": "45-55",
-   "gd": -10,
+   "lost": 15,
+   "goals": "46-57",
+   "gd": -11,
    "pts": 26
   },
   {
@@ -1362,6 +1362,120 @@
     28,
     26,
     -10
+   ],
+   [
+    "GIF Sundsvall",
+    16,
+    28,
+    19,
+    -46
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "IFK Norrköping",
+    1,
+    28,
+    62,
+    40
+   ],
+   [
+    "Falkenbergs FF",
+    2,
+    28,
+    51,
+    14
+   ],
+   [
+    "Östersunds FK",
+    3,
+    28,
+    48,
+    12
+   ],
+   [
+    "Varbergs BoIS FC",
+    4,
+    28,
+    47,
+    11
+   ],
+   [
+    "IK Oddevold",
+    5,
+    29,
+    45,
+    12
+   ],
+   [
+    "Landskrona BoIS",
+    6,
+    28,
+    44,
+    13
+   ],
+   [
+    "Östers IF",
+    7,
+    28,
+    42,
+    1
+   ],
+   [
+    "Sandvikens IF",
+    8,
+    28,
+    41,
+    10
+   ],
+   [
+    "Nordic United FC",
+    9,
+    28,
+    39,
+    -6
+   ],
+   [
+    "Helsingborg",
+    10,
+    28,
+    32,
+    -11
+   ],
+   [
+    "IFK Värnamo",
+    11,
+    28,
+    32,
+    -13
+   ],
+   [
+    "Ljungskile",
+    12,
+    28,
+    30,
+    -5
+   ],
+   [
+    "Örebro",
+    13,
+    28,
+    29,
+    -11
+   ],
+   [
+    "Norrby",
+    14,
+    28,
+    27,
+    -10
+   ],
+   [
+    "IK Brage",
+    15,
+    29,
+    26,
+    -11
    ],
    [
     "GIF Sundsvall",

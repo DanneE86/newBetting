@@ -1,674 +1,9 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "JP1",
  "fotmobId": 223,
  "source": "FotMob",
  "teams": {
-  "Machida": {
-   "fotmobName": "Machida Zelvia",
-   "fotmobId": 194011,
-   "coach": "Go Kuroda",
-   "players": [
-    {
-     "id": 878285,
-     "name": "Kosei Tani",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 25,
-     "born": "2000-11-22",
-     "country": "Japan",
-     "height": 190,
-     "value": 1351021,
-     "rating": 7.26,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 166876,
-     "name": "Tatsuya Morita",
-     "role": "keepers",
-     "position": "GK",
-     "number": 13,
-     "age": 36,
-     "born": "1990-08-03",
-     "country": "Japan",
-     "height": 191,
-     "value": 102575,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1659401,
-     "name": "Aki Koch",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 66,
-     "age": 22,
-     "born": "2004-03-18",
-     "country": "Germany",
-     "height": 187,
-     "value": 539855,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2120185,
-     "name": "Nicholas Guimarães",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 89,
-     "age": 20,
-     "born": "2006-08-09",
-     "country": "Philippines",
-     "height": 183,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 660136,
-     "name": "Thomas Ouwejan",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 30,
-     "born": "1996-09-30",
-     "country": "Netherlands",
-     "height": 178,
-     "value": 339330,
-     "rating": 7.35,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 258431,
-     "name": "Gen Shōji",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 33,
-     "born": "1992-12-11",
-     "country": "Japan",
-     "height": 182,
-     "value": 265020,
-     "rating": 7.2,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1011578,
-     "name": "Ryuho Kikuchi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 29,
-     "born": "1996-12-09",
-     "country": "Japan",
-     "height": 188,
-     "value": 143927,
-     "rating": 7.23,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 772082,
-     "name": "Ibrahim Drešević",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 29,
-     "born": "1997-01-24",
-     "country": "Kosovo",
-     "height": 186,
-     "value": 807120,
-     "rating": 6.44,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1611204,
-     "name": "Henry Mochizuki",
-     "role": "defenders",
-     "position": "CB,RWB",
-     "number": 6,
-     "age": 25,
-     "born": "2001-09-20",
-     "country": "Japan",
-     "height": 192,
-     "value": 970898,
-     "rating": 7.04,
-     "goals": 2,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 621294,
-     "name": "Kim Min-Tae",
-     "role": "defenders",
-     "position": "CB",
-     "number": 24,
-     "age": 32,
-     "born": "1993-11-26",
-     "country": "Korea Republic",
-     "height": 187,
-     "value": 168193,
-     "rating": 6.64,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1134846,
-     "name": "Daihachi Okamura",
-     "role": "defenders",
-     "position": "CB",
-     "number": 50,
-     "age": 29,
-     "born": "1997-02-15",
-     "country": "Japan",
-     "height": 183,
-     "value": 533886,
-     "rating": 7.08,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1843173,
-     "name": "Chui Mayaka",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": null,
-     "age": 20,
-     "born": "2006-08-11",
-     "country": "Japan",
-     "height": 160,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 955320,
-     "name": "Yuki Soma",
-     "role": "midfielders",
-     "position": "CAM,LW",
-     "number": 7,
-     "age": 29,
-     "born": "1997-02-25",
-     "country": "Japan",
-     "height": 166,
-     "value": 1131064,
-     "rating": 7.53,
-     "goals": 3,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 826005,
-     "name": "Keiya Sento",
-     "role": "midfielders",
-     "position": "CAM,CDM",
-     "number": 8,
-     "age": 31,
-     "born": "1994-12-29",
-     "country": "Japan",
-     "height": 171,
-     "value": 205442,
-     "rating": 6.86,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1064870,
-     "name": "Yusuke Matsuo",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 14,
-     "age": 29,
-     "born": "1997-07-23",
-     "country": "Japan",
-     "height": 170,
-     "value": 425549,
-     "rating": 6.2,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 645880,
-     "name": "Hiroyuki Mae",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 16,
-     "age": 31,
-     "born": "1995-08-01",
-     "country": "Japan",
-     "height": 173,
-     "value": 420318,
-     "rating": 7.16,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 523611,
-     "name": "Hokuto Shimoda",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 18,
-     "age": 34,
-     "born": "1991-11-07",
-     "country": "Japan",
-     "height": 171,
-     "value": 172700,
-     "rating": 6.54,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 621295,
-     "name": "Takuma Nishimura",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 20,
-     "age": 30,
-     "born": "1996-10-22",
-     "country": "Japan",
-     "height": 178,
-     "value": 355063,
-     "rating": 6.79,
-     "goals": 5,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 309489,
-     "name": "Ryohei Shirasaki",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 23,
-     "age": 33,
-     "born": "1993-05-18",
-     "country": "Japan",
-     "height": 181,
-     "value": 175394,
-     "rating": 6.53,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1814064,
-     "name": "Cha Je-Hoon",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 28,
-     "age": 20,
-     "born": "2006-05-03",
-     "country": "Korea Republic",
-     "height": 182,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 731955,
-     "name": "Neta Lavi",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 31,
-     "age": 30,
-     "born": "1996-08-25",
-     "country": "Israel",
-     "height": 177,
-     "value": 359013,
-     "rating": 7.21,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1134833,
-     "name": "Takahiro Akimoto",
-     "role": "midfielders",
-     "position": "LWB,CB,LM",
-     "number": 33,
-     "age": 28,
-     "born": "1998-01-31",
-     "country": "Japan",
-     "height": 170,
-     "value": 1020059,
-     "rating": 7.66,
-     "goals": 2,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1900020,
-     "name": "Futa Tokumura",
-     "role": "midfielders",
-     "position": "LWB",
-     "number": 34,
-     "age": 18,
-     "born": "2007-11-26",
-     "country": "Japan",
-     "height": 169,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1109893,
-     "name": "Hotaka Nakamura",
-     "role": "midfielders",
-     "position": "RWB,LWB",
-     "number": 88,
-     "age": 29,
-     "born": "1997-08-12",
-     "country": "Japan",
-     "height": 177,
-     "value": 394390,
-     "rating": 7.09,
-     "goals": 2,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 727837,
-     "name": "Koki Ogawa",
-     "role": "attackers",
-     "position": "ST,CAM",
-     "number": 9,
-     "age": 29,
-     "born": "1997-08-08",
-     "country": "Japan",
-     "height": 186,
-     "value": 1348815,
-     "rating": 7.3,
-     "goals": 4,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 245633,
-     "name": "Mitch Duke",
-     "role": "attackers",
-     "position": "ST,CAM",
-     "number": 15,
-     "age": 35,
-     "born": "1991-01-18",
-     "country": "Australia",
-     "height": 187,
-     "value": 273928,
-     "rating": 6.83,
-     "goals": 1,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1220549,
-     "name": "Tete Yengi",
-     "role": "attackers",
-     "position": "ST",
-     "number": 99,
-     "age": 25,
-     "born": "2000-11-28",
-     "country": "Australia",
-     "height": 197,
-     "value": 599838,
-     "rating": 7,
-     "goals": 3,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-30T15:47:46.164Z",
-   "coachHistory": [
-    {
-     "name": "Go Kuroda",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "166876": {
-     "name": "Tatsuya Morita",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "245633": {
-     "name": "Mitch Duke",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "258431": {
-     "name": "Gen Shōji",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "309489": {
-     "name": "Ryohei Shirasaki",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "523611": {
-     "name": "Hokuto Shimoda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "621294": {
-     "name": "Kim Min-Tae",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "621295": {
-     "name": "Takuma Nishimura",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "645880": {
-     "name": "Hiroyuki Mae",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "660136": {
-     "name": "Thomas Ouwejan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "727837": {
-     "name": "Koki Ogawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "731955": {
-     "name": "Neta Lavi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "772082": {
-     "name": "Ibrahim Drešević",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "826005": {
-     "name": "Keiya Sento",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "878285": {
-     "name": "Kosei Tani",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "955320": {
-     "name": "Yuki Soma",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1011578": {
-     "name": "Ryuho Kikuchi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1064870": {
-     "name": "Yusuke Matsuo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1109893": {
-     "name": "Hotaka Nakamura",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1134833": {
-     "name": "Takahiro Akimoto",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1134846": {
-     "name": "Daihachi Okamura",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1220549": {
-     "name": "Tete Yengi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1611204": {
-     "name": "Henry Mochizuki",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1659401": {
-     "name": "Aki Koch",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1814064": {
-     "name": "Cha Je-Hoon",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1843173": {
-     "name": "Chui Mayaka",
-     "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-30"
-    },
-    "1900020": {
-     "name": "Futa Tokumura",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "2120185": {
-     "name": "Nicholas Guimarães",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    }
-   },
-   "left": []
-  },
   "FC Tokyo": {
    "fotmobName": "FC Tokyo",
    "fotmobId": 4399,
@@ -1332,12 +667,12 @@
     "71630": {
      "name": "Masato Morishige",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "98254": {
      "name": "Yuto Nagatomo",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "166534": {
      "name": "Keigo Higashi",
@@ -1347,52 +682,52 @@
     "167247": {
      "name": "Seung-Gyu Kim",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "203755": {
      "name": "Alexander Scholz",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "310872": {
      "name": "Kento Hashimoto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "621514": {
      "name": "Teruhito Nakagawa",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727418": {
      "name": "Sei Muroya",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "785052": {
      "name": "Nicolai Vallys",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824618": {
      "name": "Takahiro Ko",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "834648": {
      "name": "Hirokazu Ishihara",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "863166": {
      "name": "Dani Gómez",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "962314": {
      "name": "Shion Homma",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1055137": {
      "name": "Tsuyoshi Ogashiwa",
@@ -1402,37 +737,37 @@
     "1089572": {
      "name": "Kashifu Bangunagande",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134760": {
      "name": "Fuki Yamada",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1169798": {
      "name": "Kento Hashimoto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1215511": {
      "name": "Rio Omori",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1221382": {
      "name": "Marcelo Ryan",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336904": {
      "name": "Yuta Arai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337053": {
      "name": "Hayate Tanaka",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1386008": {
      "name": "Renta Higashi",
@@ -1442,42 +777,42 @@
     "1396529": {
      "name": "Motoki Nagakura",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436732": {
      "name": "Kota Tawaratsumida",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1473298": {
      "name": "Soma Anzai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1544870": {
      "name": "Kein Sato",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1638975": {
      "name": "Hayato Inamura",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1651100": {
      "name": "Divine Chinedu Otani",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714916": {
      "name": "Kyota Tokiwa",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714917": {
      "name": "Wataru Goto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714918": {
      "name": "In-Hwan Baek",
@@ -1487,17 +822,17 @@
     "1804527": {
      "name": "Tsuna Kominato",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1838730": {
      "name": "Shuto Nagano",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899385": {
      "name": "Rento Kajiyama",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899386": {
      "name": "Keita Niibori",
@@ -1507,22 +842,22 @@
     "1899387": {
      "name": "Matthew Watanabe",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899975": {
      "name": "Yuta Sugawara",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899976": {
      "name": "Kio Tanaka",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899977": {
      "name": "Kaede Suzuki",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -2129,147 +1464,147 @@
     "310090": {
      "name": "Tsukasa Shiotani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "352968": {
      "name": "Sébastien Haller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "427814": {
      "name": "Sho Sasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430856": {
      "name": "Takuma Asano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "431926": {
      "name": "Naoki Maeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "435151": {
      "name": "Hayao Kawabe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "737831": {
      "name": "Daiki Suga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "747927": {
      "name": "Issei Ouchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "858023": {
      "name": "Taishi Matsumoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922808": {
      "name": "Keisuke Osako",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922811": {
      "name": "Takumu Kawamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922815": {
      "name": "Taichi Yamasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922817": {
      "name": "Shunki Higashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1024041": {
      "name": "Hayato Araki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1025608": {
      "name": "Naoto Arai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1054177": {
      "name": "Ju-Sung Kim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134471": {
      "name": "Shun Ayukawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134711": {
      "name": "Mutsuki Kato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134956": {
      "name": "Kusini Yengi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1218918": {
      "name": "Yudai Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232923": {
      "name": "Sota Koshimichi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337750": {
      "name": "Shuto Nakano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337764": {
      "name": "Akito Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1508589": {
      "name": "Yotaro Nakajima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1800361": {
      "name": "Shimon Kobayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900461": {
      "name": "Hikaru Ogawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900466": {
      "name": "Rento Noguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900467": {
      "name": "Hiroto Ota",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2172654": {
      "name": "Minato Hara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -2937,87 +2272,87 @@
     "309488": {
      "name": "Tomoya Inukai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "310180": {
      "name": "Hayato Nakama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "431525": {
      "name": "Riki Harakawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "431791": {
      "name": "Kengo Nagai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "459495": {
      "name": "Koya Yuruki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727819": {
      "name": "Yuki Kakita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727829": {
      "name": "Hiromu Mitsumaru",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727873": {
      "name": "Keita Endo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727963": {
      "name": "Kohei Tezuka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "728766": {
      "name": "Yusuke Segawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "758052": {
      "name": "Taiyo Koga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824629": {
      "name": "Haruki Saruta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "826020": {
      "name": "Daiki Sugioka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "833021": {
      "name": "Yudai Konishi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "834306": {
      "name": "Tomoya Wakahara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "848282": {
      "name": "Ryosuke Kojima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924305": {
      "name": "Masaki Watai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "928662": {
      "name": "Shumpei Naruse",
@@ -3027,52 +2362,52 @@
     "928684": {
      "name": "Sachiro Toshima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1012227": {
      "name": "Yoshio Koizumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1035013": {
      "name": "Mao Hosoya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1089573": {
      "name": "Tomoaki Okubo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134268": {
      "name": "Shota Fujio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134477": {
      "name": "Yuto Yamada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134480": {
      "name": "Kenta Matsumoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134756": {
      "name": "Seiya Baba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1267663": {
      "name": "Wataru Harada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1299353": {
      "name": "Tojiro Kubo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336956": {
      "name": "Takumi Tsuchiya",
@@ -3087,32 +2422,32 @@
     "1611173": {
      "name": "Koki Kumasaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611176": {
      "name": "Hinata Yamauchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1642583": {
      "name": "Kenshin Yuba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1716158": {
      "name": "Nobuteru Nakagawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1770890": {
      "name": "Yusei Yamanouchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1823206": {
      "name": "Naberuyoshitaka Furusawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1844322": {
      "name": "Kaiji Chonan",
@@ -3127,7 +2462,7 @@
     "1902727": {
      "name": "Shusuke Furuya",
      "firstSeen": "2026-10-24",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2241885": {
      "name": "Yuito Kamo",
@@ -3173,6 +2508,671 @@
      "lastSeen": "2026-10-04"
     }
    ]
+  },
+  "Machida": {
+   "fotmobName": "Machida Zelvia",
+   "fotmobId": 194011,
+   "coach": "Go Kuroda",
+   "players": [
+    {
+     "id": 878285,
+     "name": "Kosei Tani",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 25,
+     "born": "2000-11-22",
+     "country": "Japan",
+     "height": 190,
+     "value": 1351021,
+     "rating": 7.26,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 166876,
+     "name": "Tatsuya Morita",
+     "role": "keepers",
+     "position": "GK",
+     "number": 13,
+     "age": 36,
+     "born": "1990-08-03",
+     "country": "Japan",
+     "height": 191,
+     "value": 102575,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1659401,
+     "name": "Aki Koch",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 66,
+     "age": 22,
+     "born": "2004-03-18",
+     "country": "Germany",
+     "height": 187,
+     "value": 539855,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2120185,
+     "name": "Nicholas Guimarães",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 89,
+     "age": 20,
+     "born": "2006-08-09",
+     "country": "Philippines",
+     "height": 183,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 660136,
+     "name": "Thomas Ouwejan",
+     "role": "defenders",
+     "position": "CB",
+     "number": 2,
+     "age": 30,
+     "born": "1996-09-30",
+     "country": "Netherlands",
+     "height": 178,
+     "value": 339330,
+     "rating": 7.35,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 258431,
+     "name": "Gen Shōji",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 33,
+     "born": "1992-12-11",
+     "country": "Japan",
+     "height": 182,
+     "value": 265020,
+     "rating": 7.2,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1011578,
+     "name": "Ryuho Kikuchi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 29,
+     "born": "1996-12-09",
+     "country": "Japan",
+     "height": 188,
+     "value": 143927,
+     "rating": 7.23,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 772082,
+     "name": "Ibrahim Drešević",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 29,
+     "born": "1997-01-24",
+     "country": "Kosovo",
+     "height": 186,
+     "value": 807120,
+     "rating": 6.44,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1611204,
+     "name": "Henry Mochizuki",
+     "role": "defenders",
+     "position": "CB,RWB",
+     "number": 6,
+     "age": 25,
+     "born": "2001-09-20",
+     "country": "Japan",
+     "height": 192,
+     "value": 970898,
+     "rating": 7.04,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 621294,
+     "name": "Kim Min-Tae",
+     "role": "defenders",
+     "position": "CB",
+     "number": 24,
+     "age": 32,
+     "born": "1993-11-26",
+     "country": "Korea Republic",
+     "height": 187,
+     "value": 168193,
+     "rating": 6.64,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1134846,
+     "name": "Daihachi Okamura",
+     "role": "defenders",
+     "position": "CB",
+     "number": 50,
+     "age": 29,
+     "born": "1997-02-15",
+     "country": "Japan",
+     "height": 183,
+     "value": 533886,
+     "rating": 7.08,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1843173,
+     "name": "Chui Mayaka",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": null,
+     "age": 20,
+     "born": "2006-08-11",
+     "country": "Japan",
+     "height": 160,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 955320,
+     "name": "Yuki Soma",
+     "role": "midfielders",
+     "position": "CAM,LW",
+     "number": 7,
+     "age": 29,
+     "born": "1997-02-25",
+     "country": "Japan",
+     "height": 166,
+     "value": 1131064,
+     "rating": 7.53,
+     "goals": 3,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 826005,
+     "name": "Keiya Sento",
+     "role": "midfielders",
+     "position": "CAM,CDM",
+     "number": 8,
+     "age": 31,
+     "born": "1994-12-29",
+     "country": "Japan",
+     "height": 171,
+     "value": 205442,
+     "rating": 6.86,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1064870,
+     "name": "Yusuke Matsuo",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 14,
+     "age": 29,
+     "born": "1997-07-23",
+     "country": "Japan",
+     "height": 170,
+     "value": 425549,
+     "rating": 6.2,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 645880,
+     "name": "Hiroyuki Mae",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 16,
+     "age": 31,
+     "born": "1995-08-01",
+     "country": "Japan",
+     "height": 173,
+     "value": 420318,
+     "rating": 7.16,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 523611,
+     "name": "Hokuto Shimoda",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 18,
+     "age": 34,
+     "born": "1991-11-07",
+     "country": "Japan",
+     "height": 171,
+     "value": 172700,
+     "rating": 6.54,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 621295,
+     "name": "Takuma Nishimura",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 20,
+     "age": 30,
+     "born": "1996-10-22",
+     "country": "Japan",
+     "height": 178,
+     "value": 355063,
+     "rating": 6.79,
+     "goals": 5,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 309489,
+     "name": "Ryohei Shirasaki",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 23,
+     "age": 33,
+     "born": "1993-05-18",
+     "country": "Japan",
+     "height": 181,
+     "value": 175394,
+     "rating": 6.53,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1814064,
+     "name": "Cha Je-Hoon",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 28,
+     "age": 20,
+     "born": "2006-05-03",
+     "country": "Korea Republic",
+     "height": 182,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 731955,
+     "name": "Neta Lavi",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 31,
+     "age": 30,
+     "born": "1996-08-25",
+     "country": "Israel",
+     "height": 177,
+     "value": 359013,
+     "rating": 7.21,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1134833,
+     "name": "Takahiro Akimoto",
+     "role": "midfielders",
+     "position": "LWB,CB,LM",
+     "number": 33,
+     "age": 28,
+     "born": "1998-01-31",
+     "country": "Japan",
+     "height": 170,
+     "value": 1020059,
+     "rating": 7.66,
+     "goals": 2,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1900020,
+     "name": "Futa Tokumura",
+     "role": "midfielders",
+     "position": "LWB",
+     "number": 34,
+     "age": 18,
+     "born": "2007-11-26",
+     "country": "Japan",
+     "height": 169,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1109893,
+     "name": "Hotaka Nakamura",
+     "role": "midfielders",
+     "position": "RWB,LWB",
+     "number": 88,
+     "age": 29,
+     "born": "1997-08-12",
+     "country": "Japan",
+     "height": 177,
+     "value": 394390,
+     "rating": 7.09,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 727837,
+     "name": "Koki Ogawa",
+     "role": "attackers",
+     "position": "ST,CAM",
+     "number": 9,
+     "age": 29,
+     "born": "1997-08-08",
+     "country": "Japan",
+     "height": 186,
+     "value": 1348815,
+     "rating": 7.3,
+     "goals": 4,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 245633,
+     "name": "Mitch Duke",
+     "role": "attackers",
+     "position": "ST,CAM",
+     "number": 15,
+     "age": 35,
+     "born": "1991-01-18",
+     "country": "Australia",
+     "height": 187,
+     "value": 273928,
+     "rating": 6.83,
+     "goals": 1,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1220549,
+     "name": "Tete Yengi",
+     "role": "attackers",
+     "position": "ST",
+     "number": 99,
+     "age": 25,
+     "born": "2000-11-28",
+     "country": "Australia",
+     "height": 197,
+     "value": 599838,
+     "rating": 7,
+     "goals": 3,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
+   "coachHistory": [
+    {
+     "name": "Go Kuroda",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "166876": {
+     "name": "Tatsuya Morita",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "245633": {
+     "name": "Mitch Duke",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "258431": {
+     "name": "Gen Shōji",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "309489": {
+     "name": "Ryohei Shirasaki",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "523611": {
+     "name": "Hokuto Shimoda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "621294": {
+     "name": "Kim Min-Tae",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "621295": {
+     "name": "Takuma Nishimura",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "645880": {
+     "name": "Hiroyuki Mae",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "660136": {
+     "name": "Thomas Ouwejan",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "727837": {
+     "name": "Koki Ogawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "731955": {
+     "name": "Neta Lavi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "772082": {
+     "name": "Ibrahim Drešević",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "826005": {
+     "name": "Keiya Sento",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "878285": {
+     "name": "Kosei Tani",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "955320": {
+     "name": "Yuki Soma",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1011578": {
+     "name": "Ryuho Kikuchi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1064870": {
+     "name": "Yusuke Matsuo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1109893": {
+     "name": "Hotaka Nakamura",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1134833": {
+     "name": "Takahiro Akimoto",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1134846": {
+     "name": "Daihachi Okamura",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1220549": {
+     "name": "Tete Yengi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1611204": {
+     "name": "Henry Mochizuki",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1659401": {
+     "name": "Aki Koch",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1814064": {
+     "name": "Cha Je-Hoon",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1843173": {
+     "name": "Chui Mayaka",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-31"
+    },
+    "1900020": {
+     "name": "Futa Tokumura",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "2120185": {
+     "name": "Nicholas Guimarães",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    }
+   },
+   "left": []
   },
   "Vissel Kobe": {
    "fotmobName": "Vissel Kobe",
@@ -3780,127 +3780,127 @@
     "20122": {
      "name": "Shota Arai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "98238": {
      "name": "Shuichi Gonda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "157252": {
      "name": "Gotoku Sakai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "166449": {
      "name": "Yuya Osako",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "196299": {
      "name": "Takahiro Ogihara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "308242": {
      "name": "Haruya Ide",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "309482": {
      "name": "Takuya Iwanami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "459499": {
      "name": "Yoshinori Muto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "460255": {
      "name": "Erik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "498456": {
      "name": "Anderson Lopes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "619662": {
      "name": "Yosuke Ideguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "645407": {
      "name": "Diego",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "688651": {
      "name": "Tetsushi Yamakawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "746040": {
      "name": "Kota Watanabe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "747908": {
      "name": "Ren Komatsu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "825800": {
      "name": "Katsuya Nagato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "826030": {
      "name": "Issei Takahashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "846603": {
      "name": "Daiya Maekawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "882272": {
      "name": "Jean Patrick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "895646": {
      "name": "Matheus Thuler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922716": {
      "name": "Yuta Goke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922719": {
      "name": "Daiju Sasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "970058": {
      "name": "Caetano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134847": {
      "name": "Nanasei Iino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233557": {
      "name": "Yuya Kuwasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233851": {
      "name": "Rikuto Hashimoto",
@@ -3910,22 +3910,22 @@
     "1358179": {
      "name": "Mitsuki Hidaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436728": {
      "name": "Niina Tominaga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437143": {
      "name": "Juzo Ura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1609832": {
      "name": "Shioki Takayama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611227": {
      "name": "Justin Homma",
@@ -3940,7 +3940,7 @@
     "1664593": {
      "name": "Kento Hamasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714767": {
      "name": "Hayato Watanabe",
@@ -3990,7 +3990,7 @@
     "2172701": {
      "name": "Hyoei Kawabata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -4067,6 +4067,767 @@
      "lastSeen": "2026-09-29"
     }
    ]
+  },
+  "Kashima Antlers": {
+   "fotmobName": "Kashima Antlers",
+   "fotmobId": 4397,
+   "coach": "Toru Oniki",
+   "players": [
+    {
+     "id": 1232143,
+     "name": "Tomoki Hayakawa",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 27,
+     "born": "1999-03-03",
+     "country": "Japan",
+     "height": 186,
+     "value": 1335699,
+     "rating": 6.63,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1134528,
+     "name": "Taiki Yamada",
+     "role": "keepers",
+     "position": "GK",
+     "number": 21,
+     "age": 24,
+     "born": "2002-01-08",
+     "country": "Japan",
+     "height": 190,
+     "value": 239480,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 621528,
+     "name": "Yuji Kajikawa",
+     "role": "keepers",
+     "position": "GK",
+     "number": 29,
+     "age": 35,
+     "born": "1991-07-26",
+     "country": "Japan",
+     "height": 185,
+     "value": 230114,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1899993,
+     "name": "Haruto Fujii",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 31,
+     "age": 23,
+     "born": "2003-06-05",
+     "country": "Japan",
+     "height": 183,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 648365,
+     "name": "Koki Anzai",
+     "role": "defenders",
+     "position": "LB",
+     "number": 2,
+     "age": 31,
+     "born": "1995-05-31",
+     "country": "Japan",
+     "height": 172,
+     "value": 332184,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1053477,
+     "name": "Tae-Hyeon Kim",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 26,
+     "born": "2000-09-17",
+     "country": "South Korea",
+     "height": 186,
+     "value": 770375,
+     "rating": 6.76,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1218919,
+     "name": "Kaito Chida",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 32,
+     "born": "1994-10-17",
+     "country": "Japan",
+     "height": 186,
+     "value": 154970,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1028353,
+     "name": "Ikuma Sekigawa",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 26,
+     "born": "2000-09-13",
+     "country": "Japan",
+     "height": 180,
+     "value": 569828,
+     "rating": 7.1,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 727419,
+     "name": "Ryoya Ogawa",
+     "role": "defenders",
+     "position": "LB",
+     "number": 7,
+     "age": 29,
+     "born": "1996-11-24",
+     "country": "Japan",
+     "height": 180,
+     "value": 705202,
+     "rating": 6.97,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1337560,
+     "name": "Sho Omori",
+     "role": "defenders",
+     "position": "LB,LWB",
+     "number": 19,
+     "age": 27,
+     "born": "1999-08-19",
+     "country": "Japan",
+     "height": 177,
+     "value": 427543,
+     "rating": 7.06,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1437167,
+     "name": "Keisuke Tsukui",
+     "role": "defenders",
+     "position": "RB",
+     "number": 23,
+     "age": 22,
+     "born": "2004-05-21",
+     "country": "Japan",
+     "height": 180,
+     "value": 441207,
+     "rating": 6.46,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 728445,
+     "name": "Ryuta Koike",
+     "role": "defenders",
+     "position": "RB",
+     "number": 25,
+     "age": 31,
+     "born": "1995-08-29",
+     "country": "Japan",
+     "height": 169,
+     "value": 169212,
+     "rating": 6.33,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1818880,
+     "name": "Anthony Motosuna",
+     "role": "defenders",
+     "position": "CB",
+     "number": 35,
+     "age": 17,
+     "born": "2009-03-10",
+     "country": "Japan",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 648262,
+     "name": "Rikuto Hirose",
+     "role": "defenders",
+     "position": "RB,LW,RW",
+     "number": 37,
+     "age": 31,
+     "born": "1995-09-23",
+     "country": "Japan",
+     "height": 172,
+     "value": 240786,
+     "rating": 6.92,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 430831,
+     "name": "Naomichi Ueda",
+     "role": "defenders",
+     "position": "CB",
+     "number": 55,
+     "age": 32,
+     "born": "1994-10-24",
+     "country": "Japan",
+     "height": 186,
+     "value": 623746,
+     "rating": 6.74,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 648364,
+     "name": "Kento Misao",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 6,
+     "age": 30,
+     "born": "1996-04-16",
+     "country": "Japan",
+     "height": 180,
+     "value": 391721,
+     "rating": 6.82,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1173576,
+     "name": "Matheus Bueno",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 8,
+     "age": 28,
+     "born": "1998-07-30",
+     "country": "Brazil",
+     "height": 178,
+     "value": 773914,
+     "rating": 6.95,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 262394,
+     "name": "Gaku Shibasaki",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 10,
+     "age": 34,
+     "born": "1992-05-28",
+     "country": "Japan",
+     "height": 175,
+     "value": 181697,
+     "rating": 6.97,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1011554,
+     "name": "Yuta Higuchi",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 14,
+     "age": 29,
+     "born": "1996-10-30",
+     "country": "Japan",
+     "height": 168,
+     "value": 353819,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 290120,
+     "name": "José Elber",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 17,
+     "age": 34,
+     "born": "1992-05-27",
+     "country": "Brazil",
+     "height": 170,
+     "value": 237605,
+     "rating": 7.25,
+     "goals": 1,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1899991,
+     "name": "Haruki Hayashi",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 24,
+     "age": 22,
+     "born": "2003-12-05",
+     "country": "Japan",
+     "height": 177,
+     "value": null,
+     "rating": 6.48,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1133794,
+     "name": "Yuta Matsumura",
+     "role": "midfielders",
+     "position": "RM,LM",
+     "number": 27,
+     "age": 25,
+     "born": "2001-04-13",
+     "country": "Japan",
+     "height": 173,
+     "value": 508767,
+     "rating": 7.12,
+     "goals": 2,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1899992,
+     "name": "Yugo Okawa",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 28,
+     "age": 19,
+     "born": "2007-07-14",
+     "country": "Japan",
+     "height": 185,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2421227,
+     "name": "Rui Onuki",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 42,
+     "age": 18,
+     "born": "2008-04-09",
+     "country": "Japan",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 364496,
+     "name": "Aleksandar Čavrić",
+     "role": "midfielders",
+     "position": "LM,ST,RM",
+     "number": 77,
+     "age": 32,
+     "born": "1994-05-18",
+     "country": "Serbia",
+     "height": 184,
+     "value": 634382,
+     "rating": 7.05,
+     "goals": 6,
+     "assists": 1,
+     "penalties": 1,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 558007,
+     "name": "Léo",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 31,
+     "born": "1995-02-03",
+     "country": "Brazil",
+     "height": 178,
+     "value": 1553114,
+     "rating": 8.02,
+     "goals": 12,
+     "assists": 0,
+     "penalties": 1,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 802134,
+     "name": "Kyosuke Tagawa",
+     "role": "attackers",
+     "position": "ST",
+     "number": 11,
+     "age": 27,
+     "born": "1999-02-11",
+     "country": "Japan",
+     "height": 181,
+     "value": 303946,
+     "rating": 5.94,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 758460,
+     "name": "Yan",
+     "role": "attackers",
+     "position": "RW,RM,ST",
+     "number": 18,
+     "age": 28,
+     "born": "1998-09-04",
+     "country": "Brazil",
+     "height": 175,
+     "value": 846559,
+     "rating": 7.36,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1748953,
+     "name": "Minato Yoshida",
+     "role": "attackers",
+     "position": "ST,LM",
+     "number": 30,
+     "age": 18,
+     "born": "2008-07-15",
+     "country": "Japan",
+     "height": null,
+     "value": null,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1652441,
+     "name": "Homare Tokuda",
+     "role": "attackers",
+     "position": "ST",
+     "number": 34,
+     "age": 19,
+     "born": "2007-02-18",
+     "country": "Japan",
+     "height": 186,
+     "value": 497867,
+     "rating": 6.76,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 619621,
+     "name": "Yuma Suzuki",
+     "role": "attackers",
+     "position": "ST,LM,RW",
+     "number": 40,
+     "age": 30,
+     "born": "1996-04-26",
+     "country": "Japan",
+     "height": 181,
+     "value": 1563878,
+     "rating": 7.08,
+     "goals": 1,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
+   "coachHistory": [
+    {
+     "name": "Toru Oniki",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "262394": {
+     "name": "Gaku Shibasaki",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "290120": {
+     "name": "José Elber",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "364496": {
+     "name": "Aleksandar Čavrić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "430831": {
+     "name": "Naomichi Ueda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "558007": {
+     "name": "Léo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "619621": {
+     "name": "Yuma Suzuki",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "621528": {
+     "name": "Yuji Kajikawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "648262": {
+     "name": "Rikuto Hirose",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "648364": {
+     "name": "Kento Misao",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "648365": {
+     "name": "Koki Anzai",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "727419": {
+     "name": "Ryoya Ogawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "728445": {
+     "name": "Ryuta Koike",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "758460": {
+     "name": "Yan",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "802134": {
+     "name": "Kyosuke Tagawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1011554": {
+     "name": "Yuta Higuchi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1028353": {
+     "name": "Ikuma Sekigawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1053477": {
+     "name": "Tae-Hyeon Kim",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1133794": {
+     "name": "Yuta Matsumura",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1134528": {
+     "name": "Taiki Yamada",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1173576": {
+     "name": "Matheus Bueno",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1218919": {
+     "name": "Kaito Chida",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1232143": {
+     "name": "Tomoki Hayakawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1337560": {
+     "name": "Sho Omori",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1437167": {
+     "name": "Keisuke Tsukui",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1652441": {
+     "name": "Homare Tokuda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1748953": {
+     "name": "Minato Yoshida",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1818880": {
+     "name": "Anthony Motosuna",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1899991": {
+     "name": "Haruki Hayashi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1899992": {
+     "name": "Yugo Okawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1899993": {
+     "name": "Haruto Fujii",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "2421227": {
+     "name": "Rui Onuki",
+     "firstSeen": "2026-10-29",
+     "lastSeen": "2026-10-31"
+    }
+   },
+   "left": []
   },
   "Kawasaki Frontale": {
    "fotmobName": "Kawasaki Frontale",
@@ -4731,102 +5492,102 @@
     "20771": {
      "name": "Akihiro Ienaga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "196255": {
      "name": "Yu Kobayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "252254": {
      "name": "Ryota Oshima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "298352": {
      "name": "Yuichi Maruyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "538435": {
      "name": "Svend Brodersen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "767508": {
      "name": "Filip Uremović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "843782": {
      "name": "Tatsuya Ito",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "848285": {
      "name": "Louis Yamaguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "853613": {
      "name": "Marcinho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "915101": {
      "name": "Yasuto Wakizaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "978089": {
      "name": "Lazar Romanić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1088118": {
      "name": "Derik Lacerda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1132817": {
      "name": "Kazuya Konno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134465": {
      "name": "Yuki Yamamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1227819": {
      "name": "Kento Tachibanada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232150": {
      "name": "Ten Miyagi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1244298": {
      "name": "So Kawahara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1292274": {
      "name": "Reon Yamahara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1308598": {
      "name": "Yuki Hayasaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336965": {
      "name": "Asahi Sasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336966": {
      "name": "Takatora Einaga",
@@ -4836,22 +5597,22 @@
     "1337314": {
      "name": "Hiroto Taniguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337487": {
      "name": "Sota Miura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436716": {
      "name": "Yuto Ozeki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436717": {
      "name": "Yuto Matsunagane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1520233": {
      "name": "Kaito Tsuchiya",
@@ -4861,52 +5622,52 @@
     "1521407": {
      "name": "Pedro Romano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1543692": {
      "name": "Kota Yui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1706519": {
      "name": "Kayke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715908": {
      "name": "Hiroto Noda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1720262": {
      "name": "Geun-Hyeong Lee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1803988": {
      "name": "Kyosuke Mochiyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1859408": {
      "name": "Shuto Yamaichi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899997": {
      "name": "Noriharu Kan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899999": {
      "name": "Shunsuke Hayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900001": {
      "name": "Ryuki Osa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2154755": {
      "name": "Rin Homma",
@@ -5541,918 +6302,157 @@
     "20993": {
      "name": "Shusaku Nishikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "116470": {
      "name": "Kota Mizunuma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "456586": {
      "name": "Samuel Gustafson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "622088": {
      "name": "Eiichi Katayama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "628310": {
      "name": "Ado Onaiwu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "638758": {
      "name": "Matheus Sávio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "677635": {
      "name": "Ryoma Watanabe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727601": {
      "name": "Yoichi Naganuma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727841": {
      "name": "Miki Yamane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "834331": {
      "name": "Koki Fukui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922788": {
      "name": "Yoshiaki Arai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "955787": {
      "name": "Danilo Boza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1034990": {
      "name": "Takuro Kaneko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134508": {
      "name": "Tatsuki Seko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1243414": {
      "name": "Kota Kudo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1308626": {
      "name": "Yuta Miyamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336645": {
      "name": "Kaito Yasui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1338883": {
      "name": "Jumpei Hayakawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1365945": {
      "name": "Harumi Minamino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1371401": {
      "name": "Hiiro Komori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1421817": {
      "name": "Atsushi Inagaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437139": {
      "name": "Kotaro Hayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437144": {
      "name": "Yota Horiuchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1544873": {
      "name": "Kenta Nemoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715032": {
      "name": "Shuta Sasa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1759538": {
      "name": "Luka Didulica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1771200": {
      "name": "Yoshitaka Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1771202": {
      "name": "Takeshi Wada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1771224": {
      "name": "Renji Hidano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1859409": {
      "name": "Hayate Ueki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2221995": {
      "name": "Reon Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    }
-   },
-   "left": []
-  },
-  "Kashima Antlers": {
-   "fotmobName": "Kashima Antlers",
-   "fotmobId": 4397,
-   "coach": "Toru Oniki",
-   "players": [
-    {
-     "id": 1232143,
-     "name": "Tomoki Hayakawa",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 27,
-     "born": "1999-03-03",
-     "country": "Japan",
-     "height": 186,
-     "value": 1335699,
-     "rating": 6.63,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1134528,
-     "name": "Taiki Yamada",
-     "role": "keepers",
-     "position": "GK",
-     "number": 21,
-     "age": 24,
-     "born": "2002-01-08",
-     "country": "Japan",
-     "height": 190,
-     "value": 239480,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 621528,
-     "name": "Yuji Kajikawa",
-     "role": "keepers",
-     "position": "GK",
-     "number": 29,
-     "age": 35,
-     "born": "1991-07-26",
-     "country": "Japan",
-     "height": 185,
-     "value": 230114,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1899993,
-     "name": "Haruto Fujii",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 31,
-     "age": 23,
-     "born": "2003-06-05",
-     "country": "Japan",
-     "height": 183,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 648365,
-     "name": "Koki Anzai",
-     "role": "defenders",
-     "position": "LB",
-     "number": 2,
-     "age": 31,
-     "born": "1995-05-31",
-     "country": "Japan",
-     "height": 172,
-     "value": 332184,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1053477,
-     "name": "Tae-Hyeon Kim",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 26,
-     "born": "2000-09-17",
-     "country": "South Korea",
-     "height": 186,
-     "value": 770375,
-     "rating": 6.76,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1218919,
-     "name": "Kaito Chida",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 32,
-     "born": "1994-10-17",
-     "country": "Japan",
-     "height": 186,
-     "value": 154970,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1028353,
-     "name": "Ikuma Sekigawa",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 26,
-     "born": "2000-09-13",
-     "country": "Japan",
-     "height": 180,
-     "value": 569828,
-     "rating": 7.1,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 727419,
-     "name": "Ryoya Ogawa",
-     "role": "defenders",
-     "position": "LB",
-     "number": 7,
-     "age": 29,
-     "born": "1996-11-24",
-     "country": "Japan",
-     "height": 180,
-     "value": 705202,
-     "rating": 6.97,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1337560,
-     "name": "Sho Omori",
-     "role": "defenders",
-     "position": "LB,LWB",
-     "number": 19,
-     "age": 27,
-     "born": "1999-08-19",
-     "country": "Japan",
-     "height": 177,
-     "value": 427543,
-     "rating": 7.06,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1437167,
-     "name": "Keisuke Tsukui",
-     "role": "defenders",
-     "position": "RB",
-     "number": 23,
-     "age": 22,
-     "born": "2004-05-21",
-     "country": "Japan",
-     "height": 180,
-     "value": 441207,
-     "rating": 6.46,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 728445,
-     "name": "Ryuta Koike",
-     "role": "defenders",
-     "position": "RB",
-     "number": 25,
-     "age": 31,
-     "born": "1995-08-29",
-     "country": "Japan",
-     "height": 169,
-     "value": 169212,
-     "rating": 6.33,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1818880,
-     "name": "Anthony Motosuna",
-     "role": "defenders",
-     "position": "CB",
-     "number": 35,
-     "age": 17,
-     "born": "2009-03-10",
-     "country": "Japan",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 648262,
-     "name": "Rikuto Hirose",
-     "role": "defenders",
-     "position": "RB,LW,RW",
-     "number": 37,
-     "age": 31,
-     "born": "1995-09-23",
-     "country": "Japan",
-     "height": 172,
-     "value": 240786,
-     "rating": 6.92,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 430831,
-     "name": "Naomichi Ueda",
-     "role": "defenders",
-     "position": "CB",
-     "number": 55,
-     "age": 32,
-     "born": "1994-10-24",
-     "country": "Japan",
-     "height": 186,
-     "value": 623746,
-     "rating": 6.74,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 648364,
-     "name": "Kento Misao",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 6,
-     "age": 30,
-     "born": "1996-04-16",
-     "country": "Japan",
-     "height": 180,
-     "value": 391721,
-     "rating": 6.82,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1173576,
-     "name": "Matheus Bueno",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 8,
-     "age": 28,
-     "born": "1998-07-30",
-     "country": "Brazil",
-     "height": 178,
-     "value": 773914,
-     "rating": 6.95,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 262394,
-     "name": "Gaku Shibasaki",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 10,
-     "age": 34,
-     "born": "1992-05-28",
-     "country": "Japan",
-     "height": 175,
-     "value": 181697,
-     "rating": 6.97,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1011554,
-     "name": "Yuta Higuchi",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 14,
-     "age": 29,
-     "born": "1996-10-30",
-     "country": "Japan",
-     "height": 168,
-     "value": 353819,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 290120,
-     "name": "José Elber",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 17,
-     "age": 34,
-     "born": "1992-05-27",
-     "country": "Brazil",
-     "height": 170,
-     "value": 237605,
-     "rating": 7.25,
-     "goals": 1,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1899991,
-     "name": "Haruki Hayashi",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 24,
-     "age": 22,
-     "born": "2003-12-05",
-     "country": "Japan",
-     "height": 177,
-     "value": null,
-     "rating": 6.48,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1133794,
-     "name": "Yuta Matsumura",
-     "role": "midfielders",
-     "position": "RM,LM",
-     "number": 27,
-     "age": 25,
-     "born": "2001-04-13",
-     "country": "Japan",
-     "height": 173,
-     "value": 508767,
-     "rating": 7.12,
-     "goals": 2,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1899992,
-     "name": "Yugo Okawa",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 28,
-     "age": 19,
-     "born": "2007-07-14",
-     "country": "Japan",
-     "height": 185,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2421227,
-     "name": "Rui Onuki",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 42,
-     "age": 18,
-     "born": "2008-04-09",
-     "country": "Japan",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 364496,
-     "name": "Aleksandar Čavrić",
-     "role": "midfielders",
-     "position": "LM,ST,RM",
-     "number": 77,
-     "age": 32,
-     "born": "1994-05-18",
-     "country": "Serbia",
-     "height": 184,
-     "value": 634382,
-     "rating": 7.05,
-     "goals": 6,
-     "assists": 1,
-     "penalties": 1,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 558007,
-     "name": "Léo",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 31,
-     "born": "1995-02-03",
-     "country": "Brazil",
-     "height": 178,
-     "value": 1553114,
-     "rating": 8.02,
-     "goals": 12,
-     "assists": 0,
-     "penalties": 1,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 802134,
-     "name": "Kyosuke Tagawa",
-     "role": "attackers",
-     "position": "ST",
-     "number": 11,
-     "age": 27,
-     "born": "1999-02-11",
-     "country": "Japan",
-     "height": 181,
-     "value": 303946,
-     "rating": 5.94,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 758460,
-     "name": "Yan",
-     "role": "attackers",
-     "position": "RW,RM,ST",
-     "number": 18,
-     "age": 28,
-     "born": "1998-09-04",
-     "country": "Brazil",
-     "height": 175,
-     "value": 846559,
-     "rating": 7.36,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1748953,
-     "name": "Minato Yoshida",
-     "role": "attackers",
-     "position": "ST,LM",
-     "number": 30,
-     "age": 18,
-     "born": "2008-07-15",
-     "country": "Japan",
-     "height": null,
-     "value": null,
-     "rating": 6.53,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1652441,
-     "name": "Homare Tokuda",
-     "role": "attackers",
-     "position": "ST",
-     "number": 34,
-     "age": 19,
-     "born": "2007-02-18",
-     "country": "Japan",
-     "height": 186,
-     "value": 497867,
-     "rating": 6.76,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 619621,
-     "name": "Yuma Suzuki",
-     "role": "attackers",
-     "position": "ST,LM,RW",
-     "number": 40,
-     "age": 30,
-     "born": "1996-04-26",
-     "country": "Japan",
-     "height": 181,
-     "value": 1563878,
-     "rating": 7.08,
-     "goals": 1,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-30T15:47:46.164Z",
-   "coachHistory": [
-    {
-     "name": "Toru Oniki",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "262394": {
-     "name": "Gaku Shibasaki",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "290120": {
-     "name": "José Elber",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "364496": {
-     "name": "Aleksandar Čavrić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "430831": {
-     "name": "Naomichi Ueda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "558007": {
-     "name": "Léo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "619621": {
-     "name": "Yuma Suzuki",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "621528": {
-     "name": "Yuji Kajikawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "648262": {
-     "name": "Rikuto Hirose",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "648364": {
-     "name": "Kento Misao",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "648365": {
-     "name": "Koki Anzai",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "727419": {
-     "name": "Ryoya Ogawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "728445": {
-     "name": "Ryuta Koike",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "758460": {
-     "name": "Yan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "802134": {
-     "name": "Kyosuke Tagawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1011554": {
-     "name": "Yuta Higuchi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1028353": {
-     "name": "Ikuma Sekigawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1053477": {
-     "name": "Tae-Hyeon Kim",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1133794": {
-     "name": "Yuta Matsumura",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1134528": {
-     "name": "Taiki Yamada",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1173576": {
-     "name": "Matheus Bueno",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1218919": {
-     "name": "Kaito Chida",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1232143": {
-     "name": "Tomoki Hayakawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1337560": {
-     "name": "Sho Omori",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1437167": {
-     "name": "Keisuke Tsukui",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1652441": {
-     "name": "Homare Tokuda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1748953": {
-     "name": "Minato Yoshida",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1818880": {
-     "name": "Anthony Motosuna",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1899991": {
-     "name": "Haruki Hayashi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1899992": {
-     "name": "Yugo Okawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1899993": {
-     "name": "Haruto Fujii",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "2421227": {
-     "name": "Rui Onuki",
-     "firstSeen": "2026-10-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -7120,137 +7120,137 @@
     "20626": {
      "name": "Hiroki Iikura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "245422": {
      "name": "Ryo Miyaichi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "309930": {
      "name": "Takuya Kida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "310505": {
      "name": "Jordy Croux",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "396526": {
      "name": "Rubén Blanco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430845": {
      "name": "Ken Matsubara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "523739": {
      "name": "Jun Amano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "626661": {
      "name": "Thomas Deng",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "673873": {
      "name": "Yuri Araújo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "803542": {
      "name": "Dean David",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "831831": {
      "name": "Kei Chinen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "862605": {
      "name": "Daiya Tono",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "887706": {
      "name": "Toichi Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "923883": {
      "name": "Taiki Watanabe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1022346": {
      "name": "Jeison Quiñónes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1024287": {
      "name": "Il-Kyu Park",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1194458": {
      "name": "Ryotaro Tsunoda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1266580": {
      "name": "Tomoki Kondo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1266581": {
      "name": "Rio Nitta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337772": {
      "name": "Yuya Tsuboi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337783": {
      "name": "Riku Yamane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1380687": {
      "name": "Kaina Tanimura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1387864": {
      "name": "George Onaiwu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436609": {
      "name": "Takuto Kimura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1477971": {
      "name": "Kosuke Matsumura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611216": {
      "name": "Taisei Inoue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1676872": {
      "name": "Tevis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1677545": {
      "name": "Hiroto Asada",
@@ -7260,22 +7260,22 @@
     "1714755": {
      "name": "Kosei Suwama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1810717": {
      "name": "Yuta Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1813251": {
      "name": "Kanta Sekitomi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1847226": {
      "name": "Shota Fujii",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900057": {
      "name": "Aruto Higuchi",
@@ -7285,17 +7285,17 @@
     "1972862": {
      "name": "Hikaru Takahashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120233": {
      "name": "Shin Miidera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2262527": {
      "name": "Kanata Hirano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -7957,137 +7957,137 @@
     "166868": {
      "name": "Ryo Takeuchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "196638": {
      "name": "Goro Kawanami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430846": {
      "name": "Masaya Matsumoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430859": {
      "name": "Ibuki Fujita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "621532": {
      "name": "Kosuke Shirai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "624056": {
      "name": "Ataru Esaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727842": {
      "name": "Yuta Kamiya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "728434": {
      "name": "Daichi Tagami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824515": {
      "name": "Yoshitake Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824563": {
      "name": "Yugo Tatsuta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "828055": {
      "name": "Sang-Ho Na",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "891762": {
      "name": "Lucão",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922601": {
      "name": "Towa Yamane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "934832": {
      "name": "Lennart Moser",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1030130": {
      "name": "Rui Sueyoshi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1031033": {
      "name": "Jun Nishikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1110789": {
      "name": "Kota Kawano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1227816": {
      "name": "Ryoga Sato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232169": {
      "name": "Hiroshi Omori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233843": {
      "name": "Takaya Kimura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1237563": {
      "name": "Noah Kenshin Browne",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336911": {
      "name": "Ryo Tabei",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336924": {
      "name": "Taro Hamada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337276": {
      "name": "Haruka Motoyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1359812": {
      "name": "Oberdan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1379435": {
      "name": "Léo Gaúcho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1385784": {
      "name": "Eiji Miyamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611327": {
      "name": "Kohei Kawakami",
@@ -8097,32 +8097,32 @@
     "1611329": {
      "name": "Yota Fujii",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714921": {
      "name": "Kanshiro Suemune",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714924": {
      "name": "Ryo Senda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1735106": {
      "name": "Soichiro Mori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1815890": {
      "name": "Kosei Ogura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900442": {
      "name": "Shun Matsuda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2129962": {
      "name": "Shu Ikedo",
@@ -8751,127 +8751,127 @@
     "116583": {
      "name": "Yohei Takeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "197538": {
      "name": "Kensuke Nagai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "266895": {
      "name": "Daniel Schmidt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "431974": {
      "name": "Yuki Nogami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "523612": {
      "name": "Sho Inagaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "523712": {
      "name": "Tomoya Koyamatsu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "671941": {
      "name": "Mateus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727602": {
      "name": "Tsukasa Morishima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727950": {
      "name": "Ryuji Izumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "733923": {
      "name": "Yuya Yamagishi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "772258": {
      "name": "Marcus Índio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824427": {
      "name": "Teruki Hara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824511": {
      "name": "Takuya Uchida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "930029": {
      "name": "Haruya Fujii",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1011544": {
      "name": "Yuya Asano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1011555": {
      "name": "Katsuhiro Nakayama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1011575": {
      "name": "Masahito Ono",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1026494": {
      "name": "Shuhei Tokumoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1062275": {
      "name": "Tomoki Takamine",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1067023": {
      "name": "Taichi Kikuchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1155129": {
      "name": "Hidemasa Koda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1227821": {
      "name": "Yota Sato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337003": {
      "name": "Yudai Kimura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611208": {
      "name": "Alexandre Pisano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1716012": {
      "name": "Shungo Sugiura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1716013": {
      "name": "Yves Avelete",
@@ -8881,32 +8881,32 @@
     "1900456": {
      "name": "Hiroaki Hagi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900457": {
      "name": "Harumu Kubo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900460": {
      "name": "Ryuki Oiso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120194": {
      "name": "Yuzo Takeuchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120196": {
      "name": "Sakuto Fukaya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2407290": {
      "name": "Sameshima Atsuki",
      "firstSeen": "2026-10-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -9448,127 +9448,127 @@
     "144993": {
      "name": "Shinji Kagawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "166517": {
      "name": "Kyohei Noborizato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "369742": {
      "name": "Jackson Irvine",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430832": {
      "name": "Kosuke Nakamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "543969": {
      "name": "Dion Cools",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "648363": {
      "name": "Shinnosuke Hatanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "684725": {
      "name": "Lucas Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "860910": {
      "name": "Pablo Sabbag",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "881786": {
      "name": "Javier Hernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1010713": {
      "name": "Takumi Nakamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1026498": {
      "name": "Satoki Uejo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1109886": {
      "name": "Shunta Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134472": {
      "name": "Ayumu Ohata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134550": {
      "name": "Koto Abe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134746": {
      "name": "Solomon Sakuragawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1204991": {
      "name": "Masaya Shibayama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1221385": {
      "name": "Thiago",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233837": {
      "name": "Rikito Inoue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1251818": {
      "name": "Yota Komi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1308621": {
      "name": "Kosei Okazawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437127": {
      "name": "Reiya Sakata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1519244": {
      "name": "Hayato Okuda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1624071": {
      "name": "Yumeki Yokoyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715145": {
      "name": "Travis Takahashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1751309": {
      "name": "Chimezie Ezemuokwe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1844160": {
      "name": "Eiji Kubo",
@@ -9578,7 +9578,7 @@
     "1900079": {
      "name": "Ken Isibor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900080": {
      "name": "Ryota Onoda",
@@ -9588,7 +9588,7 @@
     "2108819": {
      "name": "Koki Nagasoe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -10269,42 +10269,42 @@
     "176130": {
      "name": "Yutaka Yoshida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "252055": {
      "name": "Kei Ishikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "397173": {
      "name": "Yuji Takahashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430820": {
      "name": "Kazuki Kozuka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430836": {
      "name": "Yuki Honda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "523646": {
      "name": "Kei Koizumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "621536": {
      "name": "Koya Kitagawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "623937": {
      "name": "Kosuke Kinoshita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "648217": {
      "name": "Kengo Kitazume",
@@ -10314,132 +10314,132 @@
     "688340": {
      "name": "Se-Hun Oh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727818": {
      "name": "Taiki Hirato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "747924": {
      "name": "Capixaba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "864277": {
      "name": "Doo-Jae Won",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "886435": {
      "name": "Ryo Germain",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "917257": {
      "name": "Yuya Oki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1024050": {
      "name": "Togo Umeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134476": {
      "name": "Masaki Yumiba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134784": {
      "name": "Jelani Sumiyoshi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134798": {
      "name": "Kai Matsuzaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1135469": {
      "name": "Tomoya Fujii",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1155384": {
      "name": "Kenta Inoue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1190984": {
      "name": "Hidehiro Sugai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1192236": {
      "name": "Sodai Hasukawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1192873": {
      "name": "Mateus Brunetti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1247341": {
      "name": "Seung-Wook Park",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1312834": {
      "name": "Dieguinho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1463407": {
      "name": "Sen Takagi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1716016": {
      "name": "Tomotaro Sasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1717480": {
      "name": "Yudai Shimamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1733998": {
      "name": "Yuji Doi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1742353": {
      "name": "Rinsei Ohata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1779224": {
      "name": "Haruto Hidaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900115": {
      "name": "Ryota Hariu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900476": {
      "name": "Keigo Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900477": {
      "name": "Joo-Young Eom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2172653": {
      "name": "Yuto Tsuji",
@@ -10459,6 +10459,947 @@
      "name": "Yuto Tsuji",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
+    }
+   ]
+  },
+  "Kyoto": {
+   "fotmobName": "Kyoto Sanga FC",
+   "fotmobId": 8542,
+   "coach": "Ranko Popović",
+   "players": [
+    {
+     "id": 431489,
+     "name": "Gakuji Ota",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 35,
+     "born": "1990-12-26",
+     "country": "Japan",
+     "height": 190,
+     "value": 213442,
+     "rating": 6.37,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 523693,
+     "name": "Kentaro Kakoi",
+     "role": "keepers",
+     "position": "GK",
+     "number": 21,
+     "age": 35,
+     "born": "1991-04-23",
+     "country": "Japan",
+     "height": 190,
+     "value": 182373,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 777089,
+     "name": "Akira Fantini",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 36,
+     "age": 28,
+     "born": "1998-05-24",
+     "country": "Japan",
+     "height": 182,
+     "value": 155170,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1282076,
+     "name": "Halls",
+     "role": "keepers",
+     "position": "GK",
+     "number": 90,
+     "age": 27,
+     "born": "1999-06-17",
+     "country": "Brazil",
+     "height": 198,
+     "value": 196915,
+     "rating": 7.16,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 728443,
+     "name": "Masaaki Murakami",
+     "role": "keepers",
+     "position": "GK",
+     "number": 94,
+     "age": 34,
+     "born": "1992-08-07",
+     "country": "Japan",
+     "height": 185,
+     "value": 249001,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1155059,
+     "name": "Hisashi Tawiah",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 28,
+     "born": "1998-10-18",
+     "country": "Japan",
+     "height": 191,
+     "value": 189718,
+     "rating": 6.87,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1716199,
+     "name": "Kodai Nagata",
+     "role": "defenders",
+     "position": "CB",
+     "number": 15,
+     "age": 24,
+     "born": "2002-09-08",
+     "country": "Japan",
+     "height": 180,
+     "value": 359894,
+     "rating": 6.76,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1337311,
+     "name": "Ren Kato",
+     "role": "defenders",
+     "position": "LB,RB,RW,RWB",
+     "number": 26,
+     "age": 26,
+     "born": "1999-12-28",
+     "country": "Japan",
+     "height": 175,
+     "value": 345144,
+     "rating": 6.41,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2214060,
+     "name": "Sota Yamamoto",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 33,
+     "age": 22,
+     "born": "2004-08-23",
+     "country": "Japan",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 637584,
+     "name": "Henrique",
+     "role": "defenders",
+     "position": "CB",
+     "number": 34,
+     "age": 29,
+     "born": "1997-01-20",
+     "country": "Brazil",
+     "height": 185,
+     "value": 173719,
+     "rating": 6.19,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1238159,
+     "name": "Yusuke Ishida",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 40,
+     "age": 23,
+     "born": "2002-11-11",
+     "country": "Japan",
+     "height": 175,
+     "value": 256926,
+     "rating": 6.55,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1675021,
+     "name": "Weverton",
+     "role": "defenders",
+     "position": "CB",
+     "number": 43,
+     "age": 23,
+     "born": "2003-02-17",
+     "country": "Brazil",
+     "height": 183,
+     "value": 386369,
+     "rating": 6.64,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1337015,
+     "name": "Kyo Sato",
+     "role": "defenders",
+     "position": "LB,LWB,LM",
+     "number": 44,
+     "age": 26,
+     "born": "2000-03-21",
+     "country": "Japan",
+     "height": 168,
+     "value": 371453,
+     "rating": 6.55,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 628316,
+     "name": "Yoshinori Suzuki",
+     "role": "defenders",
+     "position": "CB",
+     "number": 50,
+     "age": 34,
+     "born": "1992-09-11",
+     "country": "Japan",
+     "height": 185,
+     "value": 249914,
+     "rating": 6.6,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 198404,
+     "name": "Ryosuke Yamanaka",
+     "role": "defenders",
+     "position": "LWB",
+     "number": 60,
+     "age": 33,
+     "born": "1993-04-20",
+     "country": "Japan",
+     "height": 168,
+     "value": 113102,
+     "rating": 6.81,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1281588,
+     "name": "João Pedro",
+     "role": "midfielders",
+     "position": "CAM,CDM,CM",
+     "number": 6,
+     "age": 27,
+     "born": "1999-09-03",
+     "country": "Brazil",
+     "height": 185,
+     "value": null,
+     "rating": 6.98,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 166470,
+     "name": "Takuji Yonemoto",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 8,
+     "age": 35,
+     "born": "1990-12-03",
+     "country": "Japan",
+     "height": 177,
+     "value": 157665,
+     "rating": 5.93,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 941492,
+     "name": "Shimpei Fukuoka",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 10,
+     "age": 26,
+     "born": "2000-06-27",
+     "country": "Japan",
+     "height": 170,
+     "value": 603145,
+     "rating": 6.68,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1790210,
+     "name": "Thiago",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 14,
+     "age": 24,
+     "born": "2002-02-24",
+     "country": "Brazil",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1232933,
+     "name": "Taiyo Hiraoka",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 16,
+     "age": 24,
+     "born": "2002-09-14",
+     "country": "Japan",
+     "height": 173,
+     "value": 473037,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1388022,
+     "name": "Hiroto Morooka",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 24,
+     "age": 29,
+     "born": "1997-01-04",
+     "country": "Japan",
+     "height": 168,
+     "value": 166735,
+     "rating": 7.11,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1793782,
+     "name": "Sung-Jun Yoon",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 25,
+     "age": 19,
+     "born": "2007-05-04",
+     "country": "South Korea",
+     "height": 170,
+     "value": 702576,
+     "rating": 6.6,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 727857,
+     "name": "Mitsuki Saito",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 32,
+     "age": 27,
+     "born": "1999-01-10",
+     "country": "Japan",
+     "height": 165,
+     "value": 182836,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1612519,
+     "name": "Ryuma Nakano",
+     "role": "midfielders",
+     "position": "CM,LW,CAM,RW",
+     "number": 48,
+     "age": 24,
+     "born": "2002-10-06",
+     "country": "Japan",
+     "height": 167,
+     "value": 241655,
+     "rating": 6.83,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 747904,
+     "name": "Takaaki Shichi",
+     "role": "midfielders",
+     "position": "LWB",
+     "number": 62,
+     "age": 32,
+     "born": "1993-12-27",
+     "country": "Japan",
+     "height": 177,
+     "value": 165755,
+     "rating": 6.38,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 647450,
+     "name": "Masaya Okugawa",
+     "role": "attackers",
+     "position": "RW,LW",
+     "number": 7,
+     "age": 30,
+     "born": "1996-04-14",
+     "country": "Japan",
+     "height": 177,
+     "value": 381558,
+     "rating": 7.32,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 931201,
+     "name": "Rafael Elias",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 27,
+     "born": "1999-04-12",
+     "country": "Brazil",
+     "height": 179,
+     "value": 1899542,
+     "rating": 7.46,
+     "goals": 5,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 897671,
+     "name": "Marco Túlio",
+     "role": "attackers",
+     "position": "RW,CAM,ST",
+     "number": 11,
+     "age": 28,
+     "born": "1998-03-13",
+     "country": "Brazil",
+     "height": 177,
+     "value": null,
+     "rating": 6.1,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1288263,
+     "name": "Alex Negueba",
+     "role": "attackers",
+     "position": "RW,ST",
+     "number": 17,
+     "age": 25,
+     "born": "2001-03-24",
+     "country": "Brazil",
+     "height": 180,
+     "value": 384337,
+     "rating": 6.51,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 865992,
+     "name": "Temma Matsuda",
+     "role": "attackers",
+     "position": "LW,CAM",
+     "number": 18,
+     "age": 31,
+     "born": "1995-06-11",
+     "country": "Japan",
+     "height": 164,
+     "value": 246166,
+     "rating": 6.36,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1958657,
+     "name": "David Silva",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 19,
+     "age": 18,
+     "born": "2008-02-26",
+     "country": "Brazil",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1337761,
+     "name": "Takumi Kato",
+     "role": "attackers",
+     "position": "ST",
+     "number": 23,
+     "age": 27,
+     "born": "1999-07-16",
+     "country": "Japan",
+     "height": 180,
+     "value": 154335,
+     "rating": 6.62,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1900454,
+     "name": "Kou Sakai",
+     "role": "attackers",
+     "position": "LW",
+     "number": 29,
+     "age": 19,
+     "born": "2007-10-07",
+     "country": "Japan",
+     "height": 171,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1436725,
+     "name": "Sora Hiraga",
+     "role": "attackers",
+     "position": "LW",
+     "number": 31,
+     "age": 21,
+     "born": "2005-03-02",
+     "country": "Japan",
+     "height": 172,
+     "value": 504154,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1617877,
+     "name": "Maceió",
+     "role": "attackers",
+     "position": "LW,CAM",
+     "number": 38,
+     "age": 23,
+     "born": "2003-07-14",
+     "country": "Brazil",
+     "height": 177,
+     "value": null,
+     "rating": 6.4,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1285959,
+     "name": "Haruki Arai",
+     "role": "attackers",
+     "position": "LW,RW,LWB,CAM",
+     "number": 77,
+     "age": 28,
+     "born": "1998-04-12",
+     "country": "Japan",
+     "height": 170,
+     "value": 283987,
+     "rating": 6.99,
+     "goals": 4,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 116604,
+     "name": "Shun Nagasawa",
+     "role": "attackers",
+     "position": "ST",
+     "number": 93,
+     "age": 38,
+     "born": "1988-08-25",
+     "country": "Japan",
+     "height": 191,
+     "value": 166976,
+     "rating": 6.33,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1061134,
+     "name": "Fuchi Honda",
+     "role": "attackers",
+     "position": "LW",
+     "number": 99,
+     "age": 25,
+     "born": "2001-05-10",
+     "country": "Japan",
+     "height": 170,
+     "value": 271887,
+     "rating": 6.13,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-30T15:47:46.164Z",
+   "coachHistory": [
+    {
+     "name": "Ranko Popović",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "116604": {
+     "name": "Shun Nagasawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "166470": {
+     "name": "Takuji Yonemoto",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "198404": {
+     "name": "Ryosuke Yamanaka",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "431489": {
+     "name": "Gakuji Ota",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "523693": {
+     "name": "Kentaro Kakoi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "628316": {
+     "name": "Yoshinori Suzuki",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "637584": {
+     "name": "Henrique",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "647450": {
+     "name": "Masaya Okugawa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "727857": {
+     "name": "Mitsuki Saito",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "728443": {
+     "name": "Masaaki Murakami",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "747904": {
+     "name": "Takaaki Shichi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "777089": {
+     "name": "Akira Fantini",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "865992": {
+     "name": "Temma Matsuda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "897671": {
+     "name": "Marco Túlio",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "931201": {
+     "name": "Rafael Elias",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "941492": {
+     "name": "Shimpei Fukuoka",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1061134": {
+     "name": "Fuchi Honda",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1155059": {
+     "name": "Hisashi Tawiah",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1232933": {
+     "name": "Taiyo Hiraoka",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1238159": {
+     "name": "Yusuke Ishida",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1281588": {
+     "name": "João Pedro",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1282076": {
+     "name": "Halls",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1285959": {
+     "name": "Haruki Arai",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1288263": {
+     "name": "Alex Negueba",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1337015": {
+     "name": "Kyo Sato",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1337311": {
+     "name": "Ren Kato",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1337761": {
+     "name": "Takumi Kato",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1388022": {
+     "name": "Hiroto Morooka",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-31"
+    },
+    "1436725": {
+     "name": "Sora Hiraga",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1612519": {
+     "name": "Ryuma Nakano",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1617877": {
+     "name": "Maceió",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1675021": {
+     "name": "Weverton",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1716199": {
+     "name": "Kodai Nagata",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1790210": {
+     "name": "Thiago",
+     "firstSeen": "2026-10-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1791930": {
+     "name": "Thiago",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-24"
+    },
+    "1793782": {
+     "name": "Sung-Jun Yoon",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1900454": {
+     "name": "Kou Sakai",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "1958657": {
+     "name": "David Silva",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    },
+    "2214060": {
+     "name": "Sota Yamamoto",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-31"
+    }
+   },
+   "left": [
+    {
+     "id": "1791930",
+     "name": "Thiago",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-24"
     }
    ]
   },
@@ -11106,167 +12047,167 @@
     "176201": {
      "name": "Hotaru Yamaguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "362679": {
      "name": "Eduardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "490050": {
      "name": "Ryogo Yamasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "529040": {
      "name": "Takashi Sawada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "625274": {
      "name": "Asahi Masuyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "645763": {
      "name": "Thiago Santana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "648375": {
      "name": "Ryosuke Shindo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "666879": {
      "name": "Go Hatano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "724110": {
      "name": "Diego Pituca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727828": {
      "name": "Takuma Ominami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727872": {
      "name": "Ikki Arai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "728433": {
      "name": "Keita Nakamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "750052": {
      "name": "Matheus Jesus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "825997": {
      "name": "Hijiri Onaga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "826010": {
      "name": "Yuto Iwasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "833022": {
      "name": "Masaaki Goto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "891074": {
      "name": "Riku Yamada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922801": {
      "name": "Shunya Yoneda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922805": {
      "name": "Takumi Nagura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1023976": {
      "name": "Keita Takahata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1088484": {
      "name": "Jonathan",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134726": {
      "name": "Yusei Egawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1159835": {
      "name": "Emerson Deocleciano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1171972": {
      "name": "Motoki Hasegawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232142": {
      "name": "Kaito Ioka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1284436": {
      "name": "Luka Radotic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1284495": {
      "name": "Norman Campbell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1372205": {
      "name": "Kenshin Yasuda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1436733": {
      "name": "Kanta Doi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1690874": {
      "name": "Tenmu Matsumoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900483": {
      "name": "Harumu Nabeshima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900485": {
      "name": "Hyeung-Jun Roh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900486": {
      "name": "Reijin Ko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -12029,1141 +12970,200 @@
     "79902": {
      "name": "Shu Kurata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "157253": {
      "name": "Masaaki Higashiguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "166653": {
      "name": "Takashi Usami",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "430861": {
      "name": "Genta Miura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "511758": {
      "name": "Shinnosuke Nakatani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "614163": {
      "name": "Deniz Hümmet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "615767": {
      "name": "Issam Jebali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "712170": {
      "name": "Ryo Hatsuse",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "714418": {
      "name": "Juanpe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "728441": {
      "name": "Jun Ichimori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "735816": {
      "name": "Takeru Kishimoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824619": {
      "name": "Ryotaro Meshino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924121": {
      "name": "Shota Fukuoka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "934833": {
      "name": "Kanji Okunuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1010266": {
      "name": "Tokuma Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1023965": {
      "name": "Shogo Sasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1050630": {
      "name": "Riku Handa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1055137": {
      "name": "Tsuyoshi Ogashiwa",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1061133": {
      "name": "Shuto Abe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1080028": {
      "name": "Daichi Hayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134721": {
      "name": "Asahi Uenaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134741": {
      "name": "Soya Fujiwara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1135557": {
      "name": "Ryoya Yamashita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1172705": {
      "name": "Shinya Nakano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1261617": {
      "name": "Eli Adams",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1327375": {
      "name": "Welton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337816": {
      "name": "Yusei Toshida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1544872": {
      "name": "Koshiro Sumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611154": {
      "name": "Aolin Zhang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611156": {
      "name": "Rin Mito",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1766080": {
      "name": "Rui Araki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1862331": {
      "name": "Naru Nakatsumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900448": {
      "name": "Ginjiro Ikegaya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900449": {
      "name": "Yuki Yoshihara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900450": {
      "name": "Taiki Tono",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900451": {
      "name": "Yuya Yokoi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2019792": {
      "name": "Fujimoto Yoshiki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2183116": {
      "name": "Arata Okamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2196506": {
      "name": "Haruki Ozawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
-  },
-  "Kyoto": {
-   "fotmobName": "Kyoto Sanga FC",
-   "fotmobId": 8542,
-   "coach": "Ranko Popović",
-   "players": [
-    {
-     "id": 431489,
-     "name": "Gakuji Ota",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 35,
-     "born": "1990-12-26",
-     "country": "Japan",
-     "height": 190,
-     "value": 213442,
-     "rating": 6.37,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 523693,
-     "name": "Kentaro Kakoi",
-     "role": "keepers",
-     "position": "GK",
-     "number": 21,
-     "age": 35,
-     "born": "1991-04-23",
-     "country": "Japan",
-     "height": 190,
-     "value": 182373,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 777089,
-     "name": "Akira Fantini",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 36,
-     "age": 28,
-     "born": "1998-05-24",
-     "country": "Japan",
-     "height": 182,
-     "value": 155170,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1282076,
-     "name": "Halls",
-     "role": "keepers",
-     "position": "GK",
-     "number": 90,
-     "age": 27,
-     "born": "1999-06-17",
-     "country": "Brazil",
-     "height": 198,
-     "value": 196915,
-     "rating": 7.16,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 728443,
-     "name": "Masaaki Murakami",
-     "role": "keepers",
-     "position": "GK",
-     "number": 94,
-     "age": 34,
-     "born": "1992-08-07",
-     "country": "Japan",
-     "height": 185,
-     "value": 249001,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1155059,
-     "name": "Hisashi Tawiah",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 28,
-     "born": "1998-10-18",
-     "country": "Japan",
-     "height": 191,
-     "value": 189718,
-     "rating": 6.87,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1716199,
-     "name": "Kodai Nagata",
-     "role": "defenders",
-     "position": "CB",
-     "number": 15,
-     "age": 24,
-     "born": "2002-09-08",
-     "country": "Japan",
-     "height": 180,
-     "value": 359894,
-     "rating": 6.76,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1337311,
-     "name": "Ren Kato",
-     "role": "defenders",
-     "position": "LB,RB,RW,RWB",
-     "number": 26,
-     "age": 26,
-     "born": "1999-12-28",
-     "country": "Japan",
-     "height": 175,
-     "value": 345144,
-     "rating": 6.41,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2214060,
-     "name": "Sota Yamamoto",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 33,
-     "age": 22,
-     "born": "2004-08-23",
-     "country": "Japan",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 637584,
-     "name": "Henrique",
-     "role": "defenders",
-     "position": "CB",
-     "number": 34,
-     "age": 29,
-     "born": "1997-01-20",
-     "country": "Brazil",
-     "height": 185,
-     "value": 173719,
-     "rating": 6.19,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1238159,
-     "name": "Yusuke Ishida",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 40,
-     "age": 23,
-     "born": "2002-11-11",
-     "country": "Japan",
-     "height": 175,
-     "value": 256926,
-     "rating": 6.55,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1675021,
-     "name": "Weverton",
-     "role": "defenders",
-     "position": "CB",
-     "number": 43,
-     "age": 23,
-     "born": "2003-02-17",
-     "country": "Brazil",
-     "height": 183,
-     "value": 386369,
-     "rating": 6.64,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1337015,
-     "name": "Kyo Sato",
-     "role": "defenders",
-     "position": "LB,LWB,LM",
-     "number": 44,
-     "age": 26,
-     "born": "2000-03-21",
-     "country": "Japan",
-     "height": 168,
-     "value": 371453,
-     "rating": 6.55,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 628316,
-     "name": "Yoshinori Suzuki",
-     "role": "defenders",
-     "position": "CB",
-     "number": 50,
-     "age": 34,
-     "born": "1992-09-11",
-     "country": "Japan",
-     "height": 185,
-     "value": 249914,
-     "rating": 6.6,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 198404,
-     "name": "Ryosuke Yamanaka",
-     "role": "defenders",
-     "position": "LWB",
-     "number": 60,
-     "age": 33,
-     "born": "1993-04-20",
-     "country": "Japan",
-     "height": 168,
-     "value": 113102,
-     "rating": 6.81,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1281588,
-     "name": "João Pedro",
-     "role": "midfielders",
-     "position": "CAM,CDM,CM",
-     "number": 6,
-     "age": 27,
-     "born": "1999-09-03",
-     "country": "Brazil",
-     "height": 185,
-     "value": null,
-     "rating": 6.98,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 166470,
-     "name": "Takuji Yonemoto",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 8,
-     "age": 35,
-     "born": "1990-12-03",
-     "country": "Japan",
-     "height": 177,
-     "value": 157665,
-     "rating": 5.93,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 941492,
-     "name": "Shimpei Fukuoka",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 10,
-     "age": 26,
-     "born": "2000-06-27",
-     "country": "Japan",
-     "height": 170,
-     "value": 603145,
-     "rating": 6.68,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1790210,
-     "name": "Thiago",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 14,
-     "age": 24,
-     "born": "2002-02-24",
-     "country": "Brazil",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1232933,
-     "name": "Taiyo Hiraoka",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 16,
-     "age": 24,
-     "born": "2002-09-14",
-     "country": "Japan",
-     "height": 173,
-     "value": 473037,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1388022,
-     "name": "Hiroto Morooka",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 24,
-     "age": 29,
-     "born": "1997-01-04",
-     "country": "Japan",
-     "height": 168,
-     "value": 166735,
-     "rating": 7.11,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1793782,
-     "name": "Sung-Jun Yoon",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 25,
-     "age": 19,
-     "born": "2007-05-04",
-     "country": "South Korea",
-     "height": 170,
-     "value": 702576,
-     "rating": 6.6,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 727857,
-     "name": "Mitsuki Saito",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 32,
-     "age": 27,
-     "born": "1999-01-10",
-     "country": "Japan",
-     "height": 165,
-     "value": 182836,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1612519,
-     "name": "Ryuma Nakano",
-     "role": "midfielders",
-     "position": "CM,LW,CAM,RW",
-     "number": 48,
-     "age": 24,
-     "born": "2002-10-06",
-     "country": "Japan",
-     "height": 167,
-     "value": 241655,
-     "rating": 6.83,
-     "goals": 2,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 747904,
-     "name": "Takaaki Shichi",
-     "role": "midfielders",
-     "position": "LWB",
-     "number": 62,
-     "age": 32,
-     "born": "1993-12-27",
-     "country": "Japan",
-     "height": 177,
-     "value": 165755,
-     "rating": 6.38,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 647450,
-     "name": "Masaya Okugawa",
-     "role": "attackers",
-     "position": "RW,LW",
-     "number": 7,
-     "age": 30,
-     "born": "1996-04-14",
-     "country": "Japan",
-     "height": 177,
-     "value": 381558,
-     "rating": 7.32,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 931201,
-     "name": "Rafael Elias",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 27,
-     "born": "1999-04-12",
-     "country": "Brazil",
-     "height": 179,
-     "value": 1899542,
-     "rating": 7.46,
-     "goals": 5,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 897671,
-     "name": "Marco Túlio",
-     "role": "attackers",
-     "position": "RW,CAM,ST",
-     "number": 11,
-     "age": 28,
-     "born": "1998-03-13",
-     "country": "Brazil",
-     "height": 177,
-     "value": null,
-     "rating": 6.1,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1288263,
-     "name": "Alex Negueba",
-     "role": "attackers",
-     "position": "RW,ST",
-     "number": 17,
-     "age": 25,
-     "born": "2001-03-24",
-     "country": "Brazil",
-     "height": 180,
-     "value": 384337,
-     "rating": 6.51,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 865992,
-     "name": "Temma Matsuda",
-     "role": "attackers",
-     "position": "LW,CAM",
-     "number": 18,
-     "age": 31,
-     "born": "1995-06-11",
-     "country": "Japan",
-     "height": 164,
-     "value": 246166,
-     "rating": 6.36,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1958657,
-     "name": "David Silva",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 19,
-     "age": 18,
-     "born": "2008-02-26",
-     "country": "Brazil",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1337761,
-     "name": "Takumi Kato",
-     "role": "attackers",
-     "position": "ST",
-     "number": 23,
-     "age": 27,
-     "born": "1999-07-16",
-     "country": "Japan",
-     "height": 180,
-     "value": 154335,
-     "rating": 6.62,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1900454,
-     "name": "Kou Sakai",
-     "role": "attackers",
-     "position": "LW",
-     "number": 29,
-     "age": 19,
-     "born": "2007-10-07",
-     "country": "Japan",
-     "height": 171,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1436725,
-     "name": "Sora Hiraga",
-     "role": "attackers",
-     "position": "LW",
-     "number": 31,
-     "age": 21,
-     "born": "2005-03-02",
-     "country": "Japan",
-     "height": 172,
-     "value": 504154,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1617877,
-     "name": "Maceió",
-     "role": "attackers",
-     "position": "LW,CAM",
-     "number": 38,
-     "age": 23,
-     "born": "2003-07-14",
-     "country": "Brazil",
-     "height": 177,
-     "value": null,
-     "rating": 6.4,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1285959,
-     "name": "Haruki Arai",
-     "role": "attackers",
-     "position": "LW,RW,LWB,CAM",
-     "number": 77,
-     "age": 28,
-     "born": "1998-04-12",
-     "country": "Japan",
-     "height": 170,
-     "value": 283987,
-     "rating": 6.99,
-     "goals": 4,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 116604,
-     "name": "Shun Nagasawa",
-     "role": "attackers",
-     "position": "ST",
-     "number": 93,
-     "age": 38,
-     "born": "1988-08-25",
-     "country": "Japan",
-     "height": 191,
-     "value": 166976,
-     "rating": 6.33,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1061134,
-     "name": "Fuchi Honda",
-     "role": "attackers",
-     "position": "LW",
-     "number": 99,
-     "age": 25,
-     "born": "2001-05-10",
-     "country": "Japan",
-     "height": 170,
-     "value": 271887,
-     "rating": 6.13,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-30T15:47:46.164Z",
-   "coachHistory": [
-    {
-     "name": "Ranko Popović",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "116604": {
-     "name": "Shun Nagasawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "166470": {
-     "name": "Takuji Yonemoto",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "198404": {
-     "name": "Ryosuke Yamanaka",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "431489": {
-     "name": "Gakuji Ota",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "523693": {
-     "name": "Kentaro Kakoi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "628316": {
-     "name": "Yoshinori Suzuki",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "637584": {
-     "name": "Henrique",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "647450": {
-     "name": "Masaya Okugawa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "727857": {
-     "name": "Mitsuki Saito",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "728443": {
-     "name": "Masaaki Murakami",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "747904": {
-     "name": "Takaaki Shichi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "777089": {
-     "name": "Akira Fantini",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "865992": {
-     "name": "Temma Matsuda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "897671": {
-     "name": "Marco Túlio",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "931201": {
-     "name": "Rafael Elias",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "941492": {
-     "name": "Shimpei Fukuoka",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1061134": {
-     "name": "Fuchi Honda",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1155059": {
-     "name": "Hisashi Tawiah",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1232933": {
-     "name": "Taiyo Hiraoka",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1238159": {
-     "name": "Yusuke Ishida",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1281588": {
-     "name": "João Pedro",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1282076": {
-     "name": "Halls",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1285959": {
-     "name": "Haruki Arai",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1288263": {
-     "name": "Alex Negueba",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1337015": {
-     "name": "Kyo Sato",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1337311": {
-     "name": "Ren Kato",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1337761": {
-     "name": "Takumi Kato",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1388022": {
-     "name": "Hiroto Morooka",
-     "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-30"
-    },
-    "1436725": {
-     "name": "Sora Hiraga",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1612519": {
-     "name": "Ryuma Nakano",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1617877": {
-     "name": "Maceió",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1675021": {
-     "name": "Weverton",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1716199": {
-     "name": "Kodai Nagata",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1790210": {
-     "name": "Thiago",
-     "firstSeen": "2026-10-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1791930": {
-     "name": "Thiago",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    },
-    "1793782": {
-     "name": "Sung-Jun Yoon",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1900454": {
-     "name": "Kou Sakai",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "1958657": {
-     "name": "David Silva",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    },
-    "2214060": {
-     "name": "Sota Yamamoto",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
-    }
-   },
-   "left": [
-    {
-     "id": "1791930",
-     "name": "Thiago",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-24"
-    }
-   ]
   },
   "Mito": {
    "fotmobName": "Mito Hollyhock",
@@ -13828,127 +13828,127 @@
     "198295": {
      "name": "Shuhei Matsubara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "206822": {
      "name": "Jakub Słowik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "735811": {
      "name": "Yasuki Kimoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "768319": {
      "name": "Mizuki Arai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "852050": {
      "name": "Akinari Kawazura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "876006": {
      "name": "Arata Watanabe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "943212": {
      "name": "Chihiro Kato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1055147": {
      "name": "Kaito Taniguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1067020": {
      "name": "Ryo Nemoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1155058": {
      "name": "Takumi Mase",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232147": {
      "name": "Yu Funabashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232792": {
      "name": "Konosuke Nishikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233844": {
      "name": "Yoshiki Torikai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1252931": {
      "name": "Koshi Osaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337441": {
      "name": "Kazuma Okamoto",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337751": {
      "name": "Taishi Semba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1341018": {
      "name": "Patryck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1396057": {
      "name": "Rei Ieizumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1423767": {
      "name": "Kotaro Uchino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437213": {
      "name": "Yuto Yamashita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611144": {
      "name": "Jin Okumura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611431": {
      "name": "Kiichi Yamazaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1614616": {
      "name": "Motoki Nishihara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715138": {
      "name": "Keisuke Tada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715139": {
      "name": "Hayata Yamamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715141": {
      "name": "Kotatsu Kawakami",
@@ -13963,7 +13963,7 @@
     "1715146": {
      "name": "Kenta Itakura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1715149": {
      "name": "Uwabright Hayakawa",
@@ -13973,42 +13973,42 @@
     "1772203": {
      "name": "Malick Fofana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1804006": {
      "name": "Hiroshi Iwasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1833017": {
      "name": "Kishin Gokita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1894948": {
      "name": "Hugo Leonardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900026": {
      "name": "Minato Kamiyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900028": {
      "name": "Kishin Shimatani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900029": {
      "name": "Shota Yamashita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2172665": {
      "name": "Yuri Tamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -14794,197 +14794,197 @@
     "320549": {
      "name": "Matheus Vidotto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "431326": {
      "name": "Kazuya Miyahara",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727607": {
      "name": "Kazunari Ichimi",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "747928": {
      "name": "Kosuke Saito",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "833996": {
      "name": "Hiroki Mawatari",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "899472": {
      "name": "Rei Hirakawa",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922816": {
      "name": "Riku Matsuda",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922820": {
      "name": "Yuya Fukuda",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922838": {
      "name": "Kai Shibato",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924315": {
      "name": "Kanya Fujimoto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "925642": {
      "name": "Yu-Min Cho",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1029685": {
      "name": "Koki Morita",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1039047": {
      "name": "Hiroto Yamami",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134525": {
      "name": "Itsuki Someno",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134749": {
      "name": "Yuan Matsuhashi",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1176764": {
      "name": "Kaito Suzuki",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232144": {
      "name": "Naoki Hayashi",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232946": {
      "name": "Shuto Tanabe",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1252963": {
      "name": "Yuya Nagasawa",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1297846": {
      "name": "Maaya Sako",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1336927": {
      "name": "Shuhei Mizoguchi",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1373215": {
      "name": "Shimon Teranuma",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1401074": {
      "name": "Taiju Yoshida",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437303": {
      "name": "Goki Yamada",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437333": {
      "name": "Ryota Inoue",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1507610": {
      "name": "Yuta Arai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1512501": {
      "name": "Ryosuke Shirai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611174": {
      "name": "Soma Kanda",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611224": {
      "name": "Soma Meshino",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611225": {
      "name": "Joi Yamamoto",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611226": {
      "name": "Keisuke Nakamura",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611447": {
      "name": "Hyun-Woo Kim",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1717479": {
      "name": "Issei Kumatoriya",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1719931": {
      "name": "Gakuto Kawamura",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1735105": {
      "name": "Yosuke Uchida",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1797304": {
      "name": "Hayato Hirao",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1817161": {
      "name": "Shion Nakayama",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900049": {
      "name": "Kento Imai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900050": {
      "name": "Sota Ofuji",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -15747,12 +15747,12 @@
     "36636": {
      "name": "Hisashi Jogo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "212470": {
      "name": "Oriol Romeu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "309463": {
      "name": "Tatsuki Nara",
@@ -15762,187 +15762,187 @@
     "402601": {
      "name": "Hiroki Akino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "659439": {
      "name": "Takumi Nagaishi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727865": {
      "name": "Keiya Shiihashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727962": {
      "name": "Masato Yuzawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "728771": {
      "name": "Masaya Tashiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "747922": {
      "name": "Yota Maejima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922713": {
      "name": "Daiki Miya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922826": {
      "name": "Kohei Okuno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "955321": {
      "name": "Shintaro Nago",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "955323": {
      "name": "Takumi Kamijima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "965423": {
      "name": "Yuji Kitajima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1010712": {
      "name": "Kennedy Egbus Mikuni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1067021": {
      "name": "Kazuki Fujimoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1067661": {
      "name": "Tomoya Miki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1089571": {
      "name": "Teppei Oka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1092554": {
      "name": "Powell Obinna Obi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1109817": {
      "name": "Yuma Obata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134549": {
      "name": "Kazuki Fujita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1141239": {
      "name": "Daiki Fukazawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1400722": {
      "name": "Werik Popó",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437108": {
      "name": "Reiju Tsuruno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1437166": {
      "name": "Shu Morooka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1451006": {
      "name": "Yuma Tsujioka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1469704": {
      "name": "Masato Shigemi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611147": {
      "name": "Yu Hashimoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1614808": {
      "name": "Shosei Usui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1656666": {
      "name": "Kaoru Yamawaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714895": {
      "name": "Abdul Hanan Sani Brown",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714899": {
      "name": "Ichika Maeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1742460": {
      "name": "Sonosuke Sato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1762508": {
      "name": "Hikaru Maeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900066": {
      "name": "Kazuki Fukushima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900068": {
      "name": "Shohei Takemoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1900072": {
      "name": "Kokoro Maeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1932798": {
      "name": "Yuhi Sakai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2119788": {
      "name": "Ryusei Kitahama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2119789": {
      "name": "Takezo Fujikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -16674,152 +16674,152 @@
     "115836": {
      "name": "Daisuke Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "116484": {
      "name": "Koki Yonekura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "166529": {
      "name": "Taishi Taguchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "309929": {
      "name": "Ryota Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "310334": {
      "name": "Takayuki Mae",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "396751": {
      "name": "Yusuke Kobayashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "573761": {
      "name": "José Suárez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "727605": {
      "name": "Hiroto Goya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824570": {
      "name": "Takahiro Iida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "852047": {
      "name": "Takuya Yasui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "858020": {
      "name": "Hinata Kida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "873576": {
      "name": "Leonardo Rocha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "922728": {
      "name": "Manato Shinada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "923824": {
      "name": "Daichi Ishikawa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "923827": {
      "name": "Michiya Okamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924130": {
      "name": "Boniface Nduka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924267": {
      "name": "Koji Toriumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1056701": {
      "name": "Naoki Tsubaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1071602": {
      "name": "Zain Issaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1108727": {
      "name": "Ken Yamura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1134739": {
      "name": "Takashi Kawano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1217244": {
      "name": "Daniel Hall",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1227341": {
      "name": "Erison",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1232543": {
      "name": "Takumi Tsukui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1252962": {
      "name": "Taiki Amagasa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1259958": {
      "name": "Naohiro Sugiyama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1263669": {
      "name": "Eduardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1285529": {
      "name": "Matheus Índio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1337004": {
      "name": "Kazuki Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1373973": {
      "name": "Masaru Hidaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1395838": {
      "name": "Soshiro Tanida",
@@ -16834,37 +16834,37 @@
     "1457764": {
      "name": "Haruto Usui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1469702": {
      "name": "Ryota Kuboniwa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1611325": {
      "name": "Rikuto Ishio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1863068": {
      "name": "Makoto Himeno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1899980": {
      "name": "Takumi Matsumura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1930924": {
      "name": "Shunji Saito",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1933251": {
      "name": "Haru Itu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [

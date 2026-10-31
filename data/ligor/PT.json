@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "PT",
  "fotmobId": 61,
  "name": "Liga Portugal",
@@ -39,13 +39,13 @@
    "fotmobName": "Sporting CP",
    "fotmobId": 9768,
    "group": null,
-   "played": 9,
-   "won": 5,
+   "played": 10,
+   "won": 6,
    "drawn": 3,
    "lost": 1,
-   "goals": "21-11",
-   "gd": 10,
-   "pts": 18
+   "goals": "23-11",
+   "gd": 12,
+   "pts": 21
   },
   {
    "rank": 4,
@@ -217,20 +217,6 @@
   },
   {
    "rank": 16,
-   "team": "Casa Pia",
-   "fotmobName": "Casa Pia AC",
-   "fotmobId": 212821,
-   "group": null,
-   "played": 9,
-   "won": 2,
-   "drawn": 1,
-   "lost": 6,
-   "goals": "5-17",
-   "gd": -12,
-   "pts": 7
-  },
-  {
-   "rank": 17,
    "team": "Rio Ave",
    "fotmobName": "Rio Ave",
    "fotmobId": 7841,
@@ -241,6 +227,20 @@
    "lost": 6,
    "goals": "8-21",
    "gd": -13,
+   "pts": 7
+  },
+  {
+   "rank": 17,
+   "team": "Casa Pia",
+   "fotmobName": "Casa Pia AC",
+   "fotmobId": 212821,
+   "group": null,
+   "played": 10,
+   "won": 2,
+   "drawn": 1,
+   "lost": 7,
+   "goals": "5-19",
+   "gd": -14,
    "pts": 7
   },
   {
@@ -1658,6 +1658,134 @@
     9,
     7,
     -13
+   ],
+   [
+    "Estoril",
+    18,
+    9,
+    2,
+    -10
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Porto",
+    1,
+    9,
+    27,
+    17
+   ],
+   [
+    "Benfica",
+    2,
+    9,
+    22,
+    18
+   ],
+   [
+    "Sp Lisbon",
+    3,
+    10,
+    21,
+    12
+   ],
+   [
+    "Santa Clara",
+    4,
+    9,
+    18,
+    7
+   ],
+   [
+    "Arouca",
+    5,
+    9,
+    17,
+    5
+   ],
+   [
+    "Academico Viseu",
+    6,
+    9,
+    17,
+    2
+   ],
+   [
+    "Gil Vicente",
+    7,
+    9,
+    14,
+    1
+   ],
+   [
+    "Alverca",
+    8,
+    9,
+    11,
+    0
+   ],
+   [
+    "Sp Braga",
+    9,
+    9,
+    11,
+    -2
+   ],
+   [
+    "Moreirense",
+    10,
+    9,
+    11,
+    -5
+   ],
+   [
+    "Famalicao",
+    11,
+    9,
+    10,
+    3
+   ],
+   [
+    "Estrela",
+    12,
+    9,
+    10,
+    -3
+   ],
+   [
+    "Guimaraes",
+    13,
+    9,
+    8,
+    0
+   ],
+   [
+    "Maritimo",
+    14,
+    9,
+    8,
+    -10
+   ],
+   [
+    "Nacional",
+    15,
+    9,
+    7,
+    -8
+   ],
+   [
+    "Rio Ave",
+    16,
+    9,
+    7,
+    -13
+   ],
+   [
+    "Casa Pia",
+    17,
+    10,
+    7,
+    -14
    ],
    [
     "Estoril",

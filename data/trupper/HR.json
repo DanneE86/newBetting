@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "HR",
  "fotmobId": 252,
  "source": "FotMob",
@@ -28,7 +28,7 @@
      "red": 0,
      "injury": {
       "typeId": "92",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "Unknown"
      }
     },
     {
@@ -173,7 +173,7 @@
      "role": "defenders",
      "position": "LB,LW",
      "number": 17,
-     "age": 33,
+     "age": 34,
      "born": "1992-10-31",
      "country": "Croatia",
      "height": 179,
@@ -283,10 +283,8 @@
      "yellow": 4,
      "red": 0,
      "injury": {
-      "typeId": null,
-      "expectedReturn": "12/11/2026",
-      "name": "Calf strain",
-      "source": "Transfermarkt"
+      "typeId": "121",
+      "expectedReturn": "A few weeks"
      }
     },
     {
@@ -325,7 +323,10 @@
      "penalties": 0,
      "yellow": 3,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "92",
+      "expectedReturn": "About a week"
+     }
     },
     {
      "id": 424129,
@@ -559,7 +560,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Gonzalo García",
@@ -570,142 +571,142 @@
     "202511": {
      "name": "Dante Stipica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "206242": {
      "name": "Marko Livaja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "424129": {
      "name": "Leander Dendoncker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "460004": {
      "name": "Dario Melnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "566822": {
      "name": "Ivica Ivušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "764741": {
      "name": "Dario Marešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "797797": {
      "name": "Dennis Hadžikadunić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "921593": {
      "name": "Michele Šego",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1020776": {
      "name": "Alec Van Hoorenbeeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1080763": {
      "name": "Abdoulie Sanyang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1120854": {
      "name": "Dali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1130562": {
      "name": "Adrion Pajaziti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1202029": {
      "name": "Alberto del Moral",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1282015": {
      "name": "Carlos Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1388749": {
      "name": "Khalil Fayad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1417103": {
      "name": "Roko Brajković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1438316": {
      "name": "Mathieu Acapandié",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1466684": {
      "name": "Šimun Hrgović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510855": {
      "name": "Toni Silić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510950": {
      "name": "Marin Šotiček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1644097": {
      "name": "Luka Hodak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1657862": {
      "name": "Etnik Brruti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1667424": {
      "name": "Marino Skelin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1699550": {
      "name": "Andjelo Šutalo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1768687": {
      "name": "Ron Raçi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1876648": {
      "name": "Roko Gabrić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1950758": {
      "name": "Adam Huram",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1995691": {
      "name": "Illia Kutia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -802,7 +803,7 @@
      "country": "Croatia",
      "height": 182,
      "value": 744452,
-     "rating": 7.27,
+     "rating": 7.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -821,13 +822,16 @@
      "country": "Bosnia and Herzegovina",
      "height": 201,
      "value": 1389206,
-     "rating": 7.4,
+     "rating": 7.39,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "52",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 1262125,
@@ -859,7 +863,7 @@
      "country": "Croatia",
      "height": 182,
      "value": 2304720,
-     "rating": 7.72,
+     "rating": 7.71,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -924,7 +928,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "A few weeks"
      }
     },
     {
@@ -1014,7 +1018,7 @@
      "country": "Croatia",
      "height": null,
      "value": 5127574,
-     "rating": 7.5,
+     "rating": 7.51,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -1039,7 +1043,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "96",
+      "expectedReturn": "About a week"
+     }
     },
     {
      "id": 598141,
@@ -1109,7 +1116,7 @@
      "country": "Spain",
      "height": 175,
      "value": 1083218,
-     "rating": 6.92,
+     "rating": 6.9,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -1248,7 +1255,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "96",
+      "expectedReturn": "About a week"
+     }
     },
     {
      "id": 184595,
@@ -1270,7 +1280,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Mario Kovačević",
@@ -1281,147 +1291,147 @@
     "184595": {
      "name": "Mislav Oršić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "252537": {
      "name": "Danijel Zagorac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "344093": {
      "name": "Josip Mišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "396949": {
      "name": "Miha Zajc",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "402897": {
      "name": "Ivan Filipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "551805": {
      "name": "Scott McKenna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "554930": {
      "name": "Smail Prevljak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "598141": {
      "name": "Robert Mudražija",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "653982": {
      "name": "Stjepan Radeljić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "688297": {
      "name": "Luka Ivanušec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "725462": {
      "name": "Ivan Nevistić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "857618": {
      "name": "Arbër Hoxha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "861642": {
      "name": "Bruno Goda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "873557": {
      "name": "Dominik Kotarski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1186606": {
      "name": "Dion Beljo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1190350": {
      "name": "Niko Galešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1195743": {
      "name": "Kirill Kravtsov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1254292": {
      "name": "Lukas Kačavenda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1262125": {
      "name": "Paul Tabinas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1302796": {
      "name": "Mateo Lisica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1358149": {
      "name": "Luka Stojković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1367049": {
      "name": "Dani Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1402931": {
      "name": "Fran Topić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1494521": {
      "name": "Moris Valinčić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1526557": {
      "name": "Iker Almena",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1606160": {
      "name": "Noa Mikić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1628516": {
      "name": "Matteo Pérez Vinlöf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1665435": {
      "name": "Sergi Domínguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1791802": {
      "name": "Aleks Stojaković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -1905,7 +1915,7 @@
      "role": "attackers",
      "position": "RW,ST,CAM,LW",
      "number": 10,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-30",
      "country": "Montenegro",
      "height": null,
@@ -1995,7 +2005,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Nikola Šafarić",
@@ -2006,142 +2016,142 @@
     "158898": {
      "name": "Roberto Punčec",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "583584": {
      "name": "Frane Maglica",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "655956": {
      "name": "Petar Bočkaj",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "657661": {
      "name": "Gregor Sikošek",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "673030": {
      "name": "David Puclin",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "700686": {
      "name": "Robby McCrorie",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "754567": {
      "name": "Mateo Barać",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "847154": {
      "name": "Mario Marina",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "857675": {
      "name": "Stipe Jurić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1077687": {
      "name": "Matej Vuk",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1100692": {
      "name": "Mario Mladenovski",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1102511": {
      "name": "Ivan Posavec",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1233394": {
      "name": "Emmanuel Uchegbu",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1269521": {
      "name": "Silvio Ilinković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1325353": {
      "name": "Iuri Tavares",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1405535": {
      "name": "Elvir Duraković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1412837": {
      "name": "Valentin Akrap",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1419949": {
      "name": "Aleksa Latković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510853": {
      "name": "Luka Škaričić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510865": {
      "name": "Tomislav Duvnjak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510875": {
      "name": "Novak Tepšić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1511022": {
      "name": "Josip Silić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1516457": {
      "name": "Ivan Canjuga",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1520597": {
      "name": "Luka Lukanić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1532189": {
      "name": "Luka Mamić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1606869": {
      "name": "Sven Lesjak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1709727": {
      "name": "Teo Novak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1723873": {
      "name": "Luka Posinković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1927472": {
      "name": "Paizinho",
@@ -2151,7 +2161,7 @@
     "2386269": {
      "name": "Rino Grubišić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -2485,7 +2495,7 @@
      "id": 1665130,
      "name": "Luka Tunjić",
      "role": "midfielders",
-     "position": "CAM,LW",
+     "position": "CAM",
      "number": 11,
      "age": 20,
      "born": "2005-11-19",
@@ -2757,7 +2767,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Federico Bessone",
@@ -2768,47 +2778,47 @@
     "384440": {
      "name": "Marcel Heister",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "445243": {
      "name": "Marko Malenica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "905438": {
      "name": "Ivan Dolček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1042107": {
      "name": "Álex Cantero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1109291": {
      "name": "Oleksandr Petrusenko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1138575": {
      "name": "Armando León",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1184358": {
      "name": "Jay Kruiver",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1202919": {
      "name": "Luka Jelenić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1228054": {
      "name": "Nikola Curcija",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1258611": {
      "name": "Mateo Mejía",
@@ -2818,107 +2828,107 @@
     "1288158": {
      "name": "Balázs Bakti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1329499": {
      "name": "Emin Hasić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1445400": {
      "name": "Senad Mustafić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1470053": {
      "name": "Domagoj Bukvić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1520835": {
      "name": "Šimun Mikolčić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1561067": {
      "name": "Vito Čaić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1562342": {
      "name": "Anton Matković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1589322": {
      "name": "Luka Vrbančić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1597552": {
      "name": "Balelo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1635400": {
      "name": "Jan Hlapčić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1643961": {
      "name": "Ivano Kolarik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1665130": {
      "name": "Luka Tunjić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1665777": {
      "name": "Niko Farkaš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1667431": {
      "name": "Ivan Barić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1675490": {
      "name": "Admir Ljatifi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1720289": {
      "name": "Jan Adžić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1863744": {
      "name": "Jona Ježić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1946144": {
      "name": "Luka Posavec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1995424": {
      "name": "David Kalem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2189065": {
      "name": "Izak Ježić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2410170": {
      "name": "Mateo Sabo",
      "firstSeen": "2026-10-30",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -2965,7 +2975,7 @@
      "country": "Slovenia",
      "height": 192,
      "value": 326042,
-     "rating": 6.68,
+     "rating": 6.67,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3180,7 +3190,7 @@
      "country": "Croatia",
      "height": 185,
      "value": 199003,
-     "rating": 7.04,
+     "rating": 7.03,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3237,7 +3247,7 @@
      "country": "Croatia",
      "height": null,
      "value": 757794,
-     "rating": 7.38,
+     "rating": 7.37,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3300,10 +3310,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "14",
-      "expectedReturn": "A few weeks"
-     }
+     "injury": null
     },
     {
      "id": 955554,
@@ -3379,10 +3386,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 527683,
@@ -3458,10 +3462,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "130",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 308350,
@@ -3502,7 +3503,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Matjaž Kek",
@@ -3513,147 +3514,147 @@
     "308350": {
      "name": "Jakov Puljić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "464334": {
      "name": "Ante Majstorović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "527683": {
      "name": "Amer Gojak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "617841": {
      "name": "David Nwolokor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "652962": {
      "name": "Justas Lasickas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "703529": {
      "name": "Anel Husic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "955554": {
      "name": "Tiago Dantas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1073012": {
      "name": "Mohammad Mohebbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1093756": {
      "name": "Mladen Devetak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1178132": {
      "name": "Ante Oreč",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1240398": {
      "name": "Igor Vekić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1251988": {
      "name": "Samuele Vignato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1270116": {
      "name": "Niko Janković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1276864": {
      "name": "Alfonso Barco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1281558": {
      "name": "Yusuf Kabadayı",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1284461": {
      "name": "Ivan Ćubelić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1300358": {
      "name": "Toni Fruk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1427857": {
      "name": "Daniel Adu-Adjei",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1428042": {
      "name": "Noel Bodetić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1429682": {
      "name": "Calixte Ligue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1505885": {
      "name": "Moreno Živković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1516401": {
      "name": "Ante Jurič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1531103": {
      "name": "Aleksa Todorović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1645684": {
      "name": "Branko Pavić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1695841": {
      "name": "Vito Kovač",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1724555": {
      "name": "Téo Barišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1968794": {
      "name": "Simon Cletus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1980579": {
      "name": "Goran Grulović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1996888": {
      "name": "Viktor Vesligaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -3674,7 +3675,7 @@
      "country": "Croatia",
      "height": null,
      "value": 515011,
-     "rating": 7.14,
+     "rating": 7.2,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3731,8 +3732,8 @@
      "country": "Tunisia",
      "height": null,
      "value": 586393,
-     "rating": 6.62,
-     "goals": 0,
+     "rating": 6.82,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -3750,7 +3751,7 @@
      "country": "Croatia",
      "height": null,
      "value": 406423,
-     "rating": 7.04,
+     "rating": 7.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3810,11 +3811,11 @@
      "country": "Slovenia",
      "height": null,
      "value": null,
-     "rating": 6.77,
+     "rating": 6.82,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -3848,11 +3849,11 @@
      "country": "Nigeria",
      "height": null,
      "value": null,
-     "rating": null,
+     "rating": 7.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -3886,7 +3887,7 @@
      "country": "Kosovo",
      "height": null,
      "value": 262917,
-     "rating": 6.58,
+     "rating": 6.67,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3927,7 +3928,7 @@
      "country": "Croatia",
      "height": null,
      "value": 705557,
-     "rating": 7.04,
+     "rating": 7.01,
      "goals": 3,
      "assists": 4,
      "penalties": 0,
@@ -3965,7 +3966,7 @@
      "country": "Argentina",
      "height": 178,
      "value": 385232,
-     "rating": 6.79,
+     "rating": 6.8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4025,7 +4026,7 @@
      "country": "Bosnia and Herzegovina",
      "height": null,
      "value": 486466,
-     "rating": 6.43,
+     "rating": 6.42,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4044,11 +4045,11 @@
      "country": "Brazil",
      "height": 185,
      "value": 792851,
-     "rating": 6.36,
-     "goals": 0,
+     "rating": 6.51,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -4082,9 +4083,9 @@
      "country": "Denmark",
      "height": 175,
      "value": 773541,
-     "rating": 8.04,
+     "rating": 8,
      "goals": 8,
-     "assists": 4,
+     "assists": 5,
      "penalties": 2,
      "yellow": 0,
      "red": 0,
@@ -4139,7 +4140,7 @@
      "country": "Croatia",
      "height": null,
      "value": 819086,
-     "rating": 7.01,
+     "rating": 6.98,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -4177,7 +4178,7 @@
      "country": "Bosnia and Herzegovina",
      "height": 192,
      "value": 367628,
-     "rating": 7.51,
+     "rating": 7.49,
      "goals": 5,
      "assists": 1,
      "penalties": 0,
@@ -4186,7 +4187,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Javier Cabello",
@@ -4197,137 +4198,137 @@
     "782400": {
      "name": "Advan Kadušić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "952676": {
      "name": "Emil Frederiksen",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1269849": {
      "name": "Samuli Miettinen",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1302394": {
      "name": "Silvio Goričan",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1388360": {
      "name": "Vinko Rozić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1424882": {
      "name": "Daouda Doumbia",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1459741": {
      "name": "Isaac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1480691": {
      "name": "Rene Hrvatin",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1492563": {
      "name": "Hamza Jaganjac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510864": {
      "name": "Antonio Maurić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1510872": {
      "name": "Jan Paus-Kunšt",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1520102": {
      "name": "Mohamed Nasraoui",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1607176": {
      "name": "Franko Kolić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1607310": {
      "name": "Dukan Ahmeti",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1635822": {
      "name": "Gustavo Albarracín",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1639143": {
      "name": "Raul Kumar",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1667664": {
      "name": "Demirel Hodzic",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1682066": {
      "name": "Stipe Ukich",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1690077": {
      "name": "Niko Šepić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1794381": {
      "name": "Dominik Celija",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1842701": {
      "name": "Roko Banovac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1897525": {
      "name": "Nik Žužić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1909304": {
      "name": "Mutari Momoh",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2119510": {
      "name": "Matija Kablar",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2140570": {
      "name": "Toni Brajković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2357094": {
      "name": "Ivano Svraka",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2385368": {
      "name": "Roko Jenjić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -4367,7 +4368,7 @@
      "country": "Croatia",
      "height": null,
      "value": 342655,
-     "rating": 6.34,
+     "rating": 6.39,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4405,7 +4406,7 @@
      "country": "Albania",
      "height": null,
      "value": 135593,
-     "rating": 7.05,
+     "rating": 6.89,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -4449,7 +4450,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 428816,
@@ -4462,7 +4466,7 @@
      "country": "Croatia",
      "height": 192,
      "value": 209051,
-     "rating": 6.53,
+     "rating": 6.5,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -4506,6 +4510,28 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "About a week"
+     }
+    },
+    {
+     "id": 2426351,
+     "name": "Domagoj Maltar",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 16,
+     "age": 17,
+     "born": "2008-11-14",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
      "injury": null
     },
     {
@@ -4519,7 +4545,7 @@
      "country": "Croatia",
      "height": 178,
      "value": null,
-     "rating": 6.55,
+     "rating": 6.62,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4582,7 +4608,7 @@
      "country": "Japan",
      "height": 178,
      "value": 86238,
-     "rating": 6.48,
+     "rating": 6.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4620,7 +4646,7 @@
      "country": "Moldova",
      "height": 183,
      "value": 159836,
-     "rating": 6.31,
+     "rating": 6.24,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4699,7 +4725,7 @@
      "country": "Croatia",
      "height": 178,
      "value": 119729,
-     "rating": 6.67,
+     "rating": 6.85,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4718,11 +4744,11 @@
      "country": "Nigeria",
      "height": null,
      "value": 511307,
-     "rating": 6.68,
+     "rating": 6.7,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -4775,7 +4801,7 @@
      "country": "Croatia",
      "height": null,
      "value": null,
-     "rating": 6.56,
+     "rating": 6.55,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -4835,7 +4861,7 @@
      "country": "Croatia",
      "height": 174,
      "value": 685735,
-     "rating": 7.35,
+     "rating": 7.38,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -4854,11 +4880,11 @@
      "country": "Botswana",
      "height": null,
      "value": null,
-     "rating": 6.06,
+     "rating": 6.11,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -4952,7 +4978,7 @@
      "country": "Croatia",
      "height": 195,
      "value": null,
-     "rating": null,
+     "rating": 5.99,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4980,7 +5006,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Silvijo Čabraja",
@@ -4991,167 +5017,172 @@
     "94260": {
      "name": "Tomislav Božić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "142217": {
      "name": "Ivan Čović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "196236": {
      "name": "Ilija Nestorovski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "307890": {
      "name": "Leonard Zuta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "427054": {
      "name": "Marko Dabro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "428816": {
      "name": "Dominik Kovačić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "460003": {
      "name": "Ljuban Crepulja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "474377": {
      "name": "Alen Grgić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "655557": {
      "name": "Vinko Međimorec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "924265": {
      "name": "Itsuki Urata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1067391": {
      "name": "Josip Mitrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1070783": {
      "name": "Arnór Jónsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1157636": {
      "name": "Jon Mersinaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1178884": {
      "name": "Mihail Caimacov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1392383": {
      "name": "Karlo Sentić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1418753": {
      "name": "Ivan Cvetko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1511026": {
      "name": "Lovro Banovec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1515986": {
      "name": "Filip Krušelj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1524639": {
      "name": "Adetunji Adeshina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1612411": {
      "name": "Patrik Marić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1612414": {
      "name": "Leon Bošnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1643960": {
      "name": "Filip Mažar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1657751": {
      "name": "Karlo Išasegi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1695634": {
      "name": "Marko Petrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714787": {
      "name": "Antonio Jakir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1780292": {
      "name": "Lovre Lončar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1783962": {
      "name": "Maj Pavli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1789742": {
      "name": "Lukas Zahora",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827425": {
      "name": "David Bosak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1870145": {
      "name": "Losika Ratshukudu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1959901": {
      "name": "Leon Geci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1967855": {
      "name": "Filip Kutleša",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2131011": {
      "name": "Vito Papac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
+    },
+    "2426351": {
+     "name": "Domagoj Maltar",
+     "firstSeen": "2026-10-31",
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []
@@ -5507,25 +5538,6 @@
      }
     },
     {
-     "id": 1370591,
-     "name": "Erbol Atabaev",
-     "role": "midfielders",
-     "position": "CM,ST",
-     "number": 18,
-     "age": 25,
-     "born": "2001-08-15",
-     "country": "Kyrgyz Republic",
-     "height": 175,
-     "value": 270306,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 249204,
      "name": "Marko Vešović",
      "role": "midfielders",
@@ -5697,6 +5709,25 @@
      "injury": null
     },
     {
+     "id": 1370591,
+     "name": "Erbol Atabaev",
+     "role": "attackers",
+     "position": "ST",
+     "number": 18,
+     "age": 25,
+     "born": "2001-08-15",
+     "country": "Kyrgyz Republic",
+     "height": 175,
+     "value": 270306,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1417096,
      "name": "Mate Antunović",
      "role": "attackers",
@@ -5754,7 +5785,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Nikica Jelavić",
@@ -5765,47 +5796,47 @@
     "178112": {
      "name": "Krunoslav Hendija",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "249204": {
      "name": "Marko Vešović",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "251266": {
      "name": "Mario Šitum",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "274221": {
      "name": "Marko Pajač",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "307339": {
      "name": "Matej Mitrović",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "447680": {
      "name": "Mirko Marić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "653965": {
      "name": "Fran Karačić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "655544": {
      "name": "Josip Posavec",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "949493": {
      "name": "Marijan Čabraja",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1253915": {
      "name": "Dušan Vuković",
@@ -5815,92 +5846,92 @@
     "1270127": {
      "name": "Jakov-Anton Vasilj",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1352689": {
      "name": "Thanasis Triantafyllou",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1370591": {
      "name": "Erbol Atabaev",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1388757": {
      "name": "Marcel Lorber",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1417096": {
      "name": "Mate Antunović",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1508367": {
      "name": "Jakov Gurlica",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1511001": {
      "name": "Luka Savatović",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1511013": {
      "name": "Leon Belcar",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1516458": {
      "name": "Feta Fetai",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1518959": {
      "name": "Dardan Morina",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1536211": {
      "name": "Luka Ćurković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1649995": {
      "name": "Dušan Vuković",
      "firstSeen": "2026-10-30",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1663533": {
      "name": "Kristijan Čabrajić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1666522": {
      "name": "Lovre Kulušić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1678859": {
      "name": "Noel Djurkovic",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1701794": {
      "name": "Dominik Thaqi",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1710216": {
      "name": "Matija Subotić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714788": {
      "name": "Ivan Katić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1798007": {
      "name": "Noa Godec",
@@ -5910,22 +5941,22 @@
     "1835474": {
      "name": "Teodor Kralevski",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1839694": {
      "name": "Duje Reić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1875856": {
      "name": "Pavle Smiljanić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2140735": {
      "name": "Kayke",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -6585,7 +6616,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Alen Peternac",
@@ -6596,122 +6627,122 @@
     "107844": {
      "name": "Junior Fernándes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "167091": {
      "name": "Vedran Celjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "462273": {
      "name": "Slavko Bralić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "651431": {
      "name": "Marko Stolnik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "656532": {
      "name": "Ivan Đorić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "675328": {
      "name": "Felipe Curcio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "824720": {
      "name": "Kristijan Lovrić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "938992": {
      "name": "Martin Šlogar",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1178883": {
      "name": "Jakov Blagaić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1179375": {
      "name": "Stefan Vukić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1222082": {
      "name": "Xavi Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1379330": {
      "name": "Toni Kolega",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1385227": {
      "name": "Jurica Poldrugač",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1507399": {
      "name": "Lovre Rogić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1520499": {
      "name": "Lenny Ilečić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1631612": {
      "name": "Filip Taraba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1639186": {
      "name": "Noa Skoko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1645685": {
      "name": "Ante Sušak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1657809": {
      "name": "Bruno Unušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1674890": {
      "name": "Saad El Haddad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1699520": {
      "name": "Marko Zebić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1714775": {
      "name": "Cherno Saho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1781846": {
      "name": "Josip Pejić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827452": {
      "name": "Ivan Žutić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827455": {
      "name": "Domagoj Đurković",
@@ -6721,17 +6752,17 @@
     "1827459": {
      "name": "Filip Holjevac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827461": {
      "name": "Luka Popović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827462": {
      "name": "Allyson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1827467": {
      "name": "Nikica Peranović",
@@ -6741,27 +6772,27 @@
     "1840553": {
      "name": "Josip Bralić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2081351": {
      "name": "Cheick Diabaté",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120287": {
      "name": "Stipe Duvnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120288": {
      "name": "Ante Udovičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120289": {
      "name": "Ante Pripuz Špekuljuk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2120290": {
      "name": "Josip Radman",
@@ -6771,7 +6802,7 @@
     "2120291": {
      "name": "Vid Seitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": [
@@ -7396,7 +7427,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-30T09:04:03.955Z",
+   "fetchedAt": "2026-10-31T10:13:11.946Z",
    "coachHistory": [
     {
      "name": "Mario Carević",
@@ -7407,157 +7438,157 @@
     "206388": {
      "name": "Ante Erceg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "384188": {
      "name": "Domagoj Pavičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "392864": {
      "name": "Darijan Žarkov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "427058": {
      "name": "Fran Brodić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "491737": {
      "name": "Stefan Perić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "767488": {
      "name": "Jakov Filipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "796704": {
      "name": "Bruno Bogojević",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "940678": {
      "name": "Davor Matijaš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1034817": {
      "name": "Kevin Čustović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1072702": {
      "name": "Renato Josipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1187338": {
      "name": "Keenan Carole",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1190349": {
      "name": "Filip Braut",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1219010": {
      "name": "Tom Lacoux",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1284438": {
      "name": "Dušan Stevanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1338941": {
      "name": "Patrik Mijić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1354243": {
      "name": "Gonçalo Costa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1384266": {
      "name": "Ognjen Bakić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1450782": {
      "name": "Hadji Moustapha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1525752": {
      "name": "Ante Kavelj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1609037": {
      "name": "Bartol Kardum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1619618": {
      "name": "Wisdom Sule",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1637449": {
      "name": "Luka Vrzić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1661594": {
      "name": "Ivan Cvijanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1680001": {
      "name": "Medin Gashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1717583": {
      "name": "Jakov Pranjić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1760056": {
      "name": "Juraj Frigan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1794904": {
      "name": "Stjepan Kučiš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1821741": {
      "name": "Tin Došen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1988571": {
      "name": "Mihael Kelava",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "1996886": {
      "name": "Tomislav Prgomet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     },
     "2119679": {
      "name": "Elisandro Kožina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-10-31"
     }
    },
    "left": []

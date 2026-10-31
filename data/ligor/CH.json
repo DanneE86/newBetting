@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "CH",
  "fotmobId": 48,
  "name": "Championship",
@@ -133,6 +133,20 @@
   },
   {
    "rank": 10,
+   "team": "Sheffield United",
+   "fotmobName": "Sheffield United",
+   "fotmobId": 8657,
+   "group": null,
+   "played": 13,
+   "won": 5,
+   "drawn": 4,
+   "lost": 4,
+   "goals": "17-15",
+   "gd": 2,
+   "pts": 19
+  },
+  {
+   "rank": 11,
    "team": "Blackburn",
    "fotmobName": "Blackburn Rovers",
    "fotmobId": 8655,
@@ -146,7 +160,7 @@
    "pts": 18
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Portsmouth",
    "fotmobName": "Portsmouth",
    "fotmobId": 8462,
@@ -158,20 +172,6 @@
    "goals": "16-15",
    "gd": 1,
    "pts": 18
-  },
-  {
-   "rank": 12,
-   "team": "Sheffield United",
-   "fotmobName": "Sheffield United",
-   "fotmobId": 8657,
-   "group": null,
-   "played": 12,
-   "won": 4,
-   "drawn": 4,
-   "lost": 4,
-   "goals": "16-15",
-   "gd": 1,
-   "pts": 16
   },
   {
    "rank": 13,
@@ -235,12 +235,12 @@
    "fotmobName": "Wrexham",
    "fotmobId": 9841,
    "group": null,
-   "played": 12,
+   "played": 13,
    "won": 3,
    "drawn": 5,
-   "lost": 4,
-   "goals": "15-18",
-   "gd": -3,
+   "lost": 5,
+   "goals": "15-19",
+   "gd": -4,
    "pts": 14
   },
   {
@@ -1822,6 +1822,176 @@
     12,
     14,
     -3
+   ],
+   [
+    "Bolton",
+    18,
+    12,
+    14,
+    -7
+   ],
+   [
+    "Charlton",
+    19,
+    12,
+    14,
+    -7
+   ],
+   [
+    "Norwich",
+    20,
+    12,
+    12,
+    -2
+   ],
+   [
+    "Watford",
+    21,
+    12,
+    11,
+    -10
+   ],
+   [
+    "Burnley",
+    22,
+    12,
+    8,
+    -8
+   ],
+   [
+    "Derby",
+    23,
+    12,
+    7,
+    -11
+   ],
+   [
+    "Preston",
+    24,
+    12,
+    5,
+    -15
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Middlesbrough",
+    1,
+    12,
+    25,
+    10
+   ],
+   [
+    "Swansea",
+    2,
+    12,
+    23,
+    3
+   ],
+   [
+    "West Ham",
+    3,
+    12,
+    22,
+    17
+   ],
+   [
+    "Wolves",
+    4,
+    12,
+    21,
+    4
+   ],
+   [
+    "West Brom",
+    5,
+    12,
+    21,
+    3
+   ],
+   [
+    "Southampton",
+    6,
+    12,
+    20,
+    12
+   ],
+   [
+    "Birmingham",
+    7,
+    12,
+    20,
+    8
+   ],
+   [
+    "QPR",
+    8,
+    12,
+    20,
+    8
+   ],
+   [
+    "Stoke",
+    9,
+    12,
+    20,
+    2
+   ],
+   [
+    "Sheffield United",
+    10,
+    13,
+    19,
+    2
+   ],
+   [
+    "Blackburn",
+    11,
+    12,
+    18,
+    3
+   ],
+   [
+    "Portsmouth",
+    12,
+    12,
+    18,
+    1
+   ],
+   [
+    "Millwall",
+    13,
+    12,
+    15,
+    -1
+   ],
+   [
+    "Bristol City",
+    14,
+    12,
+    15,
+    -3
+   ],
+   [
+    "Lincoln",
+    15,
+    12,
+    15,
+    -7
+   ],
+   [
+    "Cardiff",
+    16,
+    12,
+    14,
+    2
+   ],
+   [
+    "Wrexham",
+    17,
+    13,
+    14,
+    -4
    ],
    [
     "Bolton",
