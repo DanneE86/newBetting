@@ -1557,6 +1557,38 @@ test.describe('stryk-rules: en enda källa för tecknen, folkets färger och skr
   });
 });
 
+// ---------- gui/public/stryk-cache.js (omhämtning och rensning av gamla omgångar, 2026-10-31) ----------
+
+test.describe('stryk-cache: ny omgång rensar gamla, gammal data hämtas om', () => {
+  const cache = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-cache.js')).href);
+  test('staleDrawKeys: bara andra omgångar av spel som finns i datan', async () => {
+    const { staleDrawKeys } = await cache();
+    const products = [{ product: 'stryktipset', drawNumber: 4977 }, { product: 'europatipset', drawNumber: 2621 }];
+    const keys = ['betting.spikes.stryktipset.4976', 'betting.spikes.stryktipset.4977', 'betting.fileShares.stryktipset.4976',
+      'betting.fileSharesPrev.europatipset.2619', 'betting.sealed.stryktipset.4975', 'betting.sealed.europatipset.2621',
+      'betting.fileBudget', 'betting.view'];
+    expect(staleDrawKeys(keys, products)).toEqual(['betting.spikes.stryktipset.4976', 'betting.fileShares.stryktipset.4976',
+      'betting.fileSharesPrev.europatipset.2619', 'betting.sealed.stryktipset.4975']);
+    // Misslyckad hämtning (inga spel) eller spel som saknas: inget rensas
+    expect(staleDrawKeys(keys, [])).toEqual([]);
+    expect(staleDrawKeys(keys, [{ product: 'europatipset', drawNumber: 2621 }])).toEqual(['betting.fileSharesPrev.europatipset.2619']);
+  });
+  test('needsReload: aldrig hämtad eller äldre än 5 min', async () => {
+    const { needsReload, DATA_MAX_AGE_MS } = await cache();
+    expect(DATA_MAX_AGE_MS).toBe(5 * 60 * 1000);
+    expect(needsReload(0, 1e12)).toBe(true);
+    expect(needsReload(1e12 - DATA_MAX_AGE_MS, 1e12)).toBe(false);
+    expect(needsReload(1e12 - DATA_MAX_AGE_MS - 1, 1e12)).toBe(true);
+  });
+  test('stryktips.js hämtar om vid visning och rensar gamla omgångar efter hämtning', () => {
+    const src = fs.readFileSync(path.join(ROOT, 'gui', 'public', 'stryktips.js'), 'utf8');
+    expect(src).toContain('from "/stryk-cache.js"');
+    expect(src).not.toContain('if (!data && !loading) load();');
+    expect(src).toMatch(/loadedAt = Date\.now\(\);\s*dropOldDraws\(prev\);/);
+    expect(src).toContain('"visibilitychange"');
+  });
+});
+
 // ---------- gui/public/stryk-engine.js (webbens kupongmotor) ----------
 
 test.describe('stryk-rules: skrällficka (skrällar folket missar, 2026-10-11)', () => {
