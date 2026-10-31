@@ -1729,9 +1729,13 @@ test.describe('stryk-engine: kupong A (B och C borttagna 2026-10-25)', () => {
       expect(vikt.rules.utdVikt, at).toBe(FILE_RULES.utdVikt[p.product]);
       expect(spikar(vikt), `${at}: vikten rör inte spikarna`).toEqual(spikar(bara));
       expect(Math.min(...vikt.rowReal), at).toBeGreaterThanOrEqual(FILE_RULES.payoutMin);
-      if (p.product === 'stryktipset') {
+      // Tippa som folket (Stryktipset sedan 2026-10-31): chansen = strecken, så utdelningsvikten kan inte ge högre utdelning
+      const folkTip = p.events.every((e: any) => e.basis === 'folk');
+      if (p.product === 'stryktipset' && !folkTip) {
         expect(vikt.rowList, at).not.toEqual(bara.rowList);
         expect(mean(vikt.rowReal), `${at}: högre utdelning per rad`).toBeGreaterThan(mean(bara.rowReal));
+        expect(vikt.hitAll, `${at}: bara chans är det exakta maximum`).toBeLessThanOrEqual(bara.hitAll + 1e-12);
+      } else if (folkTip) {
         expect(vikt.hitAll, `${at}: bara chans är det exakta maximum`).toBeLessThanOrEqual(bara.hitAll + 1e-12);
       } else {
         expect(vikt.rowList, at).toEqual(bara.rowList);

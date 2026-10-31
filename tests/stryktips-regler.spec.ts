@@ -64,12 +64,16 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
       expect(e.tip, at).toBe(SIGNS[top]);
       expect(e.tipP, at).toBeCloseTo(e.final[top], 3);
       // Procentens kalla: bara data och historik (2026-10-25: "Bedöm matcherna bara på data där samt historik") – vår modell
-      // utan odds, justerad för domare/ny tränare/lärdomar (finalBase = före). Ingen data -> 1/3 var. Aldrig odds eller folk.
-      expect(e.basis, at).toMatch(/^(club|elo|clubelo|none)$/);
+      // utan odds, justerad för domare/ny tränare/lärdomar (finalBase = före). Ingen data -> 1/3 var. Aldrig odds.
+      // Stryktipset sedan 2026-10-31 ("tippar som folket streck"): procenten = folkets streck, datan sparas i dataFinal.
+      const folkTip = p.product === 'stryktipset' && e.folk;
+      expect(e.basis, at).toMatch(folkTip ? /^folk$/ : /^(club|elo|clubelo|none)$/);
       expect(e.tipBasis, `${at}: inga Oddset-tips`).toBeUndefined();
       expect(e.pocket, `${at}: ingen skrällficka (folkets streck)`).toBeUndefined();
-      if (e.model) (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} data`).toBeCloseTo(e.model[i], 2));
-      else e.final.forEach((x: number) => expect(x, `${at} ingen data`).toBeCloseTo(1 / 3, 2));
+      if (folkTip) e.final.forEach((x: number, i: number) => expect(x, `${at} folket`).toBeCloseTo(e.folk[i], 2));
+      const dataP = folkTip ? e.dataFinal : e.final;
+      if (e.model) (e.finalBase || dataP).forEach((x: number, i: number) => expect(x, `${at} data`).toBeCloseTo(e.model[i], 2));
+      else dataP.forEach((x: number) => expect(x, `${at} ingen data`).toBeCloseTo(1 / 3, 2));
       // Folkets streck och farger (gron >= 45 %, rod 25 % eller lagre)
       if (e.folk) {
         expect(e.folk.reduce((s: number, x: number) => s + x, 0), at).toBeCloseTo(1, 2);

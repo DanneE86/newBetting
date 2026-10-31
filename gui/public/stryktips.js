@@ -1060,6 +1060,12 @@ async function refreshLive(p) {
     if (!f || f.some((x) => x == null)) continue;
     const s = f.reduce((a, b) => a + b, 0) || 100; // samma normering som folkProbs i fetch-stryktipset.mjs
     e.folk = f.map((x) => x / s);
+    // Tippa som folket (Stryktipset sedan 2026-10-31): procenten följer strecken just nu
+    if (e.basis === "folk") {
+      e.final = e.folk.slice();
+      e.tip = SIGNS[e.final.indexOf(Math.max(...e.final))];
+      e.tipP = Math.max(...e.final);
+    }
     e.streckvarde = SIGNS.map((_, i) => Math.round((e.final[i] / Math.max(e.folk[i], 0.01)) * 100) / 100);
   }
   // Verklig omsättning: minst den typiska (växer till spelstopp), som i fetch-stryktipset.mjs

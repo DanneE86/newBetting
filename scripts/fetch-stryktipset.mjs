@@ -45,6 +45,10 @@ const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Elo raknas pa langre historik (ELO_SEASONS) an klubbmodellen, sa att uppflyttade lag hunnit fa ratt niva.
 const ELO_W = Number(process.env.STRYK_ELO_W ?? 0);
 const ELO_SEASONS = ['2627', '2526', '2425', '2324', '2223'];
+// Tippa som folket (anvandaren 2026-10-31: "Lagg in som default att du alltid tippar som folket streck pa stryktipset"):
+// pa Stryktipset ar procenten = Svenska folkets streck. Datamodellen raknas och visas anda (M i rutorna, starka spikar och
+// skrallar pa data). STRYK_FOLK=0 = bara data som fore 2026-10-31. Europatipset oforandrat.
+const FOLK_PRODUCTS = process.env.STRYK_FOLK === '0' ? new Set() : new Set(['stryktipset']);
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Typisk omsattning per spel (minsta omsattning som utdelningen raknas med)
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
@@ -873,6 +877,13 @@ async function analyzeDraw(product, draw, ctx, result) {
     // Procenten fore domar-, tranar- och lardomsjusteringen (bara modellen)
     if (a.final !== finalBase) a.finalBase = finalBase.map(r3);
     a.modelWeight = wm;
+    // Stryktipset: tippa som folket (FOLK_PRODUCTS) – folkets streck ersätter procenten när strecken finns
+    if (FOLK_PRODUCTS.has(product.id) && folk) {
+      a.dataFinal = a.final.map(r3);
+      a.final = folk.slice();
+      a.basis = 'folk';
+      a.modelWeight = 0;
+    }
     const order = [0, 1, 2].sort((x, y) => a.final[y] - a.final[x]);
     a.tip = SIGNS[order[0]];
     a.tipP = a.final[order[0]];
@@ -1139,7 +1150,9 @@ async function main() {
     updatedAt: new Date().toISOString(),
     source: 'api.spela.svenskaspel.se + football-data.co.uk + eloratings.net',
     method: {
-      blend: 'Slutprocent = bara data och historik (2026-10-25): egen modell utan odds, justerad för domare, ny tränare och lärdomar. Oddsen och folkets streck används inte i bedömningen.',
+      blend: FOLK_PRODUCTS.has('stryktipset')
+        ? 'Stryktipset: slutprocent = Svenska folkets streck (2026-10-31). Europatipset: bara data och historik – egen modell utan odds, justerad för domare, ny tränare och lärdomar.'
+        : 'Slutprocent = bara data och historik (2026-10-25): egen modell utan odds, justerad för domare, ny tränare och lärdomar. Oddsen och folkets streck används inte i bedömningen.',
       club: 'Klubblag: viktad Poisson (anfall/försvar, hemmafördel, halveringstid 150 dagar, xG inblandat) per land; England skattas gemensamt över PL, Championship, League One och League Two.',
       national: 'Landslag: World Football Elo (eloratings.net) omräknat till förväntade mål.',
       elo: 'Elo bredvid lagnamnen: eget lag-Elo ur ligaresultaten (England, Spanien, Italien m.fl., MLS, Brasilien) eller Klubb-Elo (clubelo.com, Europacup och nordiska ligor). Elo-skillnaden krymps till 75 % eftersom Elo annars är för säker på favoriten. Lag-Elo är bara visning; Klubb-Elo används som egen modell när lagmodell saknas.',
