@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "BE",
  "fotmobId": 40,
  "name": "First Division A",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Club Brugge",
+   "fotmobName": "Club Brugge",
+   "fotmobId": 8342,
+   "group": null,
+   "played": 10,
+   "won": 9,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "26-8",
+   "gd": 18,
+   "pts": 27
+  },
+  {
+   "rank": 2,
    "team": "Gent",
    "fotmobName": "Gent",
    "fotmobId": 9991,
@@ -18,20 +32,6 @@
    "goals": "19-4",
    "gd": 15,
    "pts": 25
-  },
-  {
-   "rank": 2,
-   "team": "Club Brugge",
-   "fotmobName": "Club Brugge",
-   "fotmobId": 8342,
-   "group": null,
-   "played": 9,
-   "won": 8,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "22-6",
-   "gd": 16,
-   "pts": 24
   },
   {
    "rank": 3,
@@ -137,12 +137,12 @@
    "fotmobName": "Zulte Waregem",
    "fotmobId": 10000,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 3,
    "drawn": 2,
-   "lost": 4,
-   "goals": "10-12",
-   "gd": -2,
+   "lost": 5,
+   "goals": "12-16",
+   "gd": -4,
    "pts": 11
   },
   {
@@ -1225,6 +1225,134 @@
     9,
     11,
     -2
+   ],
+   [
+    "Antwerp",
+    11,
+    9,
+    10,
+    -5
+   ],
+   [
+    "Beveren",
+    12,
+    9,
+    10,
+    -6
+   ],
+   [
+    "St Truiden",
+    13,
+    9,
+    8,
+    -2
+   ],
+   [
+    "RAAL La Louviere",
+    14,
+    9,
+    7,
+    -7
+   ],
+   [
+    "Mechelen",
+    15,
+    8,
+    6,
+    -8
+   ],
+   [
+    "Oud-Heverlee Leuven",
+    16,
+    9,
+    6,
+    -8
+   ],
+   [
+    "Kortrijk",
+    17,
+    8,
+    3,
+    -16
+   ],
+   [
+    "Cercle Brugge",
+    18,
+    9,
+    3,
+    -10
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Club Brugge",
+    1,
+    10,
+    27,
+    18
+   ],
+   [
+    "Gent",
+    2,
+    9,
+    25,
+    15
+   ],
+   [
+    "St. Gilloise",
+    3,
+    9,
+    23,
+    21
+   ],
+   [
+    "Charleroi",
+    4,
+    9,
+    21,
+    6
+   ],
+   [
+    "Anderlecht",
+    5,
+    9,
+    16,
+    -1
+   ],
+   [
+    "Genk",
+    6,
+    9,
+    15,
+    5
+   ],
+   [
+    "Westerlo",
+    7,
+    9,
+    14,
+    3
+   ],
+   [
+    "Lommel SK",
+    8,
+    9,
+    12,
+    0
+   ],
+   [
+    "Standard",
+    9,
+    9,
+    11,
+    -1
+   ],
+   [
+    "Waregem",
+    10,
+    10,
+    11,
+    -4
    ],
    [
     "Antwerp",

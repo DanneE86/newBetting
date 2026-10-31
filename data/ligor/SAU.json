@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -63,31 +63,31 @@
   },
   {
    "rank": 5,
-   "team": "Al Ahli",
-   "fotmobName": "Al Ahli",
-   "fotmobId": 2530,
-   "group": null,
-   "played": 10,
-   "won": 7,
-   "drawn": 0,
-   "lost": 3,
-   "goals": "27-13",
-   "gd": 14,
-   "pts": 21
-  },
-  {
-   "rank": 6,
    "team": "Neom SC",
    "fotmobName": "Neom SC",
    "fotmobId": 1699505,
    "group": null,
    "played": 12,
-   "won": 6,
-   "drawn": 2,
+   "won": 7,
+   "drawn": 1,
    "lost": 4,
-   "goals": "17-10",
-   "gd": 7,
-   "pts": 20
+   "goals": "18-10",
+   "gd": 8,
+   "pts": 22
+  },
+  {
+   "rank": 6,
+   "team": "Al Ahli",
+   "fotmobName": "Al Ahli",
+   "fotmobId": 2530,
+   "group": null,
+   "played": 11,
+   "won": 7,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "28-19",
+   "gd": 9,
+   "pts": 21
   },
   {
    "rank": 7,
@@ -111,11 +111,11 @@
    "group": null,
    "played": 12,
    "won": 4,
-   "drawn": 4,
-   "lost": 4,
-   "goals": "10-12",
-   "gd": -2,
-   "pts": 16
+   "drawn": 3,
+   "lost": 5,
+   "goals": "10-13",
+   "gd": -3,
+   "pts": 15
   },
   {
    "rank": 9,
@@ -133,6 +133,20 @@
   },
   {
    "rank": 10,
+   "team": "Al Shabab",
+   "fotmobName": "Al Shabab",
+   "fotmobId": 101916,
+   "group": null,
+   "played": 11,
+   "won": 3,
+   "drawn": 5,
+   "lost": 3,
+   "goals": "20-15",
+   "gd": 5,
+   "pts": 14
+  },
+  {
+   "rank": 11,
    "team": "Al Kholood",
    "fotmobName": "Al Kholood",
    "fotmobId": 1523706,
@@ -146,7 +160,7 @@
    "pts": 12
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "Al Riyadh",
    "fotmobName": "Al Riyadh",
    "fotmobId": 582739,
@@ -158,20 +172,6 @@
    "goals": "11-25",
    "gd": -14,
    "pts": 12
-  },
-  {
-   "rank": 12,
-   "team": "Al Shabab",
-   "fotmobName": "Al Shabab",
-   "fotmobId": 101916,
-   "group": null,
-   "played": 10,
-   "won": 2,
-   "drawn": 5,
-   "lost": 3,
-   "goals": "14-14",
-   "gd": 0,
-   "pts": 11
   },
   {
    "rank": 13,
@@ -1623,6 +1623,134 @@
     10,
     11,
     0
+   ],
+   [
+    "Al Hazem",
+    13,
+    12,
+    10,
+    -6
+   ],
+   [
+    "Al Faisaly",
+    14,
+    11,
+    10,
+    -8
+   ],
+   [
+    "Al Fayha",
+    15,
+    11,
+    8,
+    -7
+   ],
+   [
+    "Al Fateh",
+    16,
+    11,
+    6,
+    -13
+   ],
+   [
+    "Al Taawoun",
+    17,
+    11,
+    4,
+    -14
+   ],
+   [
+    "Abha",
+    18,
+    11,
+    3,
+    -12
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Al Qadsiah",
+    1,
+    12,
+    28,
+    20
+   ],
+   [
+    "Al Nassr",
+    2,
+    11,
+    28,
+    17
+   ],
+   [
+    "Al Hilal",
+    3,
+    10,
+    27,
+    21
+   ],
+   [
+    "Al Ittihad",
+    4,
+    11,
+    24,
+    10
+   ],
+   [
+    "Neom SC",
+    5,
+    12,
+    22,
+    8
+   ],
+   [
+    "Al Ahli",
+    6,
+    11,
+    21,
+    9
+   ],
+   [
+    "Al Ettifaq",
+    7,
+    11,
+    18,
+    1
+   ],
+   [
+    "Al Diriyah",
+    8,
+    12,
+    15,
+    -3
+   ],
+   [
+    "Al Khaleej",
+    9,
+    12,
+    15,
+    -5
+   ],
+   [
+    "Al Shabab",
+    10,
+    11,
+    14,
+    5
+   ],
+   [
+    "Al Kholood",
+    11,
+    11,
+    12,
+    -9
+   ],
+   [
+    "Al Riyadh",
+    12,
+    11,
+    12,
+    -14
    ],
    [
     "Al Hazem",

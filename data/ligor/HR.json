@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "HR",
  "fotmobId": 252,
  "name": "HNL",
@@ -81,13 +81,13 @@
    "fotmobName": "NK Istra 1961",
    "fotmobId": 6038,
    "group": null,
-   "played": 11,
-   "won": 3,
+   "played": 12,
+   "won": 4,
    "drawn": 4,
    "lost": 4,
-   "goals": "19-18",
-   "gd": 1,
-   "pts": 13
+   "goals": "21-18",
+   "gd": 3,
+   "pts": 16
   },
   {
    "rank": 7,
@@ -95,12 +95,12 @@
    "fotmobName": "Slaven",
    "fotmobId": 1581,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 4,
    "drawn": 1,
-   "lost": 6,
-   "goals": "14-23",
-   "gd": -9,
+   "lost": 7,
+   "goals": "14-25",
+   "gd": -11,
    "pts": 13
   },
   {
@@ -628,6 +628,78 @@
     11,
     13,
     -9
+   ],
+   [
+    "Lokomotiva Zagreb",
+    8,
+    11,
+    11,
+    -4
+   ],
+   [
+    "Rudeš",
+    9,
+    11,
+    10,
+    -13
+   ],
+   [
+    "HNK Gorica",
+    10,
+    11,
+    7,
+    -8
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Hajduk Split",
+    1,
+    11,
+    23,
+    10
+   ],
+   [
+    "Dinamo Zagreb",
+    2,
+    10,
+    22,
+    12
+   ],
+   [
+    "Varaždin",
+    3,
+    11,
+    18,
+    5
+   ],
+   [
+    "Osijek",
+    4,
+    11,
+    17,
+    3
+   ],
+   [
+    "Rijeka",
+    5,
+    10,
+    17,
+    3
+   ],
+   [
+    "Istra 1961",
+    6,
+    12,
+    16,
+    3
+   ],
+   [
+    "Slaven Belupo Koprivnica",
+    7,
+    12,
+    13,
+    -11
    ],
    [
     "Lokomotiva Zagreb",

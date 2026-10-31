@@ -2045,7 +2045,354 @@
    },
    "flagged": [],
    "savedAt": "2026-10-30T15:54:54.332Z"
+  },
+  "2026-10-31|BL|Werder Bremen|Hoffenheim": {
+   "key": "2026-10-31|BL|Werder Bremen|Hoffenheim",
+   "league": "BL",
+   "date": "2026-10-31",
+   "home": "Werder Bremen",
+   "away": "Hoffenheim",
+   "kickoffUtc": "2026-10-31T14:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 252,
+   "moves": {
+    "home": {
+     "from": 2.85,
+     "to": 2.45,
+     "pp": 5.2
+    },
+    "draw": {
+     "from": 4,
+     "to": 3.9,
+     "pp": 0.4
+    },
+    "away": {
+     "from": 2.3,
+     "to": 2.63,
+     "pp": -5.6
+    }
+   },
+   "flagged": [
+    "home",
+    "away"
+   ],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|BL|Schalke 04|RB Leipzig": {
+   "key": "2026-10-31|BL|Schalke 04|RB Leipzig",
+   "league": "BL",
+   "date": "2026-10-31",
+   "home": "Schalke 04",
+   "away": "RB Leipzig",
+   "kickoffUtc": "2026-10-31T14:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 252,
+   "moves": {
+    "home": {
+     "from": 4.1,
+     "to": 4.1,
+     "pp": -0.4
+    },
+    "draw": {
+     "from": 4,
+     "to": 3.9,
+     "pp": 0.2
+    },
+    "away": {
+     "from": 1.9,
+     "to": 1.86,
+     "pp": 0.2
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|BL|Augsburg|Freiburg": {
+   "key": "2026-10-31|BL|Augsburg|Freiburg",
+   "league": "BL",
+   "date": "2026-10-31",
+   "home": "Augsburg",
+   "away": "Freiburg",
+   "kickoffUtc": "2026-10-31T14:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 252,
+   "moves": {
+    "home": {
+     "from": 3.1,
+     "to": 2.9,
+     "pp": 1.9
+    },
+    "draw": {
+     "from": 3.9,
+     "to": 3.8,
+     "pp": 0.4
+    },
+    "away": {
+     "from": 2.15,
+     "to": 2.25,
+     "pp": -2.3
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|SA|Bologna|Monza": {
+   "key": "2026-10-31|SA|Bologna|Monza",
+   "league": "SA",
+   "date": "2026-10-31",
+   "home": "Bologna",
+   "away": "Monza",
+   "kickoffUtc": "2026-10-31T14:00:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 222,
+   "moves": {
+    "home": {
+     "from": 1.72,
+     "to": 1.71,
+     "pp": 0.1
+    },
+    "draw": {
+     "from": 3.9,
+     "to": 3.9,
+     "pp": -0.1
+    },
+    "away": {
+     "from": 5,
+     "to": 5,
+     "pp": -0.1
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|BL|Leverkusen|Stuttgart": {
+   "key": "2026-10-31|BL|Leverkusen|Stuttgart",
+   "league": "BL",
+   "date": "2026-10-31",
+   "home": "Leverkusen",
+   "away": "Stuttgart",
+   "kickoffUtc": "2026-10-31T14:30:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 252,
+   "moves": {
+    "home": {
+     "from": 1.8,
+     "to": 1.71,
+     "pp": 2.7
+    },
+    "draw": {
+     "from": 4.33,
+     "to": 4.5,
+     "pp": -0.9
+    },
+    "away": {
+     "from": 4,
+     "to": 4.33,
+     "pp": -1.9
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Chelsea|Man United": {
+   "key": "2026-10-31|PL|Chelsea|Man United",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Chelsea",
+   "away": "Man United",
+   "kickoffUtc": "2026-10-31T12:30Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 132,
+   "moves": {
+    "home": {
+     "from": 1.86,
+     "to": 2.1,
+     "pp": -5.9
+    },
+    "draw": {
+     "from": 3.95,
+     "to": 3.75,
+     "pp": 1.3
+    },
+    "away": {
+     "from": 4.2,
+     "to": 3.5,
+     "pp": 4.6
+    }
+   },
+   "flagged": [
+    "home",
+    "away"
+   ],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Brentford|Nott'm Forest": {
+   "key": "2026-10-31|PL|Brentford|Nott'm Forest",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Brentford",
+   "away": "Nott'm Forest",
+   "kickoffUtc": "2026-10-31T15:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 282,
+   "moves": {
+    "home": {
+     "from": 2.05,
+     "to": 2.15,
+     "pp": -2.1
+    },
+    "draw": {
+     "from": 3.7,
+     "to": 3.6,
+     "pp": 0.8
+    },
+    "away": {
+     "from": 3.5,
+     "to": 3.35,
+     "pp": 1.3
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Hull|Ipswich": {
+   "key": "2026-10-31|PL|Hull|Ipswich",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Hull",
+   "away": "Ipswich",
+   "kickoffUtc": "2026-10-31T15:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 282,
+   "moves": {
+    "home": {
+     "from": 2.65,
+     "to": 2.8,
+     "pp": -2.5
+    },
+    "draw": {
+     "from": 3.5,
+     "to": 3.4,
+     "pp": 0.4
+    },
+    "away": {
+     "from": 2.75,
+     "to": 2.55,
+     "pp": 2.2
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Man City|Brighton": {
+   "key": "2026-10-31|PL|Man City|Brighton",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Man City",
+   "away": "Brighton",
+   "kickoffUtc": "2026-10-31T15:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 282,
+   "moves": {
+    "home": {
+     "from": 1.63,
+     "to": 1.71,
+     "pp": -2.8
+    },
+    "draw": {
+     "from": 4.6,
+     "to": 4.3,
+     "pp": 1.5
+    },
+    "away": {
+     "from": 4.8,
+     "to": 4.5,
+     "pp": 1.3
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Bournemouth|Leeds": {
+   "key": "2026-10-31|PL|Bournemouth|Leeds",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Bournemouth",
+   "away": "Leeds",
+   "kickoffUtc": "2026-10-31T15:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 282,
+   "moves": {
+    "home": {
+     "from": 2.15,
+     "to": 2.15,
+     "pp": 0.3
+    },
+    "draw": {
+     "from": 3.5,
+     "to": 3.4,
+     "pp": 1
+    },
+    "away": {
+     "from": 3.5,
+     "to": 3.7,
+     "pp": -1.3
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
+  },
+  "2026-10-31|PL|Coventry|Sunderland": {
+   "key": "2026-10-31|PL|Coventry|Sunderland",
+   "league": "PL",
+   "date": "2026-10-31",
+   "home": "Coventry",
+   "away": "Sunderland",
+   "kickoffUtc": "2026-10-31T15:00Z",
+   "src": "op",
+   "firstAt": "2026-10-30T15:53:31.240Z",
+   "lastAt": "2026-10-31T10:17:45.770Z",
+   "minBeforeKick": 282,
+   "moves": {
+    "home": {
+     "from": 3.2,
+     "to": 3.1,
+     "pp": 0.8
+    },
+    "draw": {
+     "from": 3.4,
+     "to": 3.35,
+     "pp": 0.3
+    },
+    "away": {
+     "from": 2.35,
+     "to": 2.4,
+     "pp": -1.1
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-31T10:19:01.724Z"
   }
  },
- "updatedAt": "2026-10-30T15:54:54.332Z"
+ "updatedAt": "2026-10-31T10:19:01.724Z"
 }

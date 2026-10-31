@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Série B",
@@ -49,6 +49,20 @@
   },
   {
    "rank": 4,
+   "team": "Criciúma",
+   "fotmobName": "Criciúma",
+   "fotmobId": 7729,
+   "group": null,
+   "played": 36,
+   "won": 18,
+   "drawn": 8,
+   "lost": 10,
+   "goals": "38-30",
+   "gd": 8,
+   "pts": 62
+  },
+  {
+   "rank": 5,
    "team": "Fortaleza",
    "fotmobName": "Fortaleza",
    "fotmobId": 8287,
@@ -60,20 +74,6 @@
    "goals": "43-31",
    "gd": 12,
    "pts": 61
-  },
-  {
-   "rank": 5,
-   "team": "Criciúma",
-   "fotmobName": "Criciúma",
-   "fotmobId": 7729,
-   "group": null,
-   "played": 35,
-   "won": 17,
-   "drawn": 8,
-   "lost": 10,
-   "goals": "36-30",
-   "gd": 6,
-   "pts": 59
   },
   {
    "rank": 6,
@@ -277,12 +277,12 @@
    "fotmobName": "Ponte Preta",
    "fotmobId": 8630,
    "group": null,
-   "played": 35,
+   "played": 36,
    "won": 3,
    "drawn": 6,
-   "lost": 26,
-   "goals": "21-76",
-   "gd": -55,
+   "lost": 27,
+   "goals": "21-78",
+   "gd": -57,
    "pts": 15
   }
  ],
@@ -2131,6 +2131,148 @@
     35,
     15,
     -55
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Novorizontino",
+    1,
+    35,
+    64,
+    32
+   ],
+   [
+    "Juventude",
+    2,
+    35,
+    64,
+    22
+   ],
+   [
+    "Vila Nova",
+    3,
+    35,
+    62,
+    14
+   ],
+   [
+    "Criciúma",
+    4,
+    36,
+    62,
+    8
+   ],
+   [
+    "Fortaleza",
+    5,
+    35,
+    61,
+    12
+   ],
+   [
+    "CRB",
+    6,
+    35,
+    55,
+    4
+   ],
+   [
+    "Sport",
+    7,
+    35,
+    54,
+    9
+   ],
+   [
+    "Atlético Goianiense",
+    8,
+    35,
+    54,
+    9
+   ],
+   [
+    "Goiás",
+    9,
+    35,
+    52,
+    -4
+   ],
+   [
+    "Operário PR",
+    10,
+    35,
+    51,
+    -1
+   ],
+   [
+    "São Bernardo",
+    11,
+    35,
+    49,
+    10
+   ],
+   [
+    "Botafogo-SP",
+    12,
+    35,
+    47,
+    2
+   ],
+   [
+    "Cuiabá",
+    13,
+    35,
+    47,
+    4
+   ],
+   [
+    "Athletic",
+    14,
+    35,
+    44,
+    0
+   ],
+   [
+    "Náutico",
+    15,
+    35,
+    43,
+    -7
+   ],
+   [
+    "Ceará",
+    16,
+    35,
+    43,
+    -7
+   ],
+   [
+    "Avaí",
+    17,
+    35,
+    37,
+    -12
+   ],
+   [
+    "Londrina",
+    18,
+    35,
+    32,
+    -7
+   ],
+   [
+    "América Mineiro",
+    19,
+    35,
+    23,
+    -31
+   ],
+   [
+    "Ponte Preta",
+    20,
+    36,
+    15,
+    -57
    ]
   ]
  }

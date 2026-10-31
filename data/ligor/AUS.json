@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "AUS",
  "fotmobId": 113,
  "name": "A-League",
@@ -11,13 +11,13 @@
    "fotmobName": "Wellington Phoenix",
    "fotmobId": 78785,
    "group": null,
-   "played": 2,
-   "won": 2,
+   "played": 3,
+   "won": 3,
    "drawn": 0,
    "lost": 0,
-   "goals": "4-1",
-   "gd": 3,
-   "pts": 6
+   "goals": "7-1",
+   "gd": 6,
+   "pts": 9
   },
   {
    "rank": 2,
@@ -25,13 +25,13 @@
    "fotmobName": "Western Sydney Wanderers FC",
    "fotmobId": 323834,
    "group": null,
-   "played": 2,
+   "played": 3,
    "won": 1,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 0,
    "goals": "5-2",
    "gd": 3,
-   "pts": 4
+   "pts": 5
   },
   {
    "rank": 3,
@@ -39,13 +39,13 @@
    "fotmobName": "Macarthur FC",
    "fotmobId": 1209973,
    "group": null,
-   "played": 2,
+   "played": 3,
    "won": 1,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 0,
    "goals": "3-2",
    "gd": 1,
-   "pts": 4
+   "pts": 5
   },
   {
    "rank": 4,
@@ -67,12 +67,12 @@
    "fotmobName": "Sydney FC",
    "fotmobId": 10164,
    "group": null,
-   "played": 2,
+   "played": 3,
    "won": 1,
    "drawn": 1,
-   "lost": 0,
-   "goals": "2-1",
-   "gd": 1,
+   "lost": 1,
+   "goals": "3-3",
+   "gd": 0,
    "pts": 4
   },
   {
@@ -91,20 +91,34 @@
   },
   {
    "rank": 7,
+   "team": "Melbourne City FC",
+   "fotmobName": "Melbourne City FC",
+   "fotmobId": 203576,
+   "group": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "4-5",
+   "gd": -1,
+   "pts": 4
+  },
+  {
+   "rank": 8,
    "team": "Newcastle Jets",
    "fotmobName": "Newcastle Jets",
    "fotmobId": 6454,
    "group": null,
-   "played": 2,
+   "played": 3,
    "won": 0,
    "drawn": 2,
-   "lost": 0,
-   "goals": "3-3",
-   "gd": 0,
+   "lost": 1,
+   "goals": "3-6",
+   "gd": -3,
    "pts": 2
   },
   {
-   "rank": 8,
+   "rank": 9,
    "team": "Melbourne Victory",
    "fotmobName": "Melbourne Victory",
    "fotmobId": 6230,
@@ -115,20 +129,6 @@
    "lost": 1,
    "goals": "2-3",
    "gd": -1,
-   "pts": 1
-  },
-  {
-   "rank": 9,
-   "team": "Melbourne City FC",
-   "fotmobName": "Melbourne City FC",
-   "fotmobId": 203576,
-   "group": null,
-   "played": 2,
-   "won": 0,
-   "drawn": 1,
-   "lost": 1,
-   "goals": "2-4",
-   "gd": -2,
    "pts": 1
   },
   {
@@ -668,6 +668,92 @@
     2,
     1,
     -2
+   ],
+   [
+    "Central Coast Mariners",
+    10,
+    2,
+    1,
+    -2
+   ],
+   [
+    "Adelaide United",
+    11,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Perth Glory",
+    12,
+    2,
+    0,
+    -2
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "Wellington Phoenix",
+    1,
+    3,
+    9,
+    6
+   ],
+   [
+    "Western Sydney Wanderers FC",
+    2,
+    3,
+    5,
+    3
+   ],
+   [
+    "Macarthur FC",
+    3,
+    3,
+    5,
+    1
+   ],
+   [
+    "Brisbane Roar FC",
+    4,
+    2,
+    4,
+    1
+   ],
+   [
+    "Sydney FC",
+    5,
+    3,
+    4,
+    0
+   ],
+   [
+    "Auckland FC",
+    6,
+    3,
+    4,
+    -1
+   ],
+   [
+    "Melbourne City FC",
+    7,
+    3,
+    4,
+    -1
+   ],
+   [
+    "Newcastle Jets",
+    8,
+    3,
+    2,
+    -3
+   ],
+   [
+    "Melbourne Victory",
+    9,
+    2,
+    1,
+    -1
    ],
    [
     "Central Coast Mariners",

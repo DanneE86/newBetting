@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T15:47:46.164Z",
+ "updatedAt": "2026-10-31T10:13:11.946Z",
  "league": "KR",
  "fotmobId": 9080,
  "name": "K League 1",
@@ -179,16 +179,30 @@
    "fotmobName": "Daejeon Hana Citizen",
    "fotmobId": 133900,
    "group": "K-League 1 Final Group A",
-   "played": 0,
+   "played": 1,
    "won": 0,
-   "drawn": 0,
+   "drawn": 1,
    "lost": 0,
    "goals": "0-0",
    "gd": 0,
-   "pts": 0
+   "pts": 1
   },
   {
    "rank": 2,
+   "team": "Jeonbuk Hyundai Motors FC",
+   "fotmobName": "Jeonbuk Hyundai Motors FC",
+   "fotmobId": 46038,
+   "group": "K-League 1 Final Group A",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 3,
    "team": "FC Seoul",
    "fotmobName": "FC Seoul",
    "fotmobId": 92630,
@@ -202,7 +216,7 @@
    "pts": 0
   },
   {
-   "rank": 3,
+   "rank": 4,
    "team": "Gangwon FC",
    "fotmobName": "Gangwon FC",
    "fotmobId": 164734,
@@ -216,24 +230,10 @@
    "pts": 0
   },
   {
-   "rank": 4,
+   "rank": 5,
    "team": "Incheon United",
    "fotmobName": "Incheon United",
    "fotmobId": 133895,
-   "group": "K-League 1 Final Group A",
-   "played": 0,
-   "won": 0,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 0
-  },
-  {
-   "rank": 5,
-   "team": "Jeonbuk Hyundai Motors FC",
-   "fotmobName": "Jeonbuk Hyundai Motors FC",
-   "fotmobId": 46038,
    "group": "K-League 1 Final Group A",
    "played": 0,
    "won": 0,
@@ -259,6 +259,34 @@
   },
   {
    "rank": 1,
+   "team": "Gimcheon Sangmu",
+   "fotmobName": "Gimcheon Sangmu",
+   "fotmobId": 133901,
+   "group": "K-League 1 Final Group B",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 2,
+   "team": "Gwangju FC",
+   "fotmobName": "Gwangju FC",
+   "fotmobId": 245905,
+   "group": "K-League 1 Final Group B",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 3,
    "team": "Bucheon FC 1995",
    "fotmobName": "Bucheon FC 1995",
    "fotmobId": 429441,
@@ -272,38 +300,10 @@
    "pts": 0
   },
   {
-   "rank": 2,
+   "rank": 4,
    "team": "FC Anyang",
    "fotmobName": "FC Anyang",
    "fotmobId": 429440,
-   "group": "K-League 1 Final Group B",
-   "played": 0,
-   "won": 0,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 0
-  },
-  {
-   "rank": 3,
-   "team": "Gimcheon Sangmu",
-   "fotmobName": "Gimcheon Sangmu",
-   "fotmobId": 133901,
-   "group": "K-League 1 Final Group B",
-   "played": 0,
-   "won": 0,
-   "drawn": 0,
-   "lost": 0,
-   "goals": "0-0",
-   "gd": 0,
-   "pts": 0
-  },
-  {
-   "rank": 4,
-   "team": "Gwangju FC",
-   "fotmobName": "Gwangju FC",
-   "fotmobId": 245905,
    "group": "K-League 1 Final Group B",
    "played": 0,
    "won": 0,
@@ -751,6 +751,176 @@
    ],
    [
     "Gwangju FC",
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    "Jeju SK",
+    5,
+    0,
+    0,
+    0
+   ],
+   [
+    "Pohang Steelers",
+    6,
+    0,
+    0,
+    0
+   ]
+  ],
+  "2026-10-31": [
+   [
+    "FC Seoul",
+    1,
+    33,
+    67,
+    32
+   ],
+   [
+    "Ulsan HD FC",
+    2,
+    33,
+    51,
+    5
+   ],
+   [
+    "Daejeon Hana Citizen",
+    3,
+    33,
+    49,
+    12
+   ],
+   [
+    "Jeonbuk Hyundai Motors FC",
+    4,
+    33,
+    48,
+    10
+   ],
+   [
+    "Gangwon FC",
+    5,
+    33,
+    48,
+    10
+   ],
+   [
+    "Incheon United",
+    6,
+    33,
+    46,
+    8
+   ],
+   [
+    "Jeju SK",
+    7,
+    33,
+    46,
+    2
+   ],
+   [
+    "FC Anyang",
+    8,
+    33,
+    43,
+    -8
+   ],
+   [
+    "Pohang Steelers",
+    9,
+    33,
+    42,
+    -9
+   ],
+   [
+    "Gimcheon Sangmu",
+    10,
+    33,
+    34,
+    -8
+   ],
+   [
+    "Bucheon FC 1995",
+    11,
+    33,
+    32,
+    -15
+   ],
+   [
+    "Gwangju FC",
+    12,
+    33,
+    21,
+    -39
+   ],
+   [
+    "Daejeon Hana Citizen",
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    "Jeonbuk Hyundai Motors FC",
+    2,
+    1,
+    1,
+    0
+   ],
+   [
+    "FC Seoul",
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    "Gangwon FC",
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    "Incheon United",
+    5,
+    0,
+    0,
+    0
+   ],
+   [
+    "Ulsan HD FC",
+    6,
+    0,
+    0,
+    0
+   ],
+   [
+    "Gimcheon Sangmu",
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    "Gwangju FC",
+    2,
+    1,
+    1,
+    0
+   ],
+   [
+    "Bucheon FC 1995",
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Anyang",
     4,
     0,
     0,
