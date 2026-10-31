@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T15:29:03.496Z",
+  "updatedAt": "2026-10-31T08:50:17.647Z",
   "source": "api.spela.svenskaspel.se + football-data.co.uk + eloratings.net",
   "method": {
     "blend": "Slutprocent = bara data och historik (2026-10-25): egen modell utan odds, justerad för domare, ny tränare och lärdomar. Oddsen och folkets streck används inte i bedömningen.",
@@ -21,7 +21,7 @@
       "open": true,
       "closeDescription": "Stryktipset v 44, stänger 2026-10-31 15:59",
       "regCloseTime": "2026-10-31T15:59:00+01:00",
-      "turnover": "6866288,00",
+      "turnover": "12396946,00",
       "comment": "Stryktipset v. 2026-44",
       "modelCutoff": "2026-10-31",
       "events": [
@@ -33,9 +33,9 @@
           "country": "England",
           "kickoff": "2026-10-31T21:00:00+01:00",
           "odds": [
-            1.96,
-            3.9,
-            3.95
+            2.02,
+            3.8,
+            3.75
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -44,9 +44,9 @@
             0.255
           ],
           "folk": [
-            0.67,
+            0.69,
             0.19,
-            0.14
+            0.12
           ],
           "model": [
             0.452,
@@ -359,13 +359,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.38,
-            "odds": 1.96,
+            "odds": 2.02,
             "value": false
           },
           "streckvarde": [
-            0.65,
+            0.63,
             1.41,
-            2.15
+            2.5
           ],
           "experts": [
             {
@@ -463,19 +463,13 @@
               ],
               "unavailable": [
                 {
-                  "name": "Emile Smith Rowe",
-                  "type": "injury",
-                  "expectedReturn": "Doubtful",
-                  "marketValue": 25037437
-                },
-                {
                   "name": "Ryan Sessegnon",
                   "type": "suspension",
                   "expectedReturn": "Late October 2026",
                   "marketValue": 18365455
                 }
               ],
-              "missingValueShare": 0.155,
+              "missingValueShare": 0.072,
               "starterValue": 237091512,
               "restDays": 3,
               "prevMatch": {
@@ -509,7 +503,7 @@
               "draws": 4,
               "awayWins": 10
             },
-            "fetchedAt": "2026-10-30T15:28:44.448Z"
+            "fetchedAt": "2026-10-31T08:50:07.271Z"
           },
           "refereeStreak": {
             "referee": "Samuel Barrott",
@@ -631,14 +625,14 @@
             "Förväntade poäng (xP, ur xG): Aston Villa 9,3 mot 11 verkliga (förväntad plats 15, verklig 9) · Fulham 11,6 mot 8 verkliga (förväntad plats 7, verklig 15).",
             "Fulham har fått 3,6 poäng mindre än spelet motiverar (otur – kan vända).",
             "Förväntade mål 1,50 – 1,11; troligast 1-1, 1-0, 2-1.",
-            "Svenska folket överstreckar 1 (67 % mot vår 43 %).",
-            "Streckvärde på 2: vi 30 %, folket bara 14 %.",
+            "Svenska folket överstreckar 1 (69 % mot vår 43 %).",
+            "Streckvärde på 2: vi 30 %, folket bara 12 %.",
             "Inbördes (senaste 2): Fulham 1-0 Aston Villa · Aston Villa 3-1 Fulham.",
             "Domare Samuel Barrott: hemmalaget har vunnit bara 35 % av domarens 171 engelska ligamatcher – i sådana matcher har bortalaget vunnit oftare än oddsen sagt. Fulham +3 procentenheter, Aston Villa −2.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Aston Villa saknar 3 spelare (Amadou Onana, Matteo Ruggeri, Aaron Wan-Bissaka), 21 % av startelvans + frånvarandes marknadsvärde.",
             "Aston Villa spelar Champions League om 3 dagar, vilket ger risk för rotation.",
-            "Fulham saknar 2 spelare (Emile Smith Rowe, Ryan Sessegnon), 16 % av startelvans + frånvarandes marknadsvärde.",
+            "Fulham saknar 1 spelare (Ryan Sessegnon).",
             "Domare: Samuel Barrott."
           ],
           "systemPick": {
@@ -658,9 +652,9 @@
           "country": "England",
           "kickoff": "2026-10-31T18:30:00+01:00",
           "odds": [
-            1.57,
-            4.6,
-            6
+            1.65,
+            4.4,
+            5.3
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -993,7 +987,7 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.2,
-            "odds": 1.57,
+            "odds": 1.65,
             "value": false
           },
           "streckvarde": [
@@ -1045,22 +1039,10 @@
               ],
               "unavailable": [
                 {
-                  "name": "James Maddison",
-                  "type": "injury",
-                  "expectedReturn": "Unknown",
-                  "marketValue": 24480361
-                },
-                {
                   "name": "Tosin Adarabioyo",
                   "type": "injury",
-                  "expectedReturn": "Doubtful",
+                  "expectedReturn": "About a week",
                   "marketValue": 15433821
-                },
-                {
-                  "name": "Destiny Udogie",
-                  "type": "injury",
-                  "expectedReturn": "Doubtful",
-                  "marketValue": 38462683
                 },
                 {
                   "name": "Lucas Bergvall",
@@ -1083,23 +1065,23 @@
                 {
                   "name": "Mykhaylo Mudryk",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Late November 2026",
                   "marketValue": 28146018
                 },
                 {
                   "name": "Sávio",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Late November 2026",
                   "marketValue": 36362528
                 },
                 {
                   "name": "Wilson Odobert",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Mid January 2027",
                   "marketValue": 23329241
                 }
               ],
-              "missingValueShare": 0.387,
+              "missingValueShare": 0.331,
               "starterValue": 464526515,
               "restDays": 7,
               "prevMatch": {
@@ -1185,7 +1167,7 @@
               "draws": 3,
               "awayWins": 7
             },
-            "fetchedAt": "2026-10-30T15:28:44.411Z"
+            "fetchedAt": "2026-10-31T08:50:07.366Z"
           },
           "refereeStreak": {
             "referee": "Michael Oliver",
@@ -1311,7 +1293,7 @@
             "Streckvärde på 2: vi 26 %, folket bara 13 %.",
             "Inbördes (senaste 2): Tottenham 1-3 Crystal Palace · Crystal Palace 0-1 Tottenham.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Tottenham saknar 9 spelare (Xavi Simons, Lucas Bergvall, Destiny Udogie, Sávio), 39 % av startelvans + frånvarandes marknadsvärde.",
+            "Tottenham saknar 7 spelare (Xavi Simons, Lucas Bergvall, Sávio, Mykhaylo Mudryk), 33 % av startelvans + frånvarandes marknadsvärde.",
             "Crystal Palace saknar 3 spelare (Ismaïla Sarr, Chadi Riad, Takehiro Tomiyasu), 18 % av startelvans + frånvarandes marknadsvärde.",
             "Crystal Palace har 2.9 dagars vila mot 7 för motståndaren (senast EFL Cup).",
             "Domare: Michael Oliver."
@@ -1333,9 +1315,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            1.63,
-            4.8,
-            5
+            1.67,
+            4.6,
+            4.8
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -1344,8 +1326,8 @@
             0.203
           ],
           "folk": [
-            0.59,
-            0.23,
+            0.6,
+            0.22,
             0.18
           ],
           "model": [
@@ -1661,12 +1643,12 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.06,
-            "odds": 1.63,
+            "odds": 1.67,
             "value": false
           },
           "streckvarde": [
-            0.85,
-            1.05,
+            0.83,
+            1.1,
             1.43
           ],
           "experts": [
@@ -1713,19 +1695,13 @@
               ],
               "unavailable": [
                 {
-                  "name": "Matheus Nunes",
-                  "type": "injury",
-                  "expectedReturn": "Back in training",
-                  "marketValue": 53537615
-                },
-                {
                   "name": "Antoine Semenyo",
                   "type": "injury",
                   "expectedReturn": "Mid December 2026",
                   "marketValue": 84339140
                 }
               ],
-              "missingValueShare": 0.134,
+              "missingValueShare": 0.087,
               "starterValue": 889712738,
               "restDays": 2.8,
               "prevMatch": {
@@ -1767,7 +1743,7 @@
                 {
                   "name": "Pascal Struijk",
                   "type": "injury",
-                  "expectedReturn": "Back in training",
+                  "expectedReturn": "Early November 2026",
                   "marketValue": 25758329
                 },
                 {
@@ -1785,7 +1761,7 @@
                 {
                   "name": "Kaoru Mitoma",
                   "type": "injury",
-                  "expectedReturn": "Late October 2026",
+                  "expectedReturn": "Late November 2026",
                   "marketValue": 16997839
                 },
                 {
@@ -1829,7 +1805,7 @@
               "draws": 4,
               "awayWins": 3
             },
-            "fetchedAt": "2026-10-30T15:28:44.688Z"
+            "fetchedAt": "2026-10-31T08:50:07.833Z"
           },
           "refereeStreak": {
             "referee": "Craig Pawson",
@@ -1953,14 +1929,14 @@
             "Brighton har fått 2,4 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 1,87 – 1,30; troligast 1-1, 2-1, 2-0.",
             "Modellen tror mindre på 1 än oddsen (50 % mot 59 %).",
-            "Svenska folket överstreckar 1 (59 % mot vår 50 %).",
+            "Svenska folket överstreckar 1 (60 % mot vår 50 %).",
             "Streckvärde på 2: vi 26 %, folket bara 18 %.",
             "Inbördes (senaste 2): Man City 1-1 Brighton · Brighton 2-1 Man City.",
+            "Domare Craig Pawson: Manchester City har vunnit 5 ligamatcher i rad med domaren (totalt 19-4-3 i 26 matcher).",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Manchester City saknar 2 spelare (Antoine Semenyo, Matheus Nunes), 13 % av startelvans + frånvarandes marknadsvärde.",
+            "Manchester City saknar 1 spelare (Antoine Semenyo).",
             "Brighton saknar 6 spelare (Evan Ferguson, Pascal Struijk, Stefanos Tzimas, Kaoru Mitoma), 27 % av startelvans + frånvarandes marknadsvärde.",
-            "Domare: Craig Pawson.",
-            "Domare Craig Pawson: Manchester City har vunnit 5 ligamatcher i rad med domaren (totalt 19-4-3 i 26 matcher)."
+            "Domare: Craig Pawson."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -1979,8 +1955,8 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            2.14,
-            3.6,
+            2.2,
+            3.45,
             3.6
           ],
           "marketSource": "Pinnacle",
@@ -2314,7 +2290,7 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.26,
-            "odds": 2.14,
+            "odds": 2.2,
             "value": false
           },
           "streckvarde": [
@@ -2380,7 +2356,7 @@
                 {
                   "name": "Alex Scott",
                   "type": "injury",
-                  "expectedReturn": "Doubtful",
+                  "expectedReturn": "Early November 2026",
                   "marketValue": 55772556
                 },
                 {
@@ -2424,6 +2400,12 @@
               ],
               "unavailable": [
                 {
+                  "name": "Anton Stach",
+                  "type": "injury",
+                  "expectedReturn": "Doubtful",
+                  "marketValue": 32440745
+                },
+                {
                   "name": "Daniel James",
                   "type": "injury",
                   "expectedReturn": "Doubtful",
@@ -2442,7 +2424,7 @@
                   "marketValue": 6348088
                 }
               ],
-              "missingValueShare": 0.13,
+              "missingValueShare": 0.221,
               "starterValue": 240261072,
               "restDays": 5.9,
               "prevMatch": {
@@ -2476,7 +2458,7 @@
               "draws": 2,
               "awayWins": 4
             },
-            "fetchedAt": "2026-10-30T15:28:44.532Z"
+            "fetchedAt": "2026-10-31T08:50:07.526Z"
           },
           "refereeStreak": {
             "referee": "Michael Salisbury",
@@ -2603,7 +2585,7 @@
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Bournemouth saknar 4 spelare (Alex Scott, Veljko Milosavljević, Alex Tóth, Julián Araujo), 28 % av startelvans + frånvarandes marknadsvärde.",
             "Bournemouth har 2.8 dagars vila mot 5.9 för motståndaren (senast EFL Cup).",
-            "Leeds saknar 3 spelare (Joe Rodon, Daniel James, Mateo Joseph), 13 % av startelvans + frånvarandes marknadsvärde.",
+            "Leeds saknar 4 spelare (Anton Stach, Joe Rodon, Daniel James, Mateo Joseph), 22 % av startelvans + frånvarandes marknadsvärde.",
             "Domare: Michael Salisbury."
           ],
           "systemPick": {
@@ -2634,9 +2616,9 @@
             0.41
           ],
           "folk": [
+            0.3,
             0.32,
-            0.32,
-            0.36
+            0.38
           ],
           "model": [
             0.471,
@@ -2955,9 +2937,9 @@
             "value": true
           },
           "streckvarde": [
-            1.47,
+            1.57,
             0.84,
-            0.72
+            0.69
           ],
           "experts": [
             {
@@ -3119,7 +3101,7 @@
               "draws": 6,
               "awayWins": 1
             },
-            "fetchedAt": "2026-10-30T15:28:45.418Z"
+            "fetchedAt": "2026-10-31T08:50:08.709Z"
           },
           "refereeStreak": {
             "referee": "Simon Hooper",
@@ -3208,8 +3190,8 @@
             "Sunderland har fått 4,8 poäng mindre än spelet motiverar (otur – kan vända).",
             "Förväntade mål 1,59 – 1,13; troligast 1-1, 1-0, 2-1.",
             "Modellen tror mer på 1 än oddsen (47 % mot 30 %).",
-            "Svenska folket överstreckar 2 (36 % mot vår 26 %).",
-            "Streckvärde på 1: vi 47 %, folket bara 32 %.",
+            "Svenska folket överstreckar 2 (38 % mot vår 26 %).",
+            "Streckvärde på 1: vi 47 %, folket bara 30 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Coventry saknar 5 spelare (Haji Wright, Aurèle Amenda, Josh Eccles, Bobby Thomas), 32 % av startelvans + frånvarandes marknadsvärde.",
             "Sunderland saknar 3 spelare (Daniel Ballard, Wilson Isidor, Romaine Mundle), 18 % av startelvans + frånvarandes marknadsvärde.",
@@ -3233,9 +3215,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            2.08,
-            3.75,
-            3.6
+            2.17,
+            3.7,
+            3.45
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -3244,9 +3226,9 @@
             0.282
           ],
           "folk": [
-            0.56,
+            0.55,
             0.24,
-            0.2
+            0.21
           ],
           "model": [
             0.459,
@@ -3568,13 +3550,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.24,
-            "odds": 2.08,
+            "odds": 2.17,
             "value": false
           },
           "streckvarde": [
-            0.82,
+            0.84,
             1.09,
-            1.4
+            1.33
           ],
           "experts": [
             {
@@ -3620,15 +3602,21 @@
               ],
               "unavailable": [
                 {
+                  "name": "Fábio Carvalho",
+                  "type": "injury",
+                  "expectedReturn": "Late November 2026",
+                  "marketValue": 11486318
+                },
+                {
                   "name": "Joshua Dasilva",
                   "type": "injury",
-                  "expectedReturn": "About a week",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 1206138
                 },
                 {
                   "name": "Antoni Milambo",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 20854302
                 },
                 {
@@ -3644,7 +3632,7 @@
                   "marketValue": 46872562
                 }
               ],
-              "missingValueShare": 0.178,
+              "missingValueShare": 0.198,
               "starterValue": 375299925,
               "restDays": 2.8,
               "prevMatch": {
@@ -3678,9 +3666,15 @@
               ],
               "unavailable": [
                 {
+                  "name": "Nicolás Dominguez",
+                  "type": "injury",
+                  "expectedReturn": "About a week",
+                  "marketValue": 14872672
+                },
+                {
                   "name": "Dan Ndoye",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 38513264
                 },
                 {
@@ -3696,7 +3690,7 @@
                   "marketValue": 29164872
                 }
               ],
-              "missingValueShare": 0.199,
+              "missingValueShare": 0.225,
               "starterValue": 352601485,
               "restDays": 7.8,
               "prevMatch": {
@@ -3730,7 +3724,7 @@
               "draws": 4,
               "awayWins": 7
             },
-            "fetchedAt": "2026-10-30T15:28:45.701Z"
+            "fetchedAt": "2026-10-31T08:50:08.491Z"
           },
           "refereeStreak": {
             "referee": "Darren England",
@@ -3852,13 +3846,13 @@
             "Förväntade poäng (xP, ur xG): Brentford 11,3 mot 11 verkliga (förväntad plats 8, verklig 6) · Nottingham 13,9 mot 6 verkliga (förväntad plats 3, verklig 18).",
             "Nottingham har fått 7,9 poäng mindre än spelet motiverar (otur – kan vända).",
             "Förväntade mål 1,64 – 1,24; troligast 1-1, 2-1, 1-0.",
-            "Svenska folket överstreckar 1 (56 % mot vår 46 %).",
-            "Streckvärde på 2: vi 28 %, folket bara 20 %.",
+            "Svenska folket överstreckar 1 (55 % mot vår 46 %).",
+            "Streckvärde på 2: vi 28 %, folket bara 21 %.",
             "Inbördes (senaste 2): Brentford 0-2 Nott'm Forest · Nott'm Forest 3-1 Brentford.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Brentford saknar 4 spelare (Yehor Yarmoliuk, Antoni Milambo, Rico Henry, Joshua Dasilva), 18 % av startelvans + frånvarandes marknadsvärde.",
+            "Brentford saknar 5 spelare (Yehor Yarmoliuk, Antoni Milambo, Rico Henry, Fábio Carvalho), 20 % av startelvans + frånvarandes marknadsvärde.",
             "Brentford har 2.8 dagars vila mot 7.8 för motståndaren (senast EFL Cup).",
-            "Nottingham saknar 3 spelare (Dan Ndoye, Igor Jesus, Nicolò Savona), 20 % av startelvans + frånvarandes marknadsvärde.",
+            "Nottingham saknar 4 spelare (Dan Ndoye, Igor Jesus, Nicolò Savona, Nicolás Dominguez), 23 % av startelvans + frånvarandes marknadsvärde.",
             "Domare: Darren England."
           ],
           "systemPick": {
@@ -3878,9 +3872,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            2.7,
-            3.35,
-            2.8
+            2.9,
+            3.4,
+            2.5
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -3889,8 +3883,8 @@
             0.353
           ],
           "folk": [
-            0.42,
-            0.31,
+            0.41,
+            0.32,
             0.27
           ],
           "model": [
@@ -4200,12 +4194,12 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.76,
-            "odds": 2.7,
-            "value": false
+            "odds": 2.9,
+            "value": true
           },
           "streckvarde": [
-            0.89,
-            0.86,
+            0.91,
+            0.84,
             1.33
           ],
           "experts": [
@@ -4260,25 +4254,25 @@
                 {
                   "name": "Nobel Mendy",
                   "type": "injury",
-                  "expectedReturn": "Late October 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 10521754
                 },
                 {
                   "name": "Jack Butland",
                   "type": "injury",
-                  "expectedReturn": "Early December 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 1306706
                 },
                 {
                   "name": "Charlie Hughes",
                   "type": "injury",
-                  "expectedReturn": "Late October 2026",
+                  "expectedReturn": "Late November 2026",
                   "marketValue": 13408668
                 },
                 {
                   "name": "Matt Targett",
                   "type": "injury",
-                  "expectedReturn": "Late October 2026",
+                  "expectedReturn": "Mid December 2026",
                   "marketValue": 2380256
                 },
                 {
@@ -4290,7 +4284,7 @@
                 {
                   "name": "Eliot Matazo",
                   "type": "injury",
-                  "expectedReturn": "Early January 2027",
+                  "expectedReturn": "Early February 2027",
                   "marketValue": 1678950
                 },
                 {
@@ -4336,7 +4330,7 @@
                 {
                   "name": "Saša Lukić",
                   "type": "injury",
-                  "expectedReturn": "About a week",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 8084183
                 },
                 {
@@ -4380,7 +4374,7 @@
               "draws": 4,
               "awayWins": 4
             },
-            "fetchedAt": "2026-10-30T15:28:45.397Z"
+            "fetchedAt": "2026-10-31T08:50:07.928Z"
           },
           "refereeStreak": {
             "referee": "Thomas Kirk",
@@ -4518,9 +4512,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            2.88,
+            3,
             3.6,
-            2.45
+            2.38
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -4529,8 +4523,8 @@
             0.403
           ],
           "folk": [
-            0.34,
-            0.3,
+            0.33,
+            0.31,
             0.36
           ],
           "model": [
@@ -4797,12 +4791,12 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.77,
-            "odds": 2.88,
+            "odds": 3,
             "value": true
           },
           "streckvarde": [
-            1.1,
-            0.93,
+            1.13,
+            0.9,
             0.97
           ],
           "experts": [
@@ -4857,7 +4851,7 @@
                 {
                   "name": "Chris Forino-Joseph",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Mid November 2026",
                   "marketValue": 415536
                 }
               ],
@@ -4941,7 +4935,7 @@
               "draws": 2,
               "awayWins": 4
             },
-            "fetchedAt": "2026-10-30T15:28:45.183Z"
+            "fetchedAt": "2026-10-31T08:50:08.494Z"
           },
           "refereeStreak": {
             "referee": "Robert Madley",
@@ -5086,9 +5080,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            2.15,
-            3.55,
-            3.5
+            2.28,
+            3.45,
+            3.3
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -5097,9 +5091,9 @@
             0.273
           ],
           "folk": [
-            0.43,
+            0.44,
             0.26,
-            0.31
+            0.3
           ],
           "model": [
             0.389,
@@ -5367,13 +5361,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.65,
-            "odds": 2.15,
+            "odds": 2.28,
             "value": false
           },
           "streckvarde": [
-            0.9,
+            0.88,
             1.06,
-            1.08
+            1.12
           ],
           "experts": [
             {
@@ -5595,7 +5589,7 @@
               "draws": 2,
               "awayWins": 1
             },
-            "fetchedAt": "2026-10-30T15:28:46.386Z"
+            "fetchedAt": "2026-10-31T08:50:09.434Z"
           },
           "refereeStreak": {
             "referee": "Ruebyn Ricardo",
@@ -5731,9 +5725,9 @@
             0.192
           ],
           "folk": [
-            0.66,
-            0.21,
-            0.13
+            0.69,
+            0.2,
+            0.11
           ],
           "model": [
             0.552,
@@ -6018,9 +6012,9 @@
             "value": false
           },
           "streckvarde": [
-            0.84,
-            1.19,
-            1.53
+            0.8,
+            1.24,
+            1.81
           ],
           "experts": [
             {
@@ -6230,7 +6224,7 @@
               "draws": 8,
               "awayWins": 6
             },
-            "fetchedAt": "2026-10-30T15:28:46.295Z"
+            "fetchedAt": "2026-10-31T08:50:09.409Z"
           },
           "refereeStreak": {
             "referee": "John Busby",
@@ -6353,8 +6347,8 @@
             "Millwall har fått 4,3 poäng mindre än spelet motiverar (otur – kan vända).",
             "Derby har fått 5,5 poäng mindre än spelet motiverar (otur – kan vända).",
             "Förväntade mål 1,79 – 1,00; troligast 1-1, 1-0, 2-0.",
-            "Svenska folket överstreckar 1 (66 % mot vår 55 %).",
-            "Streckvärde på 2: vi 20 %, folket bara 13 %.",
+            "Svenska folket överstreckar 1 (69 % mot vår 55 %).",
+            "Streckvärde på 2: vi 20 %, folket bara 11 %.",
             "Inbördes (senaste 2): Millwall 1-0 Derby · Derby 1-1 Millwall.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Millwall saknar 6 spelare (Josh Coburn, Mathis Servais, Taïryk Arconte, Casper de Norre), 42 % av startelvans + frånvarandes marknadsvärde.",
@@ -6380,9 +6374,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            1.79,
-            4.1,
-            4.35
+            1.87,
+            4,
+            4
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -6391,9 +6385,9 @@
             0.238
           ],
           "folk": [
-            0.59,
+            0.6,
             0.23,
-            0.18
+            0.17
           ],
           "model": [
             0.565,
@@ -6674,13 +6668,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 1.82,
-            "odds": 1.79,
-            "value": false
+            "odds": 1.87,
+            "value": true
           },
           "streckvarde": [
-            0.96,
+            0.94,
             1,
-            1.14
+            1.21
           ],
           "experts": [
             {
@@ -6798,7 +6792,7 @@
                 {
                   "name": "Ilias Chair",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 1991602
                 }
               ],
@@ -6836,7 +6830,7 @@
               "draws": 0,
               "awayWins": 1
             },
-            "fetchedAt": "2026-10-30T15:28:46.154Z"
+            "fetchedAt": "2026-10-31T08:50:09.380Z"
           },
           "refereeStreak": {
             "referee": "Tim Robinson",
@@ -6982,6 +6976,7 @@
             "Förväntade poäng (xP, ur xG): Southampton 19,9 mot 24 verkliga (förväntad plats 5, verklig 2) · Queens Park Rangers 20,5 mot 20 verkliga (förväntad plats 4, verklig 7).",
             "Southampton har fått 4,1 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 2,02 – 1,16; troligast 1-1, 2-1, 2-0.",
+            "Streckvärde på 2: vi 21 %, folket bara 17 %.",
             "Inbördes (senaste 2): Southampton 5-0 QPR · QPR 1-2 Southampton.",
             "Streckfavorit utan seger: Queens Park Rangers har varit streckat som favorit 2 gånger denna säsong (i snitt 64 %) men inte vunnit 2 av dem (2 kryss, 0 förluster, 100 %). Förra säsongen: 2 av 3 (67 %).",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
@@ -7020,8 +7015,8 @@
           ],
           "folk": [
             0.57,
-            0.24,
-            0.19
+            0.23,
+            0.2
           ],
           "model": [
             0.479,
@@ -7307,8 +7302,8 @@
           },
           "streckvarde": [
             0.84,
-            1.19,
-            1.24
+            1.24,
+            1.17
           ],
           "experts": [
             {
@@ -7368,7 +7363,7 @@
                 {
                   "name": "Josh Key",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 928257
                 },
                 {
@@ -7426,7 +7421,7 @@
                 {
                   "name": "Ryoya Morishita",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Mid November 2026",
                   "marketValue": 1499568
                 },
                 {
@@ -7482,7 +7477,7 @@
               "draws": 4,
               "awayWins": 6
             },
-            "fetchedAt": "2026-10-30T15:28:46.471Z"
+            "fetchedAt": "2026-10-31T08:50:09.390Z"
           },
           "refereeStreak": {
             "referee": "Gavin Ward",
@@ -7606,7 +7601,7 @@
             "Blackburn har fått 6,5 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 1,45 – 0,94; troligast 1-1, 1-0, 0-0.",
             "Svenska folket överstreckar 1 (57 % mot vår 48 %).",
-            "Streckvärde på 2: vi 24 %, folket bara 19 %.",
+            "Streckvärde på X: vi 29 %, folket bara 23 %.",
             "Inbördes (senaste 2): Swansea 3-1 Blackburn · Blackburn 1-2 Swansea.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Swansea saknar 4 spelare (Moussa Kounfolo Yeo, Ronald, Cameron Burgess, Josh Key), 20 % av startelvans + frånvarandes marknadsvärde.",
@@ -7632,9 +7627,9 @@
           "country": "England",
           "kickoff": "2026-10-31T16:00:00+01:00",
           "odds": [
-            1.61,
-            4.4,
-            5.4
+            1.74,
+            4,
+            4.8
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -7643,9 +7638,9 @@
             0.188
           ],
           "folk": [
-            0.62,
-            0.24,
-            0.14
+            0.65,
+            0.23,
+            0.12
           ],
           "model": [
             0.614,
@@ -7913,13 +7908,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 1.68,
-            "odds": 1.61,
-            "value": false
+            "odds": 1.74,
+            "value": true
           },
           "streckvarde": [
-            0.99,
-            0.93,
-            1.16
+            0.94,
+            0.97,
+            1.35
           ],
           "experts": [
             {
@@ -8057,7 +8052,7 @@
               "draws": 8,
               "awayWins": 4
             },
-            "fetchedAt": "2026-10-30T15:28:46.995Z"
+            "fetchedAt": "2026-10-31T08:50:10.299Z"
           },
           "refereeStreak": {
             "referee": "Robert Jones",
@@ -8217,6 +8212,7 @@
             "Förväntade poäng (xP, ur xG): West Ham 22,0 mot 22 verkliga (förväntad plats 3, verklig 4) · West Bromwich 15,5 mot 21 verkliga (förväntad plats 15, verklig 6).",
             "West Bromwich har fått 5,5 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 2,02 – 0,95; troligast 1-1, 2-0, 2-1.",
+            "Streckvärde på 2: vi 16 %, folket bara 12 %.",
             "Streckfavorit utan seger: West Ham har varit streckat som favorit 2 gånger denna säsong (i snitt 76 %) men inte vunnit 2 av dem (1 kryss, 1 förluster, 100 %). Förra säsongen: 0 av 3 (0 %).",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "West Ham saknar 1 spelare (Keiber Lamadrid).",
@@ -8236,23 +8232,23 @@
       ],
       "system": {
         "rows": 13122,
-        "hitAll": 0.005995473212397131,
+        "hitAll": 0.005705877163718614,
         "hitSingle": 0.00004944447982627875
       },
       "value": {
-        "ratio": 5.257,
+        "ratio": 6.206,
         "level": "high",
-        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 526 % av insatsen (normalt 26–40 %) – jackpot ingår."
+        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 621 % av insatsen (normalt 26–40 %) – jackpot ingår."
       },
       "reduced": {
         "gc": null,
         "rows": 500,
         "cost": 500,
         "rowPrice": 1,
-        "hitAll": 0.005995473212397131,
-        "expectedPayout": 438434.8741776178,
-        "expectedReturn": 2628.6245435126143,
-        "minPayout": 30518.353804721522,
+        "hitAll": 0.005705877163718614,
+        "expectedPayout": 543792.357284141,
+        "expectedReturn": 3102.8123932322937,
+        "minPayout": 30356.425333191157,
         "grundRows": 13122,
         "rules": {
           "free": true,
@@ -8275,499 +8271,499 @@
           "2211112211111",
           "2111112211111",
           "2211112221111",
-          "2X11112111111",
           "2111112221111",
-          "2111122111111",
-          "2211122111111",
+          "2X11112111111",
           "2X11112121111",
           "22111121X1111",
           "21111121X1111",
-          "2111122121111",
+          "2111122111111",
+          "2211122111111",
           "2112112111111",
           "2212112111111",
+          "2111122121111",
           "2211122121111",
-          "1211112111111",
-          "2X11112211111",
           "2112112121111",
+          "2212112121111",
           "21111121111X1",
           "22111121111X1",
-          "2212112121111",
-          "1211112121111",
-          "2111122211111",
-          "2211122211111",
-          "X211112111111",
-          "X111112111111",
-          "2X11112221111",
-          "2211112X11111",
-          "2121112111111",
-          "2111112X11111",
+          "2X11112211111",
           "21111121211X1",
+          "22111121211X1",
+          "2X11112221111",
+          "2121112111111",
           "2221112111111",
+          "1211112111111",
           "22111122X1111",
           "21111122X1111",
-          "22111121211X1",
-          "2111122221111",
-          "2X11122111111",
-          "X211112121111",
+          "2111122211111",
+          "2211122211111",
+          "2121112121111",
+          "1211112121111",
+          "2221112121111",
+          "2211112X11111",
+          "2111112X11111",
           "2112112211111",
           "2212112211111",
-          "2211122221111",
-          "X111112121111",
-          "1211112211111",
+          "2111122221111",
           "21111X2111111",
+          "2211122221111",
           "22111X2111111",
+          "X211112111111",
+          "2X111121X1111",
+          "X111112111111",
+          "2X11122111111",
           "2211112X21111",
           "2111112X21111",
-          "2121112121111",
-          "2X111121X1111",
-          "2221112121111",
           "2112112221111",
-          "2X11122121111",
-          "2X12112111111",
-          "21111122111X1",
           "2212112221111",
-          "22111122111X1",
-          "1211112221111",
-          "1X11112111111",
           "21111X2121111",
+          "21111122111X1",
+          "X211112121111",
+          "22111122111X1",
           "22111X2121111",
-          "21111221X1111",
+          "X111112121111",
+          "2X12112111111",
+          "2X11122121111",
           "221X112111111",
-          "X211112211111",
           "211X112111111",
-          "X111112211111",
+          "21111122211X1",
+          "22111122211X1",
+          "2X12112121111",
+          "2X111121111X1",
+          "21111221X1111",
+          "211X112121111",
+          "221X112121111",
           "22111221X1111",
+          "2121112211111",
+          "21121121X1111",
+          "2X111121211X1",
+          "2221112211111",
           "2112122111111",
-          "1211122111111",
-          "1111122111111",
-          "2212122111111",
+          "1211112211111",
+          "22121121X1111",
           "2111112111121",
           "2211112111121",
-          "2121112211111",
-          "2X12112121111",
-          "21111122211X1",
-          "2221112211111",
-          "2X111121111X1",
-          "22111122211X1",
-          "1X11112121111",
-          "2X11122211111",
-          "X211112221111",
-          "211X112121111",
-          "21121121X1111",
-          "221X112121111",
-          "XX11112111111",
-          "X111112221111",
-          "22121121X1111",
-          "12111121X1111",
+          "2212122111111",
+          "2121112221111",
           "2112122121111",
+          "1211112221111",
+          "2221112221111",
+          "21111121X11X1",
+          "21111221111X1",
+          "2111112121121",
+          "2X21112111111",
+          "22111121X11X1",
+          "1X11112111111",
+          "2211112121121",
           "21111X2211111",
           "22111X2211111",
-          "21111221111X1",
-          "1211122121111",
-          "1212112111111",
-          "1111122121111",
-          "1112112111111",
+          "X211112211111",
           "22111221111X1",
-          "2111112121121",
-          "X211122111111",
-          "X111122111111",
-          "2X11112X11111",
-          "2121112221111",
-          "2212122121111",
-          "2211112121121",
-          "2X21112111111",
-          "2X111121211X1",
           "2X111122X1111",
-          "2221112221111",
-          "2X11122221111",
-          "2X12112211111",
-          "XX11112121111",
-          "21111121X11X1",
-          "22111121X11X1",
-          "2111122X11111",
-          "1X11112211111",
-          "2121122111111",
-          "21111X2221111",
-          "2211122X11111",
-          "2X111X2111111",
-          "21111221211X1",
-          "22111X2221111",
-          "21111222X1111",
-          "21121121111X1",
-          "221X112211111",
-          "211X112211111",
-          "X2111121X1111",
-          "1212112121111",
-          "X1111121X1111",
-          "22111222X1111",
-          "12111121111X1",
-          "1112112121111",
+          "2212122121111",
+          "X111112211111",
           "21X1112111111",
+          "21121121111X1",
+          "2X11122211111",
           "22X1112111111",
-          "22121121111X1",
-          "2112122211111",
-          "X111122121111",
-          "X211122121111",
-          "2221122111111",
-          "X212112111111",
-          "2X11112X21111",
-          "X112112111111",
-          "22111221211X1",
-          "1211122211111",
+          "21111221211X1",
           "2X21112121111",
-          "1111122211111",
-          "2212122211111",
-          "2111112211121",
-          "2211112211121",
+          "1X11112121111",
+          "21111X2221111",
+          "22121121111X1",
+          "22111X2221111",
+          "X211112221111",
+          "2X11112X11111",
+          "X111112221111",
+          "2X12112211111",
+          "21X1112121111",
+          "21121121211X1",
+          "2X11122221111",
+          "2X111X2111111",
+          "22111221211X1",
+          "22X1112121111",
+          "XX11112111111",
+          "221X112211111",
+          "21211121X1111",
+          "211X112211111",
+          "2X11112X21111",
+          "2121122111111",
+          "12111121X1111",
+          "2X12112221111",
+          "1211122111111",
+          "22121121211X1",
+          "22211121X1111",
+          "2X111X2121111",
+          "2X111122111X1",
+          "XX11112121111",
+          "21111222X1111",
+          "211X112221111",
+          "221X112221111",
+          "2122112111111",
+          "2221122111111",
+          "22111222X1111",
+          "1212112111111",
+          "2121122121111",
+          "1211122121111",
+          "1111122121111",
+          "2X1X112111111",
           "2211112XX1111",
           "2111112XX1111",
-          "21211121X1111",
-          "2X12112221111",
-          "2X111122111X1",
-          "2111122X21111",
-          "22211121X1111",
-          "1X11112221111",
-          "2112112X11111",
-          "2121122121111",
-          "2122112111111",
-          "2212112X11111",
-          "2X111X2121111",
-          "2211122X21111",
-          "21121121211X1",
-          "211X112221111",
-          "2X1X112111111",
           "21121122X1111",
-          "221X112221111",
-          "XX11112211111",
-          "2X111221X1111",
-          "1221112111111",
-          "1211112X11111",
-          "22121122X1111",
-          "12111121211X1",
-          "21X1112121111",
-          "1121112111111",
-          "12111122X1111",
-          "11111121211X1",
-          "22X1112121111",
-          "2112122221111",
-          "21111X21X1111",
-          "21111222111X1",
-          "X112112121111",
-          "2222112111111",
-          "X212112121111",
-          "X2111121111X1",
-          "22121121211X1",
-          "1211122221111",
-          "22111X21X1111",
-          "X1111121111X1",
-          "2X12122111111",
-          "1X11122111111",
-          "1212112211111",
-          "1111122221111",
-          "2221122121111",
-          "22111222111X1",
-          "21121X2111111",
-          "211X122111111",
-          "2111112221121",
-          "X211122211111",
-          "X111122211111",
-          "2X11112111121",
-          "2212122221111",
-          "12111X2111111",
-          "2211112221121",
-          "2X21112211111",
-          "221X122111111",
-          "22121X2111111",
           "2X111122211X1",
-          "2112112X21111",
-          "2111112X111X1",
+          "2111122X11111",
+          "2112122211111",
+          "2211122X11111",
+          "2222112111111",
+          "22121122X1111",
+          "21111X21X1111",
           "2122112121111",
-          "2211112X111X1",
+          "X2111121X1111",
+          "1212112121111",
+          "22111X21X1111",
+          "X1111121X1111",
+          "2111112211121",
+          "1112112121111",
+          "X211122111111",
+          "X111122111111",
           "21211121111X1",
-          "2212112X21111",
+          "2211112211121",
+          "2212122211111",
           "2X1X112121111",
-          "XX11112221111",
-          "1211112X21111",
+          "2X111221X1111",
+          "12111121111X1",
+          "2112112X11111",
+          "2221122121111",
+          "2212112X11111",
+          "2111122X21111",
+          "2112122221111",
+          "21121X2111111",
+          "2211122X21111",
           "21111122X11X1",
-          "1221112121111",
-          "2X121121X1111",
-          "1121112121111",
-          "22111122X11X1",
-          "2111122111121",
-          "1X111121X1111",
-          "2121122211111",
-          "X211112X11111",
-          "2X111X2211111",
-          "21111222211X1",
-          "X121112111111",
+          "X212112111111",
+          "21111222111X1",
+          "X112112111111",
           "22211121111X1",
-          "21121122111X1",
-          "X221112111111",
-          "X111112X11111",
-          "X1111121211X1",
-          "211X1121X1111",
-          "X2111122X1111",
-          "X2111121211X1",
-          "1X11122121111",
-          "1212112221111",
-          "221X1121X1111",
-          "X1111122X1111",
-          "2X111221111X1",
-          "1X12112111111",
-          "12111122111X1",
-          "1112112221111",
-          "2222112121111",
-          "21X1112211111",
-          "22X1112211111",
-          "2211122111121",
-          "2X12122121111",
-          "21121X2121111",
-          "22121122111X1",
-          "211X122121111",
-          "21111X21111X1",
-          "X111122221111",
-          "2221122211111",
-          "XX11122111111",
-          "21121221X1111",
-          "X211122221111",
-          "X212112211111",
-          "X112112211111",
-          "22111222211X1",
-          "12111X2121111",
-          "2X11112121121",
-          "12111221X1111",
-          "2X21112221111",
-          "11111X2121111",
-          "22111X21111X1",
-          "121X112111111",
-          "11111221X1111",
-          "221X122121111",
-          "22121X2121111",
-          "X2111X2111111",
-          "2121112X11111",
-          "X1111X2111111",
-          "21111121X1121",
-          "2111112X211X1",
-          "1212122111111",
-          "2221112X11111",
+          "2111112221121",
+          "2X21112211111",
+          "22111122X11X1",
+          "X111122121111",
+          "X211122121111",
+          "2X121121X1111",
           "21211121211X1",
-          "21211122X1111",
-          "1112122111111",
-          "2211112X211X1",
-          "22111121X1121",
+          "2222112121111",
+          "22121X2111111",
+          "2211112221121",
+          "12111121211X1",
+          "2112112X21111",
+          "1X11112211111",
+          "11111121211X1",
+          "22111222111X1",
+          "2X12122111111",
+          "2212122221111",
+          "2212112X21111",
+          "211X1121X1111",
+          "2X11112111121",
+          "2111112X111X1",
+          "21121X2121111",
+          "21X1112211111",
+          "21121122111X1",
+          "2211112X111X1",
+          "211X122111111",
+          "221X1121X1111",
+          "22X1112211111",
+          "X112112121111",
+          "21111222211X1",
+          "X212112121111",
+          "21111X21111X1",
+          "2X21112221111",
+          "221X122111111",
+          "1X11112221111",
+          "X2111121111X1",
+          "22121122111X1",
+          "X1111121111X1",
           "2X111121X11X1",
-          "22121221X1111",
-          "22211122X1111",
-          "2111122121121",
-          "2112112111121",
-          "2X11122X11111",
-          "X211112X21111",
-          "2121122221111",
-          "2122112211111",
-          "2X111X2221111",
-          "X121112121111",
-          "X111112X21111",
-          "21121122211X1",
-          "2X1X112211111",
-          "1211112111121",
-          "X221112121111",
-          "XX111121X1111",
-          "2X111222X1111",
-          "1221112211111",
-          "1111112111121",
-          "1X12112121111",
-          "12111122211X1",
-          "2X121121111X1",
           "22211121211X1",
+          "22111X21111X1",
+          "22121X2121111",
+          "2111112X211X1",
           "21X1112221111",
-          "2X21122111111",
-          "21111X2X11111",
-          "1121112211111",
-          "2XX1112111111",
-          "1X111121111X1",
-          "2212112111121",
-          "22111X2X11111",
-          "21211X2111111",
-          "2X111221211X1",
-          "11111122211X1",
+          "2X11112121121",
+          "21121122211X1",
+          "2X12122121111",
+          "211X122121111",
+          "1221112111111",
+          "22111222211X1",
+          "2X111221111X1",
+          "2211112X211X1",
+          "2X111X2211111",
           "22X1112221111",
+          "1121112111111",
           "21111X21211X1",
-          "2222112211111",
-          "21111X22X1111",
-          "XX11122121111",
-          "X112112221111",
-          "XX12112111111",
-          "X212112221111",
+          "XX11112211111",
+          "X1111121211X1",
+          "X2111121211X1",
+          "21211122X1111",
+          "2XX1112111111",
+          "221X122121111",
+          "2121122211111",
+          "12111122X1111",
+          "21121221X1111",
           "22121122211X1",
-          "211X1121111X1",
-          "21111221X11X1",
-          "X2111122111X1",
-          "22111X22X1111",
-          "X1111122111X1",
-          "2211122121121",
-          "2X12122211111",
-          "121X112121111",
-          "1X11122211111",
-          "12121121X1111",
-          "221X1121111X1",
-          "2221122221111",
-          "22211X2111111",
-          "11121121X1111",
-          "111X112121111",
-          "21121X2211111",
+          "2X121121111X1",
+          "1211122211111",
+          "22211122X1111",
+          "1221112121111",
           "22111X21211X1",
-          "X1111X2121111",
+          "1121112121111",
+          "2X111X2221111",
+          "21111121X1121",
+          "211X1121111X1",
+          "XX11112221111",
+          "2X111221211X1",
+          "2111122111121",
+          "2121112X11111",
+          "2221122211111",
+          "2122112211111",
+          "22111121X1121",
+          "221X1121111X1",
+          "2XX1112121111",
+          "2221112X11111",
+          "1211112X11111",
+          "1212112211111",
+          "2121122221111",
+          "21211X2111111",
+          "1211122221111",
+          "1111122221111",
+          "12111X2111111",
+          "X121112111111",
+          "2X1X112211111",
+          "22121221X1111",
+          "X221112111111",
+          "2211122111121",
+          "2X121121211X1",
+          "21111221X11X1",
+          "2112112111121",
+          "211X1121211X1",
+          "2222112211111",
+          "2X211121X1111",
+          "1X111121X1111",
+          "2111122121121",
           "2121112X21111",
-          "211X122211111",
-          "X2111X2121111",
-          "X1111221X1111",
-          "X21X112111111",
-          "2X11112211121",
+          "21111X22X1111",
+          "1X11122111111",
+          "2122112221111",
+          "22211X2111111",
+          "1211112X21111",
+          "X2111122X1111",
+          "1212112221111",
+          "22111X22X1111",
+          "X1111122X1111",
+          "2X21122111111",
+          "2221112X21111",
+          "221X1121211X1",
+          "X211122211111",
+          "1112112221111",
+          "21211X2121111",
+          "21X11121X1111",
+          "X111122211111",
+          "21211122111X1",
+          "2212112111121",
+          "12111X2121111",
+          "21121121X11X1",
+          "X121112121111",
+          "2221122221111",
+          "2X1X112221111",
+          "2X111222X1111",
+          "21X1122111111",
+          "12111122111X1",
+          "X221112121111",
+          "11111X2121111",
+          "2112112121121",
+          "22X11121X1111",
           "21121221111X1",
-          "X11X112111111",
+          "1X12112111111",
+          "22111221X11X1",
+          "21111X2X11111",
+          "1X11122121111",
+          "22111X2X11111",
+          "21121X2211111",
+          "X211112X11111",
+          "2211122121121",
+          "2X22112111111",
           "2X11112XX1111",
+          "22211122111X1",
+          "X212112211111",
+          "X111112X11111",
+          "X112112211111",
+          "22X1122111111",
+          "212X112111111",
+          "X111122221111",
+          "2222112221111",
+          "2X11122X11111",
+          "X211122221111",
+          "2X121122X1111",
+          "21X2112111111",
+          "21211122211X1",
+          "22121X2211111",
+          "X2111X2111111",
+          "121X112111111",
+          "X1111X2111111",
+          "12111122211X1",
+          "21X1122121111",
+          "22211X2121111",
+          "22121121X11X1",
+          "2X111X21X1111",
+          "2X21122121111",
+          "XX111121X1111",
+          "11111122211X1",
+          "2X12122211111",
+          "1X12112121111",
+          "222X112111111",
+          "21111X2X21111",
+          "2212112121121",
+          "XX11122111111",
+          "2X11112211121",
+          "211X1122X1111",
+          "21121221211X1",
+          "21121X2221111",
+          "X211112X21111",
+          "221X1122X1111",
+          "22111X2X21111",
+          "22X2112111111",
+          "211X122211111",
+          "X111112X21111",
+          "X112112221111",
+          "2X12112X11111",
+          "1X111121111X1",
+          "X212112221111",
+          "212X112121111",
+          "21211221X1111",
+          "12111221X1111",
+          "21111X22111X1",
+          "21X2112121111",
+          "121X112121111",
+          "2X11122X21111",
+          "221X122211111",
+          "11111221X1111",
+          "2X211121111X1",
+          "X1111X2121111",
+          "2X22112121111",
+          "X2111X2121111",
+          "X2111122111X1",
+          "X1111122111X1",
+          "111X112121111",
+          "22211122211X1",
+          "22121221111X1",
+          "22X1122121111",
+          "XX12112111111",
+          "2X111122X11X1",
+          "21X11121111X1",
+          "22121X2221111",
+          "22111X22111X1",
+          "211X112X11111",
+          "2X121X2111111",
+          "221X112X11111",
+          "XX11122121111",
+          "2X11112221121",
+          "2X12122221111",
+          "211X122221111",
+          "2X111222111X1",
+          "21221121X1111",
+          "1221112211111",
+          "12121121X1111",
+          "1X111121211X1",
+          "222X112121111",
+          "211X1X2111111",
+          "2211X12111111",
+          "2X12112X21111",
+          "11121121X1111",
+          "1212122111111",
+          "1121112211111",
+          "21111X22211X1",
+          "2111X12111111",
+          "X21X112111111",
+          "22X11121111X1",
+          "1112122111111",
+          "2122122111111",
+          "X11X112111111",
+          "22X2112121111",
+          "221X1X2111111",
+          "X1111122211X1",
+          "2X1X1121X1111",
+          "2X11112X111X1",
+          "X2111122211X1",
+          "2XX1112211111",
+          "2121112111121",
+          "2111122XX1111",
+          "221X122221111",
+          "XX12112121111",
+          "21X11121211X1",
+          "1211112111121",
+          "211X112X21111",
+          "2X211121211X1",
+          "2X1X122111111",
+          "21121222X1111",
+          "2X121122111X1",
+          "221X112X21111",
+          "22211221X1111",
+          "1111112111121",
+          "2211122XX1111",
+          "2X121X2121111",
+          "1221112221111",
+          "XX111121111X1",
+          "22111X22211X1",
+          "2X111X21111X1",
+          "211X1X2121111",
+          "1121112221111",
+          "21111122X1121",
+          "2211X12121111",
+          "211X1122111X1",
+          "X1111221X1111",
+          "2X111222211X1",
+          "2111X12121111",
           "1212122121111",
           "1112122121111",
-          "12111X2211111",
+          "X21X112121111",
           "X2111221X1111",
-          "12111221111X1",
-          "221X122211111",
-          "22121X2211111",
-          "21X1122111111",
-          "2221112X21111",
-          "11111221111X1",
-          "2X211121X1111",
-          "22111221X11X1",
-          "X112122111111",
-          "2112112121121",
-          "2X11122X21111",
-          "2X12112X11111",
-          "2122112221111",
-          "21211122111X1",
-          "1211112121121",
-          "22X1122111111",
-          "2X1X112221111",
-          "X212122111111",
-          "1221112221111",
-          "1111112121121",
-          "2X121122X1111",
-          "1X21112111111",
-          "1X11112X11111",
-          "1121112221111",
-          "21111X2X21111",
           "2111122211121",
-          "1X111121211X1",
-          "2X22112111111",
-          "2XX1112121111",
-          "21211X2121111",
-          "2111122XX1111",
-          "2X121121211X1",
-          "1X111122X1111",
-          "22111X2X21111",
-          "X111112111121",
-          "X211112111121",
-          "221X112X11111",
-          "211X112X11111",
-          "212X112111111",
-          "22211122111X1",
-          "2X21122121111",
+          "X11X112121111",
+          "21211121X11X1",
+          "12111121X11X1",
+          "2112112XX1111",
+          "22111122X1121",
+          "221X1122111X1",
+          "2X11112X211X1",
+          "2221112111121",
+          "11111121X11X1",
+          "2XX1112221111",
+          "12111221111X1",
+          "2121112121121",
+          "2112122X11111",
+          "1X21112111111",
+          "2122122121111",
+          "1211112121121",
+          "22221121X1111",
+          "22121221211X1",
+          "221X1X2121111",
+          "11111221111X1",
+          "21211221111X1",
+          "22X11121211X1",
+          "2212112XX1111",
+          "1111112121121",
+          "21211X2211111",
+          "21121X21X1111",
+          "22121222X1111",
+          "2X1X122121111",
+          "2211122211121",
+          "XX111121211X1",
+          "12111X2211111",
+          "X1121121X1111",
           "X121112211111",
           "X221112211111",
-          "21211221X1111",
-          "211X1121211X1",
-          "XX12112121111",
-          "2X111X21X1111",
-          "X1111122211X1",
-          "211X1122X1111",
-          "2212112121121",
-          "XX111121111X1",
-          "X2111122211X1",
-          "21121121X11X1",
-          "2211122XX1111",
-          "221X1122X1111",
-          "1X11122221111",
-          "2211X12111111",
-          "2X111222111X1",
-          "22121221111X1",
-          "2222112221111",
-          "1X12112211111",
-          "2112122X11111",
-          "2211122211121",
-          "2111X12111111",
-          "12111121X11X1",
-          "222X112111111",
-          "2X12122221111",
-          "21X11121X1111",
-          "21121X2221111",
-          "221X1121211X1",
-          "211X122221111",
-          "11111121X11X1",
-          "21111X22111X1",
-          "XX11122211111",
-          "1211122X11111",
-          "21121222X1111",
-          "22X11121X1111",
-          "X21X112121111",
-          "X11X112121111",
-          "2122122111111",
-          "2X11112221121",
-          "X1121121X1111",
-          "2X121X2111111",
-          "12111X2221111",
-          "1221122111111",
-          "22211X2121111",
-          "2X1X122111111",
-          "1121122111111",
-          "21121221211X1",
-          "1111122X11111",
-          "X2121121X1111",
-          "12111221211X1",
-          "1X111X2111111",
-          "12111222X1111",
-          "11111221211X1",
-          "21X1122121111",
-          "12121121111X1",
-          "22111X22111X1",
-          "11111X2221111",
-          "21X2112111111",
-          "121X112211111",
-          "11121121111X1",
-          "11111222X1111",
-          "22121121X11X1",
-          "2212122X11111",
-          "221X122221111",
+          "2X121122211X1",
           "2111112X11121",
-          "22121X2221111",
-          "211X1X2111111",
-          "X112122121111",
-          "X2111X2211111",
-          "2121112111121",
-          "2211112X11121",
-          "X1111X2211111",
-          "12X1112111111",
-          "X1111221111X1",
-          "21111122X1121",
-          "2X12112X21111",
-          "221X1X2111111",
-          "1212122211111",
-          "2X11112X111X1",
-          "21211122211X1",
-          "11X1112111111",
-          "22X2112111111",
-          "22211221X1111",
-          "1112122211111",
-          "X2111221111X1",
-          "22111122X1121",
-          "1X21112121111",
-          "1X11112X21111",
-          "22121222X1111",
-          "2X111122X11X1",
-          "X212122121111",
-          "22X1122121111",
-          "2111122221121",
-          "2X211121111X1",
-          "2112112211121",
-          "X111112121121"
+          "21111222X11X1"
         ],
         "picks": [
           {
@@ -8876,7 +8872,7 @@
           }
         ],
         "relaxed": [],
-        "egnaRader": "Stryktipset\nE,2,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,1,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,2,1,1,1,1\nE,2,2,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,X,1,1,1,1\nE,2,1,1,1,1,1,2,2,X,1,1,1,1\nE,2,2,1,1,1,1,2,1,2,1,1,X,1\nE,2,1,1,1,1,2,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,1,1,1,1,1,1\nE,X,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,2,1,1,1,1,1\nE,2,2,1,2,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,2,1,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,X,1,1,1,1\nE,2,2,2,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,1,2,1,1,1,1\nE,2,X,1,2,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,X,1\nE,2,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,1,1,1,1,2,2,1,1,1,X,1\nE,1,2,1,1,1,1,2,2,2,1,1,1,1\nE,1,X,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,1,X,1,1,1,1\nE,2,2,1,X,1,1,2,1,1,1,1,1,1\nE,X,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,X,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,X,1,1,1,1\nE,2,1,1,2,1,2,2,1,1,1,1,1,1\nE,1,2,1,1,1,2,2,1,1,1,1,1,1\nE,1,1,1,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,2,1,2,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,1,2,1,1,1,2,2,1,1,1,1,1\nE,2,X,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,2,2,1,1,1,2,2,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,2,2,1,1,X,1\nE,1,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,2,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,X,1,1,1,1\nE,2,2,1,X,1,1,2,1,2,1,1,1,1\nE,X,X,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,1,2,2,2,1,1,1,1\nE,2,2,1,2,1,1,2,1,X,1,1,1,1\nE,1,2,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,2,1,2,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,2,1,1,1,1,1\nE,2,2,1,1,1,X,2,2,1,1,1,1,1\nE,2,1,1,1,1,2,2,1,1,1,1,X,1\nE,1,2,1,1,1,2,2,1,2,1,1,1,1\nE,1,2,1,2,1,1,2,1,1,1,1,1,1\nE,1,1,1,1,1,2,2,1,2,1,1,1,1\nE,1,1,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,1,2,1,1,2,1\nE,X,2,1,1,1,2,2,1,1,1,1,1,1\nE,X,1,1,1,1,2,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,2,1,1,1,2,2,2,1,1,1,1\nE,2,2,1,2,1,2,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,1,2,1,1,2,1\nE,2,X,2,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,X,1\nE,2,X,1,1,1,1,2,2,X,1,1,1,1\nE,2,2,2,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,2,2,1,1,1,1\nE,2,X,1,2,1,1,2,2,1,1,1,1,1\nE,X,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,X,1\nE,2,2,1,1,1,1,2,1,X,1,1,X,1\nE,2,1,1,1,1,2,2,X,1,1,1,1,1\nE,1,X,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,2,1,1,2,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,2,2,2,1,1,1,1\nE,2,2,1,1,1,2,2,X,1,1,1,1,1\nE,2,X,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,X,1\nE,2,2,1,1,1,X,2,2,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,X,1,1,1,1\nE,2,1,1,2,1,1,2,1,1,1,1,X,1\nE,2,2,1,X,1,1,2,2,1,1,1,1,1\nE,2,1,1,X,1,1,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,1,X,1,1,1,1\nE,1,2,1,2,1,1,2,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,X,1,1,1,1\nE,2,2,1,1,1,2,2,2,X,1,1,1,1\nE,1,2,1,1,1,1,2,1,1,1,1,X,1\nE,1,1,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,X,1,1,1,2,1,1,1,1,1,1\nE,2,2,X,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,1,1,1,1,X,1\nE,2,1,1,2,1,2,2,2,1,1,1,1,1\nE,X,1,1,1,1,2,2,1,2,1,1,1,1\nE,X,2,1,1,1,2,2,1,2,1,1,1,1\nE,2,2,2,1,1,2,2,1,1,1,1,1,1\nE,X,2,1,2,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,2,1,1,1,1\nE,X,1,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,2,1,1,X,1\nE,1,2,1,1,1,2,2,2,1,1,1,1,1\nE,2,X,2,1,1,1,2,1,2,1,1,1,1\nE,1,1,1,1,1,2,2,2,1,1,1,1,1\nE,2,2,1,2,1,2,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,2,1\nE,2,2,1,1,1,1,2,2,1,1,1,2,1\nE,2,2,1,1,1,1,2,X,X,1,1,1,1\nE,2,1,1,1,1,1,2,X,X,1,1,1,1\nE,2,1,2,1,1,1,2,1,X,1,1,1,1\nE,2,X,1,2,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,1,2,2,1,1,1,X,1\nE,2,1,1,1,1,2,2,X,2,1,1,1,1\nE,2,2,2,1,1,1,2,1,X,1,1,1,1\nE,1,X,1,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,2,1,1,2,X,1,1,1,1,1\nE,2,1,2,1,1,2,2,1,2,1,1,1,1\nE,2,1,2,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,X,1,1,1,1,1\nE,2,X,1,1,1,X,2,1,2,1,1,1,1\nE,2,2,1,1,1,2,2,X,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,X,1\nE,2,1,1,X,1,1,2,2,2,1,1,1,1\nE,2,X,1,X,1,1,2,1,1,1,1,1,1\nE,2,1,1,2,1,1,2,2,X,1,1,1,1\nE,2,2,1,X,1,1,2,2,2,1,1,1,1\nE,X,X,1,1,1,1,2,2,1,1,1,1,1\nE,2,X,1,1,1,2,2,1,X,1,1,1,1\nE,1,2,2,1,1,1,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,X,1,1,1,1,1\nE,2,2,1,2,1,1,2,2,X,1,1,1,1\nE,1,2,1,1,1,1,2,1,2,1,1,X,1\nE,2,1,X,1,1,1,2,1,2,1,1,1,1\nE,1,1,2,1,1,1,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,X,1,1,1,1\nE,1,1,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,X,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,2,2,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,X,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,X,1\nE,X,1,1,2,1,1,2,1,2,1,1,1,1\nE,2,2,2,2,1,1,2,1,1,1,1,1,1\nE,X,2,1,2,1,1,2,1,2,1,1,1,1\nE,X,2,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,1,2,1,2,1,1,X,1\nE,1,2,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,X,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,X,1,2,1,2,2,1,1,1,1,1,1\nE,1,X,1,1,1,2,2,1,1,1,1,1,1\nE,1,2,1,2,1,1,2,2,1,1,1,1,1\nE,1,1,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,2,1,1,2,2,1,2,1,1,1,1\nE,2,2,1,1,1,2,2,2,1,1,1,X,1\nE,2,1,1,2,1,X,2,1,1,1,1,1,1\nE,2,1,1,X,1,2,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,2,1,1,2,1\nE,X,2,1,1,1,2,2,2,1,1,1,1,1\nE,X,1,1,1,1,2,2,2,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,2,1,2,2,2,2,1,1,1,1\nE,1,2,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,2,1,1,2,1\nE,2,X,2,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,X,1,2,2,1,1,1,1,1,1\nE,2,2,1,2,1,X,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,2,1,1,X,1\nE,2,1,1,2,1,1,2,X,2,1,1,1,1\nE,2,1,1,1,1,1,2,X,1,1,1,X,1\nE,2,1,2,2,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,X,1,1,1,X,1\nE,2,1,2,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,1,2,X,2,1,1,1,1\nE,2,X,1,X,1,1,2,1,2,1,1,1,1\nE,X,X,1,1,1,1,2,2,2,1,1,1,1\nE,1,2,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,X,1,1,X,1\nE,1,2,2,1,1,1,2,1,2,1,1,1,1\nE,2,X,1,2,1,1,2,1,X,1,1,1,1\nE,1,1,2,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,2,X,1,1,X,1\nE,2,1,1,1,1,2,2,1,1,1,1,2,1\nE,1,X,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,2,1,1,2,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,X,1,1,1,1,1\nE,2,X,1,1,1,X,2,2,1,1,1,1,1\nE,2,1,1,1,1,2,2,2,2,1,1,X,1\nE,X,1,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,2,1,1,2,2,1,1,1,X,1\nE,X,2,2,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,1,2,X,1,1,1,1,1\nE,X,1,1,1,1,1,2,1,2,1,1,X,1\nE,2,1,1,X,1,1,2,1,X,1,1,1,1\nE,X,2,1,1,1,1,2,2,X,1,1,1,1\nE,X,2,1,1,1,1,2,1,2,1,1,X,1\nE,1,X,1,1,1,2,2,1,2,1,1,1,1\nE,1,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,1,X,1,1,2,1,X,1,1,1,1\nE,X,1,1,1,1,1,2,2,X,1,1,1,1\nE,2,X,1,1,1,2,2,1,1,1,1,X,1\nE,1,X,1,2,1,1,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,1,1,1,X,1\nE,1,1,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,2,2,1,1,2,1,2,1,1,1,1\nE,2,1,X,1,1,1,2,2,1,1,1,1,1\nE,2,2,X,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,2,1\nE,2,X,1,2,1,2,2,1,2,1,1,1,1\nE,2,1,1,2,1,X,2,1,2,1,1,1,1\nE,2,2,1,2,1,1,2,2,1,1,1,X,1\nE,2,1,1,X,1,2,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,X,1\nE,X,1,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,2,1,1,2,2,2,1,1,1,1,1\nE,X,X,1,1,1,2,2,1,1,1,1,1,1\nE,2,1,1,2,1,2,2,1,X,1,1,1,1\nE,X,2,1,1,1,2,2,2,2,1,1,1,1\nE,X,2,1,2,1,1,2,2,1,1,1,1,1\nE,X,1,1,2,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,2,1,1,X,1\nE,1,2,1,1,1,X,2,1,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,2,1\nE,1,2,1,1,1,2,2,1,X,1,1,1,1\nE,2,X,2,1,1,1,2,2,2,1,1,1,1\nE,1,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,1,1,1,X,1\nE,1,2,1,X,1,1,2,1,1,1,1,1,1\nE,1,1,1,1,1,2,2,1,X,1,1,1,1\nE,2,2,1,X,1,2,2,1,2,1,1,1,1\nE,2,2,1,2,1,X,2,1,2,1,1,1,1\nE,X,2,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,2,1,1,1,2,X,1,1,1,1,1\nE,X,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,2,1\nE,2,1,1,1,1,1,2,X,2,1,1,X,1\nE,1,2,1,2,1,2,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,X,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,2,1,1,X,1\nE,2,1,2,1,1,1,2,2,X,1,1,1,1\nE,1,1,1,2,1,2,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,X,2,1,1,X,1\nE,2,2,1,1,1,1,2,1,X,1,1,2,1\nE,2,X,1,1,1,1,2,1,X,1,1,X,1\nE,2,2,1,2,1,2,2,1,X,1,1,1,1\nE,2,2,2,1,1,1,2,2,X,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,2,1\nE,2,1,1,2,1,1,2,1,1,1,1,2,1\nE,2,X,1,1,1,2,2,X,1,1,1,1,1\nE,X,2,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,2,1,1,2,2,2,2,1,1,1,1\nE,2,1,2,2,1,1,2,2,1,1,1,1,1\nE,2,X,1,1,1,X,2,2,2,1,1,1,1\nE,X,1,2,1,1,1,2,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,2,1,1,2,2,2,1,1,X,1\nE,2,X,1,X,1,1,2,2,1,1,1,1,1\nE,1,2,1,1,1,1,2,1,1,1,1,2,1\nE,X,2,2,1,1,1,2,1,2,1,1,1,1\nE,X,X,1,1,1,1,2,1,X,1,1,1,1\nE,2,X,1,1,1,2,2,2,X,1,1,1,1\nE,1,2,2,1,1,1,2,2,1,1,1,1,1\nE,1,1,1,1,1,1,2,1,1,1,1,2,1\nE,1,X,1,2,1,1,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,2,2,1,1,X,1\nE,2,X,1,2,1,1,2,1,1,1,1,X,1\nE,2,2,2,1,1,1,2,1,2,1,1,X,1\nE,2,1,X,1,1,1,2,2,2,1,1,1,1\nE,2,X,2,1,1,2,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,2,X,1,1,1,1,1\nE,1,1,2,1,1,1,2,2,1,1,1,1,1\nE,2,X,X,1,1,1,2,1,1,1,1,1,1\nE,1,X,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,1,2,1,1,1,1,2,1\nE,2,2,1,1,1,X,2,X,1,1,1,1,1\nE,2,1,2,1,1,X,2,1,1,1,1,1,1\nE,2,X,1,1,1,2,2,1,2,1,1,X,1\nE,1,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,2,X,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,X,1\nE,2,2,2,2,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,X,2,2,X,1,1,1,1\nE,X,X,1,1,1,2,2,1,2,1,1,1,1\nE,X,1,1,2,1,1,2,2,2,1,1,1,1\nE,X,X,1,2,1,1,2,1,1,1,1,1,1\nE,X,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,1,2,1,1,2,2,2,1,1,X,1\nE,2,1,1,X,1,1,2,1,1,1,1,X,1\nE,2,1,1,1,1,2,2,1,X,1,1,X,1\nE,X,2,1,1,1,1,2,2,1,1,1,X,1\nE,2,2,1,1,1,X,2,2,X,1,1,1,1\nE,X,1,1,1,1,1,2,2,1,1,1,X,1\nE,2,2,1,1,1,2,2,1,2,1,1,2,1\nE,2,X,1,2,1,2,2,2,1,1,1,1,1\nE,1,2,1,X,1,1,2,1,2,1,1,1,1\nE,1,X,1,1,1,2,2,2,1,1,1,1,1\nE,1,2,1,2,1,1,2,1,X,1,1,1,1\nE,2,2,1,X,1,1,2,1,1,1,1,X,1\nE,2,2,2,1,1,2,2,2,2,1,1,1,1\nE,2,2,2,1,1,X,2,1,1,1,1,1,1\nE,1,1,1,2,1,1,2,1,X,1,1,1,1\nE,1,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,X,2,2,1,1,1,1,1\nE,2,2,1,1,1,X,2,1,2,1,1,X,1\nE,X,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,1,2,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,X,1,2,2,2,1,1,1,1,1\nE,X,2,1,1,1,X,2,1,2,1,1,1,1\nE,X,1,1,1,1,2,2,1,X,1,1,1,1\nE,X,2,1,X,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,1,1,1,2,1\nE,2,1,1,2,1,2,2,1,1,1,1,X,1\nE,X,1,1,X,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,X,1,1,1,1\nE,1,2,1,2,1,2,2,1,2,1,1,1,1\nE,1,1,1,2,1,2,2,1,2,1,1,1,1\nE,1,2,1,1,1,X,2,2,1,1,1,1,1\nE,X,2,1,1,1,2,2,1,X,1,1,1,1\nE,1,2,1,1,1,2,2,1,1,1,1,X,1\nE,2,2,1,X,1,2,2,2,1,1,1,1,1\nE,2,2,1,2,1,X,2,2,1,1,1,1,1\nE,2,1,X,1,1,2,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,X,2,1,1,1,1\nE,1,1,1,1,1,2,2,1,1,1,1,X,1\nE,2,X,2,1,1,1,2,1,X,1,1,1,1\nE,2,2,1,1,1,2,2,1,X,1,1,X,1\nE,X,1,1,2,1,2,2,1,1,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,2,1\nE,2,X,1,1,1,2,2,X,2,1,1,1,1\nE,2,X,1,2,1,1,2,X,1,1,1,1,1\nE,2,1,2,2,1,1,2,2,2,1,1,1,1\nE,2,1,2,1,1,1,2,2,1,1,1,X,1\nE,1,2,1,1,1,1,2,1,2,1,1,2,1\nE,2,2,X,1,1,2,2,1,1,1,1,1,1\nE,2,X,1,X,1,1,2,2,2,1,1,1,1\nE,X,2,1,2,1,2,2,1,1,1,1,1,1\nE,1,2,2,1,1,1,2,2,2,1,1,1,1\nE,1,1,1,1,1,1,2,1,2,1,1,2,1\nE,2,X,1,2,1,1,2,2,X,1,1,1,1\nE,1,X,2,1,1,1,2,1,1,1,1,1,1\nE,1,X,1,1,1,1,2,X,1,1,1,1,1\nE,1,1,2,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,X,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,2,1\nE,1,X,1,1,1,1,2,1,2,1,1,X,1\nE,2,X,2,2,1,1,2,1,1,1,1,1,1\nE,2,X,X,1,1,1,2,1,2,1,1,1,1\nE,2,1,2,1,1,X,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,X,X,1,1,1,1\nE,2,X,1,2,1,1,2,1,2,1,1,X,1\nE,1,X,1,1,1,1,2,2,X,1,1,1,1\nE,2,2,1,1,1,X,2,X,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,2,1\nE,X,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,X,1,1,2,X,1,1,1,1,1\nE,2,1,1,X,1,1,2,X,1,1,1,1,1\nE,2,1,2,X,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,2,1,1,1,X,1\nE,2,X,2,1,1,2,2,1,2,1,1,1,1\nE,X,1,2,1,1,1,2,2,1,1,1,1,1\nE,X,2,2,1,1,1,2,2,1,1,1,1,1\nE,2,1,2,1,1,2,2,1,X,1,1,1,1\nE,2,1,1,X,1,1,2,1,2,1,1,X,1\nE,X,X,1,2,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,X,2,1,X,1,1,1,1\nE,X,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,1,1,X,1,1,2,2,X,1,1,1,1\nE,2,2,1,2,1,1,2,1,2,1,1,2,1\nE,X,X,1,1,1,1,2,1,1,1,1,X,1\nE,X,2,1,1,1,1,2,2,2,1,1,X,1\nE,2,1,1,2,1,1,2,1,X,1,1,X,1\nE,2,2,1,1,1,2,2,X,X,1,1,1,1\nE,2,2,1,X,1,1,2,2,X,1,1,1,1\nE,1,X,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,1,1,X,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,2,2,2,1,1,1,X,1\nE,2,2,1,2,1,2,2,1,1,1,1,X,1\nE,2,2,2,2,1,1,2,2,2,1,1,1,1\nE,1,X,1,2,1,1,2,2,1,1,1,1,1\nE,2,1,1,2,1,2,2,X,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,1,1,1,2,1\nE,2,1,1,1,X,1,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,1,X,1,1,X,1\nE,2,2,2,X,1,1,2,1,1,1,1,1,1\nE,2,X,1,2,1,2,2,2,2,1,1,1,1\nE,2,1,X,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,2,1,X,2,2,2,1,1,1,1\nE,2,2,1,X,1,1,2,1,2,1,1,X,1\nE,2,1,1,X,1,2,2,2,2,1,1,1,1\nE,1,1,1,1,1,1,2,1,X,1,1,X,1\nE,2,1,1,1,1,X,2,2,1,1,1,X,1\nE,X,X,1,1,1,2,2,2,1,1,1,1,1\nE,1,2,1,1,1,2,2,X,1,1,1,1,1\nE,2,1,1,2,1,2,2,2,X,1,1,1,1\nE,2,2,X,1,1,1,2,1,X,1,1,1,1\nE,X,2,1,X,1,1,2,1,2,1,1,1,1\nE,X,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,1,2,2,1,2,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,2,1,1,2,1\nE,X,1,1,2,1,1,2,1,X,1,1,1,1\nE,2,X,1,2,1,X,2,1,1,1,1,1,1\nE,1,2,1,1,1,X,2,2,2,1,1,1,1\nE,1,2,2,1,1,2,2,1,1,1,1,1,1\nE,2,2,2,1,1,X,2,1,2,1,1,1,1\nE,2,X,1,X,1,2,2,1,1,1,1,1,1\nE,1,1,2,1,1,2,2,1,1,1,1,1,1\nE,2,1,1,2,1,2,2,1,2,1,1,X,1\nE,1,1,1,1,1,2,2,X,1,1,1,1,1\nE,X,2,1,2,1,1,2,1,X,1,1,1,1\nE,1,2,1,1,1,2,2,1,2,1,1,X,1\nE,1,X,1,1,1,X,2,1,1,1,1,1,1\nE,1,2,1,1,1,2,2,2,X,1,1,1,1\nE,1,1,1,1,1,2,2,1,2,1,1,X,1\nE,2,1,X,1,1,2,2,1,2,1,1,1,1\nE,1,2,1,2,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,X,2,2,1,1,1,X,1\nE,1,1,1,1,1,X,2,2,2,1,1,1,1\nE,2,1,X,2,1,1,2,1,1,1,1,1,1\nE,1,2,1,X,1,1,2,2,1,1,1,1,1\nE,1,1,1,2,1,1,2,1,1,1,1,X,1\nE,1,1,1,1,1,2,2,2,X,1,1,1,1\nE,2,2,1,2,1,1,2,1,X,1,1,X,1\nE,2,2,1,2,1,2,2,X,1,1,1,1,1\nE,2,2,1,X,1,2,2,2,2,1,1,1,1\nE,2,1,1,1,1,1,2,X,1,1,1,2,1\nE,2,2,1,2,1,X,2,2,2,1,1,1,1\nE,2,1,1,X,1,X,2,1,1,1,1,1,1\nE,X,1,1,2,1,2,2,1,2,1,1,1,1\nE,X,2,1,1,1,X,2,2,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,2,X,1,1,1,2,1\nE,X,1,1,1,1,X,2,2,1,1,1,1,1\nE,1,2,X,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,2,2,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,2,X,1,1,2,1\nE,2,X,1,2,1,1,2,X,2,1,1,1,1\nE,2,2,1,X,1,X,2,1,1,1,1,1,1\nE,1,2,1,2,1,2,2,2,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,1,1,1,X,1\nE,2,1,2,1,1,1,2,2,2,1,1,X,1\nE,1,1,X,1,1,1,2,1,1,1,1,1,1\nE,2,2,X,2,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,2,2,1,X,1,1,1,1\nE,1,1,1,2,1,2,2,2,1,1,1,1,1\nE,X,2,1,1,1,2,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,2,X,1,1,2,1\nE,1,X,2,1,1,1,2,1,2,1,1,1,1\nE,1,X,1,1,1,1,2,X,2,1,1,1,1\nE,2,2,1,2,1,2,2,2,X,1,1,1,1\nE,2,X,1,1,1,1,2,2,X,1,1,X,1\nE,X,2,1,2,1,2,2,1,2,1,1,1,1\nE,2,2,X,1,1,2,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,2,1,1,2,1\nE,2,X,2,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,2,1,1,2,2,1,1,1,2,1\nE,X,1,1,1,1,1,2,1,2,1,1,2,1\n",
+        "egnaRader": "Stryktipset\nE,2,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,1,1\nE,2,1,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,1,1\nE,2,2,1,1,1,2,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,1,1\nE,2,2,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,1,1,1,1,X,1\nE,2,X,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,1,1,1,1,2,1,2,1,1,X,1\nE,2,X,1,1,1,1,2,2,2,1,1,1,1\nE,2,1,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,X,1,1,1,1\nE,2,1,1,1,1,1,2,2,X,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,2,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,1,2,1,1,2,2,1,1,1,1,1\nE,2,2,1,2,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,2,2,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,1,1,1,1,1\nE,X,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,X,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,X,1\nE,X,2,1,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,1,2,2,1,1,1,X,1\nE,2,2,1,1,1,X,2,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,2,1,1,1,1\nE,2,X,1,2,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,2,2,1,2,1,1,1,1\nE,2,2,1,X,1,1,2,1,1,1,1,1,1\nE,2,1,1,X,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,2,1,1,1,1,2,2,2,1,1,X,1\nE,2,X,1,2,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,1,1,2,2,1,X,1,1,1,1\nE,2,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,2,1,X,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,2,2,1,X,1,1,1,1\nE,2,1,2,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,2,1,1,2,1,X,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,2,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,2,1,2,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,2,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,2,1,2,2,1,1,1,1,1,1\nE,2,1,2,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,2,1,2,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,2,2,1,1,1,1\nE,2,2,2,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,X,1\nE,2,1,1,1,1,2,2,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,1,2,1,1,2,1\nE,2,X,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,X,1,1,X,1\nE,1,X,1,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,2,1,1,2,1\nE,2,1,1,1,1,X,2,2,1,1,1,1,1\nE,2,2,1,1,1,X,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,X,1\nE,2,X,1,1,1,1,2,2,X,1,1,1,1\nE,2,2,1,2,1,2,2,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,X,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,2,1,1,2,1,1,1,1,X,1\nE,2,X,1,1,1,2,2,2,1,1,1,1,1\nE,2,2,X,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,X,1\nE,2,X,2,1,1,1,2,1,2,1,1,1,1\nE,1,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,2,2,1,1,1,1\nE,2,2,1,2,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,X,2,2,2,1,1,1,1\nE,X,2,1,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,1,2,X,1,1,1,1,1\nE,X,1,1,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,2,1,1,2,2,1,1,1,1,1\nE,2,1,X,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,X,1\nE,2,X,1,1,1,2,2,2,2,1,1,1,1\nE,2,X,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,2,1,1,X,1\nE,2,2,X,1,1,1,2,1,2,1,1,1,1\nE,X,X,1,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,X,1,1,2,2,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,X,1,1,2,2,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,2,1,1,1,1\nE,2,1,2,1,1,2,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,1,X,1,1,1,1\nE,2,X,1,2,1,1,2,2,2,1,1,1,1\nE,1,2,1,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,1,2,1,1,X,1\nE,2,2,2,1,1,1,2,1,X,1,1,1,1\nE,2,X,1,1,1,X,2,1,2,1,1,1,1\nE,2,X,1,1,1,1,2,2,1,1,1,X,1\nE,X,X,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,X,1,1,1,1\nE,2,1,1,X,1,1,2,2,2,1,1,1,1\nE,2,2,1,X,1,1,2,2,2,1,1,1,1\nE,2,1,2,2,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,2,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,X,1,1,1,1\nE,1,2,1,2,1,1,2,1,1,1,1,1,1\nE,2,1,2,1,1,2,2,1,2,1,1,1,1\nE,1,2,1,1,1,2,2,1,2,1,1,1,1\nE,1,1,1,1,1,2,2,1,2,1,1,1,1\nE,2,X,1,X,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,X,X,1,1,1,1\nE,2,1,1,1,1,1,2,X,X,1,1,1,1\nE,2,1,1,2,1,1,2,2,X,1,1,1,1\nE,2,X,1,1,1,1,2,2,2,1,1,X,1\nE,2,1,1,1,1,2,2,X,1,1,1,1,1\nE,2,1,1,2,1,2,2,2,1,1,1,1,1\nE,2,2,1,1,1,2,2,X,1,1,1,1,1\nE,2,2,2,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,2,1,1,2,2,X,1,1,1,1\nE,2,1,1,1,1,X,2,1,X,1,1,1,1\nE,2,1,2,2,1,1,2,1,2,1,1,1,1\nE,X,2,1,1,1,1,2,1,X,1,1,1,1\nE,1,2,1,2,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,X,1,1,1,1\nE,X,1,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,2,1\nE,1,1,1,2,1,1,2,1,2,1,1,1,1\nE,X,2,1,1,1,2,2,1,1,1,1,1,1\nE,X,1,1,1,1,2,2,1,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,2,1,1,1,2,1\nE,2,2,1,2,1,2,2,2,1,1,1,1,1\nE,2,X,1,X,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,2,2,1,X,1,1,1,1\nE,1,2,1,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,2,1,1,2,X,1,1,1,1,1\nE,2,2,2,1,1,2,2,1,2,1,1,1,1\nE,2,2,1,2,1,1,2,X,1,1,1,1,1\nE,2,1,1,1,1,2,2,X,2,1,1,1,1\nE,2,1,1,2,1,2,2,2,2,1,1,1,1\nE,2,1,1,2,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,X,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,X,1,1,X,1\nE,X,2,1,2,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,X,1\nE,X,1,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,2,2,1,1,2,1\nE,2,X,2,1,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,X,1,1,X,1\nE,X,1,1,1,1,2,2,1,2,1,1,1,1\nE,X,2,1,1,1,2,2,1,2,1,1,1,1\nE,2,X,1,2,1,1,2,1,X,1,1,1,1\nE,2,1,2,1,1,1,2,1,2,1,1,X,1\nE,2,2,2,2,1,1,2,1,2,1,1,1,1\nE,2,2,1,2,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,2,2,1,1,2,1\nE,1,2,1,1,1,1,2,1,2,1,1,X,1\nE,2,1,1,2,1,1,2,X,2,1,1,1,1\nE,1,X,1,1,1,1,2,2,1,1,1,1,1\nE,1,1,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,1,1,1,2,2,2,1,1,1,X,1\nE,2,X,1,2,1,2,2,1,1,1,1,1,1\nE,2,2,1,2,1,2,2,2,2,1,1,1,1\nE,2,2,1,2,1,1,2,X,2,1,1,1,1\nE,2,1,1,X,1,1,2,1,X,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,2,1\nE,2,1,1,1,1,1,2,X,1,1,1,X,1\nE,2,1,1,2,1,X,2,1,2,1,1,1,1\nE,2,1,X,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,2,1,1,2,2,1,1,1,X,1\nE,2,2,1,1,1,1,2,X,1,1,1,X,1\nE,2,1,1,X,1,2,2,1,1,1,1,1,1\nE,2,2,1,X,1,1,2,1,X,1,1,1,1\nE,2,2,X,1,1,1,2,2,1,1,1,1,1\nE,X,1,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,2,2,2,2,1,1,X,1\nE,X,2,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,X,1\nE,2,X,2,1,1,1,2,2,2,1,1,1,1\nE,2,2,1,X,1,2,2,1,1,1,1,1,1\nE,1,X,1,1,1,1,2,2,2,1,1,1,1\nE,X,2,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,1,2,2,1,1,1,X,1\nE,X,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,X,1,1,1,1,2,1,X,1,1,X,1\nE,2,2,2,1,1,1,2,1,2,1,1,X,1\nE,2,2,1,1,1,X,2,1,1,1,1,X,1\nE,2,2,1,2,1,X,2,1,2,1,1,1,1\nE,2,1,1,1,1,1,2,X,2,1,1,X,1\nE,2,1,X,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,1,2,1,2,1,1,2,1\nE,2,1,1,2,1,1,2,2,2,1,1,X,1\nE,2,X,1,2,1,2,2,1,2,1,1,1,1\nE,2,1,1,X,1,2,2,1,2,1,1,1,1\nE,1,2,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,2,2,1,1,X,1\nE,2,X,1,1,1,2,2,1,1,1,1,X,1\nE,2,2,1,1,1,1,2,X,2,1,1,X,1\nE,2,X,1,1,1,X,2,2,1,1,1,1,1\nE,2,2,X,1,1,1,2,2,2,1,1,1,1\nE,1,1,2,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,X,1\nE,X,X,1,1,1,1,2,2,1,1,1,1,1\nE,X,1,1,1,1,1,2,1,2,1,1,X,1\nE,X,2,1,1,1,1,2,1,2,1,1,X,1\nE,2,1,2,1,1,1,2,2,X,1,1,1,1\nE,2,X,X,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,X,1,2,2,1,2,1,1,1,1\nE,2,1,2,1,1,2,2,2,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,X,1,1,1,1\nE,2,1,1,2,1,2,2,1,X,1,1,1,1\nE,2,2,1,2,1,1,2,2,2,1,1,X,1\nE,2,X,1,2,1,1,2,1,1,1,1,X,1\nE,1,2,1,1,1,2,2,2,1,1,1,1,1\nE,2,2,2,1,1,1,2,2,X,1,1,1,1\nE,1,2,2,1,1,1,2,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,2,1,1,X,1\nE,1,1,2,1,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,X,2,2,2,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,2,1\nE,2,1,1,X,1,1,2,1,1,1,1,X,1\nE,X,X,1,1,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,1,2,1,1,X,1\nE,2,1,1,1,1,2,2,1,1,1,1,2,1\nE,2,1,2,1,1,1,2,X,1,1,1,1,1\nE,2,2,2,1,1,2,2,2,1,1,1,1,1\nE,2,1,2,2,1,1,2,2,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,X,1,1,2,1\nE,2,2,1,X,1,1,2,1,1,1,1,X,1\nE,2,X,X,1,1,1,2,1,2,1,1,1,1\nE,2,2,2,1,1,1,2,X,1,1,1,1,1\nE,1,2,1,1,1,1,2,X,1,1,1,1,1\nE,1,2,1,2,1,1,2,2,1,1,1,1,1\nE,2,1,2,1,1,2,2,2,2,1,1,1,1\nE,2,1,2,1,1,X,2,1,1,1,1,1,1\nE,1,2,1,1,1,2,2,2,2,1,1,1,1\nE,1,1,1,1,1,2,2,2,2,1,1,1,1\nE,1,2,1,1,1,X,2,1,1,1,1,1,1\nE,X,1,2,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,X,1,1,2,2,1,1,1,1,1\nE,2,2,1,2,1,2,2,1,X,1,1,1,1\nE,X,2,2,1,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,1,1,1,2,1\nE,2,X,1,2,1,1,2,1,2,1,1,X,1\nE,2,1,1,1,1,2,2,1,X,1,1,X,1\nE,2,1,1,2,1,1,2,1,1,1,1,2,1\nE,2,1,1,X,1,1,2,1,2,1,1,X,1\nE,2,2,2,2,1,1,2,2,1,1,1,1,1\nE,2,X,2,1,1,1,2,1,X,1,1,1,1\nE,1,X,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,2,2,1,2,1,1,2,1\nE,2,1,2,1,1,1,2,X,2,1,1,1,1\nE,2,1,1,1,1,X,2,2,X,1,1,1,1\nE,1,X,1,1,1,2,2,1,1,1,1,1,1\nE,2,1,2,2,1,1,2,2,2,1,1,1,1\nE,2,2,2,1,1,X,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,X,2,1,1,1,1\nE,X,2,1,1,1,1,2,2,X,1,1,1,1\nE,1,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,2,1,1,1,X,2,2,X,1,1,1,1\nE,X,1,1,1,1,1,2,2,X,1,1,1,1\nE,2,X,2,1,1,2,2,1,1,1,1,1,1\nE,2,2,2,1,1,1,2,X,2,1,1,1,1\nE,2,2,1,X,1,1,2,1,2,1,1,X,1\nE,X,2,1,1,1,2,2,2,1,1,1,1,1\nE,1,1,1,2,1,1,2,2,2,1,1,1,1\nE,2,1,2,1,1,X,2,1,2,1,1,1,1\nE,2,1,X,1,1,1,2,1,X,1,1,1,1\nE,X,1,1,1,1,2,2,2,1,1,1,1,1\nE,2,1,2,1,1,1,2,2,1,1,1,X,1\nE,2,2,1,2,1,1,2,1,1,1,1,2,1\nE,1,2,1,1,1,X,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,X,1,1,X,1\nE,X,1,2,1,1,1,2,1,2,1,1,1,1\nE,2,2,2,1,1,2,2,2,2,1,1,1,1\nE,2,X,1,X,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,2,X,1,1,1,1\nE,2,1,X,1,1,2,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,1,1,1,X,1\nE,X,2,2,1,1,1,2,1,2,1,1,1,1\nE,1,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,1,1,2,1,1,2,1,2,1,1,2,1\nE,2,2,X,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,2,1,2,2,1,1,1,1,X,1\nE,1,X,1,2,1,1,2,1,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,X,1,1,X,1\nE,2,1,1,1,1,X,2,X,1,1,1,1,1\nE,1,X,1,1,1,2,2,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,X,1,1,1,1,1\nE,2,1,1,2,1,X,2,2,1,1,1,1,1\nE,X,2,1,1,1,1,2,X,1,1,1,1,1\nE,2,2,1,1,1,2,2,1,2,1,1,2,1\nE,2,X,2,2,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,X,X,1,1,1,1\nE,2,2,2,1,1,1,2,2,1,1,1,X,1\nE,X,2,1,2,1,1,2,2,1,1,1,1,1\nE,X,1,1,1,1,1,2,X,1,1,1,1,1\nE,X,1,1,2,1,1,2,2,1,1,1,1,1\nE,2,2,X,1,1,2,2,1,1,1,1,1,1\nE,2,1,2,X,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,2,2,2,2,1,1,1,1\nE,2,2,2,2,1,1,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,X,1,1,1,1,1\nE,X,2,1,1,1,2,2,2,2,1,1,1,1\nE,2,X,1,2,1,1,2,2,X,1,1,1,1\nE,2,1,X,2,1,1,2,1,1,1,1,1,1\nE,2,1,2,1,1,1,2,2,2,1,1,X,1\nE,2,2,1,2,1,X,2,2,1,1,1,1,1\nE,X,2,1,1,1,X,2,1,1,1,1,1,1\nE,1,2,1,X,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,X,2,1,1,1,1,1,1\nE,1,2,1,1,1,1,2,2,2,1,1,X,1\nE,2,1,X,1,1,2,2,1,2,1,1,1,1\nE,2,2,2,1,1,X,2,1,2,1,1,1,1\nE,2,2,1,2,1,1,2,1,X,1,1,X,1\nE,2,X,1,1,1,X,2,1,X,1,1,1,1\nE,2,X,2,1,1,2,2,1,2,1,1,1,1\nE,X,X,1,1,1,1,2,1,X,1,1,1,1\nE,1,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,X,1,2,1,2,2,2,1,1,1,1,1\nE,1,X,1,2,1,1,2,1,2,1,1,1,1\nE,2,2,2,X,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,2,X,2,1,1,1,1\nE,2,2,1,2,1,1,2,1,2,1,1,2,1\nE,X,X,1,1,1,2,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,1,1,1,2,1\nE,2,1,1,X,1,1,2,2,X,1,1,1,1\nE,2,1,1,2,1,2,2,1,2,1,1,X,1\nE,2,1,1,2,1,X,2,2,2,1,1,1,1\nE,X,2,1,1,1,1,2,X,2,1,1,1,1\nE,2,2,1,X,1,1,2,2,X,1,1,1,1\nE,2,2,1,1,1,X,2,X,2,1,1,1,1\nE,2,2,X,2,1,1,2,1,1,1,1,1,1\nE,2,1,1,X,1,2,2,2,1,1,1,1,1\nE,X,1,1,1,1,1,2,X,2,1,1,1,1\nE,X,1,1,2,1,1,2,2,2,1,1,1,1\nE,2,X,1,2,1,1,2,X,1,1,1,1,1\nE,1,X,1,1,1,1,2,1,1,1,1,X,1\nE,X,2,1,2,1,1,2,2,2,1,1,1,1\nE,2,1,2,X,1,1,2,1,2,1,1,1,1\nE,2,1,2,1,1,2,2,1,X,1,1,1,1\nE,1,2,1,1,1,2,2,1,X,1,1,1,1\nE,2,1,1,1,1,X,2,2,1,1,1,X,1\nE,2,1,X,2,1,1,2,1,2,1,1,1,1\nE,1,2,1,X,1,1,2,1,2,1,1,1,1\nE,2,X,1,1,1,2,2,X,2,1,1,1,1\nE,2,2,1,X,1,2,2,2,1,1,1,1,1\nE,1,1,1,1,1,2,2,1,X,1,1,1,1\nE,2,X,2,1,1,1,2,1,1,1,1,X,1\nE,X,1,1,1,1,X,2,1,2,1,1,1,1\nE,2,X,2,2,1,1,2,1,2,1,1,1,1\nE,X,2,1,1,1,X,2,1,2,1,1,1,1\nE,X,2,1,1,1,1,2,2,1,1,1,X,1\nE,X,1,1,1,1,1,2,2,1,1,1,X,1\nE,1,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,2,2,1,1,1,2,2,2,1,1,X,1\nE,2,2,1,2,1,2,2,1,1,1,1,X,1\nE,2,2,X,1,1,2,2,1,2,1,1,1,1\nE,X,X,1,2,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,2,X,1,1,X,1\nE,2,1,X,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,2,1,X,2,2,2,1,1,1,1\nE,2,2,1,1,1,X,2,2,1,1,1,X,1\nE,2,1,1,X,1,1,2,X,1,1,1,1,1\nE,2,X,1,2,1,X,2,1,1,1,1,1,1\nE,2,2,1,X,1,1,2,X,1,1,1,1,1\nE,X,X,1,1,1,2,2,1,2,1,1,1,1\nE,2,X,1,1,1,1,2,2,2,1,1,2,1\nE,2,X,1,2,1,2,2,2,2,1,1,1,1\nE,2,1,1,X,1,2,2,2,2,1,1,1,1\nE,2,X,1,1,1,2,2,2,1,1,1,X,1\nE,2,1,2,2,1,1,2,1,X,1,1,1,1\nE,1,2,2,1,1,1,2,2,1,1,1,1,1\nE,1,2,1,2,1,1,2,1,X,1,1,1,1\nE,1,X,1,1,1,1,2,1,2,1,1,X,1\nE,2,2,2,X,1,1,2,1,2,1,1,1,1\nE,2,1,1,X,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,X,1,2,1,1,1,1,1,1\nE,2,X,1,2,1,1,2,X,2,1,1,1,1\nE,1,1,1,2,1,1,2,1,X,1,1,1,1\nE,1,2,1,2,1,2,2,1,1,1,1,1,1\nE,1,1,2,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,X,2,2,2,1,1,X,1\nE,2,1,1,1,X,1,2,1,1,1,1,1,1\nE,X,2,1,X,1,1,2,1,1,1,1,1,1\nE,2,2,X,1,1,1,2,1,1,1,1,X,1\nE,1,1,1,2,1,2,2,1,1,1,1,1,1\nE,2,1,2,2,1,2,2,1,1,1,1,1,1\nE,X,1,1,X,1,1,2,1,1,1,1,1,1\nE,2,2,X,2,1,1,2,1,2,1,1,1,1\nE,2,2,1,X,1,X,2,1,1,1,1,1,1\nE,X,1,1,1,1,1,2,2,2,1,1,X,1\nE,2,X,1,X,1,1,2,1,X,1,1,1,1\nE,2,X,1,1,1,1,2,X,1,1,1,X,1\nE,X,2,1,1,1,1,2,2,2,1,1,X,1\nE,2,X,X,1,1,1,2,2,1,1,1,1,1\nE,2,1,2,1,1,1,2,1,1,1,1,2,1\nE,2,1,1,1,1,2,2,X,X,1,1,1,1\nE,2,2,1,X,1,2,2,2,2,1,1,1,1\nE,X,X,1,2,1,1,2,1,2,1,1,1,1\nE,2,1,X,1,1,1,2,1,2,1,1,X,1\nE,1,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,1,1,X,1,1,2,X,2,1,1,1,1\nE,2,X,2,1,1,1,2,1,2,1,1,X,1\nE,2,X,1,X,1,2,2,1,1,1,1,1,1\nE,2,1,1,2,1,2,2,2,X,1,1,1,1\nE,2,X,1,2,1,1,2,2,1,1,1,X,1\nE,2,2,1,X,1,1,2,X,2,1,1,1,1\nE,2,2,2,1,1,2,2,1,X,1,1,1,1\nE,1,1,1,1,1,1,2,1,1,1,1,2,1\nE,2,2,1,1,1,2,2,X,X,1,1,1,1\nE,2,X,1,2,1,X,2,1,2,1,1,1,1\nE,1,2,2,1,1,1,2,2,2,1,1,1,1\nE,X,X,1,1,1,1,2,1,1,1,1,X,1\nE,2,2,1,1,1,X,2,2,2,1,1,X,1\nE,2,X,1,1,1,X,2,1,1,1,1,X,1\nE,2,1,1,X,1,X,2,1,2,1,1,1,1\nE,1,1,2,1,1,1,2,2,2,1,1,1,1\nE,2,1,1,1,1,1,2,2,X,1,1,2,1\nE,2,2,1,1,X,1,2,1,2,1,1,1,1\nE,2,1,1,X,1,1,2,2,1,1,1,X,1\nE,X,1,1,1,1,2,2,1,X,1,1,1,1\nE,2,X,1,1,1,2,2,2,2,1,1,X,1\nE,2,1,1,1,X,1,2,1,2,1,1,1,1\nE,1,2,1,2,1,2,2,1,2,1,1,1,1\nE,1,1,1,2,1,2,2,1,2,1,1,1,1\nE,X,2,1,X,1,1,2,1,2,1,1,1,1\nE,X,2,1,1,1,2,2,1,X,1,1,1,1\nE,2,1,1,1,1,2,2,2,1,1,1,2,1\nE,X,1,1,X,1,1,2,1,2,1,1,1,1\nE,2,1,2,1,1,1,2,1,X,1,1,X,1\nE,1,2,1,1,1,1,2,1,X,1,1,X,1\nE,2,1,1,2,1,1,2,X,X,1,1,1,1\nE,2,2,1,1,1,1,2,2,X,1,1,2,1\nE,2,2,1,X,1,1,2,2,1,1,1,X,1\nE,2,X,1,1,1,1,2,X,2,1,1,X,1\nE,2,2,2,1,1,1,2,1,1,1,1,2,1\nE,1,1,1,1,1,1,2,1,X,1,1,X,1\nE,2,X,X,1,1,1,2,2,2,1,1,1,1\nE,1,2,1,1,1,2,2,1,1,1,1,X,1\nE,2,1,2,1,1,1,2,1,2,1,1,2,1\nE,2,1,1,2,1,2,2,X,1,1,1,1,1\nE,1,X,2,1,1,1,2,1,1,1,1,1,1\nE,2,1,2,2,1,2,2,1,2,1,1,1,1\nE,1,2,1,1,1,1,2,1,2,1,1,2,1\nE,2,2,2,2,1,1,2,1,X,1,1,1,1\nE,2,2,1,2,1,2,2,1,2,1,1,X,1\nE,2,2,1,X,1,X,2,1,2,1,1,1,1\nE,1,1,1,1,1,2,2,1,1,1,1,X,1\nE,2,1,2,1,1,2,2,1,1,1,1,X,1\nE,2,2,X,1,1,1,2,1,2,1,1,X,1\nE,2,2,1,2,1,1,2,X,X,1,1,1,1\nE,1,1,1,1,1,1,2,1,2,1,1,2,1\nE,2,1,2,1,1,X,2,2,1,1,1,1,1\nE,2,1,1,2,1,X,2,1,X,1,1,1,1\nE,2,2,1,2,1,2,2,2,X,1,1,1,1\nE,2,X,1,X,1,2,2,1,2,1,1,1,1\nE,2,2,1,1,1,2,2,2,1,1,1,2,1\nE,X,X,1,1,1,1,2,1,2,1,1,X,1\nE,1,2,1,1,1,X,2,2,1,1,1,1,1\nE,X,1,1,2,1,1,2,1,X,1,1,1,1\nE,X,1,2,1,1,1,2,2,1,1,1,1,1\nE,X,2,2,1,1,1,2,2,1,1,1,1,1\nE,2,X,1,2,1,1,2,2,2,1,1,X,1\nE,2,1,1,1,1,1,2,X,1,1,1,2,1\nE,2,1,1,1,1,2,2,2,X,1,1,X,1\n",
         "system": "A"
       },
       "result": null
@@ -8889,7 +8885,7 @@
       "open": true,
       "closeDescription": "Europatipset v 44, stänger 2026-11-01 14:59",
       "regCloseTime": "2026-11-01T14:59:00+01:00",
-      "turnover": "391101,00",
+      "turnover": "543491,00",
       "comment": "Europatipset v. 2026-44",
       "modelCutoff": "2026-11-01",
       "events": [
@@ -8901,9 +8897,9 @@
           "country": "England",
           "kickoff": "2026-11-01T17:30:00+01:00",
           "odds": [
-            3,
-            3.6,
-            2.43
+            2.95,
+            3.5,
+            2.5
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -9267,7 +9263,7 @@
           "verdict": {
             "sign": "2",
             "minOdds": 2.29,
-            "odds": 2.43,
+            "odds": 2.5,
             "value": true
           },
           "streckvarde": [
@@ -9313,12 +9309,6 @@
               ],
               "unavailable": [
                 {
-                  "name": "Víctor Muñoz",
-                  "type": "injury",
-                  "expectedReturn": "Early November 2026",
-                  "marketValue": 24500000
-                },
-                {
                   "name": "Conor Bradley",
                   "type": "injury",
                   "expectedReturn": "Early January 2027",
@@ -9339,7 +9329,7 @@
                 {
                   "name": "Dominik Szoboszlai",
                   "type": "injury",
-                  "expectedReturn": "Early November 2026",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 122859701
                 },
                 {
@@ -9347,6 +9337,12 @@
                   "type": "injury",
                   "expectedReturn": "Early January 2027",
                   "marketValue": 74462289
+                },
+                {
+                  "name": "Víctor Muñoz",
+                  "type": "injury",
+                  "expectedReturn": "Doubtful",
+                  "marketValue": 24500000
                 }
               ],
               "missingValueShare": 0.336,
@@ -9453,7 +9449,7 @@
               "draws": 17,
               "awayWins": 8
             },
-            "fetchedAt": "2026-10-30T15:28:59.965Z"
+            "fetchedAt": "2026-10-31T08:50:13.171Z"
           },
           "refereeStreak": {
             "referee": "Andy Madley",
@@ -9644,7 +9640,7 @@
           "kickoff": "2026-11-01T20:45:00+01:00",
           "odds": [
             2.25,
-            3.4,
+            3.45,
             3.45
           ],
           "marketSource": "Pinnacle",
@@ -9654,9 +9650,9 @@
             0.29
           ],
           "folk": [
-            0.45,
+            0.46,
             0.29,
-            0.26
+            0.25
           ],
           "model": [
             0.415,
@@ -9959,9 +9955,9 @@
             "value": false
           },
           "streckvarde": [
-            0.92,
+            0.9,
             1.02,
-            1.11
+            1.16
           ],
           "experts": [
             {
@@ -10165,7 +10161,7 @@
               "draws": 8,
               "awayWins": 14
             },
-            "fetchedAt": "2026-10-30T15:29:00.471Z"
+            "fetchedAt": "2026-10-31T08:50:13.756Z"
           },
           "refereeStreak": {
             "referee": "Simone Sozza",
@@ -10306,7 +10302,7 @@
           "kickoff": "2026-11-01T15:00:00+01:00",
           "odds": [
             1.47,
-            4.5,
+            4.7,
             7.5
           ],
           "marketSource": "Pinnacle",
@@ -10316,8 +10312,8 @@
             0.137
           ],
           "folk": [
-            0.87,
-            0.08,
+            0.86,
+            0.09,
             0.05
           ],
           "model": [
@@ -10621,8 +10617,8 @@
             "value": false
           },
           "streckvarde": [
-            0.67,
-            3.05,
+            0.68,
+            2.71,
             3.47
           ],
           "experts": [
@@ -10767,7 +10763,7 @@
               "draws": 4,
               "awayWins": 2
             },
-            "fetchedAt": "2026-10-30T15:28:59.898Z"
+            "fetchedAt": "2026-10-31T08:50:13.236Z"
           },
           "refereeStreak": {
             "referee": "Andrea Colombo",
@@ -10870,7 +10866,7 @@
             "Cagliari har fått 3,3 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 1,82 – 0,90; troligast 1-1, 1-0, 2-0.",
             "Modellen tror mindre på 1 än oddsen (58 % mot 65 %).",
-            "Svenska folket överstreckar 1 (87 % mot vår 58 %).",
+            "Svenska folket överstreckar 1 (86 % mot vår 58 %).",
             "Streckvärde på 2: vi 17 %, folket bara 5 %.",
             "Inbördes (senaste 2): Cagliari 0-0 Lazio · Lazio 2-0 Cagliari.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
@@ -10895,9 +10891,9 @@
           "country": "Italien",
           "kickoff": "2026-11-01T18:00:00+01:00",
           "odds": [
-            3.3,
-            3.15,
-            2.38
+            3.35,
+            3.25,
+            2.4
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -10906,9 +10902,9 @@
             0.398
           ],
           "folk": [
+            0.29,
             0.31,
-            0.3,
-            0.39
+            0.4
           ],
           "model": [
             0.334,
@@ -11207,13 +11203,13 @@
           "verdict": {
             "sign": "2",
             "minOdds": 2.81,
-            "odds": 2.38,
+            "odds": 2.4,
             "value": false
           },
           "streckvarde": [
-            1.08,
-            1,
-            0.94
+            1.15,
+            0.97,
+            0.92
           ],
           "experts": [
             {
@@ -11369,7 +11365,7 @@
               "draws": 5,
               "awayWins": 7
             },
-            "fetchedAt": "2026-10-30T15:28:59.930Z"
+            "fetchedAt": "2026-10-31T08:50:13.389Z"
           },
           "refereeStreak": {
             "referee": "Matteo Marchetti",
@@ -11483,8 +11479,8 @@
             0.316
           ],
           "folk": [
-            0.53,
-            0.28,
+            0.55,
+            0.26,
             0.19
           ],
           "model": [
@@ -11775,8 +11771,8 @@
             "value": true
           },
           "streckvarde": [
-            0.94,
-            0.82,
+            0.9,
+            0.88,
             1.44
           ],
           "experts": [
@@ -11909,7 +11905,7 @@
               "draws": 2,
               "awayWins": 4
             },
-            "fetchedAt": "2026-10-30T15:29:01.085Z"
+            "fetchedAt": "2026-10-31T08:50:14.365Z"
           },
           "refereeStreak": {
             "referee": "Giuseppe Mucera",
@@ -12129,12 +12125,6 @@
                   "marketValue": 23986589
                 },
                 {
-                  "name": "Federico Valverde",
-                  "type": "injury",
-                  "expectedReturn": "Doubtful",
-                  "marketValue": 110470178
-                },
-                {
                   "name": "Rodrygo",
                   "type": "injury",
                   "expectedReturn": "Late December 2026",
@@ -12147,7 +12137,7 @@
                   "marketValue": 116097950
                 }
               ],
-              "missingValueShare": 0.293,
+              "missingValueShare": 0.205,
               "starterValue": 708498989,
               "restDays": 6.8,
               "prevMatch": {
@@ -12181,7 +12171,7 @@
               "draws": 1,
               "awayWins": 3
             },
-            "fetchedAt": "2026-10-30T15:29:01.029Z"
+            "fetchedAt": "2026-10-31T08:50:14.560Z"
           },
           "refereeStreak": null,
           "streckFlop": null,
@@ -12193,7 +12183,7 @@
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Racing Santander saknar 1 spelare (Jorge Salinas).",
             "Racing Santander har 2.8 dagars vila mot 6.8 för motståndaren (senast Copa del Rey).",
-            "Real Madrid saknar 5 spelare (Vinícius Júnior, Federico Valverde, Rodrygo, Raúl Asencio), 29 % av startelvans + frånvarandes marknadsvärde.",
+            "Real Madrid saknar 4 spelare (Vinícius Júnior, Rodrygo, Raúl Asencio, Ferland Mendy), 21 % av startelvans + frånvarandes marknadsvärde.",
             "Real Madrid spelar Champions League om 3.1 dagar, vilket ger risk för rotation."
           ],
           "systemPick": {
@@ -12224,8 +12214,8 @@
             0.301
           ],
           "folk": [
-            0.43,
-            0.31,
+            0.44,
+            0.3,
             0.26
           ],
           "model": [
@@ -12524,8 +12514,8 @@
             "value": true
           },
           "streckvarde": [
-            1.14,
-            0.79,
+            1.12,
+            0.82,
             1.01
           ],
           "experts": [
@@ -12670,7 +12660,7 @@
               "draws": 9,
               "awayWins": 16
             },
-            "fetchedAt": "2026-10-30T15:29:01.088Z"
+            "fetchedAt": "2026-10-31T08:50:14.676Z"
           },
           "refereeStreak": null,
           "streckFlop": null,
@@ -12721,9 +12711,9 @@
             0.302
           ],
           "folk": [
-            0.54,
-            0.27,
-            0.19
+            0.51,
+            0.28,
+            0.21
           ],
           "model": [
             0.46,
@@ -13026,9 +13016,9 @@
             "value": true
           },
           "streckvarde": [
-            0.85,
-            1,
-            1.42
+            0.9,
+            0.97,
+            1.28
           ],
           "experts": [
             {
@@ -13078,15 +13068,9 @@
                   "type": "injury",
                   "expectedReturn": "Mid November 2026",
                   "marketValue": 2337161
-                },
-                {
-                  "name": "Fer Niño",
-                  "type": "injury",
-                  "expectedReturn": "Doubtful",
-                  "marketValue": 1912347
                 }
               ],
-              "missingValueShare": 0.188,
+              "missingValueShare": 0.122,
               "starterValue": 20573102,
               "restDays": 5,
               "prevMatch": {
@@ -13184,7 +13168,7 @@
               "draws": 2,
               "awayWins": 7
             },
-            "fetchedAt": "2026-10-30T15:29:01.044Z"
+            "fetchedAt": "2026-10-31T08:50:14.462Z"
           },
           "refereeStreak": null,
           "streckFlop": null,
@@ -13199,11 +13183,10 @@
             "Förväntade poäng (xP, ur xG): Elche 11,9 mot 10 verkliga (förväntad plats 14, verklig 15) · Valencia 11,5 mot 6 verkliga (förväntad plats 16, verklig 19).",
             "Valencia har fått 5,5 poäng mindre än spelet motiverar (otur – kan vända).",
             "Förväntade mål 1,56 – 1,14; troligast 1-1, 1-0, 2-1.",
-            "Svenska folket överstreckar 1 (54 % mot vår 46 %).",
-            "Streckvärde på 2: vi 27 %, folket bara 19 %.",
+            "Streckvärde på 2: vi 27 %, folket bara 21 %.",
             "Inbördes (senaste 2): Elche 1-0 Valencia · Valencia 1-1 Elche.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Elche saknar 3 spelare (Marc Aguado, Fer Niño, Pedro Bigas), 19 % av startelvans + frånvarandes marknadsvärde.",
+            "Elche saknar 2 spelare (Marc Aguado, Pedro Bigas), 12 % av startelvans + frånvarandes marknadsvärde.",
             "Valencia saknar 5 spelare (Harvey Elliott, Diego López, Dimitri Foulquier, Sergi Canós), 32 % av startelvans + frånvarandes marknadsvärde."
           ],
           "systemPick": {
@@ -13234,9 +13217,9 @@
             0.226
           ],
           "folk": [
-            0.6,
+            0.58,
             0.25,
-            0.15
+            0.17
           ],
           "model": [
             0.469,
@@ -13310,9 +13293,9 @@
             "value": false
           },
           "streckvarde": [
-            0.78,
+            0.81,
             1.12,
-            1.67
+            1.47
           ],
           "experts": [
             {
@@ -13468,7 +13451,7 @@
               "draws": 10,
               "awayWins": 14
             },
-            "fetchedAt": "2026-10-30T15:29:01.651Z"
+            "fetchedAt": "2026-10-31T08:50:15.218Z"
           },
           "refereeStreak": {
             "referee": "Fredrik Klitte",
@@ -13584,8 +13567,8 @@
             "Häcken har ett övertag (47 %), men det är långt ifrån säkert.",
             "Förväntade mål 1,48 – 1,02; troligast 1-1, 1-0, 0-0.",
             "Modellen tror mindre på 1 än oddsen (47 % mot 56 %).",
-            "Svenska folket överstreckar 1 (60 % mot vår 47 %).",
-            "Streckvärde på 2: vi 25 %, folket bara 15 %.",
+            "Svenska folket överstreckar 1 (58 % mot vår 47 %).",
+            "Streckvärde på 2: vi 25 %, folket bara 17 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Häcken saknar 3 spelare (Filip Öhman, Gustav Lindgren, Ben Engdahl), 25 % av startelvans + frånvarandes marknadsvärde.",
             "IFK Göteborg saknar 5 spelare (August Erlingmark, Arbnor Muçolli, Ramon-Pascal Lundqvist, Adam Bergmark Wiberg), 28 % av startelvans + frånvarandes marknadsvärde.",
@@ -13619,8 +13602,8 @@
             0.128
           ],
           "folk": [
-            0.8,
-            0.12,
+            0.81,
+            0.11,
             0.08
           ],
           "model": [
@@ -13695,8 +13678,8 @@
             "value": false
           },
           "streckvarde": [
-            0.76,
-            2.05,
+            0.75,
+            2.24,
             1.8
           ],
           "experts": [
@@ -13777,6 +13760,12 @@
               ],
               "unavailable": [
                 {
+                  "name": "Benjamin Laturnus",
+                  "type": "suspension",
+                  "expectedReturn": "Early November 2026",
+                  "marketValue": 248832
+                },
+                {
                   "name": "Jerome Tibbling Ugwo",
                   "type": "injury",
                   "expectedReturn": "Late October 2026",
@@ -13801,7 +13790,7 @@
                   "marketValue": 194124
                 }
               ],
-              "missingValueShare": 0.273,
+              "missingValueShare": 0.309,
               "starterValue": 3471070,
               "restDays": 2.9,
               "prevMatch": {
@@ -13835,7 +13824,7 @@
               "draws": 1,
               "awayWins": 1
             },
-            "fetchedAt": "2026-10-30T15:29:02.093Z"
+            "fetchedAt": "2026-10-31T08:50:15.747Z"
           },
           "refereeStreak": {
             "referee": "Victor Wolf",
@@ -13923,11 +13912,11 @@
             "Elfsborg är klar favorit (61 %).",
             "Förväntade mål 1,76 – 0,74; troligast 1-0, 2-0, 1-1.",
             "Modellen tror mindre på 1 än oddsen (61 % mot 69 %).",
-            "Svenska folket överstreckar 1 (80 % mot vår 61 %).",
-            "Streckvärde på X: vi 25 %, folket bara 12 %.",
+            "Svenska folket överstreckar 1 (81 % mot vår 61 %).",
+            "Streckvärde på X: vi 25 %, folket bara 11 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Elfsborg saknar 1 spelare (Per Frick).",
-            "Örgryte saknar 4 spelare (Rasmus Alm, William Svensson, Jerome Tibbling Ugwo, Aydarus Abukar), 27 % av startelvans + frånvarandes marknadsvärde.",
+            "Örgryte saknar 5 spelare (Rasmus Alm, William Svensson, Jerome Tibbling Ugwo, Benjamin Laturnus), 31 % av startelvans + frånvarandes marknadsvärde.",
             "Örgryte har 2.9 dagars vila mot 4.9 för motståndaren (senast Allsvenskan).",
             "Domare: Victor Wolf."
           ],
@@ -13959,8 +13948,8 @@
             0.272
           ],
           "folk": [
-            0.62,
-            0.21,
+            0.63,
+            0.2,
             0.17
           ],
           "model": [
@@ -14035,8 +14024,8 @@
             "value": false
           },
           "streckvarde": [
-            0.77,
-            1.33,
+            0.76,
+            1.4,
             1.43
           ],
           "experts": [
@@ -14150,7 +14139,7 @@
               "draws": 3,
               "awayWins": 5
             },
-            "fetchedAt": "2026-10-30T15:29:01.692Z"
+            "fetchedAt": "2026-10-31T08:50:15.111Z"
           },
           "refereeStreak": {
             "referee": "Adam Ladebäck",
@@ -14226,7 +14215,7 @@
             "Data utan odds: Västerås 48 % – under spikkravet 55 %.",
             "Västerås har ett övertag (48 %), men det är långt ifrån säkert.",
             "Förväntade mål 1,50 – 1,00; troligast 1-1, 1-0, 2-1.",
-            "Svenska folket överstreckar 1 (62 % mot vår 48 %).",
+            "Svenska folket överstreckar 1 (63 % mot vår 48 %).",
             "Streckvärde på 2: vi 24 %, folket bara 17 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Brommapojkarna saknar 1 spelare (Simon Strand).",
@@ -14261,8 +14250,8 @@
           ],
           "folk": [
             0.47,
-            0.28,
-            0.25
+            0.27,
+            0.26
           ],
           "model": [
             0.427,
@@ -14566,8 +14555,8 @@
           },
           "streckvarde": [
             0.91,
-            0.96,
-            1.22
+            0.99,
+            1.18
           ],
           "experts": [
             {
@@ -14711,7 +14700,7 @@
               "draws": 1,
               "awayWins": 0
             },
-            "fetchedAt": "2026-10-30T15:29:01.550Z"
+            "fetchedAt": "2026-10-31T08:50:15.354Z"
           },
           "refereeStreak": {
             "referee": "Jeremy Stinat",
@@ -14812,7 +14801,6 @@
             "Förväntade poäng (xP, ur xG): Paris FC 14,4 mot 14 verkliga (förväntad plats 2, verklig 6) · Monaco 11,0 mot 15 verkliga (förväntad plats 8, verklig 4).",
             "Monaco har fått 4,0 poäng mer än spelet motiverar (tur – kan vända).",
             "Förväntade mål 1,55 – 1,28; troligast 1-1, 2-1, 1-0.",
-            "Streckvärde på 2: vi 31 %, folket bara 25 %.",
             "Inbördes (senaste 2): Paris FC 4-1 Monaco · Monaco 0-1 Paris FC.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Paris FC saknar 3 spelare (Nhoa Sangui, Luca Koleosho, Jonathan Ikoné), 21 % av startelvans + frånvarandes marknadsvärde.",
@@ -14836,9 +14824,9 @@
           "country": "Tyskland",
           "kickoff": "2026-11-01T15:30:00+01:00",
           "odds": [
-            2.6,
-            3.75,
-            2.7
+            2.7,
+            3.7,
+            2.63
           ],
           "marketSource": "Pinnacle",
           "market": [
@@ -14847,9 +14835,9 @@
             0.376
           ],
           "folk": [
-            0.36,
+            0.37,
             0.29,
-            0.35
+            0.34
           ],
           "model": [
             0.427,
@@ -15148,13 +15136,13 @@
           "verdict": {
             "sign": "1",
             "minOdds": 2.41,
-            "odds": 2.6,
+            "odds": 2.7,
             "value": true
           },
           "streckvarde": [
-            1.19,
+            1.15,
             0.92,
-            0.88
+            0.91
           ],
           "experts": [
             {
@@ -15200,12 +15188,6 @@
                   "marketValue": 1127245
                 },
                 {
-                  "name": "Josip Juranović",
-                  "type": "injury",
-                  "expectedReturn": "About 1-2 weeks",
-                  "marketValue": 1154872
-                },
-                {
                   "name": "Andrej Ilić",
                   "type": "injury",
                   "expectedReturn": "Late October 2026",
@@ -15230,7 +15212,7 @@
                   "marketValue": 1199818
                 }
               ],
-              "missingValueShare": 0.199,
+              "missingValueShare": 0.184,
               "starterValue": 49465507,
               "restDays": 4.8,
               "prevMatch": {
@@ -15334,7 +15316,7 @@
               "draws": 4,
               "awayWins": 6
             },
-            "fetchedAt": "2026-10-30T15:29:03.068Z"
+            "fetchedAt": "2026-10-31T08:50:16.426Z"
           },
           "refereeStreak": {
             "referee": "Richard Hempel",
@@ -15397,7 +15379,7 @@
             "Förväntade mål 1,57 – 1,30; troligast 1-1, 2-1, 1-0.",
             "Inbördes (senaste 2): Union Berlin 2-2 FC Koln · FC Koln 0-1 Union Berlin.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Union Berlin saknar 6 spelare (Andrej Ilić, Felix Uduokhai, Stanley N'Soki, Josip Juranović), 20 % av startelvans + frånvarandes marknadsvärde.",
+            "Union Berlin saknar 5 spelare (Andrej Ilić, Felix Uduokhai, Stanley N'Soki, Robert Skov), 18 % av startelvans + frånvarandes marknadsvärde.",
             "Köln saknar 6 spelare (Thijs Dallinga, Ragnar Ache, Rav van den Berg, Ellyes Skhiri), 25 % av startelvans + frånvarandes marknadsvärde.",
             "Domare: Richard Hempel."
           ],
@@ -15413,23 +15395,23 @@
       ],
       "system": {
         "rows": 59049,
-        "hitAll": 0.005968639398247287,
+        "hitAll": 0.005972445784235576,
         "hitSingle": 0.00003715134674071819
       },
       "value": {
-        "ratio": 2.019,
+        "ratio": 2.062,
         "level": "high",
-        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 202 % av insatsen (normalt 26–40 %) – jackpot ingår."
+        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 206 % av insatsen (normalt 26–40 %) – jackpot ingår."
       },
       "reduced": {
         "gc": null,
         "rows": 500,
         "cost": 500,
         "rowPrice": 1,
-        "hitAll": 0.005968639398247287,
-        "expectedPayout": 169124.284128166,
-        "expectedReturn": 1009.44186544774,
-        "minPayout": 30568.8591541638,
+        "hitAll": 0.005972445784235576,
+        "expectedPayout": 172648.17550256258,
+        "expectedReturn": 1031.1318679362437,
+        "minPayout": 30050.271640451,
         "grundRows": 59049,
         "rules": {
           "free": true,
@@ -15451,12 +15433,12 @@
           "2111111111112",
           "2111111111121",
           "21111X1111121",
-          "2X11111111111",
           "2X111X1111111",
+          "2X11111111111",
           "22111X1111111",
           "2211111111111",
-          "X1111X1111111",
           "X111111111111",
+          "X1111X1111111",
           "21111111111X1",
           "21111X11111X1",
           "211111111111X",
@@ -15470,22 +15452,22 @@
           "2111111211111",
           "21111X1211111",
           "1111111111111",
-          "2111211111111",
           "21112X1111111",
+          "2111211111111",
           "21111X1121111",
           "2111111121111",
           "21111X2111111",
           "2111112111111",
           "21111X1111122",
           "2111111111122",
-          "2X111X1111112",
           "2X11111111112",
-          "2X11111111121",
+          "2X111X1111112",
           "2X111X1111121",
+          "2X11111111121",
           "2111111111211",
           "21111X1111211",
-          "2211111111112",
           "22111X1111112",
+          "2211111111112",
           "21111XX111111",
           "211111X111111",
           "2211111111121",
@@ -15496,34 +15478,34 @@
           "2111XX1111111",
           "X1111X1111121",
           "X111111111121",
-          "XX111X1111111",
           "XX11111111111",
+          "XX111X1111111",
           "21111111111X2",
           "21111X11111X2",
-          "X211111111111",
           "X2111X1111111",
+          "X211111111111",
           "2X111111111X1",
           "2X111X11111X1",
           "211111111112X",
           "21111X111112X",
           "2X111X111111X",
           "2X1111111111X",
-          "22111111111X1",
           "22111X11111X1",
+          "22111111111X1",
           "221111111111X",
           "22111X111111X",
           "21111X11X1112",
           "21111111X1112",
           "21111X11X1121",
           "21111111X1121",
-          "2X111111X1111",
           "2X111X11X1111",
+          "2X111111X1111",
           "21111X1X11112",
           "2111111X11112",
           "2111111111X12",
           "21111X1111X12",
-          "2111111X11121",
           "21111X1X11121",
+          "2111111X11121",
           "21111X1211112",
           "2111111211112",
           "21111X1111X21",
@@ -15532,8 +15514,9 @@
           "21111X1211121",
           "2X111X1X11111",
           "2X11111X11111",
-          "22111X11X1111",
           "22111111X1111",
+          "22111X11X1111",
+          "11111X1111112",
           "1111111111112",
           "2X11111111X11",
           "2X111X1111X11",
@@ -15543,18 +15526,18 @@
           "1111111111121",
           "1X111X1111111",
           "1X11111111111",
-          "2211111X11111",
           "22111X1X11111",
-          "22111X1111X11",
+          "2211111X11111",
           "2211111111X11",
+          "22111X1111X11",
           "22111X1211111",
           "2211111211111",
           "X1111X11111X1",
           "X1111111111X1",
           "12111X1111111",
           "1211111111111",
-          "X1111X111111X",
           "X11111111111X",
+          "X1111X111111X",
           "21112X1111112",
           "2111211111112",
           "2111211111121",
@@ -15575,16 +15558,16 @@
           "2111111121121",
           "21111X2111121",
           "2111112111121",
-          "X1111X1X11111",
           "X111111X11111",
+          "X1111X1X11111",
           "2X11111121111",
           "2X111X1121111",
           "2X111X2111111",
           "2X11112111111",
           "X1111X1111X11",
           "X111111111X11",
-          "X111111211111",
           "X1111X1211111",
+          "X111111211111",
           "21111X11X11X1",
           "21111111X11X1",
           "21111X11X111X",
@@ -15597,8 +15580,8 @@
           "2111111X111X1",
           "2111111111XX1",
           "21111X1111XX1",
-          "2X111X1111122",
           "2X11111111122",
+          "2X111X1111122",
           "21111X12111X1",
           "21111112111X1",
           "2111111111212",
@@ -15609,12 +15592,12 @@
           "21111X1111221",
           "21111X1111X1X",
           "2111111111X1X",
-          "21111X121111X",
           "211111121111X",
+          "21111X121111X",
           "11111X11111X1",
           "11111111111X1",
-          "2X111X1111211",
           "2X11111111211",
+          "2X111X1111211",
           "211111X111112",
           "21111XX111112",
           "22111X1111122",
@@ -15625,18 +15608,18 @@
           "211111X111121",
           "2X111XX111111",
           "2X1111X111111",
-          "2211111111211",
           "22111X1111211",
-          "X111211111111",
+          "2211111111211",
           "X1112X1111111",
+          "X111211111111",
           "21111X1XX1111",
           "2111111XX1111",
           "21111111X1X11",
           "21111X11X1X11",
-          "21111112X1111",
           "21111X12X1111",
-          "22111XX111111",
+          "21111112X1111",
           "221111X111111",
+          "22111XX111111",
           "11111X11X1111",
           "11111111X1111",
           "21111X1X11X11",
@@ -15649,16 +15632,16 @@
           "X1111X2111111",
           "21111X1211X11",
           "2111111211X11",
-          "21112X111111X",
           "211121111111X",
-          "1111111X11111",
+          "21112X111111X",
           "11111X1X11111",
+          "1111111X11111",
           "11111X1111X11",
           "1111111111X11",
-          "11111X1211111",
           "1111111211111",
-          "21111X11211X1",
+          "11111X1211111",
           "21111111211X1",
+          "21111X11211X1",
           "21111121111X1",
           "21111X21111X1",
           "2111XX1111112",
@@ -15671,57 +15654,56 @@
           "211111112111X",
           "21111X211111X",
           "211111211111X",
-          "XX11111111112",
           "XX111X1111112",
-          "21112X11X1111",
+          "XX11111111112",
           "21112111X1111",
-          "2X11X11111111",
+          "21112X11X1111",
           "2X11XX1111111",
-          "XX11111111121",
+          "2X11X11111111",
           "XX111X1111121",
-          "X111111111211",
+          "XX11111111121",
           "X1111X1111211",
+          "X111111111211",
           "X2111X1111112",
           "X211111111112",
-          "21112X1X11111",
           "2111211X11111",
-          "2211X11111111",
+          "21112X1X11111",
           "2211XX1111111",
+          "2211X11111111",
           "X1111XX111111",
           "X11111X111111",
           "2X111X11111X2",
           "2X111111111X2",
-          "2111211111X11",
           "21112X1111X11",
-          "X211111111121",
+          "2111211111X11",
           "X2111X1111121",
+          "X211111111121",
           "21112X1211111",
           "2111211211111",
           "21111111112X1",
           "21111X11112X1",
-          "21111121X1111",
           "21111X21X1111",
+          "21111121X1111",
           "1111211111111",
           "11112X1111111",
           "2X111X111112X",
           "2X1111111112X",
           "21111X111121X",
           "211111111121X",
-          "22111X11111X2",
           "22111111111X2",
-          "21111X1X21111",
+          "22111X11111X2",
           "2111111X21111",
-          "211111X1111X1",
+          "21111X1X21111",
           "21111XX1111X1",
+          "211111X1111X1",
           "2111112X11111",
           "21111X2X11111",
           "2111111121X11",
           "21111X1121X11",
           "2111121121X11",
-          "21111X2111X11",
           "2111112111X11",
+          "21111X2111X11",
           "21111X1221111",
-          "2111121221111",
           "2111111221111",
           "21111X2211111",
           "2111112211111",
@@ -15733,65 +15715,64 @@
           "21111X11X1122",
           "11111X1121111",
           "1111111121111",
-          "1111112111111",
           "11111X2111111",
+          "1111112111111",
           "2X111X11X1112",
           "2X111111X1112",
           "2X111111X1121",
           "2X111X11X1121",
-          "21111X11X1211",
           "21111111X1211",
+          "21111X11X1211",
           "2111111X11122",
           "21111X1X11122",
           "2111111111X22",
           "21111X1111X22",
-          "21111X1211122",
           "2111111211122",
+          "21111X1211122",
           "2X11111X11112",
           "2X111X1X11112",
           "22111X11X1112",
           "22111111X1112",
           "2X11111111X12",
           "2X111X1111X12",
-          "2X11111X11121",
           "2X111X1X11121",
-          "2X11111211112",
+          "2X11111X11121",
           "2X111X1211112",
+          "2X11111211112",
           "21111XX1X1111",
           "211111X1X1111",
-          "2111111X11211",
           "21111X1X11211",
-          "22111111X1121",
+          "2111111X11211",
           "22111X11X1121",
-          "11111X1111122",
+          "22111111X1121",
           "1111111111122",
-          "2X11111111X21",
+          "11111X1111122",
           "2X111X1111X21",
-          "X111XX1111111",
+          "2X11111111X21",
           "X111X11111111",
+          "X111XX1111111",
           "2X11111211121",
           "2X111X1211121",
-          "2111111211211",
           "21111X1211211",
+          "2111111211211",
           "1X11111111112",
           "1X111X1111112",
           "2211111X11112",
           "22111X1X11112",
           "211111XX11111",
           "21111XXX11111",
-          "1X111X1111121",
           "1X11111111121",
-          "2211111111X12",
+          "1X111X1111121",
           "22111X1111X12",
+          "2211111111X12",
           "2211111X11121",
           "22111X1X11121",
-          "2211111211112",
           "22111X1211112",
+          "2211111211112",
           "1111111111211",
           "11111X1111211",
           "21111XX111X11",
           "211111X111X11",
-          "2111221121111",
           "21112X1121111",
           "2111211121111",
           "21112X2111111",
@@ -15799,122 +15780,123 @@
           "211111X211111",
           "21111XX211111",
           "2211111111X21",
+          "2211121111X21",
           "22111X1111X21",
           "22111X1211121",
           "2211111211121",
           "X1111X11111X2",
           "X1111111111X2",
-          "2111XX11111X1",
           "2111X111111X1",
+          "2111XX11111X1",
           "12111X1111112",
           "1211111111112",
           "111111X111111",
           "11111XX111111",
-          "1211111111121",
           "12111X1111121",
+          "1211111111121",
           "XX111111111X1",
           "XX111X11111X1",
-          "2111X1111111X",
           "2111XX111111X",
+          "2111X1111111X",
           "X1111X111112X",
           "X11111111112X",
           "XX111X111111X",
           "XX1111111111X",
-          "21112X1111122",
           "2111211111122",
+          "21112X1111122",
           "2111112121111",
           "21111X2121111",
-          "X2111111111X1",
           "X2111X11111X1",
-          "2X11211111112",
+          "X2111111111X1",
           "2X112X1111112",
-          "2X112X1111121",
+          "2X11211111112",
           "2X11211111121",
+          "2X112X1111121",
           "21112X1111211",
+          "2111221111211",
           "2111211111211",
-          "X21111111111X",
           "X2111X111111X",
+          "X21111111111X",
           "X1111111X1112",
           "X1111X11X1112",
           "2111XX11X1111",
           "2111X111X1111",
-          "2X111111111XX",
           "2X111X11111XX",
+          "2X111111111XX",
           "X1111X11X1121",
           "X1111111X1121",
-          "22112X1111112",
           "2211211111112",
+          "22112X1111112",
           "2111111121122",
           "21111X1121122",
-          "21111X2111122",
           "2111112111122",
-          "211121X111111",
+          "21111X2111122",
           "21112XX111111",
+          "211121X111111",
           "XX111111X1111",
           "XX111X11X1111",
           "22112X1111121",
           "2211211111121",
-          "X1111X1X11112",
           "X111111X11112",
+          "X1111X1X11112",
           "2X111X1121112",
           "2X11111121112",
           "2X11112111112",
           "2X111X2111112",
-          "2111X11X11111",
           "2111XX1X11111",
+          "2111X11X11111",
           "X111111111X12",
           "X1111X1111X12",
           "X111111X11121",
           "X1111X1X11121",
-          "X111111211112",
           "X1111X1211112",
-          "2X11121121121",
-          "2X11111121121",
+          "X111111211112",
           "2X111X1121121",
+          "2X11111121121",
           "2X11112111121",
           "2X111X2111121",
-          "22111111111XX",
           "22111X11111XX",
-          "21111X11X11X2",
+          "22111111111XX",
           "21111111X11X2",
+          "21111X11X11X2",
           "2111XX1111X11",
           "2111X11111X11",
           "2111111121211",
-          "2111121121211",
           "21111X1121211",
+          "2111121121211",
           "2111112111211",
           "21111X2111211",
           "2111XX1211111",
           "2111X11211111",
           "X111111111X21",
           "X1111X1111X21",
-          "X1111X1211121",
           "X111111211121",
+          "X1111X1211121",
           "XX111X1X11111",
           "XX11111X11111",
           "X2111111X1111",
           "X2111X11X1111",
-          "XX111X1111X11",
           "XX11111111X11",
-          "XX11111211111",
+          "XX111X1111X11",
           "XX111X1211111",
-          "22111X1121112",
+          "XX11111211111",
           "2211111121112",
+          "22111X1121112",
           "22111X2111112",
           "2211112111112",
           "1111X11111111",
           "1111XX1111111",
           "2X111X11X11X1",
           "2X111111X11X1",
-          "2111111X111X2",
           "21111X1X111X2",
+          "2111111X111X2",
           "211111X121111",
           "21111XX121111",
           "21111111X112X",
           "21111X11X112X",
+          "2211121121121",
           "22111X1121121",
           "2211111121121",
-          "2211121121121",
           "22111X2111121",
           "2211112111121",
           "21111X1111XX2",
@@ -15923,26 +15905,26 @@
           "21111112111X2",
           "X211111X11111",
           "X2111X1X11111",
-          "2X111X11X111X",
           "2X111111X111X",
+          "2X111X11X111X",
           "X2111X1111X11",
           "X211111111X11",
-          "2X111X1X111X1",
           "2X11111X111X1",
+          "2X111X1X111X1",
           "21111X1111222",
           "2111111111222",
           "X2111X1211111",
           "X211111211111",
           "2111111X1112X",
           "21111X1X1112X",
-          "22111X11X11X1",
           "22111111X11X1",
+          "22111X11X11X1",
           "11111111111X2",
           "11111X11111X2",
           "2X11111111XX1",
           "2X111X1111XX1",
-          "2X111X12111X1",
           "2X111112111X1",
+          "2X111X12111X1",
           "2X11111111212",
           "2X111X1111212"
         ],
@@ -16053,7 +16035,7 @@
           }
         ],
         "relaxed": [],
-        "egnaRader": "Europatipset\nE,2,1,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,1,1,1,2,1\nE,2,X,1,1,1,1,1,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,1,X,1\nE,2,1,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,X,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,X,1,1\nE,2,1,1,1,1,X,1,1,1,1,X,1,1\nE,2,1,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,X,1,2,1,1,1,1,1\nE,1,1,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,2,1,1,1,1,1,1,1,1\nE,2,1,1,1,2,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,1\nE,2,1,1,1,1,1,1,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,2,2\nE,2,1,1,1,1,1,1,1,1,1,1,2,2\nE,2,X,1,1,1,X,1,1,1,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,1,2,1\nE,2,X,1,1,1,X,1,1,1,1,1,2,1\nE,2,1,1,1,1,1,1,1,1,1,2,1,1\nE,2,1,1,1,1,X,1,1,1,1,2,1,1\nE,2,2,1,1,1,1,1,1,1,1,1,1,2\nE,2,2,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,1,1,1,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,1,2,1\nE,2,2,1,1,1,X,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,1,1,1,1,1,2\nE,X,1,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,X,1,1,1,1,1,1,1,1\nE,2,1,1,1,X,X,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,1,1,1,1,2,1\nE,X,X,1,1,1,X,1,1,1,1,1,1,1\nE,X,X,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,1,X,1,1,1,1,1,X,2\nE,X,2,1,1,1,1,1,1,1,1,1,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,1,1,1,X,1\nE,2,X,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,1,2,X\nE,2,1,1,1,1,X,1,1,1,1,1,2,X\nE,2,X,1,1,1,X,1,1,1,1,1,1,X\nE,2,X,1,1,1,1,1,1,1,1,1,1,X\nE,2,2,1,1,1,1,1,1,1,1,1,X,1\nE,2,2,1,1,1,X,1,1,1,1,1,X,1\nE,2,2,1,1,1,1,1,1,1,1,1,1,X\nE,2,2,1,1,1,X,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,X,1,1,1,2\nE,2,1,1,1,1,1,1,1,X,1,1,1,2\nE,2,1,1,1,1,X,1,1,X,1,1,2,1\nE,2,1,1,1,1,1,1,1,X,1,1,2,1\nE,2,X,1,1,1,1,1,1,X,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,X,1,2\nE,2,1,1,1,1,X,1,1,1,1,X,1,2\nE,2,1,1,1,1,1,1,X,1,1,1,2,1\nE,2,1,1,1,1,X,1,X,1,1,1,2,1\nE,2,1,1,1,1,X,1,2,1,1,1,1,2\nE,2,1,1,1,1,1,1,2,1,1,1,1,2\nE,2,1,1,1,1,X,1,1,1,1,X,2,1\nE,2,1,1,1,1,1,1,1,1,1,X,2,1\nE,2,1,1,1,1,1,1,2,1,1,1,2,1\nE,2,1,1,1,1,X,1,2,1,1,1,2,1\nE,2,X,1,1,1,X,1,X,1,1,1,1,1\nE,2,X,1,1,1,1,1,X,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,X,1,1,1,1\nE,2,2,1,1,1,1,1,1,X,1,1,1,1\nE,1,1,1,1,1,1,1,1,1,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,X,1,1\nE,2,X,1,1,1,X,1,1,1,1,X,1,1\nE,2,X,1,1,1,1,1,2,1,1,1,1,1\nE,2,X,1,1,1,X,1,2,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,1,1,1,2,1\nE,1,1,1,1,1,1,1,1,1,1,1,2,1\nE,1,X,1,1,1,X,1,1,1,1,1,1,1\nE,1,X,1,1,1,1,1,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,X,1,1,1,1,1\nE,2,2,1,1,1,X,1,X,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,1,1,X,1,1\nE,2,2,1,1,1,1,1,1,1,1,X,1,1\nE,2,2,1,1,1,X,1,2,1,1,1,1,1\nE,2,2,1,1,1,1,1,2,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,X,1\nE,X,1,1,1,1,1,1,1,1,1,1,X,1\nE,1,2,1,1,1,X,1,1,1,1,1,1,1\nE,1,2,1,1,1,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,1,X\nE,X,1,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,2,X,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,1,1,1,1,2,1\nE,2,X,1,1,2,X,1,1,1,1,1,1,1\nE,2,X,1,1,2,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,X,X\nE,2,1,1,1,1,1,1,1,1,1,1,X,X\nE,X,1,1,1,1,X,1,1,X,1,1,1,1\nE,X,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,2\nE,2,1,1,1,1,1,1,1,2,1,1,1,2\nE,2,1,1,1,1,1,2,1,1,1,1,1,2\nE,2,1,1,1,1,X,2,1,1,1,1,1,2\nE,2,2,1,1,2,1,1,1,1,1,1,1,1\nE,2,2,1,1,2,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,2,1\nE,2,1,1,1,1,1,1,1,2,1,1,2,1\nE,2,1,1,1,1,X,2,1,1,1,1,2,1\nE,2,1,1,1,1,1,2,1,1,1,1,2,1\nE,X,1,1,1,1,X,1,X,1,1,1,1,1\nE,X,1,1,1,1,1,1,X,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,2,1,1,1,1\nE,2,X,1,1,1,X,1,1,2,1,1,1,1\nE,2,X,1,1,1,X,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,X,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,1,1\nE,X,1,1,1,1,1,1,2,1,1,1,1,1\nE,X,1,1,1,1,X,1,2,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,X,1,1,X,1\nE,2,1,1,1,1,1,1,1,X,1,1,X,1\nE,2,1,1,1,1,X,1,1,X,1,1,1,X\nE,2,1,1,1,1,1,1,1,X,1,1,1,X\nE,2,2,1,1,1,1,1,1,2,1,1,1,1\nE,2,2,1,1,1,X,1,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,X,1\nE,2,1,1,1,1,1,1,X,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,X,X,1\nE,2,1,1,1,1,X,1,1,1,1,X,X,1\nE,2,X,1,1,1,X,1,1,1,1,1,2,2\nE,2,X,1,1,1,1,1,1,1,1,1,2,2\nE,2,1,1,1,1,X,1,2,1,1,1,X,1\nE,2,1,1,1,1,1,1,2,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,2,1,2\nE,2,1,1,1,1,X,1,1,1,1,2,1,2\nE,2,1,1,1,1,1,1,X,1,1,1,1,X\nE,2,1,1,1,1,X,1,X,1,1,1,1,X\nE,2,1,1,1,1,1,1,1,1,1,2,2,1\nE,2,1,1,1,1,X,1,1,1,1,2,2,1\nE,2,1,1,1,1,X,1,1,1,1,X,1,X\nE,2,1,1,1,1,1,1,1,1,1,X,1,X\nE,2,1,1,1,1,X,1,2,1,1,1,1,X\nE,2,1,1,1,1,1,1,2,1,1,1,1,X\nE,1,1,1,1,1,X,1,1,1,1,1,X,1\nE,1,1,1,1,1,1,1,1,1,1,1,X,1\nE,2,X,1,1,1,X,1,1,1,1,2,1,1\nE,2,X,1,1,1,1,1,1,1,1,2,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,1,1,1,1,2\nE,2,2,1,1,1,X,1,1,1,1,1,2,2\nE,2,2,1,1,1,1,1,1,1,1,1,2,2\nE,1,1,1,1,1,X,1,1,1,1,1,1,X\nE,1,1,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,X,1,1,1,1,2,1\nE,2,1,1,1,1,1,X,1,1,1,1,2,1\nE,2,X,1,1,1,X,X,1,1,1,1,1,1\nE,2,X,1,1,1,1,X,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,2,1,1\nE,2,2,1,1,1,X,1,1,1,1,2,1,1\nE,X,1,1,1,2,1,1,1,1,1,1,1,1\nE,X,1,1,1,2,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,X,1,1,1,1\nE,2,1,1,1,1,1,1,X,X,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,X,1,1\nE,2,1,1,1,1,X,1,1,X,1,X,1,1\nE,2,1,1,1,1,1,1,2,X,1,1,1,1\nE,2,1,1,1,1,X,1,2,X,1,1,1,1\nE,2,2,1,1,1,X,X,1,1,1,1,1,1\nE,2,2,1,1,1,1,X,1,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,X,1,1,1,1\nE,1,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,X,1,1\nE,2,1,1,1,1,1,1,X,1,1,X,1,1\nE,2,1,1,1,2,1,1,1,1,1,1,X,1\nE,2,1,1,1,2,X,1,1,1,1,1,X,1\nE,X,1,1,1,1,X,1,1,2,1,1,1,1\nE,X,1,1,1,1,1,1,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,2,1,1,X,1,1\nE,2,1,1,1,1,1,1,2,1,1,X,1,1\nE,2,1,1,1,2,X,1,1,1,1,1,1,X\nE,2,1,1,1,2,1,1,1,1,1,1,1,X\nE,1,1,1,1,1,1,1,X,1,1,1,1,1\nE,1,1,1,1,1,X,1,X,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,1,1,X,1,1\nE,1,1,1,1,1,1,1,1,1,1,X,1,1\nE,1,1,1,1,1,X,1,2,1,1,1,1,1\nE,1,1,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,X,1\nE,2,1,1,1,1,1,1,1,2,1,1,X,1\nE,2,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,1,1,X,2,1,1,1,1,X,1\nE,2,1,1,1,X,X,1,1,1,1,1,1,2\nE,2,1,1,1,X,1,1,1,1,1,1,1,2\nE,X,1,1,1,1,1,1,1,1,1,1,2,2\nE,X,1,1,1,1,X,1,1,1,1,1,2,2\nE,2,1,1,1,X,X,1,1,1,1,1,2,1\nE,2,1,1,1,X,1,1,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,X\nE,2,1,1,1,1,1,1,1,2,1,1,1,X\nE,2,1,1,1,1,X,2,1,1,1,1,1,X\nE,2,1,1,1,1,1,2,1,1,1,1,1,X\nE,X,X,1,1,1,1,1,1,1,1,1,1,2\nE,X,X,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,2,X,1,1,X,1,1,1,1\nE,2,1,1,1,2,1,1,1,X,1,1,1,1\nE,2,X,1,1,X,1,1,1,1,1,1,1,1\nE,2,X,1,1,X,X,1,1,1,1,1,1,1\nE,X,X,1,1,1,1,1,1,1,1,1,2,1\nE,X,X,1,1,1,X,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,1,1,1,2,1,1\nE,X,1,1,1,1,X,1,1,1,1,2,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,1,2\nE,X,2,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,2,X,1,X,1,1,1,1,1\nE,2,1,1,1,2,1,1,X,1,1,1,1,1\nE,2,2,1,1,X,1,1,1,1,1,1,1,1\nE,2,2,1,1,X,X,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,X,1,1,1,1,1,1\nE,X,1,1,1,1,1,X,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,X,2\nE,2,X,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,2,1,1,1,1,1,X,1,1\nE,2,1,1,1,2,X,1,1,1,1,X,1,1\nE,X,2,1,1,1,1,1,1,1,1,1,2,1\nE,X,2,1,1,1,X,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,2,1,1,1,1,1\nE,2,1,1,1,2,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,2,X,1\nE,2,1,1,1,1,X,1,1,1,1,2,X,1\nE,2,1,1,1,1,1,2,1,X,1,1,1,1\nE,2,1,1,1,1,X,2,1,X,1,1,1,1\nE,1,1,1,1,2,1,1,1,1,1,1,1,1\nE,1,1,1,1,2,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,2,X\nE,2,X,1,1,1,1,1,1,1,1,1,2,X\nE,2,1,1,1,1,X,1,1,1,1,2,1,X\nE,2,1,1,1,1,1,1,1,1,1,2,1,X\nE,2,2,1,1,1,X,1,1,1,1,1,X,2\nE,2,2,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,1,X,1,X,2,1,1,1,1\nE,2,1,1,1,1,1,1,X,2,1,1,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,X,1\nE,2,1,1,1,1,X,X,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,1,1,1,X,2,X,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,2,1,X,1,1\nE,2,1,1,1,1,X,1,1,2,1,X,1,1\nE,2,1,1,1,1,2,1,1,2,1,X,1,1\nE,2,1,1,1,1,X,2,1,1,1,X,1,1\nE,2,1,1,1,1,1,2,1,1,1,X,1,1\nE,2,1,1,1,1,X,1,2,2,1,1,1,1\nE,2,1,1,1,1,2,1,2,2,1,1,1,1\nE,2,1,1,1,1,1,1,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,X\nE,2,1,1,1,1,X,X,1,1,1,1,1,X\nE,2,2,1,1,1,1,1,1,1,1,1,2,X\nE,2,2,1,1,1,X,1,1,1,1,1,2,X\nE,2,1,1,1,1,1,1,1,X,1,1,2,2\nE,2,1,1,1,1,X,1,1,X,1,1,2,2\nE,1,1,1,1,1,X,1,1,2,1,1,1,1\nE,1,1,1,1,1,1,1,1,2,1,1,1,1\nE,1,1,1,1,1,1,2,1,1,1,1,1,1\nE,1,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,X,1,1,2,1\nE,2,X,1,1,1,X,1,1,X,1,1,2,1\nE,2,1,1,1,1,X,1,1,X,1,2,1,1\nE,2,1,1,1,1,1,1,1,X,1,2,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,2,2\nE,2,1,1,1,1,X,1,X,1,1,1,2,2\nE,2,1,1,1,1,1,1,1,1,1,X,2,2\nE,2,1,1,1,1,X,1,1,1,1,X,2,2\nE,2,1,1,1,1,X,1,2,1,1,1,2,2\nE,2,1,1,1,1,1,1,2,1,1,1,2,2\nE,2,X,1,1,1,1,1,X,1,1,1,1,2\nE,2,X,1,1,1,X,1,X,1,1,1,1,2\nE,2,2,1,1,1,X,1,1,X,1,1,1,2\nE,2,2,1,1,1,1,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,X,1,2\nE,2,X,1,1,1,X,1,1,1,1,X,1,2\nE,2,X,1,1,1,1,1,X,1,1,1,2,1\nE,2,X,1,1,1,X,1,X,1,1,1,2,1\nE,2,X,1,1,1,1,1,2,1,1,1,1,2\nE,2,X,1,1,1,X,1,2,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,X,1,1,1,1\nE,2,1,1,1,1,1,X,1,X,1,1,1,1\nE,2,1,1,1,1,1,1,X,1,1,2,1,1\nE,2,1,1,1,1,X,1,X,1,1,2,1,1\nE,2,2,1,1,1,1,1,1,X,1,1,2,1\nE,2,2,1,1,1,X,1,1,X,1,1,2,1\nE,1,1,1,1,1,X,1,1,1,1,1,2,2\nE,1,1,1,1,1,1,1,1,1,1,1,2,2\nE,2,X,1,1,1,1,1,1,1,1,X,2,1\nE,2,X,1,1,1,X,1,1,1,1,X,2,1\nE,X,1,1,1,X,X,1,1,1,1,1,1,1\nE,X,1,1,1,X,1,1,1,1,1,1,1,1\nE,2,X,1,1,1,1,1,2,1,1,1,2,1\nE,2,X,1,1,1,X,1,2,1,1,1,2,1\nE,2,1,1,1,1,1,1,2,1,1,2,1,1\nE,2,1,1,1,1,X,1,2,1,1,2,1,1\nE,1,X,1,1,1,1,1,1,1,1,1,1,2\nE,1,X,1,1,1,X,1,1,1,1,1,1,2\nE,2,2,1,1,1,1,1,X,1,1,1,1,2\nE,2,2,1,1,1,X,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,X,X,1,1,1,1,1\nE,2,1,1,1,1,X,X,X,1,1,1,1,1\nE,1,X,1,1,1,X,1,1,1,1,1,2,1\nE,1,X,1,1,1,1,1,1,1,1,1,2,1\nE,2,2,1,1,1,1,1,1,1,1,X,1,2\nE,2,2,1,1,1,X,1,1,1,1,X,1,2\nE,2,2,1,1,1,1,1,X,1,1,1,2,1\nE,2,2,1,1,1,X,1,X,1,1,1,2,1\nE,2,2,1,1,1,1,1,2,1,1,1,1,2\nE,2,2,1,1,1,X,1,2,1,1,1,1,2\nE,1,1,1,1,1,1,1,1,1,1,2,1,1\nE,1,1,1,1,1,X,1,1,1,1,2,1,1\nE,2,1,1,1,1,X,X,1,1,1,X,1,1\nE,2,1,1,1,1,1,X,1,1,1,X,1,1\nE,2,1,1,1,2,2,1,1,2,1,1,1,1\nE,2,1,1,1,2,X,1,1,2,1,1,1,1\nE,2,1,1,1,2,1,1,1,2,1,1,1,1\nE,2,1,1,1,2,X,2,1,1,1,1,1,1\nE,2,1,1,1,2,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,X,2,1,1,1,1,1\nE,2,1,1,1,1,X,X,2,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,X,2,1\nE,2,2,1,1,1,X,1,1,1,1,X,2,1\nE,2,2,1,1,1,X,1,2,1,1,1,2,1\nE,2,2,1,1,1,1,1,2,1,1,1,2,1\nE,X,1,1,1,1,X,1,1,1,1,1,X,2\nE,X,1,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,X,X,1,1,1,1,1,X,1\nE,2,1,1,1,X,1,1,1,1,1,1,X,1\nE,1,2,1,1,1,X,1,1,1,1,1,1,2\nE,1,2,1,1,1,1,1,1,1,1,1,1,2\nE,1,1,1,1,1,1,X,1,1,1,1,1,1\nE,1,1,1,1,1,X,X,1,1,1,1,1,1\nE,1,2,1,1,1,1,1,1,1,1,1,2,1\nE,1,2,1,1,1,X,1,1,1,1,1,2,1\nE,X,X,1,1,1,1,1,1,1,1,1,X,1\nE,X,X,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,X,1,1,1,1,1,1,1,X\nE,2,1,1,1,X,X,1,1,1,1,1,1,X\nE,X,1,1,1,1,X,1,1,1,1,1,2,X\nE,X,1,1,1,1,1,1,1,1,1,1,2,X\nE,X,X,1,1,1,X,1,1,1,1,1,1,X\nE,X,X,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,2,X,1,1,1,1,1,2,2\nE,2,1,1,1,2,1,1,1,1,1,1,2,2\nE,2,1,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,1,1\nE,X,2,1,1,1,1,1,1,1,1,1,X,1\nE,X,2,1,1,1,X,1,1,1,1,1,X,1\nE,2,X,1,1,2,1,1,1,1,1,1,1,2\nE,2,X,1,1,2,X,1,1,1,1,1,1,2\nE,2,X,1,1,2,X,1,1,1,1,1,2,1\nE,2,X,1,1,2,1,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,1,1,1,2,1,1\nE,2,1,1,1,2,1,1,1,1,1,2,1,1\nE,X,2,1,1,1,1,1,1,1,1,1,1,X\nE,X,2,1,1,1,X,1,1,1,1,1,1,X\nE,X,1,1,1,1,1,1,1,X,1,1,1,2\nE,X,1,1,1,1,X,1,1,X,1,1,1,2\nE,2,1,1,1,X,X,1,1,X,1,1,1,1\nE,2,1,1,1,X,1,1,1,X,1,1,1,1\nE,2,X,1,1,1,1,1,1,1,1,1,X,X\nE,2,X,1,1,1,X,1,1,1,1,1,X,X\nE,X,1,1,1,1,X,1,1,X,1,1,2,1\nE,X,1,1,1,1,1,1,1,X,1,1,2,1\nE,2,2,1,1,2,X,1,1,1,1,1,1,2\nE,2,2,1,1,2,1,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,2,1,1,2,2\nE,2,1,1,1,1,X,1,1,2,1,1,2,2\nE,2,1,1,1,1,X,2,1,1,1,1,2,2\nE,2,1,1,1,1,1,2,1,1,1,1,2,2\nE,2,1,1,1,2,1,X,1,1,1,1,1,1\nE,2,1,1,1,2,X,X,1,1,1,1,1,1\nE,X,X,1,1,1,1,1,1,X,1,1,1,1\nE,X,X,1,1,1,X,1,1,X,1,1,1,1\nE,2,2,1,1,2,X,1,1,1,1,1,2,1\nE,2,2,1,1,2,1,1,1,1,1,1,2,1\nE,X,1,1,1,1,X,1,X,1,1,1,1,2\nE,X,1,1,1,1,1,1,X,1,1,1,1,2\nE,2,X,1,1,1,X,1,1,2,1,1,1,2\nE,2,X,1,1,1,1,1,1,2,1,1,1,2\nE,2,X,1,1,1,1,2,1,1,1,1,1,2\nE,2,X,1,1,1,X,2,1,1,1,1,1,2\nE,2,1,1,1,X,1,1,X,1,1,1,1,1\nE,2,1,1,1,X,X,1,X,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,1,2\nE,X,1,1,1,1,X,1,1,1,1,X,1,2\nE,X,1,1,1,1,1,1,X,1,1,1,2,1\nE,X,1,1,1,1,X,1,X,1,1,1,2,1\nE,X,1,1,1,1,1,1,2,1,1,1,1,2\nE,X,1,1,1,1,X,1,2,1,1,1,1,2\nE,2,X,1,1,1,2,1,1,2,1,1,2,1\nE,2,X,1,1,1,1,1,1,2,1,1,2,1\nE,2,X,1,1,1,X,1,1,2,1,1,2,1\nE,2,X,1,1,1,1,2,1,1,1,1,2,1\nE,2,X,1,1,1,X,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,1,1,1,1,1,X,X\nE,2,2,1,1,1,X,1,1,1,1,1,X,X\nE,2,1,1,1,1,X,1,1,X,1,1,X,2\nE,2,1,1,1,1,1,1,1,X,1,1,X,2\nE,2,1,1,1,X,X,1,1,1,1,X,1,1\nE,2,1,1,1,X,1,1,1,1,1,X,1,1\nE,2,1,1,1,1,1,1,1,2,1,2,1,1\nE,2,1,1,1,1,2,1,1,2,1,2,1,1\nE,2,1,1,1,1,X,1,1,2,1,2,1,1\nE,2,1,1,1,1,1,2,1,1,1,2,1,1\nE,2,1,1,1,1,X,2,1,1,1,2,1,1\nE,2,1,1,1,X,X,1,2,1,1,1,1,1\nE,2,1,1,1,X,1,1,2,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,2,1\nE,X,1,1,1,1,X,1,1,1,1,X,2,1\nE,X,1,1,1,1,X,1,2,1,1,1,2,1\nE,X,1,1,1,1,1,1,2,1,1,1,2,1\nE,X,X,1,1,1,X,1,X,1,1,1,1,1\nE,X,X,1,1,1,1,1,X,1,1,1,1,1\nE,X,2,1,1,1,1,1,1,X,1,1,1,1\nE,X,2,1,1,1,X,1,1,X,1,1,1,1\nE,X,X,1,1,1,X,1,1,1,1,X,1,1\nE,X,X,1,1,1,1,1,1,1,1,X,1,1\nE,X,X,1,1,1,1,1,2,1,1,1,1,1\nE,X,X,1,1,1,X,1,2,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,2,1,1,1,2\nE,2,2,1,1,1,1,1,1,2,1,1,1,2\nE,2,2,1,1,1,X,2,1,1,1,1,1,2\nE,2,2,1,1,1,1,2,1,1,1,1,1,2\nE,1,1,1,1,X,1,1,1,1,1,1,1,1\nE,1,1,1,1,X,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,X,1\nE,2,X,1,1,1,1,1,1,X,1,1,X,1\nE,2,1,1,1,1,1,1,X,1,1,1,X,2\nE,2,1,1,1,1,X,1,X,1,1,1,X,2\nE,2,1,1,1,1,1,X,1,2,1,1,1,1\nE,2,1,1,1,1,X,X,1,2,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,1,2,X\nE,2,1,1,1,1,X,1,1,X,1,1,2,X\nE,2,2,1,1,1,X,1,1,2,1,1,2,1\nE,2,2,1,1,1,1,1,1,2,1,1,2,1\nE,2,2,1,1,1,2,1,1,2,1,1,2,1\nE,2,2,1,1,1,X,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,1,1,X,X,2\nE,2,1,1,1,1,1,1,1,1,1,X,X,2\nE,2,1,1,1,1,X,1,2,1,1,1,X,2\nE,2,1,1,1,1,1,1,2,1,1,1,X,2\nE,X,2,1,1,1,1,1,X,1,1,1,1,1\nE,X,2,1,1,1,X,1,X,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,1,X\nE,2,X,1,1,1,1,1,1,X,1,1,1,X\nE,X,2,1,1,1,X,1,1,1,1,X,1,1\nE,X,2,1,1,1,1,1,1,1,1,X,1,1\nE,2,X,1,1,1,X,1,X,1,1,1,X,1\nE,2,X,1,1,1,1,1,X,1,1,1,X,1\nE,2,1,1,1,1,X,1,1,1,1,2,2,2\nE,2,1,1,1,1,1,1,1,1,1,2,2,2\nE,X,2,1,1,1,X,1,2,1,1,1,1,1\nE,X,2,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,2,X\nE,2,1,1,1,1,X,1,X,1,1,1,2,X\nE,2,2,1,1,1,X,1,1,X,1,1,X,1\nE,2,2,1,1,1,1,1,1,X,1,1,X,1\nE,1,1,1,1,1,1,1,1,1,1,1,X,2\nE,1,1,1,1,1,X,1,1,1,1,1,X,2\nE,2,X,1,1,1,1,1,1,1,1,X,X,1\nE,2,X,1,1,1,X,1,1,1,1,X,X,1\nE,2,X,1,1,1,X,1,2,1,1,1,X,1\nE,2,X,1,1,1,1,1,2,1,1,1,X,1\nE,2,X,1,1,1,1,1,1,1,1,2,1,2\nE,2,X,1,1,1,X,1,1,1,1,2,1,2\n",
+        "egnaRader": "Europatipset\nE,2,1,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,1,1,1,2,1\nE,2,X,1,1,1,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,1,X,1\nE,2,1,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,X,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,X,1,1\nE,2,1,1,1,1,X,1,1,1,1,X,1,1\nE,2,1,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,X,1,2,1,1,1,1,1\nE,1,1,1,1,1,1,1,1,1,1,1,1,1\nE,2,1,1,1,2,X,1,1,1,1,1,1,1\nE,2,1,1,1,2,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,1\nE,2,1,1,1,1,1,1,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,2,2\nE,2,1,1,1,1,1,1,1,1,1,1,2,2\nE,2,X,1,1,1,1,1,1,1,1,1,1,2\nE,2,X,1,1,1,X,1,1,1,1,1,1,2\nE,2,X,1,1,1,X,1,1,1,1,1,2,1\nE,2,X,1,1,1,1,1,1,1,1,1,2,1\nE,2,1,1,1,1,1,1,1,1,1,2,1,1\nE,2,1,1,1,1,X,1,1,1,1,2,1,1\nE,2,2,1,1,1,X,1,1,1,1,1,1,2\nE,2,2,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,1,1,1,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,1,2,1\nE,2,2,1,1,1,X,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,1,1,1,1,1,2\nE,X,1,1,1,1,X,1,1,1,1,1,1,2\nE,2,1,1,1,X,1,1,1,1,1,1,1,1\nE,2,1,1,1,X,X,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,1,1,1,1,2,1\nE,X,X,1,1,1,1,1,1,1,1,1,1,1\nE,X,X,1,1,1,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,1,X,1,1,1,1,1,X,2\nE,X,2,1,1,1,X,1,1,1,1,1,1,1\nE,X,2,1,1,1,1,1,1,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,1,1,1,X,1\nE,2,X,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,1,2,X\nE,2,1,1,1,1,X,1,1,1,1,1,2,X\nE,2,X,1,1,1,X,1,1,1,1,1,1,X\nE,2,X,1,1,1,1,1,1,1,1,1,1,X\nE,2,2,1,1,1,X,1,1,1,1,1,X,1\nE,2,2,1,1,1,1,1,1,1,1,1,X,1\nE,2,2,1,1,1,1,1,1,1,1,1,1,X\nE,2,2,1,1,1,X,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,1,1,X,1,1,1,2\nE,2,1,1,1,1,1,1,1,X,1,1,1,2\nE,2,1,1,1,1,X,1,1,X,1,1,2,1\nE,2,1,1,1,1,1,1,1,X,1,1,2,1\nE,2,X,1,1,1,X,1,1,X,1,1,1,1\nE,2,X,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,1,1,X,1,2\nE,2,1,1,1,1,X,1,1,1,1,X,1,2\nE,2,1,1,1,1,X,1,X,1,1,1,2,1\nE,2,1,1,1,1,1,1,X,1,1,1,2,1\nE,2,1,1,1,1,X,1,2,1,1,1,1,2\nE,2,1,1,1,1,1,1,2,1,1,1,1,2\nE,2,1,1,1,1,X,1,1,1,1,X,2,1\nE,2,1,1,1,1,1,1,1,1,1,X,2,1\nE,2,1,1,1,1,1,1,2,1,1,1,2,1\nE,2,1,1,1,1,X,1,2,1,1,1,2,1\nE,2,X,1,1,1,X,1,X,1,1,1,1,1\nE,2,X,1,1,1,1,1,X,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,X,1,1,1,1\nE,2,2,1,1,1,X,1,1,X,1,1,1,1\nE,1,1,1,1,1,X,1,1,1,1,1,1,2\nE,1,1,1,1,1,1,1,1,1,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,X,1,1\nE,2,X,1,1,1,X,1,1,1,1,X,1,1\nE,2,X,1,1,1,1,1,2,1,1,1,1,1\nE,2,X,1,1,1,X,1,2,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,1,1,1,2,1\nE,1,1,1,1,1,1,1,1,1,1,1,2,1\nE,1,X,1,1,1,X,1,1,1,1,1,1,1\nE,1,X,1,1,1,1,1,1,1,1,1,1,1\nE,2,2,1,1,1,X,1,X,1,1,1,1,1\nE,2,2,1,1,1,1,1,X,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,X,1,1\nE,2,2,1,1,1,X,1,1,1,1,X,1,1\nE,2,2,1,1,1,X,1,2,1,1,1,1,1\nE,2,2,1,1,1,1,1,2,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,1,X,1\nE,X,1,1,1,1,1,1,1,1,1,1,X,1\nE,1,2,1,1,1,X,1,1,1,1,1,1,1\nE,1,2,1,1,1,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,1,1,X\nE,X,1,1,1,1,X,1,1,1,1,1,1,X\nE,2,1,1,1,2,X,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,1,1,1,1,2,1\nE,2,X,1,1,2,X,1,1,1,1,1,1,1\nE,2,X,1,1,2,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,1,1,1,X,X\nE,2,1,1,1,1,1,1,1,1,1,1,X,X\nE,X,1,1,1,1,X,1,1,X,1,1,1,1\nE,X,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,2\nE,2,1,1,1,1,1,1,1,2,1,1,1,2\nE,2,1,1,1,1,1,2,1,1,1,1,1,2\nE,2,1,1,1,1,X,2,1,1,1,1,1,2\nE,2,2,1,1,2,1,1,1,1,1,1,1,1\nE,2,2,1,1,2,X,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,2,1,1,2,1\nE,2,1,1,1,1,1,1,1,2,1,1,2,1\nE,2,1,1,1,1,X,2,1,1,1,1,2,1\nE,2,1,1,1,1,1,2,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,X,1,1,1,1,1\nE,X,1,1,1,1,X,1,X,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,2,1,1,1,1\nE,2,X,1,1,1,X,1,1,2,1,1,1,1\nE,2,X,1,1,1,X,2,1,1,1,1,1,1\nE,2,X,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,X,1,1,1,1,X,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,1,1\nE,X,1,1,1,1,X,1,2,1,1,1,1,1\nE,X,1,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,X,1,1,X,1,1,X,1\nE,2,1,1,1,1,1,1,1,X,1,1,X,1\nE,2,1,1,1,1,X,1,1,X,1,1,1,X\nE,2,1,1,1,1,1,1,1,X,1,1,1,X\nE,2,2,1,1,1,1,1,1,2,1,1,1,1\nE,2,2,1,1,1,X,1,1,2,1,1,1,1\nE,2,2,1,1,1,X,2,1,1,1,1,1,1\nE,2,2,1,1,1,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,1,X,1\nE,2,1,1,1,1,1,1,X,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,X,X,1\nE,2,1,1,1,1,X,1,1,1,1,X,X,1\nE,2,X,1,1,1,1,1,1,1,1,1,2,2\nE,2,X,1,1,1,X,1,1,1,1,1,2,2\nE,2,1,1,1,1,X,1,2,1,1,1,X,1\nE,2,1,1,1,1,1,1,2,1,1,1,X,1\nE,2,1,1,1,1,1,1,1,1,1,2,1,2\nE,2,1,1,1,1,X,1,1,1,1,2,1,2\nE,2,1,1,1,1,1,1,X,1,1,1,1,X\nE,2,1,1,1,1,X,1,X,1,1,1,1,X\nE,2,1,1,1,1,1,1,1,1,1,2,2,1\nE,2,1,1,1,1,X,1,1,1,1,2,2,1\nE,2,1,1,1,1,X,1,1,1,1,X,1,X\nE,2,1,1,1,1,1,1,1,1,1,X,1,X\nE,2,1,1,1,1,1,1,2,1,1,1,1,X\nE,2,1,1,1,1,X,1,2,1,1,1,1,X\nE,1,1,1,1,1,X,1,1,1,1,1,X,1\nE,1,1,1,1,1,1,1,1,1,1,1,X,1\nE,2,X,1,1,1,1,1,1,1,1,2,1,1\nE,2,X,1,1,1,X,1,1,1,1,2,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,1,1,1,1,2\nE,2,2,1,1,1,X,1,1,1,1,1,2,2\nE,2,2,1,1,1,1,1,1,1,1,1,2,2\nE,1,1,1,1,1,X,1,1,1,1,1,1,X\nE,1,1,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,1,X,X,1,1,1,1,2,1\nE,2,1,1,1,1,1,X,1,1,1,1,2,1\nE,2,X,1,1,1,X,X,1,1,1,1,1,1\nE,2,X,1,1,1,1,X,1,1,1,1,1,1\nE,2,2,1,1,1,X,1,1,1,1,2,1,1\nE,2,2,1,1,1,1,1,1,1,1,2,1,1\nE,X,1,1,1,2,X,1,1,1,1,1,1,1\nE,X,1,1,1,2,1,1,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,X,X,1,1,1,1\nE,2,1,1,1,1,1,1,X,X,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,X,1,1\nE,2,1,1,1,1,X,1,1,X,1,X,1,1\nE,2,1,1,1,1,X,1,2,X,1,1,1,1\nE,2,1,1,1,1,1,1,2,X,1,1,1,1\nE,2,2,1,1,1,1,X,1,1,1,1,1,1\nE,2,2,1,1,1,X,X,1,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,X,1,1,1,1\nE,1,1,1,1,1,1,1,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,X,1,1\nE,2,1,1,1,1,1,1,X,1,1,X,1,1\nE,2,1,1,1,2,1,1,1,1,1,1,X,1\nE,2,1,1,1,2,X,1,1,1,1,1,X,1\nE,X,1,1,1,1,X,1,1,2,1,1,1,1\nE,X,1,1,1,1,1,1,1,2,1,1,1,1\nE,X,1,1,1,1,1,2,1,1,1,1,1,1\nE,X,1,1,1,1,X,2,1,1,1,1,1,1\nE,2,1,1,1,1,X,1,2,1,1,X,1,1\nE,2,1,1,1,1,1,1,2,1,1,X,1,1\nE,2,1,1,1,2,1,1,1,1,1,1,1,X\nE,2,1,1,1,2,X,1,1,1,1,1,1,X\nE,1,1,1,1,1,X,1,X,1,1,1,1,1\nE,1,1,1,1,1,1,1,X,1,1,1,1,1\nE,1,1,1,1,1,X,1,1,1,1,X,1,1\nE,1,1,1,1,1,1,1,1,1,1,X,1,1\nE,1,1,1,1,1,1,1,2,1,1,1,1,1\nE,1,1,1,1,1,X,1,2,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,2,1,1,X,1\nE,2,1,1,1,1,X,1,1,2,1,1,X,1\nE,2,1,1,1,1,1,2,1,1,1,1,X,1\nE,2,1,1,1,1,X,2,1,1,1,1,X,1\nE,2,1,1,1,X,X,1,1,1,1,1,1,2\nE,2,1,1,1,X,1,1,1,1,1,1,1,2\nE,X,1,1,1,1,1,1,1,1,1,1,2,2\nE,X,1,1,1,1,X,1,1,1,1,1,2,2\nE,2,1,1,1,X,X,1,1,1,1,1,2,1\nE,2,1,1,1,X,1,1,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,2,1,1,1,X\nE,2,1,1,1,1,1,1,1,2,1,1,1,X\nE,2,1,1,1,1,X,2,1,1,1,1,1,X\nE,2,1,1,1,1,1,2,1,1,1,1,1,X\nE,X,X,1,1,1,X,1,1,1,1,1,1,2\nE,X,X,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,1,X,1,1,1,1\nE,2,1,1,1,2,X,1,1,X,1,1,1,1\nE,2,X,1,1,X,X,1,1,1,1,1,1,1\nE,2,X,1,1,X,1,1,1,1,1,1,1,1\nE,X,X,1,1,1,X,1,1,1,1,1,2,1\nE,X,X,1,1,1,1,1,1,1,1,1,2,1\nE,X,1,1,1,1,X,1,1,1,1,2,1,1\nE,X,1,1,1,1,1,1,1,1,1,2,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,1,2\nE,X,2,1,1,1,1,1,1,1,1,1,1,2\nE,2,1,1,1,2,1,1,X,1,1,1,1,1\nE,2,1,1,1,2,X,1,X,1,1,1,1,1\nE,2,2,1,1,X,X,1,1,1,1,1,1,1\nE,2,2,1,1,X,1,1,1,1,1,1,1,1\nE,X,1,1,1,1,X,X,1,1,1,1,1,1\nE,X,1,1,1,1,1,X,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,X,2\nE,2,X,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,2,X,1,1,1,1,X,1,1\nE,2,1,1,1,2,1,1,1,1,1,X,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,2,1\nE,X,2,1,1,1,1,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,2,1,1,1,1,1\nE,2,1,1,1,2,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,1,1,2,X,1\nE,2,1,1,1,1,X,1,1,1,1,2,X,1\nE,2,1,1,1,1,X,2,1,X,1,1,1,1\nE,2,1,1,1,1,1,2,1,X,1,1,1,1\nE,1,1,1,1,2,1,1,1,1,1,1,1,1\nE,1,1,1,1,2,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,2,X\nE,2,X,1,1,1,1,1,1,1,1,1,2,X\nE,2,1,1,1,1,X,1,1,1,1,2,1,X\nE,2,1,1,1,1,1,1,1,1,1,2,1,X\nE,2,2,1,1,1,1,1,1,1,1,1,X,2\nE,2,2,1,1,1,X,1,1,1,1,1,X,2\nE,2,1,1,1,1,1,1,X,2,1,1,1,1\nE,2,1,1,1,1,X,1,X,2,1,1,1,1\nE,2,1,1,1,1,X,X,1,1,1,1,X,1\nE,2,1,1,1,1,1,X,1,1,1,1,X,1\nE,2,1,1,1,1,1,2,X,1,1,1,1,1\nE,2,1,1,1,1,X,2,X,1,1,1,1,1\nE,2,1,1,1,1,1,1,1,2,1,X,1,1\nE,2,1,1,1,1,X,1,1,2,1,X,1,1\nE,2,1,1,1,1,2,1,1,2,1,X,1,1\nE,2,1,1,1,1,1,2,1,1,1,X,1,1\nE,2,1,1,1,1,X,2,1,1,1,X,1,1\nE,2,1,1,1,1,X,1,2,2,1,1,1,1\nE,2,1,1,1,1,1,1,2,2,1,1,1,1\nE,2,1,1,1,1,X,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,2,2,1,1,1,1,1\nE,2,1,1,1,1,1,X,1,1,1,1,1,X\nE,2,1,1,1,1,X,X,1,1,1,1,1,X\nE,2,2,1,1,1,1,1,1,1,1,1,2,X\nE,2,2,1,1,1,X,1,1,1,1,1,2,X\nE,2,1,1,1,1,1,1,1,X,1,1,2,2\nE,2,1,1,1,1,X,1,1,X,1,1,2,2\nE,1,1,1,1,1,X,1,1,2,1,1,1,1\nE,1,1,1,1,1,1,1,1,2,1,1,1,1\nE,1,1,1,1,1,X,2,1,1,1,1,1,1\nE,1,1,1,1,1,1,2,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,X,1,1,2,1\nE,2,X,1,1,1,X,1,1,X,1,1,2,1\nE,2,1,1,1,1,1,1,1,X,1,2,1,1\nE,2,1,1,1,1,X,1,1,X,1,2,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,2,2\nE,2,1,1,1,1,X,1,X,1,1,1,2,2\nE,2,1,1,1,1,1,1,1,1,1,X,2,2\nE,2,1,1,1,1,X,1,1,1,1,X,2,2\nE,2,1,1,1,1,1,1,2,1,1,1,2,2\nE,2,1,1,1,1,X,1,2,1,1,1,2,2\nE,2,X,1,1,1,1,1,X,1,1,1,1,2\nE,2,X,1,1,1,X,1,X,1,1,1,1,2\nE,2,2,1,1,1,X,1,1,X,1,1,1,2\nE,2,2,1,1,1,1,1,1,X,1,1,1,2\nE,2,X,1,1,1,1,1,1,1,1,X,1,2\nE,2,X,1,1,1,X,1,1,1,1,X,1,2\nE,2,X,1,1,1,X,1,X,1,1,1,2,1\nE,2,X,1,1,1,1,1,X,1,1,1,2,1\nE,2,X,1,1,1,X,1,2,1,1,1,1,2\nE,2,X,1,1,1,1,1,2,1,1,1,1,2\nE,2,1,1,1,1,X,X,1,X,1,1,1,1\nE,2,1,1,1,1,1,X,1,X,1,1,1,1\nE,2,1,1,1,1,X,1,X,1,1,2,1,1\nE,2,1,1,1,1,1,1,X,1,1,2,1,1\nE,2,2,1,1,1,X,1,1,X,1,1,2,1\nE,2,2,1,1,1,1,1,1,X,1,1,2,1\nE,1,1,1,1,1,1,1,1,1,1,1,2,2\nE,1,1,1,1,1,X,1,1,1,1,1,2,2\nE,2,X,1,1,1,X,1,1,1,1,X,2,1\nE,2,X,1,1,1,1,1,1,1,1,X,2,1\nE,X,1,1,1,X,1,1,1,1,1,1,1,1\nE,X,1,1,1,X,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,1,1,2,1,1,1,2,1\nE,2,X,1,1,1,X,1,2,1,1,1,2,1\nE,2,1,1,1,1,X,1,2,1,1,2,1,1\nE,2,1,1,1,1,1,1,2,1,1,2,1,1\nE,1,X,1,1,1,1,1,1,1,1,1,1,2\nE,1,X,1,1,1,X,1,1,1,1,1,1,2\nE,2,2,1,1,1,1,1,X,1,1,1,1,2\nE,2,2,1,1,1,X,1,X,1,1,1,1,2\nE,2,1,1,1,1,1,X,X,1,1,1,1,1\nE,2,1,1,1,1,X,X,X,1,1,1,1,1\nE,1,X,1,1,1,1,1,1,1,1,1,2,1\nE,1,X,1,1,1,X,1,1,1,1,1,2,1\nE,2,2,1,1,1,X,1,1,1,1,X,1,2\nE,2,2,1,1,1,1,1,1,1,1,X,1,2\nE,2,2,1,1,1,1,1,X,1,1,1,2,1\nE,2,2,1,1,1,X,1,X,1,1,1,2,1\nE,2,2,1,1,1,X,1,2,1,1,1,1,2\nE,2,2,1,1,1,1,1,2,1,1,1,1,2\nE,1,1,1,1,1,1,1,1,1,1,2,1,1\nE,1,1,1,1,1,X,1,1,1,1,2,1,1\nE,2,1,1,1,1,X,X,1,1,1,X,1,1\nE,2,1,1,1,1,1,X,1,1,1,X,1,1\nE,2,1,1,1,2,X,1,1,2,1,1,1,1\nE,2,1,1,1,2,1,1,1,2,1,1,1,1\nE,2,1,1,1,2,X,2,1,1,1,1,1,1\nE,2,1,1,1,2,1,2,1,1,1,1,1,1\nE,2,1,1,1,1,1,X,2,1,1,1,1,1\nE,2,1,1,1,1,X,X,2,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,1,1,X,2,1\nE,2,2,1,1,1,2,1,1,1,1,X,2,1\nE,2,2,1,1,1,X,1,1,1,1,X,2,1\nE,2,2,1,1,1,X,1,2,1,1,1,2,1\nE,2,2,1,1,1,1,1,2,1,1,1,2,1\nE,X,1,1,1,1,X,1,1,1,1,1,X,2\nE,X,1,1,1,1,1,1,1,1,1,1,X,2\nE,2,1,1,1,X,1,1,1,1,1,1,X,1\nE,2,1,1,1,X,X,1,1,1,1,1,X,1\nE,1,2,1,1,1,X,1,1,1,1,1,1,2\nE,1,2,1,1,1,1,1,1,1,1,1,1,2\nE,1,1,1,1,1,1,X,1,1,1,1,1,1\nE,1,1,1,1,1,X,X,1,1,1,1,1,1\nE,1,2,1,1,1,X,1,1,1,1,1,2,1\nE,1,2,1,1,1,1,1,1,1,1,1,2,1\nE,X,X,1,1,1,1,1,1,1,1,1,X,1\nE,X,X,1,1,1,X,1,1,1,1,1,X,1\nE,2,1,1,1,X,X,1,1,1,1,1,1,X\nE,2,1,1,1,X,1,1,1,1,1,1,1,X\nE,X,1,1,1,1,X,1,1,1,1,1,2,X\nE,X,1,1,1,1,1,1,1,1,1,1,2,X\nE,X,X,1,1,1,X,1,1,1,1,1,1,X\nE,X,X,1,1,1,1,1,1,1,1,1,1,X\nE,2,1,1,1,2,1,1,1,1,1,1,2,2\nE,2,1,1,1,2,X,1,1,1,1,1,2,2\nE,2,1,1,1,1,1,2,1,2,1,1,1,1\nE,2,1,1,1,1,X,2,1,2,1,1,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,X,1\nE,X,2,1,1,1,1,1,1,1,1,1,X,1\nE,2,X,1,1,2,X,1,1,1,1,1,1,2\nE,2,X,1,1,2,1,1,1,1,1,1,1,2\nE,2,X,1,1,2,1,1,1,1,1,1,2,1\nE,2,X,1,1,2,X,1,1,1,1,1,2,1\nE,2,1,1,1,2,X,1,1,1,1,2,1,1\nE,2,1,1,1,2,2,1,1,1,1,2,1,1\nE,2,1,1,1,2,1,1,1,1,1,2,1,1\nE,X,2,1,1,1,X,1,1,1,1,1,1,X\nE,X,2,1,1,1,1,1,1,1,1,1,1,X\nE,X,1,1,1,1,1,1,1,X,1,1,1,2\nE,X,1,1,1,1,X,1,1,X,1,1,1,2\nE,2,1,1,1,X,X,1,1,X,1,1,1,1\nE,2,1,1,1,X,1,1,1,X,1,1,1,1\nE,2,X,1,1,1,X,1,1,1,1,1,X,X\nE,2,X,1,1,1,1,1,1,1,1,1,X,X\nE,X,1,1,1,1,X,1,1,X,1,1,2,1\nE,X,1,1,1,1,1,1,1,X,1,1,2,1\nE,2,2,1,1,2,1,1,1,1,1,1,1,2\nE,2,2,1,1,2,X,1,1,1,1,1,1,2\nE,2,1,1,1,1,1,1,1,2,1,1,2,2\nE,2,1,1,1,1,X,1,1,2,1,1,2,2\nE,2,1,1,1,1,1,2,1,1,1,1,2,2\nE,2,1,1,1,1,X,2,1,1,1,1,2,2\nE,2,1,1,1,2,X,X,1,1,1,1,1,1\nE,2,1,1,1,2,1,X,1,1,1,1,1,1\nE,X,X,1,1,1,1,1,1,X,1,1,1,1\nE,X,X,1,1,1,X,1,1,X,1,1,1,1\nE,2,2,1,1,2,X,1,1,1,1,1,2,1\nE,2,2,1,1,2,1,1,1,1,1,1,2,1\nE,X,1,1,1,1,1,1,X,1,1,1,1,2\nE,X,1,1,1,1,X,1,X,1,1,1,1,2\nE,2,X,1,1,1,X,1,1,2,1,1,1,2\nE,2,X,1,1,1,1,1,1,2,1,1,1,2\nE,2,X,1,1,1,1,2,1,1,1,1,1,2\nE,2,X,1,1,1,X,2,1,1,1,1,1,2\nE,2,1,1,1,X,X,1,X,1,1,1,1,1\nE,2,1,1,1,X,1,1,X,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,1,2\nE,X,1,1,1,1,X,1,1,1,1,X,1,2\nE,X,1,1,1,1,1,1,X,1,1,1,2,1\nE,X,1,1,1,1,X,1,X,1,1,1,2,1\nE,X,1,1,1,1,X,1,2,1,1,1,1,2\nE,X,1,1,1,1,1,1,2,1,1,1,1,2\nE,2,X,1,1,1,X,1,1,2,1,1,2,1\nE,2,X,1,1,1,1,1,1,2,1,1,2,1\nE,2,X,1,1,1,1,2,1,1,1,1,2,1\nE,2,X,1,1,1,X,2,1,1,1,1,2,1\nE,2,2,1,1,1,X,1,1,1,1,1,X,X\nE,2,2,1,1,1,1,1,1,1,1,1,X,X\nE,2,1,1,1,1,1,1,1,X,1,1,X,2\nE,2,1,1,1,1,X,1,1,X,1,1,X,2\nE,2,1,1,1,X,X,1,1,1,1,X,1,1\nE,2,1,1,1,X,1,1,1,1,1,X,1,1\nE,2,1,1,1,1,1,1,1,2,1,2,1,1\nE,2,1,1,1,1,X,1,1,2,1,2,1,1\nE,2,1,1,1,1,2,1,1,2,1,2,1,1\nE,2,1,1,1,1,1,2,1,1,1,2,1,1\nE,2,1,1,1,1,X,2,1,1,1,2,1,1\nE,2,1,1,1,X,X,1,2,1,1,1,1,1\nE,2,1,1,1,X,1,1,2,1,1,1,1,1\nE,X,1,1,1,1,1,1,1,1,1,X,2,1\nE,X,1,1,1,1,X,1,1,1,1,X,2,1\nE,X,1,1,1,1,1,1,2,1,1,1,2,1\nE,X,1,1,1,1,X,1,2,1,1,1,2,1\nE,X,X,1,1,1,X,1,X,1,1,1,1,1\nE,X,X,1,1,1,1,1,X,1,1,1,1,1\nE,X,2,1,1,1,1,1,1,X,1,1,1,1\nE,X,2,1,1,1,X,1,1,X,1,1,1,1\nE,X,X,1,1,1,1,1,1,1,1,X,1,1\nE,X,X,1,1,1,X,1,1,1,1,X,1,1\nE,X,X,1,1,1,X,1,2,1,1,1,1,1\nE,X,X,1,1,1,1,1,2,1,1,1,1,1\nE,2,2,1,1,1,1,1,1,2,1,1,1,2\nE,2,2,1,1,1,X,1,1,2,1,1,1,2\nE,2,2,1,1,1,X,2,1,1,1,1,1,2\nE,2,2,1,1,1,1,2,1,1,1,1,1,2\nE,1,1,1,1,X,1,1,1,1,1,1,1,1\nE,1,1,1,1,X,X,1,1,1,1,1,1,1\nE,2,X,1,1,1,X,1,1,X,1,1,X,1\nE,2,X,1,1,1,1,1,1,X,1,1,X,1\nE,2,1,1,1,1,X,1,X,1,1,1,X,2\nE,2,1,1,1,1,1,1,X,1,1,1,X,2\nE,2,1,1,1,1,1,X,1,2,1,1,1,1\nE,2,1,1,1,1,X,X,1,2,1,1,1,1\nE,2,1,1,1,1,1,1,1,X,1,1,2,X\nE,2,1,1,1,1,X,1,1,X,1,1,2,X\nE,2,2,1,1,1,2,1,1,2,1,1,2,1\nE,2,2,1,1,1,X,1,1,2,1,1,2,1\nE,2,2,1,1,1,1,1,1,2,1,1,2,1\nE,2,2,1,1,1,X,2,1,1,1,1,2,1\nE,2,2,1,1,1,1,2,1,1,1,1,2,1\nE,2,1,1,1,1,X,1,1,1,1,X,X,2\nE,2,1,1,1,1,1,1,1,1,1,X,X,2\nE,2,1,1,1,1,X,1,2,1,1,1,X,2\nE,2,1,1,1,1,1,1,2,1,1,1,X,2\nE,X,2,1,1,1,1,1,X,1,1,1,1,1\nE,X,2,1,1,1,X,1,X,1,1,1,1,1\nE,2,X,1,1,1,1,1,1,X,1,1,1,X\nE,2,X,1,1,1,X,1,1,X,1,1,1,X\nE,X,2,1,1,1,X,1,1,1,1,X,1,1\nE,X,2,1,1,1,1,1,1,1,1,X,1,1\nE,2,X,1,1,1,1,1,X,1,1,1,X,1\nE,2,X,1,1,1,X,1,X,1,1,1,X,1\nE,2,1,1,1,1,X,1,1,1,1,2,2,2\nE,2,1,1,1,1,1,1,1,1,1,2,2,2\nE,X,2,1,1,1,X,1,2,1,1,1,1,1\nE,X,2,1,1,1,1,1,2,1,1,1,1,1\nE,2,1,1,1,1,1,1,X,1,1,1,2,X\nE,2,1,1,1,1,X,1,X,1,1,1,2,X\nE,2,2,1,1,1,1,1,1,X,1,1,X,1\nE,2,2,1,1,1,X,1,1,X,1,1,X,1\nE,1,1,1,1,1,1,1,1,1,1,1,X,2\nE,1,1,1,1,1,X,1,1,1,1,1,X,2\nE,2,X,1,1,1,1,1,1,1,1,X,X,1\nE,2,X,1,1,1,X,1,1,1,1,X,X,1\nE,2,X,1,1,1,1,1,2,1,1,1,X,1\nE,2,X,1,1,1,X,1,2,1,1,1,X,1\nE,2,X,1,1,1,1,1,1,1,1,2,1,2\nE,2,X,1,1,1,X,1,1,1,1,2,1,2\n",
         "system": "A"
       },
       "result": null
@@ -16811,10 +16793,10 @@
         ]
       },
       "latest": {
-        "at": "2026-10-30T15:29:03.488Z",
+        "at": "2026-10-31T08:50:17.639Z",
         "rows": 500,
         "cost": 500,
-        "hitAll": 0.005968639398247287,
+        "hitAll": 0.005972445784235576,
         "rules": {
           "free": true,
           "rowsTarget": 500,
@@ -16860,9 +16842,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              3,
-              3.6,
-              2.43
+              2.95,
+              3.5,
+              2.5
             ],
             "sharpOdds": [
               3,
@@ -16915,7 +16897,7 @@
             "marketSource": "Pinnacle",
             "svsOdds": [
               2.25,
-              3.4,
+              3.45,
               3.45
             ],
             "sharpOdds": [
@@ -16924,9 +16906,9 @@
               3.34
             ],
             "folk": [
-              0.45,
+              0.46,
               0.29,
-              0.26
+              0.25
             ],
             "lineupStatus": "none",
             "context": {
@@ -16969,7 +16951,7 @@
             "marketSource": "Pinnacle",
             "svsOdds": [
               1.47,
-              4.5,
+              4.7,
               7.5
             ],
             "sharpOdds": [
@@ -16978,8 +16960,8 @@
               7.03
             ],
             "folk": [
-              0.87,
-              0.08,
+              0.86,
+              0.09,
               0.05
             ],
             "lineupStatus": "none",
@@ -17022,9 +17004,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              3.3,
-              3.15,
-              2.38
+              3.35,
+              3.25,
+              2.4
             ],
             "sharpOdds": [
               3.36,
@@ -17032,9 +17014,9 @@
               2.44
             ],
             "folk": [
+              0.29,
               0.31,
-              0.3,
-              0.39
+              0.4
             ],
             "lineupStatus": "none",
             "context": {
@@ -17086,8 +17068,8 @@
               3.07
             ],
             "folk": [
-              0.53,
-              0.28,
+              0.55,
+              0.26,
               0.19
             ],
             "lineupStatus": "none",
@@ -17151,8 +17133,8 @@
                 "nextTournament": "LaLiga"
               },
               "away": {
-                "missing": 5,
-                "missingValueShare": 0.293,
+                "missing": 4,
+                "missingValueShare": 0.205,
                 "restDays": 6.8,
                 "daysToNext": 3.1,
                 "nextTournament": "Champions League"
@@ -17186,8 +17168,8 @@
             ],
             "sharpOdds": null,
             "folk": [
-              0.43,
-              0.31,
+              0.44,
+              0.3,
               0.26
             ],
             "lineupStatus": "none",
@@ -17240,16 +17222,16 @@
               3.2
             ],
             "folk": [
-              0.54,
-              0.27,
-              0.19
+              0.51,
+              0.28,
+              0.21
             ],
             "lineupStatus": "none",
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 3,
-                "missingValueShare": 0.188,
+                "missing": 2,
+                "missingValueShare": 0.122,
                 "restDays": 5,
                 "daysToNext": 6.8,
                 "nextTournament": "LaLiga"
@@ -17294,9 +17276,9 @@
               4.17
             ],
             "folk": [
-              0.6,
+              0.58,
               0.25,
-              0.15
+              0.17
             ],
             "lineupStatus": null,
             "context": {
@@ -17348,8 +17330,8 @@
               7.35
             ],
             "folk": [
-              0.8,
-              0.12,
+              0.81,
+              0.11,
               0.08
             ],
             "lineupStatus": null,
@@ -17363,8 +17345,8 @@
                 "nextTournament": "Allsvenskan"
               },
               "away": {
-                "missing": 4,
-                "missingValueShare": 0.273,
+                "missing": 5,
+                "missingValueShare": 0.309,
                 "restDays": 2.9,
                 "daysToNext": 6,
                 "nextTournament": "Allsvenskan"
@@ -17402,8 +17384,8 @@
               3.47
             ],
             "folk": [
-              0.62,
-              0.21,
+              0.63,
+              0.2,
               0.17
             ],
             "lineupStatus": null,
@@ -17457,8 +17439,8 @@
             ],
             "folk": [
               0.47,
-              0.28,
-              0.25
+              0.27,
+              0.26
             ],
             "lineupStatus": "none",
             "context": {
@@ -17500,9 +17482,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.6,
-              3.75,
-              2.7
+              2.7,
+              3.7,
+              2.63
             ],
             "sharpOdds": [
               2.66,
@@ -17510,16 +17492,16 @@
               2.57
             ],
             "folk": [
-              0.36,
+              0.37,
               0.29,
-              0.35
+              0.34
             ],
             "lineupStatus": "none",
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 6,
-                "missingValueShare": 0.199,
+                "missing": 5,
+                "missingValueShare": 0.184,
                 "restDays": 4.8,
                 "daysToNext": 7.1,
                 "nextTournament": "Bundesliga"
@@ -18312,10 +18294,10 @@
         ]
       },
       "latest": {
-        "at": "2026-10-30T15:28:47.974Z",
+        "at": "2026-10-31T08:50:12.208Z",
         "rows": 500,
         "cost": 500,
-        "hitAll": 0.005995473212397131,
+        "hitAll": 0.005705877163718614,
         "rules": {
           "free": true,
           "rowsTarget": 500,
@@ -18361,9 +18343,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              1.96,
-              3.9,
-              3.95
+              2.02,
+              3.8,
+              3.75
             ],
             "sharpOdds": [
               1.97,
@@ -18371,9 +18353,9 @@
               3.79
             ],
             "folk": [
-              0.67,
+              0.69,
               0.19,
-              0.14
+              0.12
             ],
             "lineupStatus": "pending",
             "context": {
@@ -18386,8 +18368,8 @@
                 "nextTournament": "Champions League"
               },
               "away": {
-                "missing": 2,
-                "missingValueShare": 0.155,
+                "missing": 1,
+                "missingValueShare": 0.072,
                 "restDays": 3,
                 "daysToNext": 6.8,
                 "nextTournament": "Premier League"
@@ -18422,9 +18404,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              1.57,
-              4.6,
-              6
+              1.65,
+              4.4,
+              5.3
             ],
             "sharpOdds": [
               1.58,
@@ -18440,8 +18422,8 @@
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 9,
-                "missingValueShare": 0.387,
+                "missing": 7,
+                "missingValueShare": 0.331,
                 "restDays": 7,
                 "daysToNext": 6.8,
                 "nextTournament": "Premier League"
@@ -18476,9 +18458,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              1.63,
-              4.8,
-              5
+              1.67,
+              4.6,
+              4.8
             ],
             "sharpOdds": [
               1.64,
@@ -18486,16 +18468,16 @@
               4.75
             ],
             "folk": [
-              0.59,
-              0.23,
+              0.6,
+              0.22,
               0.18
             ],
             "lineupStatus": "pending",
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 2,
-                "missingValueShare": 0.134,
+                "missing": 1,
+                "missingValueShare": 0.087,
                 "restDays": 2.8,
                 "daysToNext": 4.2,
                 "nextTournament": "Champions League"
@@ -18533,8 +18515,8 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.14,
-              3.6,
+              2.2,
+              3.45,
               3.6
             ],
             "sharpOdds": [
@@ -18558,8 +18540,8 @@
                 "nextTournament": "Europa League"
               },
               "away": {
-                "missing": 3,
-                "missingValueShare": 0.13,
+                "missing": 4,
+                "missingValueShare": 0.221,
                 "restDays": 5.9,
                 "daysToNext": 6.9,
                 "nextTournament": "Premier League"
@@ -18597,9 +18579,9 @@
               2.36
             ],
             "folk": [
+              0.3,
               0.32,
-              0.32,
-              0.36
+              0.38
             ],
             "lineupStatus": "pending",
             "context": {
@@ -18641,9 +18623,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.08,
-              3.75,
-              3.6
+              2.17,
+              3.7,
+              3.45
             ],
             "sharpOdds": [
               2.1,
@@ -18651,23 +18633,23 @@
               3.42
             ],
             "folk": [
-              0.56,
+              0.55,
               0.24,
-              0.2
+              0.21
             ],
             "lineupStatus": "pending",
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 4,
-                "missingValueShare": 0.178,
+                "missing": 5,
+                "missingValueShare": 0.198,
                 "restDays": 2.8,
                 "daysToNext": 8,
                 "nextTournament": "Premier League"
               },
               "away": {
-                "missing": 3,
-                "missingValueShare": 0.199,
+                "missing": 4,
+                "missingValueShare": 0.225,
                 "restDays": 7.8,
                 "daysToNext": 7.1,
                 "nextTournament": "Premier League"
@@ -18695,9 +18677,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.7,
-              3.35,
-              2.8
+              2.9,
+              3.4,
+              2.5
             ],
             "sharpOdds": [
               2.66,
@@ -18705,8 +18687,8 @@
               2.74
             ],
             "folk": [
-              0.42,
-              0.31,
+              0.41,
+              0.32,
               0.27
             ],
             "lineupStatus": "pending",
@@ -18749,9 +18731,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.88,
+              3,
               3.6,
-              2.45
+              2.38
             ],
             "sharpOdds": [
               2.9,
@@ -18759,8 +18741,8 @@
               2.37
             ],
             "folk": [
-              0.34,
-              0.3,
+              0.33,
+              0.31,
               0.36
             ],
             "lineupStatus": "none",
@@ -18803,9 +18785,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              2.15,
-              3.55,
-              3.5
+              2.28,
+              3.45,
+              3.3
             ],
             "sharpOdds": [
               2.14,
@@ -18813,9 +18795,9 @@
               3.49
             ],
             "folk": [
-              0.43,
+              0.44,
               0.26,
-              0.31
+              0.3
             ],
             "lineupStatus": "pending",
             "context": {
@@ -18867,9 +18849,9 @@
               4.96
             ],
             "folk": [
-              0.66,
-              0.21,
-              0.13
+              0.69,
+              0.2,
+              0.11
             ],
             "lineupStatus": "pending",
             "context": {
@@ -18911,9 +18893,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              1.79,
-              4.1,
-              4.35
+              1.87,
+              4,
+              4
             ],
             "sharpOdds": [
               1.84,
@@ -18921,9 +18903,9 @@
               4.01
             ],
             "folk": [
-              0.59,
+              0.6,
               0.23,
-              0.18
+              0.17
             ],
             "lineupStatus": "pending",
             "context": {
@@ -18976,8 +18958,8 @@
             ],
             "folk": [
               0.57,
-              0.24,
-              0.19
+              0.23,
+              0.2
             ],
             "lineupStatus": "pending",
             "context": {
@@ -19019,9 +19001,9 @@
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              1.61,
-              4.4,
-              5.4
+              1.74,
+              4,
+              4.8
             ],
             "sharpOdds": [
               1.62,
@@ -19029,9 +19011,9 @@
               5.06
             ],
             "folk": [
-              0.62,
-              0.24,
-              0.14
+              0.65,
+              0.23,
+              0.12
             ],
             "lineupStatus": "pending",
             "context": {
@@ -46847,7 +46829,7 @@
     }
   ],
   "missProfile": {
-    "builtAt": "2026-10-30T15:29:03.528Z",
+    "builtAt": "2026-10-31T08:50:17.783Z",
     "from": "2023-08-05",
     "to": "2026-10-28",
     "draws": 360,
@@ -50137,7 +50119,7 @@
     }
   },
   "missProfileStryk": {
-    "builtAt": "2026-10-30T15:29:03.542Z",
+    "builtAt": "2026-10-31T08:50:17.797Z",
     "from": "2023-08-05",
     "to": "2026-10-24",
     "draws": 171,
@@ -50601,7 +50583,7 @@
     }
   },
   "missProfileSystems": {
-    "builtAt": "2026-10-30T15:29:03.548Z",
+    "builtAt": "2026-10-31T08:50:17.803Z",
     "source": [
       "stryktips-backtest-2324-riskC.json",
       "stryktips-backtest-2425-riskC.json",
