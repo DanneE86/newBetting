@@ -420,6 +420,13 @@ export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.
   };
 }
 
+/**
+ * Ska fliken öppna på den sparade omgången i stället för den kommande? Ja om den kommande inte är hämtad, och den sparade
+ * (t.ex. dagens V64) inte är passerad och går före den kommande. Då visar Datum och Spel samma omgång som korten.
+ */
+export const opensSavedFirst = (analysis, upcoming, savedIds, today) =>
+  !!analysis?.date && !!upcoming?.date && !savedIds.includes(upcoming.upcomingId) && analysis.date >= today && analysis.date < upcoming.date;
+
 /** Rader som text, en rad per system-rad: "1,4,7,2,..." (startnummer per avdelning). */
 export const rowsToText = (rows) => rows.map((r) => r.join(",")).join("\n");
 

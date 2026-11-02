@@ -624,6 +624,19 @@ test('kommande omgång: närmaste stora V-spelet, inte dagens V64', async () => 
   expect(pickUpcoming([])).toBeNull();
 });
 
+test('fliken öppnar på hämtad omgång före kommande som inte är hämtad, annars på kommande', async () => {
+  const { opensSavedFirst } = await engine();
+  const v64 = { id: 'V64_2026-11-02_18_4', date: '2026-11-02' };
+  const v86 = { date: '2026-11-04', upcomingId: 'V86_2026-11-04_40_1' };
+  expect(opensSavedFirst(v64, v86, [v64.id], '2026-11-02')).toBe(true);
+  // kommande redan hämtad: stort V-spel går först, som förut
+  expect(opensSavedFirst(v64, v86, [v64.id, v86.upcomingId], '2026-11-02')).toBe(false);
+  // gårdagens omgång, samma dag som kommande, ingen sparad analys
+  expect(opensSavedFirst(v64, v86, [v64.id], '2026-11-03')).toBe(false);
+  expect(opensSavedFirst({ id: 'V85', date: '2026-11-04' }, v86, [], '2026-11-02')).toBe(false);
+  expect(opensSavedFirst(null, v86, [], '2026-11-02')).toBe(false);
+});
+
 // ---------- GUI ----------
 
 test.describe('GUI: fliken Hästar', () => {

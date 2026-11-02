@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75/V4 + Dagens Dubbel/Lunch Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem, skrallOmgang } from "/hast-engine.js";
+import { opensSavedFirst, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem, skrallOmgang } from "/hast-engine.js";
 // Tider, RT/FT/LI, Travsport-delpoäng och Fa/Fo-jämförelsen: bara visning, aldrig chans, ranking eller system
 import { raceTimes, distanceLabel, timeFactors, recentRecordDate } from "/hastar-times.js";
 import { presentationRace } from "/hastar-source.js";
@@ -203,6 +203,16 @@ async function boot() {
   try {
     const next = await api("/api/hastar/spel?kommande=1");
     if (next?.games?.length) {
+      const a = state?.analysis;
+      if (opensSavedFirst(a, next, (state?.index?.analyses || []).map((x) => x.id), today())) {
+        const day = await api(`/api/hastar/spel?datum=${a.date}`);
+        if ((day.games || []).some((g) => g.id === a.id && g.status !== "results")) {
+          date = a.date;
+          games = day;
+          render();
+          return;
+        }
+      }
       date = next.date;
       games = next;
       await alignAnalysis();
