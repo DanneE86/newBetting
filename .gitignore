@@ -49,3 +49,6 @@ databas/auto-konsol.txt
 
 # bet365-odds hämtade via webbläsare, bara lokalt
 data/bet365/
+
+# Hela sasongsfiler for utvecklingsdata (scripts/slabolagen), stora och kan hamtas igen
+data/raw/full/

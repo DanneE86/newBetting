@@ -38,6 +38,8 @@ test('open sources fetch-report', async () => {
   const report = readJson(reportPath);
   const ok = (report.sources || []).filter((s: { ok: boolean }) => s.ok);
   expect(ok.length).toBeGreaterThan(3);
+  // Repot är publikt: inga absoluta sökvägar (C:\Users\<namn>\...) i rapporten
+  for (const s of report.sources || []) expect(String(s.path || '')).not.toMatch(/^[A-Za-z]:|^[\\/]|Users[\\/]/i);
 });
 
 test('Understat xG via getLeagueData (AJAX) + PW fallback', async ({ page, request }) => {

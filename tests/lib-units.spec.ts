@@ -5153,3 +5153,81 @@ test.describe('nyckelspelare: frånvarorisk ur FotMobs speltid', () => {
     expect(r.off_mid.start).toBeLessThan(r.full.start);
   });
 });
+
+// ---------- clubelo-berakna.mjs ----------
+
+test.describe('clubelo-berakna: formeln från clubelo.com/System', () => {
+  test('expectedScore: lika = 0,5, 400 poäng = 10/11, symmetrisk', async () => {
+    const { expectedScore } = await lib('clubelo-berakna.mjs');
+    expect(expectedScore(0)).toBeCloseTo(0.5, 10);
+    expect(expectedScore(400)).toBeCloseTo(10 / 11, 10);
+    expect(expectedScore(120) + expectedScore(-120)).toBeCloseTo(1, 10);
+  });
+
+  test('eloExchange: oavgjort lika lag = 0, roten ur målskillnaden, omvänt tecken för bortavinst', async () => {
+    const { eloExchange } = await lib('clubelo-berakna.mjs');
+    expect(eloExchange(1800, 1800, 1, 1, 0)).toBeCloseTo(0, 10);
+    const one = eloExchange(1800, 1800, 1, 0, 0);
+    expect(one).toBeGreaterThan(0);
+    expect(one).toBeLessThan(10); // k/2 delat med normeringen (>1)
+    expect(eloExchange(1800, 1800, 4, 0, 0)).toBeCloseTo(2 * one, 8);
+    expect(eloExchange(1800, 1800, 0, 1, 0)).toBeCloseTo(-one, 8);
+    expect(eloExchange(1800, 1700, 1, 1, 65)).toBeLessThan(0); // favoriten hemma tappar på kryss
+  });
+
+  test('marginNorm: snittet av roten ur målskillnaden, minst 1', async () => {
+    const { marginNorm } = await lib('clubelo-berakna.mjs');
+    const n = marginNorm(1.5, 1.0, 'home');
+    expect(n).toBeGreaterThan(1);
+    expect(n).toBeLessThan(2);
+    expect(marginNorm(1.2, 1.2, 'home')).toBeCloseTo(marginNorm(1.2, 1.2, 'away'), 8);
+  });
+
+  test('rollElo: poängen bevaras, seedDate gäller, indata orörd, HFA uppdateras dagen efter', async () => {
+    const { rollElo, eloExchange, HFA_STEP } = await lib('clubelo-berakna.mjs');
+    const start = new Map([
+      ['A', { elo: 1800, seedDate: '2026-10-01', country: 'ENG' }],
+      ['B', { elo: 1700, seedDate: '2026-10-01', country: 'ENG' }],
+      ['C', { elo: 1600, seedDate: '2026-10-20', country: 'ENG' }],
+    ]);
+    const games = [
+      { date: '2026-10-05', home: 'A', away: 'B', hg: 2, ag: 0, key: 'ENG' },
+      { date: '2026-10-06', home: 'B', away: 'A', hg: 1, ag: 1, key: 'ENG' },
+      { date: '2026-10-07', home: 'C', away: 'B', hg: 3, ag: 0, key: 'ENG' }, // före C:s seedDate: bara B räknas
+      { date: '2026-09-01', home: 'A', away: null, hg: 9, ag: 0, key: 'ENG' }, // före A:s seedDate, okänd motståndare: hoppas över
+    ].sort((x, y) => (x.date < y.date ? -1 : 1));
+    const { ratings, hfa, used } = rollElo(games, start, { hfa: { ENG: 65 }, opponentElo: () => 1500 });
+    expect(start.get('A')!.elo).toBe(1800);
+    expect(ratings.get('C')!.elo).toBe(1600);
+    expect(used).toBe(3);
+    const d1 = eloExchange(1800, 1700, 2, 0, 65);
+    expect(ratings.get('A')!.elo).toBeGreaterThan(1800 + d1 - 5);
+    const d2 = eloExchange(1700 - d1, 1800 + d1, 1, 1, 65 + d1 * HFA_STEP);
+    expect(ratings.get('A')!.elo).toBeCloseTo(1800 + d1 - d2, 8);
+    expect(hfa.ENG).not.toBe(65);
+  });
+
+  test('rollElo: europacup (key null) rör inte hemmafördelen', async () => {
+    const { rollElo } = await lib('clubelo-berakna.mjs');
+    const start = new Map([
+      ['ENG|A', { elo: 1800, seedDate: '2026-10-01', country: 'ENG' }],
+      ['ESP|B', { elo: 1800, seedDate: '2026-10-01', country: 'ESP' }],
+    ]);
+    const { hfa, used } = rollElo([{ date: '2026-10-05', home: 'ENG|A', away: 'ESP|B', hg: 1, ag: 0, key: null }], start, { hfa: { ENG: 60 } });
+    expect(used).toBe(1);
+    expect(hfa).toEqual({ ENG: 60 });
+  });
+});
+
+test('clubEloLookup: olika klubbar slås inte ihop och klubbens Elo-namn följer med', async () => {
+  const { clubEloLookup } = await lib('elo-1x2.mjs');
+  const cache = { countries: { ENG: { clubs: [{ name: 'West Brom', elo: 1600, level: 2 }, { name: 'Newcastle', elo: 1860, level: 1 }] }, ITA: { clubs: [{ name: 'Juventus', elo: 1850, level: 1 }] } } };
+  const look = clubEloLookup(cache, [
+    { name: 'West Brom', country: 'England', tier: 2 }, { name: 'Bromley', country: 'England', tier: 4 }, { name: 'Newcastle', country: 'England', tier: 1 },
+    { name: 'Juventus', country: 'Italy', tier: 1 }, { name: 'Juve Stabia', country: 'Italy', tier: 2 },
+  ], { withName: true });
+  expect(look('West Brom', 'England')?.clubEloName).toBe('West Brom');
+  expect(look('Newcastle', 'England')?.clubEloName).toBe('Newcastle');
+  expect(look('Bromley', 'England')).toBeNull();
+  expect(look('Juve Stabia', 'Italy')).toBeNull();
+});

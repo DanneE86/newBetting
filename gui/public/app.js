@@ -1222,7 +1222,7 @@ function squadBar(tip) {
   // Cupmatcher: vad truppvärdet ensamt har gett i cuphistoriken (scripts/lardomar-cup-truppvarde.mjs)
   const m = tip.squadValue.model;
   const pc = (p) => `${Math.round(100 * p)} %`;
-  const hist = m ? `<span class="sq-say sq-hist" title="Ur ${m.n.toLocaleString("sv-SE")} cupmatcher i ${m.region === "Europa" ? "CL, EL och ECL" : "Libertadores och Sudamericana"} sedan 2016, med truppvärdet vid matchtillfället (Transfermarkt). Bara truppvärde och hemmaplan – inte form, skador eller odds.">Bara truppvärdet, ur cuphistoriken: 1 ${pc(m.home)} · X ${pc(m.draw)} · 2 ${pc(m.away)}</span>` : "";
+  const hist = m ? `<span class="sq-hist" title="Ur ${m.n.toLocaleString("sv-SE")} cupmatcher i ${m.region === "Europa" ? "CL, EL och ECL" : "Libertadores och Sudamericana"} sedan 2016, med truppvärdet vid matchtillfället (Transfermarkt). Bara truppvärde och hemmaplan – inte form, skador eller odds.">Bara truppvärdet, ur cuphistoriken: 1 ${pc(m.home)} · X ${pc(m.draw)} · 2 ${pc(m.away)}</span>` : "";
   return `<div class="squad-bar" title="Truppvärde = summan av spelarnas marknadsvärde (FotMob/Transfermarkt). Säger hur dyra spelarna är, inte hur bra laget spelar ihop.">
         <span class="sq-k">Truppvärde</span>
         <span class="sq-v sq-home${side(h, a)}">${fmtSquadValue(h)}</span>

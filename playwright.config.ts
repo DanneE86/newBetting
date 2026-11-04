@@ -55,6 +55,14 @@ export default defineConfig({
       testMatch: /lib-units\.spec\.ts/,
     },
     {
+      name: 'modeller',
+      testMatch: /modeller\.spec\.ts/,
+    },
+    {
+      name: 'slabolagen',
+      testMatch: /slabolagen\.spec\.ts/,
+    },
+    {
       name: 'hastar',
       testMatch: /hastar\.spec\.ts/,
     },

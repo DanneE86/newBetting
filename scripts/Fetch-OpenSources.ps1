@@ -21,16 +21,23 @@ $report = [ordered]@{
     sources = @()
 }
 
+# Rapporten versioneras i ett publikt repo: sökvägen relativt repot, aldrig C:\Users\<namn>\...
+function Get-RepoPath($Path) {
+    $full = [System.IO.Path]::GetFullPath($Path)
+    if ($full.StartsWith("$Root\", [StringComparison]::OrdinalIgnoreCase)) { return $full.Substring($Root.Length + 1) }
+    return Split-Path -Leaf $full
+}
+
 function Save-Url($Url, $Path, $Name) {
     try {
         Invoke-WebRequest -Uri $Url -OutFile $Path -UseBasicParsing -TimeoutSec 60
         $len = (Get-Item $Path).Length
         Write-Host "OK $Name ($len bytes)"
-        $script:report.sources += [ordered]@{ name = $Name; url = $Url; path = $Path; ok = $true; bytes = $len }
+        $script:report.sources += [ordered]@{ name = $Name; url = $Url; path = (Get-RepoPath $Path); ok = $true; bytes = $len }
         return $true
     } catch {
         Write-Host "FAIL $Name : $($_.Exception.Message)"
-        $script:report.sources += [ordered]@{ name = $Name; url = $Url; path = $Path; ok = $false; error = $_.Exception.Message }
+        $script:report.sources += [ordered]@{ name = $Name; url = $Url; path = (Get-RepoPath $Path); ok = $false; error = $_.Exception.Message }
         return $false
     }
 }

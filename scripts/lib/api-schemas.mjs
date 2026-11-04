@@ -77,6 +77,15 @@ export const oddsApiSchemas = {
   })),
 };
 
+// ---------- Öppna oddskällor till hemmaregeln (scripts/slabolagen/oppna-odds.mjs) ----------
+export const pinnacleSchemas = {
+  matchups: z.array(z.object({ id: z.number(), type: z.string(), startTime: z.string().optional() })),
+  markets: z.array(z.object({ matchupId: z.number(), type: z.string(), period: z.number(), prices: z.array(z.object({ price: z.number() })) })),
+};
+export const kambiSchemas = {
+  listView: z.object({ events: z.array(z.object({ event: z.object({ start: z.string(), state: z.string() }) })) }),
+};
+
 // ---------- ATG ----------
 export const atgSchemas = {
   calendar: z.object({ date: z.string(), tracks: z.array(z.object({ id: z.number(), name: z.string() })).optional(), games: z.record(z.string(), z.array(z.object({ id: z.string().optional(), status: z.string().optional() }))) }),

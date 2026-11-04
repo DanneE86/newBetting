@@ -87,7 +87,7 @@ export const COUNTRY_TO_CLUBELO = {
  * domestic = alla lagnamn i landets ligor [{ name, country, tier }] (tier 1 = hogsta). En klubb gar bara till ett av dem:
  * hogst likhet, vid lika det vars liganiva = klubbens niva, annars inget (Skovde AIK blir aldrig AIK, Juve Stabia aldrig Juventus).
  */
-export function clubEloLookup(cache, domestic = []) {
+export function clubEloLookup(cache, domestic = [], { withName = false } = {}) {
   const hitIn = (name, code) => {
     const countries = code ? { [code]: cache?.countries?.[code] } : cache?.countries ?? {};
     const hit = findClubElo(name, { countries });
@@ -121,6 +121,6 @@ export function clubEloLookup(cache, domestic = []) {
     const k = `${h.cc}|${h.clubEloName}`;
     if (code && owner.has(k) && owner.get(k) !== name) return null;
     const rank = [...cache.countries[h.cc].clubs].sort((a, b) => b.elo - a.elo).findIndex((c) => c.name === h.clubEloName) + 1;
-    return { elo: Math.round(h.elo), rank, country: h.cc };
+    return { elo: Math.round(h.elo), rank, country: h.cc, ...(withName ? { clubEloName: h.clubEloName } : {}) };
   };
 }
