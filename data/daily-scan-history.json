@@ -94,7 +94,9 @@
       "pick": "2",
       "odds": 3.95,
       "ev": 0.1041,
-      "scannedAt": "2026-10-30T08:58:59.186Z"
+      "scannedAt": "2026-10-30T08:58:59.186Z",
+      "result": "won",
+      "score": "0-1"
     },
     {
       "id": "SB|2026-10-31|Cremonese|Benevento|draw",
@@ -106,7 +108,9 @@
       "pick": "X",
       "odds": 3.3,
       "ev": 0.0997,
-      "scannedAt": "2026-10-30T08:58:59.186Z"
+      "scannedAt": "2026-10-30T08:58:59.186Z",
+      "result": "lost",
+      "score": "2-0"
     },
     {
       "id": "SB|2026-10-31|Catanzaro|Padova|draw",
@@ -118,7 +122,81 @@
       "pick": "X",
       "odds": 3.5,
       "ev": 0.0985,
-      "scannedAt": "2026-10-30T08:58:59.186Z"
+      "scannedAt": "2026-10-30T08:58:59.186Z",
+      "result": "won",
+      "score": "1-1"
+    },
+    {
+      "id": "MLS|2026-11-08|FC Dallas|Colorado Rapids|away",
+      "league": "MLS",
+      "date": "2026-11-08",
+      "home": "FC Dallas",
+      "away": "Colorado Rapids",
+      "key": "away",
+      "pick": "2",
+      "odds": 3.7,
+      "ev": 0.1168,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
+    },
+    {
+      "id": "SB|2026-11-08|Carrarese|Sampdoria|draw",
+      "league": "SB",
+      "date": "2026-11-08",
+      "home": "Carrarese",
+      "away": "Sampdoria",
+      "key": "draw",
+      "pick": "X",
+      "odds": 3.4,
+      "ev": 0.1072,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
+    },
+    {
+      "id": "SB|2026-11-07|Mantova|Verona|draw",
+      "league": "SB",
+      "date": "2026-11-07",
+      "home": "Mantova",
+      "away": "Verona",
+      "key": "draw",
+      "pick": "X",
+      "odds": 3.6,
+      "ev": 0.0856,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
+    },
+    {
+      "id": "AS|2026-11-07|Orgryte|Vasteras SK|home",
+      "league": "AS",
+      "date": "2026-11-07",
+      "home": "Orgryte",
+      "away": "Vasteras SK",
+      "key": "home",
+      "pick": "1",
+      "odds": 3.25,
+      "ev": 0.0797,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
+    },
+    {
+      "id": "SA|2026-11-07|Parma|Bologna|away",
+      "league": "SA",
+      "date": "2026-11-07",
+      "home": "Parma",
+      "away": "Bologna",
+      "key": "away",
+      "pick": "2",
+      "odds": 1.93,
+      "ev": 0.0765,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
+    },
+    {
+      "id": "MLS|2026-11-07|Orlando City|New England Revolution|away",
+      "league": "MLS",
+      "date": "2026-11-07",
+      "home": "Orlando City",
+      "away": "New England Revolution",
+      "key": "away",
+      "pick": "2",
+      "odds": 3.6,
+      "ev": 0.0651,
+      "scannedAt": "2026-11-04T05:48:48.699Z"
     }
   ]
 }

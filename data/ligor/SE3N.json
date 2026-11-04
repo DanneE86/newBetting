@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "SE3N",
  "fotmobId": 169,
  "name": "Ettan",
@@ -11,41 +11,41 @@
    "fotmobName": "FC Stockholm",
    "fotmobId": 1011931,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 20,
    "drawn": 4,
-   "lost": 4,
-   "goals": "68-23",
-   "gd": 45,
+   "lost": 5,
+   "goals": "69-25",
+   "gd": 44,
    "pts": 64
   },
   {
    "rank": 2,
-   "team": "AFC Eskilstuna",
-   "fotmobName": "AFC Eskilstuna",
-   "fotmobId": 6238,
-   "group": "Norra",
-   "played": 28,
-   "won": 16,
-   "drawn": 5,
-   "lost": 7,
-   "goals": "54-37",
-   "gd": 17,
-   "pts": 53
-  },
-  {
-   "rank": 3,
    "team": "Arlanda",
    "fotmobName": "FC Arlanda",
    "fotmobId": 841094,
    "group": "Norra",
-   "played": 28,
-   "won": 15,
+   "played": 29,
+   "won": 16,
    "drawn": 6,
    "lost": 7,
-   "goals": "50-35",
+   "goals": "53-36",
+   "gd": 17,
+   "pts": 54
+  },
+  {
+   "rank": 3,
+   "team": "AFC Eskilstuna",
+   "fotmobName": "AFC Eskilstuna",
+   "fotmobId": 6238,
+   "group": "Norra",
+   "played": 29,
+   "won": 16,
+   "drawn": 5,
+   "lost": 8,
+   "goals": "55-40",
    "gd": 15,
-   "pts": 51
+   "pts": 53
   },
   {
    "rank": 4,
@@ -53,13 +53,13 @@
    "fotmobName": "Enköping",
    "fotmobId": 8425,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 16,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 9,
-   "goals": "45-42",
+   "goals": "46-43",
    "gd": 3,
-   "pts": 51
+   "pts": 52
   },
   {
    "rank": 5,
@@ -67,12 +67,12 @@
    "fotmobName": "Hammarby TFF",
    "fotmobId": 4438,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 14,
    "drawn": 7,
-   "lost": 7,
-   "goals": "55-29",
-   "gd": 26,
+   "lost": 8,
+   "goals": "55-31",
+   "gd": 24,
    "pts": 49
   },
   {
@@ -81,13 +81,13 @@
    "fotmobName": "FBK Karlstad",
    "fotmobId": 627694,
    "group": "Norra",
-   "played": 28,
-   "won": 13,
+   "played": 29,
+   "won": 14,
    "drawn": 7,
    "lost": 8,
-   "goals": "44-38",
-   "gd": 6,
-   "pts": 46
+   "goals": "46-39",
+   "gd": 7,
+   "pts": 49
   },
   {
    "rank": 7,
@@ -95,12 +95,12 @@
    "fotmobName": "IF Karlstad",
    "fotmobId": 191433,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 12,
    "drawn": 8,
-   "lost": 8,
-   "goals": "42-31",
-   "gd": 11,
+   "lost": 9,
+   "goals": "43-33",
+   "gd": 10,
    "pts": 44
   },
   {
@@ -109,55 +109,55 @@
    "fotmobName": "Umeå",
    "fotmobId": 8601,
    "group": "Norra",
-   "played": 28,
-   "won": 11,
+   "played": 29,
+   "won": 12,
    "drawn": 6,
    "lost": 11,
-   "goals": "40-44",
-   "gd": -4,
-   "pts": 39
+   "goals": "43-44",
+   "gd": -1,
+   "pts": 42
   },
   {
    "rank": 9,
-   "team": "Assyriska",
-   "fotmobName": "Assyriska FF",
-   "fotmobId": 10225,
-   "group": "Norra",
-   "played": 28,
-   "won": 10,
-   "drawn": 5,
-   "lost": 13,
-   "goals": "46-51",
-   "gd": -5,
-   "pts": 35
-  },
-  {
-   "rank": 10,
    "team": "Gefle",
    "fotmobName": "Gefle",
    "fotmobId": 7997,
    "group": "Norra",
-   "played": 28,
-   "won": 10,
+   "played": 29,
+   "won": 11,
    "drawn": 5,
    "lost": 13,
-   "goals": "34-47",
-   "gd": -13,
-   "pts": 35
+   "goals": "36-47",
+   "gd": -11,
+   "pts": 38
   },
   {
-   "rank": 11,
+   "rank": 10,
    "team": "Karlberg",
    "fotmobName": "Karlbergs BK",
    "fotmobId": 303472,
    "group": "Norra",
-   "played": 28,
-   "won": 9,
+   "played": 29,
+   "won": 10,
    "drawn": 7,
    "lost": 12,
-   "goals": "38-48",
-   "gd": -10,
-   "pts": 34
+   "goals": "40-48",
+   "gd": -8,
+   "pts": 37
+  },
+  {
+   "rank": 11,
+   "team": "Assyriska",
+   "fotmobName": "Assyriska FF",
+   "fotmobId": 10225,
+   "group": "Norra",
+   "played": 29,
+   "won": 10,
+   "drawn": 5,
+   "lost": 14,
+   "goals": "46-53",
+   "gd": -7,
+   "pts": 35
   },
   {
    "rank": 12,
@@ -165,12 +165,12 @@
    "fotmobName": "Sollentuna FK",
    "fotmobId": 111120,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 7,
    "drawn": 10,
-   "lost": 11,
-   "goals": "30-37",
-   "gd": -7,
+   "lost": 12,
+   "goals": "30-40",
+   "gd": -10,
    "pts": 31
   },
   {
@@ -179,13 +179,13 @@
    "fotmobName": "Vasalunds IF",
    "fotmobId": 1967,
    "group": "Norra",
-   "played": 28,
-   "won": 7,
+   "played": 29,
+   "won": 8,
    "drawn": 7,
    "lost": 14,
-   "goals": "39-61",
-   "gd": -22,
-   "pts": 28
+   "goals": "41-62",
+   "gd": -21,
+   "pts": 31
   },
   {
    "rank": 14,
@@ -193,13 +193,13 @@
    "fotmobName": "Piteå",
    "fotmobId": 2006,
    "group": "Norra",
-   "played": 28,
-   "won": 5,
+   "played": 29,
+   "won": 6,
    "drawn": 9,
    "lost": 14,
-   "goals": "35-53",
-   "gd": -18,
-   "pts": 24
+   "goals": "39-56",
+   "gd": -17,
+   "pts": 27
   },
   {
    "rank": 15,
@@ -207,13 +207,13 @@
    "fotmobName": "FC Järfälla",
    "fotmobId": 1225382,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 6,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 17,
-   "goals": "39-60",
+   "goals": "40-61",
    "gd": -21,
-   "pts": 23
+   "pts": 24
   },
   {
    "rank": 16,
@@ -221,12 +221,12 @@
    "fotmobName": "IFK Stocksund",
    "fotmobId": 916701,
    "group": "Norra",
-   "played": 28,
+   "played": 29,
    "won": 3,
    "drawn": 6,
-   "lost": 19,
-   "goals": "46-69",
-   "gd": -23,
+   "lost": 20,
+   "goals": "49-73",
+   "gd": -24,
    "pts": 15
   }
  ],
@@ -1255,6 +1255,120 @@
     28,
     15,
     -23
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Stockholm Internazionale",
+    1,
+    29,
+    64,
+    44
+   ],
+   [
+    "Arlanda",
+    2,
+    29,
+    54,
+    17
+   ],
+   [
+    "AFC Eskilstuna",
+    3,
+    29,
+    53,
+    15
+   ],
+   [
+    "Enköping",
+    4,
+    29,
+    52,
+    3
+   ],
+   [
+    "Hammarby Talang",
+    5,
+    29,
+    49,
+    24
+   ],
+   [
+    "FBK Karlstad",
+    6,
+    29,
+    49,
+    7
+   ],
+   [
+    "Karlstad",
+    7,
+    29,
+    44,
+    10
+   ],
+   [
+    "Umeå",
+    8,
+    29,
+    42,
+    -1
+   ],
+   [
+    "Gefle",
+    9,
+    29,
+    38,
+    -11
+   ],
+   [
+    "Karlberg",
+    10,
+    29,
+    37,
+    -8
+   ],
+   [
+    "Assyriska",
+    11,
+    29,
+    35,
+    -7
+   ],
+   [
+    "Sollentuna",
+    12,
+    29,
+    31,
+    -10
+   ],
+   [
+    "Vasalund",
+    13,
+    29,
+    31,
+    -21
+   ],
+   [
+    "Piteå",
+    14,
+    29,
+    27,
+    -17
+   ],
+   [
+    "Järfälla",
+    15,
+    29,
+    24,
+    -21
+   ],
+   [
+    "Stocksund",
+    16,
+    29,
+    15,
+    -24
    ]
   ]
  }

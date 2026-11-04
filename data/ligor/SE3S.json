@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "SE3S",
  "fotmobId": 169,
  "name": "Ettan",
@@ -11,13 +11,13 @@
    "fotmobName": "Trelleborgs FF",
    "fotmobId": 8333,
    "group": "Soedra",
-   "played": 28,
-   "won": 19,
+   "played": 29,
+   "won": 20,
    "drawn": 6,
    "lost": 3,
-   "goals": "64-31",
-   "gd": 33,
-   "pts": 63
+   "goals": "66-32",
+   "gd": 34,
+   "pts": 66
   },
   {
    "rank": 2,
@@ -39,41 +39,41 @@
    "fotmobName": "Lunds BK",
    "fotmobId": 6174,
    "group": "Soedra",
-   "played": 28,
-   "won": 13,
+   "played": 29,
+   "won": 14,
    "drawn": 8,
    "lost": 7,
-   "goals": "56-37",
-   "gd": 19,
-   "pts": 47
+   "goals": "57-37",
+   "gd": 20,
+   "pts": 50
   },
   {
    "rank": 4,
-   "team": "Åtvidaberg",
-   "fotmobName": "Åtvidaberg",
-   "fotmobId": 6622,
-   "group": "Soedra",
-   "played": 28,
-   "won": 13,
-   "drawn": 8,
-   "lost": 7,
-   "goals": "52-41",
-   "gd": 11,
-   "pts": 47
-  },
-  {
-   "rank": 5,
    "team": "AFC Malmö",
    "fotmobName": "AFC Malmoe",
    "fotmobId": 1331261,
    "group": "Soedra",
-   "played": 28,
-   "won": 12,
+   "played": 29,
+   "won": 13,
    "drawn": 8,
    "lost": 8,
-   "goals": "52-42",
+   "goals": "58-45",
+   "gd": 13,
+   "pts": 47
+  },
+  {
+   "rank": 5,
+   "team": "Åtvidaberg",
+   "fotmobName": "Åtvidaberg",
+   "fotmobId": 6622,
+   "group": "Soedra",
+   "played": 29,
+   "won": 13,
+   "drawn": 8,
+   "lost": 8,
+   "goals": "53-43",
    "gd": 10,
-   "pts": 44
+   "pts": 47
   },
   {
    "rank": 6,
@@ -81,12 +81,12 @@
    "fotmobName": "FC Rosengård",
    "fotmobId": 6170,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 10,
    "drawn": 10,
-   "lost": 8,
-   "goals": "44-41",
-   "gd": 3,
+   "lost": 9,
+   "goals": "46-44",
+   "gd": 2,
    "pts": 40
   },
   {
@@ -95,12 +95,12 @@
    "fotmobName": "Jönköping S.",
    "fotmobId": 8510,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 11,
    "drawn": 6,
-   "lost": 11,
-   "goals": "35-30",
-   "gd": 5,
+   "lost": 12,
+   "goals": "35-31",
+   "gd": 4,
    "pts": 39
   },
   {
@@ -109,12 +109,12 @@
    "fotmobName": "Trollhättan FC",
    "fotmobId": 6183,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 10,
    "drawn": 8,
-   "lost": 10,
-   "goals": "48-48",
-   "gd": 0,
+   "lost": 11,
+   "goals": "51-54",
+   "gd": -3,
    "pts": 38
   },
   {
@@ -123,16 +123,30 @@
    "fotmobName": "Tvååkers IF",
    "fotmobId": 241285,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 10,
    "drawn": 8,
-   "lost": 10,
-   "goals": "39-42",
-   "gd": -3,
+   "lost": 11,
+   "goals": "39-43",
+   "gd": -4,
    "pts": 38
   },
   {
    "rank": 10,
+   "team": "Skövde AIK",
+   "fotmobName": "Skövde AIK",
+   "fotmobId": 6153,
+   "group": "Soedra",
+   "played": 29,
+   "won": 9,
+   "drawn": 11,
+   "lost": 9,
+   "goals": "39-47",
+   "gd": -8,
+   "pts": 38
+  },
+  {
+   "rank": 11,
    "team": "BK Olympic",
    "fotmobName": "BK Olympic",
    "fotmobId": 241064,
@@ -146,32 +160,18 @@
    "pts": 37
   },
   {
-   "rank": 11,
-   "team": "Skövde AIK",
-   "fotmobName": "Skövde AIK",
-   "fotmobId": 6153,
-   "group": "Soedra",
-   "played": 28,
-   "won": 8,
-   "drawn": 11,
-   "lost": 9,
-   "goals": "36-45",
-   "gd": -9,
-   "pts": 35
-  },
-  {
    "rank": 12,
    "team": "Kristianstad",
    "fotmobName": "Kristianstad FC",
    "fotmobId": 1965,
    "group": "Soedra",
-   "played": 28,
-   "won": 9,
+   "played": 29,
+   "won": 10,
    "drawn": 6,
    "lost": 13,
-   "goals": "34-41",
-   "gd": -7,
-   "pts": 33
+   "goals": "37-41",
+   "gd": -4,
+   "pts": 36
   },
   {
    "rank": 13,
@@ -179,12 +179,12 @@
    "fotmobName": "Eskilsminne IF",
    "fotmobId": 303470,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 9,
    "drawn": 6,
-   "lost": 13,
-   "goals": "45-57",
-   "gd": -12,
+   "lost": 14,
+   "goals": "45-60",
+   "gd": -15,
    "pts": 33
   },
   {
@@ -193,12 +193,12 @@
    "fotmobName": "Laholms FK",
    "fotmobId": 6173,
    "group": "Soedra",
-   "played": 28,
+   "played": 29,
    "won": 9,
    "drawn": 5,
-   "lost": 14,
-   "goals": "39-45",
-   "gd": -6,
+   "lost": 15,
+   "goals": "40-47",
+   "gd": -7,
    "pts": 32
   },
   {
@@ -207,13 +207,13 @@
    "fotmobName": "Ängelholms FF",
    "fotmobId": 8189,
    "group": "Soedra",
-   "played": 28,
-   "won": 6,
+   "played": 29,
+   "won": 7,
    "drawn": 9,
    "lost": 13,
-   "goals": "36-50",
-   "gd": -14,
-   "pts": 27
+   "goals": "37-50",
+   "gd": -13,
+   "pts": 30
   },
   {
    "rank": 16,
@@ -221,13 +221,13 @@
    "fotmobName": "Utsiktens BK",
    "fotmobId": 73158,
    "group": "Soedra",
-   "played": 28,
-   "won": 2,
+   "played": 29,
+   "won": 3,
    "drawn": 6,
    "lost": 20,
-   "goals": "25-70",
-   "gd": -45,
-   "pts": 12
+   "goals": "27-71",
+   "gd": -44,
+   "pts": 15
   }
  ],
  "tableHistory": {
@@ -1255,6 +1255,120 @@
     28,
     12,
     -45
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Trelleborg",
+    1,
+    29,
+    66,
+    34
+   ],
+   [
+    "Hässleholm",
+    2,
+    29,
+    53,
+    18
+   ],
+   [
+    "Lund",
+    3,
+    29,
+    50,
+    20
+   ],
+   [
+    "AFC Malmö",
+    4,
+    29,
+    47,
+    13
+   ],
+   [
+    "Åtvidaberg",
+    5,
+    29,
+    47,
+    10
+   ],
+   [
+    "Rosengård",
+    6,
+    29,
+    40,
+    2
+   ],
+   [
+    "Jönköping Södra",
+    7,
+    29,
+    39,
+    4
+   ],
+   [
+    "Trollhättan",
+    8,
+    29,
+    38,
+    -3
+   ],
+   [
+    "Tvååker",
+    9,
+    29,
+    38,
+    -4
+   ],
+   [
+    "Skövde AIK",
+    10,
+    29,
+    38,
+    -8
+   ],
+   [
+    "BK Olympic",
+    11,
+    29,
+    37,
+    -3
+   ],
+   [
+    "Kristianstad",
+    12,
+    29,
+    36,
+    -4
+   ],
+   [
+    "Eskilsminne",
+    13,
+    29,
+    33,
+    -15
+   ],
+   [
+    "Laholm",
+    14,
+    29,
+    32,
+    -7
+   ],
+   [
+    "Ängelholm",
+    15,
+    29,
+    30,
+    -13
+   ],
+   [
+    "Utsikten",
+    16,
+    29,
+    15,
+    -44
    ]
   ]
  }

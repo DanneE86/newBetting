@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/HR.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/HR.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 135 | 48,9 % | 48,1 % | +0,8 pe (0,2) | 43,7 % | 37 / 32 | modell (inga odds) |
-| 2026/27 | 54 | 53,7 % | 47,3 % | +6,4 pe (1,0) | 53,7 % | 11 / 14 | modell (inga odds) |
+| 2026/27 | 59 | 50,8 % | 47,4 % | +3,4 pe (0,5) | 52,5 % | 12 / 17 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,0). Tipsen träffar lika ofta som att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 0,5). Tipsen träffar sämre än att alltid tippa hemma – granska.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -21,7 +21,7 @@ Inga odds i historiken för ligan (tipsen följer modellen).
 
 ### 2026/27: vad gick fel
 
-- 54 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
+- 59 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
 - Grundmodellen och oddsen var oense i 1 matcher: grundmodellen rätt 1, oddsen rätt 0.
 
 Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/HR.md](../ligor/HR.md).

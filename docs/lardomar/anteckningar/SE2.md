@@ -4,27 +4,27 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/SE2.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/SE2.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 186 | 46,2 % | 49,5 % | −3,3 pe (−0,9) | 43,0 % | 51 / 49 | modell (inga odds) |
-| 2026/27 | 223 | 45,7 % | 44,3 % | +1,4 pe (0,4) | 39,9 % | 61 / 60 | modell (inga odds) |
+| 2026/27 | 231 | 46,8 % | 44,5 % | +2,3 pe (0,7) | 41,1 % | 62 / 61 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 0,4). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 0,7). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
 | Säsong | Matcher | Favoriten vann | Oddsens förväntan | z | Kryss | Kryss väntat | z |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 8 | 62,5 % | 49,3 % | 0,8 | 25,0 % | 24,5 % | 0,0 |
+| 2026/27 | 16 | 68,8 % | 49,5 % | 1,6 | 18,8 % | 24,4 % | −0,5 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 2 av 8 (25,0 %) mot väntat 2,0 (z 0,0).
-- Hemmafavoriter vann 5 av 8 (väntat 3,9), bortafavoriter 0 av 0 (väntat 0,0), favoriter ≥ 60 % 1 av 1 (väntat 0,7).
+- Kryss: 3 av 16 (18,8 %) mot väntat 3,9 (z −0,5).
+- Hemmafavoriter vann 11 av 16 (väntat 7,9), bortafavoriter 0 av 0 (väntat 0,0), favoriter ≥ 60 % 2 av 2 (väntat 1,4).
 - Grundmodellen och oddsen var oense i 2 matcher: grundmodellen rätt 2, oddsen rätt 0.
 - Dixon-Coles och oddsen var oense i 7 matcher: DC rätt 3.
 

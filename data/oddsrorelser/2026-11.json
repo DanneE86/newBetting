@@ -1,0 +1,579 @@
+{
+ "matches": {
+  "2026-11-01|L1|Marseille|Toulouse": {
+   "key": "2026-11-01|L1|Marseille|Toulouse",
+   "league": "L1",
+   "date": "2026-11-01",
+   "home": "Marseille",
+   "away": "Toulouse",
+   "kickoffUtc": "2026-11-01T19:45:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 78,
+   "moves": {
+    "home": {
+     "from": 1.93,
+     "to": 1.93,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.2,
+     "to": 4.2,
+     "pp": 0.1
+    },
+    "away": {
+     "from": 3.75,
+     "to": 3.75,
+     "pp": -0.1
+    },
+    "over25": {
+     "from": 1.53,
+     "to": 1.53,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.65,
+     "to": 2.65,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|AR|Belgrano|Barracas Central": {
+   "key": "2026-11-01|AR|Belgrano|Barracas Central",
+   "league": "AR",
+   "date": "2026-11-01",
+   "home": "Belgrano",
+   "away": "Barracas Central",
+   "kickoffUtc": "2026-11-01T21:30Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 183,
+   "moves": {
+    "home": {
+     "from": 1.88,
+     "to": 1.88,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.35,
+     "to": 3.35,
+     "pp": 0
+    },
+    "away": {
+     "from": 4.9,
+     "to": 4.9,
+     "pp": -0.1
+    },
+    "over25": {
+     "from": 2.32,
+     "to": 2.32,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.58,
+     "to": 1.58,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|AR|Newells Old Boys|Union de Santa Fe": {
+   "key": "2026-11-01|AR|Newells Old Boys|Union de Santa Fe",
+   "league": "AR",
+   "date": "2026-11-01",
+   "home": "Newells Old Boys",
+   "away": "Union de Santa Fe",
+   "kickoffUtc": "2026-11-01T21:30Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 183,
+   "moves": {
+    "home": {
+     "from": 2.12,
+     "to": 2.12,
+     "pp": 0.2
+    },
+    "draw": {
+     "from": 3.2,
+     "to": 3.2,
+     "pp": 0
+    },
+    "away": {
+     "from": 3.9,
+     "to": 3.9,
+     "pp": -0.2
+    },
+    "over25": {
+     "from": 2.43,
+     "to": 2.43,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.62,
+     "to": 1.62,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|AR|Lanus|Gimnasia Mendoza": {
+   "key": "2026-11-01|AR|Lanus|Gimnasia Mendoza",
+   "league": "AR",
+   "date": "2026-11-01",
+   "home": "Lanus",
+   "away": "Gimnasia Mendoza",
+   "kickoffUtc": "2026-11-01T23:45Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 318,
+   "moves": {
+    "home": {
+     "from": 1.55,
+     "to": 1.55,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.15,
+     "to": 4.15,
+     "pp": 0
+    },
+    "away": {
+     "from": 6.3,
+     "to": 6.8,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.95,
+     "to": 1.95,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.95,
+     "to": 1.95,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|BR2|Cuiabá|São Bernardo": {
+   "key": "2026-11-01|BR2|Cuiabá|São Bernardo",
+   "league": "BR2",
+   "date": "2026-11-01",
+   "home": "Cuiabá",
+   "away": "São Bernardo",
+   "kickoffUtc": "2026-11-01T21:30Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 183,
+   "moves": {
+    "home": {
+     "from": 1.87,
+     "to": 1.87,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.35,
+     "to": 3.35,
+     "pp": 0
+    },
+    "away": {
+     "from": 4.7,
+     "to": 4.7,
+     "pp": 0
+    },
+    "over25": {
+     "from": 2.32,
+     "to": 2.32,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.61,
+     "to": 1.61,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|BR2|Novorizontino|Operário PR": {
+   "key": "2026-11-01|BR2|Novorizontino|Operário PR",
+   "league": "BR2",
+   "date": "2026-11-01",
+   "home": "Novorizontino",
+   "away": "Operário PR",
+   "kickoffUtc": "2026-11-01T21:30Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 183,
+   "moves": {
+    "home": {
+     "from": 1.43,
+     "to": 1.43,
+     "pp": 0.1
+    },
+    "draw": {
+     "from": 4.5,
+     "to": 4.5,
+     "pp": 0
+    },
+    "away": {
+     "from": 7.75,
+     "to": 7.75,
+     "pp": -0.1
+    },
+    "over25": {
+     "from": 1.7,
+     "to": 1.7,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.08,
+     "to": 2.08,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-01|BR2|Londrina|América Mineiro": {
+   "key": "2026-11-01|BR2|Londrina|América Mineiro",
+   "league": "BR2",
+   "date": "2026-11-01",
+   "home": "Londrina",
+   "away": "América Mineiro",
+   "kickoffUtc": "2026-11-01T19:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 33,
+   "moves": {
+    "home": {
+     "from": 2,
+     "to": 2,
+     "pp": -0.6
+    },
+    "draw": {
+     "from": 3.6,
+     "to": 3.6,
+     "pp": 0.2
+    },
+    "away": {
+     "from": 4,
+     "to": 4,
+     "pp": 0.4
+    },
+    "over25": {
+     "from": 1.92,
+     "to": 1.92,
+     "pp": -0.6
+    },
+    "under25": {
+     "from": 1.88,
+     "to": 1.88,
+     "pp": 0.6
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|AS|Mjallby|Kalmar": {
+   "key": "2026-11-02|AS|Mjallby|Kalmar",
+   "league": "AS",
+   "date": "2026-11-02",
+   "home": "Mjallby",
+   "away": "Kalmar",
+   "kickoffUtc": "2026-11-02T18:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1413,
+   "moves": {
+    "home": {
+     "from": 2.48,
+     "to": 2.48,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.45,
+     "to": 3.45,
+     "pp": 0
+    },
+    "away": {
+     "from": 2.95,
+     "to": 2.95,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.91,
+     "to": 1.91,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.9,
+     "to": 1.9,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|DK|Sonderjyske|FC Copenhagen": {
+   "key": "2026-11-02|DK|Sonderjyske|FC Copenhagen",
+   "league": "DK",
+   "date": "2026-11-02",
+   "home": "Sonderjyske",
+   "away": "FC Copenhagen",
+   "kickoffUtc": "2026-11-02T18:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1413,
+   "moves": {
+    "home": {
+     "from": 6.9,
+     "to": 6.9,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4.8,
+     "to": 4.8,
+     "pp": 0
+    },
+    "away": {
+     "from": 1.47,
+     "to": 1.47,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.49,
+     "to": 1.49,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.58,
+     "to": 2.58,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|EK|Zaglebie|Korona Kielce": {
+   "key": "2026-11-02|EK|Zaglebie|Korona Kielce",
+   "league": "EK",
+   "date": "2026-11-02",
+   "home": "Zaglebie",
+   "away": "Korona Kielce",
+   "kickoffUtc": "2026-11-02T17:00:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1353,
+   "moves": {
+    "home": {
+     "from": 2.63,
+     "to": 2.63,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.4,
+     "to": 3.4,
+     "pp": 0
+    },
+    "away": {
+     "from": 2.75,
+     "to": 2.75,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.97,
+     "to": 1.97,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.87,
+     "to": 1.87,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|EK|Radomiak Radom|Slask Wroclaw": {
+   "key": "2026-11-02|EK|Radomiak Radom|Slask Wroclaw",
+   "league": "EK",
+   "date": "2026-11-02",
+   "home": "Radomiak Radom",
+   "away": "Slask Wroclaw",
+   "kickoffUtc": "2026-11-02T17:00:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1353,
+   "moves": {
+    "home": {
+     "from": 2.18,
+     "to": 2.18,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.75,
+     "to": 3.75,
+     "pp": 0
+    },
+    "away": {
+     "from": 3,
+     "to": 3,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.57,
+     "to": 1.57,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.3,
+     "to": 2.3,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|AS|GAIS|AIK": {
+   "key": "2026-11-02|AS|GAIS|AIK",
+   "league": "AS",
+   "date": "2026-11-02",
+   "home": "GAIS",
+   "away": "AIK",
+   "kickoffUtc": "2026-11-02T18:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1413,
+   "moves": {
+    "home": {
+     "from": 1.85,
+     "to": 1.85,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4,
+     "to": 4,
+     "pp": 0
+    },
+    "away": {
+     "from": 4.3,
+     "to": 4.3,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.62,
+     "to": 1.62,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.28,
+     "to": 2.28,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|GR|Kalamata|Iraklis": {
+   "key": "2026-11-02|GR|Kalamata|Iraklis",
+   "league": "GR",
+   "date": "2026-11-02",
+   "home": "Kalamata",
+   "away": "Iraklis",
+   "kickoffUtc": "2026-11-02T17:30Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1383,
+   "moves": {
+    "home": {
+     "from": 2.4,
+     "to": 2.4,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.3,
+     "to": 3.3,
+     "pp": -0.2
+    },
+    "away": {
+     "from": 3.15,
+     "to": 3.15,
+     "pp": 0.1
+    },
+    "over25": {
+     "from": 2.2,
+     "to": 2.2,
+     "pp": 0.1
+    },
+    "under25": {
+     "from": 1.7,
+     "to": 1.7,
+     "pp": -0.1
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  },
+  "2026-11-02|GR|Atromitos|Volos NFC": {
+   "key": "2026-11-02|GR|Atromitos|Volos NFC",
+   "league": "GR",
+   "date": "2026-11-02",
+   "home": "Atromitos",
+   "away": "Volos NFC",
+   "kickoffUtc": "2026-11-02T16:00Z",
+   "src": "api",
+   "firstAt": "2026-11-01T18:16:26.6440091Z",
+   "lastAt": "2026-11-01T18:26:34.4815774Z",
+   "minBeforeKick": 1293,
+   "moves": {
+    "home": {
+     "from": 1.91,
+     "to": 1.91,
+     "pp": 0
+    },
+    "draw": {
+     "from": 3.6,
+     "to": 3.6,
+     "pp": 0
+    },
+    "away": {
+     "from": 4,
+     "to": 4,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.98,
+     "to": 1.98,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.85,
+     "to": 1.85,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-11-01T18:27:06.278Z"
+  }
+ },
+ "updatedAt": "2026-11-01T18:27:06.279Z"
+}

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -7,6 +7,20 @@
  "table": [
   {
    "rank": 1,
+   "team": "Al Hilal",
+   "fotmobName": "Al Hilal",
+   "fotmobId": 2529,
+   "group": null,
+   "played": 11,
+   "won": 10,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "32-9",
+   "gd": 23,
+   "pts": 30
+  },
+  {
+   "rank": 2,
    "team": "Al Qadsiah",
    "fotmobName": "Al Qadsiah",
    "fotmobId": 101919,
@@ -20,7 +34,7 @@
    "pts": 28
   },
   {
-   "rank": 2,
+   "rank": 3,
    "team": "Al Nassr",
    "fotmobName": "Al Nassr FC",
    "fotmobId": 101918,
@@ -32,20 +46,6 @@
    "goals": "28-11",
    "gd": 17,
    "pts": 28
-  },
-  {
-   "rank": 3,
-   "team": "Al Hilal",
-   "fotmobName": "Al Hilal",
-   "fotmobId": 2529,
-   "group": null,
-   "played": 10,
-   "won": 9,
-   "drawn": 0,
-   "lost": 1,
-   "goals": "30-9",
-   "gd": 21,
-   "pts": 27
   },
   {
    "rank": 4,
@@ -95,13 +95,13 @@
    "fotmobName": "Al-Ettifaq",
    "fotmobId": 101915,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 5,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 3,
-   "goals": "17-16",
+   "goals": "18-17",
    "gd": 1,
-   "pts": 18
+   "pts": 19
   },
   {
    "rank": 8,
@@ -175,6 +175,20 @@
   },
   {
    "rank": 13,
+   "team": "Al Fayha",
+   "fotmobName": "Al-Fayha",
+   "fotmobId": 582749,
+   "group": null,
+   "played": 12,
+   "won": 2,
+   "drawn": 5,
+   "lost": 5,
+   "goals": "16-20",
+   "gd": -4,
+   "pts": 11
+  },
+  {
+   "rank": 14,
    "team": "Al Hazem",
    "fotmobName": "Al Hazem",
    "fotmobId": 101911,
@@ -188,32 +202,18 @@
    "pts": 10
   },
   {
-   "rank": 14,
+   "rank": 15,
    "team": "Al Faisaly",
    "fotmobName": "Al-Faisaly",
    "fotmobId": 205687,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 2,
    "drawn": 4,
-   "lost": 5,
-   "goals": "12-20",
-   "gd": -8,
+   "lost": 6,
+   "goals": "13-24",
+   "gd": -11,
    "pts": 10
-  },
-  {
-   "rank": 15,
-   "team": "Al Fayha",
-   "fotmobName": "Al-Fayha",
-   "fotmobId": 582749,
-   "group": null,
-   "played": 11,
-   "won": 1,
-   "drawn": 5,
-   "lost": 5,
-   "goals": "12-19",
-   "gd": -7,
-   "pts": 8
   },
   {
    "rank": 16,
@@ -221,12 +221,12 @@
    "fotmobName": "Al Fateh FC",
    "fotmobId": 177356,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 1,
    "drawn": 3,
-   "lost": 7,
-   "goals": "10-23",
-   "gd": -13,
+   "lost": 8,
+   "goals": "10-25",
+   "gd": -15,
    "pts": 6
   },
   {
@@ -235,13 +235,13 @@
    "fotmobName": "Al-Taawoun",
    "fotmobId": 205686,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 0,
-   "drawn": 4,
+   "drawn": 5,
    "lost": 7,
-   "goals": "5-19",
+   "goals": "6-20",
    "gd": -14,
-   "pts": 4
+   "pts": 5
   },
   {
    "rank": 18,
@@ -1785,6 +1785,134 @@
     17,
     11,
     4,
+    -14
+   ],
+   [
+    "Abha",
+    18,
+    11,
+    3,
+    -12
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Al Hilal",
+    1,
+    11,
+    30,
+    23
+   ],
+   [
+    "Al Qadsiah",
+    2,
+    12,
+    28,
+    20
+   ],
+   [
+    "Al Nassr",
+    3,
+    11,
+    28,
+    17
+   ],
+   [
+    "Al Ittihad",
+    4,
+    11,
+    24,
+    10
+   ],
+   [
+    "Neom SC",
+    5,
+    12,
+    22,
+    8
+   ],
+   [
+    "Al Ahli",
+    6,
+    11,
+    21,
+    9
+   ],
+   [
+    "Al Ettifaq",
+    7,
+    12,
+    19,
+    1
+   ],
+   [
+    "Al Diriyah",
+    8,
+    12,
+    15,
+    -3
+   ],
+   [
+    "Al Khaleej",
+    9,
+    12,
+    15,
+    -5
+   ],
+   [
+    "Al Shabab",
+    10,
+    11,
+    14,
+    5
+   ],
+   [
+    "Al Kholood",
+    11,
+    11,
+    12,
+    -9
+   ],
+   [
+    "Al Riyadh",
+    12,
+    11,
+    12,
+    -14
+   ],
+   [
+    "Al Fayha",
+    13,
+    12,
+    11,
+    -4
+   ],
+   [
+    "Al Hazem",
+    14,
+    12,
+    10,
+    -6
+   ],
+   [
+    "Al Faisaly",
+    15,
+    12,
+    10,
+    -11
+   ],
+   [
+    "Al Fateh",
+    16,
+    12,
+    6,
+    -15
+   ],
+   [
+    "Al Taawoun",
+    17,
+    12,
+    5,
     -14
    ],
    [

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "NO",
  "fotmobId": 59,
  "name": "Eliteserien",
@@ -39,12 +39,12 @@
    "fotmobName": "Molde",
    "fotmobId": 9917,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 13,
    "drawn": 4,
-   "lost": 7,
-   "goals": "57-36",
-   "gd": 21,
+   "lost": 8,
+   "goals": "59-39",
+   "gd": 20,
    "pts": 43
   },
   {
@@ -53,97 +53,97 @@
    "fotmobName": "Rosenborg",
    "fotmobId": 8422,
    "group": null,
-   "played": 24,
-   "won": 12,
+   "played": 25,
+   "won": 13,
    "drawn": 4,
    "lost": 8,
-   "goals": "46-31",
-   "gd": 15,
-   "pts": 40
+   "goals": "49-31",
+   "gd": 18,
+   "pts": 43
   },
   {
    "rank": 5,
-   "team": "Tromso",
-   "fotmobName": "Tromsø",
-   "fotmobId": 8608,
-   "group": null,
-   "played": 24,
-   "won": 11,
-   "drawn": 7,
-   "lost": 6,
-   "goals": "43-34",
-   "gd": 9,
-   "pts": 40
-  },
-  {
-   "rank": 6,
    "team": "Lillestrom",
    "fotmobName": "Lillestrøm",
    "fotmobId": 8476,
    "group": null,
-   "played": 24,
-   "won": 12,
+   "played": 25,
+   "won": 13,
    "drawn": 3,
    "lost": 9,
-   "goals": "35-33",
-   "gd": 2,
-   "pts": 39
+   "goals": "36-33",
+   "gd": 3,
+   "pts": 42
+  },
+  {
+   "rank": 6,
+   "team": "Tromso",
+   "fotmobName": "Tromsø",
+   "fotmobId": 8608,
+   "group": null,
+   "played": 25,
+   "won": 11,
+   "drawn": 7,
+   "lost": 7,
+   "goals": "43-38",
+   "gd": 5,
+   "pts": 40
   },
   {
    "rank": 7,
-   "team": "Sarpsborg 08",
-   "fotmobName": "Sarpsborg 08",
-   "fotmobId": 8509,
-   "group": null,
-   "played": 24,
-   "won": 8,
-   "drawn": 7,
-   "lost": 9,
-   "goals": "30-35",
-   "gd": -5,
-   "pts": 31
-  },
-  {
-   "rank": 8,
-   "team": "KFUM Oslo",
-   "fotmobName": "KFUM",
-   "fotmobId": 2305,
-   "group": null,
-   "played": 24,
-   "won": 8,
-   "drawn": 6,
-   "lost": 10,
-   "goals": "30-39",
-   "gd": -9,
-   "pts": 30
-  },
-  {
-   "rank": 9,
    "team": "Brann",
    "fotmobName": "Brann",
    "fotmobId": 8468,
    "group": null,
-   "played": 24,
-   "won": 9,
+   "played": 25,
+   "won": 10,
    "drawn": 2,
    "lost": 13,
-   "goals": "42-40",
-   "gd": 2,
-   "pts": 29
+   "goals": "45-42",
+   "gd": 3,
+   "pts": 32
   },
   {
-   "rank": 10,
+   "rank": 8,
    "team": "Valerenga",
    "fotmobName": "Vålerenga",
    "fotmobId": 8007,
    "group": null,
-   "played": 24,
-   "won": 8,
+   "played": 25,
+   "won": 9,
    "drawn": 5,
    "lost": 11,
-   "goals": "39-46",
+   "goals": "43-46",
+   "gd": -3,
+   "pts": 32
+  },
+  {
+   "rank": 9,
+   "team": "Sarpsborg 08",
+   "fotmobName": "Sarpsborg 08",
+   "fotmobId": 8509,
+   "group": null,
+   "played": 25,
+   "won": 8,
+   "drawn": 7,
+   "lost": 10,
+   "goals": "32-39",
    "gd": -7,
-   "pts": 29
+   "pts": 31
+  },
+  {
+   "rank": 10,
+   "team": "KFUM Oslo",
+   "fotmobName": "KFUM",
+   "fotmobId": 2305,
+   "group": null,
+   "played": 25,
+   "won": 8,
+   "drawn": 7,
+   "lost": 10,
+   "goals": "32-41",
+   "gd": -9,
+   "pts": 31
   },
   {
    "rank": 11,
@@ -151,41 +151,41 @@
    "fotmobName": "Fredrikstad",
    "fotmobId": 8417,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 8,
    "drawn": 5,
-   "lost": 11,
-   "goals": "29-41",
-   "gd": -12,
+   "lost": 12,
+   "goals": "29-44",
+   "gd": -15,
    "pts": 29
   },
   {
    "rank": 12,
-   "team": "HamKam",
-   "fotmobName": "Hamarkameratene",
-   "fotmobId": 8448,
-   "group": null,
-   "played": 24,
-   "won": 7,
-   "drawn": 5,
-   "lost": 12,
-   "goals": "33-51",
-   "gd": -18,
-   "pts": 26
-  },
-  {
-   "rank": 13,
    "team": "Sandefjord",
    "fotmobName": "Sandefjord",
    "fotmobId": 8609,
    "group": null,
-   "played": 24,
-   "won": 6,
+   "played": 25,
+   "won": 7,
    "drawn": 6,
    "lost": 12,
-   "goals": "22-31",
-   "gd": -9,
-   "pts": 24
+   "goals": "26-34",
+   "gd": -8,
+   "pts": 27
+  },
+  {
+   "rank": 13,
+   "team": "HamKam",
+   "fotmobName": "Hamarkameratene",
+   "fotmobId": 8448,
+   "group": null,
+   "played": 25,
+   "won": 7,
+   "drawn": 6,
+   "lost": 12,
+   "goals": "35-53",
+   "gd": -18,
+   "pts": 27
   },
   {
    "rank": 14,
@@ -193,12 +193,12 @@
    "fotmobName": "Aalesund",
    "fotmobId": 8404,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 5,
    "drawn": 9,
-   "lost": 10,
-   "goals": "40-53",
-   "gd": -13,
+   "lost": 11,
+   "goals": "43-57",
+   "gd": -14,
    "pts": 24
   },
   {
@@ -207,13 +207,13 @@
    "fotmobName": "Kristiansund",
    "fotmobId": 8605,
    "group": null,
-   "played": 24,
-   "won": 5,
+   "played": 25,
+   "won": 6,
    "drawn": 5,
    "lost": 14,
-   "goals": "25-49",
-   "gd": -24,
-   "pts": 20
+   "goals": "29-51",
+   "gd": -22,
+   "pts": 23
   },
   {
    "rank": 16,
@@ -221,12 +221,12 @@
    "fotmobName": "Start",
    "fotmobId": 9919,
    "group": null,
-   "played": 24,
+   "played": 25,
    "won": 5,
    "drawn": 4,
-   "lost": 15,
-   "goals": "26-54",
-   "gd": -28,
+   "lost": 16,
+   "goals": "26-55",
+   "gd": -29,
    "pts": 19
   }
  ],
@@ -1483,6 +1483,120 @@
     24,
     19,
     -28
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Viking",
+    1,
+    25,
+    59,
+    38
+   ],
+   [
+    "Bodo/Glimt",
+    2,
+    25,
+    59,
+    38
+   ],
+   [
+    "Molde",
+    3,
+    25,
+    43,
+    20
+   ],
+   [
+    "Rosenborg",
+    4,
+    25,
+    43,
+    18
+   ],
+   [
+    "Lillestrom",
+    5,
+    25,
+    42,
+    3
+   ],
+   [
+    "Tromso",
+    6,
+    25,
+    40,
+    5
+   ],
+   [
+    "Brann",
+    7,
+    25,
+    32,
+    3
+   ],
+   [
+    "Valerenga",
+    8,
+    25,
+    32,
+    -3
+   ],
+   [
+    "Sarpsborg 08",
+    9,
+    25,
+    31,
+    -7
+   ],
+   [
+    "KFUM Oslo",
+    10,
+    25,
+    31,
+    -9
+   ],
+   [
+    "Fredrikstad",
+    11,
+    25,
+    29,
+    -15
+   ],
+   [
+    "Sandefjord",
+    12,
+    25,
+    27,
+    -8
+   ],
+   [
+    "HamKam",
+    13,
+    25,
+    27,
+    -18
+   ],
+   [
+    "Aalesund",
+    14,
+    25,
+    24,
+    -14
+   ],
+   [
+    "Kristiansund",
+    15,
+    25,
+    23,
+    -22
+   ],
+   [
+    "Start",
+    16,
+    25,
+    19,
+    -29
    ]
   ]
  }

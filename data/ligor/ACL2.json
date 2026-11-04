@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T09:04:03.955Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "ACL2",
  "fotmobId": 9469,
  "name": "AFC Champions League Two",
@@ -161,7 +161,7 @@
   },
   {
    "rank": 4,
-   "team": "Al-Nahda Muscat Club",
+   "team": "Al-Nahda Club",
    "fotmobName": "Al-Nahda",
    "fotmobId": 101748,
    "group": "Group C",
@@ -179,59 +179,59 @@
    "fotmobName": "Al Shorta",
    "fotmobId": 101655,
    "group": "Group D",
-   "played": 3,
-   "won": 2,
+   "played": 4,
+   "won": 3,
    "drawn": 1,
    "lost": 0,
-   "goals": "5-3",
-   "gd": 2,
-   "pts": 7
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 10
   },
   {
    "rank": 2,
-   "team": "Al Hussein",
+   "team": "Al-Hussein SC",
    "fotmobName": "Al-Hussein SC",
    "fotmobId": 101688,
    "group": "Group D",
-   "played": 3,
+   "played": 4,
    "won": 1,
    "drawn": 2,
-   "lost": 0,
-   "goals": "6-3",
-   "gd": 3,
+   "lost": 1,
+   "goals": "6-6",
+   "gd": 0,
    "pts": 5
   },
   {
    "rank": 3,
-   "team": "SC East Bengal",
-   "fotmobName": "East Bengal FC",
-   "fotmobId": 165184,
-   "group": "Group D",
-   "played": 3,
-   "won": 0,
-   "drawn": 2,
-   "lost": 1,
-   "goals": "4-5",
-   "gd": -1,
-   "pts": 2
-  },
-  {
-   "rank": 4,
    "team": "Al-Seeb",
    "fotmobName": "Al-Seeb",
    "fotmobId": 101759,
    "group": "Group D",
-   "played": 3,
-   "won": 0,
+   "played": 4,
+   "won": 1,
    "drawn": 1,
    "lost": 2,
-   "goals": "0-4",
-   "gd": -4,
-   "pts": 1
+   "goals": "2-4",
+   "gd": -2,
+   "pts": 4
+  },
+  {
+   "rank": 4,
+   "team": "East Bengal FC",
+   "fotmobName": "East Bengal FC",
+   "fotmobId": 165184,
+   "group": "Group D",
+   "played": 4,
+   "won": 0,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "4-7",
+   "gd": -3,
+   "pts": 2
   },
   {
    "rank": 1,
-   "team": "Persib",
+   "team": "Persib Bandung",
    "fotmobName": "Persib Bandung",
    "fotmobId": 165196,
    "group": "Group E",
@@ -357,7 +357,7 @@
   },
   {
    "rank": 2,
-   "team": "Preah Khan Reach Svay Rieng FC",
+   "team": "PKR Svay Rieng",
    "fotmobName": "Svay Rieng",
    "fotmobId": 542025,
    "group": "Group G",
@@ -385,7 +385,7 @@
   },
   {
    "rank": 4,
-   "team": "BG Tampines Rovers FC",
+   "team": "Tampines Rovers FC",
    "fotmobName": "Tampines Rovers FC",
    "fotmobId": 67386,
    "group": "Group G",
@@ -873,6 +873,232 @@
    ],
    [
     "BG Tampines Rovers FC",
+    4,
+    3,
+    0,
+    -6
+   ],
+   [
+    "Phnom Penh Crown",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "Gangwon FC",
+    2,
+    3,
+    4,
+    0
+   ],
+   [
+    "Kitchee",
+    3,
+    3,
+    2,
+    -2
+   ],
+   [
+    "Kuching City",
+    4,
+    3,
+    1,
+    -2
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Al-Wahda",
+    1,
+    3,
+    9,
+    3
+   ],
+   [
+    "Kuwait SC",
+    2,
+    3,
+    6,
+    2
+   ],
+   [
+    "Nasaf Qarshi",
+    3,
+    3,
+    1,
+    -2
+   ],
+   [
+    "Khaldiya",
+    4,
+    3,
+    1,
+    -3
+   ],
+   [
+    "Al-Jazira",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Arkadag",
+    2,
+    3,
+    4,
+    0
+   ],
+   [
+    "Al Muharraq",
+    3,
+    3,
+    3,
+    -1
+   ],
+   [
+    "Gol Gohar FC Sirjan",
+    4,
+    3,
+    2,
+    -2
+   ],
+   [
+    "Al Taawoun",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Al Rayyan",
+    2,
+    3,
+    6,
+    3
+   ],
+   [
+    "Al-Faisaly",
+    3,
+    3,
+    3,
+    -1
+   ],
+   [
+    "Al-Nahda Club",
+    4,
+    3,
+    1,
+    -5
+   ],
+   [
+    "Al-Shorta",
+    1,
+    4,
+    10,
+    5
+   ],
+   [
+    "Al-Hussein SC",
+    2,
+    4,
+    5,
+    0
+   ],
+   [
+    "Al-Seeb",
+    3,
+    4,
+    4,
+    -2
+   ],
+   [
+    "East Bengal FC",
+    4,
+    4,
+    2,
+    -3
+   ],
+   [
+    "Persib Bandung",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "Melbourne Victory",
+    2,
+    3,
+    4,
+    1
+   ],
+   [
+    "FC Seoul",
+    3,
+    3,
+    3,
+    1
+   ],
+   [
+    "Viettel",
+    4,
+    3,
+    1,
+    -6
+   ],
+   [
+    "Lion City Sailors FC",
+    1,
+    3,
+    7,
+    3
+   ],
+   [
+    "Adelaide United",
+    2,
+    3,
+    6,
+    2
+   ],
+   [
+    "BG Pathum United",
+    3,
+    3,
+    4,
+    2
+   ],
+   [
+    "Tai Po FC",
+    4,
+    3,
+    0,
+    -7
+   ],
+   [
+    "Machida Zelvia",
+    1,
+    3,
+    9,
+    4
+   ],
+   [
+    "PKR Svay Rieng",
+    2,
+    3,
+    4,
+    2
+   ],
+   [
+    "Shanghai Shenhua",
+    3,
+    3,
+    4,
+    0
+   ],
+   [
+    "Tampines Rovers FC",
     4,
     3,
     0,

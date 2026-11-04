@@ -1,18 +1,39 @@
 {
-    "updatedAt":  "2026-10-30T09:46:47.5849773+01:00",
+    "updatedAt":  "2026-11-04T06:28:02.6402544+01:00",
     "source":  "https://site.web.api.espn.com (eng.1 + eng.2)",
     "note":  "Elvor bekraftas nar ESPN publicerar starters (~1h fore kickoff). pending = ej slappta an.",
-    "fixtureCount":  71,
-    "confirmedCount":  3,
-    "pendingCount":  68,
+    "fixtureCount":  54,
+    "confirmedCount":  11,
+    "pendingCount":  43,
     "fixtures":  [
                      {
-                         "espnEventId":  "401880193",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Middlesbrough",
-                         "away":  "Charlton",
+                         "espnEventId":  "401841309",
+                         "date":  "2026-11-20",
+                         "kickoffUtc":  "2026-11-20T00:30Z",
+                         "league":  "BR",
+                         "home":  "São Paulo",
+                         "away":  "Fluminense",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841298",
+                         "date":  "2026-11-05",
+                         "kickoffUtc":  "2026-11-05T00:30Z",
+                         "league":  "BR",
+                         "home":  "São Paulo",
+                         "away":  "Corinthians",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -49,285 +70,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401878757",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T17:30Z",
-                         "league":  "PL",
-                         "home":  "Nott\u0027m Forest",
-                         "away":  "Man City",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880171",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "CH",
-                         "home":  "Blackburn",
-                         "away":  "West Ham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880188",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T12:30Z",
-                         "league":  "CH",
-                         "home":  "Stoke",
-                         "away":  "Preston",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879247",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "PL",
-                         "home":  "Coventry",
-                         "away":  "Sunderland",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879240",
-                         "date":  "2026-11-08",
-                         "kickoffUtc":  "2026-11-08T16:30Z",
-                         "league":  "PL",
-                         "home":  "Man United",
-                         "away":  "Aston Villa",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880187",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Swansea",
-                         "away":  "Blackburn",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880172",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "CH",
-                         "home":  "Birmingham",
-                         "away":  "Swansea",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841305",
+                         "espnEventId":  "401841300",
                          "date":  "2026-11-05",
-                         "kickoffUtc":  "2026-11-05T00:30Z",
+                         "kickoffUtc":  "2026-11-05T22:30Z",
                          "league":  "BR",
-                         "home":  "Botafogo",
-                         "away":  "Atlético-MG",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880176",
-                         "date":  "2026-11-04",
-                         "kickoffUtc":  "2026-11-04T20:00Z",
-                         "league":  "CH",
-                         "home":  "Bristol City",
-                         "away":  "Wolves",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841302",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-06T23:00Z",
-                         "league":  "BR",
-                         "home":  "Vitória",
-                         "away":  "Fluminense",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879246",
-                         "date":  "2026-11-01",
-                         "kickoffUtc":  "2026-11-01T16:30Z",
-                         "league":  "PL",
-                         "home":  "Liverpool",
-                         "away":  "Arsenal",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879242",
-                         "date":  "2026-11-06",
-                         "kickoffUtc":  "2026-11-06T20:00Z",
-                         "league":  "PL",
-                         "home":  "Everton",
-                         "away":  "Coventry",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401878761",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T17:30Z",
-                         "league":  "PL",
-                         "home":  "Tottenham",
-                         "away":  "Crystal Palace",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841299",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-02T23:00Z",
-                         "league":  "BR",
-                         "home":  "Red Bull Bragantino",
-                         "away":  "Santos",
+                         "home":  "Palmeiras",
+                         "away":  "Remo",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -364,174 +112,153 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401841290",
-                         "date":  "2026-10-30",
-                         "kickoffUtc":  "2026-10-30T00:30Z",
+                         "espnEventId":  "401841317",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-19T22:30Z",
                          "league":  "BR",
-                         "home":  "Grêmio",
-                         "away":  "Athletico Paranaense",
+                         "home":  "Vitória",
+                         "away":  "Red Bull Bragantino",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880181",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "league":  "CH",
+                         "home":  "Portsmouth",
+                         "away":  "Swansea",
                          "matchStatus":  "STATUS_FULL_TIME",
                          "lineupStatus":  "confirmed",
-                         "homeFormation":  "3-4-3",
-                         "awayFormation":  "3-4-2-1",
+                         "homeFormation":  "4-2-3-1",
+                         "awayFormation":  "4-3-3",
                          "homeStarters":  [
                                               {
-                                                  "name":  "Weverton",
+                                                  "name":  "Nicolas Schmid",
                                                   "jersey":  "1",
                                                   "position":  "G"
                                               },
                                               {
-                                                  "name":  "Fabián Balbuena",
-                                                  "jersey":  "2",
-                                                  "position":  "CD"
-                                              },
-                                              {
-                                                  "name":  "Wallace",
-                                                  "jersey":  "82",
+                                                  "name":  "Madiodio Dia",
+                                                  "jersey":  "55",
                                                   "position":  "CD-L"
                                               },
                                               {
-                                                  "name":  "Gustavo Martins",
-                                                  "jersey":  "6",
+                                                  "name":  "Regan Poole",
+                                                  "jersey":  "5",
                                                   "position":  "CD-R"
                                               },
                                               {
-                                                  "name":  "Mathías Villasanti",
-                                                  "jersey":  "20",
-                                                  "position":  "CM-L"
+                                                  "name":  "Jayden Meghoma",
+                                                  "jersey":  "16",
+                                                  "position":  "LB"
                                               },
                                               {
-                                                  "name":  "Erick Noriega",
-                                                  "jersey":  "8",
-                                                  "position":  "CM-R"
+                                                  "name":  "Terry Devlin",
+                                                  "jersey":  "24",
+                                                  "position":  "RB"
                                               },
                                               {
-                                                  "name":  "Marlon",
-                                                  "jersey":  "23",
+                                                  "name":  "Odin Bailey",
+                                                  "jersey":  "27",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Iyad Mohamed",
+                                                  "jersey":  "37",
                                                   "position":  "LM"
                                               },
                                               {
-                                                  "name":  "João Pedro",
-                                                  "jersey":  "18",
+                                                  "name":  "Ebrima Adams",
+                                                  "jersey":  "38",
                                                   "position":  "RM"
                                               },
                                               {
-                                                  "name":  "Carlos Vinícius",
-                                                  "jersey":  "95",
+                                                  "name":  "Marko Milovanovic",
+                                                  "jersey":  "29",
                                                   "position":  "F"
                                               },
                                               {
-                                                  "name":  "Francis Amuzu",
-                                                  "jersey":  "9",
-                                                  "position":  "CF-L"
+                                                  "name":  "Tyrese Shade",
+                                                  "jersey":  "17",
+                                                  "position":  "AM-L"
                                               },
                                               {
-                                                  "name":  "José Enamorado",
-                                                  "jersey":  "99",
-                                                  "position":  "CF-R"
+                                                  "name":  "Adrian Segecic",
+                                                  "jersey":  "10",
+                                                  "position":  "AM-R"
                                               }
                                           ],
                          "awayStarters":  [
                                               {
-                                                  "name":  "Mycael",
-                                                  "jersey":  "1",
+                                                  "name":  "Lawrence Vigouroux",
+                                                  "jersey":  "22",
                                                   "position":  "G"
                                               },
                                               {
-                                                  "name":  "Juan Felipe Aguirre",
-                                                  "jersey":  "33",
-                                                  "position":  "CD"
-                                              },
-                                              {
-                                                  "name":  "Lucas Esquivel",
-                                                  "jersey":  "37",
+                                                  "name":  "Stephen Welsh",
+                                                  "jersey":  "23",
                                                   "position":  "CD-L"
                                               },
                                               {
-                                                  "name":  "Arthur Dias",
-                                                  "jersey":  "4",
+                                                  "name":  "Jenson Seelt",
+                                                  "jersey":  "3",
                                                   "position":  "CD-R"
                                               },
                                               {
-                                                  "name":  "Luiz Gustavo",
+                                                  "name":  "Josh Tymon",
                                                   "jersey":  "14",
-                                                  "position":  "CM-L"
+                                                  "position":  "LB"
                                               },
                                               {
-                                                  "name":  "Juan Portilla",
-                                                  "jersey":  "27",
-                                                  "position":  "CM-R"
+                                                  "name":  "Filip Lissah",
+                                                  "jersey":  "26",
+                                                  "position":  "RB"
                                               },
                                               {
-                                                  "name":  "Leonardo Derik",
+                                                  "name":  "Jay Fulton",
+                                                  "jersey":  "4",
+                                                  "position":  "CM"
+                                              },
+                                              {
+                                                  "name":  "Marko Stamenic",
                                                   "jersey":  "6",
                                                   "position":  "LM"
                                               },
                                               {
-                                                  "name":  "Stiven Mendoza",
-                                                  "jersey":  "7",
+                                                  "name":  "Gonçalo Franco",
+                                                  "jersey":  "17",
                                                   "position":  "RM"
                                               },
                                               {
-                                                  "name":  "Kevin Viveros",
-                                                  "jersey":  "9",
+                                                  "name":  "Adam Idah",
+                                                  "jersey":  "33",
                                                   "position":  "F"
                                               },
                                               {
-                                                  "name":  "João Cruz",
-                                                  "jersey":  "8",
-                                                  "position":  "CF-L"
+                                                  "name":  "Melker Widell",
+                                                  "jersey":  "7",
+                                                  "position":  "LF"
                                               },
                                               {
-                                                  "name":  "Leozinho",
-                                                  "jersey":  "21",
-                                                  "position":  "CF-R"
+                                                  "name":  "Joseph Opoku",
+                                                  "jersey":  "30",
+                                                  "position":  "RF"
                                               }
                                           ],
                          "homeStarterCount":  11,
                          "awayStarterCount":  11,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880190",
-                         "date":  "2026-10-30",
-                         "kickoffUtc":  "2026-10-30T20:00Z",
-                         "league":  "CH",
-                         "home":  "Sheffield United",
-                         "away":  "Wrexham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879249",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "PL",
-                         "home":  "Brentford",
-                         "away":  "Nott\u0027m Forest",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
                          "source":  "espn-site-web-api"
                      },
                      {
@@ -556,54 +283,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401841300",
-                         "date":  "2026-11-05",
-                         "kickoffUtc":  "2026-11-05T22:30Z",
-                         "league":  "BR",
-                         "home":  "Palmeiras",
-                         "away":  "Remo",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880192",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Millwall",
-                         "away":  "Derby",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880169",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "espnEventId":  "401880175",
+                         "date":  "2026-11-04",
+                         "kickoffUtc":  "2026-11-04T19:45Z",
                          "league":  "CH",
                          "home":  "Cardiff City",
-                         "away":  "Burnley",
+                         "away":  "West Ham",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -619,12 +304,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401880181",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "espnEventId":  "401880167",
+                         "date":  "2026-11-06",
+                         "kickoffUtc":  "2026-11-06T20:00Z",
                          "league":  "CH",
-                         "home":  "Portsmouth",
-                         "away":  "Swansea",
+                         "home":  "Derby",
+                         "away":  "Bolton Wanderers",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -640,12 +325,54 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401879251",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
+                         "espnEventId":  "401880173",
+                         "date":  "2026-11-04",
+                         "kickoffUtc":  "2026-11-04T19:45Z",
+                         "league":  "CH",
+                         "home":  "Wrexham",
+                         "away":  "Middlesbrough",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880176",
+                         "date":  "2026-11-04",
+                         "kickoffUtc":  "2026-11-04T20:00Z",
+                         "league":  "CH",
+                         "home":  "Bristol City",
+                         "away":  "Wolves",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879240",
+                         "date":  "2026-11-08",
+                         "kickoffUtc":  "2026-11-08T16:30Z",
                          "league":  "PL",
-                         "home":  "Bournemouth",
-                         "away":  "Leeds",
+                         "home":  "Man United",
+                         "away":  "Aston Villa",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -661,12 +388,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401878763",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "PL",
-                         "home":  "Hull",
-                         "away":  "Ipswich",
+                         "espnEventId":  "401841310",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-18T23:00Z",
+                         "league":  "BR",
+                         "home":  "Remo",
+                         "away":  "Chapecoense",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -682,12 +409,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401880180",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
-                         "league":  "CH",
-                         "home":  "Preston",
-                         "away":  "Sheffield United",
+                         "espnEventId":  "401841308",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-19T22:30Z",
+                         "league":  "BR",
+                         "home":  "Vasco da Gama",
+                         "away":  "Internacional",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -703,75 +430,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401880179",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
-                         "league":  "CH",
-                         "home":  "QPR",
-                         "away":  "Burnley",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401878760",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "PL",
-                         "home":  "Arsenal",
-                         "away":  "Hull",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880195",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Burnley",
-                         "away":  "Portsmouth",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880170",
+                         "espnEventId":  "401880161",
                          "date":  "2026-11-07",
                          "kickoffUtc":  "2026-11-07T12:30Z",
                          "league":  "CH",
-                         "home":  "Bristol City",
-                         "away":  "Norwich",
+                         "home":  "Wrexham",
+                         "away":  "Wolves",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -814,289 +478,121 @@
                          "league":  "CH",
                          "home":  "Charlton",
                          "away":  "Bolton Wanderers",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880162",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "CH",
-                         "home":  "West Brom",
-                         "away":  "Millwall",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879245",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "PL",
-                         "home":  "Man City",
-                         "away":  "Brighton",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401878758",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T12:30Z",
-                         "league":  "PL",
-                         "home":  "Leeds",
-                         "away":  "Tottenham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880166",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T12:30Z",
-                         "league":  "CH",
-                         "home":  "Portsmouth",
-                         "away":  "Stoke",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841306",
-                         "date":  "2026-11-04",
-                         "kickoffUtc":  "2026-11-04T22:30Z",
-                         "league":  "BR",
-                         "home":  "Athletico Paranaense",
-                         "away":  "Vasco da Gama",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880182",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
-                         "league":  "CH",
-                         "home":  "Derby",
-                         "away":  "Norwich",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841303",
-                         "date":  "2026-11-06",
-                         "kickoffUtc":  "2026-11-06T00:30Z",
-                         "league":  "BR",
-                         "home":  "Cruzeiro",
-                         "away":  "Bahia",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841288",
-                         "date":  "2026-10-29",
-                         "kickoffUtc":  "2026-10-29T22:30Z",
-                         "league":  "BR",
-                         "home":  "Atlético-MG",
-                         "away":  "Cruzeiro",
                          "matchStatus":  "STATUS_FULL_TIME",
                          "lineupStatus":  "confirmed",
                          "homeFormation":  "4-2-3-1",
                          "awayFormation":  "4-2-3-1",
                          "homeStarters":  [
                                               {
-                                                  "name":  "Gabriel Delfim",
-                                                  "jersey":  "1",
+                                                  "name":  "William Mannion",
+                                                  "jersey":  "25",
                                                   "position":  "G"
                                               },
                                               {
-                                                  "name":  "Lyanco",
-                                                  "jersey":  "13",
+                                                  "name":  "Billy Koumetio",
+                                                  "jersey":  "12",
                                                   "position":  "CD-L"
                                               },
                                               {
-                                                  "name":  "Vitão",
-                                                  "jersey":  "40",
+                                                  "name":  "Lloyd Jones",
+                                                  "jersey":  "5",
                                                   "position":  "CD-R"
                                               },
                                               {
-                                                  "name":  "Renan Lodi",
-                                                  "jersey":  "6",
+                                                  "name":  "Amari\u0027i Bell",
+                                                  "jersey":  "17",
                                                   "position":  "LB"
                                               },
                                               {
-                                                  "name":  "Natanael",
-                                                  "jersey":  "2",
+                                                  "name":  "Dan McNamara",
+                                                  "jersey":  "20",
                                                   "position":  "RB"
                                               },
                                               {
-                                                  "name":  "Victor Hugo",
-                                                  "jersey":  "30",
+                                                  "name":  "Karlan Grant",
+                                                  "jersey":  "9",
                                                   "position":  "AM"
                                               },
                                               {
-                                                  "name":  "Kevin Castaño",
-                                                  "jersey":  "15",
+                                                  "name":  "Conor Coventry",
+                                                  "jersey":  "6",
                                                   "position":  "LM"
                                               },
                                               {
-                                                  "name":  "Alan Franco",
-                                                  "jersey":  "21",
+                                                  "name":  "Nathaniel Chalobah",
+                                                  "jersey":  "15",
                                                   "position":  "RM"
                                               },
                                               {
-                                                  "name":  "Reiner",
-                                                  "jersey":  "19",
+                                                  "name":  "Charlie Kelman",
+                                                  "jersey":  "23",
                                                   "position":  "F"
                                               },
                                               {
-                                                  "name":  "Igor Gomes",
-                                                  "jersey":  "17",
+                                                  "name":  "Tyreece Campbell",
+                                                  "jersey":  "7",
                                                   "position":  "AM-L"
                                               },
                                               {
-                                                  "name":  "Gustavo Scarpa",
-                                                  "jersey":  "10",
+                                                  "name":  "Harvey Knibbs",
+                                                  "jersey":  "8",
                                                   "position":  "AM-R"
                                               }
                                           ],
                          "awayStarters":  [
                                               {
-                                                  "name":  "Otávio Costa",
-                                                  "jersey":  "81",
+                                                  "name":  "Jack Bonham",
+                                                  "jersey":  "1",
                                                   "position":  "G"
                                               },
                                               {
-                                                  "name":  "João Marcelo",
-                                                  "jersey":  "43",
+                                                  "name":  "Akin Famewo",
+                                                  "jersey":  "14",
                                                   "position":  "CD-L"
                                               },
                                               {
-                                                  "name":  "Jonathan Jesus",
-                                                  "jersey":  "34",
+                                                  "name":  "Christian Forino Joseph",
+                                                  "jersey":  "3",
                                                   "position":  "CD-R"
                                               },
                                               {
-                                                  "name":  "Lucas Villalba",
+                                                  "name":  "Max Conway",
                                                   "jersey":  "25",
                                                   "position":  "LB"
                                               },
                                               {
-                                                  "name":  "William",
-                                                  "jersey":  "12",
+                                                  "name":  "Luca Stephenson",
+                                                  "jersey":  "27",
                                                   "position":  "RB"
                                               },
                                               {
-                                                  "name":  "Matheus Pereira",
-                                                  "jersey":  "10",
+                                                  "name":  "Atsuki Ito",
+                                                  "jersey":  "17",
                                                   "position":  "AM"
                                               },
                                               {
-                                                  "name":  "Zé Lucas",
-                                                  "jersey":  "5",
+                                                  "name":  "Josh Sheehan",
+                                                  "jersey":  "8",
                                                   "position":  "LM"
                                               },
                                               {
-                                                  "name":  "Lucas Romero",
-                                                  "jersey":  "29",
+                                                  "name":  "Xavier Simons",
+                                                  "jersey":  "4",
                                                   "position":  "RM"
                                               },
                                               {
-                                                  "name":  "Kaio Jorge",
-                                                  "jersey":  "19",
+                                                  "name":  "Sam Dalby",
+                                                  "jersey":  "10",
                                                   "position":  "F"
                                               },
                                               {
-                                                  "name":  "Gerson",
-                                                  "jersey":  "8",
+                                                  "name":  "Max Lott",
+                                                  "jersey":  "35",
                                                   "position":  "AM-L"
                                               },
                                               {
-                                                  "name":  "Keny Arroyo",
-                                                  "jersey":  "99",
+                                                  "name":  "Samuel Iling-Junior",
+                                                  "jersey":  "16",
                                                   "position":  "AM-R"
                                               }
                                           ],
@@ -1105,432 +601,12 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401880191",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T12:30Z",
-                         "league":  "CH",
-                         "home":  "Norwich",
-                         "away":  "Watford",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880184",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T20:00Z",
-                         "league":  "CH",
-                         "home":  "Birmingham",
-                         "away":  "Millwall",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841295",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-30T23:00Z",
+                         "espnEventId":  "401841313",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-18T23:30Z",
                          "league":  "BR",
-                         "home":  "Corinthians",
-                         "away":  "Mirassol",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879250",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T20:00Z",
-                         "league":  "PL",
-                         "home":  "Aston Villa",
-                         "away":  "Fulham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879244",
-                         "date":  "2026-11-08",
-                         "kickoffUtc":  "2026-11-08T14:00Z",
-                         "league":  "PL",
-                         "home":  "Brighton",
-                         "away":  "Brentford",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880167",
-                         "date":  "2026-11-06",
-                         "kickoffUtc":  "2026-11-06T20:00Z",
-                         "league":  "CH",
-                         "home":  "Derby",
-                         "away":  "Bolton Wanderers",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880164",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "CH",
-                         "home":  "QPR",
-                         "away":  "Lincoln City",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880177",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T20:00Z",
-                         "league":  "CH",
-                         "home":  "West Brom",
-                         "away":  "Southampton",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880163",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T15:00Z",
-                         "league":  "CH",
-                         "home":  "Watford",
-                         "away":  "Middlesbrough",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880194",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T12:30Z",
-                         "league":  "CH",
-                         "home":  "Lincoln City",
-                         "away":  "Birmingham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880178",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
-                         "league":  "CH",
-                         "home":  "Watford",
-                         "away":  "Lincoln City",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880189",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Southampton",
-                         "away":  "QPR",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841304",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T22:30Z",
-                         "league":  "BR",
-                         "home":  "Chapecoense",
-                         "away":  "Mirassol",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841298",
-                         "date":  "2026-11-05",
-                         "kickoffUtc":  "2026-11-05T00:30Z",
-                         "league":  "BR",
-                         "home":  "São Paulo",
-                         "away":  "Corinthians",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880161",
-                         "date":  "2026-11-07",
-                         "kickoffUtc":  "2026-11-07T12:30Z",
-                         "league":  "CH",
-                         "home":  "Wrexham",
-                         "away":  "Wolves",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880183",
-                         "date":  "2026-11-03",
-                         "kickoffUtc":  "2026-11-03T19:45Z",
-                         "league":  "CH",
-                         "home":  "Blackburn",
-                         "away":  "Stoke",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401879248",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T12:30Z",
-                         "league":  "PL",
-                         "home":  "Chelsea",
-                         "away":  "Man United",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880186",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "West Ham",
-                         "away":  "West Brom",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880173",
-                         "date":  "2026-11-04",
-                         "kickoffUtc":  "2026-11-04T19:45Z",
-                         "league":  "CH",
-                         "home":  "Wrexham",
-                         "away":  "Middlesbrough",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880185",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
-                         "league":  "CH",
-                         "home":  "Wolves",
-                         "away":  "Cardiff City",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401841301",
-                         "date":  "2026-11-04",
-                         "kickoffUtc":  "2026-11-04T00:30Z",
-                         "league":  "BR",
-                         "home":  "Internacional",
-                         "away":  "Coritiba",
+                         "home":  "Flamengo",
+                         "away":  "Athletico Paranaense",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -1567,12 +643,1164 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401878762",
-                         "date":  "2026-11-02",
-                         "kickoffUtc":  "2026-11-02T20:00Z",
+                         "espnEventId":  "401841312",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-19T00:30Z",
+                         "league":  "BR",
+                         "home":  "Grêmio",
+                         "away":  "Bahia",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880170",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T12:30Z",
+                         "league":  "CH",
+                         "home":  "Bristol City",
+                         "away":  "Norwich",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841306",
+                         "date":  "2026-11-04",
+                         "kickoffUtc":  "2026-11-04T22:30Z",
+                         "league":  "BR",
+                         "home":  "Athletico Paranaense",
+                         "away":  "Vasco da Gama",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880162",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "CH",
+                         "home":  "West Brom",
+                         "away":  "Millwall",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880166",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T12:30Z",
+                         "league":  "CH",
+                         "home":  "Portsmouth",
+                         "away":  "Stoke",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880180",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "league":  "CH",
+                         "home":  "Preston",
+                         "away":  "Sheffield United",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "3-4-1-2",
+                         "awayFormation":  "4-4-2",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Daniel Iversen",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Jordan Storey",
+                                                  "jersey":  "14",
+                                                  "position":  "CD"
+                                              },
+                                              {
+                                                  "name":  "Andrew Hughes",
+                                                  "jersey":  "16",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Odeluga Offiah",
+                                                  "jersey":  "24",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Jordan Thompson",
+                                                  "jersey":  "15",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Leo Leroy",
+                                                  "jersey":  "27",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Andy Moran",
+                                                  "jersey":  "23",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Andrija Vukcevic",
+                                                  "jersey":  "3",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Stanley Mills",
+                                                  "jersey":  "17",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Jusef Erabi",
+                                                  "jersey":  "9",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Johnny Kenny",
+                                                  "jersey":  "38",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Michael Cooper",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Mark McGuinness",
+                                                  "jersey":  "25",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Japhet Tanganga",
+                                                  "jersey":  "5",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Harrison Burrows",
+                                                  "jersey":  "14",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Hamza Choudhury",
+                                                  "jersey":  "8",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Jairo Riedewald",
+                                                  "jersey":  "44",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Sydie Peck",
+                                                  "jersey":  "42",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Romelle Donovan",
+                                                  "jersey":  "11",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Tahith Chong",
+                                                  "jersey":  "19",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Ben Brereton Díaz",
+                                                  "jersey":  "22",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Thomas Cannon",
+                                                  "jersey":  "9",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841314",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-18T23:30Z",
+                         "league":  "BR",
+                         "home":  "Cruzeiro",
+                         "away":  "Palmeiras",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841304",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T22:30Z",
+                         "league":  "BR",
+                         "home":  "Chapecoense",
+                         "away":  "Mirassol",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-2-3-1",
+                         "awayFormation":  "4-2-3-1",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Anderson Paixão",
+                                                  "jersey":  "98",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Eduardo Doma",
+                                                  "jersey":  "3",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Kauan",
+                                                  "jersey":  "21",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Bruno Pacheco",
+                                                  "jersey":  "91",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Heitor",
+                                                  "jersey":  "5",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Giovanni Augusto",
+                                                  "jersey":  "10",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Yago Felipe",
+                                                  "jersey":  "88",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Camilo",
+                                                  "jersey":  "27",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Túlio Eduardo Silva De Oliveira",
+                                                  "jersey":  "9",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Yannick Bolasie",
+                                                  "jersey":  "11",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Marcinho",
+                                                  "jersey":  "7",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Walter",
+                                                  "jersey":  "22",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Lucas Oliveira",
+                                                  "jersey":  "2",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "João Victor",
+                                                  "jersey":  "34",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Reinaldo",
+                                                  "jersey":  "6",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Igor Marques",
+                                                  "jersey":  "32",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Carlos Eduardo",
+                                                  "jersey":  "33",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Neto Moura",
+                                                  "jersey":  "25",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Denilson",
+                                                  "jersey":  "27",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "André Luis",
+                                                  "jersey":  "9",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Alesson",
+                                                  "jersey":  "77",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Shaylon",
+                                                  "jersey":  "7",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880177",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T20:00Z",
+                         "league":  "CH",
+                         "home":  "West Brom",
+                         "away":  "Southampton",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-4-2",
+                         "awayFormation":  "4-2-3-1",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Max O\u0027Leary",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "George Campbell",
+                                                  "jersey":  "6",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Chris Mepham",
+                                                  "jersey":  "2",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Callum Styles",
+                                                  "jersey":  "4",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Brayann Pereira",
+                                                  "jersey":  "18",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Ousmane Diakite",
+                                                  "jersey":  "17",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Jayson Molumby",
+                                                  "jersey":  "8",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Isaac Price",
+                                                  "jersey":  "21",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Rabby Nzingoula",
+                                                  "jersey":  "20",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Felix Horn Myhre",
+                                                  "jersey":  "7",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Jimmy Morgan",
+                                                  "jersey":  "11",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Daniel Peretz",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Keven Schlotterbeck",
+                                                  "jersey":  "13",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Jack Stephens",
+                                                  "jersey":  "5",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Ryan Manning",
+                                                  "jersey":  "3",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "James Bree",
+                                                  "jersey":  "14",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Finn Azaz",
+                                                  "jersey":  "10",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Flynn Downes",
+                                                  "jersey":  "4",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "James Ward-Prowse",
+                                                  "jersey":  "30",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Divin Mubama",
+                                                  "jersey":  "28",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Samuel Edozie",
+                                                  "jersey":  "23",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Kuryu Matsuki",
+                                                  "jersey":  "27",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880169",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "CH",
+                         "home":  "Cardiff City",
+                         "away":  "Burnley",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879244",
+                         "date":  "2026-11-08",
+                         "kickoffUtc":  "2026-11-08T14:00Z",
                          "league":  "PL",
-                         "home":  "Newcastle",
-                         "away":  "Everton",
+                         "home":  "Brighton",
+                         "away":  "Brentford",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841302",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-06T23:00Z",
+                         "league":  "BR",
+                         "home":  "Vitória",
+                         "away":  "Fluminense",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841301",
+                         "date":  "2026-11-04",
+                         "kickoffUtc":  "2026-11-04T00:30Z",
+                         "league":  "BR",
+                         "home":  "Internacional",
+                         "away":  "Coritiba",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "3-4-2-1",
+                         "awayFormation":  "4-2-3-1",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Kauan",
+                                                  "jersey":  "22",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Gabriel Mercado",
+                                                  "jersey":  "25",
+                                                  "position":  "CD"
+                                              },
+                                              {
+                                                  "name":  "Juninho",
+                                                  "jersey":  "18",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Bruno Gomes",
+                                                  "jersey":  "15",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Thiago Maia",
+                                                  "jersey":  "29",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Rodrigo Villagra",
+                                                  "jersey":  "5",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Matheus Bahia",
+                                                  "jersey":  "6",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Brian Aguirre",
+                                                  "jersey":  "35",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Alerrando",
+                                                  "jersey":  "9",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Johan Carbonero",
+                                                  "jersey":  "7",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Vitinho",
+                                                  "jersey":  "28",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Pedro Luccas",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Jacy Maranhão",
+                                                  "jersey":  "55",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Tiago",
+                                                  "jersey":  "23",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Bruno Melo",
+                                                  "jersey":  "26",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Tinga",
+                                                  "jersey":  "2",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Nicolás Fonseca",
+                                                  "jersey":  "5",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Sebastián Gómez",
+                                                  "jersey":  "19",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Thiago Santos",
+                                                  "jersey":  "21",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Josué Pesqueira",
+                                                  "jersey":  "10",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Pedro Rocha",
+                                                  "jersey":  "32",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Breno",
+                                                  "jersey":  "77",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880182",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "league":  "CH",
+                         "home":  "Derby",
+                         "away":  "Norwich",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-4-2",
+                         "awayFormation":  "4-2-3-1",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Jacob Widell Zetterström",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Dion Sanderson",
+                                                  "jersey":  "28",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Ryan Nyambe",
+                                                  "jersey":  "24",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Max Johnston",
+                                                  "jersey":  "22",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Isaac Gordon",
+                                                  "jersey":  "43",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Oscar Fraulo",
+                                                  "jersey":  "29",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Alex Mowatt",
+                                                  "jersey":  "20",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Bobby Clark",
+                                                  "jersey":  "8",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Sammie Szmodics",
+                                                  "jersey":  "11",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Carlton Morris",
+                                                  "jersey":  "9",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Henrik Meister",
+                                                  "jersey":  "19",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Daniel Grimshaw",
+                                                  "jersey":  "32",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Harry Darling",
+                                                  "jersey":  "6",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Ruairi McConville",
+                                                  "jersey":  "15",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Darlin Yongwa",
+                                                  "jersey":  "13",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Jack Stacey",
+                                                  "jersey":  "3",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Paris Maghoma",
+                                                  "jersey":  "25",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Jacob Wright",
+                                                  "jersey":  "16",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Sam Field",
+                                                  "jersey":  "26",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Mathias Kvistgaarden",
+                                                  "jersey":  "30",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Anthony Musaba",
+                                                  "jersey":  "49",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Andre Brooks",
+                                                  "jersey":  "11",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880183",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "league":  "CH",
+                         "home":  "Blackburn",
+                         "away":  "Stoke",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-2-3-1",
+                         "awayFormation":  "3-4-3",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Balazs Toth",
+                                                  "jersey":  "22",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Sean McLoughlin",
+                                                  "jersey":  "15",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Hayden Carter",
+                                                  "jersey":  "17",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Harry Pickering",
+                                                  "jersey":  "3",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Ryan Alebiousu",
+                                                  "jersey":  "2",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Todd Cantwell",
+                                                  "jersey":  "10",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Kristi Montgomery",
+                                                  "jersey":  "31",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Sam Morsy",
+                                                  "jersey":  "8",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Andri Gudjohnsen",
+                                                  "jersey":  "9",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Oladapo Afolayan",
+                                                  "jersey":  "21",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Jayden Fevrier",
+                                                  "jersey":  "11",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Viktor Johansson",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Maksym Taloverov",
+                                                  "jersey":  "40",
+                                                  "position":  "CD"
+                                              },
+                                              {
+                                                  "name":  "Luke Graham",
+                                                  "jersey":  "5",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Ben Wilmot",
+                                                  "jersey":  "16",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Djibril Soumaré",
+                                                  "jersey":  "27",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Jack McGlynn",
+                                                  "jersey":  "7",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Luca Bombino",
+                                                  "jersey":  "21",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Ben Johnson",
+                                                  "jersey":  "2",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Róbert Bozeník",
+                                                  "jersey":  "9",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Justin Devenny",
+                                                  "jersey":  "13",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Million Manhoef",
+                                                  "jersey":  "42",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880164",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "CH",
+                         "home":  "QPR",
+                         "away":  "Lincoln City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880171",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "CH",
+                         "home":  "Blackburn",
+                         "away":  "West Ham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841315",
+                         "date":  "2026-11-18",
+                         "kickoffUtc":  "2026-11-18T22:30Z",
+                         "league":  "BR",
+                         "home":  "Coritiba",
+                         "away":  "Santos",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879243",
+                         "date":  "2026-11-08",
+                         "kickoffUtc":  "2026-11-08T14:00Z",
+                         "league":  "PL",
+                         "home":  "Crystal Palace",
+                         "away":  "Liverpool",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878757",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T17:30Z",
+                         "league":  "PL",
+                         "home":  "Nott\u0027m Forest",
+                         "away":  "Man City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841303",
+                         "date":  "2026-11-06",
+                         "kickoffUtc":  "2026-11-06T00:30Z",
+                         "league":  "BR",
+                         "home":  "Cruzeiro",
+                         "away":  "Bahia",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879242",
+                         "date":  "2026-11-06",
+                         "kickoffUtc":  "2026-11-06T20:00Z",
+                         "league":  "PL",
+                         "home":  "Everton",
+                         "away":  "Coventry",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878758",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T12:30Z",
+                         "league":  "PL",
+                         "home":  "Leeds",
+                         "away":  "Tottenham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841311",
+                         "date":  "2026-11-14",
+                         "kickoffUtc":  "2026-11-14T21:30Z",
+                         "league":  "BR",
+                         "home":  "Mirassol",
+                         "away":  "Atlético-MG",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880172",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "CH",
+                         "home":  "Birmingham",
+                         "away":  "Swansea",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -1609,127 +1837,256 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401841292",
-                         "date":  "2026-10-30",
-                         "kickoffUtc":  "2026-10-29T23:00Z",
-                         "league":  "BR",
-                         "home":  "Vasco da Gama",
-                         "away":  "Flamengo",
+                         "espnEventId":  "401880184",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T20:00Z",
+                         "league":  "CH",
+                         "home":  "Birmingham",
+                         "away":  "Millwall",
                          "matchStatus":  "STATUS_FULL_TIME",
                          "lineupStatus":  "confirmed",
-                         "homeFormation":  "4-1-4-1",
-                         "awayFormation":  "4-2-3-1",
+                         "homeFormation":  "4-2-3-1",
+                         "awayFormation":  "4-4-2",
                          "homeStarters":  [
                                               {
-                                                  "name":  "Léo Jardim",
-                                                  "jersey":  "1",
+                                                  "name":  "Ryan Allsop",
+                                                  "jersey":  "21",
                                                   "position":  "G"
                                               },
                                               {
-                                                  "name":  "Lucas Freitas",
-                                                  "jersey":  "43",
-                                                  "position":  "CD-L"
-                                              },
-                                              {
-                                                  "name":  "Gabriel Pereira",
-                                                  "jersey":  "55",
-                                                  "position":  "CD-R"
-                                              },
-                                              {
-                                                  "name":  "Jair",
-                                                  "jersey":  "8",
-                                                  "position":  "DM"
-                                              },
-                                              {
-                                                  "name":  "Cuiabano",
-                                                  "jersey":  "66",
-                                                  "position":  "LB"
-                                              },
-                                              {
-                                                  "name":  "José Luis Rodríguez",
-                                                  "jersey":  "2",
-                                                  "position":  "RB"
-                                              },
-                                              {
-                                                  "name":  "Thiago Mendes",
-                                                  "jersey":  "23",
-                                                  "position":  "CM-L"
-                                              },
-                                              {
-                                                  "name":  "Alan Lescano",
-                                                  "jersey":  "22",
-                                                  "position":  "CM-R"
-                                              },
-                                              {
-                                                  "name":  "Facundo Colidio",
-                                                  "jersey":  "9",
-                                                  "position":  "LM"
-                                              },
-                                              {
-                                                  "name":  "Marino Hinestroza",
-                                                  "jersey":  "18",
-                                                  "position":  "RM"
-                                              },
-                                              {
-                                                  "name":  "Brenner",
-                                                  "jersey":  "20",
-                                                  "position":  "F"
-                                              }
-                                          ],
-                         "awayStarters":  [
-                                              {
-                                                  "name":  "Agustín Rossi",
-                                                  "jersey":  "1",
-                                                  "position":  "G"
-                                              },
-                                              {
-                                                  "name":  "Léo Pereira",
+                                                  "name":  "Christoph Klarer",
                                                   "jersey":  "4",
                                                   "position":  "CD-L"
                                               },
                                               {
-                                                  "name":  "Léo Ortiz",
-                                                  "jersey":  "3",
+                                                  "name":  "Phil Neumann",
+                                                  "jersey":  "5",
                                                   "position":  "CD-R"
                                               },
                                               {
-                                                  "name":  "Emerson Royal",
-                                                  "jersey":  "22",
+                                                  "name":  "Alex Cochrane",
+                                                  "jersey":  "20",
                                                   "position":  "LB"
                                               },
                                               {
-                                                  "name":  "Guillermo Varela",
+                                                  "name":  "Ethan Laird",
                                                   "jersey":  "2",
                                                   "position":  "RB"
                                               },
                                               {
-                                                  "name":  "Giorgian de Arrascaeta",
+                                                  "name":  "Jay Stansfield",
+                                                  "jersey":  "28",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Jhon Solís",
+                                                  "jersey":  "14",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Tomoki Iwata",
+                                                  "jersey":  "24",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Max Bird",
+                                                  "jersey":  "18",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Liam Millar",
+                                                  "jersey":  "17",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Patrick Roberts",
+                                                  "jersey":  "16",
+                                                  "position":  "AM-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Max Crocombe",
+                                                  "jersey":  "15",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Jake Cooper",
+                                                  "jersey":  "5",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Caleb Taylor",
+                                                  "jersey":  "6",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Zak Sturge",
+                                                  "jersey":  "3",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Jordi Osei-Tutu",
+                                                  "jersey":  "2",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Derek Mazou-Sacko",
+                                                  "jersey":  "49",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Camiel Neghli",
+                                                  "jersey":  "10",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Luke Cundle",
+                                                  "jersey":  "25",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Kyrell Lisbie",
+                                                  "jersey":  "22",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Mihailo Ivanovic",
+                                                  "jersey":  "9",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Lyndon Dykes",
+                                                  "jersey":  "13",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880179",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
+                         "league":  "CH",
+                         "home":  "QPR",
+                         "away":  "Burnley",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-4-2",
+                         "awayFormation":  "4-2-3-1",
+                         "homeStarters":  [
+                                              {
+                                                  "name":  "Pierce Charles",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Ronnie Edwards",
+                                                  "jersey":  "5",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Jimmy Dunne",
+                                                  "jersey":  "3",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Dennis Cirkin",
+                                                  "jersey":  "19",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Kealey Adamson",
+                                                  "jersey":  "2",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Glen Kamara",
+                                                  "jersey":  "18",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Jonathan Varane",
+                                                  "jersey":  "40",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Koki Saito",
+                                                  "jersey":  "14",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Harvey Vale",
+                                                  "jersey":  "20",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Paul Smyth",
+                                                  "jersey":  "11",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Richard Kone",
+                                                  "jersey":  "22",
+                                                  "position":  "CF-R"
+                                              }
+                                          ],
+                         "awayStarters":  [
+                                              {
+                                                  "name":  "Grégoire Coudert",
+                                                  "jersey":  "37",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Igor Julio",
+                                                  "jersey":  "44",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Hjalmar Ekdal",
+                                                  "jersey":  "18",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Lucas Pires",
+                                                  "jersey":  "23",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Kyle Walker",
+                                                  "jersey":  "2",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Marcus Edwards",
                                                   "jersey":  "10",
                                                   "position":  "AM"
                                               },
                                               {
-                                                  "name":  "Erick Pulgar",
+                                                  "name":  "Reo Hatate",
                                                   "jersey":  "5",
                                                   "position":  "LM"
                                               },
                                               {
-                                                  "name":  "Jorginho",
-                                                  "jersey":  "21",
+                                                  "name":  "Josh Laurent",
+                                                  "jersey":  "29",
                                                   "position":  "RM"
                                               },
                                               {
-                                                  "name":  "Pedro",
+                                                  "name":  "Jamie Vardy",
                                                   "jersey":  "9",
                                                   "position":  "F"
                                               },
                                               {
-                                                  "name":  "Samuel Lino",
-                                                  "jersey":  "16",
+                                                  "name":  "Largie Ramazani",
+                                                  "jersey":  "19",
                                                   "position":  "AM-L"
                                               },
                                               {
-                                                  "name":  "Gonzalo Plata",
-                                                  "jersey":  "19",
+                                                  "name":  "Andreas Hountondji",
+                                                  "jersey":  "17",
                                                   "position":  "AM-R"
                                               }
                                           ],
@@ -1738,54 +2095,141 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401879243",
-                         "date":  "2026-11-08",
-                         "kickoffUtc":  "2026-11-08T14:00Z",
-                         "league":  "PL",
-                         "home":  "Crystal Palace",
-                         "away":  "Liverpool",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
-                         "homeStarters":  [
-
-                                          ],
-                         "awayStarters":  [
-
-                                          ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
-                         "source":  "espn-site-web-api"
-                     },
-                     {
-                         "espnEventId":  "401880175",
-                         "date":  "2026-11-04",
-                         "kickoffUtc":  "2026-11-04T19:45Z",
+                         "espnEventId":  "401880178",
+                         "date":  "2026-11-03",
+                         "kickoffUtc":  "2026-11-03T19:45Z",
                          "league":  "CH",
-                         "home":  "Cardiff City",
-                         "away":  "West Ham",
-                         "matchStatus":  "STATUS_SCHEDULED",
-                         "lineupStatus":  "pending",
-                         "homeFormation":  "",
-                         "awayFormation":  "",
+                         "home":  "Watford",
+                         "away":  "Lincoln City",
+                         "matchStatus":  "STATUS_FULL_TIME",
+                         "lineupStatus":  "confirmed",
+                         "homeFormation":  "4-2-3-1",
+                         "awayFormation":  "3-4-2-1",
                          "homeStarters":  [
-
+                                              {
+                                                  "name":  "Federico Ravaglia",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Kévin Keben",
+                                                  "jersey":  "4",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Matthew Pollock",
+                                                  "jersey":  "6",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Marc Bola",
+                                                  "jersey":  "16",
+                                                  "position":  "LB"
+                                              },
+                                              {
+                                                  "name":  "Omar-Haktab Traoré",
+                                                  "jersey":  "23",
+                                                  "position":  "RB"
+                                              },
+                                              {
+                                                  "name":  "Iker Bravo",
+                                                  "jersey":  "17",
+                                                  "position":  "AM"
+                                              },
+                                              {
+                                                  "name":  "Hector Kyprianou",
+                                                  "jersey":  "5",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Edo Kayembe",
+                                                  "jersey":  "39",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Myron Boadu",
+                                                  "jersey":  "10",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Stephy Mavididi",
+                                                  "jersey":  "45",
+                                                  "position":  "AM-L"
+                                              },
+                                              {
+                                                  "name":  "Othmane Maamma",
+                                                  "jersey":  "7",
+                                                  "position":  "AM-R"
+                                              }
                                           ],
                          "awayStarters":  [
-
+                                              {
+                                                  "name":  "George Wickens",
+                                                  "jersey":  "1",
+                                                  "position":  "G"
+                                              },
+                                              {
+                                                  "name":  "Sonny Bradley",
+                                                  "jersey":  "15",
+                                                  "position":  "CD"
+                                              },
+                                              {
+                                                  "name":  "Andrei Coubis",
+                                                  "jersey":  "4",
+                                                  "position":  "CD-L"
+                                              },
+                                              {
+                                                  "name":  "Ayodeji Elerewe",
+                                                  "jersey":  "25",
+                                                  "position":  "CD-R"
+                                              },
+                                              {
+                                                  "name":  "Tom Bayliss",
+                                                  "jersey":  "8",
+                                                  "position":  "CM-L"
+                                              },
+                                              {
+                                                  "name":  "Yunus Konak",
+                                                  "jersey":  "26",
+                                                  "position":  "CM-R"
+                                              },
+                                              {
+                                                  "name":  "Callum Elder",
+                                                  "jersey":  "20",
+                                                  "position":  "LM"
+                                              },
+                                              {
+                                                  "name":  "Daniel Oyegoke",
+                                                  "jersey":  "33",
+                                                  "position":  "RM"
+                                              },
+                                              {
+                                                  "name":  "Freddie Draper",
+                                                  "jersey":  "34",
+                                                  "position":  "F"
+                                              },
+                                              {
+                                                  "name":  "Ben House",
+                                                  "jersey":  "18",
+                                                  "position":  "CF-L"
+                                              },
+                                              {
+                                                  "name":  "Chiedozie Ogbene",
+                                                  "jersey":  "27",
+                                                  "position":  "CF-R"
+                                              }
                                           ],
-                         "homeStarterCount":  0,
-                         "awayStarterCount":  0,
+                         "homeStarterCount":  11,
+                         "awayStarterCount":  11,
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401841294",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T19:00Z",
+                         "espnEventId":  "401841175",
+                         "date":  "2026-11-15",
+                         "kickoffUtc":  "2026-11-14T23:30Z",
                          "league":  "BR",
-                         "home":  "Coritiba",
-                         "away":  "Vitória",
+                         "home":  "Chapecoense",
+                         "away":  "Vasco da Gama",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",
@@ -1801,12 +2245,75 @@
                          "source":  "espn-site-web-api"
                      },
                      {
-                         "espnEventId":  "401880196",
-                         "date":  "2026-10-31",
-                         "kickoffUtc":  "2026-10-31T15:00Z",
+                         "espnEventId":  "401841305",
+                         "date":  "2026-11-05",
+                         "kickoffUtc":  "2026-11-05T00:30Z",
+                         "league":  "BR",
+                         "home":  "Botafogo",
+                         "away":  "Atlético-MG",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878760",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
+                         "league":  "PL",
+                         "home":  "Arsenal",
+                         "away":  "Hull",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401841316",
+                         "date":  "2026-11-19",
+                         "kickoffUtc":  "2026-11-19T00:30Z",
+                         "league":  "BR",
+                         "home":  "Corinthians",
+                         "away":  "Botafogo",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880163",
+                         "date":  "2026-11-07",
+                         "kickoffUtc":  "2026-11-07T15:00Z",
                          "league":  "CH",
-                         "home":  "Bolton Wanderers",
-                         "away":  "Bristol City",
+                         "home":  "Watford",
+                         "away":  "Middlesbrough",
                          "matchStatus":  "STATUS_SCHEDULED",
                          "lineupStatus":  "pending",
                          "homeFormation":  "",

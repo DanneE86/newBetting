@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "HR",
  "fotmobId": 252,
  "name": "HNL",
@@ -11,13 +11,13 @@
    "fotmobName": "Hajduk Split",
    "fotmobId": 10154,
    "group": null,
-   "played": 11,
-   "won": 7,
+   "played": 12,
+   "won": 8,
    "drawn": 2,
    "lost": 2,
-   "goals": "21-11",
-   "gd": 10,
-   "pts": 23
+   "goals": "26-11",
+   "gd": 15,
+   "pts": 26
   },
   {
    "rank": 2,
@@ -25,41 +25,41 @@
    "fotmobName": "Dinamo Zagreb",
    "fotmobId": 10156,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 7,
    "drawn": 1,
-   "lost": 2,
-   "goals": "25-13",
-   "gd": 12,
+   "lost": 3,
+   "goals": "25-14",
+   "gd": 11,
    "pts": 22
   },
   {
    "rank": 3,
-   "team": "Varaždin",
-   "fotmobName": "NK Varaždin",
-   "fotmobId": 10165,
-   "group": null,
-   "played": 11,
-   "won": 5,
-   "drawn": 3,
-   "lost": 3,
-   "goals": "15-10",
-   "gd": 5,
-   "pts": 18
-  },
-  {
-   "rank": 4,
    "team": "Osijek",
    "fotmobName": "Osijek",
    "fotmobId": 10157,
    "group": null,
-   "played": 11,
-   "won": 5,
+   "played": 12,
+   "won": 6,
    "drawn": 2,
    "lost": 4,
-   "goals": "19-16",
-   "gd": 3,
-   "pts": 17
+   "goals": "22-17",
+   "gd": 5,
+   "pts": 20
+  },
+  {
+   "rank": 4,
+   "team": "Varaždin",
+   "fotmobName": "NK Varaždin",
+   "fotmobId": 10165,
+   "group": null,
+   "played": 12,
+   "won": 5,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "16-11",
+   "gd": 5,
+   "pts": 19
   },
   {
    "rank": 5,
@@ -67,13 +67,13 @@
    "fotmobName": "Rijeka",
    "fotmobId": 10162,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 5,
-   "drawn": 2,
+   "drawn": 3,
    "lost": 3,
-   "goals": "17-14",
+   "goals": "18-15",
    "gd": 3,
-   "pts": 17
+   "pts": 18
   },
   {
    "rank": 6,
@@ -105,31 +105,31 @@
   },
   {
    "rank": 8,
-   "team": "Lokomotiva Zagreb",
-   "fotmobName": "NK Lokomotiva",
-   "fotmobId": 175388,
-   "group": null,
-   "played": 11,
-   "won": 3,
-   "drawn": 2,
-   "lost": 6,
-   "goals": "13-17",
-   "gd": -4,
-   "pts": 11
-  },
-  {
-   "rank": 9,
    "team": "Rudeš",
    "fotmobName": "Rudeš",
    "fotmobId": 187866,
    "group": null,
-   "played": 11,
-   "won": 3,
+   "played": 12,
+   "won": 4,
    "drawn": 1,
    "lost": 7,
-   "goals": "14-27",
-   "gd": -13,
-   "pts": 10
+   "goals": "15-27",
+   "gd": -12,
+   "pts": 13
+  },
+  {
+   "rank": 9,
+   "team": "Lokomotiva Zagreb",
+   "fotmobName": "NK Lokomotiva",
+   "fotmobId": 175388,
+   "group": null,
+   "played": 12,
+   "won": 3,
+   "drawn": 2,
+   "lost": 7,
+   "goals": "14-20",
+   "gd": -6,
+   "pts": 11
   },
   {
    "rank": 10,
@@ -137,12 +137,12 @@
    "fotmobName": "HNK Gorica",
    "fotmobId": 206560,
    "group": null,
-   "played": 11,
+   "played": 12,
    "won": 1,
    "drawn": 4,
-   "lost": 6,
-   "goals": "7-15",
-   "gd": -8,
+   "lost": 7,
+   "goals": "7-20",
+   "gd": -13,
    "pts": 7
   }
  ],
@@ -721,6 +721,78 @@
     11,
     7,
     -8
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Hajduk Split",
+    1,
+    12,
+    26,
+    15
+   ],
+   [
+    "Dinamo Zagreb",
+    2,
+    11,
+    22,
+    11
+   ],
+   [
+    "Osijek",
+    3,
+    12,
+    20,
+    5
+   ],
+   [
+    "Varaždin",
+    4,
+    12,
+    19,
+    5
+   ],
+   [
+    "Rijeka",
+    5,
+    11,
+    18,
+    3
+   ],
+   [
+    "Istra 1961",
+    6,
+    12,
+    16,
+    3
+   ],
+   [
+    "Slaven Belupo Koprivnica",
+    7,
+    12,
+    13,
+    -11
+   ],
+   [
+    "Rudeš",
+    8,
+    12,
+    13,
+    -12
+   ],
+   [
+    "Lokomotiva Zagreb",
+    9,
+    12,
+    11,
+    -6
+   ],
+   [
+    "HNK Gorica",
+    10,
+    12,
+    7,
+    -13
    ]
   ]
  }

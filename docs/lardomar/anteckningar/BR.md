@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 380 | 52,1 % | 48,8 % | +3,3 pe (1,3) | 50,3 % | 99 / 83 | modell (inga odds) |
-| 2026/27 | 327 | 51,4 % | 46,9 % | +4,5 pe (1,6) | 48,0 % | 90 / 69 | modell (inga odds) |
+| 2026/27 | 330 | 52,1 % | 46,9 % | +5,2 pe (1,9) | 48,5 % | 90 / 68 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,6). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,9). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,13 +23,13 @@ Bedömning 2026/27: inom slumpen (z 1,6). Tipsen slår att alltid tippa hemma.
 | 2023 | 340 | 48,8 % | 49,6 % | −0,3 | 25,9 % | 27,6 % | −0,7 |
 | 2024 | 348 | 53,4 % | 49,3 % | 1,6 | 26,7 % | 27,8 % | −0,5 |
 | 2025 | 351 | 51,0 % | 50,3 % | 0,3 | 26,5 % | 27,7 % | −0,5 |
-| 2026 | 311 | 53,4 % | 50,4 % | 1,1 | 28,3 % | 26,9 % | 0,6 |
+| 2026 | 314 | 53,8 % | 50,4 % | 1,3 | 28,0 % | 26,9 % | 0,4 |
 
 ### 2026: vad gick fel
 
-- Kryss: 88 av 311 (28,3 %) mot väntat 83,7 (z 0,6).
-- Hemmafavoriter vann 137 av 247 (väntat 128,4), bortafavoriter 29 av 64 (väntat 28,3), favoriter ≥ 60 % 40 av 57 (väntat 38,5).
-- Lag sämst mot oddsen (poäng mot förväntat): Internacional −11,2 (33 m), Corinthians −10,9 (29 m), Vasco −6,3 (31 m), Mirassol −5,1 (31 m).
+- Kryss: 88 av 314 (28,0 %) mot väntat 84,5 (z 0,4).
+- Hemmafavoriter vann 140 av 250 (väntat 129,8), bortafavoriter 29 av 64 (väntat 28,3), favoriter ≥ 60 % 40 av 57 (väntat 38,5).
+- Lag sämst mot oddsen (poäng mot förväntat): Internacional −11,2 (33 m), Corinthians −9,7 (30 m), Vasco −6,3 (31 m), Mirassol −6,0 (32 m).
 - Lag bäst mot oddsen: Palmeiras +9,6 (30 m), Athletico-PR +7,8 (32 m), Cruzeiro +5,8 (33 m), Bahia +5,6 (30 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
@@ -39,7 +39,7 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 560 / 215 | −0,7 pe (−0,3) | +1,3 pe (0,4) | +1,4 pe (0,7) | +0,9 pe (0,3) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 1619 / 516 | +0,8 pe (0,6) | +1,5 pe (0,7) | −0,2 pe (−0,2) | −1,9 pe (−0,9) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 1619 / 517 | +0,8 pe (0,6) | +1,6 pe (0,7) | −0,2 pe (−0,2) | −1,9 pe (−0,9) | ingen säker effekt |
 | Bortafavorit | 793 / 262 | −1,4 pe (−0,8) | +2,3 pe (0,8) | +0,9 pe (0,6) | −1,4 pe (−0,5) | ingen säker effekt |
 | Storfavorit (≥ 70 %) | 205 / 61 | −0,1 pe (−0,0) | +7,7 pe (1,4) | −1,2 pe (−0,5) | −0,7 pe (−0,1) | ingen säker effekt |
 | Uppflyttad favorit | 88 / 37 | +3,7 pe (0,7) | −6,1 pe (−0,8) | −3,0 pe (−0,6) | −0,3 pe (−0,0) | ingen säker effekt |

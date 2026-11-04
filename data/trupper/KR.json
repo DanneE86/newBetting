@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "KR",
  "fotmobId": 9080,
  "source": "FotMob",
@@ -9,25 +9,6 @@
    "fotmobId": 92630,
    "coach": "Kim Gi-Dong",
    "players": [
-    {
-     "id": 1135919,
-     "name": "Baek Jong-Beom",
-     "role": "keepers",
-     "position": "GK",
-     "number": null,
-     "age": 25,
-     "born": "2001-01-21",
-     "country": "Korea Republic",
-     "height": 190,
-     "value": 353909,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
     {
      "id": 1337157,
      "name": "Lim Jun-Sub",
@@ -57,7 +38,26 @@
      "born": "1994-06-27",
      "country": "Korea Republic",
      "height": 198,
-     "value": 328644,
+     "value": 299999,
+     "rating": 6.39,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1135919,
+     "name": "Baek Jong-Beom",
+     "role": "keepers",
+     "position": "GK",
+     "number": 26,
+     "age": 25,
+     "born": "2001-01-21",
+     "country": "Korea Republic",
+     "height": 190,
+     "value": 307018,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -115,7 +115,7 @@
      "country": "Korea Republic",
      "height": 188,
      "value": 206676,
-     "rating": null,
+     "rating": 6.29,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -133,8 +133,8 @@
      "born": "1996-01-31",
      "country": "Jordan",
      "height": 185,
-     "value": 667508,
-     "rating": null,
+     "value": 646579,
+     "rating": 6.91,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -152,8 +152,8 @@
      "born": "1999-04-17",
      "country": "Korea Republic",
      "height": 177,
-     "value": 528741,
-     "rating": null,
+     "value": 393756,
+     "rating": 6.8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -165,7 +165,7 @@
      "id": 1440075,
      "name": "Ahn Jae-Min",
      "role": "defenders",
-     "position": "RB,RWB",
+     "position": "RB",
      "number": 17,
      "age": 23,
      "born": "2003-01-23",
@@ -190,8 +190,8 @@
      "born": "1994-03-16",
      "country": "Korea Republic",
      "height": 185,
-     "value": 184517,
-     "rating": null,
+     "value": 171295,
+     "rating": 6.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -209,7 +209,7 @@
      "born": "1992-06-13",
      "country": "Korea Republic",
      "height": 177,
-     "value": 298408,
+     "value": 243069,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -228,7 +228,7 @@
      "born": "1996-03-15",
      "country": "Spain",
      "height": 188,
-     "value": 554858,
+     "value": 511842,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -247,7 +247,7 @@
      "born": "2003-01-27",
      "country": "Korea Republic",
      "height": 183,
-     "value": 292771,
+     "value": 292972,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -267,7 +267,7 @@
      "country": "Korea Republic",
      "height": 178,
      "value": 212485,
-     "rating": null,
+     "rating": 7.53,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -285,8 +285,8 @@
      "born": "1999-07-28",
      "country": "Croatia",
      "height": null,
-     "value": 959971,
-     "rating": null,
+     "value": 824823,
+     "rating": 6.87,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -304,7 +304,7 @@
      "born": "1998-03-30",
      "country": "Korea Republic",
      "height": 185,
-     "value": 392413,
+     "value": 210448,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -323,8 +323,8 @@
      "born": "2004-02-09",
      "country": "Korea Republic",
      "height": 176,
-     "value": null,
-     "rating": null,
+     "value": 272549,
+     "rating": 6.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -393,14 +393,14 @@
      "id": 438899,
      "name": "Moon Seon-Min",
      "role": "midfielders",
-     "position": "CAM,RM,ST,LM",
+     "position": "CAM,RM,LM,ST",
      "number": 27,
      "age": 34,
      "born": "1992-06-09",
      "country": "Korea Republic",
      "height": 172,
-     "value": 252928,
-     "rating": null,
+     "value": 241510,
+     "rating": 6.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -437,8 +437,8 @@
      "born": "2003-04-09",
      "country": "Korea Republic",
      "height": 175,
-     "value": 279724,
-     "rating": null,
+     "value": 279924,
+     "rating": 6.46,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -456,8 +456,8 @@
      "born": "2007-09-28",
      "country": "Korea Republic",
      "height": 180,
-     "value": 1069394,
-     "rating": null,
+     "value": 1044330,
+     "rating": 6.5,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -513,8 +513,8 @@
      "born": "1997-02-27",
      "country": "Korea Republic",
      "height": 173,
-     "value": 427509,
-     "rating": null,
+     "value": 339384,
+     "rating": 5.79,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -532,8 +532,8 @@
      "born": "1998-08-05",
      "country": "Poland",
      "height": 183,
-     "value": 547092,
-     "rating": null,
+     "value": 450087,
+     "rating": 5.95,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -551,7 +551,7 @@
      "born": "1998-07-16",
      "country": "Brazil",
      "height": 169,
-     "value": 586505,
+     "value": 347325,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -589,8 +589,8 @@
      "born": "1999-02-05",
      "country": "Korea Republic",
      "height": 178,
-     "value": 345349,
-     "rating": null,
+     "value": 281291,
+     "rating": 6.46,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -608,7 +608,7 @@
      "born": "2000-09-21",
      "country": "Korea Republic",
      "height": 191,
-     "value": 231189,
+     "value": 242231,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -656,7 +656,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Kim Gi-Dong",
@@ -667,172 +667,172 @@
     "309496": {
      "name": "Kim Jin-Su",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "430823": {
      "name": "Gu Sung-Yun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "438899": {
      "name": "Moon Seon-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623032": {
      "name": "Kang Hyeon-Mu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "643447": {
      "name": "Leonardo Ruiz",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "730658": {
      "name": "Lee Han-Do",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "734965": {
      "name": "Jeong Seung-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "736516": {
      "name": "Juan Antonio Ros",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "796751": {
      "name": "Patryk Klimala",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828044": {
      "name": "Lee Seung-Mo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848087": {
      "name": "Lee Sang-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848097": {
      "name": "Cho Young-Wook",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "852168": {
      "name": "Yazan Al Arab",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "931837": {
      "name": "Park Soo-Il",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1041907": {
      "name": "Cheon Seong-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1047931": {
      "name": "Anderson Oliveira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1054179": {
      "name": "Choi Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135919": {
      "name": "Baek Jong-Beom",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1180668": {
      "name": "Hrvoje Babec",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337096": {
      "name": "Park Seong-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337097": {
      "name": "Park Jang Han-Gyeol",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337157": {
      "name": "Lim Jun-Sub",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440075": {
      "name": "Ahn Jae-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440100": {
      "name": "Hwang Do-Yun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1636117": {
      "name": "Jeong Hyeon-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1710585": {
      "name": "Gbato Samuel",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1729376": {
      "name": "Kim Jee-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1831839": {
      "name": "Yun Ki-Wook",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1844485": {
      "name": "Jeong Hyeon-Ung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1902396": {
      "name": "Son Jeong-Beom",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1908986": {
      "name": "Ko Pil-Gwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2001741": {
      "name": "Kim Min-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2159647": {
      "name": "Shin Ji-Seop",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2195874": {
      "name": "Jung Ha-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -871,7 +871,7 @@
      "born": "1991-09-25",
      "country": "Korea Republic",
      "height": 189,
-     "value": 381012,
+     "value": 562803,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -890,7 +890,7 @@
      "born": "1998-03-16",
      "country": "Korea Republic",
      "height": 193,
-     "value": 275643,
+     "value": 286686,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -910,7 +910,7 @@
      "country": "Korea Republic",
      "height": 193,
      "value": 153909,
-     "rating": null,
+     "rating": 6.4,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -928,7 +928,7 @@
      "born": "2003-05-13",
      "country": "Korea Republic",
      "height": 193,
-     "value": 280897,
+     "value": 258858,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -966,8 +966,8 @@
      "born": "1998-03-20",
      "country": "Korea Republic",
      "height": 173,
-     "value": 202157,
-     "rating": null,
+     "value": 176346,
+     "rating": 7.19,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -985,7 +985,7 @@
      "born": "2002-11-23",
      "country": "Korea Republic",
      "height": 186,
-     "value": 292771,
+     "value": 428213,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1004,8 +1004,8 @@
      "born": "1994-04-03",
      "country": "Korea Republic",
      "height": 188,
-     "value": 642673,
-     "rating": null,
+     "value": 872629,
+     "rating": 7.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1023,8 +1023,8 @@
      "born": "1990-02-27",
      "country": "Korea Republic",
      "height": 187,
-     "value": 230070,
-     "rating": null,
+     "value": 199516,
+     "rating": 7.13,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1042,10 +1042,10 @@
      "born": "2001-08-02",
      "country": "Korea Republic",
      "height": 182,
-     "value": 594602,
-     "rating": null,
+     "value": 416154,
+     "rating": 8.26,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -1061,7 +1061,7 @@
      "born": "1999-05-21",
      "country": "Korea Republic",
      "height": 185,
-     "value": 215730,
+     "value": 208103,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1080,7 +1080,7 @@
      "born": "1993-05-21",
      "country": "Korea Republic",
      "height": 172,
-     "value": 206361,
+     "value": 206561,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1099,7 +1099,7 @@
      "born": "2003-01-13",
      "country": "Korea Republic",
      "height": null,
-     "value": 279724,
+     "value": 279924,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1118,8 +1118,8 @@
      "born": "1994-12-28",
      "country": "Sweden",
      "height": 186,
-     "value": 650254,
-     "rating": null,
+     "value": 637843,
+     "rating": 6.9,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1150,14 +1150,14 @@
      "id": 622124,
      "name": "Lee Gyu-Sung",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM,CDM,CAM",
      "number": 24,
      "age": 32,
      "born": "1994-05-10",
      "country": "Korea Republic",
      "height": 174,
-     "value": 381967,
-     "rating": null,
+     "value": 332809,
+     "rating": 6.89,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1175,7 +1175,7 @@
      "born": "2002-03-31",
      "country": "Korea Republic",
      "height": 174,
-     "value": 421495,
+     "value": 421933,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1188,14 +1188,14 @@
      "id": 620995,
      "name": "Park Yong-Woo",
      "role": "midfielders",
-     "position": "CB",
+     "position": "CDM",
      "number": 38,
      "age": 33,
      "born": "1993-09-10",
      "country": "Korea Republic",
      "height": 188,
      "value": 444846,
-     "rating": null,
+     "rating": 6.9,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1232,8 +1232,8 @@
      "born": "1996-03-20",
      "country": "Netherlands",
      "height": 184,
-     "value": 298120,
-     "rating": null,
+     "value": 232544,
+     "rating": 7.15,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1251,7 +1251,7 @@
      "born": "1994-05-05",
      "country": "Poland",
      "height": 191,
-     "value": 192857,
+     "value": 193057,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1264,13 +1264,13 @@
      "id": 1711614,
      "name": "Back In-Woo",
      "role": "midfielders",
-     "position": "CDM,LW",
+     "position": "LW",
      "number": 72,
      "age": 19,
      "born": "2006-11-29",
      "country": "Korea Republic",
      "height": 179,
-     "value": 488857,
+     "value": 503347,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1289,8 +1289,8 @@
      "born": "1998-04-29",
      "country": "Korea Republic",
      "height": 168,
-     "value": 238843,
-     "rating": null,
+     "value": 226273,
+     "rating": 7.17,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1327,8 +1327,8 @@
      "born": "1997-09-20",
      "country": "Korea Republic",
      "height": 175,
-     "value": 1218692,
-     "rating": null,
+     "value": 1077314,
+     "rating": 7.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1347,8 +1347,8 @@
      "country": "Brazil",
      "height": 173,
      "value": 701446,
-     "rating": null,
-     "goals": 0,
+     "rating": 8.74,
+     "goals": 2,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -1365,8 +1365,8 @@
      "born": "1997-08-26",
      "country": "Korea Republic",
      "height": 172,
-     "value": 423329,
-     "rating": null,
+     "value": 354170,
+     "rating": 7.13,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1384,7 +1384,7 @@
      "born": "1993-10-07",
      "country": "Korea Republic",
      "height": 175,
-     "value": 266133,
+     "value": 250392,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1403,7 +1403,7 @@
      "born": "2004-05-25",
      "country": "Korea Republic",
      "height": 186,
-     "value": 381684,
+     "value": 392727,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1441,7 +1441,7 @@
      "born": "1997-10-23",
      "country": "USA",
      "height": 178,
-     "value": 219737,
+     "value": 185122,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1460,8 +1460,8 @@
      "born": "1999-07-27",
      "country": "Brazil",
      "height": 186,
-     "value": 648110,
-     "rating": null,
+     "value": 580980,
+     "rating": 6.24,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1470,7 +1470,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Hyun-Seok Kim",
@@ -1481,167 +1481,167 @@
     "196261": {
      "name": "Kim Young-Gwon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "259307": {
      "name": "Darijan Bojanić",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "433265": {
      "name": "Jo Hyeon-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "491879": {
      "name": "Miłosz Trojak",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "527548": {
      "name": "Sim Sang-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "528168": {
      "name": "Kang Sang-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "620995": {
      "name": "Park Yong-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "622124": {
      "name": "Lee Gyu-Sung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "631622": {
      "name": "Jung Seung-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "655361": {
      "name": "Hwang Byeong-Geun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "660154": {
      "name": "Thomas Oude Kotte",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "670941": {
      "name": "Marcão",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "827576": {
      "name": "Yoon Jong-Gyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "827996": {
      "name": "Moon Jung-In",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848096": {
      "name": "Lee Jin-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "878741": {
      "name": "Erick Farias",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925329": {
      "name": "Lee Jae-Ik",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "954131": {
      "name": "Lee Dong-Gyeong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1026086": {
      "name": "Benji Michel",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1027460": {
      "name": "Lee Hui-Gyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136082": {
      "name": "Cho Hyun-Taek",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1317111": {
      "name": "Pedrinho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1326406": {
      "name": "Moon Hyun-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1354250": {
      "name": "Yago Cariello",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1430779": {
      "name": "Jang Si-Young",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1478084": {
      "name": "Choi Seok-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1543595": {
      "name": "Seo Myong-Gwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613064": {
      "name": "Jeong Jae-Sang",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711614": {
      "name": "Back In-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711616": {
      "name": "Ryu Seong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714868": {
      "name": "Jung Seong-Bin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836423": {
      "name": "Park Woo-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1903058": {
      "name": "Jo Min-seo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -1661,8 +1661,8 @@
      "born": "1993-08-30",
      "country": "Korea Republic",
      "height": 186,
-     "value": 305449,
-     "rating": null,
+     "value": 276540,
+     "rating": 7.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1680,7 +1680,7 @@
      "born": "1998-03-07",
      "country": "Korea Republic",
      "height": 183,
-     "value": 255166,
+     "value": 179375,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1756,7 +1756,7 @@
      "born": "1996-07-08",
      "country": "Korea Republic",
      "height": 183,
-     "value": 248687,
+     "value": 232744,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1775,12 +1775,12 @@
      "born": "2001-02-24",
      "country": "Korea Republic",
      "height": 182,
-     "value": 578073,
-     "rating": null,
+     "value": 485036,
+     "rating": 6.39,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1813,12 +1813,12 @@
      "born": "1997-07-01",
      "country": "Korea Republic",
      "height": 172,
-     "value": 327317,
-     "rating": null,
+     "value": 322609,
+     "rating": 6.73,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1851,8 +1851,8 @@
      "born": "1993-11-04",
      "country": "Korea Republic",
      "height": 181,
-     "value": 390030,
-     "rating": null,
+     "value": 326095,
+     "rating": 7.37,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1889,7 +1889,7 @@
      "born": "1995-05-23",
      "country": "Korea Republic",
      "height": 182,
-     "value": 142866,
+     "value": 153909,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1908,7 +1908,7 @@
      "born": "1998-05-23",
      "country": "Korea Republic",
      "height": 183,
-     "value": 409308,
+     "value": 223153,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1927,8 +1927,8 @@
      "born": "1995-08-01",
      "country": "Korea Republic",
      "height": 173,
-     "value": 705429,
-     "rating": null,
+     "value": 637149,
+     "rating": 6.97,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1946,7 +1946,7 @@
      "born": "1994-10-16",
      "country": "Korea Republic",
      "height": 188,
-     "value": 283851,
+     "value": 284052,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1965,8 +1965,8 @@
      "born": "1998-08-20",
      "country": "Azerbaijan",
      "height": 186,
-     "value": 586909,
-     "rating": null,
+     "value": 497865,
+     "rating": 6.66,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1984,7 +1984,7 @@
      "born": "1995-05-04",
      "country": "Japan",
      "height": 178,
-     "value": 362623,
+     "value": 331730,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2003,7 +2003,7 @@
      "born": "2000-01-12",
      "country": "Brazil",
      "height": 182,
-     "value": 283513,
+     "value": 284757,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2023,7 +2023,7 @@
      "country": "Korea Republic",
      "height": 171,
      "value": 335744,
-     "rating": null,
+     "rating": 6.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2041,8 +2041,8 @@
      "born": "1998-01-14",
      "country": "Korea Republic",
      "height": 176,
-     "value": 201138,
-     "rating": null,
+     "value": 219868,
+     "rating": 6.15,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2060,7 +2060,7 @@
      "born": "1996-03-21",
      "country": "Korea Republic",
      "height": 175,
-     "value": 207581,
+     "value": 191638,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2079,8 +2079,8 @@
      "born": "1999-12-26",
      "country": "Korea Republic",
      "height": 182,
-     "value": 784339,
-     "rating": null,
+     "value": 581397,
+     "rating": 7.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2117,7 +2117,7 @@
      "born": "1994-05-22",
      "country": "Korea Republic",
      "height": 178,
-     "value": 426954,
+     "value": 427151,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2136,7 +2136,7 @@
      "born": "1995-06-22",
      "country": "Korea Republic",
      "height": 160,
-     "value": 217299,
+     "value": 280528,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2155,8 +2155,8 @@
      "born": "1996-12-04",
      "country": "Brazil",
      "height": 194,
-     "value": 501192,
-     "rating": null,
+     "value": 464419,
+     "rating": 6.5,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2174,8 +2174,8 @@
      "born": "1990-04-13",
      "country": "Korea Republic",
      "height": 183,
-     "value": 376708,
-     "rating": null,
+     "value": 346002,
+     "rating": 5.87,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2187,14 +2187,14 @@
      "id": 932282,
      "name": "Gustav Ludwigson",
      "role": "attackers",
-     "position": "LW,LM",
+     "position": "LW,LM,CM",
      "number": 17,
      "age": 33,
      "born": "1993-10-20",
      "country": "Sweden",
      "height": 182,
-     "value": 513249,
-     "rating": null,
+     "value": 418739,
+     "rating": 6.91,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2212,8 +2212,8 @@
      "born": "2000-10-18",
      "country": "Korea Republic",
      "height": 183,
-     "value": 363856,
-     "rating": null,
+     "value": 394492,
+     "rating": 6.91,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2231,7 +2231,7 @@
      "born": "1994-04-28",
      "country": "Korea Republic",
      "height": 174,
-     "value": 248220,
+     "value": 245225,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2250,7 +2250,7 @@
      "born": "2004-06-16",
      "country": "Korea Republic",
      "height": 185,
-     "value": 303599,
+     "value": 297158,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2263,14 +2263,14 @@
      "id": 1129324,
      "name": "João Victor",
      "role": "attackers",
-     "position": "RM,RW,LW",
+     "position": "RW,RM,LW",
      "number": 77,
      "age": 27,
      "born": "1999-02-25",
      "country": "Brazil",
      "height": 177,
      "value": 210808,
-     "rating": null,
+     "rating": 6.7,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2298,7 +2298,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Hwang Sun-Hong",
@@ -2309,172 +2309,172 @@
     "167778": {
      "name": "Lim Jong-Eun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "197274": {
      "name": "Oh Jae-Suk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "433499": {
      "name": "Lee Chang-Geun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "523732": {
      "name": "Lee Myung-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623036": {
      "name": "Yu Kang-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "631626": {
      "name": "Joo Min-Kyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "648410": {
      "name": "Masatoshi Ishida",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "735011": {
      "name": "Jeong Jae-Hee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "735016": {
      "name": "Kang Yoon-Seong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "788377": {
      "name": "Seo Young-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828048": {
      "name": "Lee Soon-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828118": {
      "name": "Kim Hyeon-Ug",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828199": {
      "name": "Ha Chang-Rae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828204": {
      "name": "Kim Jin-Ya",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828273": {
      "name": "Kim Moon-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "834242": {
      "name": "Kyung-Tae Lee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "887135": {
      "name": "Anton Krivotsyuk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925334": {
      "name": "Lee Hyun-Sik",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "926617": {
      "name": "Kim Jun-Beom",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "932282": {
      "name": "Gustav Ludwigson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1027084": {
      "name": "Um Won-Sang",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1043120": {
      "name": "Kim Min-Duk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1062592": {
      "name": "Seo Jin-Su",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1129324": {
      "name": "João Victor",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136605": {
      "name": "Diogo Oliveira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1146388": {
      "name": "Park Kyu-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232490": {
      "name": "Kim Bong-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232945": {
      "name": "Lee Jun-Seo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1248669": {
      "name": "Victor Bobsin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440163": {
      "name": "Cho Seong-Gwon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1457033": {
      "name": "Lee Jung-Taek",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613075": {
      "name": "Kim Min-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1644801": {
      "name": "Moon Geon-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2089561": {
      "name": "Park Byeong-Chan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -2513,8 +2513,8 @@
      "born": "1997-10-15",
      "country": "Korea Republic",
      "height": 196,
-     "value": 745349,
-     "rating": null,
+     "value": 699530,
+     "rating": 7.57,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2532,8 +2532,8 @@
      "born": "1991-09-20",
      "country": "Korea Republic",
      "height": 184,
-     "value": 260796,
-     "rating": null,
+     "value": 213507,
+     "rating": 6.12,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2551,8 +2551,8 @@
      "born": "1994-08-28",
      "country": "Korea Republic",
      "height": 185,
-     "value": 184517,
-     "rating": null,
+     "value": 160252,
+     "rating": 6.85,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2570,8 +2570,8 @@
      "born": "2001-08-25",
      "country": "Korea Republic",
      "height": 189,
-     "value": 330634,
-     "rating": null,
+     "value": 307081,
+     "rating": 7.43,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2590,7 +2590,7 @@
      "country": "Korea Republic",
      "height": 187,
      "value": 319533,
-     "rating": null,
+     "rating": 7.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2602,7 +2602,7 @@
      "id": 1575997,
      "name": "Kim Ha-Jun",
      "role": "defenders",
-     "position": "CB,LB",
+     "position": "LB,CB",
      "number": 15,
      "age": 24,
      "born": "2002-07-17",
@@ -2627,7 +2627,7 @@
      "born": "1989-07-24",
      "country": "Korea Republic",
      "height": 177,
-     "value": 250926,
+     "value": 199516,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2646,7 +2646,7 @@
      "born": "2003-04-23",
      "country": "Korea Republic",
      "height": 181,
-     "value": 286320,
+     "value": 72746,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2665,8 +2665,8 @@
      "born": "2004-07-18",
      "country": "Korea Republic",
      "height": 175,
-     "value": 461139,
-     "rating": null,
+     "value": 449545,
+     "rating": 6.99,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2694,25 +2694,6 @@
      "injury": null
     },
     {
-     "id": 1232942,
-     "name": "Jeon Byung-Kwan",
-     "role": "midfielders",
-     "position": "RM",
-     "number": null,
-     "age": 23,
-     "born": "2002-11-10",
-     "country": "Korea Republic",
-     "height": null,
-     "value": 356470,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1026783,
      "name": "Maeng Seong-Ung",
      "role": "midfielders",
@@ -2723,7 +2704,7 @@
      "country": "Korea Republic",
      "height": 183,
      "value": 240825,
-     "rating": null,
+     "rating": 6.63,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2741,8 +2722,8 @@
      "born": "2004-05-31",
      "country": "Korea Republic",
      "height": 168,
-     "value": 722170,
-     "rating": null,
+     "value": 641612,
+     "rating": 7.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2760,8 +2741,8 @@
      "born": "1996-08-31",
      "country": "Portugal",
      "height": 187,
-     "value": 210019,
-     "rating": null,
+     "value": 194076,
+     "rating": 6.21,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2780,7 +2761,7 @@
      "country": "Korea Republic",
      "height": 175,
      "value": 207581,
-     "rating": null,
+     "rating": 7.16,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2799,7 +2780,7 @@
      "country": "Brazil",
      "height": 170,
      "value": null,
-     "rating": null,
+     "rating": 6.56,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2817,7 +2798,7 @@
      "born": "1997-02-24",
      "country": "Korea Republic",
      "height": 177,
-     "value": 607844,
+     "value": 575885,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2836,7 +2817,7 @@
      "born": "1997-02-01",
      "country": "Korea Republic",
      "height": 173,
-     "value": 407500,
+     "value": 271030,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2855,8 +2836,8 @@
      "born": "1993-10-28",
      "country": "Brazil",
      "height": 188,
-     "value": 475322,
-     "rating": null,
+     "value": 445024,
+     "rating": 6.01,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2874,8 +2855,8 @@
      "born": "1998-01-06",
      "country": "Korea Republic",
      "height": 173,
-     "value": 267659,
-     "rating": null,
+     "value": 253926,
+     "rating": 6.4,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2889,11 +2870,11 @@
      "role": "attackers",
      "position": "LW,LM,RW",
      "number": 11,
-     "age": 29,
+     "age": 30,
      "born": "1996-11-01",
      "country": "Korea Republic",
      "height": 178,
-     "value": 329814,
+     "value": 259424,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2931,7 +2912,7 @@
      "born": "1999-09-27",
      "country": "Lithuania",
      "height": null,
-     "value": 366950,
+     "value": 367458,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2951,11 +2932,11 @@
      "country": "Brazil",
      "height": 180,
      "value": null,
-     "rating": null,
+     "rating": 7.29,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -2970,7 +2951,7 @@
      "country": "Italy",
      "height": 194,
      "value": 1215781,
-     "rating": null,
+     "rating": 6.25,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2998,7 +2979,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Chung Jung-Yong",
@@ -3009,97 +2990,97 @@
     "252178": {
      "name": "Kim Tae-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "310783": {
      "name": "Patrick Twumasi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "468826": {
      "name": "Park Ji-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "622980": {
      "name": "Kim Jin-Gyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "622993": {
      "name": "Lee Yeong-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623910": {
      "name": "Kim Young-Bin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "632709": {
      "name": "João Gamboa",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "730745": {
      "name": "Yeon Je-Un",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828272": {
      "name": "Lee Dong-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848068": {
      "name": "Song Bum-Keun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848098": {
      "name": "Lee Seung-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "926374": {
      "name": "Kim Seung-Sub",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "947492": {
      "name": "Kim Tae-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1026730": {
      "name": "Lee Ju-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1026783": {
      "name": "Maeng Seong-Ung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1060635": {
      "name": "Bruno Mota",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1063377": {
      "name": "Andrea Compagno",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1169354": {
      "name": "Gytis Paulauskas",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1173651": {
      "name": "Tiago Orobó",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232942": {
      "name": "Jeon Byung-Kwan",
@@ -3109,40 +3090,47 @@
     "1326507": {
      "name": "Cho Wi-Je",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1364202": {
      "name": "Kang Sang-Yoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1436321": {
      "name": "Dodô",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440173": {
      "name": "Choi Woo-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1575997": {
      "name": "Kim Ha-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1669646": {
      "name": "Italo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836913": {
      "name": "Lee Sang-Myung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
-   "left": []
+   "left": [
+    {
+     "id": "1232942",
+     "name": "Jeon Byung-Kwan",
+     "firstSeen": "2026-10-16",
+     "lastSeen": "2026-10-31"
+    }
+   ]
   },
   "Gangwon FC": {
    "fotmobName": "Gangwon FC",
@@ -3159,8 +3147,8 @@
      "born": "1990-02-13",
      "country": "Korea Republic",
      "height": 190,
-     "value": 290464,
-     "rating": null,
+     "value": 252368,
+     "rating": 6.72,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3216,7 +3204,7 @@
      "born": "2004-09-08",
      "country": "Korea Republic",
      "height": 186,
-     "value": 264324,
+     "value": 246693,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3235,8 +3223,8 @@
      "born": "1996-10-21",
      "country": "Sweden",
      "height": 180,
-     "value": 160252,
-     "rating": null,
+     "value": 184517,
+     "rating": 6.4,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3254,8 +3242,8 @@
      "born": "2000-07-07",
      "country": "Korea Republic",
      "height": 184,
-     "value": 978426,
-     "rating": null,
+     "value": 754235,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3273,7 +3261,7 @@
      "born": "1998-12-04",
      "country": "Montenegro",
      "height": null,
-     "value": 482438,
+     "value": 312101,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3292,7 +3280,7 @@
      "born": "1999-04-07",
      "country": "Korea Republic",
      "height": 198,
-     "value": 215008,
+     "value": 210404,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3305,13 +3293,13 @@
      "id": 1429678,
      "name": "Kim Do-Hyun",
      "role": "defenders",
-     "position": "RB,RWB,RM",
+     "position": "RB,RWB",
      "number": 27,
      "age": 22,
      "born": "2004-05-12",
      "country": "Korea Republic",
      "height": 177,
-     "value": 291612,
+     "value": 291813,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3331,7 +3319,7 @@
      "country": "Korea Republic",
      "height": 176,
      "value": 175234,
-     "rating": null,
+     "rating": 6.23,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3351,6 +3339,25 @@
      "height": 179,
      "value": null,
      "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1613224,
+     "name": "Shin Min-Ha",
+     "role": "defenders",
+     "position": "CB",
+     "number": 47,
+     "age": 21,
+     "born": "2005-09-15",
+     "country": "Korea Republic",
+     "height": 186,
+     "value": 666311,
+     "rating": 5.14,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3387,7 +3394,7 @@
      "born": "1996-12-08",
      "country": "Korea Republic",
      "height": 176,
-     "value": 204865,
+     "value": 220129,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3406,8 +3413,8 @@
      "born": "1999-10-20",
      "country": "Korea Republic",
      "height": null,
-     "value": 453982,
-     "rating": null,
+     "value": 255066,
+     "rating": 7.04,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3425,8 +3432,8 @@
      "born": "1998-03-12",
      "country": "Korea Republic",
      "height": 184,
-     "value": 438920,
-     "rating": null,
+     "value": 265346,
+     "rating": 7.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3463,8 +3470,8 @@
      "born": "1997-02-10",
      "country": "Korea Republic",
      "height": 170,
-     "value": 542636,
-     "rating": null,
+     "value": 420155,
+     "rating": 6.75,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3501,7 +3508,7 @@
      "born": "2002-04-08",
      "country": "Korea Republic",
      "height": 177,
-     "value": 308117,
+     "value": 307143,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3520,8 +3527,8 @@
      "born": "2003-03-06",
      "country": "Korea Republic",
      "height": 174,
-     "value": 334791,
-     "rating": null,
+     "value": 331695,
+     "rating": 6.04,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3539,8 +3546,8 @@
      "born": "1996-09-24",
      "country": "Korea Republic",
      "height": 184,
-     "value": 737856,
-     "rating": null,
+     "value": 666244,
+     "rating": 7.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3577,8 +3584,8 @@
      "born": "1997-02-08",
      "country": "Korea Republic",
      "height": 179,
-     "value": 268252,
-     "rating": null,
+     "value": 214526,
+     "rating": 6.65,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3596,12 +3603,12 @@
      "born": "1995-02-22",
      "country": "Korea Republic",
      "height": 186,
-     "value": 287680,
-     "rating": null,
+     "value": 253071,
+     "rating": 5.95,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -3615,8 +3622,8 @@
      "born": "2001-07-09",
      "country": "Korea Republic",
      "height": 168,
-     "value": 627052,
-     "rating": null,
+     "value": 553359,
+     "rating": 6.33,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3634,7 +3641,7 @@
      "born": "2002-06-13",
      "country": "Korea Republic",
      "height": 182,
-     "value": 415605,
+     "value": 348474,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3663,6 +3670,25 @@
      "injury": null
     },
     {
+     "id": 1909017,
+     "name": "Lee Eun-Ho",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 50,
+     "age": 18,
+     "born": "2008-01-19",
+     "country": "Korea Republic",
+     "height": 177,
+     "value": null,
+     "rating": 5.86,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1122603,
      "name": "Abdalla Halaihal",
      "role": "attackers",
@@ -3672,7 +3698,7 @@
      "born": "2001-01-11",
      "country": "Israel",
      "height": null,
-     "value": 209833,
+     "value": 284230,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3692,7 +3718,7 @@
      "country": "Korea Republic",
      "height": 175,
      "value": 253071,
-     "rating": null,
+     "rating": 6.49,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3701,7 +3727,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Chung Kyeong-Ho",
@@ -3712,142 +3738,142 @@
     "195840": {
      "name": "Hong Chul",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "468156": {
      "name": "Park Cheong-Hyo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "667902": {
      "name": "Hwang Mun-Ki",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "727423": {
      "name": "Kim Gun-Hee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "734964": {
      "name": "Kim Dae-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828059": {
      "name": "Lee You-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828381": {
      "name": "Mo Jae-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "860427": {
      "name": "Marko Tući",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "881709": {
      "name": "Jesse Sekidika",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925873": {
      "name": "Choe Byeong-Chan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "926371": {
      "name": "Kim Dong-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "941201": {
      "name": "Abdelkarim Mammar Chaouche",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "947759": {
      "name": "Park Ho-Yeong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1122603": {
      "name": "Abdalla Halaihal",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135942": {
      "name": "Seo Min-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136002": {
      "name": "Goh Young-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1228525": {
      "name": "Kang Yun-Gu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232264": {
      "name": "Lee Gi-Hyuk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232813": {
      "name": "Park Sang-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232816": {
      "name": "Kim Yi-Seok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337112": {
      "name": "Kwon Seok-Joo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1429678": {
      "name": "Kim Do-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440154": {
      "name": "Lee Seung-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440156": {
      "name": "Cho Min-Kyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1478081": {
      "name": "Kim Jung-Hun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613076": {
      "name": "Kang Seong-Yun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613224": {
      "name": "Shin Min-Ha",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-11-04"
     },
     "1636734": {
      "name": "Kang Joon-Hyuck",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712404": {
      "name": "Jeong Seung-Bin",
@@ -3857,12 +3883,12 @@
     "1712410": {
      "name": "Lee Ji-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1789868": {
      "name": "Hong Jin-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1903069": {
      "name": "Lee Hyo-Bin",
@@ -3872,7 +3898,7 @@
     "1909017": {
      "name": "Lee Eun-Ho",
      "firstSeen": "2026-10-30",
-     "lastSeen": "2026-10-30"
+     "lastSeen": "2026-11-04"
     },
     "1909018": {
      "name": "Cho Won-Woo",
@@ -3887,12 +3913,6 @@
    },
    "left": [
     {
-     "id": "1613224",
-     "name": "Shin Min-Ha",
-     "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-30"
-    },
-    {
      "id": "1712404",
      "name": "Jeong Seung-Bin",
      "firstSeen": "2026-10-16",
@@ -3902,12 +3922,6 @@
      "id": "1903069",
      "name": "Lee Hyo-Bin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-30"
-    },
-    {
-     "id": "1909017",
-     "name": "Lee Eun-Ho",
-     "firstSeen": "2026-10-30",
      "lastSeen": "2026-10-30"
     },
     {
@@ -3939,7 +3953,7 @@
      "born": "1997-03-03",
      "country": "Korea Republic",
      "height": 186,
-     "value": 226848,
+     "value": 216343,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3959,7 +3973,7 @@
      "country": "Korea Republic",
      "height": 188,
      "value": null,
-     "rating": null,
+     "rating": 7.23,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3996,12 +4010,12 @@
      "born": "1995-08-17",
      "country": "Spain",
      "height": 187,
-     "value": 267410,
-     "rating": null,
+     "value": 220708,
+     "rating": 7.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -4015,7 +4029,7 @@
      "born": "1996-05-07",
      "country": "Korea Republic",
      "height": 179,
-     "value": 189159,
+     "value": 173217,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4034,8 +4048,8 @@
      "born": "2002-09-16",
      "country": "Korea Republic",
      "height": 192,
-     "value": 291649,
-     "rating": null,
+     "value": 312130,
+     "rating": 7.36,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4129,7 +4143,7 @@
      "born": "2000-05-05",
      "country": "Korea Republic",
      "height": null,
-     "value": 328603,
+     "value": 345040,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4148,7 +4162,7 @@
      "born": "1993-12-29",
      "country": "Korea Republic",
      "height": 184,
-     "value": 171295,
+     "value": 176194,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4167,8 +4181,8 @@
      "born": "1992-09-26",
      "country": "Korea Republic",
      "height": 180,
-     "value": 260312,
-     "rating": null,
+     "value": 219689,
+     "rating": 8.32,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4186,8 +4200,8 @@
      "born": "2000-07-17",
      "country": "Korea Republic",
      "height": 177,
-     "value": 448947,
-     "rating": null,
+     "value": 404325,
+     "rating": 6.83,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4199,14 +4213,14 @@
      "id": 308676,
      "name": "Lee Myung-Joo",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CM",
      "number": 5,
      "age": 36,
      "born": "1990-04-24",
      "country": "Korea Republic",
      "height": 176,
-     "value": 211912,
-     "rating": null,
+     "value": 205698,
+     "rating": 6.56,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4243,7 +4257,7 @@
      "born": "1995-05-18",
      "country": "Spain",
      "height": 182,
-     "value": 185536,
+     "value": 172314,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4262,8 +4276,8 @@
      "born": "2000-06-09",
      "country": "Korea Republic",
      "height": 177,
-     "value": 320843,
-     "rating": null,
+     "value": 306448,
+     "rating": 6.29,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4281,9 +4295,9 @@
      "born": "1991-02-23",
      "country": "Guinea-Bissau",
      "height": 172,
-     "value": 283332,
+     "value": 278624,
      "rating": null,
-     "goals": 0,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -4300,8 +4314,8 @@
      "born": "2003-09-16",
      "country": "Korea Republic",
      "height": 178,
-     "value": 531404,
-     "rating": null,
+     "value": 421256,
+     "rating": 8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4313,14 +4327,14 @@
      "id": 1337152,
      "name": "Kim Seong-Min",
      "role": "midfielders",
-     "position": "RM,RW",
+     "position": "RM",
      "number": 17,
      "age": 26,
      "born": "2000-07-03",
      "country": "Korea Republic",
      "height": 171,
-     "value": 309856,
-     "rating": null,
+     "value": 309382,
+     "rating": 6.9,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4338,7 +4352,7 @@
      "born": "1997-08-21",
      "country": "Korea Republic",
      "height": 182,
-     "value": 231343,
+     "value": 219737,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4357,7 +4371,7 @@
      "born": "2002-01-19",
      "country": "Korea Republic",
      "height": null,
-     "value": 267717,
+     "value": 259689,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4370,13 +4384,13 @@
      "id": 1693371,
      "name": "Kim Young-Whan",
      "role": "midfielders",
-     "position": "ST,CM",
+     "position": "ST",
      "number": 30,
      "age": 24,
      "born": "2002-03-23",
      "country": "Korea Republic",
      "height": 180,
-     "value": 217890,
+     "value": 216916,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4414,7 +4428,7 @@
      "born": "1999-08-25",
      "country": "Korea Republic",
      "height": 173,
-     "value": 237064,
+     "value": 234783,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4433,8 +4447,8 @@
      "born": "1992-02-26",
      "country": "Montenegro",
      "height": 188,
-     "value": 293559,
-     "rating": null,
+     "value": 271741,
+     "rating": 6.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4471,8 +4485,8 @@
      "born": "1995-01-13",
      "country": "Brazil",
      "height": 178,
-     "value": 171349,
-     "rating": null,
+     "value": 211175,
+     "rating": 6.22,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4490,8 +4504,8 @@
      "born": "1988-07-02",
      "country": "Korea Republic",
      "height": 180,
-     "value": 328248,
-     "rating": null,
+     "value": 238937,
+     "rating": 7.45,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4509,7 +4523,7 @@
      "born": "2003-09-01",
      "country": "Korea Republic",
      "height": 180,
-     "value": 461003,
+     "value": 480446,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4528,8 +4542,8 @@
      "born": "1994-11-15",
      "country": "Guyana",
      "height": 185,
-     "value": 251966,
-     "rating": null,
+     "value": 217357,
+     "rating": 6.05,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4538,7 +4552,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Yoon Jong-Hwan",
@@ -4549,162 +4563,162 @@
     "130670": {
      "name": "Lee Chung-Yong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "208637": {
      "name": "Stefan Mugoša",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "308676": {
      "name": "Lee Myung-Joo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "358136": {
      "name": "Iker Undabarrena",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "362711": {
      "name": "Gerso",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "523746": {
      "name": "Lee Ju-Yong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "545309": {
      "name": "Leandro Ribeiro",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623748": {
      "name": "Lee Tae-Hui",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "675084": {
      "name": "Juan Ibiza",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "693177": {
      "name": "Morgan Ferrier",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "729194": {
      "name": "Jung Won-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "734969": {
      "name": "Jeong Chi-In",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828050": {
      "name": "Lee Sang-Gi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828325": {
      "name": "Mun Ji-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925646": {
      "name": "Kim Yeon-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "948966": {
      "name": "Oh Hu-Seong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1035983": {
      "name": "Kim Dong-Heon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1067481": {
      "name": "Lee Dong-Ryul",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1287638": {
      "name": "Kim Myung-Sun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337152": {
      "name": "Kim Seong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1351102": {
      "name": "Yeo Seung-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440076": {
      "name": "Lee Min-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440137": {
      "name": "Seo Jae-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440167": {
      "name": "Kim Geon-Hui",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440169": {
      "name": "Park Seung-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613278": {
      "name": "Baek Min-Gyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613288": {
      "name": "Choi Seung-Gu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1693371": {
      "name": "Kim Young-Whan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1752117": {
      "name": "Park Kyung-Sub",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909130": {
      "name": "Go Jeong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909132": {
      "name": "Lee Jun-Seop",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909141": {
      "name": "Wang Min-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -4724,8 +4738,8 @@
      "born": "1994-12-19",
      "country": "Korea Republic",
      "height": 189,
-     "value": 307329,
-     "rating": null,
+     "value": 270051,
+     "rating": 6.68,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4762,7 +4776,7 @@
      "born": "1998-05-12",
      "country": "Korea Republic",
      "height": 185,
-     "value": 212400,
+     "value": 206389,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4781,7 +4795,7 @@
      "born": "2000-03-25",
      "country": "Korea Republic",
      "height": 179,
-     "value": 343184,
+     "value": 263210,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4800,8 +4814,8 @@
      "born": "1994-02-02",
      "country": "Portugal",
      "height": 188,
-     "value": 302460,
-     "rating": null,
+     "value": 305975,
+     "rating": 7.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4819,7 +4833,7 @@
      "born": "1997-07-24",
      "country": "France",
      "height": 191,
-     "value": 243069,
+     "value": 214981,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4857,7 +4871,7 @@
      "born": "2005-10-27",
      "country": "Korea Republic",
      "height": null,
-     "value": 446326,
+     "value": 397683,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4895,7 +4909,7 @@
      "born": "1994-12-28",
      "country": "Korea Republic",
      "height": 178,
-     "value": 337532,
+     "value": 248220,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4933,10 +4947,10 @@
      "born": "2002-06-04",
      "country": "Korea Republic",
      "height": 175,
-     "value": 556617,
-     "rating": null,
+     "value": 481497,
+     "rating": 8,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -4952,8 +4966,8 @@
      "born": "1998-02-06",
      "country": "Korea Republic",
      "height": 190,
-     "value": 222134,
-     "rating": null,
+     "value": 219868,
+     "rating": 7.56,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4972,7 +4986,7 @@
      "country": "Korea Republic",
      "height": 174,
      "value": 346681,
-     "rating": null,
+     "rating": 7.24,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4990,7 +5004,7 @@
      "born": "2005-11-08",
      "country": "Korea Republic",
      "height": 184,
-     "value": 359179,
+     "value": 318195,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5009,7 +5023,7 @@
      "born": "1997-08-03",
      "country": "Brazil",
      "height": null,
-     "value": 215451,
+     "value": 203295,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5028,8 +5042,8 @@
      "born": "1994-01-20",
      "country": "Korea Republic",
      "height": 179,
-     "value": 206561,
-     "rating": null,
+     "value": 200459,
+     "rating": 7.58,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5047,7 +5061,7 @@
      "born": "1999-03-06",
      "country": "Korea Republic",
      "height": 183,
-     "value": 280351,
+     "value": 355899,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5066,8 +5080,8 @@
      "born": "2005-04-11",
      "country": "Korea Republic",
      "height": 177,
-     "value": 409508,
-     "rating": null,
+     "value": 520614,
+     "rating": 6.46,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5085,8 +5099,8 @@
      "born": "1999-09-22",
      "country": "Korea Republic",
      "height": null,
-     "value": 105604,
-     "rating": null,
+     "value": 186136,
+     "rating": 6.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5161,7 +5175,7 @@
      "born": "1998-02-17",
      "country": "Korea Republic",
      "height": 187,
-     "value": 397333,
+     "value": 332309,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5180,8 +5194,8 @@
      "born": "1996-12-23",
      "country": "Korea Republic",
      "height": 176,
-     "value": 262063,
-     "rating": null,
+     "value": 331554,
+     "rating": 7.89,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5199,7 +5213,7 @@
      "born": "1996-12-30",
      "country": "Brazil",
      "height": 175,
-     "value": 146790,
+     "value": 357703,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5218,8 +5232,8 @@
      "born": "1999-08-20",
      "country": "Korea Republic",
      "height": 185,
-     "value": 260923,
-     "rating": null,
+     "value": 301491,
+     "rating": 6.03,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5238,7 +5252,7 @@
      "country": "Korea Republic",
      "height": 186,
      "value": 295281,
-     "rating": null,
+     "rating": 6.64,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5256,7 +5270,26 @@
      "born": "1996-10-11",
      "country": "Albania",
      "height": 179,
-     "value": 594318,
+     "value": 523081,
+     "rating": 6.3,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2428966,
+     "name": "Gu Bon-Seo",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 30,
+     "age": 18,
+     "born": "2008-04-03",
+     "country": "Korea Republic",
+     "height": null,
+     "value": null,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5275,9 +5308,9 @@
      "born": "2000-11-24",
      "country": "Brazil",
      "height": 175,
-     "value": 711438,
-     "rating": null,
-     "goals": 0,
+     "value": 570088,
+     "rating": 7.94,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -5285,7 +5318,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Sergio Costa",
@@ -5296,152 +5329,157 @@
     "253834": {
      "name": "Rim Chang-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "361326": {
      "name": "Tobias Figueiredo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "430453": {
      "name": "Chung Woon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "526425": {
      "name": "Lee Chang-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "533182": {
      "name": "Kim Dong-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "673606": {
      "name": "Matheus Aiás",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "727421": {
      "name": "Yu In-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "796256": {
      "name": "Kim Jae-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "862643": {
      "name": "Julien Célestine",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925332": {
      "name": "Park Chang-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "956239": {
      "name": "Eraldo Çinari",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1026835": {
      "name": "Kim Tae-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1134744": {
      "name": "Jang Min-gyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136069": {
      "name": "Heo Ja-Woong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136249": {
      "name": "Lee Kun-Hee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232400": {
      "name": "Kim Ryun-Seong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232555": {
      "name": "Heo Kang-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232941": {
      "name": "Shin Sang-Eun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1280914": {
      "name": "Emerson Negueba",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337099": {
      "name": "Kim Sin-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1532009": {
      "name": "Italo Moreira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1616953": {
      "name": "Kim Jae-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1642488": {
      "name": "Jo In-Jung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714798": {
      "name": "Choi Byung-Wook",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714799": {
      "name": "Joo Seung-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1735635": {
      "name": "Park Su-Bin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1910255": {
      "name": "Kwon Ki-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1910260": {
      "name": "Park Min-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1910261": {
      "name": "Kang Dong-Hui",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1910262": {
      "name": "Yoo Seung-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
+    },
+    "2428966": {
+     "name": "Gu Bon-Seo",
+     "firstSeen": "2026-11-04",
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -5461,8 +5499,8 @@
      "born": "2001-04-20",
      "country": "Korea Republic",
      "height": 189,
-     "value": 489156,
-     "rating": null,
+     "value": 425903,
+     "rating": 7.04,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5499,7 +5537,7 @@
      "born": "2002-02-23",
      "country": "Korea Republic",
      "height": 191,
-     "value": 149299,
+     "value": 216337,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5518,8 +5556,8 @@
      "born": "2004-10-14",
      "country": "Korea Republic",
      "height": 188,
-     "value": 288098,
-     "rating": null,
+     "value": 275924,
+     "rating": 7.76,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5537,7 +5575,7 @@
      "born": "1990-08-27",
      "country": "Korea Republic",
      "height": 180,
-     "value": 228905,
+     "value": 183573,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5556,7 +5594,7 @@
      "born": "1993-09-04",
      "country": "Korea Republic",
      "height": 189,
-     "value": 206361,
+     "value": 190619,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5575,8 +5613,8 @@
      "born": "1997-01-06",
      "country": "Korea Republic",
      "height": 177,
-     "value": 208799,
-     "rating": null,
+     "value": 192857,
+     "rating": 7.68,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5594,9 +5632,9 @@
      "born": "1992-01-31",
      "country": "Korea Republic",
      "height": 188,
-     "value": 264767,
-     "rating": null,
-     "goals": 0,
+     "value": 192857,
+     "rating": 8.16,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -5613,8 +5651,8 @@
      "born": "1992-12-28",
      "country": "Korea Republic",
      "height": 177,
-     "value": 245853,
-     "rating": null,
+     "value": 192857,
+     "rating": 7.27,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5651,7 +5689,7 @@
      "born": "1992-06-16",
      "country": "Korea Republic",
      "height": 181,
-     "value": 208799,
+     "value": 193057,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5664,14 +5702,14 @@
      "id": 417818,
      "name": "Danny Bakker",
      "role": "defenders",
-     "position": "CB,CDM,CM",
+     "position": "CB,CM,CDM",
      "number": 33,
      "age": 31,
      "born": "1995-01-16",
      "country": "Netherlands",
      "height": 184,
-     "value": 253722,
-     "rating": null,
+     "value": 192631,
+     "rating": 7.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5727,7 +5765,7 @@
      "born": "1990-09-12",
      "country": "Korea Republic",
      "height": 174,
-     "value": 141906,
+     "value": 117641,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5765,10 +5803,10 @@
      "born": "1997-09-28",
      "country": "Brazil",
      "height": 172,
-     "value": 650472,
-     "rating": null,
+     "value": 526011,
+     "rating": 8.01,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -5784,7 +5822,7 @@
      "born": "1993-06-01",
      "country": "Korea Republic",
      "height": 185,
-     "value": 213507,
+     "value": 153030,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5803,7 +5841,7 @@
      "born": "1998-02-09",
      "country": "Korea Republic",
      "height": null,
-     "value": 195386,
+     "value": 191053,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5816,13 +5854,32 @@
      "id": 1197508,
      "name": "Branislav Knežević",
      "role": "midfielders",
-     "position": "CAM,CDM,CM",
+     "position": "CAM,CM,CDM",
      "number": 18,
      "age": 24,
      "born": "2002-07-21",
      "country": "Serbia",
      "height": 188,
      "value": null,
+     "rating": 6.73,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 925671,
+     "name": "Yu Jeong-Wan",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 20,
+     "age": 30,
+     "born": "1996-04-05",
+     "country": "Korea Republic",
+     "height": 177,
+     "value": 220931,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5899,11 +5956,11 @@
      "country": "Brazil",
      "height": 187,
      "value": 586682,
-     "rating": null,
+     "rating": 6.09,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -5918,7 +5975,7 @@
      "country": "Bosnia and Herzegovina",
      "height": 176,
      "value": 211197,
-     "rating": null,
+     "rating": 7.39,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -5974,7 +6031,7 @@
      "born": "2004-08-21",
      "country": "Korea Republic",
      "height": 181,
-     "value": 271663,
+     "value": 264748,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5993,8 +6050,8 @@
      "born": "1994-11-15",
      "country": "Korea Republic",
      "height": 180,
-     "value": 287217,
-     "rating": null,
+     "value": 248892,
+     "rating": 6.83,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6013,7 +6070,7 @@
      "country": "Korea Republic",
      "height": 175,
      "value": 272529,
-     "rating": null,
+     "rating": 6.13,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6088,8 +6145,8 @@
      "born": "2004-08-19",
      "country": "Korea Republic",
      "height": 178,
-     "value": 517840,
-     "rating": null,
+     "value": 506234,
+     "rating": 7.18,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6098,7 +6155,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Ryu Byeong-Hoon",
@@ -6109,172 +6166,177 @@
     "117569": {
      "name": "Jeong Jun-Yeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "197267": {
      "name": "Kim Da-Sol",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "197910": {
      "name": "Kim Bo-Kyung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "417818": {
      "name": "Danny Bakker",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "430842": {
      "name": "Kim Jung-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "431123": {
      "name": "Kim Young-Chan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "431124": {
      "name": "Kwon Kyung-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "468073": {
      "name": "Lee Chang-Yong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "522146": {
      "name": "Ivan Jukić",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623013": {
      "name": "Kim Dong-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623628": {
      "name": "Lee Tae-Hee",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623920": {
      "name": "Joo Hyun-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "783680": {
      "name": "Matheus Oliveira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848104": {
      "name": "Kang Ji-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
+    },
+    "925671": {
+     "name": "Yu Jeong-Wan",
+     "firstSeen": "2026-11-04",
+     "lastSeen": "2026-11-04"
     },
     "1076897": {
      "name": "Kim Jeong-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1080552": {
      "name": "Han Ka-Ram",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1132308": {
      "name": "Breno Herculano",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135899": {
      "name": "Lee Jin-Yong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1140204": {
      "name": "Airton Moisés",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1149552": {
      "name": "Choi Geon-Joo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1197508": {
      "name": "Branislav Knežević",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1249527": {
      "name": "Kim Un",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1326660": {
      "name": "Park Jong-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1460120": {
      "name": "Moon Seong-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1647584": {
      "name": "Chae Hyun-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1689064": {
      "name": "Blaise Tsague",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712378": {
      "name": "Kim Ji-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712386": {
      "name": "Park Jeong-Hun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712390": {
      "name": "Jang Jung-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712393": {
      "name": "Kim Sung-Dong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1907817": {
      "name": "Kang Ji-Wan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1907820": {
      "name": "Kim Jae-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1907823": {
      "name": "Kim Kang",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1907826": {
      "name": "Oh Hyeong-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -6282,7 +6344,7 @@
   "Pohang Steelers": {
    "fotmobName": "Pohang Steelers",
    "fotmobId": 109373,
-   "coach": "Park Tae-Ha",
+   "coach": null,
    "players": [
     {
      "id": 433196,
@@ -6294,7 +6356,7 @@
      "born": "1992-02-08",
      "country": "Korea Republic",
      "height": 188,
-     "value": 126924,
+     "value": 137967,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6313,8 +6375,8 @@
      "born": "1994-04-22",
      "country": "Korea Republic",
      "height": 187,
-     "value": 244700,
-     "rating": null,
+     "value": 215902,
+     "rating": 6.63,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6332,7 +6394,7 @@
      "born": "2006-09-29",
      "country": "Korea Republic",
      "height": 184,
-     "value": 427532,
+     "value": 535079,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6370,7 +6432,7 @@
      "born": "1999-07-08",
      "country": "Korea Republic",
      "height": 175,
-     "value": 399999,
+     "value": 340846,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6389,7 +6451,7 @@
      "born": "1996-10-21",
      "country": "Korea Republic",
      "height": 170,
-     "value": 252786,
+     "value": 311799,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6408,8 +6470,8 @@
      "born": "1993-01-17",
      "country": "Korea Republic",
      "height": 186,
-     "value": 256597,
-     "rating": null,
+     "value": 208799,
+     "rating": 7.19,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6447,7 +6509,7 @@
      "country": "Korea Republic",
      "height": 172,
      "value": 333772,
-     "rating": null,
+     "rating": 6.92,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6465,8 +6527,8 @@
      "born": "1987-03-18",
      "country": "Korea Republic",
      "height": 178,
-     "value": 184913,
-     "rating": null,
+     "value": 185114,
+     "rating": 6.48,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6484,8 +6546,8 @@
      "born": "1996-01-27",
      "country": "Korea Republic",
      "height": 188,
-     "value": 335145,
-     "rating": null,
+     "value": 307404,
+     "rating": 6.93,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6522,7 +6584,7 @@
      "born": "1995-03-22",
      "country": "Korea Republic",
      "height": 189,
-     "value": 160062,
+     "value": 137967,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6541,7 +6603,7 @@
      "born": "2005-09-29",
      "country": "Korea Republic",
      "height": 183,
-     "value": 452481,
+     "value": 393743,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6580,10 +6642,10 @@
      "country": "Brazil",
      "height": 172,
      "value": 204599,
-     "rating": null,
-     "goals": 0,
+     "rating": 8.62,
+     "goals": 1,
      "assists": 0,
-     "penalties": 0,
+     "penalties": 1,
      "yellow": 0,
      "red": 0,
      "injury": null
@@ -6598,8 +6660,8 @@
      "born": "1998-10-01",
      "country": "Korea Republic",
      "height": 173,
-     "value": 340649,
-     "rating": null,
+     "value": 345029,
+     "rating": 6.8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6611,13 +6673,13 @@
      "id": 1711629,
      "name": "Lee Chang-Woo",
      "role": "midfielders",
-     "position": "CM,RM,CDM",
+     "position": "CM,CDM",
      "number": 14,
      "age": 20,
      "born": "2006-03-12",
      "country": "Korea Republic",
      "height": 178,
-     "value": 310042,
+     "value": 311677,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6636,8 +6698,8 @@
      "born": "2003-07-30",
      "country": "Korea Republic",
      "height": 181,
-     "value": 356483,
-     "rating": null,
+     "value": 437849,
+     "rating": 6.91,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6687,13 +6749,13 @@
      "id": 1499949,
      "name": "Kento Nishiya",
      "role": "midfielders",
-     "position": "CM,CDM,CAM",
+     "position": "CAM,CM,CDM",
      "number": 31,
      "age": 26,
      "born": "1999-11-07",
      "country": "Japan",
      "height": 175,
-     "value": 315944,
+     "value": 305229,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6712,8 +6774,8 @@
      "born": "1989-01-24",
      "country": "Korea Republic",
      "height": 189,
-     "value": 223069,
-     "rating": null,
+     "value": 183573,
+     "rating": 6.18,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6750,7 +6812,7 @@
      "born": "2005-01-22",
      "country": "Korea Republic",
      "height": 177,
-     "value": 582845,
+     "value": 558096,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6782,14 +6844,14 @@
      "id": 1152742,
      "name": "An Jae-Jun",
      "role": "attackers",
-     "position": "CAM,RW",
+     "position": "CAM,RW,ST",
      "number": 9,
      "age": 25,
      "born": "2001-04-03",
      "country": "Korea Republic",
      "height": 185,
-     "value": 382243,
-     "rating": null,
+     "value": 380321,
+     "rating": 6.51,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6807,8 +6869,8 @@
      "born": "2001-06-25",
      "country": "Germany",
      "height": 190,
-     "value": 372964,
-     "rating": null,
+     "value": 357011,
+     "rating": 6.06,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6826,12 +6888,12 @@
      "born": "1997-11-05",
      "country": "Brazil",
      "height": 170,
-     "value": 230806,
-     "rating": null,
+     "value": 217299,
+     "rating": 6.68,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -6864,7 +6926,7 @@
      "born": "2004-01-23",
      "country": "Korea Republic",
      "height": 189,
-     "value": 351944,
+     "value": 352972,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6877,14 +6939,14 @@
      "id": 1184786,
      "name": "Jorge Teixeira",
      "role": "attackers",
-     "position": "LW,ST,LM",
+     "position": "LW,LM,ST",
      "number": 25,
      "age": 27,
      "born": "1999-06-21",
      "country": "Brazil",
      "height": null,
      "value": 275351,
-     "rating": null,
+     "rating": 5.8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6941,7 +7003,7 @@
      "country": "Korea Republic",
      "height": 183,
      "value": 394511,
-     "rating": null,
+     "rating": 6.21,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6950,7 +7012,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Park Tae-Ha",
@@ -6961,177 +7023,177 @@
     "130628": {
      "name": "Shin Kwang-Hoon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "144996": {
      "name": "Ki Sung-Yueng",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "331738": {
      "name": "Wanderson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "433196": {
      "name": "Yoon Pyung-Guk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "648405": {
      "name": "Park Chan-Yong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "654164": {
      "name": "Jeon Min-Gwang",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "730778": {
      "name": "Hwang In-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925672": {
      "name": "Won Ki-Jong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "930020": {
      "name": "Kim Ye-Sung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "937117": {
      "name": "Jo Sung-Wook",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1037550": {
      "name": "Juninho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1122646": {
      "name": "Hwang Jae-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135928": {
      "name": "Jung Han-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1152742": {
      "name": "An Jae-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1184786": {
      "name": "Jorge Teixeira",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232940": {
      "name": "Eo Jeong-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1381040": {
      "name": "Kim Seung-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1388929": {
      "name": "Kim Yong-Hak",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1399589": {
      "name": "Jakob Tranziska",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1499949": {
      "name": "Kento Nishiya",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1611654": {
      "name": "Kim Dong-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1612389": {
      "name": "Hwang Seo-Ung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1612401": {
      "name": "Jin Si-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711623": {
      "name": "Cho Sang-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711628": {
      "name": "Baek Seung-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711629": {
      "name": "Lee Chang-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711630": {
      "name": "Kang Min-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711634": {
      "name": "Kwon Neung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711635": {
      "name": "Hong Seong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1816704": {
      "name": "Kim Ho-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836883": {
      "name": "Lee Soo-Ah",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1908810": {
      "name": "Kim Bum-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1908847": {
      "name": "Cho Young-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1908887": {
      "name": "Yun Dae-Geun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2118584": {
      "name": "Kim Gwang-won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -7151,7 +7213,7 @@
      "born": "2004-02-28",
      "country": "Korea Republic",
      "height": 182,
-     "value": 182503,
+     "value": 194433,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7170,8 +7232,8 @@
      "born": "1998-01-28",
      "country": "Korea Republic",
      "height": 188,
-     "value": 182751,
-     "rating": null,
+     "value": 185477,
+     "rating": 6.26,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7189,7 +7251,7 @@
      "born": "1998-04-06",
      "country": "Korea Republic",
      "height": 187,
-     "value": 211328,
+     "value": 284917,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7227,8 +7289,8 @@
      "born": "2001-12-16",
      "country": "Korea Republic",
      "height": 174,
-     "value": 266633,
-     "rating": null,
+     "value": 262094,
+     "rating": 7.31,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7265,8 +7327,8 @@
      "born": "1998-04-01",
      "country": "Korea Republic",
      "height": 187,
-     "value": 192598,
-     "rating": null,
+     "value": 195386,
+     "rating": 7.34,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7284,7 +7346,7 @@
      "born": "2000-02-25",
      "country": "Korea Republic",
      "height": 183,
-     "value": 249735,
+     "value": 244810,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7304,7 +7366,7 @@
      "country": "Korea Republic",
      "height": 178,
      "value": 259689,
-     "rating": null,
+     "rating": 7.61,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7360,7 +7422,7 @@
      "born": "2000-09-15",
      "country": "Korea Republic",
      "height": 175,
-     "value": 256708,
+     "value": 232442,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7379,8 +7441,8 @@
      "born": "2001-11-30",
      "country": "Korea Republic",
      "height": 190,
-     "value": 358708,
-     "rating": null,
+     "value": 335155,
+     "rating": 6.79,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7417,7 +7479,26 @@
      "born": "2001-02-06",
      "country": "Korea Republic",
      "height": 170,
-     "value": 506747,
+     "value": 459855,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1242481,
+     "name": "Kang Young-Hun",
+     "role": "defenders",
+     "position": "LM",
+     "number": 64,
+     "age": 28,
+     "born": "1998-09-28",
+     "country": "Korea Republic",
+     "height": 187,
+     "value": 286275,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7436,7 +7517,7 @@
      "born": "2001-01-06",
      "country": "Korea Republic",
      "height": 185,
-     "value": 310517,
+     "value": 323161,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7455,7 +7536,7 @@
      "born": "2005-11-14",
      "country": "Korea Republic",
      "height": 177,
-     "value": 369824,
+     "value": 363237,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7474,8 +7555,8 @@
      "born": "1998-07-23",
      "country": "Korea Republic",
      "height": 173,
-     "value": 241263,
-     "rating": null,
+     "value": 235752,
+     "rating": 7.34,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -7512,10 +7593,10 @@
      "born": "2002-03-19",
      "country": "Korea Republic",
      "height": 177,
-     "value": 368076,
-     "rating": null,
+     "value": 352769,
+     "rating": 7.83,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -7531,7 +7612,7 @@
      "born": "2000-07-05",
      "country": "Korea Republic",
      "height": 174,
-     "value": 256708,
+     "value": 243485,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7550,8 +7631,8 @@
      "born": "1999-01-19",
      "country": "Korea Republic",
      "height": 175,
-     "value": 329624,
-     "rating": null,
+     "value": 233781,
+     "rating": 6.93,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7569,27 +7650,8 @@
      "born": "1998-07-31",
      "country": "Korea Republic",
      "height": 181,
-     "value": 232762,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1242481,
-     "name": "Kang Young-Hun",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 64,
-     "age": 28,
-     "born": "1998-09-28",
-     "country": "Korea Republic",
-     "height": 187,
-     "value": 285885,
-     "rating": null,
+     "value": 230040,
+     "rating": 7.12,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7607,7 +7669,7 @@
      "born": "2002-06-21",
      "country": "Korea Republic",
      "height": null,
-     "value": 415264,
+     "value": 412994,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7622,11 +7684,11 @@
      "role": "midfielders",
      "position": "LM",
      "number": 70,
-     "age": 25,
+     "age": 26,
      "born": "2000-11-01",
      "country": "Korea Republic",
      "height": 168,
-     "value": 330826,
+     "value": 356283,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7658,13 +7720,13 @@
      "id": 1714797,
      "name": "Kim Jun-Ha",
      "role": "midfielders",
-     "position": "RM,LM,ST,CAM",
+     "position": "RM,ST,LM,CAM",
      "number": 73,
      "age": 20,
      "born": "2005-12-02",
      "country": "Korea Republic",
      "height": null,
-     "value": 748686,
+     "value": 740075,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7683,7 +7745,7 @@
      "born": "2000-04-04",
      "country": "Korea Republic",
      "height": 183,
-     "value": 365419,
+     "value": 359269,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7703,7 +7765,7 @@
      "country": "Korea Republic",
      "height": 178,
      "value": 379090,
-     "rating": null,
+     "rating": 6.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7721,8 +7783,8 @@
      "born": "1998-09-07",
      "country": "Korea Republic",
      "height": null,
-     "value": 268466,
-     "rating": null,
+     "value": 254983,
+     "rating": 6.47,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7734,14 +7796,14 @@
      "id": 1649282,
      "name": "Kang Ju-Hyeok",
      "role": "attackers",
-     "position": "RW",
+     "position": "RM",
      "number": 50,
      "age": 20,
      "born": "2006-08-27",
      "country": "Korea Republic",
      "height": null,
-     "value": 604058,
-     "rating": null,
+     "value": 613595,
+     "rating": 6.77,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7759,7 +7821,7 @@
      "born": "2003-10-22",
      "country": "Korea Republic",
      "height": 177,
-     "value": 352413,
+     "value": 332373,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7779,7 +7841,7 @@
      "country": "Korea Republic",
      "height": 192,
      "value": null,
-     "rating": null,
+     "rating": 5.94,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7797,7 +7859,7 @@
      "born": "2002-03-29",
      "country": "Korea Republic",
      "height": null,
-     "value": 332625,
+     "value": 331651,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7816,7 +7878,7 @@
      "born": "2002-04-08",
      "country": "Korea Republic",
      "height": 183,
-     "value": 324297,
+     "value": 375787,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7835,7 +7897,7 @@
      "born": "2001-04-12",
      "country": "Korea Republic",
      "height": 193,
-     "value": 435950,
+     "value": 376807,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7845,7 +7907,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Joo Seung-jin",
@@ -7856,187 +7918,187 @@
     "824471": {
      "name": "Ahn Joon-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "827997": {
      "name": "Lee Sang-Heon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828223": {
      "name": "Kim Min-Kyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "925867": {
      "name": "Park Tae-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1054175": {
      "name": "Kim Hyun-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135895": {
      "name": "Park Min-Seo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135945": {
      "name": "Hong Won-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135960": {
      "name": "Heo Yool",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136074": {
      "name": "An Chan-Gi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136205": {
      "name": "Kim In-Gyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136232": {
      "name": "Lim Dug-Keun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1149526": {
      "name": "Hong Si-Hoo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232393": {
      "name": "Roh Kyung-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232409": {
      "name": "Park Jin-Seong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232489": {
      "name": "Byeon Gyung-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232526": {
      "name": "Lee Kang-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232556": {
      "name": "Song Jun-Seok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232943": {
      "name": "Byeon Jun-Soo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1233817": {
      "name": "Oh Jae-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1242481": {
      "name": "Kang Young-Hun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1272121": {
      "name": "Hong Yun-Sang",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1326665": {
      "name": "Kang Min-Geu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337150": {
      "name": "Min Gyeong-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337187": {
      "name": "Park Ji-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1347356": {
      "name": "Kim Jin-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1430786": {
      "name": "Lee Sang-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1437914": {
      "name": "Park Yong-Hui",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1451105": {
      "name": "Jeong Jae-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613070": {
      "name": "Park Sang-Young",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1617282": {
      "name": "Yoon Jae-Seok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1617321": {
      "name": "Chung Ma-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1649282": {
      "name": "Kang Ju-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1649339": {
      "name": "Choi Gyu-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1712337": {
      "name": "Park Man-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714797": {
      "name": "Kim Jun-Ha",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1816705": {
      "name": "Lim Jun-Young",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836904": {
      "name": "Kim Seo-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -8076,7 +8138,7 @@
      "country": "Korea Republic",
      "height": 187,
      "value": 293729,
-     "rating": null,
+     "rating": 6.71,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8132,7 +8194,7 @@
      "born": "1997-06-03",
      "country": "Brazil",
      "height": 187,
-     "value": 273744,
+     "value": 233348,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8151,8 +8213,8 @@
      "born": "1999-08-06",
      "country": "Korea Republic",
      "height": 182,
-     "value": 240768,
-     "rating": null,
+     "value": 237052,
+     "rating": 7.08,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8170,8 +8232,8 @@
      "born": "2002-09-17",
      "country": "Korea Republic",
      "height": 187,
-     "value": 434238,
-     "rating": null,
+     "value": 355367,
+     "rating": 5.46,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8189,8 +8251,8 @@
      "born": "1991-05-30",
      "country": "Korea Republic",
      "height": 186,
-     "value": 212655,
-     "rating": null,
+     "value": 206441,
+     "rating": 6.14,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8240,13 +8302,13 @@
      "id": 1037003,
      "name": "Shin Jae-Won",
      "role": "defenders",
-     "position": "RB,RM,RWB",
+     "position": "RM,RB,RWB",
      "number": 77,
      "age": 28,
      "born": "1998-09-16",
      "country": "Korea Republic",
      "height": 183,
-     "value": 224423,
+     "value": 208481,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8265,7 +8327,7 @@
      "born": "2002-05-05",
      "country": "Korea Republic",
      "height": 184,
-     "value": 398503,
+     "value": 349709,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8285,11 +8347,11 @@
      "country": "Korea Republic",
      "height": 183,
      "value": null,
-     "rating": null,
+     "rating": 6.14,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -8303,8 +8365,8 @@
      "born": "2000-01-04",
      "country": "Brazil",
      "height": 178,
-     "value": 310955,
-     "rating": null,
+     "value": 277274,
+     "rating": 6.38,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8322,7 +8384,7 @@
      "born": "1990-05-07",
      "country": "Korea Republic",
      "height": 178,
-     "value": 314052,
+     "value": 311783,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8341,12 +8403,12 @@
      "born": "1993-10-01",
      "country": "Korea Republic",
      "height": 180,
-     "value": 209028,
-     "rating": null,
+     "value": 200459,
+     "rating": 6.52,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -8360,8 +8422,8 @@
      "born": "2001-10-01",
      "country": "Korea Republic",
      "height": 185,
-     "value": 306504,
-     "rating": null,
+     "value": 292312,
+     "rating": 6.18,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8373,7 +8435,7 @@
      "id": 1326652,
      "name": "Kim Gyu-Min",
      "role": "midfielders",
-     "position": "LM,RM",
+     "position": "LM",
      "number": 17,
      "age": 23,
      "born": "2003-03-15",
@@ -8417,7 +8479,7 @@
      "born": "1996-10-06",
      "country": "Japan",
      "height": 175,
-     "value": 209028,
+     "value": 206561,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8449,14 +8511,14 @@
      "id": 734790,
      "name": "An Tae-Hyun",
      "role": "midfielders",
-     "position": "LM,RM,RB",
+     "position": "LM,RM",
      "number": 26,
      "age": 33,
      "born": "1993-03-01",
      "country": "Korea Republic",
      "height": 174,
-     "value": 256597,
-     "rating": null,
+     "value": 192857,
+     "rating": 5.99,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8512,9 +8574,9 @@
      "born": "2000-10-07",
      "country": "Korea Republic",
      "height": 180,
-     "value": 265804,
-     "rating": null,
-     "goals": 0,
+     "value": 267048,
+     "rating": 7.66,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -8531,8 +8593,8 @@
      "born": "1997-10-17",
      "country": "Brazil",
      "height": 177,
-     "value": 240474,
-     "rating": null,
+     "value": 270147,
+     "rating": 6.73,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8550,8 +8612,8 @@
      "born": "1997-04-04",
      "country": "Brazil",
      "height": 176,
-     "value": 269080,
-     "rating": null,
+     "value": 244504,
+     "rating": 6.22,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8569,7 +8631,7 @@
      "born": "2000-02-12",
      "country": "Korea Republic",
      "height": 183,
-     "value": 274159,
+     "value": 269234,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8588,7 +8650,7 @@
      "born": "1998-03-03",
      "country": "Korea Republic",
      "height": 183,
-     "value": 232747,
+     "value": 295976,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8607,7 +8669,7 @@
      "born": "1988-12-15",
      "country": "Korea Republic",
      "height": 179,
-     "value": 158491,
+     "value": 142549,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8626,7 +8688,7 @@
      "born": "2002-12-15",
      "country": "Korea Republic",
      "height": 176,
-     "value": 249277,
+     "value": 225011,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8683,8 +8745,8 @@
      "born": "2000-12-28",
      "country": "Korea Republic",
      "height": null,
-     "value": 387697,
-     "rating": null,
+     "value": 384717,
+     "rating": 6.83,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8702,8 +8764,8 @@
      "born": "2000-03-12",
      "country": "Brazil",
      "height": null,
-     "value": 210422,
-     "rating": null,
+     "value": 254963,
+     "rating": 5.84,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8712,7 +8774,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Lee Young-Min",
@@ -8723,177 +8785,177 @@
     "212049": {
      "name": "Yoon Bit-Garam",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "307809": {
      "name": "Han Ji-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "632482": {
      "name": "Kim Jong-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "654124": {
      "name": "Jo Seong-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "654132": {
      "name": "Baek Dong-Gyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "664541": {
      "name": "Yeo Bong-Hun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "670804": {
      "name": "Rodrigo Bassani",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "734790": {
      "name": "An Tae-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "734941": {
      "name": "Kim Hyung-Geun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "934713": {
      "name": "Patrick William",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1028037": {
      "name": "Vitor Gabriel",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1034531": {
      "name": "Park Jeong-In",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1037003": {
      "name": "Shin Jae-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1054176": {
      "name": "Jeong Ho-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1090509": {
      "name": "Kazuki Takahashi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1109168": {
      "name": "Hong Sung-Wook",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1116074": {
      "name": "Kim Sang-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1136079": {
      "name": "Kim Min-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1187635": {
      "name": "Kim Seung-Bin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1197318": {
      "name": "Jefferson Galego",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1232374": {
      "name": "Kang Jae-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1233073": {
      "name": "Lee Eui-Hyung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1298518": {
      "name": "Gustavo Nescau",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1326646": {
      "name": "Yu Seung-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1326652": {
      "name": "Kim Gyu-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1377053": {
      "name": "Kim Jong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1481281": {
      "name": "Lee Jae-Won",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1631647": {
      "name": "Kim Dong-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1637666": {
      "name": "Lee Ye-Chan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1659879": {
      "name": "Thiaguinho Santos",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1816708": {
      "name": "Sung Shin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836659": {
      "name": "Kim Hyeon-Yeop",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1836661": {
      "name": "Lee Sang-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1907693": {
      "name": "Uh Dam",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2076075": {
      "name": "Sung Ye-Geon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -8909,11 +8971,11 @@
      "role": "keepers",
      "position": "GK",
      "number": 1,
-     "age": 34,
+     "age": 35,
      "born": "1991-11-01",
      "country": "Korea Republic",
      "height": 190,
-     "value": 216410,
+     "value": 193057,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8932,8 +8994,8 @@
      "born": "2003-05-07",
      "country": "Korea Republic",
      "height": 185,
-     "value": 289035,
-     "rating": null,
+     "value": 266773,
+     "rating": 7.21,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -8961,6 +9023,25 @@
      "injury": null
     },
     {
+     "id": 925839,
+     "name": "Doo Hyeon-Seok",
+     "role": "defenders",
+     "position": "RB",
+     "number": null,
+     "age": 30,
+     "born": "1995-12-21",
+     "country": "Korea Republic",
+     "height": 169,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1440077,
      "name": "Jang Seok-Hwan",
      "role": "defenders",
@@ -8970,7 +9051,7 @@
      "born": "2004-10-11",
      "country": "Korea Republic",
      "height": 179,
-     "value": 328923,
+     "value": 315301,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8990,7 +9071,7 @@
      "country": "Korea Republic",
      "height": 175,
      "value": 172588,
-     "rating": null,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9008,8 +9089,8 @@
      "born": "1999-10-30",
      "country": "Netherlands",
      "height": 194,
-     "value": 418177,
-     "rating": null,
+     "value": 360570,
+     "rating": 6.22,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9027,8 +9108,8 @@
      "born": "1989-12-04",
      "country": "Korea Republic",
      "height": 185,
-     "value": 181135,
-     "rating": null,
+     "value": 181336,
+     "rating": 7.02,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9046,8 +9127,8 @@
      "born": "1998-05-04",
      "country": "Korea Republic",
      "height": 178,
-     "value": 216328,
-     "rating": null,
+     "value": 198499,
+     "rating": 6.05,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9066,7 +9147,7 @@
      "country": "Brazil",
      "height": 184,
      "value": 372553,
-     "rating": null,
+     "rating": 6.68,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9104,11 +9185,11 @@
      "country": "Korea Republic",
      "height": 176,
      "value": 257050,
-     "rating": null,
+     "rating": 7.03,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -9122,7 +9203,7 @@
      "born": "2007-01-11",
      "country": "Korea Republic",
      "height": 188,
-     "value": 456519,
+     "value": 403720,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9141,7 +9222,7 @@
      "born": "2007-03-05",
      "country": "Korea Republic",
      "height": 187,
-     "value": 559138,
+     "value": 479370,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9160,7 +9241,7 @@
      "born": "1994-05-07",
      "country": "Korea Republic",
      "height": 176,
-     "value": 173314,
+     "value": 169598,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9180,7 +9261,7 @@
      "country": "Korea Republic",
      "height": 184,
      "value": 200459,
-     "rating": null,
+     "rating": 6.95,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9198,7 +9279,7 @@
      "born": "2002-01-23",
      "country": "Korea Republic",
      "height": 183,
-     "value": 213549,
+     "value": 214455,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9217,7 +9298,7 @@
      "born": "2003-05-08",
      "country": "Slovenia",
      "height": null,
-     "value": 273822,
+     "value": 281995,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9236,7 +9317,7 @@
      "born": "1990-10-30",
      "country": "Korea Republic",
      "height": 176,
-     "value": 190975,
+     "value": 175234,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9255,8 +9336,8 @@
      "born": "1995-03-15",
      "country": "Korea Republic",
      "height": 176,
-     "value": 193876,
-     "rating": null,
+     "value": 194076,
+     "rating": 6.9,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9274,27 +9355,8 @@
      "born": "2000-08-15",
      "country": "Korea Republic",
      "height": 178,
-     "value": 261215,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1440165,
-     "name": "Jung Ji-Hun",
-     "role": "midfielders",
-     "position": "LM,LW,RM,ST",
-     "number": 16,
-     "age": 22,
-     "born": "2004-04-09",
-     "country": "Korea Republic",
-     "height": 175,
-     "value": 480555,
-     "rating": null,
+     "value": 256507,
+     "rating": 6.54,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9350,7 +9412,7 @@
      "born": "1991-02-08",
      "country": "Korea DPR",
      "height": 187,
-     "value": 186768,
+     "value": 183053,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9369,8 +9431,8 @@
      "born": "1992-09-17",
      "country": "Korea Republic",
      "height": 170,
-     "value": 280451,
-     "rating": null,
+     "value": 225697,
+     "rating": 6.19,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9388,7 +9450,7 @@
      "born": "2003-02-25",
      "country": "Korea Republic",
      "height": 176,
-     "value": 275162,
+     "value": 261296,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9464,8 +9526,8 @@
      "born": "2004-02-18",
      "country": "Korea Republic",
      "height": null,
-     "value": 479155,
-     "rating": null,
+     "value": 310812,
+     "rating": 6.33,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -9502,7 +9564,26 @@
      "born": "1993-04-19",
      "country": "Iceland",
      "height": 195,
-     "value": 279112,
+     "value": 244503,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1440165,
+     "name": "Jung Ji-Hun",
+     "role": "attackers",
+     "position": "LM,LW,RM,ST",
+     "number": 16,
+     "age": 22,
+     "born": "2004-04-09",
+     "country": "Korea Republic",
+     "height": 175,
+     "value": 459334,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9521,8 +9602,8 @@
      "born": "1999-08-01",
      "country": "Australia",
      "height": 186,
-     "value": 291749,
-     "rating": null,
+     "value": 300433,
+     "rating": 7.26,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -9540,7 +9621,7 @@
      "born": "2004-09-03",
      "country": "Korea Republic",
      "height": null,
-     "value": 417361,
+     "value": 359356,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9559,7 +9640,7 @@
      "born": "2007-05-13",
      "country": "Korea Republic",
      "height": 188,
-     "value": 629141,
+     "value": 624050,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9578,17 +9659,17 @@
      "born": "1996-07-25",
      "country": "Côte d'Ivoire",
      "height": 170,
-     "value": 403073,
-     "rating": null,
+     "value": 407977,
+     "rating": 7.36,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Lee Jeong-Gyu",
@@ -9599,182 +9680,187 @@
     "264065": {
      "name": "Min Sang-Gi",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "275997": {
      "name": "Hólmbert Fridjónsson",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "307789": {
      "name": "Ju Se-Jong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "431508": {
      "name": "Ahn Young-Kyu",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "431899": {
      "name": "Lee Yong-Jick",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "520978": {
      "name": "Choi Kyoung-Rok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "526462": {
      "name": "Kim Kyeong-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "623019": {
      "name": "Shin Chang-Moo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "730782": {
      "name": "Lee Min-Ki",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "730830": {
      "name": "Kim Jong-Suk",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "768613": {
      "name": "Adriel Ba Loua",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "828160": {
      "name": "Park Won-Jae",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "848101": {
      "name": "Ha Seung-Un",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "860921": {
      "name": "John Iredale",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "864453": {
      "name": "Lim Seung-Kyum",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
+    },
+    "925839": {
+     "name": "Doo Hyeon-Seok",
+     "firstSeen": "2026-11-04",
+     "lastSeen": "2026-11-04"
     },
     "1074934": {
      "name": "Teun van Grunsven",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1135926": {
      "name": "Kwon Sung-Yun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1284499": {
      "name": "Emir Saitoski",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1320963": {
      "name": "João Pedro",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1337196": {
      "name": "Yu Je-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440077": {
      "name": "Jang Seok-Hwan",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1440165": {
      "name": "Jung Ji-Hun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1611217": {
      "name": "Lee Yoon-Sung",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613275": {
      "name": "Ahn Hyeok-Joo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1613276": {
      "name": "Moon Min-Seo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1650131": {
      "name": "Hong Yong-Jun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1678855": {
      "name": "Bae Jin-Woo",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1681722": {
      "name": "Kim Yun-Ho",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711654": {
      "name": "Kang Hui-Su",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1711655": {
      "name": "Kim Dong-Hwa",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909092": {
      "name": "Kim Yong-Hyeok",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909095": {
      "name": "Gong Bae-Hyeon",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909103": {
      "name": "Jung Gyu-Min",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1945841": {
      "name": "Park Sung-Hyun",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1999291": {
      "name": "Oh Ha-Jong",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2076071": {
      "name": "Kim Woo-Jin",
      "firstSeen": "2026-10-16",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []

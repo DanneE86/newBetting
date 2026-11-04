@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "HR",
  "fotmobId": 252,
  "source": "FotMob",
@@ -19,7 +19,7 @@
      "born": "1995-02-01",
      "country": "Croatia",
      "height": 195,
-     "value": 742738,
+     "value": 490599,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -41,8 +41,8 @@
      "born": "2004-05-07",
      "country": "Croatia",
      "height": null,
-     "value": 1123281,
-     "rating": 6.8,
+     "value": 1134297,
+     "rating": 6.83,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -70,6 +70,25 @@
      "injury": null
     },
     {
+     "id": 1743976,
+     "name": "Davyd Fesiuk",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 99,
+     "age": 21,
+     "born": "2005-04-24",
+     "country": "Ukraine",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1876648,
      "name": "Roko Gabrić",
      "role": "defenders",
@@ -79,7 +98,7 @@
      "born": "2007-06-21",
      "country": "Croatia",
      "height": null,
-     "value": 543311,
+     "value": 337323,
      "rating": 6.44,
      "goals": 0,
      "assists": 0,
@@ -98,7 +117,7 @@
      "born": "1998-12-30",
      "country": "Belgium",
      "height": 187,
-     "value": 493532,
+     "value": 404942,
      "rating": 6.92,
      "goals": 0,
      "assists": 0,
@@ -117,12 +136,12 @@
      "born": "1998-07-09",
      "country": "Bosnia and Herzegovina",
      "height": 191,
-     "value": 865169,
-     "rating": 7.07,
+     "value": 829178,
+     "rating": 7.12,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -155,7 +174,7 @@
      "born": "1999-09-29",
      "country": "Austria",
      "height": 183,
-     "value": 1290891,
+     "value": 1122859,
      "rating": 7.15,
      "goals": 0,
      "assists": 0,
@@ -178,7 +197,7 @@
      "country": "Croatia",
      "height": 179,
      "value": 302963,
-     "rating": 7.2,
+     "rating": 6.9,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -196,10 +215,10 @@
      "born": "2004-12-14",
      "country": "Madagascar",
      "height": 182,
-     "value": 552848,
-     "rating": 6.87,
+     "value": 565895,
+     "rating": 6.92,
      "goals": 1,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -215,8 +234,8 @@
      "born": "2004-03-20",
      "country": "Croatia",
      "height": null,
-     "value": 2233617,
-     "rating": 7.27,
+     "value": 2181119,
+     "rating": 7.26,
      "goals": 1,
      "assists": 2,
      "penalties": 0,
@@ -234,7 +253,7 @@
      "born": "2006-09-18",
      "country": "Croatia",
      "height": 190,
-     "value": 361334,
+     "value": 329651,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -253,17 +272,14 @@
      "born": "2006-06-10",
      "country": "Croatia",
      "height": null,
-     "value": 1120536,
-     "rating": 6.9,
+     "value": 1089079,
+     "rating": 6.77,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "14",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 1130562,
@@ -275,7 +291,7 @@
      "born": "2002-11-16",
      "country": "Albania",
      "height": 180,
-     "value": 1358306,
+     "value": 1351329,
      "rating": 7,
      "goals": 0,
      "assists": 2,
@@ -297,7 +313,7 @@
      "born": "2004-06-09",
      "country": "France",
      "height": 172,
-     "value": 1444975,
+     "value": 1397468,
      "rating": 7.66,
      "goals": 2,
      "assists": 1,
@@ -316,7 +332,7 @@
      "born": "2000-04-06",
      "country": "Spain",
      "height": 172,
-     "value": 232659,
+     "value": 572952,
      "rating": 7.26,
      "goals": 1,
      "assists": 3,
@@ -338,8 +354,8 @@
      "born": "1995-04-15",
      "country": "Belgium",
      "height": 188,
-     "value": 862590,
-     "rating": null,
+     "value": 1043192,
+     "rating": 8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -358,7 +374,7 @@
      "country": "Albania",
      "height": 182,
      "value": 502527,
-     "rating": 7.98,
+     "rating": 7.62,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -414,8 +430,8 @@
      "born": "1993-08-26",
      "country": "Croatia",
      "height": 182,
-     "value": 1463167,
-     "rating": 6.58,
+     "value": 1154102,
+     "rating": 6.59,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -433,7 +449,7 @@
      "born": "2000-08-05",
      "country": "Croatia",
      "height": 178,
-     "value": 1496492,
+     "value": 3810301,
      "rating": 7.04,
      "goals": 5,
      "assists": 1,
@@ -452,9 +468,9 @@
      "born": "2007-01-01",
      "country": "Croatia",
      "height": null,
-     "value": null,
-     "rating": 6.71,
-     "goals": 0,
+     "value": 647254,
+     "rating": 6.8,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 2,
@@ -471,8 +487,8 @@
      "born": "2004-09-18",
      "country": "Croatia",
      "height": 183,
-     "value": 1518254,
-     "rating": 7.17,
+     "value": 2071695,
+     "rating": 7.06,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -490,12 +506,12 @@
      "born": "1999-05-08",
      "country": "Gambia",
      "height": 173,
-     "value": 448833,
-     "rating": 7.16,
-     "goals": 2,
+     "value": 350440,
+     "rating": 7.21,
+     "goals": 3,
      "assists": 2,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -509,10 +525,10 @@
      "born": "2009-03-13",
      "country": "Ukraine",
      "height": null,
-     "value": 875355,
-     "rating": 6.67,
-     "goals": 0,
-     "assists": 2,
+     "value": 1534949,
+     "rating": 6.92,
+     "goals": 1,
+     "assists": 3,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -544,23 +560,23 @@
      "id": 1282015,
      "name": "Carlos Martín",
      "role": "attackers",
-     "position": "RW,RM,RWB",
+     "position": "RW,RM,RWB,ST",
      "number": 77,
      "age": 24,
      "born": "2002-04-22",
      "country": "Spain",
      "height": 184,
-     "value": 923080,
-     "rating": 6.26,
-     "goals": 0,
-     "assists": 0,
+     "value": 566748,
+     "rating": 6.85,
+     "goals": 2,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Gonzalo García",
@@ -571,142 +587,147 @@
     "202511": {
      "name": "Dante Stipica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "206242": {
      "name": "Marko Livaja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "424129": {
      "name": "Leander Dendoncker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "460004": {
      "name": "Dario Melnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "566822": {
      "name": "Ivica Ivušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "764741": {
      "name": "Dario Marešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "797797": {
      "name": "Dennis Hadžikadunić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "921593": {
      "name": "Michele Šego",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1020776": {
      "name": "Alec Van Hoorenbeeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1080763": {
      "name": "Abdoulie Sanyang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1120854": {
      "name": "Dali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1130562": {
      "name": "Adrion Pajaziti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1202029": {
      "name": "Alberto del Moral",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1282015": {
      "name": "Carlos Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1388749": {
      "name": "Khalil Fayad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1417103": {
      "name": "Roko Brajković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1438316": {
      "name": "Mathieu Acapandié",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1466684": {
      "name": "Šimun Hrgović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510855": {
      "name": "Toni Silić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510950": {
      "name": "Marin Šotiček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1644097": {
      "name": "Luka Hodak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1657862": {
      "name": "Etnik Brruti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1667424": {
      "name": "Marino Skelin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1699550": {
      "name": "Andjelo Šutalo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
+    },
+    "1743976": {
+     "name": "Davyd Fesiuk",
+     "firstSeen": "2026-11-04",
+     "lastSeen": "2026-11-04"
     },
     "1768687": {
      "name": "Ron Raçi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1876648": {
      "name": "Roko Gabrić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1950758": {
      "name": "Adam Huram",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1995691": {
      "name": "Illia Kutia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -745,8 +766,8 @@
      "born": "2000-02-10",
      "country": "Croatia",
      "height": 190,
-     "value": 5515228,
-     "rating": 6.67,
+     "value": 4446377,
+     "rating": 6.53,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -764,7 +785,7 @@
      "born": "1998-07-31",
      "country": "Croatia",
      "height": 195,
-     "value": 336920,
+     "value": 224214,
      "rating": 6.42,
      "goals": 0,
      "assists": 0,
@@ -802,7 +823,7 @@
      "born": "1998-04-17",
      "country": "Croatia",
      "height": 182,
-     "value": 744452,
+     "value": 735612,
      "rating": 7.3,
      "goals": 0,
      "assists": 0,
@@ -821,7 +842,7 @@
      "born": "1997-09-05",
      "country": "Bosnia and Herzegovina",
      "height": 201,
-     "value": 1389206,
+     "value": 1660223,
      "rating": 7.39,
      "goals": 0,
      "assists": 2,
@@ -843,7 +864,7 @@
      "born": "2002-07-05",
      "country": "Philippines",
      "height": 185,
-     "value": 198257,
+     "value": 196156,
      "rating": 7.22,
      "goals": 0,
      "assists": 1,
@@ -862,8 +883,8 @@
      "born": "2001-03-26",
      "country": "Croatia",
      "height": 182,
-     "value": 2304720,
-     "rating": 7.71,
+     "value": 2676297,
+     "rating": 7.68,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -881,8 +902,8 @@
      "born": "2005-12-18",
      "country": "Sweden",
      "height": 178,
-     "value": 2329920,
-     "rating": 6.83,
+     "value": 3699278,
+     "rating": 6.96,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -900,8 +921,8 @@
      "born": "2002-11-17",
      "country": "Croatia",
      "height": null,
-     "value": 1977379,
-     "rating": 6.82,
+     "value": 1953011,
+     "rating": 6.92,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -919,7 +940,7 @@
      "born": "1996-11-12",
      "country": "Scotland",
      "height": 189,
-     "value": 2169461,
+     "value": 2179461,
      "rating": 6.58,
      "goals": 0,
      "assists": 0,
@@ -941,7 +962,7 @@
      "born": "2007-01-27",
      "country": "Croatia",
      "height": 175,
-     "value": 503298,
+     "value": 467511,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -960,8 +981,8 @@
      "born": "2005-04-01",
      "country": "Spain",
      "height": 188,
-     "value": 5634514,
-     "rating": 6.72,
+     "value": 14681308,
+     "rating": 6.91,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -979,7 +1000,7 @@
      "born": "2002-06-14",
      "country": "Russia",
      "height": 187,
-     "value": 1049410,
+     "value": 1024355,
      "rating": 6.93,
      "goals": 0,
      "assists": 0,
@@ -998,7 +1019,7 @@
      "born": "1994-07-01",
      "country": "Slovenia",
      "height": 180,
-     "value": 599036,
+     "value": 545920,
      "rating": 6.92,
      "goals": 2,
      "assists": 0,
@@ -1017,8 +1038,8 @@
      "born": "2003-10-28",
      "country": "Croatia",
      "height": null,
-     "value": 5127574,
-     "rating": 7.51,
+     "value": 6972121,
+     "rating": 7.45,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -1036,17 +1057,14 @@
      "born": "1998-11-26",
      "country": "Croatia",
      "height": 175,
-     "value": 1949624,
-     "rating": 6.68,
+     "value": 1863169,
+     "rating": 6.57,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "96",
-      "expectedReturn": "About a week"
-     }
+     "injury": null
     },
     {
      "id": 598141,
@@ -1058,7 +1076,7 @@
      "born": "1997-05-05",
      "country": "Croatia",
      "height": 177,
-     "value": 608611,
+     "value": 315052,
      "rating": 7.21,
      "goals": 1,
      "assists": 1,
@@ -1077,8 +1095,8 @@
      "born": "1994-06-28",
      "country": "Croatia",
      "height": 178,
-     "value": 821679,
-     "rating": 7.38,
+     "value": 807548,
+     "rating": 7.45,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -1096,8 +1114,8 @@
      "born": "2003-03-02",
      "country": "Croatia",
      "height": null,
-     "value": 344396,
-     "rating": 7.09,
+     "value": 1351329,
+     "rating": 7.04,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -1115,14 +1133,17 @@
      "born": "2005-08-09",
      "country": "Spain",
      "height": 175,
-     "value": 1083218,
-     "rating": 6.9,
+     "value": 1192641,
+     "rating": 6.91,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1186606,
@@ -1134,12 +1155,12 @@
      "born": "2002-03-01",
      "country": "Croatia",
      "height": 195,
-     "value": 8309514,
-     "rating": 8.66,
+     "value": 14621587,
+     "rating": 8.42,
      "goals": 12,
      "assists": 5,
      "penalties": 2,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -1153,7 +1174,7 @@
      "born": "1998-10-06",
      "country": "Albania",
      "height": 185,
-     "value": 2029369,
+     "value": 1880624,
      "rating": 6.73,
      "goals": 1,
      "assists": 0,
@@ -1172,8 +1193,8 @@
      "born": "1995-05-10",
      "country": "Bosnia and Herzegovina",
      "height": 187,
-     "value": 508526,
-     "rating": 6.81,
+     "value": 402288,
+     "rating": 6.62,
      "goals": 2,
      "assists": 0,
      "penalties": 1,
@@ -1191,7 +1212,7 @@
      "born": "2004-02-17",
      "country": "Slovenia",
      "height": 195,
-     "value": 1210496,
+     "value": 1136187,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1204,13 +1225,13 @@
      "id": 1302796,
      "name": "Mateo Lisica",
      "role": "attackers",
-     "position": "RW,RB,LW",
+     "position": "RW,LW",
      "number": 21,
      "age": 23,
      "born": "2003-07-09",
      "country": "Croatia",
      "height": null,
-     "value": 1428584,
+     "value": 1414507,
      "rating": 6.8,
      "goals": 0,
      "assists": 0,
@@ -1229,13 +1250,13 @@
      "born": "2004-05-04",
      "country": "Spain",
      "height": 177,
-     "value": 875539,
+     "value": 837505,
      "rating": 6.13,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
-     "red": 0,
+     "red": 1,
      "injury": null
     },
     {
@@ -1248,7 +1269,7 @@
      "born": "2004-03-20",
      "country": "Croatia",
      "height": null,
-     "value": 1111593,
+     "value": 1096817,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -1270,7 +1291,7 @@
      "born": "1992-12-29",
      "country": "Croatia",
      "height": 179,
-     "value": 400936,
+     "value": 165827,
      "rating": 6.76,
      "goals": 0,
      "assists": 2,
@@ -1280,7 +1301,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Mario Kovačević",
@@ -1291,150 +1312,920 @@
     "184595": {
      "name": "Mislav Oršić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "252537": {
      "name": "Danijel Zagorac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "344093": {
      "name": "Josip Mišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "396949": {
      "name": "Miha Zajc",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "402897": {
      "name": "Ivan Filipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "551805": {
      "name": "Scott McKenna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "554930": {
      "name": "Smail Prevljak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "598141": {
      "name": "Robert Mudražija",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "653982": {
      "name": "Stjepan Radeljić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "688297": {
      "name": "Luka Ivanušec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "725462": {
      "name": "Ivan Nevistić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "857618": {
      "name": "Arbër Hoxha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "861642": {
      "name": "Bruno Goda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "873557": {
      "name": "Dominik Kotarski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1186606": {
      "name": "Dion Beljo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1190350": {
      "name": "Niko Galešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1195743": {
      "name": "Kirill Kravtsov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1254292": {
      "name": "Lukas Kačavenda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1262125": {
      "name": "Paul Tabinas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1302796": {
      "name": "Mateo Lisica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1358149": {
      "name": "Luka Stojković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1367049": {
      "name": "Dani Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1402931": {
      "name": "Fran Topić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1494521": {
      "name": "Moris Valinčić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1526557": {
      "name": "Iker Almena",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1606160": {
      "name": "Noa Mikić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1628516": {
      "name": "Matteo Pérez Vinlöf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1665435": {
      "name": "Sergi Domínguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1791802": {
      "name": "Aleks Stojaković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
+  },
+  "Osijek": {
+   "fotmobName": "Osijek",
+   "fotmobId": 10157,
+   "coach": "Federico Bessone",
+   "players": [
+    {
+     "id": 1228054,
+     "name": "Nikola Curcija",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 25,
+     "born": "2001-04-08",
+     "country": "Canada",
+     "height": 184,
+     "value": 239086,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1720289,
+     "name": "Jan Adžić",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 12,
+     "age": 17,
+     "born": "2009-01-02",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1635400,
+     "name": "Jan Hlapčić",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 20,
+     "age": 20,
+     "born": "2006-04-07",
+     "country": "Croatia",
+     "height": null,
+     "value": 303768,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 445243,
+     "name": "Marko Malenica",
+     "role": "keepers",
+     "position": "GK",
+     "number": 31,
+     "age": 32,
+     "born": "1994-02-08",
+     "country": "Croatia",
+     "height": 192,
+     "value": 214562,
+     "rating": 6.72,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2189065,
+     "name": "Izak Ježić",
+     "role": "defenders",
+     "position": "CB",
+     "number": null,
+     "age": 16,
+     "born": "2010-03-23",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": 7.01,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 384440,
+     "name": "Marcel Heister",
+     "role": "defenders",
+     "position": "LB,LWB,CB,LM",
+     "number": 2,
+     "age": 34,
+     "born": "1992-07-29",
+     "country": "Germany",
+     "height": 182,
+     "value": 119930,
+     "rating": 6.77,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1561067,
+     "name": "Vito Čaić",
+     "role": "defenders",
+     "position": "CB,CDM",
+     "number": 13,
+     "age": 21,
+     "born": "2005-04-01",
+     "country": "Croatia",
+     "height": null,
+     "value": 516502,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "81",
+      "expectedReturn": "Early December 2026"
+     }
+    },
+    {
+     "id": 2410170,
+     "name": "Mateo Sabo",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 17,
+     "age": 17,
+     "born": "2009-04-23",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1184358,
+     "name": "Jay Kruiver",
+     "role": "defenders",
+     "position": "RB",
+     "number": 22,
+     "age": 25,
+     "born": "2001-05-02",
+     "country": "Netherlands",
+     "height": 175,
+     "value": 407196,
+     "rating": 7.03,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1946144,
+     "name": "Luka Posavec",
+     "role": "defenders",
+     "position": "RB",
+     "number": 24,
+     "age": 17,
+     "born": "2009-04-15",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": 6.63,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1202919,
+     "name": "Luka Jelenić",
+     "role": "defenders",
+     "position": "CB",
+     "number": 26,
+     "age": 26,
+     "born": "2000-05-24",
+     "country": "Croatia",
+     "height": 187,
+     "value": 458661,
+     "rating": 6.59,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1329499,
+     "name": "Emin Hasić",
+     "role": "defenders",
+     "position": "CB",
+     "number": 33,
+     "age": 23,
+     "born": "2003-02-08",
+     "country": "Sweden",
+     "height": 191,
+     "value": 206797,
+     "rating": 6.38,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": {
+      "typeId": "15",
+      "expectedReturn": "Late December 2026"
+     }
+    },
+    {
+     "id": 1995424,
+     "name": "David Kalem",
+     "role": "defenders",
+     "position": "LB",
+     "number": 47,
+     "age": 18,
+     "born": "2008-08-07",
+     "country": "Croatia",
+     "height": null,
+     "value": 521934,
+     "rating": 6.68,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1643961,
+     "name": "Ivano Kolarik",
+     "role": "defenders",
+     "position": "CB",
+     "number": 49,
+     "age": 19,
+     "born": "2007-05-20",
+     "country": "Croatia",
+     "height": null,
+     "value": 1090646,
+     "rating": 6.9,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1445400,
+     "name": "Senad Mustafić",
+     "role": "defenders",
+     "position": "RB,LB",
+     "number": 77,
+     "age": 21,
+     "born": "2005-09-07",
+     "country": "Bosnia and Herzegovina",
+     "height": 186,
+     "value": 598358,
+     "rating": 6.37,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1520835,
+     "name": "Šimun Mikolčić",
+     "role": "midfielders",
+     "position": "CM,CAM,CDM",
+     "number": 8,
+     "age": 22,
+     "born": "2004-01-21",
+     "country": "Croatia",
+     "height": null,
+     "value": 426845,
+     "rating": 6.56,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Early January 2027"
+     }
+    },
+    {
+     "id": 1665130,
+     "name": "Luka Tunjić",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 11,
+     "age": 20,
+     "born": "2005-11-19",
+     "country": "Croatia",
+     "height": 183,
+     "value": 339382,
+     "rating": 7.48,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1109291,
+     "name": "Oleksandr Petrusenko",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 16,
+     "age": 28,
+     "born": "1998-03-26",
+     "country": "Ukraine",
+     "height": 181,
+     "value": 345662,
+     "rating": 6.65,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1665777,
+     "name": "Niko Farkaš",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 18,
+     "age": 19,
+     "born": "2006-11-29",
+     "country": "Croatia",
+     "height": null,
+     "value": 460644,
+     "rating": 6.81,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1589322,
+     "name": "Luka Vrbančić",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 23,
+     "age": 21,
+     "born": "2005-07-04",
+     "country": "Croatia",
+     "height": null,
+     "value": 1015329,
+     "rating": 7.57,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "120",
+      "expectedReturn": "A few weeks"
+     }
+    },
+    {
+     "id": 1863744,
+     "name": "Jona Ježić",
+     "role": "midfielders",
+     "position": "CAM,CDM,CB",
+     "number": 48,
+     "age": 18,
+     "born": "2008-10-08",
+     "country": "Croatia",
+     "height": null,
+     "value": 940093,
+     "rating": 6.67,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": {
+      "typeId": "45",
+      "expectedReturn": "Mid November 2026"
+     }
+    },
+    {
+     "id": 1288158,
+     "name": "Balázs Bakti",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 67,
+     "age": 21,
+     "born": "2004-12-31",
+     "country": "Hungary",
+     "height": null,
+     "value": 478471,
+     "rating": 6.51,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 905438,
+     "name": "Ivan Dolček",
+     "role": "attackers",
+     "position": "RW",
+     "number": 7,
+     "age": 26,
+     "born": "2000-04-24",
+     "country": "Croatia",
+     "height": 181,
+     "value": 714957,
+     "rating": 7.04,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1042107,
+     "name": "Álex Cantero",
+     "role": "attackers",
+     "position": "LW",
+     "number": 21,
+     "age": 26,
+     "born": "2000-06-08",
+     "country": "Spain",
+     "height": 180,
+     "value": 289926,
+     "rating": 6.43,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1562342,
+     "name": "Anton Matković",
+     "role": "attackers",
+     "position": "ST,LW",
+     "number": 34,
+     "age": 20,
+     "born": "2006-02-19",
+     "country": "Croatia",
+     "height": null,
+     "value": 1542396,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "14",
+      "expectedReturn": "Unknown"
+     }
+    },
+    {
+     "id": 1470053,
+     "name": "Domagoj Bukvić",
+     "role": "attackers",
+     "position": "RW,CAM,LB,LM",
+     "number": 39,
+     "age": 22,
+     "born": "2004-02-22",
+     "country": "Croatia",
+     "height": null,
+     "value": 442763,
+     "rating": 7.46,
+     "goals": 1,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": {
+      "typeId": "85",
+      "expectedReturn": "About 1-2 weeks"
+     }
+    },
+    {
+     "id": 1667431,
+     "name": "Ivan Barić",
+     "role": "attackers",
+     "position": "ST",
+     "number": 46,
+     "age": 19,
+     "born": "2007-01-10",
+     "country": "Croatia",
+     "height": null,
+     "value": 275544,
+     "rating": 6.25,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1675490,
+     "name": "Admir Ljatifi",
+     "role": "attackers",
+     "position": "LW",
+     "number": 57,
+     "age": 19,
+     "born": "2007-06-29",
+     "country": "North Macedonia",
+     "height": null,
+     "value": 610296,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1138575,
+     "name": "Armando León",
+     "role": "attackers",
+     "position": "ST",
+     "number": 79,
+     "age": 26,
+     "born": "2000-01-18",
+     "country": "Mexico",
+     "height": 188,
+     "value": 912731,
+     "rating": 7.05,
+     "goals": 6,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1597552,
+     "name": "Balelo",
+     "role": "attackers",
+     "position": "ST,RW",
+     "number": 99,
+     "age": 24,
+     "born": "2002-03-24",
+     "country": "Portugal",
+     "height": 188,
+     "value": null,
+     "rating": 6.58,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
+   "coachHistory": [
+    {
+     "name": "Federico Bessone",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "384440": {
+     "name": "Marcel Heister",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "445243": {
+     "name": "Marko Malenica",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "905438": {
+     "name": "Ivan Dolček",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1042107": {
+     "name": "Álex Cantero",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1109291": {
+     "name": "Oleksandr Petrusenko",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1138575": {
+     "name": "Armando León",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1184358": {
+     "name": "Jay Kruiver",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1202919": {
+     "name": "Luka Jelenić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1228054": {
+     "name": "Nikola Curcija",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1258611": {
+     "name": "Mateo Mejía",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1288158": {
+     "name": "Balázs Bakti",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1329499": {
+     "name": "Emin Hasić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1445400": {
+     "name": "Senad Mustafić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1470053": {
+     "name": "Domagoj Bukvić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1520835": {
+     "name": "Šimun Mikolčić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1561067": {
+     "name": "Vito Čaić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1562342": {
+     "name": "Anton Matković",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1589322": {
+     "name": "Luka Vrbančić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1597552": {
+     "name": "Balelo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1635400": {
+     "name": "Jan Hlapčić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1643961": {
+     "name": "Ivano Kolarik",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1665130": {
+     "name": "Luka Tunjić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1665777": {
+     "name": "Niko Farkaš",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1667431": {
+     "name": "Ivan Barić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1675490": {
+     "name": "Admir Ljatifi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1720289": {
+     "name": "Jan Adžić",
+     "firstSeen": "2026-10-22",
+     "lastSeen": "2026-11-04"
+    },
+    "1863744": {
+     "name": "Jona Ježić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1946144": {
+     "name": "Luka Posavec",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "1995424": {
+     "name": "David Kalem",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "2189065": {
+     "name": "Izak Ježić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-11-04"
+    },
+    "2410170": {
+     "name": "Mateo Sabo",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-11-04"
+    }
+   },
+   "left": [
+    {
+     "id": "1258611",
+     "name": "Mateo Mejía",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
   },
   "Varaždin": {
    "fotmobName": "NK Varaždin",
@@ -1451,7 +2242,7 @@
      "born": "1998-03-18",
      "country": "Scotland",
      "height": 190,
-     "value": 299859,
+     "value": 316270,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1508,7 +2299,7 @@
      "born": "1999-12-16",
      "country": "Croatia",
      "height": null,
-     "value": 279490,
+     "value": 280865,
      "rating": 7.25,
      "goals": 0,
      "assists": 0,
@@ -1549,7 +2340,7 @@
      "born": "2002-01-28",
      "country": "Croatia",
      "height": null,
-     "value": 706995,
+     "value": 507718,
      "rating": 6.38,
      "goals": 0,
      "assists": 0,
@@ -1568,8 +2359,8 @@
      "born": "2006-08-23",
      "country": "Croatia",
      "height": 190,
-     "value": 433414,
-     "rating": 6.64,
+     "value": 435585,
+     "rating": 6.67,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1587,14 +2378,17 @@
      "born": "2000-09-16",
      "country": "North Macedonia",
      "height": null,
-     "value": 183380,
+     "value": 603517,
      "rating": 7.3,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 158898,
@@ -1606,8 +2400,8 @@
      "born": "1991-10-27",
      "country": "Croatia",
      "height": 186,
-     "value": 134773,
-     "rating": 6.13,
+     "value": 118831,
+     "rating": 6.33,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1625,13 +2419,13 @@
      "born": "2002-03-16",
      "country": "Croatia",
      "height": 185,
-     "value": 364967,
-     "rating": 7.01,
+     "value": 360952,
+     "rating": 6.98,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
-     "red": 0,
+     "yellow": 2,
+     "red": 1,
      "injury": null
     },
     {
@@ -1644,7 +2438,7 @@
      "born": "1994-02-13",
      "country": "Slovenia",
      "height": 176,
-     "value": 217028,
+     "value": 214759,
      "rating": 6.98,
      "goals": 0,
      "assists": 2,
@@ -1663,8 +2457,8 @@
      "born": "1997-07-02",
      "country": "Croatia",
      "height": 190,
-     "value": 666377,
-     "rating": 7.21,
+     "value": 619484,
+     "rating": 7.16,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1686,7 +2480,7 @@
      "country": "Croatia",
      "height": null,
      "value": 293242,
-     "rating": 6.31,
+     "rating": 6.33,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1704,12 +2498,12 @@
      "born": "1994-07-20",
      "country": "Croatia",
      "height": 190,
-     "value": 133434,
+     "value": 93226,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1723,7 +2517,7 @@
      "born": "1992-06-17",
      "country": "Croatia",
      "height": 175,
-     "value": 127332,
+     "value": 111390,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -1742,8 +2536,8 @@
      "born": "2003-02-05",
      "country": "Croatia",
      "height": null,
-     "value": 726309,
-     "rating": 6.32,
+     "value": 674881,
+     "rating": 6.37,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1761,7 +2555,7 @@
      "born": "2002-10-05",
      "country": "Bosnia and Herzegovina",
      "height": null,
-     "value": 284093,
+     "value": 284789,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1783,7 +2577,7 @@
      "born": "2004-05-03",
      "country": "Croatia",
      "height": null,
-     "value": 250453,
+     "value": 294448,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1802,8 +2596,8 @@
      "born": "1998-07-05",
      "country": "Croatia",
      "height": null,
-     "value": 156817,
-     "rating": 6.54,
+     "value": 193899,
+     "rating": 6.45,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -1821,9 +2615,9 @@
      "born": "2002-08-02",
      "country": "Croatia",
      "height": null,
-     "value": 787804,
-     "rating": 7.32,
-     "goals": 4,
+     "value": 1010125,
+     "rating": 7.29,
+     "goals": 5,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -1840,7 +2634,7 @@
      "born": "1989-08-03",
      "country": "Bosnia and Herzegovina",
      "height": 184,
-     "value": 127727,
+     "value": 127928,
      "rating": 7.06,
      "goals": 0,
      "assists": 0,
@@ -1848,8 +2642,8 @@
      "yellow": 2,
      "red": 0,
      "injury": {
-      "typeId": "130",
-      "expectedReturn": "Unknown"
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
      }
     },
     {
@@ -1862,8 +2656,8 @@
      "born": "2005-11-30",
      "country": "Croatia",
      "height": null,
-     "value": 766631,
-     "rating": 7.51,
+     "value": 582484,
+     "rating": 7.44,
      "goals": 3,
      "assists": 2,
      "penalties": 0,
@@ -1881,8 +2675,8 @@
      "born": "2000-06-10",
      "country": "Croatia",
      "height": 182,
-     "value": 437543,
-     "rating": 6.6,
+     "value": 421398,
+     "rating": 6.68,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -1900,7 +2694,7 @@
      "born": "1998-11-19",
      "country": "Bosnia and Herzegovina",
      "height": 185,
-     "value": 218226,
+     "value": 315169,
      "rating": 6.4,
      "goals": 0,
      "assists": 1,
@@ -1913,14 +2707,14 @@
      "id": 1419949,
      "name": "Aleksa Latković",
      "role": "attackers",
-     "position": "RW,ST,CAM,LW",
+     "position": "ST,RW,CAM,LW",
      "number": 10,
      "age": 26,
      "born": "2000-10-30",
      "country": "Montenegro",
      "height": null,
-     "value": 895628,
-     "rating": 7.08,
+     "value": 1105443,
+     "rating": 7.03,
      "goals": 2,
      "assists": 1,
      "penalties": 0,
@@ -1957,7 +2751,7 @@
      "born": "1996-07-23",
      "country": "Croatia",
      "height": 179,
-     "value": 106707,
+     "value": 146610,
      "rating": 7.31,
      "goals": 0,
      "assists": 1,
@@ -1976,7 +2770,7 @@
      "born": "2003-01-13",
      "country": "Croatia",
      "height": 202,
-     "value": 184771,
+     "value": 218283,
      "rating": 6.33,
      "goals": 1,
      "assists": 0,
@@ -1995,8 +2789,8 @@
      "born": "2001-03-08",
      "country": "Cabo Verde",
      "height": 191,
-     "value": 1228247,
-     "rating": 7.16,
+     "value": 1209462,
+     "rating": 7.09,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -2005,7 +2799,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Nikola Šafarić",
@@ -2016,142 +2810,142 @@
     "158898": {
      "name": "Roberto Punčec",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "583584": {
      "name": "Frane Maglica",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "655956": {
      "name": "Petar Bočkaj",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "657661": {
      "name": "Gregor Sikošek",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "673030": {
      "name": "David Puclin",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "700686": {
      "name": "Robby McCrorie",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "754567": {
      "name": "Mateo Barać",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "847154": {
      "name": "Mario Marina",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "857675": {
      "name": "Stipe Jurić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1077687": {
      "name": "Matej Vuk",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1100692": {
      "name": "Mario Mladenovski",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1102511": {
      "name": "Ivan Posavec",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1233394": {
      "name": "Emmanuel Uchegbu",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1269521": {
      "name": "Silvio Ilinković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1325353": {
      "name": "Iuri Tavares",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1405535": {
      "name": "Elvir Duraković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1412837": {
      "name": "Valentin Akrap",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1419949": {
      "name": "Aleksa Latković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510853": {
      "name": "Luka Škaričić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510865": {
      "name": "Tomislav Duvnjak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510875": {
      "name": "Novak Tepšić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1511022": {
      "name": "Josip Silić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1516457": {
      "name": "Ivan Canjuga",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1520597": {
      "name": "Luka Lukanić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1532189": {
      "name": "Luka Mamić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1606869": {
      "name": "Sven Lesjak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1709727": {
      "name": "Teo Novak",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1723873": {
      "name": "Luka Posinković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1927472": {
      "name": "Paizinho",
@@ -2161,7 +2955,7 @@
     "2386269": {
      "name": "Rino Grubišić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": [
@@ -2170,773 +2964,6 @@
      "name": "Paizinho",
      "firstSeen": "2026-09-29",
      "lastSeen": "2026-10-04"
-    }
-   ]
-  },
-  "Osijek": {
-   "fotmobName": "Osijek",
-   "fotmobId": 10157,
-   "coach": "Federico Bessone",
-   "players": [
-    {
-     "id": 1228054,
-     "name": "Nikola Curcija",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 25,
-     "born": "2001-04-08",
-     "country": "Canada",
-     "height": 184,
-     "value": 262112,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1720289,
-     "name": "Jan Adžić",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 12,
-     "age": 17,
-     "born": "2009-01-02",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1635400,
-     "name": "Jan Hlapčić",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 20,
-     "age": 20,
-     "born": "2006-04-07",
-     "country": "Croatia",
-     "height": null,
-     "value": 326317,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 445243,
-     "name": "Marko Malenica",
-     "role": "keepers",
-     "position": "GK",
-     "number": 31,
-     "age": 32,
-     "born": "1994-02-08",
-     "country": "Croatia",
-     "height": 192,
-     "value": 282842,
-     "rating": 6.65,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2189065,
-     "name": "Izak Ježić",
-     "role": "defenders",
-     "position": "CB",
-     "number": null,
-     "age": 16,
-     "born": "2010-03-23",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": 7.01,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 384440,
-     "name": "Marcel Heister",
-     "role": "defenders",
-     "position": "LB,LWB,CB,LM",
-     "number": 2,
-     "age": 34,
-     "born": "1992-07-29",
-     "country": "Germany",
-     "height": 182,
-     "value": 143282,
-     "rating": 6.77,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1561067,
-     "name": "Vito Čaić",
-     "role": "defenders",
-     "position": "CB,CDM",
-     "number": 13,
-     "age": 21,
-     "born": "2005-04-01",
-     "country": "Croatia",
-     "height": null,
-     "value": 518772,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "81",
-      "expectedReturn": "Early December 2026"
-     }
-    },
-    {
-     "id": 2410170,
-     "name": "Mateo Sabo",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 17,
-     "age": 17,
-     "born": "2009-04-23",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1184358,
-     "name": "Jay Kruiver",
-     "role": "defenders",
-     "position": "RB",
-     "number": 22,
-     "age": 25,
-     "born": "2001-05-02",
-     "country": "Netherlands",
-     "height": 175,
-     "value": 346192,
-     "rating": 7.05,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1946144,
-     "name": "Luka Posavec",
-     "role": "defenders",
-     "position": "RB",
-     "number": 24,
-     "age": 17,
-     "born": "2009-04-15",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": 6.55,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1202919,
-     "name": "Luka Jelenić",
-     "role": "defenders",
-     "position": "CB",
-     "number": 26,
-     "age": 26,
-     "born": "2000-05-24",
-     "country": "Croatia",
-     "height": 187,
-     "value": 628358,
-     "rating": 6.54,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1329499,
-     "name": "Emin Hasić",
-     "role": "defenders",
-     "position": "CB",
-     "number": 33,
-     "age": 23,
-     "born": "2003-02-08",
-     "country": "Sweden",
-     "height": 191,
-     "value": 206797,
-     "rating": 6.38,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": {
-      "typeId": "32",
-      "expectedReturn": "Late December 2026"
-     }
-    },
-    {
-     "id": 1995424,
-     "name": "David Kalem",
-     "role": "defenders",
-     "position": "LB",
-     "number": 47,
-     "age": 18,
-     "born": "2008-08-07",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": 6.42,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1643961,
-     "name": "Ivano Kolarik",
-     "role": "defenders",
-     "position": "CB",
-     "number": 49,
-     "age": 19,
-     "born": "2007-05-20",
-     "country": "Croatia",
-     "height": null,
-     "value": 809639,
-     "rating": 6.81,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1445400,
-     "name": "Senad Mustafić",
-     "role": "defenders",
-     "position": "RB,LB,CM",
-     "number": 77,
-     "age": 21,
-     "born": "2005-09-07",
-     "country": "Bosnia and Herzegovina",
-     "height": 186,
-     "value": 581413,
-     "rating": 6.37,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1520835,
-     "name": "Šimun Mikolčić",
-     "role": "midfielders",
-     "position": "CAM,CM,CDM",
-     "number": 8,
-     "age": 22,
-     "born": "2004-01-21",
-     "country": "Croatia",
-     "height": null,
-     "value": 429115,
-     "rating": 6.56,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "Early January 2027"
-     }
-    },
-    {
-     "id": 1665130,
-     "name": "Luka Tunjić",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 11,
-     "age": 20,
-     "born": "2005-11-19",
-     "country": "Croatia",
-     "height": 183,
-     "value": 265656,
-     "rating": 7.27,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1109291,
-     "name": "Oleksandr Petrusenko",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 16,
-     "age": 28,
-     "born": "1998-03-26",
-     "country": "Ukraine",
-     "height": 181,
-     "value": 537581,
-     "rating": 6.5,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1665777,
-     "name": "Niko Farkaš",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 18,
-     "age": 19,
-     "born": "2006-11-29",
-     "country": "Croatia",
-     "height": null,
-     "value": 460644,
-     "rating": 6.27,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1589322,
-     "name": "Luka Vrbančić",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 23,
-     "age": 21,
-     "born": "2005-07-04",
-     "country": "Croatia",
-     "height": null,
-     "value": 999888,
-     "rating": 7.57,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "120",
-      "expectedReturn": "A few weeks"
-     }
-    },
-    {
-     "id": 1863744,
-     "name": "Jona Ježić",
-     "role": "midfielders",
-     "position": "CAM,CDM,CB",
-     "number": 48,
-     "age": 18,
-     "born": "2008-10-08",
-     "country": "Croatia",
-     "height": null,
-     "value": 618155,
-     "rating": 6.67,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": {
-      "typeId": "45",
-      "expectedReturn": "Mid November 2026"
-     }
-    },
-    {
-     "id": 1288158,
-     "name": "Balázs Bakti",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 67,
-     "age": 21,
-     "born": "2004-12-31",
-     "country": "Hungary",
-     "height": null,
-     "value": 467428,
-     "rating": 6.51,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 905438,
-     "name": "Ivan Dolček",
-     "role": "attackers",
-     "position": "RW",
-     "number": 7,
-     "age": 26,
-     "born": "2000-04-24",
-     "country": "Croatia",
-     "height": 181,
-     "value": 714957,
-     "rating": 7.04,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1042107,
-     "name": "Álex Cantero",
-     "role": "attackers",
-     "position": "LW",
-     "number": 21,
-     "age": 26,
-     "born": "2000-06-08",
-     "country": "Spain",
-     "height": 180,
-     "value": 209024,
-     "rating": 6.37,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1562342,
-     "name": "Anton Matković",
-     "role": "attackers",
-     "position": "ST,LW",
-     "number": 34,
-     "age": 20,
-     "born": "2006-02-19",
-     "country": "Croatia",
-     "height": null,
-     "value": 1812413,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "14",
-      "expectedReturn": "Unknown"
-     }
-    },
-    {
-     "id": 1470053,
-     "name": "Domagoj Bukvić",
-     "role": "attackers",
-     "position": "RW,CAM,LB,LM",
-     "number": 39,
-     "age": 22,
-     "born": "2004-02-22",
-     "country": "Croatia",
-     "height": null,
-     "value": 509471,
-     "rating": 7.46,
-     "goals": 1,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1667431,
-     "name": "Ivan Barić",
-     "role": "attackers",
-     "position": "ST",
-     "number": 46,
-     "age": 19,
-     "born": "2007-01-10",
-     "country": "Croatia",
-     "height": null,
-     "value": 321282,
-     "rating": 6.25,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1675490,
-     "name": "Admir Ljatifi",
-     "role": "attackers",
-     "position": "LW",
-     "number": 57,
-     "age": 19,
-     "born": "2007-06-29",
-     "country": "North Macedonia",
-     "height": null,
-     "value": 518525,
-     "rating": 6.52,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1138575,
-     "name": "Armando León",
-     "role": "attackers",
-     "position": "ST",
-     "number": 79,
-     "age": 26,
-     "born": "2000-01-18",
-     "country": "Mexico",
-     "height": 188,
-     "value": 239535,
-     "rating": 7.02,
-     "goals": 6,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1597552,
-     "name": "Balelo",
-     "role": "attackers",
-     "position": "ST,RW",
-     "number": 99,
-     "age": 24,
-     "born": "2002-03-24",
-     "country": "Portugal",
-     "height": 188,
-     "value": null,
-     "rating": 6.58,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
-   "coachHistory": [
-    {
-     "name": "Federico Bessone",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "384440": {
-     "name": "Marcel Heister",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "445243": {
-     "name": "Marko Malenica",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "905438": {
-     "name": "Ivan Dolček",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1042107": {
-     "name": "Álex Cantero",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1109291": {
-     "name": "Oleksandr Petrusenko",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1138575": {
-     "name": "Armando León",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1184358": {
-     "name": "Jay Kruiver",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1202919": {
-     "name": "Luka Jelenić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1228054": {
-     "name": "Nikola Curcija",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1258611": {
-     "name": "Mateo Mejía",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1288158": {
-     "name": "Balázs Bakti",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1329499": {
-     "name": "Emin Hasić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1445400": {
-     "name": "Senad Mustafić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1470053": {
-     "name": "Domagoj Bukvić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1520835": {
-     "name": "Šimun Mikolčić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1561067": {
-     "name": "Vito Čaić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1562342": {
-     "name": "Anton Matković",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1589322": {
-     "name": "Luka Vrbančić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1597552": {
-     "name": "Balelo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1635400": {
-     "name": "Jan Hlapčić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1643961": {
-     "name": "Ivano Kolarik",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1665130": {
-     "name": "Luka Tunjić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1665777": {
-     "name": "Niko Farkaš",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1667431": {
-     "name": "Ivan Barić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1675490": {
-     "name": "Admir Ljatifi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1720289": {
-     "name": "Jan Adžić",
-     "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
-    },
-    "1863744": {
-     "name": "Jona Ježić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1946144": {
-     "name": "Luka Posavec",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "1995424": {
-     "name": "David Kalem",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "2189065": {
-     "name": "Izak Ježić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
-    },
-    "2410170": {
-     "name": "Mateo Sabo",
-     "firstSeen": "2026-10-30",
-     "lastSeen": "2026-10-31"
-    }
-   },
-   "left": [
-    {
-     "id": "1258611",
-     "name": "Mateo Mejía",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
     }
    ]
   },
@@ -2974,8 +3001,8 @@
      "born": "1998-05-06",
      "country": "Slovenia",
      "height": 192,
-     "value": 326042,
-     "rating": 6.67,
+     "value": 313832,
+     "rating": 6.8,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -2993,7 +3020,7 @@
      "born": "1996-01-10",
      "country": "Nigeria",
      "height": 185,
-     "value": 64839,
+     "value": 50000,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3031,7 +3058,7 @@
      "born": "2005-03-21",
      "country": "Switzerland",
      "height": 180,
-     "value": 2238714,
+     "value": 2222606,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3040,7 +3067,7 @@
      "red": 0,
      "injury": {
       "typeId": "74",
-      "expectedReturn": "A few weeks"
+      "expectedReturn": "Unknown"
      }
     },
     {
@@ -3053,7 +3080,7 @@
      "born": "2004-05-22",
      "country": "Croatia",
      "height": null,
-     "value": 468460,
+     "value": 462019,
      "rating": 6.84,
      "goals": 0,
      "assists": 0,
@@ -3072,7 +3099,7 @@
      "born": "2001-12-07",
      "country": "Peru",
      "height": 188,
-     "value": 764566,
+     "value": 756894,
      "rating": 6.56,
      "goals": 0,
      "assists": 0,
@@ -3110,12 +3137,12 @@
      "born": "2001-08-29",
      "country": "Croatia",
      "height": null,
-     "value": 1558600,
-     "rating": 6.78,
+     "value": 1432903,
+     "rating": 6.89,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -3129,8 +3156,8 @@
      "born": "1997-10-06",
      "country": "Lithuania",
      "height": 176,
-     "value": 377104,
-     "rating": 6.94,
+     "value": 305401,
+     "rating": 6.84,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -3148,7 +3175,7 @@
      "born": "2004-09-30",
      "country": "Croatia",
      "height": 185,
-     "value": 805078,
+     "value": 789928,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3170,8 +3197,8 @@
      "born": "1999-03-12",
      "country": "Serbia",
      "height": null,
-     "value": 570922,
-     "rating": 6.79,
+     "value": 521549,
+     "rating": 6.74,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -3189,7 +3216,7 @@
      "born": "1993-11-06",
      "country": "Croatia",
      "height": 185,
-     "value": 199003,
+     "value": 119729,
      "rating": 7.03,
      "goals": 0,
      "assists": 0,
@@ -3208,7 +3235,7 @@
      "born": "2001-03-01",
      "country": "Switzerland",
      "height": 186,
-     "value": 732970,
+     "value": 730700,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3227,7 +3254,7 @@
      "born": "2004-02-24",
      "country": "Croatia",
      "height": null,
-     "value": 415141,
+     "value": 272081,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3246,12 +3273,12 @@
      "born": "2006-11-07",
      "country": "Croatia",
      "height": null,
-     "value": 757794,
-     "rating": 7.37,
+     "value": 1268393,
+     "rating": 7.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -3259,13 +3286,13 @@
      "id": 1281558,
      "name": "Yusuf Kabadayı",
      "role": "midfielders",
-     "position": "LM,LW",
+     "position": "LM",
      "number": 7,
      "age": 22,
      "born": "2004-02-02",
      "country": "Germany",
      "height": 186,
-     "value": 1190342,
+     "value": 1089639,
      "rating": 6.14,
      "goals": 0,
      "assists": 0,
@@ -3284,7 +3311,7 @@
      "born": "2003-06-02",
      "country": "Croatia",
      "height": null,
-     "value": 540468,
+     "value": 443799,
      "rating": 6.78,
      "goals": 0,
      "assists": 0,
@@ -3303,9 +3330,9 @@
      "born": "2001-03-09",
      "country": "Croatia",
      "height": 178,
-     "value": 5385324,
-     "rating": 7.61,
-     "goals": 3,
+     "value": 4431148,
+     "rating": 7.66,
+     "goals": 4,
      "assists": 4,
      "penalties": 0,
      "yellow": 0,
@@ -3322,8 +3349,8 @@
      "born": "2000-12-24",
      "country": "Portugal",
      "height": 170,
-     "value": 2628773,
-     "rating": 7.59,
+     "value": 2488049,
+     "rating": 7.54,
      "goals": 3,
      "assists": 2,
      "penalties": 1,
@@ -3360,7 +3387,7 @@
      "born": "2001-08-25",
      "country": "Croatia",
      "height": 186,
-     "value": 2389653,
+     "value": 2121162,
      "rating": 6.82,
      "goals": 0,
      "assists": 0,
@@ -3379,8 +3406,8 @@
      "born": "1998-12-20",
      "country": "Iran",
      "height": 187,
-     "value": 1475744,
-     "rating": 6.13,
+     "value": 1664609,
+     "rating": 6.24,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3398,8 +3425,8 @@
      "born": "1997-02-13",
      "country": "Bosnia and Herzegovina",
      "height": 184,
-     "value": 283440,
-     "rating": 6.42,
+     "value": 352201,
+     "rating": 6.4,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3436,8 +3463,8 @@
      "born": "2005-06-21",
      "country": "England",
      "height": 177,
-     "value": 1624208,
-     "rating": 6.93,
+     "value": 4879463,
+     "rating": 6.9,
      "goals": 4,
      "assists": 3,
      "penalties": 0,
@@ -3455,12 +3482,12 @@
      "born": "2004-02-24",
      "country": "Italy",
      "height": 172,
-     "value": 1742169,
-     "rating": 7.48,
+     "value": 1728093,
+     "rating": 7.47,
      "goals": 4,
      "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -3474,7 +3501,7 @@
      "born": "1993-08-04",
      "country": "Croatia",
      "height": 187,
-     "value": 390860,
+     "value": 243399,
      "rating": 6.44,
      "goals": 1,
      "assists": 0,
@@ -3493,7 +3520,7 @@
      "born": "2002-11-26",
      "country": "Croatia",
      "height": 190,
-     "value": 816195,
+     "value": 811984,
      "rating": 6.04,
      "goals": 0,
      "assists": 0,
@@ -3503,7 +3530,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Matjaž Kek",
@@ -3514,147 +3541,147 @@
     "308350": {
      "name": "Jakov Puljić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "464334": {
      "name": "Ante Majstorović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "527683": {
      "name": "Amer Gojak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "617841": {
      "name": "David Nwolokor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "652962": {
      "name": "Justas Lasickas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "703529": {
      "name": "Anel Husic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "955554": {
      "name": "Tiago Dantas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1073012": {
      "name": "Mohammad Mohebbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1093756": {
      "name": "Mladen Devetak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1178132": {
      "name": "Ante Oreč",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1240398": {
      "name": "Igor Vekić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1251988": {
      "name": "Samuele Vignato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1270116": {
      "name": "Niko Janković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1276864": {
      "name": "Alfonso Barco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1281558": {
      "name": "Yusuf Kabadayı",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1284461": {
      "name": "Ivan Ćubelić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1300358": {
      "name": "Toni Fruk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1427857": {
      "name": "Daniel Adu-Adjei",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1428042": {
      "name": "Noel Bodetić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1429682": {
      "name": "Calixte Ligue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1505885": {
      "name": "Moreno Živković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1516401": {
      "name": "Ante Jurič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1531103": {
      "name": "Aleksa Todorović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1645684": {
      "name": "Branko Pavić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1695841": {
      "name": "Vito Kovač",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1724555": {
      "name": "Téo Barišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1968794": {
      "name": "Simon Cletus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1980579": {
      "name": "Goran Grulović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1996888": {
      "name": "Viktor Vesligaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -3674,8 +3701,8 @@
      "born": "2003-02-07",
      "country": "Croatia",
      "height": null,
-     "value": 515011,
-     "rating": 7.2,
+     "value": 308471,
+     "rating": 7.21,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -3731,7 +3758,7 @@
      "born": "2002-08-18",
      "country": "Tunisia",
      "height": null,
-     "value": 586393,
+     "value": 584124,
      "rating": 6.82,
      "goals": 1,
      "assists": 0,
@@ -3750,7 +3777,7 @@
      "born": "2006-02-06",
      "country": "Croatia",
      "height": null,
-     "value": 406423,
+     "value": 677574,
      "rating": 7.09,
      "goals": 0,
      "assists": 0,
@@ -3769,7 +3796,7 @@
      "born": "2004-06-16",
      "country": "Finland",
      "height": 188,
-     "value": 471749,
+     "value": 463038,
      "rating": 7,
      "goals": 0,
      "assists": 0,
@@ -3842,7 +3869,7 @@
      "id": 1909304,
      "name": "Mutari Momoh",
      "role": "defenders",
-     "position": "Defender",
+     "position": "CB",
      "number": 66,
      "age": 18,
      "born": "2008-01-16",
@@ -3867,7 +3894,7 @@
      "born": "1997-10-14",
      "country": "Bosnia and Herzegovina",
      "height": 178,
-     "value": 337183,
+     "value": 334913,
      "rating": 6.21,
      "goals": 0,
      "assists": 0,
@@ -3880,13 +3907,13 @@
      "id": 1667664,
      "name": "Demirel Hodzic",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CM,CDM",
      "number": 5,
      "age": 21,
      "born": "2005-03-08",
      "country": "Kosovo",
      "height": null,
-     "value": 262917,
+     "value": 339773,
      "rating": 6.67,
      "goals": 0,
      "assists": 0,
@@ -3905,7 +3932,7 @@
      "born": "2003-11-04",
      "country": "Croatia",
      "height": null,
-     "value": 470097,
+     "value": 470298,
      "rating": 6.55,
      "goals": 1,
      "assists": 0,
@@ -3927,8 +3954,8 @@
      "born": "2007-10-26",
      "country": "Croatia",
      "height": null,
-     "value": 705557,
-     "rating": 7.01,
+     "value": 1334632,
+     "rating": 7,
      "goals": 3,
      "assists": 4,
      "penalties": 0,
@@ -3965,8 +3992,8 @@
      "born": "2006-04-28",
      "country": "Argentina",
      "height": 178,
-     "value": 385232,
-     "rating": 6.8,
+     "value": 432821,
+     "rating": 6.81,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4003,7 +4030,7 @@
      "born": "2002-01-01",
      "country": "Mali",
      "height": 188,
-     "value": 330492,
+     "value": 308069,
      "rating": 6.7,
      "goals": 0,
      "assists": 0,
@@ -4025,8 +4052,8 @@
      "born": "2003-08-01",
      "country": "Bosnia and Herzegovina",
      "height": null,
-     "value": 486466,
-     "rating": 6.42,
+     "value": 477855,
+     "rating": 6.41,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4044,12 +4071,12 @@
      "born": "2004-03-26",
      "country": "Brazil",
      "height": 185,
-     "value": 792851,
-     "rating": 6.51,
+     "value": 844010,
+     "rating": 6.47,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -4063,7 +4090,7 @@
      "born": "2000-02-27",
      "country": "Croatia",
      "height": null,
-     "value": 393622,
+     "value": 277832,
      "rating": 6.18,
      "goals": 0,
      "assists": 0,
@@ -4082,8 +4109,8 @@
      "born": "2000-09-05",
      "country": "Denmark",
      "height": 175,
-     "value": 773541,
-     "rating": 8,
+     "value": 1200168,
+     "rating": 8.02,
      "goals": 8,
      "assists": 5,
      "penalties": 2,
@@ -4120,7 +4147,7 @@
      "born": "2006-06-14",
      "country": "Croatia",
      "height": null,
-     "value": 331169,
+     "value": 328381,
      "rating": 6.55,
      "goals": 0,
      "assists": 0,
@@ -4139,7 +4166,7 @@
      "born": "2009-06-03",
      "country": "Croatia",
      "height": null,
-     "value": 819086,
+     "value": 1719431,
      "rating": 6.98,
      "goals": 2,
      "assists": 2,
@@ -4177,8 +4204,8 @@
      "born": "2004-02-27",
      "country": "Bosnia and Herzegovina",
      "height": 192,
-     "value": 367628,
-     "rating": 7.49,
+     "value": 599738,
+     "rating": 7.48,
      "goals": 5,
      "assists": 1,
      "penalties": 0,
@@ -4187,7 +4214,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Javier Cabello",
@@ -4198,137 +4225,137 @@
     "782400": {
      "name": "Advan Kadušić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "952676": {
      "name": "Emil Frederiksen",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1269849": {
      "name": "Samuli Miettinen",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1302394": {
      "name": "Silvio Goričan",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1388360": {
      "name": "Vinko Rozić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1424882": {
      "name": "Daouda Doumbia",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1459741": {
      "name": "Isaac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1480691": {
      "name": "Rene Hrvatin",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1492563": {
      "name": "Hamza Jaganjac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510864": {
      "name": "Antonio Maurić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1510872": {
      "name": "Jan Paus-Kunšt",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1520102": {
      "name": "Mohamed Nasraoui",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1607176": {
      "name": "Franko Kolić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1607310": {
      "name": "Dukan Ahmeti",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1635822": {
      "name": "Gustavo Albarracín",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1639143": {
      "name": "Raul Kumar",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1667664": {
      "name": "Demirel Hodzic",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1682066": {
      "name": "Stipe Ukich",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1690077": {
      "name": "Niko Šepić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1794381": {
      "name": "Dominik Celija",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1842701": {
      "name": "Roko Banovac",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1897525": {
      "name": "Nik Žužić",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1909304": {
      "name": "Mutari Momoh",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2119510": {
      "name": "Matija Kablar",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2140570": {
      "name": "Toni Brajković",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2357094": {
      "name": "Ivano Svraka",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2385368": {
      "name": "Roko Jenjić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
@@ -4367,7 +4394,7 @@
      "born": "2001-06-03",
      "country": "Croatia",
      "height": null,
-     "value": 342655,
+     "value": 295763,
      "rating": 6.39,
      "goals": 0,
      "assists": 0,
@@ -4406,7 +4433,7 @@
      "country": "Albania",
      "height": null,
      "value": 135593,
-     "rating": 6.89,
+     "rating": 6.96,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -4465,8 +4492,8 @@
      "born": "1994-01-05",
      "country": "Croatia",
      "height": 192,
-     "value": 209051,
-     "rating": 6.5,
+     "value": 156978,
+     "rating": 6.52,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -4484,7 +4511,7 @@
      "born": "2005-11-23",
      "country": "Croatia",
      "height": null,
-     "value": 399223,
+     "value": 430258,
      "rating": 5.93,
      "goals": 0,
      "assists": 0,
@@ -4499,11 +4526,11 @@
      "role": "defenders",
      "position": "CB",
      "number": 6,
-     "age": 38,
+     "age": 39,
      "born": "1987-11-01",
      "country": "Croatia",
      "height": 184,
-     "value": 118000,
+     "value": 111986,
      "rating": 6.77,
      "goals": 0,
      "assists": 0,
@@ -4545,7 +4572,7 @@
      "country": "Croatia",
      "height": 178,
      "value": null,
-     "rating": 6.62,
+     "rating": 6.63,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4563,7 +4590,7 @@
      "born": "2000-08-24",
      "country": "Croatia",
      "height": null,
-     "value": 201616,
+     "value": 184450,
      "rating": 6.75,
      "goals": 0,
      "assists": 1,
@@ -4585,7 +4612,7 @@
      "born": "1992-08-09",
      "country": "North Macedonia",
      "height": 183,
-     "value": 139678,
+     "value": 114769,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4607,8 +4634,8 @@
      "born": "1997-01-29",
      "country": "Japan",
      "height": 178,
-     "value": 86238,
-     "rating": 6.55,
+     "value": 99461,
+     "rating": 6.57,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4636,17 +4663,17 @@
      "injury": null
     },
     {
-     "id": 1178884,
-     "name": "Mihail Caimacov",
+     "id": 1959901,
+     "name": "Leon Geci",
      "role": "midfielders",
-     "position": "CDM",
-     "number": 10,
-     "age": 28,
-     "born": "1998-07-22",
-     "country": "Moldova",
-     "height": 183,
-     "value": 159836,
-     "rating": 6.24,
+     "position": "Midfielder",
+     "number": 8,
+     "age": 18,
+     "born": "2008-03-11",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4655,17 +4682,17 @@
      "injury": null
     },
     {
-     "id": 1959901,
-     "name": "Leon Geci",
+     "id": 1178884,
+     "name": "Mihail Caimacov",
      "role": "midfielders",
-     "position": "Midfielder",
-     "number": 16,
-     "age": 18,
-     "born": "2008-03-11",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": null,
+     "position": "CAM,CDM",
+     "number": 10,
+     "age": 28,
+     "born": "1998-07-22",
+     "country": "Moldova",
+     "height": 183,
+     "value": 132848,
+     "rating": 6.23,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4705,7 +4732,7 @@
      "born": "2006-04-06",
      "country": "Croatia",
      "height": 187,
-     "value": null,
+     "value": 280444,
      "rating": 6,
      "goals": 0,
      "assists": 0,
@@ -4724,8 +4751,8 @@
      "born": "1993-09-02",
      "country": "Croatia",
      "height": 178,
-     "value": 119729,
-     "rating": 6.85,
+     "value": 119930,
+     "rating": 6.84,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4762,7 +4789,7 @@
      "born": "2002-05-31",
      "country": "Iceland",
      "height": null,
-     "value": 169360,
+     "value": 300184,
      "rating": 6.04,
      "goals": 0,
      "assists": 0,
@@ -4819,7 +4846,7 @@
      "born": "1997-03-28",
      "country": "Croatia",
      "height": 178,
-     "value": 202131,
+     "value": 204215,
      "rating": 6.91,
      "goals": 0,
      "assists": 3,
@@ -4841,7 +4868,7 @@
      "born": "2001-10-28",
      "country": "Croatia",
      "height": null,
-     "value": 537825,
+     "value": 462326,
      "rating": 6.87,
      "goals": 2,
      "assists": 1,
@@ -4860,8 +4887,8 @@
      "born": "2000-06-11",
      "country": "Croatia",
      "height": 174,
-     "value": 685735,
-     "rating": 7.38,
+     "value": 880339,
+     "rating": 7.37,
      "goals": 2,
      "assists": 2,
      "penalties": 0,
@@ -4873,14 +4900,14 @@
      "id": 1870145,
      "name": "Losika Ratshukudu",
      "role": "attackers",
-     "position": "ST",
+     "position": "ST,RW",
      "number": 14,
      "age": 20,
      "born": "2006-02-01",
      "country": "Botswana",
      "height": null,
      "value": null,
-     "rating": 6.11,
+     "rating": 6.12,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -4917,7 +4944,7 @@
      "born": "1994-08-10",
      "country": "Croatia",
      "height": 187,
-     "value": 139089,
+     "value": 138070,
      "rating": 6.82,
      "goals": 0,
      "assists": 0,
@@ -4996,7 +5023,7 @@
      "born": "1990-03-12",
      "country": "North Macedonia",
      "height": 183,
-     "value": 202803,
+     "value": 172505,
      "rating": 7.29,
      "goals": 7,
      "assists": 2,
@@ -5006,7 +5033,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Silvijo Čabraja",
@@ -5017,962 +5044,175 @@
     "94260": {
      "name": "Tomislav Božić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "142217": {
      "name": "Ivan Čović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "196236": {
      "name": "Ilija Nestorovski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "307890": {
      "name": "Leonard Zuta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "427054": {
      "name": "Marko Dabro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "428816": {
      "name": "Dominik Kovačić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "460003": {
      "name": "Ljuban Crepulja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "474377": {
      "name": "Alen Grgić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "655557": {
      "name": "Vinko Međimorec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "924265": {
      "name": "Itsuki Urata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1067391": {
      "name": "Josip Mitrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1070783": {
      "name": "Arnór Jónsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1157636": {
      "name": "Jon Mersinaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1178884": {
      "name": "Mihail Caimacov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1392383": {
      "name": "Karlo Sentić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1418753": {
      "name": "Ivan Cvetko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1511026": {
      "name": "Lovro Banovec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1515986": {
      "name": "Filip Krušelj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1524639": {
      "name": "Adetunji Adeshina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1612411": {
      "name": "Patrik Marić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1612414": {
      "name": "Leon Bošnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1643960": {
      "name": "Filip Mažar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1657751": {
      "name": "Karlo Išasegi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1695634": {
      "name": "Marko Petrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714787": {
      "name": "Antonio Jakir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1780292": {
      "name": "Lovre Lončar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1783962": {
      "name": "Maj Pavli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1789742": {
      "name": "Lukas Zahora",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827425": {
      "name": "David Bosak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1870145": {
      "name": "Losika Ratshukudu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1959901": {
      "name": "Leon Geci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1967855": {
      "name": "Filip Kutleša",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2131011": {
      "name": "Vito Papac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2426351": {
      "name": "Domagoj Maltar",
      "firstSeen": "2026-10-31",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []
-  },
-  "Lokomotiva Zagreb": {
-   "fotmobName": "NK Lokomotiva",
-   "fotmobId": 175388,
-   "coach": "Nikica Jelavić",
-   "players": [
-    {
-     "id": 178112,
-     "name": "Krunoslav Hendija",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 37,
-     "born": "1989-03-19",
-     "country": "Croatia",
-     "height": null,
-     "value": 77680,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 655544,
-     "name": "Josip Posavec",
-     "role": "keepers",
-     "position": "GK",
-     "number": 12,
-     "age": 30,
-     "born": "1996-03-10",
-     "country": "Croatia",
-     "height": 190,
-     "value": 172725,
-     "rating": 7.08,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1511001,
-     "name": "Luka Savatović",
-     "role": "keepers",
-     "position": "GK",
-     "number": 32,
-     "age": 22,
-     "born": "2004-07-06",
-     "country": "Croatia",
-     "height": null,
-     "value": 279941,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1536211,
-     "name": "Luka Ćurković",
-     "role": "defenders",
-     "position": "Defender",
-     "number": null,
-     "age": 21,
-     "born": "2005-08-26",
-     "country": "Croatia",
-     "height": null,
-     "value": 184568,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 307339,
-     "name": "Matej Mitrović",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 32,
-     "born": "1993-11-10",
-     "country": "Croatia",
-     "height": 188,
-     "value": 208860,
-     "rating": 6.06,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1352689,
-     "name": "Thanasis Triantafyllou",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 23,
-     "born": "2003-07-22",
-     "country": "Greece",
-     "height": 192,
-     "value": 304947,
-     "rating": 7.01,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 949493,
-     "name": "Marijan Čabraja",
-     "role": "defenders",
-     "position": "LB,CB",
-     "number": 5,
-     "age": 29,
-     "born": "1997-02-25",
-     "country": "Croatia",
-     "height": null,
-     "value": 145618,
-     "rating": 6.5,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 653965,
-     "name": "Fran Karačić",
-     "role": "defenders",
-     "position": "RB",
-     "number": 13,
-     "age": 30,
-     "born": "1996-05-12",
-     "country": "Australia",
-     "height": 181,
-     "value": 334712,
-     "rating": 6.56,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 251266,
-     "name": "Mario Šitum",
-     "role": "defenders",
-     "position": "RB",
-     "number": 18,
-     "age": 34,
-     "born": "1992-04-04",
-     "country": "Croatia",
-     "height": 177,
-     "value": 121269,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1663533,
-     "name": "Kristijan Čabrajić",
-     "role": "defenders",
-     "position": "LB,CDM",
-     "number": 20,
-     "age": 22,
-     "born": "2004-06-12",
-     "country": "Croatia",
-     "height": null,
-     "value": 209562,
-     "rating": 6.82,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1835474,
-     "name": "Teodor Kralevski",
-     "role": "defenders",
-     "position": "CB",
-     "number": 21,
-     "age": 19,
-     "born": "2007-01-25",
-     "country": "Croatia",
-     "height": null,
-     "value": null,
-     "rating": 6.64,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1508367,
-     "name": "Jakov Gurlica",
-     "role": "midfielders",
-     "position": "CDM,CB,CM",
-     "number": 2,
-     "age": 22,
-     "born": "2004-01-10",
-     "country": "Croatia",
-     "height": null,
-     "value": 243744,
-     "rating": 6.77,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1516458,
-     "name": "Feta Fetai",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 6,
-     "age": 21,
-     "born": "2005-05-11",
-     "country": "Albania",
-     "height": 172,
-     "value": 715165,
-     "rating": 6.73,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1714788,
-     "name": "Ivan Katić",
-     "role": "midfielders",
-     "position": "CDM,CAM,CM",
-     "number": 8,
-     "age": 21,
-     "born": "2005-09-25",
-     "country": "Croatia",
-     "height": null,
-     "value": 582163,
-     "rating": 6.6,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1511013,
-     "name": "Leon Belcar",
-     "role": "midfielders",
-     "position": "CDM,LW,CAM",
-     "number": 9,
-     "age": 24,
-     "born": "2002-01-04",
-     "country": "Croatia",
-     "height": null,
-     "value": 500154,
-     "rating": 6.56,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1710216,
-     "name": "Matija Subotić",
-     "role": "midfielders",
-     "position": "CDM,CM",
-     "number": 10,
-     "age": 18,
-     "born": "2007-12-18",
-     "country": "Croatia",
-     "height": null,
-     "value": 1536827,
-     "rating": 6.61,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1388757,
-     "name": "Marcel Lorber",
-     "role": "midfielders",
-     "position": "RB,RWB,CAM",
-     "number": 14,
-     "age": 22,
-     "born": "2004-04-26",
-     "country": "Slovenia",
-     "height": null,
-     "value": 348942,
-     "rating": 6.21,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 274221,
-     "name": "Marko Pajač",
-     "role": "midfielders",
-     "position": "LWB,LB,LW",
-     "number": 17,
-     "age": 33,
-     "born": "1993-05-11",
-     "country": "Croatia",
-     "height": 185,
-     "value": 280963,
-     "rating": 7.21,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 1,
-     "injury": {
-      "typeId": "20",
-      "expectedReturn": "Mid December 2026"
-     }
-    },
-    {
-     "id": 249204,
-     "name": "Marko Vešović",
-     "role": "midfielders",
-     "position": "RWB,RB,RW",
-     "number": 23,
-     "age": 35,
-     "born": "1991-08-28",
-     "country": "Montenegro",
-     "height": 177,
-     "value": 123506,
-     "rating": 6.09,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1875856,
-     "name": "Pavle Smiljanić",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 25,
-     "age": 18,
-     "born": "2008-05-08",
-     "country": "Croatia",
-     "height": null,
-     "value": 592592,
-     "rating": 6.03,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1518959,
-     "name": "Dardan Morina",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 26,
-     "age": 21,
-     "born": "2005-10-14",
-     "country": "Kosovo",
-     "height": null,
-     "value": 209496,
-     "rating": 6.41,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1270127,
-     "name": "Jakov-Anton Vasilj",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 29,
-     "age": 24,
-     "born": "2002-06-02",
-     "country": "Croatia",
-     "height": null,
-     "value": 305966,
-     "rating": 6.32,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1839694,
-     "name": "Duje Reić",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 30,
-     "age": 20,
-     "born": "2006-05-29",
-     "country": "Croatia",
-     "height": null,
-     "value": 352975,
-     "rating": 6.06,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1649995,
-     "name": "Dušan Vuković",
-     "role": "attackers",
-     "position": "CAM,RW,LW",
-     "number": 7,
-     "age": 24,
-     "born": "2002-08-06",
-     "country": "Montenegro",
-     "height": null,
-     "value": null,
-     "rating": 6.84,
-     "goals": 3,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1666522,
-     "name": "Lovre Kulušić",
-     "role": "attackers",
-     "position": "ST,LW",
-     "number": 11,
-     "age": 19,
-     "born": "2006-11-15",
-     "country": "Croatia",
-     "height": null,
-     "value": 646144,
-     "rating": 6.78,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1701794,
-     "name": "Dominik Thaqi",
-     "role": "attackers",
-     "position": "RW,LW",
-     "number": 15,
-     "age": 19,
-     "born": "2007-02-02",
-     "country": "Croatia",
-     "height": 178,
-     "value": 607936,
-     "rating": 6.14,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2140735,
-     "name": "Kayke",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 16,
-     "age": 19,
-     "born": "2007-05-24",
-     "country": "Brazil",
-     "height": null,
-     "value": null,
-     "rating": 6.09,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1370591,
-     "name": "Erbol Atabaev",
-     "role": "attackers",
-     "position": "ST",
-     "number": 18,
-     "age": 25,
-     "born": "2001-08-15",
-     "country": "Kyrgyz Republic",
-     "height": 175,
-     "value": 270306,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1417096,
-     "name": "Mate Antunović",
-     "role": "attackers",
-     "position": "ST",
-     "number": 22,
-     "age": 22,
-     "born": "2004-03-03",
-     "country": "Croatia",
-     "height": null,
-     "value": 303441,
-     "rating": 6.13,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 447680,
-     "name": "Mirko Marić",
-     "role": "attackers",
-     "position": "ST",
-     "number": 24,
-     "age": 31,
-     "born": "1995-05-16",
-     "country": "Croatia",
-     "height": 188,
-     "value": 243639,
-     "rating": 6.56,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1678859,
-     "name": "Noel Djurkovic",
-     "role": "attackers",
-     "position": "ST",
-     "number": 28,
-     "age": 19,
-     "born": "2006-11-30",
-     "country": "Croatia",
-     "height": 178,
-     "value": 302291,
-     "rating": 6.08,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
-   "coachHistory": [
-    {
-     "name": "Nikica Jelavić",
-     "firstSeen": "2026-09-29"
-    }
-   ],
-   "history": {
-    "178112": {
-     "name": "Krunoslav Hendija",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "249204": {
-     "name": "Marko Vešović",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "251266": {
-     "name": "Mario Šitum",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "274221": {
-     "name": "Marko Pajač",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "307339": {
-     "name": "Matej Mitrović",
-     "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
-    },
-    "447680": {
-     "name": "Mirko Marić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "653965": {
-     "name": "Fran Karačić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "655544": {
-     "name": "Josip Posavec",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "949493": {
-     "name": "Marijan Čabraja",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1253915": {
-     "name": "Dušan Vuković",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-24"
-    },
-    "1270127": {
-     "name": "Jakov-Anton Vasilj",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1352689": {
-     "name": "Thanasis Triantafyllou",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1370591": {
-     "name": "Erbol Atabaev",
-     "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
-    },
-    "1388757": {
-     "name": "Marcel Lorber",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1417096": {
-     "name": "Mate Antunović",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1508367": {
-     "name": "Jakov Gurlica",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1511001": {
-     "name": "Luka Savatović",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1511013": {
-     "name": "Leon Belcar",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1516458": {
-     "name": "Feta Fetai",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1518959": {
-     "name": "Dardan Morina",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1536211": {
-     "name": "Luka Ćurković",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1649995": {
-     "name": "Dušan Vuković",
-     "firstSeen": "2026-10-30",
-     "lastSeen": "2026-10-31"
-    },
-    "1663533": {
-     "name": "Kristijan Čabrajić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1666522": {
-     "name": "Lovre Kulušić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1678859": {
-     "name": "Noel Djurkovic",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1701794": {
-     "name": "Dominik Thaqi",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1710216": {
-     "name": "Matija Subotić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1714788": {
-     "name": "Ivan Katić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1798007": {
-     "name": "Noa Godec",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-09-29"
-    },
-    "1835474": {
-     "name": "Teodor Kralevski",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1839694": {
-     "name": "Duje Reić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "1875856": {
-     "name": "Pavle Smiljanić",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    },
-    "2140735": {
-     "name": "Kayke",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-31"
-    }
-   },
-   "left": [
-    {
-     "id": "1253915",
-     "name": "Dušan Vuković",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-10-24"
-    },
-    {
-     "id": "1798007",
-     "name": "Noa Godec",
-     "firstSeen": "2026-09-29",
-     "lastSeen": "2026-09-29"
-    }
-   ]
   },
   "Rudeš": {
    "fotmobName": "Rudeš",
@@ -6027,8 +5267,8 @@
      "born": "1995-08-27",
      "country": "Croatia",
      "height": 189,
-     "value": 94004,
-     "rating": 6.49,
+     "value": 96471,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6065,7 +5305,7 @@
      "born": "1991-08-13",
      "country": "Croatia",
      "height": 187,
-     "value": 103680,
+     "value": 115403,
      "rating": 6.44,
      "goals": 0,
      "assists": 1,
@@ -6085,7 +5325,7 @@
      "country": "Croatia",
      "height": 186,
      "value": 117492,
-     "rating": 6.27,
+     "rating": 6.4,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6103,8 +5343,8 @@
      "born": "2002-02-09",
      "country": "Croatia",
      "height": null,
-     "value": 300808,
-     "rating": 6.52,
+     "value": 301714,
+     "rating": 6.59,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6173,14 +5413,14 @@
      "id": 675328,
      "name": "Felipe Curcio",
      "role": "defenders",
-     "position": "LWB,LB",
+     "position": "LB,LWB",
      "number": 27,
      "age": 33,
      "born": "1993-08-06",
      "country": "Brazil",
      "height": 185,
      "value": 100800,
-     "rating": 6.07,
+     "rating": 6.15,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6198,8 +5438,8 @@
      "born": "1992-12-15",
      "country": "Croatia",
      "height": 191,
-     "value": 159113,
-     "rating": 7.29,
+     "value": 79549,
+     "rating": 7.45,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6217,12 +5457,12 @@
      "born": "2007-01-08",
      "country": "Croatia",
      "height": null,
-     "value": 155520,
-     "rating": 6.83,
+     "value": 640293,
+     "rating": 6.94,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6256,7 +5496,7 @@
      "country": "Croatia",
      "height": null,
      "value": null,
-     "rating": 6.13,
+     "rating": 6.15,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6271,11 +5511,11 @@
      "position": "RM",
      "number": 10,
      "age": 16,
-     "born": "2009-11-22",
+     "born": "2009-11-27",
      "country": "Croatia",
      "height": null,
      "value": null,
-     "rating": 6.2,
+     "rating": 6.22,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -6294,7 +5534,7 @@
      "country": "Croatia",
      "height": null,
      "value": null,
-     "rating": 7.24,
+     "rating": 7.17,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
@@ -6312,7 +5552,7 @@
      "born": "2000-02-08",
      "country": "Croatia",
      "height": 174,
-     "value": 273153,
+     "value": 268228,
      "rating": 6.37,
      "goals": 0,
      "assists": 0,
@@ -6323,7 +5563,7 @@
     },
     {
      "id": 656532,
-     "name": "Ivan Đorić",
+     "name": "Ivan Djoric",
      "role": "midfielders",
      "position": "CDM,CM",
      "number": 24,
@@ -6332,7 +5572,7 @@
      "country": "Serbia",
      "height": 183,
      "value": 98167,
-     "rating": 6.63,
+     "rating": 6.68,
      "goals": 1,
      "assists": 1,
      "penalties": 0,
@@ -6350,12 +5590,31 @@
      "born": "1998-04-05",
      "country": "Portugal",
      "height": 172,
-     "value": 105410,
-     "rating": 6.62,
+     "value": 217547,
+     "rating": 6.58,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 938992,
+     "name": "Martin Šlogar",
+     "role": "midfielders",
+     "position": "RM,RW",
+     "number": 30,
+     "age": 26,
+     "born": "2000-09-21",
+     "country": "Croatia",
+     "height": null,
+     "value": 267778,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -6391,12 +5650,12 @@
      "born": "1988-04-10",
      "country": "Chile",
      "height": 184,
-     "value": 163314,
-     "rating": 6.8,
-     "goals": 1,
+     "value": 152737,
+     "rating": 7.05,
+     "goals": 2,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6410,7 +5669,7 @@
      "born": "2004-06-10",
      "country": "Croatia",
      "height": 180,
-     "value": 302403,
+     "value": 295962,
      "rating": 6.64,
      "goals": 2,
      "assists": 2,
@@ -6436,25 +5695,22 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 1385227,
      "name": "Jurica Poldrugač",
      "role": "attackers",
-     "position": "ST,LW",
+     "position": "LW,ST",
      "number": 11,
      "age": 29,
      "born": "1997-08-10",
      "country": "Croatia",
      "height": null,
      "value": 154866,
-     "rating": 6.94,
+     "rating": 7.03,
      "goals": 0,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -6470,7 +5726,7 @@
      "born": "2001-07-23",
      "country": "Croatia",
      "height": 187,
-     "value": 240221,
+     "value": 206152,
      "rating": 6.9,
      "goals": 0,
      "assists": 1,
@@ -6489,8 +5745,8 @@
      "born": "2005-01-07",
      "country": "Gambia",
      "height": null,
-     "value": 334752,
-     "rating": 6.66,
+     "value": 336199,
+     "rating": 6.59,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -6518,25 +5774,6 @@
      "injury": null
     },
     {
-     "id": 938992,
-     "name": "Martin Šlogar",
-     "role": "attackers",
-     "position": "RW,RM",
-     "number": 30,
-     "age": 26,
-     "born": "2000-09-21",
-     "country": "Croatia",
-     "height": null,
-     "value": 250240,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 824720,
      "name": "Kristijan Lovrić",
      "role": "attackers",
@@ -6546,7 +5783,7 @@
      "born": "1995-12-01",
      "country": "Croatia",
      "height": null,
-     "value": 103680,
+     "value": 175736,
      "rating": 5.98,
      "goals": 0,
      "assists": 0,
@@ -6565,7 +5802,7 @@
      "born": "2008-01-25",
      "country": "Switzerland",
      "height": null,
-     "value": null,
+     "value": 423722,
      "rating": 6.86,
      "goals": 1,
      "assists": 0,
@@ -6584,12 +5821,12 @@
      "born": "2005-07-24",
      "country": "Morocco",
      "height": 175,
-     "value": 507384,
-     "rating": 7.05,
+     "value": 254190,
+     "rating": 6.94,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6603,7 +5840,7 @@
      "born": "2000-12-13",
      "country": "Brazil",
      "height": null,
-     "value": 226792,
+     "value": 219218,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6616,7 +5853,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Alen Peternac",
@@ -6627,122 +5864,122 @@
     "107844": {
      "name": "Junior Fernándes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "167091": {
      "name": "Vedran Celjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "462273": {
      "name": "Slavko Bralić",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "651431": {
      "name": "Marko Stolnik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "656532": {
-     "name": "Ivan Đorić",
+     "name": "Ivan Djoric",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "675328": {
      "name": "Felipe Curcio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "824720": {
      "name": "Kristijan Lovrić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "938992": {
      "name": "Martin Šlogar",
      "firstSeen": "2026-10-22",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1178883": {
      "name": "Jakov Blagaić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1179375": {
      "name": "Stefan Vukić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1222082": {
      "name": "Xavi Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1379330": {
      "name": "Toni Kolega",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1385227": {
      "name": "Jurica Poldrugač",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1507399": {
      "name": "Lovre Rogić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1520499": {
      "name": "Lenny Ilečić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1631612": {
      "name": "Filip Taraba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1639186": {
      "name": "Noa Skoko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1645685": {
      "name": "Ante Sušak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1657809": {
      "name": "Bruno Unušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1674890": {
      "name": "Saad El Haddad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1699520": {
      "name": "Marko Zebić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1714775": {
      "name": "Cherno Saho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1781846": {
      "name": "Josip Pejić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827452": {
      "name": "Ivan Žutić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827455": {
      "name": "Domagoj Đurković",
@@ -6752,17 +5989,17 @@
     "1827459": {
      "name": "Filip Holjevac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827461": {
      "name": "Luka Popović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827462": {
      "name": "Allyson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1827467": {
      "name": "Nikica Peranović",
@@ -6772,27 +6009,27 @@
     "1840553": {
      "name": "Josip Bralić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2081351": {
      "name": "Cheick Diabaté",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2120287": {
      "name": "Stipe Duvnjak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2120288": {
      "name": "Ante Udovičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2120289": {
      "name": "Ante Pripuz Špekuljuk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2120290": {
      "name": "Josip Radman",
@@ -6802,7 +6039,7 @@
     "2120291": {
      "name": "Vid Seitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": [
@@ -6826,6 +6063,817 @@
     }
    ]
   },
+  "Lokomotiva Zagreb": {
+   "fotmobName": "NK Lokomotiva",
+   "fotmobId": 175388,
+   "coach": "Nikica Jelavić",
+   "players": [
+    {
+     "id": 178112,
+     "name": "Krunoslav Hendija",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 37,
+     "born": "1989-03-19",
+     "country": "Croatia",
+     "height": null,
+     "value": 77680,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 655544,
+     "name": "Josip Posavec",
+     "role": "keepers",
+     "position": "GK",
+     "number": 12,
+     "age": 30,
+     "born": "1996-03-10",
+     "country": "Croatia",
+     "height": 190,
+     "value": 119729,
+     "rating": 6.97,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1511001,
+     "name": "Luka Savatović",
+     "role": "keepers",
+     "position": "GK",
+     "number": 32,
+     "age": 22,
+     "born": "2004-07-06",
+     "country": "Croatia",
+     "height": null,
+     "value": 290984,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1536211,
+     "name": "Luka Ćurković",
+     "role": "defenders",
+     "position": "Defender",
+     "number": null,
+     "age": 21,
+     "born": "2005-08-26",
+     "country": "Croatia",
+     "height": null,
+     "value": 184568,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 307339,
+     "name": "Matej Mitrović",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 32,
+     "born": "1993-11-10",
+     "country": "Croatia",
+     "height": 188,
+     "value": 98167,
+     "rating": 6.06,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1352689,
+     "name": "Thanasis Triantafyllou",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 23,
+     "born": "2003-07-22",
+     "country": "Greece",
+     "height": 192,
+     "value": 305966,
+     "rating": 6.95,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 949493,
+     "name": "Marijan Čabraja",
+     "role": "defenders",
+     "position": "CB,LB",
+     "number": 5,
+     "age": 29,
+     "born": "1997-02-25",
+     "country": "Croatia",
+     "height": null,
+     "value": 120949,
+     "rating": 6.34,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 653965,
+     "name": "Fran Karačić",
+     "role": "defenders",
+     "position": "RB",
+     "number": 13,
+     "age": 30,
+     "born": "1996-05-12",
+     "country": "Australia",
+     "height": 181,
+     "value": 334913,
+     "rating": 6.56,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 251266,
+     "name": "Mario Šitum",
+     "role": "defenders",
+     "position": "RB",
+     "number": 18,
+     "age": 34,
+     "born": "1992-04-04",
+     "country": "Croatia",
+     "height": 177,
+     "value": 106159,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1663533,
+     "name": "Kristijan Čabrajić",
+     "role": "defenders",
+     "position": "LB,CDM",
+     "number": 20,
+     "age": 22,
+     "born": "2004-06-12",
+     "country": "Croatia",
+     "height": null,
+     "value": 213611,
+     "rating": 6.79,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1835474,
+     "name": "Teodor Kralevski",
+     "role": "defenders",
+     "position": "CB",
+     "number": 21,
+     "age": 19,
+     "born": "2007-01-25",
+     "country": "Croatia",
+     "height": null,
+     "value": null,
+     "rating": 6.64,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1508367,
+     "name": "Jakov Gurlica",
+     "role": "midfielders",
+     "position": "CDM,CB,CM",
+     "number": 2,
+     "age": 22,
+     "born": "2004-01-10",
+     "country": "Croatia",
+     "height": null,
+     "value": 219713,
+     "rating": 6.5,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1516458,
+     "name": "Feta Fetai",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 6,
+     "age": 21,
+     "born": "2005-05-11",
+     "country": "Albania",
+     "height": 172,
+     "value": 713938,
+     "rating": 6.75,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1714788,
+     "name": "Ivan Katić",
+     "role": "midfielders",
+     "position": "CDM,CAM,CM",
+     "number": 8,
+     "age": 21,
+     "born": "2005-09-25",
+     "country": "Croatia",
+     "height": null,
+     "value": 405516,
+     "rating": 6.55,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1511013,
+     "name": "Leon Belcar",
+     "role": "midfielders",
+     "position": "CDM,LW,CAM",
+     "number": 9,
+     "age": 24,
+     "born": "2002-01-04",
+     "country": "Croatia",
+     "height": null,
+     "value": 487943,
+     "rating": 6.5,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1710216,
+     "name": "Matija Subotić",
+     "role": "midfielders",
+     "position": "CDM,CM",
+     "number": 10,
+     "age": 18,
+     "born": "2007-12-18",
+     "country": "Croatia",
+     "height": null,
+     "value": 1560291,
+     "rating": 6.61,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1388757,
+     "name": "Marcel Lorber",
+     "role": "midfielders",
+     "position": "RB,RWB,CAM",
+     "number": 14,
+     "age": 22,
+     "born": "2004-04-26",
+     "country": "Slovenia",
+     "height": null,
+     "value": 406487,
+     "rating": 6.21,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 274221,
+     "name": "Marko Pajač",
+     "role": "midfielders",
+     "position": "LWB,LB,LW",
+     "number": 17,
+     "age": 33,
+     "born": "1993-05-11",
+     "country": "Croatia",
+     "height": 185,
+     "value": 212292,
+     "rating": 7.21,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 1,
+     "injury": {
+      "typeId": "20",
+      "expectedReturn": "Mid December 2026"
+     }
+    },
+    {
+     "id": 1059853,
+     "name": "Wajdi Sahli",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 19,
+     "age": 29,
+     "born": "1997-04-17",
+     "country": "Tunisia",
+     "height": null,
+     "value": 192918,
+     "rating": 6.7,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 249204,
+     "name": "Marko Vešović",
+     "role": "midfielders",
+     "position": "RWB,RB,RW",
+     "number": 23,
+     "age": 35,
+     "born": "1991-08-28",
+     "country": "Montenegro",
+     "height": 177,
+     "value": 117492,
+     "rating": 6.09,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1875856,
+     "name": "Pavle Smiljanić",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 25,
+     "age": 18,
+     "born": "2008-05-08",
+     "country": "Croatia",
+     "height": null,
+     "value": 591216,
+     "rating": 6.03,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1518959,
+     "name": "Dardan Morina",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 26,
+     "age": 21,
+     "born": "2005-10-14",
+     "country": "Kosovo",
+     "height": null,
+     "value": 209496,
+     "rating": 6.41,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1270127,
+     "name": "Jakov-Anton Vasilj",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 29,
+     "age": 24,
+     "born": "2002-06-02",
+     "country": "Croatia",
+     "height": null,
+     "value": 305966,
+     "rating": 6.32,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1839694,
+     "name": "Duje Reić",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 30,
+     "age": 20,
+     "born": "2006-05-29",
+     "country": "Croatia",
+     "height": null,
+     "value": 345209,
+     "rating": 6.06,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1649995,
+     "name": "Dušan Vuković",
+     "role": "attackers",
+     "position": "CAM,RW,LW",
+     "number": 7,
+     "age": 24,
+     "born": "2002-08-06",
+     "country": "Montenegro",
+     "height": null,
+     "value": null,
+     "rating": 6.84,
+     "goals": 3,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1666522,
+     "name": "Lovre Kulušić",
+     "role": "attackers",
+     "position": "ST,LW",
+     "number": 11,
+     "age": 19,
+     "born": "2006-11-15",
+     "country": "Croatia",
+     "height": null,
+     "value": 755181,
+     "rating": 6.7,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1701794,
+     "name": "Dominik Thaqi",
+     "role": "attackers",
+     "position": "RW,LW",
+     "number": 15,
+     "age": 19,
+     "born": "2007-02-02",
+     "country": "Croatia",
+     "height": 178,
+     "value": 620478,
+     "rating": 6.24,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2140735,
+     "name": "Kayke",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 16,
+     "age": 19,
+     "born": "2007-05-24",
+     "country": "Brazil",
+     "height": null,
+     "value": null,
+     "rating": 6.09,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1370591,
+     "name": "Erbol Atabaev",
+     "role": "attackers",
+     "position": "ST",
+     "number": 18,
+     "age": 25,
+     "born": "2001-08-15",
+     "country": "Kyrgyz Republic",
+     "height": 175,
+     "value": 237005,
+     "rating": 5.99,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1417096,
+     "name": "Mate Antunović",
+     "role": "attackers",
+     "position": "ST",
+     "number": 22,
+     "age": 22,
+     "born": "2004-03-03",
+     "country": "Croatia",
+     "height": null,
+     "value": 279869,
+     "rating": 6.13,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 447680,
+     "name": "Mirko Marić",
+     "role": "attackers",
+     "position": "ST",
+     "number": 24,
+     "age": 31,
+     "born": "1995-05-16",
+     "country": "Croatia",
+     "height": 188,
+     "value": 243639,
+     "rating": 6.72,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1678859,
+     "name": "Noel Djurkovic",
+     "role": "attackers",
+     "position": "ST",
+     "number": 28,
+     "age": 19,
+     "born": "2006-11-30",
+     "country": "Croatia",
+     "height": 178,
+     "value": 650372,
+     "rating": 6.08,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
+   "coachHistory": [
+    {
+     "name": "Nikica Jelavić",
+     "firstSeen": "2026-09-29"
+    }
+   ],
+   "history": {
+    "178112": {
+     "name": "Krunoslav Hendija",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "249204": {
+     "name": "Marko Vešović",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "251266": {
+     "name": "Mario Šitum",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "274221": {
+     "name": "Marko Pajač",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "307339": {
+     "name": "Matej Mitrović",
+     "firstSeen": "2026-10-22",
+     "lastSeen": "2026-11-04"
+    },
+    "447680": {
+     "name": "Mirko Marić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "653965": {
+     "name": "Fran Karačić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "655544": {
+     "name": "Josip Posavec",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "949493": {
+     "name": "Marijan Čabraja",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1059853": {
+     "name": "Wajdi Sahli",
+     "firstSeen": "2026-11-04",
+     "lastSeen": "2026-11-04"
+    },
+    "1253915": {
+     "name": "Dušan Vuković",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-10-24"
+    },
+    "1270127": {
+     "name": "Jakov-Anton Vasilj",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1352689": {
+     "name": "Thanasis Triantafyllou",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1370591": {
+     "name": "Erbol Atabaev",
+     "firstSeen": "2026-10-22",
+     "lastSeen": "2026-11-04"
+    },
+    "1388757": {
+     "name": "Marcel Lorber",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1417096": {
+     "name": "Mate Antunović",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1508367": {
+     "name": "Jakov Gurlica",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1511001": {
+     "name": "Luka Savatović",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1511013": {
+     "name": "Leon Belcar",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1516458": {
+     "name": "Feta Fetai",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1518959": {
+     "name": "Dardan Morina",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1536211": {
+     "name": "Luka Ćurković",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1649995": {
+     "name": "Dušan Vuković",
+     "firstSeen": "2026-10-30",
+     "lastSeen": "2026-11-04"
+    },
+    "1663533": {
+     "name": "Kristijan Čabrajić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1666522": {
+     "name": "Lovre Kulušić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1678859": {
+     "name": "Noel Djurkovic",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1701794": {
+     "name": "Dominik Thaqi",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1710216": {
+     "name": "Matija Subotić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1714788": {
+     "name": "Ivan Katić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1798007": {
+     "name": "Noa Godec",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-09-29"
+    },
+    "1835474": {
+     "name": "Teodor Kralevski",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1839694": {
+     "name": "Duje Reić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "1875856": {
+     "name": "Pavle Smiljanić",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    },
+    "2140735": {
+     "name": "Kayke",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-11-04"
+    }
+   },
+   "left": [
+    {
+     "id": "1253915",
+     "name": "Dušan Vuković",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-10-24"
+    },
+    {
+     "id": "1798007",
+     "name": "Noa Godec",
+     "firstSeen": "2026-09-29",
+     "lastSeen": "2026-09-29"
+    }
+   ]
+  },
   "HNK Gorica": {
    "fotmobName": "HNK Gorica",
    "fotmobId": 206560,
@@ -6841,8 +6889,8 @@
      "born": "2001-06-12",
      "country": "Croatia",
      "height": null,
-     "value": 283041,
-     "rating": 7.3,
+     "value": 285829,
+     "rating": 7.02,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6898,7 +6946,7 @@
      "born": "1999-08-23",
      "country": "Croatia",
      "height": 188,
-     "value": 368158,
+     "value": 226094,
      "rating": 6.56,
      "goals": 0,
      "assists": 0,
@@ -6911,13 +6959,13 @@
      "id": 1354243,
      "name": "Gonçalo Costa",
      "role": "defenders",
-     "position": "LB,LM",
+     "position": "LB",
      "number": 5,
      "age": 26,
      "born": "2000-02-18",
      "country": "Portugal",
      "height": 179,
-     "value": 554340,
+     "value": 396535,
      "rating": 7.07,
      "goals": 0,
      "assists": 0,
@@ -6936,8 +6984,8 @@
      "born": "1996-06-22",
      "country": "Serbia",
      "height": 186,
-     "value": 124606,
-     "rating": 6.96,
+     "value": 129798,
+     "rating": 6.62,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6987,18 +7035,18 @@
      "id": 1661594,
      "name": "Ivan Cvijanović",
      "role": "defenders",
-     "position": "CB,LB",
+     "position": "LB,CB",
      "number": 34,
      "age": 23,
      "born": "2003-10-09",
      "country": "Croatia",
      "height": 185,
      "value": 319007,
-     "rating": 6.77,
+     "rating": 6.62,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -7012,7 +7060,7 @@
      "born": "1997-02-13",
      "country": "Austria",
      "height": 185,
-     "value": 171139,
+     "value": 119930,
      "rating": 6.21,
      "goals": 0,
      "assists": 0,
@@ -7031,12 +7079,12 @@
      "born": "1992-10-17",
      "country": "Croatia",
      "height": 190,
-     "value": 172725,
-     "rating": 6.57,
+     "value": 135671,
+     "rating": 6.38,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -7050,8 +7098,8 @@
      "born": "2002-06-05",
      "country": "Croatia",
      "height": null,
-     "value": 199233,
-     "rating": 6.65,
+     "value": 272375,
+     "rating": 6.43,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7069,14 +7117,17 @@
      "born": "2000-02-03",
      "country": "Sweden",
      "height": 187,
-     "value": 261606,
+     "value": 257427,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 1219010,
@@ -7088,8 +7139,8 @@
      "born": "2002-01-25",
      "country": "France",
      "height": 182,
-     "value": 419026,
-     "rating": 6.89,
+     "value": 419932,
+     "rating": 6.86,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7107,8 +7158,8 @@
      "born": "2003-01-06",
      "country": "Montenegro",
      "height": null,
-     "value": 305966,
-     "rating": 6.24,
+     "value": 304947,
+     "rating": 6.34,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7120,14 +7171,14 @@
      "id": 1717583,
      "name": "Jakov Pranjić",
      "role": "midfielders",
-     "position": "CAM,LW",
+     "position": "LW,CAM",
      "number": 8,
      "age": 25,
      "born": "2001-01-13",
      "country": "Croatia",
      "height": null,
      "value": 301880,
-     "rating": 7.09,
+     "rating": 7.03,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
@@ -7145,7 +7196,7 @@
      "born": "2006-12-29",
      "country": "Croatia",
      "height": null,
-     "value": 402761,
+     "value": 347382,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -7167,8 +7218,8 @@
      "born": "1994-03-09",
      "country": "Croatia",
      "height": 179,
-     "value": 140379,
-     "rating": 6.82,
+     "value": 135872,
+     "rating": 6.78,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
@@ -7186,8 +7237,8 @@
      "born": "1998-06-29",
      "country": "Croatia",
      "height": 186,
-     "value": 186872,
-     "rating": 6.9,
+     "value": 196565,
+     "rating": 6.87,
      "goals": 4,
      "assists": 0,
      "penalties": 2,
@@ -7205,8 +7256,8 @@
      "born": "2005-08-26",
      "country": "Croatia",
      "height": null,
-     "value": 1484776,
-     "rating": 6.63,
+     "value": 1453201,
+     "rating": 6.6,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7224,8 +7275,8 @@
      "born": "2009-05-16",
      "country": "Croatia",
      "height": null,
-     "value": null,
-     "rating": 6.75,
+     "value": 656021,
+     "rating": 6.68,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
@@ -7281,7 +7332,7 @@
      "born": "1998-11-04",
      "country": "Croatia",
      "height": 186,
-     "value": 274466,
+     "value": 256983,
      "rating": 6.24,
      "goals": 0,
      "assists": 0,
@@ -7300,7 +7351,7 @@
      "born": "1997-01-08",
      "country": "Croatia",
      "height": 180,
-     "value": 286287,
+     "value": 386204,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -7341,7 +7392,7 @@
      "born": "2006-07-18",
      "country": "Croatia",
      "height": null,
-     "value": 414067,
+     "value": 442239,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7360,7 +7411,7 @@
      "born": "2007-01-05",
      "country": "Croatia",
      "height": null,
-     "value": 882126,
+     "value": 884797,
      "rating": 6.77,
      "goals": 0,
      "assists": 1,
@@ -7398,8 +7449,8 @@
      "born": "1989-12-12",
      "country": "Croatia",
      "height": 179,
-     "value": 163432,
-     "rating": 6.79,
+     "value": 152737,
+     "rating": 6.64,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7417,7 +7468,7 @@
      "born": "2006-02-01",
      "country": "Kosovo",
      "height": null,
-     "value": 253280,
+     "value": 209177,
      "rating": 6.02,
      "goals": 0,
      "assists": 0,
@@ -7427,7 +7478,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-31T10:13:11.946Z",
+   "fetchedAt": "2026-11-04T05:49:32.008Z",
    "coachHistory": [
     {
      "name": "Mario Carević",
@@ -7438,157 +7489,157 @@
     "206388": {
      "name": "Ante Erceg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "384188": {
      "name": "Domagoj Pavičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "392864": {
      "name": "Darijan Žarkov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "427058": {
      "name": "Fran Brodić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "491737": {
      "name": "Stefan Perić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "767488": {
      "name": "Jakov Filipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "796704": {
      "name": "Bruno Bogojević",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "940678": {
      "name": "Davor Matijaš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1034817": {
      "name": "Kevin Čustović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1072702": {
      "name": "Renato Josipović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1187338": {
      "name": "Keenan Carole",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1190349": {
      "name": "Filip Braut",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1219010": {
      "name": "Tom Lacoux",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1284438": {
      "name": "Dušan Stevanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1338941": {
      "name": "Patrik Mijić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1354243": {
      "name": "Gonçalo Costa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1384266": {
      "name": "Ognjen Bakić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1450782": {
      "name": "Hadji Moustapha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1525752": {
      "name": "Ante Kavelj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1609037": {
      "name": "Bartol Kardum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1619618": {
      "name": "Wisdom Sule",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1637449": {
      "name": "Luka Vrzić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1661594": {
      "name": "Ivan Cvijanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1680001": {
      "name": "Medin Gashi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1717583": {
      "name": "Jakov Pranjić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1760056": {
      "name": "Juraj Frigan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1794904": {
      "name": "Stjepan Kučiš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1821741": {
      "name": "Tin Došen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1988571": {
      "name": "Mihael Kelava",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "1996886": {
      "name": "Tomislav Prgomet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     },
     "2119679": {
      "name": "Elisandro Kožina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-31"
+     "lastSeen": "2026-11-04"
     }
    },
    "left": []

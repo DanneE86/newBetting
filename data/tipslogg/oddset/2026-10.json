@@ -1,7 +1,7 @@
 {
  "product": "oddset",
  "month": "2026-10",
- "updatedAt": "2026-10-30T08:58:58.366Z",
+ "updatedAt": "2026-11-04T05:48:47.922Z",
  "items": {
   "2026-10-04|COL|Atlético Bucaramanga|Atlético Junior": {
    "id": "2026-10-04|COL|Atlético Bucaramanga|Atlético Junior",
@@ -82328,7 +82328,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|COL|Atlético Nacional|Independiente Santa Fe": {
    "id": "2026-10-30|COL|Atlético Nacional|Independiente Santa Fe",
@@ -82500,7 +82506,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|AR|Estudiantes Rio Cuarto|Gimnasia L.P.": {
    "id": "2026-10-30|AR|Estudiantes Rio Cuarto|Gimnasia L.P.",
@@ -82579,7 +82591,13 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|DK|Lyngby|Randers FC": {
    "id": "2026-10-30|DK|Lyngby|Randers FC",
@@ -82673,7 +82691,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|NO|Bodo/Glimt|Viking": {
    "id": "2026-10-30|NO|Bodo/Glimt|Viking",
@@ -82745,7 +82771,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|BR|Corinthians|Mirassol": {
    "id": "2026-10-30|BR|Corinthians|Mirassol",
@@ -82839,7 +82871,13 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|BR|Gremio|Athletico-PR": {
    "id": "2026-10-30|BR|Gremio|Athletico-PR",
@@ -83011,7 +83049,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|BL2|Cottbus|Bochum": {
    "id": "2026-10-30|BL2|Cottbus|Bochum",
@@ -83105,7 +83151,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|BR2|Criciúma|Ponte Preta": {
    "id": "2026-10-30|BR2|Criciúma|Ponte Preta",
@@ -83199,7 +83253,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|BL2|Bielefeld|Braunschweig": {
    "id": "2026-10-30|BL2|Bielefeld|Braunschweig",
@@ -83293,7 +83353,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL2|Karlsruhe|Heidenheim": {
    "id": "2026-10-31|BL2|Karlsruhe|Heidenheim",
@@ -83394,7 +83462,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|COL|Atlético Bucaramanga|Deportivo Pasto": {
    "id": "2026-10-31|COL|Atlético Bucaramanga|Deportivo Pasto",
@@ -83488,7 +83564,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|COL|Llaneros FC|Atlético Junior": {
    "id": "2026-10-31|COL|Llaneros FC|Atlético Junior",
@@ -83582,7 +83664,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL2|Wolfsburg|Osnabruck": {
    "id": "2026-10-31|BL2|Wolfsburg|Osnabruck",
@@ -83676,7 +83764,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Leicester|Stevenage": {
    "id": "2026-10-31|EL1|Leicester|Stevenage",
@@ -83770,7 +83866,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Barnsley|Oxford": {
    "id": "2026-10-31|EL1|Barnsley|Oxford",
@@ -83864,7 +83968,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|AR|Sarmiento Junin|Rosario Central": {
    "id": "2026-10-31|AR|Sarmiento Junin|Rosario Central",
@@ -83958,7 +84070,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|AR|Racing Club|Aldosivi": {
    "id": "2026-10-31|AR|Racing Club|Aldosivi",
@@ -84052,7 +84170,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|EL1|Leyton Orient|Cambridge": {
    "id": "2026-10-31|EL1|Leyton Orient|Cambridge",
@@ -84146,7 +84270,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Plymouth|Reading": {
    "id": "2026-10-31|EL1|Plymouth|Reading",
@@ -84240,7 +84372,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "0-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Stockport|AFC Wimbledon": {
    "id": "2026-10-31|EL1|Stockport|AFC Wimbledon",
@@ -84334,7 +84474,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Peterboro|Luton": {
    "id": "2026-10-31|EL1|Peterboro|Luton",
@@ -84428,7 +84576,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Wigan|Bromley": {
    "id": "2026-10-31|EL1|Wigan|Bromley",
@@ -84522,7 +84678,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Wycombe|Burton": {
    "id": "2026-10-31|EL1|Wycombe|Burton",
@@ -84616,7 +84780,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|AR|Velez Sarsfield|San Lorenzo": {
    "id": "2026-10-31|AR|Velez Sarsfield|San Lorenzo",
@@ -84710,7 +84882,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|AR|Dep. Riestra|Talleres Cordoba": {
    "id": "2026-10-31|AR|Dep. Riestra|Talleres Cordoba",
@@ -84782,7 +84960,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|EL1|Milton Keynes Dons|Doncaster": {
    "id": "2026-10-31|EL1|Milton Keynes Dons|Doncaster",
@@ -84876,7 +85060,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "6-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Mansfield|Notts County": {
    "id": "2026-10-31|EL1|Mansfield|Notts County",
@@ -84977,7 +85169,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EL1|Bradford|Huddersfield": {
    "id": "2026-10-31|EL1|Bradford|Huddersfield",
@@ -85071,7 +85271,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SB|Modena|Mantova": {
    "id": "2026-10-31|SB|Modena|Mantova",
@@ -85172,7 +85380,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SB|Sudtirol|Cesena": {
    "id": "2026-10-31|SB|Sudtirol|Cesena",
@@ -85273,7 +85489,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SB|Cremonese|Benevento": {
    "id": "2026-10-31|SB|Cremonese|Benevento",
@@ -85374,7 +85598,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL2|Kaiserslautern|Hertha": {
    "id": "2026-10-31|BL2|Kaiserslautern|Hertha",
@@ -85468,7 +85700,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL2|Darmstadt|Magdeburg": {
    "id": "2026-10-31|BL2|Darmstadt|Magdeburg",
@@ -85562,7 +85802,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SB|Catanzaro|Padova": {
    "id": "2026-10-31|SB|Catanzaro|Padova",
@@ -85663,7 +85911,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SB|Sampdoria|Virtus Entella": {
    "id": "2026-10-31|SB|Sampdoria|Virtus Entella",
@@ -85764,7 +86020,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|LL2|Celta B|Cordoba": {
    "id": "2026-10-31|LL2|Celta B|Cordoba",
@@ -85836,7 +86100,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 9,
+    "BOTH_CARDS": "JA",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|LL2|Albacete|Sabadell": {
    "id": "2026-10-31|LL2|Albacete|Sabadell",
@@ -85930,7 +86202,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|LL2|Sociedad B|Girona": {
    "id": "2026-10-31|LL2|Sociedad B|Girona",
@@ -86002,7 +86282,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|LL2|Eibar|Almeria": {
    "id": "2026-10-31|LL2|Eibar|Almeria",
@@ -86096,7 +86384,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|JP1|Vissel Kobe|Nagoya Grampus": {
    "id": "2026-10-31|JP1|Vissel Kobe|Nagoya Grampus",
@@ -86190,7 +86486,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|JP1|Kashima Antlers|Cerezo Osaka": {
    "id": "2026-10-31|JP1|Kashima Antlers|Cerezo Osaka",
@@ -86284,7 +86588,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|JP1|Mito|Sanfrecce Hiroshima": {
    "id": "2026-10-31|JP1|Mito|Sanfrecce Hiroshima",
@@ -86378,7 +86690,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|JP1|Kashiwa Reysol|Urawa Reds": {
    "id": "2026-10-31|JP1|Kashiwa Reysol|Urawa Reds",
@@ -86457,7 +86777,13 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "score": "4-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MX|Puebla|UNAM Pumas": {
    "id": "2026-10-31|MX|Puebla|UNAM Pumas",
@@ -86551,7 +86877,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MX|Juarez|Queretaro": {
    "id": "2026-10-31|MX|Juarez|Queretaro",
@@ -86645,7 +86977,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MX|Atl. San Luis|Atlas": {
    "id": "2026-10-31|MX|Atl. San Luis|Atlas",
@@ -86717,7 +87055,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "0-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|JP1|Kyoto|Shimizu S-Pulse": {
    "id": "2026-10-31|JP1|Kyoto|Shimizu S-Pulse",
@@ -86811,7 +87155,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|Charlotte|Orlando City": {
    "id": "2026-10-31|MLS|Charlotte|Orlando City",
@@ -86905,7 +87257,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "4-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|Columbus Crew|DC United": {
    "id": "2026-10-31|MLS|Columbus Crew|DC United",
@@ -86999,7 +87359,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|FC Cincinnati|Philadelphia Union": {
    "id": "2026-10-31|MLS|FC Cincinnati|Philadelphia Union",
@@ -87093,7 +87461,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 0,
+    "BOTH_CARDS": "NEJ",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|PT|Moreirense|Estrela": {
    "id": "2026-10-31|PT|Moreirense|Estrela",
@@ -87187,7 +87563,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|JP1|Okayama|FC Tokyo": {
    "id": "2026-10-31|JP1|Okayama|FC Tokyo",
@@ -87281,7 +87665,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "0-4"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|GR|Kifisia|Olympiakos": {
    "id": "2026-10-31|GR|Kifisia|Olympiakos",
@@ -87353,7 +87745,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "2-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PT|Porto|Estoril": {
    "id": "2026-10-31|PT|Porto|Estoril",
@@ -87454,7 +87854,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "4-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|MX|Pachuca|Tigres UANL": {
    "id": "2026-10-31|MX|Pachuca|Tigres UANL",
@@ -87555,7 +87963,13 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|NO|Aalesund|Sandefjord": {
    "id": "2026-10-31|NO|Aalesund|Sandefjord",
@@ -87649,7 +88063,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "3-4"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|NO|Fredrikstad|Rosenborg": {
    "id": "2026-10-31|NO|Fredrikstad|Rosenborg",
@@ -87743,7 +88165,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|BR2|Vila Nova|Juventude": {
    "id": "2026-10-31|BR2|Vila Nova|Juventude",
@@ -87815,7 +88245,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BR2|Botafogo-SP|Sport": {
    "id": "2026-10-31|BR2|Botafogo-SP|Sport",
@@ -87909,7 +88345,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BR2|Náutico|Avaí": {
    "id": "2026-10-31|BR2|Náutico|Avaí",
@@ -87981,7 +88423,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|MLS|San Jose Earthquakes|Real Salt Lake": {
    "id": "2026-10-31|MLS|San Jose Earthquakes|Real Salt Lake",
@@ -88075,7 +88523,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|Los Angeles Galaxy|Austin FC": {
    "id": "2026-10-31|MLS|Los Angeles Galaxy|Austin FC",
@@ -88169,7 +88625,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|New York City|CF Montreal": {
    "id": "2026-10-31|MLS|New York City|CF Montreal",
@@ -88263,7 +88725,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|Sporting Kansas City|FC Dallas": {
    "id": "2026-10-31|MLS|Sporting Kansas City|FC Dallas",
@@ -88357,7 +88827,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|MLS|St. Louis City|San Diego FC": {
    "id": "2026-10-31|MLS|St. Louis City|San Diego FC",
@@ -88458,7 +88936,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "0-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-13|CH|Bristol City|Watford": {
    "id": "2026-10-13|CH|Bristol City|Watford",
@@ -90674,7 +91160,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "2-4"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|SE2|IK Oddevold|IK Brage": {
    "id": "2026-10-30|SE2|IK Oddevold|IK Brage",
@@ -90768,7 +91262,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|EK|Cracovia|Motor Lublin": {
    "id": "2026-10-30|EK|Cracovia|Motor Lublin",
@@ -90862,7 +91364,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|HR|Slaven Belupo Koprivnica|Istra 1961": {
    "id": "2026-10-30|HR|Slaven Belupo Koprivnica|Istra 1961",
@@ -90934,7 +91444,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|L1|Le Havre|Paris SG": {
    "id": "2026-10-30|L1|Le Havre|Paris SG",
@@ -91028,7 +91544,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 0,
+    "BOTH_CARDS": "NEJ",
+    "score": "1-5"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|L1|Lille|Lens": {
    "id": "2026-10-30|L1|Lille|Lens",
@@ -91148,7 +91672,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|EK|Gornik Zabrze|Legia": {
    "id": "2026-10-30|EK|Gornik Zabrze|Legia",
@@ -91242,7 +91774,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "0-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-30|BL|Elversberg|Mainz": {
    "id": "2026-10-30|BL|Elversberg|Mainz",
@@ -91336,7 +91876,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "NEJ",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|SE3S|BK Olympic|Hässleholm": {
    "id": "2026-10-30|SE3S|BK Olympic|Hässleholm",
@@ -91408,7 +91956,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|SAU|Al Shabab|Al Ahli": {
    "id": "2026-10-30|SAU|Al Shabab|Al Ahli",
@@ -91480,7 +92034,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "6-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|SAU|Abha|Al Ittihad": {
    "id": "2026-10-30|SAU|Abha|Al Ittihad",
@@ -91552,7 +92112,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|SAU|Al Diriyah|Neom SC": {
    "id": "2026-10-30|SAU|Al Diriyah|Neom SC",
@@ -91624,7 +92190,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|CH|Sheffield United|Wrexham": {
    "id": "2026-10-30|CH|Sheffield United|Wrexham",
@@ -91718,7 +92290,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL|Schalke 04|RB Leipzig": {
    "id": "2026-10-31|BL|Schalke 04|RB Leipzig",
@@ -91826,7 +92406,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "0-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL|Augsburg|Freiburg": {
    "id": "2026-10-31|BL|Augsburg|Freiburg",
@@ -91934,7 +92522,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "NEJ",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EK|GKS Katowice|Widzew Lodz": {
    "id": "2026-10-31|EK|GKS Katowice|Widzew Lodz",
@@ -92006,7 +92602,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|BL|M'gladbach|Paderborn": {
    "id": "2026-10-31|BL|M'gladbach|Paderborn",
@@ -92078,7 +92680,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "0-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|KR|Jeonbuk Hyundai Motors FC|Daejeon Hana Citizen": {
    "id": "2026-10-31|KR|Jeonbuk Hyundai Motors FC|Daejeon Hana Citizen",
@@ -92172,7 +92782,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "0-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|KR|Gwangju FC|Gimcheon Sangmu": {
    "id": "2026-10-31|KR|Gwangju FC|Gimcheon Sangmu",
@@ -92266,7 +92882,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SA|Milan|Inter": {
    "id": "2026-10-31|SA|Milan|Inter",
@@ -92374,7 +92996,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SA|Udinese|Roma": {
    "id": "2026-10-31|SA|Udinese|Roma",
@@ -92482,7 +93112,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "2-5"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SA|Bologna|Monza": {
    "id": "2026-10-31|SA|Bologna|Monza",
@@ -92576,7 +93214,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL|Werder Bremen|Hoffenheim": {
    "id": "2026-10-31|BL|Werder Bremen|Hoffenheim",
@@ -92670,7 +93316,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "NEJ",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|HR|Hajduk Split|HNK Gorica": {
    "id": "2026-10-31|HR|Hajduk Split|HNK Gorica",
@@ -92764,7 +93418,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "5-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3S|Skövde AIK|Rosengård": {
    "id": "2026-10-31|SE3S|Skövde AIK|Rosengård",
@@ -92836,7 +93498,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3S|Lund|Jönköping Södra": {
    "id": "2026-10-31|SE3S|Lund|Jönköping Södra",
@@ -92908,7 +93576,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|HR|Rudeš|Dinamo Zagreb": {
    "id": "2026-10-31|HR|Rudeš|Dinamo Zagreb",
@@ -93002,7 +93676,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CZ|Slovácko|Teplice": {
    "id": "2026-10-31|CZ|Slovácko|Teplice",
@@ -93096,7 +93778,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "1-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CZ|Sigma Olomouc|Zbrojovka Brno": {
    "id": "2026-10-31|CZ|Sigma Olomouc|Zbrojovka Brno",
@@ -93190,7 +93880,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CZ|Jablonec|Slavia Prague": {
    "id": "2026-10-31|CZ|Jablonec|Slavia Prague",
@@ -93284,7 +93982,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "0-5"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3S|Kristianstad|Eskilsminne": {
    "id": "2026-10-31|SE3S|Kristianstad|Eskilsminne",
@@ -93356,7 +94062,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|ED|Heerenveen|Nijmegen": {
    "id": "2026-10-31|ED|Heerenveen|Nijmegen",
@@ -93450,7 +94162,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|ED|PSV Eindhoven|Willem II": {
    "id": "2026-10-31|ED|PSV Eindhoven|Willem II",
@@ -93544,7 +94264,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "NEJ",
+    "score": "7-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|ED|Cambuur|Go Ahead Eagles": {
    "id": "2026-10-31|ED|Cambuur|Go Ahead Eagles",
@@ -93652,7 +94380,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "4-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|ED|Feyenoord|For Sittard": {
    "id": "2026-10-31|ED|Feyenoord|For Sittard",
@@ -93724,7 +94460,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3S|Ängelholm|Tvååker": {
    "id": "2026-10-31|SE3S|Ängelholm|Tvååker",
@@ -93796,7 +94540,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3N|FBK Karlstad|Stockholm Internazionale": {
    "id": "2026-10-31|SE3N|FBK Karlstad|Stockholm Internazionale",
@@ -93868,7 +94618,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE3N|Arlanda|AFC Eskilstuna": {
    "id": "2026-10-31|SE3N|Arlanda|AFC Eskilstuna",
@@ -93940,7 +94696,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EK|Wisla Plock|Piast Gliwice": {
    "id": "2026-10-31|EK|Wisla Plock|Piast Gliwice",
@@ -94026,7 +94788,13 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|SE2|Falkenbergs FF|Sandvikens IF": {
    "id": "2026-10-31|SE2|Falkenbergs FF|Sandvikens IF",
@@ -94120,7 +94888,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 0,
+    "BOTH_CARDS": "NEJ",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SE2|Norrby|IFK Värnamo": {
    "id": "2026-10-31|SE2|Norrby|IFK Värnamo",
@@ -94214,7 +94990,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EK|Wieczysta Krakow|Jagiellonia": {
    "id": "2026-10-31|EK|Wieczysta Krakow|Jagiellonia",
@@ -94286,7 +95070,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-3"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|BL|Leverkusen|Stuttgart": {
    "id": "2026-10-31|BL|Leverkusen|Stuttgart",
@@ -94394,7 +95184,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "2-4"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BL|Bayern Munich|Dortmund": {
    "id": "2026-10-31|BL|Bayern Munich|Dortmund",
@@ -94466,7 +95264,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|EK|Lech Poznan|Wisla": {
    "id": "2026-10-31|EK|Lech Poznan|Wisla",
@@ -94538,7 +95344,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|SE2|Nordic United FC|GIF Sundsvall": {
    "id": "2026-10-31|SE2|Nordic United FC|GIF Sundsvall",
@@ -94632,7 +95444,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "4-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|L1|Lyon|Angers": {
    "id": "2026-10-31|L1|Lyon|Angers",
@@ -94942,7 +95762,15 @@
     ],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 7,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|L1|Nice|Rennes": {
    "id": "2026-10-31|L1|Nice|Rennes",
@@ -95144,7 +95972,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 0,
+    "BOTH_CARDS": "NEJ",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CZ|Artis Brno|Zlín": {
    "id": "2026-10-31|CZ|Artis Brno|Zlín",
@@ -95238,7 +96074,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CZ|Pardubice|Slovan Liberec": {
    "id": "2026-10-31|CZ|Pardubice|Slovan Liberec",
@@ -95332,7 +96176,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Bolton|Bristol City": {
    "id": "2026-10-31|CH|Bolton|Bristol City",
@@ -95426,7 +96278,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "2-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Wolves|Bristol City": {
    "id": "2026-10-31|CH|Wolves|Bristol City",
@@ -95708,7 +96568,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "2-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SAU|Al Hilal|Al Fateh": {
    "id": "2026-10-31|SAU|Al Hilal|Al Fateh",
@@ -95780,7 +96646,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SAU|Al Fayha|Al Faisaly": {
    "id": "2026-10-31|SAU|Al Fayha|Al Faisaly",
@@ -95852,7 +96724,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|URU|Racing (Montevideo)|Cerro Largo": {
    "id": "2026-10-31|URU|Racing (Montevideo)|Cerro Largo",
@@ -95924,7 +96802,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|URU|Peñarol|Montevideo Wanderers": {
    "id": "2026-10-31|URU|Peñarol|Montevideo Wanderers",
@@ -95996,7 +96880,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|URU|Cerro|Central Español Fútbol Club": {
    "id": "2026-10-31|URU|Cerro|Central Español Fútbol Club",
@@ -96068,7 +96958,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SAU|Al Taawoun|Al Ettifaq": {
    "id": "2026-10-31|SAU|Al Taawoun|Al Ettifaq",
@@ -96140,7 +97036,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BE|Standard|Kortrijk": {
    "id": "2026-10-31|BE|Standard|Kortrijk",
@@ -96234,7 +97136,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BE|Mechelen|Genk": {
    "id": "2026-10-31|BE|Mechelen|Genk",
@@ -96328,7 +97238,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BE|Anderlecht|Westerlo": {
    "id": "2026-10-31|BE|Anderlecht|Westerlo",
@@ -96422,7 +97340,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SC|Motherwell|St Mirren": {
    "id": "2026-10-31|SC|Motherwell|St Mirren",
@@ -96516,7 +97442,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 9,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|SC|Kilmarnock|St Johnstone": {
    "id": "2026-10-31|SC|Kilmarnock|St Johnstone",
@@ -96610,7 +97544,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BE|Beveren|St. Gilloise": {
    "id": "2026-10-31|BE|Beveren|St. Gilloise",
@@ -96704,7 +97646,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "1-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|BR|Coritiba|Vitoria": {
    "id": "2026-10-31|BR|Coritiba|Vitoria",
@@ -96776,7 +97726,13 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-04T05:48:47.922Z"
   },
   "2026-10-31|ED|Ajax|AZ Alkmaar": {
    "id": "2026-10-31|ED|Ajax|AZ Alkmaar",
@@ -96870,7 +97826,15 @@
     "valueBets": [],
     "lineupStatus": "none"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "1-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Chelsea|Man United": {
    "id": "2026-10-31|PL|Chelsea|Man United",
@@ -96978,7 +97942,15 @@
     ],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 8,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Stoke|Preston": {
    "id": "2026-10-31|CH|Stoke|Preston",
@@ -97072,7 +98044,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Norwich|Watford": {
    "id": "2026-10-31|CH|Norwich|Watford",
@@ -97166,7 +98146,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "3-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|West Ham|West Brom": {
    "id": "2026-10-31|CH|West Ham|West Brom",
@@ -97260,7 +98248,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "1-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Brentford|Nott'm Forest": {
    "id": "2026-10-31|PL|Brentford|Nott'm Forest",
@@ -97354,7 +98350,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Burnley|Portsmouth": {
    "id": "2026-10-31|CH|Burnley|Portsmouth",
@@ -97448,7 +98452,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 2,
+    "BOTH_CARDS": "JA",
+    "score": "0-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Swansea|Blackburn": {
    "id": "2026-10-31|CH|Swansea|Blackburn",
@@ -97542,7 +98554,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 1,
+    "BOTH_CARDS": "NEJ",
+    "score": "4-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Middlesbrough|Charlton": {
    "id": "2026-10-31|CH|Middlesbrough|Charlton",
@@ -97636,7 +98656,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "3-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Hull|Ipswich": {
    "id": "2026-10-31|PL|Hull|Ipswich",
@@ -97730,7 +98758,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 6,
+    "BOTH_CARDS": "JA",
+    "score": "2-2"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Millwall|Derby": {
    "id": "2026-10-31|CH|Millwall|Derby",
@@ -97824,7 +98860,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Man City|Brighton": {
    "id": "2026-10-31|PL|Man City|Brighton",
@@ -97918,7 +98962,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "NEJ",
+    "score": "0-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|CH|Southampton|QPR": {
    "id": "2026-10-31|CH|Southampton|QPR",
@@ -98026,7 +99078,15 @@
     ],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "NEJ",
+    "score": "4-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Bournemouth|Leeds": {
    "id": "2026-10-31|PL|Bournemouth|Leeds",
@@ -98120,7 +99180,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Coventry|Sunderland": {
    "id": "2026-10-31|PL|Coventry|Sunderland",
@@ -98214,7 +99282,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "JA",
+    "OU25": "OVER 2.5",
+    "cards": 5,
+    "BOTH_CARDS": "JA",
+    "score": "3-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Tottenham|Crystal Palace": {
    "id": "2026-10-31|PL|Tottenham|Crystal Palace",
@@ -98308,7 +99384,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "1",
+    "BTTS": "NEJ",
+    "OU25": "UNDER 2.5",
+    "cards": 3,
+    "BOTH_CARDS": "JA",
+    "score": "2-0"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|PL|Aston Villa|Fulham": {
    "id": "2026-10-31|PL|Aston Villa|Fulham",
@@ -98402,7 +99486,15 @@
     "valueBets": [],
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "cards": 4,
+    "BOTH_CARDS": "JA",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-30|AUS|Brisbane Roar FC|Auckland FC": {
    "id": "2026-10-30|AUS|Brisbane Roar FC|Auckland FC",
@@ -98488,7 +99580,13 @@
     "valueBets": [],
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "1X2": "X",
+    "BTTS": "JA",
+    "OU25": "UNDER 2.5",
+    "score": "1-1"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   },
   "2026-10-31|AUS|Newcastle Jets|Wellington Phoenix": {
    "id": "2026-10-31|AUS|Newcastle Jets|Wellington Phoenix",
@@ -98560,7 +99658,13 @@
     "valueBets": [],
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "1X2": "2",
+    "BTTS": "NEJ",
+    "OU25": "OVER 2.5",
+    "score": "0-3"
+   },
+   "settledAt": "2026-11-02T17:48:39.366Z"
   }
  }
 }

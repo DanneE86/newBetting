@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T10:13:11.946Z",
+ "updatedAt": "2026-11-04T05:49:32.008Z",
  "league": "NO2",
  "fotmobId": 203,
  "name": "OBOS-ligaen",
@@ -11,13 +11,13 @@
    "fotmobName": "FK Haugesund",
    "fotmobId": 8512,
    "group": null,
-   "played": 28,
-   "won": 20,
+   "played": 29,
+   "won": 21,
    "drawn": 2,
    "lost": 6,
-   "goals": "81-47",
-   "gd": 34,
-   "pts": 62
+   "goals": "84-48",
+   "gd": 36,
+   "pts": 65
   },
   {
    "rank": 2,
@@ -25,13 +25,13 @@
    "fotmobName": "Strømsgodset",
    "fotmobId": 8180,
    "group": null,
-   "played": 28,
-   "won": 18,
+   "played": 29,
+   "won": 19,
    "drawn": 6,
    "lost": 4,
-   "goals": "76-34",
-   "gd": 42,
-   "pts": 60
+   "goals": "79-34",
+   "gd": 45,
+   "pts": 63
   },
   {
    "rank": 3,
@@ -39,12 +39,12 @@
    "fotmobName": "Kongsvinger",
    "fotmobId": 8179,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 18,
    "drawn": 5,
-   "lost": 5,
-   "goals": "82-45",
-   "gd": 37,
+   "lost": 6,
+   "goals": "83-47",
+   "gd": 36,
    "pts": 59
   },
   {
@@ -53,13 +53,13 @@
    "fotmobName": "Stabæk",
    "fotmobId": 9918,
    "group": null,
-   "played": 28,
-   "won": 17,
+   "played": 29,
+   "won": 18,
    "drawn": 4,
    "lost": 7,
-   "goals": "66-34",
-   "gd": 32,
-   "pts": 55
+   "goals": "68-35",
+   "gd": 33,
+   "pts": 58
   },
   {
    "rank": 5,
@@ -67,13 +67,13 @@
    "fotmobName": "Odds Ballklubb",
    "fotmobId": 7988,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 13,
-   "drawn": 6,
+   "drawn": 7,
    "lost": 9,
-   "goals": "54-43",
+   "goals": "57-46",
    "gd": 11,
-   "pts": 45
+   "pts": 46
   },
   {
    "rank": 6,
@@ -81,13 +81,13 @@
    "fotmobName": "Bryne",
    "fotmobId": 8531,
    "group": null,
-   "played": 28,
-   "won": 12,
+   "played": 29,
+   "won": 13,
    "drawn": 4,
    "lost": 12,
-   "goals": "40-41",
-   "gd": -1,
-   "pts": 40
+   "goals": "43-41",
+   "gd": 2,
+   "pts": 43
   },
   {
    "rank": 7,
@@ -95,55 +95,55 @@
    "fotmobName": "Ranheim",
    "fotmobId": 6563,
    "group": null,
-   "played": 28,
-   "won": 11,
+   "played": 29,
+   "won": 12,
    "drawn": 5,
    "lost": 12,
-   "goals": "71-68",
-   "gd": 3,
-   "pts": 38
+   "goals": "73-69",
+   "gd": 4,
+   "pts": 41
   },
   {
    "rank": 8,
-   "team": "Hødd",
-   "fotmobName": "Hødd",
-   "fotmobId": 7937,
-   "group": null,
-   "played": 28,
-   "won": 11,
-   "drawn": 5,
-   "lost": 12,
-   "goals": "49-56",
-   "gd": -7,
-   "pts": 38
-  },
-  {
-   "rank": 9,
-   "team": "Strømmen",
-   "fotmobName": "Strømmen",
-   "fotmobId": 4249,
-   "group": null,
-   "played": 28,
-   "won": 10,
-   "drawn": 6,
-   "lost": 12,
-   "goals": "49-59",
-   "gd": -10,
-   "pts": 36
-  },
-  {
-   "rank": 10,
    "team": "Egersund",
    "fotmobName": "Egersund",
    "fotmobId": 4722,
    "group": null,
-   "played": 28,
-   "won": 9,
+   "played": 29,
+   "won": 10,
    "drawn": 8,
    "lost": 11,
-   "goals": "45-56",
-   "gd": -11,
-   "pts": 35
+   "goals": "48-57",
+   "gd": -9,
+   "pts": 38
+  },
+  {
+   "rank": 9,
+   "team": "Hødd",
+   "fotmobName": "Hødd",
+   "fotmobId": 7937,
+   "group": null,
+   "played": 29,
+   "won": 11,
+   "drawn": 5,
+   "lost": 13,
+   "goals": "49-59",
+   "gd": -10,
+   "pts": 38
+  },
+  {
+   "rank": 10,
+   "team": "Strømmen",
+   "fotmobName": "Strømmen",
+   "fotmobId": 4249,
+   "group": null,
+   "played": 29,
+   "won": 10,
+   "drawn": 6,
+   "lost": 13,
+   "goals": "50-62",
+   "gd": -12,
+   "pts": 36
   },
   {
    "rank": 11,
@@ -151,13 +151,13 @@
    "fotmobName": "Lyn",
    "fotmobId": 10224,
    "group": null,
-   "played": 28,
-   "won": 9,
+   "played": 29,
+   "won": 10,
    "drawn": 4,
    "lost": 15,
-   "goals": "42-59",
-   "gd": -17,
-   "pts": 31
+   "goals": "46-59",
+   "gd": -13,
+   "pts": 34
   },
   {
    "rank": 12,
@@ -165,12 +165,12 @@
    "fotmobName": "Sogndal",
    "fotmobId": 8616,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 8,
    "drawn": 6,
-   "lost": 14,
-   "goals": "47-61",
-   "gd": -14,
+   "lost": 15,
+   "goals": "48-63",
+   "gd": -15,
    "pts": 30
   },
   {
@@ -179,13 +179,13 @@
    "fotmobName": "Sandnes Ulf",
    "fotmobId": 8133,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 8,
-   "drawn": 5,
+   "drawn": 6,
    "lost": 15,
-   "goals": "39-55",
+   "goals": "42-58",
    "gd": -16,
-   "pts": 29
+   "pts": 30
   },
   {
    "rank": 14,
@@ -193,12 +193,12 @@
    "fotmobName": "Moss",
    "fotmobId": 8405,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 8,
    "drawn": 5,
-   "lost": 15,
-   "goals": "41-59",
-   "gd": -18,
+   "lost": 16,
+   "goals": "41-62",
+   "gd": -21,
    "pts": 29
   },
   {
@@ -207,12 +207,12 @@
    "fotmobName": "Åsane",
    "fotmobId": 10021,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 7,
    "drawn": 5,
-   "lost": 16,
-   "goals": "40-62",
-   "gd": -22,
+   "lost": 17,
+   "goals": "41-65",
+   "gd": -24,
    "pts": 25
   },
   {
@@ -221,12 +221,12 @@
    "fotmobName": "Raufoss",
    "fotmobId": 9812,
    "group": null,
-   "played": 28,
+   "played": 29,
    "won": 6,
    "drawn": 2,
-   "lost": 20,
-   "goals": "31-74",
-   "gd": -43,
+   "lost": 21,
+   "goals": "31-78",
+   "gd": -47,
    "pts": 20
   }
  ],
@@ -1255,6 +1255,234 @@
     28,
     20,
     -43
+   ]
+  ],
+  "2026-11-01": [
+   [
+    "Haugesund",
+    1,
+    29,
+    65,
+    36
+   ],
+   [
+    "Strømsgodset",
+    2,
+    29,
+    63,
+    45
+   ],
+   [
+    "Kongsvinger",
+    3,
+    28,
+    59,
+    37
+   ],
+   [
+    "Stabæk",
+    4,
+    28,
+    55,
+    32
+   ],
+   [
+    "Odd",
+    5,
+    29,
+    46,
+    11
+   ],
+   [
+    "Bryne",
+    6,
+    29,
+    43,
+    2
+   ],
+   [
+    "Ranheim",
+    7,
+    29,
+    41,
+    4
+   ],
+   [
+    "Egersund",
+    8,
+    29,
+    38,
+    -9
+   ],
+   [
+    "Hødd",
+    9,
+    29,
+    38,
+    -10
+   ],
+   [
+    "Strømmen",
+    10,
+    29,
+    36,
+    -12
+   ],
+   [
+    "Lyn",
+    11,
+    29,
+    34,
+    -13
+   ],
+   [
+    "Sogndal",
+    12,
+    29,
+    30,
+    -15
+   ],
+   [
+    "Sandnes Ulf",
+    13,
+    29,
+    30,
+    -16
+   ],
+   [
+    "Moss",
+    14,
+    29,
+    29,
+    -21
+   ],
+   [
+    "Åsane",
+    15,
+    29,
+    25,
+    -24
+   ],
+   [
+    "Raufoss",
+    16,
+    29,
+    20,
+    -47
+   ]
+  ],
+  "2026-11-04": [
+   [
+    "Haugesund",
+    1,
+    29,
+    65,
+    36
+   ],
+   [
+    "Strømsgodset",
+    2,
+    29,
+    63,
+    45
+   ],
+   [
+    "Kongsvinger",
+    3,
+    29,
+    59,
+    36
+   ],
+   [
+    "Stabæk",
+    4,
+    29,
+    58,
+    33
+   ],
+   [
+    "Odd",
+    5,
+    29,
+    46,
+    11
+   ],
+   [
+    "Bryne",
+    6,
+    29,
+    43,
+    2
+   ],
+   [
+    "Ranheim",
+    7,
+    29,
+    41,
+    4
+   ],
+   [
+    "Egersund",
+    8,
+    29,
+    38,
+    -9
+   ],
+   [
+    "Hødd",
+    9,
+    29,
+    38,
+    -10
+   ],
+   [
+    "Strømmen",
+    10,
+    29,
+    36,
+    -12
+   ],
+   [
+    "Lyn",
+    11,
+    29,
+    34,
+    -13
+   ],
+   [
+    "Sogndal",
+    12,
+    29,
+    30,
+    -15
+   ],
+   [
+    "Sandnes Ulf",
+    13,
+    29,
+    30,
+    -16
+   ],
+   [
+    "Moss",
+    14,
+    29,
+    29,
+    -21
+   ],
+   [
+    "Åsane",
+    15,
+    29,
+    25,
+    -24
+   ],
+   [
+    "Raufoss",
+    16,
+    29,
+    20,
+    -47
    ]
   ]
  }

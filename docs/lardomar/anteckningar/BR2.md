@@ -4,29 +4,29 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR2.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/BR2.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 323 | 42,7 % | 45,9 % | −3,1 pe (−1,1) | 44,0 % | 101 / 84 | modell (inga odds) |
-| 2026/27 | 349 | 46,7 % | 43,6 % | +3,1 pe (1,2) | 44,4 % | 94 / 92 | modell (inga odds) |
+| 2026/27 | 359 | 46,5 % | 43,7 % | +2,8 pe (1,1) | 44,6 % | 97 / 95 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,2). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,1). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
 | Säsong | Matcher | Favoriten vann | Oddsens förväntan | z | Kryss | Kryss väntat | z |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 31 | 54,8 % | 51,9 % | 0,3 | 19,4 % | 25,9 % | −0,8 |
+| 2026/27 | 40 | 52,5 % | 51,7 % | 0,1 | 22,5 % | 25,9 % | −0,5 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 6 av 31 (19,4 %) mot väntat 8,0 (z −0,8).
-- Hemmafavoriter vann 12 av 25 (väntat 13,1), bortafavoriter 5 av 6 (väntat 3,0), favoriter ≥ 60 % 6 av 8 (väntat 5,7).
-- Lag sämst mot oddsen (poäng mot förväntat): Operário PR −4,2 (3 m), América Mineiro −3,3 (4 m), Athletic −2,9 (3 m), Náutico −2,8 (3 m).
-- Lag bäst mot oddsen: Novorizontino +3,0 (3 m), Vila Nova +2,7 (3 m), Botafogo-SP +2,5 (4 m), Fortaleza +2,4 (3 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 9 av 40 (22,5 %) mot väntat 10,4 (z −0,5).
+- Hemmafavoriter vann 16 av 34 (väntat 17,6), bortafavoriter 5 av 6 (väntat 3,0), favoriter ≥ 60 % 8 av 10 (väntat 7,2).
+- Lag sämst mot oddsen (poäng mot förväntat): Operário PR −4,8 (4 m), Londrina −4,1 (4 m), Cuiabá −3,2 (4 m), Náutico −1,4 (4 m).
+- Lag bäst mot oddsen: Novorizontino +3,8 (4 m), Vila Nova +2,2 (4 m), Goiás +2,2 (3 m), Botafogo-SP +2,1 (5 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 - Grundmodellen och oddsen var oense i 6 matcher: grundmodellen rätt 0, oddsen rätt 5.
 - Dixon-Coles och oddsen var oense i 5 matcher: DC rätt 1.
 

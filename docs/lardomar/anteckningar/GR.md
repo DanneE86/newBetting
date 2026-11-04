@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/GR.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/GR.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 236 | 50,8 % | 51,7 % | −0,9 pe (−0,3) | 41,1 % | 66 / 50 | modell (inga odds) |
-| 2026/27 | 55 | 61,8 % | 51,0 % | +10,8 pe (1,6) | 49,1 % | 11 / 10 | modell (inga odds) |
+| 2026/27 | 62 | 61,3 % | 50,5 % | +10,8 pe (1,7) | 50,0 % | 12 / 12 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,6). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,7). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,16 +23,16 @@ Bedömning 2026/27: inom slumpen (z 1,6). Tipsen slår att alltid tippa hemma.
 | 2023/24 | 240 | 57,5 % | 56,2 % | 0,4 | 25,8 % | 24,4 % | 0,5 |
 | 2024/25 | 233 | 51,5 % | 54,9 % | −1,1 | 22,3 % | 25,7 % | −1,2 |
 | 2025/26 | 236 | 53,0 % | 55,6 % | −0,8 | 28,4 % | 25,1 % | 1,2 |
-| 2026/27 | 55 | 65,5 % | 58,4 % | 1,1 | 20,0 % | 23,6 % | −0,6 |
+| 2026/27 | 62 | 64,5 % | 57,5 % | 1,2 | 19,4 % | 24,4 % | −0,9 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 11 av 55 (20,0 %) mot väntat 13,0 (z −0,6).
-- Hemmafavoriter vann 25 av 38 (väntat 21,7), bortafavoriter 11 av 17 (väntat 10,4), favoriter ≥ 60 % 22 av 27 (väntat 19,7).
-- Lag sämst mot oddsen (poäng mot förväntat): Atromitos −5,7 (7 m), Levadeiakos −5,1 (8 m), Volos NFC −4,3 (8 m), Asteras Tripolis −3,1 (8 m).
-- Lag bäst mot oddsen: OFI Crete +4,7 (8 m), Aris +4,0 (8 m), Panathinaikos +3,6 (8 m), Kalamata +3,0 (8 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
-- Grundmodellen och oddsen var oense i 3 matcher: grundmodellen rätt 0, oddsen rätt 2.
-- Dixon-Coles och oddsen var oense i 7 matcher: DC rätt 0.
+- Kryss: 12 av 62 (19,4 %) mot väntat 15,1 (z −0,9).
+- Hemmafavoriter vann 28 av 42 (väntat 23,6), bortafavoriter 13 av 20 (väntat 11,9), favoriter ≥ 60 % 24 av 29 (väntat 21,1).
+- Lag sämst mot oddsen (poäng mot förväntat): Volos NFC −5,3 (9 m), Atromitos −4,5 (8 m), Asteras Tripolis −4,2 (9 m), Levadeiakos −3,3 (9 m).
+- Lag bäst mot oddsen: OFI Crete +6,3 (9 m), Panathinaikos +4,3 (9 m), Aris +2,5 (9 m), Kalamata +2,4 (9 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Grundmodellen och oddsen var oense i 4 matcher: grundmodellen rätt 0, oddsen rätt 3.
+- Dixon-Coles och oddsen var oense i 9 matcher: DC rätt 1.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -40,12 +40,12 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
-| Oddsen rör sig bort från favoriten (öppning → stängning) | 560 / 250 | −5,7 pe (−2,8) | −9,4 pe (−3,1) | +2,9 pe (1,6) | +3,3 pe (1,2) | bekräftad: favoriten överskattad |
-| Målsnål match (över 2,5 < 45 %) | 985 / 311 | −4,1 pe (−2,6) | −3,2 pe (−1,1) | +3,9 pe (2,7) | +1,2 pe (0,5) | ingen säker effekt |
+| Oddsen rör sig bort från favoriten (öppning → stängning) | 560 / 251 | −5,7 pe (−2,8) | −9,5 pe (−3,1) | +2,9 pe (1,6) | +3,2 pe (1,2) | bekräftad: favoriten överskattad |
+| Målsnål match (över 2,5 < 45 %) | 985 / 313 | −4,1 pe (−2,6) | −3,1 pe (−1,1) | +3,9 pe (2,7) | +1,3 pe (0,5) | ingen säker effekt |
 | Omgång 1–5 | 221 / 142 | −2,4 pe (−0,7) | −3,8 pe (−1,0) | +4,8 pe (1,6) | +7,7 pe (2,2) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 248 / 168 | +6,6 pe (2,5) | +2,8 pe (0,9) | −3,9 pe (−1,7) | −0,8 pe (−0,3) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 500 / 252 | −5,1 pe (−2,3) | −3,3 pe (−1,1) | +4,4 pe (2,1) | +1,4 pe (0,5) | ingen säker effekt |
-| Bortafavorit | 415 / 235 | +2,2 pe (0,9) | −0,1 pe (−0,0) | −1,0 pe (−0,5) | +0,0 pe (0,0) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 248 / 169 | +6,6 pe (2,5) | +2,9 pe (0,9) | −3,9 pe (−1,7) | −0,9 pe (−0,3) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 500 / 255 | −5,1 pe (−2,3) | −3,0 pe (−1,0) | +4,4 pe (2,1) | +1,5 pe (0,5) | ingen säker effekt |
+| Bortafavorit | 415 / 238 | +2,2 pe (0,9) | +0,1 pe (0,0) | −1,0 pe (−0,5) | −0,3 pe (−0,1) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

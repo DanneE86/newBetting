@@ -1,49 +1,89 @@
 # Datagranskning per liga
 
-Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med sämst täckning först.
+Genererad 2026-11-04 06:48:49 av `node scripts/audit-leagues.mjs`. Sorterad med sämst täckning först.
 
 "Odds ≤7 d" = andel tips inom 7 dagar som har odds (bolagen prissätter sällan längre fram).
 
 | Liga | Täckning | Matcher (säsong) | Senaste res. | Tips (≤7 d) | Odds ≤7 d | Closing-odds hist. | Skott | Hörn-tips | DC känner | Hitrate |
 |---|---|---|---|---|---|---|---|---|---|---|
-| SE3S Div 1 Södra | 35 | 439 (199) | 2026-10-03 | 1 (1) | 0 % | 0 % | 0 % | 0 % | 100 % | 52 % (n=565) |
-| HR HNL | 45 | 227 (39) | 2026-09-20 | 5 (5) | 60 % | 0 % | 0 % | 0 % | 100 % | 55 % (n=95) |
-| SE2 Superettan | 55 | 439 (199) | 2026-09-20 | 8 (7) | 100 % | 0 % | 0 % | 0 % | 100 % | 51 % (n=565) |
-| SE3N Div 1 Norra | 55 | 438 (198) | 2026-10-03 | 2 (2) | 100 % | 0 % | 0 % | 0 % | 100 % | 55 % (n=562) |
-| NO2 OBOS-ligaen | 55 | 429 (189) | 2026-10-03 | 3 (2) | 100 % | 0 % | 0 % | 0 % | 100 % | 60 % (n=533) |
-| CZ Chance Liga | 55 | 341 (71) | 2026-09-20 | 8 (8) | 100 % | 0 % | 0 % | 0 % | 100 % | 49 % (n=181) |
-| BR2 Brasileirão Série B | 65 | 690 (310) | 2026-10-03 | 40 (15) | 67 % | 0 % | 100 % | 0 % | 100 % | 53 % (n=890) |
-| BR Brasileirão Série A | 70 | 1037 (277) | 2026-09-20 | 38 (17) | 100 % | 100 % | 0 % | 0 % | 100 % | 52 % (n=789) |
-| NO Eliteserien | 70 | 650 (168) | 2026-09-20 | 24 (7) | 100 % | 100 % | 0 % | 0 % | 100 % | 57 % (n=468) |
-| EK Ekstraklasa | 70 | 690 (78) | 2026-09-20 | 10 (8) | 100 % | 100 % | 0 % | 0 % | 100 % | 56 % (n=196) |
-| DK Superligaen | 70 | 438 (54) | 2026-09-20 | 17 (5) | 100 % | 100 % | 0 % | 0 % | 100 % | 46 % (n=138) |
-| JP1 J1 League | 70 | 840 (80) | 2026-09-20 | 40 (10) | 100 % | 100 % | 0 % | 0 % | 100 % | 55 % (n=200) |
-| MX Liga MX | 70 | 764 (88) | 2026-09-28 | 34 (8) | 100 % | 100 % | 0 % | 0 % | 100 % | 45 % (n=228) |
-| MLS MLS | 70 | 1466 (404) | 2026-10-02 | 62 (17) | 100 % | 100 % | 0 % | 0 % | 100 % | 58 % (n=1152) |
-| AR Liga Profesional | 70 | 1495 (404) | 2026-09-22 | 54 (20) | 100 % | 100 % | 0 % | 0 % | 100 % | 50 % (n=1152) |
-| COL Primera A | 74 | 766 (315) | 2026-10-03 | 39 (14) | 100 % | 0 % | 99 % | 0 % | 100 % | 49 % (n=903) |
-| AS Allsvenskan | 78 | 658 (176) | 2026-09-20 | 24 (6) | 100 % | 100 % | 0 % | 0 % | 100 % | 54 % (n=496) |
-| BL Bundesliga | 81 | 648 (36) | 2026-09-20 | 18 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 60 % (n=72) |
-| SB Serie B | 84 | 810 (50) | 2026-09-20 | 30 (10) | 100 % | 100 % | 100 % | 100 % | 100 % | 44 % (n=110) |
-| L1 Ligue 1 | 84 | 657 (45) | 2026-09-20 | 18 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 54 % (n=99) |
-| PL Premier League | 85 | 1190 (50) | 2026-09-20 | 20 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 45 % (n=110) |
-| LL2 LaLiga 2 | 85 | 1001 (77) | 2026-09-28 | 38 (13) | 69 % | 100 % | 100 % | 100 % | 100 % | 54 % (n=187) |
-| SA Serie A | 86 | 810 (50) | 2026-09-20 | 20 (8) | 100 % | 100 % | 100 % | 50 % | 100 % | 57 % (n=110) |
-| BL2 2. Bundesliga | 88 | 666 (54) | 2026-09-20 | 27 (9) | 100 % | 100 % | 100 % | 100 % | 100 % | 49 % (n=126) |
-| GR Super League | 89 | 504 (35) | 2026-09-20 | 21 (6) | 100 % | 100 % | 100 % | 100 % | 100 % | 61 % (n=75) |
-| LL La Liga | 90 | 829 (69) | 2026-09-20 | 20 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 60 % (n=167) |
-| EL1 League One | 91 | 1191 (87) | 2026-09-26 | 48 (12) | 100 % | 100 % | 100 % | 100 % | 100 % | 45 % (n=213) |
-| CH Championship | 95 | 1751 (95) | 2026-09-20 | 12 (12) | 100 % | 100 % | 100 % | 100 % | 100 % | 55 % (n=237) |
-| ED Eredivisie | 96 | 675 (63) | 2026-09-20 | 9 (9) | 100 % | 100 % | 100 % | 100 % | 100 % | 63 % (n=153) |
-| PT Primeira Liga | 96 | 674 (62) | 2026-09-20 | 17 (8) | 100 % | 100 % | 100 % | 94 % | 100 % | 53 % (n=148) |
-| CL Champions League | cup | 0 (0) | — | 18 (0) | — | — | — | 0 % | 0 % | — |
-| EL Europa League | cup | 0 (0) | — | 18 (0) | — | — | — | 0 % | 0 % | — |
-| ECL Conference League | cup | 0 (0) | — | 18 (0) | — | — | — | 0 % | 0 % | — |
+| SE3N Div 1 Norra | 35 | 472 (232) | 2026-11-01 | 8 (8) | 0 % | 0 % | 0 % | 0 % | 100 % | 56 % (n=664) |
+| SE3S Div 1 Södra | 35 | 472 (232) | 2026-11-01 | 8 (8) | 0 % | 0 % | 0 % | 0 % | 100 % | 54 % (n=664) |
+| SE2 Superettan | 40 | 471 (231) | 2026-11-02 | 8 (8) | 25 % | 0 % | 0 % | 0 % | 100 % | 51 % (n=661) |
+| URU Primera División | 42 | 581 (281) | 2026-11-02 | 0 (0) | — | 0 % | 0 % | — | — | 51 % (n=811) |
+| AUS A-League | 51 | 180 (17) | 2026-11-01 | 11 (6) | 100 % | 0 % | 100 % | 0 % | 100 % | 53 % (n=19) |
+| NO2 OBOS-ligaen | 55 | 472 (232) | 2026-11-02 | 8 (8) | 100 % | 0 % | 0 % | 0 % | 100 % | 62 % (n=662) |
+| HR HNL | 55 | 247 (59) | 2026-11-01 | 5 (5) | 100 % | 0 % | 0 % | 0 % | 100 % | 52 % (n=155) |
+| CZ Chance Liga | 55 | 372 (102) | 2026-11-01 | 9 (9) | 100 % | 0 % | 0 % | 0 % | 100 % | 53 % (n=274) |
+| KR K League 1 | 55 | 432 (204) | 2026-11-01 | 6 (6) | 100 % | 0 % | 0 % | 0 % | 100 % | 47 % (n=584) |
+| CAN Canadian Premier League | 55 | 231 (114) | 2026-11-01 | 2 (2) | 100 % | 0 % | 0 % | 0 % | 100 % | 54 % (n=324) |
+| BR Brasileirão Série A | 70 | 1090 (330) | 2026-11-02 | 28 (7) | 100 % | 100 % | 0 % | 0 % | 100 % | 53 % (n=948) |
+| BR2 Brasileirão Série B | 70 | 739 (359) | 2026-11-02 | 20 (10) | 90 % | 0 % | 100 % | 0 % | 100 % | 52 % (n=1037) |
+| NO Eliteserien | 70 | 682 (200) | 2026-11-01 | 16 (8) | 100 % | 100 % | 0 % | 0 % | 100 % | 59 % (n=564) |
+| EK Ekstraklasa | 70 | 727 (115) | 2026-11-02 | 9 (9) | 100 % | 100 % | 0 % | 0 % | 100 % | 57 % (n=307) |
+| DK Superligaen | 70 | 462 (78) | 2026-11-02 | 12 (6) | 100 % | 100 % | 0 % | 0 % | 100 % | 53 % (n=210) |
+| JP1 J1 League | 70 | 890 (130) | 2026-11-01 | 27 (10) | 100 % | 100 % | 0 % | 0 % | 100 % | 52 % (n=350) |
+| MX Liga MX | 70 | 810 (134) | 2026-11-02 | 19 (9) | 100 % | 100 % | 0 % | 0 % | 100 % | 47 % (n=366) |
+| MLS MLS | 70 | 1557 (495) | 2026-11-02 | 15 (15) | 100 % | 100 % | 0 % | 0 % | 100 % | 59 % (n=1425) |
+| AR Liga Profesional | 70 | 1570 (479) | 2026-11-03 | 16 (16) | 100 % | 100 % | 0 % | 0 % | 100 % | 50 % (n=1377) |
+| SAU Saudi Pro League | 73 | 406 (100) | 2026-10-31 | 18 (9) | 100 % | 0 % | 98 % | 0 % | 100 % | 53 % (n=264) |
+| COL Primera A | 74 | 819 (368) | 2026-11-03 | 22 (22) | 100 % | 0 % | 99 % | 0 % | 100 % | 49 % (n=1062) |
+| AS Allsvenskan | 78 | 697 (215) | 2026-11-02 | 16 (8) | 100 % | 100 % | 0 % | 0 % | 100 % | 53 % (n=613) |
+| CH Championship | 90 | 1812 (156) | 2026-10-31 | 14 (14) | 100 % | 100 % | 100 % | 21 % | 100 % | 52 % (n=420) |
+| LL La Liga | 92 | 869 (109) | 2026-11-02 | 20 (10) | 100 % | 100 % | 100 % | 50 % | 95 % | 57 % (n=287) |
+| SA Serie A | 93 | 860 (100) | 2026-11-02 | 20 (10) | 100 % | 100 % | 100 % | 50 % | 100 % | 57 % (n=260) |
+| BL Bundesliga | 93 | 684 (72) | 2026-11-01 | 18 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 60 % (n=180) |
+| L1 Ligue 1 | 93 | 693 (81) | 2026-11-02 | 18 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 53 % (n=207) |
+| ED Eredivisie | 93 | 711 (99) | 2026-11-01 | 18 (9) | 100 % | 100 % | 100 % | 50 % | 100 % | 62 % (n=261) |
+| PL Premier League | 95 | 1230 (90) | 2026-11-02 | 20 (10) | 100 % | 100 % | 100 % | 50 % | 100 % | 49 % (n=230) |
+| EL1 League One | 96 | 1259 (155) | 2026-11-01 | 29 (1) | 100 % | 100 % | 100 % | 100 % | 100 % | 51 % (n=417) |
+| SB Serie B | 96 | 860 (100) | 2026-11-01 | 30 (10) | 100 % | 100 % | 100 % | 100 % | 100 % | 43 % (n=260) |
+| LL2 LaLiga 2 | 97 | 1055 (131) | 2026-11-02 | 33 (11) | 100 % | 100 % | 100 % | 100 % | 100 % | 50 % (n=349) |
+| BL2 2. Bundesliga | 97 | 702 (90) | 2026-11-01 | 18 (9) | 100 % | 100 % | 100 % | 100 % | 100 % | 53 % (n=234) |
+| PT Primeira Liga | 98 | 702 (90) | 2026-11-02 | 9 (9) | 100 % | 100 % | 100 % | 100 % | 100 % | 51 % (n=232) |
+| GR Super League | 98 | 531 (62) | 2026-11-02 | 14 (7) | 100 % | 100 % | 100 % | 100 % | 100 % | 60 % (n=156) |
+| BE Pro League | 99 | 712 (89) | 2026-11-01 | 19 (10) | 100 % | 100 % | 100 % | 100 % | 100 % | 55 % (n=231) |
+| SC Premiership | 99 | 525 (69) | 2026-11-01 | 14 (6) | 100 % | 100 % | 100 % | 100 % | 100 % | 50 % (n=183) |
+| CL Champions League | cup | 0 (0) | — | 9 (9) | 100 % | — | — | 0 % | 0 % | — |
+| EL Europa League | cup | 0 (0) | — | 18 (18) | 100 % | — | — | 0 % | 0 % | — |
+| ECL Conference League | cup | 0 (0) | — | 17 (17) | 100 % | — | — | 0 % | 0 % | — |
+| ACL AFC Champions League Elite | cup | 0 (0) | — | 1 (1) | 100 % | — | — | 0 % | 0 % | — |
+| ACL2 AFC Champions League Two | cup | 0 (0) | — | 0 (0) | — | — | — | — | — | — |
+| LIB Copa Libertadores | cup | 0 (0) | — | 0 (0) | — | — | — | — | — | — |
+| SUD Copa Sudamericana | cup | 0 (0) | — | 1 (0) | — | — | — | 0 % | 0 % | — |
 
 ## Luckor per liga
 
+### SE3N — Div 1 Norra
+- !! Odds saknas pa 100 % av tipsen inom 7 dagar → kor odds/oddsportal
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
 ### SE3S — Div 1 Södra
 - !! Odds saknas pa 100 % av tipsen inom 7 dagar → kor odds/oddsportal
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
+### SE2 — Superettan
+- !! Odds saknas pa 75 % av tipsen inom 7 dagar → kor odds/oddsportal
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
+### URU — Primera División
+- !! Inga kommande matcher → spelschema saknas (sasongsuppehall?)
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+
+### AUS — A-League
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
+### NO2 — OBOS-ligaen
 - !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
 - ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
@@ -55,35 +95,30 @@ Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med 
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
-### SE2 — Superettan
-- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
-- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
-- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
-
-### SE3N — Div 1 Norra
-- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
-- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
-- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
-- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
-
-### NO2 — OBOS-ligaen
-- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
-- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
-- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
-- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
-
 ### CZ — Chance Liga
 - !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
 - ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
-### BR2 — Brasileirão Série B
+### KR — K League 1
 - !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
+### CAN — Canadian Premier League
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
+- ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
 ### BR — Brasileirão Série A
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
+### BR2 — Brasileirão Série B
+- !!! Omappade lagnamn: TBD Home, TBD Away → lagg alias i fetch-extra-leagues.mjs
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
 ### NO — Eliteserien
@@ -95,7 +130,6 @@ Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med 
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
 ### DK — Superligaen
-- !! Svag traffsakerhet 46 % (n=138) → sank vikt/krav hogre edge i ligan
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
@@ -104,7 +138,7 @@ Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med 
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
 ### MX — Liga MX
-- !! Svag traffsakerhet 45 % (n=228) → sank vikt/krav hogre edge i ligan
+- !! Svag traffsakerhet 47 % (n=366) → sank vikt/krav hogre edge i ligan
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
@@ -116,6 +150,10 @@ Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med 
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
+### SAU — Saudi Pro League
+- !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
 ### COL — Primera A
 - !! Historiska closing-odds saknas (ingen CLV/facit) → begransat av kallan
 - ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan
@@ -125,11 +163,11 @@ Genererad 2026-10-04 11:25:03 av `node scripts/audit-leagues.mjs`. Sorterad med 
 - ! Skottdata saknas (ingen xG-proxy) → begransat av kallan
 - ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
 
+### CH — Championship
+- ! Horntips saknas (ingen hornhistorik) → kallan saknar HC/AC
+
 ### SB — Serie B
-- !! Svag traffsakerhet 44 % (n=110) → sank vikt/krav hogre edge i ligan
+- !! Svag traffsakerhet 43 % (n=260) → sank vikt/krav hogre edge i ligan
 
-### PL — Premier League
-- !! Svag traffsakerhet 45 % (n=110) → sank vikt/krav hogre edge i ligan
-
-### EL1 — League One
-- !! Svag traffsakerhet 45 % (n=213) → sank vikt/krav hogre edge i ligan
+### ACL — AFC Champions League Elite
+- ! Inga O/U-odds inom 7 dagar → bara 1X2 fran reservkallan

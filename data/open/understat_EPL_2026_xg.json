@@ -4,23 +4,23 @@
     "understatLeague":  "EPL",
     "seasonCode":  "2026",
     "seasonLabel":  "2026/27",
-    "updatedAt":  "2026-10-30T09:46:07.5850866+01:00",
+    "updatedAt":  "2026-11-01T19:15:49.5995534+01:00",
     "teamCount":  20,
     "teams":  [
                   {
                       "understatTitle":  "Aston Villa",
                       "name":  "Aston Villa",
-                      "played":  8,
-                      "xG":  9.556,
-                      "xGA":  15.343,
-                      "xGpg":  1.195,
-                      "xGApg":  1.918,
-                      "goalsFor":  9,
-                      "goalsAgainst":  12,
+                      "played":  9,
+                      "xG":  11.802,
+                      "xGA":  18.111,
+                      "xGpg":  1.311,
+                      "xGApg":  2.012,
+                      "goalsFor":  10,
+                      "goalsAgainst":  13,
                       "home":  {
-                                   "xGApg":  1.971,
-                                   "xGpg":  0.964,
-                                   "played":  4
+                                   "xGApg":  2.131,
+                                   "xGpg":  1.22,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.864,
@@ -52,17 +52,17 @@
                   {
                       "understatTitle":  "Bournemouth",
                       "name":  "Bournemouth",
-                      "played":  8,
-                      "xG":  16.722,
-                      "xGA":  9.306,
-                      "xGpg":  2.09,
-                      "xGApg":  1.163,
-                      "goalsFor":  12,
+                      "played":  9,
+                      "xG":  18.179,
+                      "xGA":  10.294,
+                      "xGpg":  2.02,
+                      "xGApg":  1.144,
+                      "goalsFor":  14,
                       "goalsAgainst":  13,
                       "home":  {
-                                   "xGApg":  0.961,
-                                   "xGpg":  2.535,
-                                   "played":  4
+                                   "xGApg":  0.966,
+                                   "xGpg":  2.319,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.366,
@@ -73,59 +73,59 @@
                   {
                       "understatTitle":  "Sunderland",
                       "name":  "Sunderland",
-                      "played":  8,
-                      "xG":  12.059,
-                      "xGA":  15.945,
-                      "xGpg":  1.507,
-                      "xGApg":  1.993,
-                      "goalsFor":  6,
-                      "goalsAgainst":  14,
+                      "played":  9,
+                      "xG":  13.656,
+                      "xGA":  16.918,
+                      "xGpg":  1.517,
+                      "xGApg":  1.88,
+                      "goalsFor":  7,
+                      "goalsAgainst":  17,
                       "home":  {
                                    "xGApg":  1.43,
                                    "xGpg":  1.381,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  2.556,
-                                   "xGpg":  1.633,
-                                   "played":  4
+                                   "xGApg":  2.24,
+                                   "xGpg":  1.626,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Crystal Palace",
                       "name":  "Crystal Palace",
-                      "played":  8,
-                      "xG":  12.489,
-                      "xGA":  17.334,
-                      "xGpg":  1.561,
-                      "xGApg":  2.167,
+                      "played":  9,
+                      "xG":  12.626,
+                      "xGA":  21.053,
+                      "xGpg":  1.403,
+                      "xGApg":  2.339,
                       "goalsFor":  9,
-                      "goalsAgainst":  19,
+                      "goalsAgainst":  21,
                       "home":  {
                                    "xGApg":  2.416,
                                    "xGpg":  1.535,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.918,
-                                   "xGpg":  1.587,
-                                   "played":  4
+                                   "xGApg":  2.278,
+                                   "xGpg":  1.297,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Chelsea",
                       "name":  "Chelsea",
-                      "played":  8,
-                      "xG":  12.378,
-                      "xGA":  13.523,
-                      "xGpg":  1.547,
-                      "xGApg":  1.69,
-                      "goalsFor":  17,
+                      "played":  9,
+                      "xG":  15.165,
+                      "xGA":  14.909,
+                      "xGpg":  1.685,
+                      "xGApg":  1.657,
+                      "goalsFor":  19,
                       "goalsAgainst":  15,
                       "home":  {
-                                   "xGApg":  1.563,
-                                   "xGpg":  1.719,
-                                   "played":  4
+                                   "xGApg":  1.527,
+                                   "xGpg":  1.933,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.818,
@@ -136,17 +136,17 @@
                   {
                       "understatTitle":  "Tottenham",
                       "name":  "Tottenham",
-                      "played":  8,
-                      "xG":  9.806,
-                      "xGA":  11.665,
-                      "xGpg":  1.226,
-                      "xGApg":  1.458,
-                      "goalsFor":  8,
+                      "played":  9,
+                      "xG":  13.525,
+                      "xGA":  11.802,
+                      "xGpg":  1.503,
+                      "xGApg":  1.311,
+                      "goalsFor":  10,
                       "goalsAgainst":  10,
                       "home":  {
-                                   "xGApg":  1.366,
-                                   "xGpg":  1.138,
-                                   "played":  4
+                                   "xGApg":  1.12,
+                                   "xGpg":  1.654,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.55,
@@ -220,17 +220,17 @@
                   {
                       "understatTitle":  "Manchester City",
                       "name":  "Man City",
-                      "played":  8,
-                      "xG":  18.921,
-                      "xGA":  9.954,
-                      "xGpg":  2.365,
-                      "xGApg":  1.244,
+                      "played":  9,
+                      "xG":  21.578,
+                      "xGA":  11.52,
+                      "xGpg":  2.398,
+                      "xGApg":  1.28,
                       "goalsFor":  20,
-                      "goalsAgainst":  9,
+                      "goalsAgainst":  10,
                       "home":  {
-                                   "xGApg":  1.67,
-                                   "xGpg":  2.835,
-                                   "played":  4
+                                   "xGApg":  1.649,
+                                   "xGpg":  2.8,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  0.819,
@@ -241,38 +241,38 @@
                   {
                       "understatTitle":  "Manchester United",
                       "name":  "Man United",
-                      "played":  8,
-                      "xG":  13.378,
-                      "xGA":  13.223,
-                      "xGpg":  1.672,
-                      "xGApg":  1.653,
+                      "played":  9,
+                      "xG":  14.764,
+                      "xGA":  16.01,
+                      "xGpg":  1.64,
+                      "xGApg":  1.779,
                       "goalsFor":  10,
-                      "goalsAgainst":  13,
+                      "goalsAgainst":  15,
                       "home":  {
                                    "xGApg":  1.886,
                                    "xGpg":  1.88,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.42,
-                                   "xGpg":  1.464,
-                                   "played":  4
+                                   "xGApg":  1.693,
+                                   "xGpg":  1.449,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Hull",
                       "name":  "Hull",
-                      "played":  8,
-                      "xG":  9.332,
-                      "xGA":  13.962,
-                      "xGpg":  1.166,
-                      "xGApg":  1.745,
-                      "goalsFor":  9,
-                      "goalsAgainst":  8,
+                      "played":  9,
+                      "xG":  9.938,
+                      "xGA":  15.62,
+                      "xGpg":  1.104,
+                      "xGApg":  1.736,
+                      "goalsFor":  11,
+                      "goalsAgainst":  10,
                       "home":  {
-                                   "xGApg":  1.979,
-                                   "xGpg":  1.445,
-                                   "played":  4
+                                   "xGApg":  1.915,
+                                   "xGpg":  1.277,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.511,
@@ -283,12 +283,12 @@
                   {
                       "understatTitle":  "Brighton",
                       "name":  "Brighton",
-                      "played":  8,
-                      "xG":  18.1,
-                      "xGA":  11.405,
-                      "xGpg":  2.263,
-                      "xGApg":  1.426,
-                      "goalsFor":  23,
+                      "played":  9,
+                      "xG":  19.666,
+                      "xGA":  14.062,
+                      "xGpg":  2.185,
+                      "xGApg":  1.562,
+                      "goalsFor":  24,
                       "goalsAgainst":  7,
                       "home":  {
                                    "xGApg":  1.094,
@@ -296,46 +296,46 @@
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.757,
-                                   "xGpg":  1.878,
-                                   "played":  4
+                                   "xGApg":  1.937,
+                                   "xGpg":  1.816,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Fulham",
                       "name":  "Fulham",
-                      "played":  8,
-                      "xG":  12.589,
-                      "xGA":  12.221,
-                      "xGpg":  1.574,
-                      "xGApg":  1.528,
-                      "goalsFor":  8,
-                      "goalsAgainst":  10,
+                      "played":  9,
+                      "xG":  15.357,
+                      "xGA":  14.467,
+                      "xGpg":  1.706,
+                      "xGApg":  1.607,
+                      "goalsFor":  9,
+                      "goalsAgainst":  11,
                       "home":  {
                                    "xGApg":  1.8,
                                    "xGpg":  2.073,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.256,
-                                   "xGpg":  1.074,
-                                   "played":  4
+                                   "xGApg":  1.454,
+                                   "xGpg":  1.413,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Brentford",
                       "name":  "Brentford",
-                      "played":  8,
-                      "xG":  14.361,
-                      "xGA":  12.821,
-                      "xGpg":  1.795,
-                      "xGApg":  1.603,
-                      "goalsFor":  14,
+                      "played":  9,
+                      "xG":  15.193,
+                      "xGA":  13.779,
+                      "xGpg":  1.688,
+                      "xGApg":  1.531,
+                      "goalsFor":  16,
                       "goalsAgainst":  9,
                       "home":  {
-                                   "xGApg":  1.336,
-                                   "xGpg":  2.241,
-                                   "played":  4
+                                   "xGApg":  1.261,
+                                   "xGpg":  1.959,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.869,
@@ -346,80 +346,80 @@
                   {
                       "understatTitle":  "Leeds",
                       "name":  "Leeds",
-                      "played":  8,
-                      "xG":  10.9,
-                      "xGA":  10.838,
-                      "xGpg":  1.362,
-                      "xGApg":  1.355,
+                      "played":  9,
+                      "xG":  11.888,
+                      "xGA":  12.295,
+                      "xGpg":  1.321,
+                      "xGApg":  1.366,
                       "goalsFor":  9,
-                      "goalsAgainst":  6,
+                      "goalsAgainst":  8,
                       "home":  {
                                    "xGApg":  1.154,
                                    "xGpg":  1.484,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.555,
-                                   "xGpg":  1.241,
-                                   "played":  4
+                                   "xGApg":  1.536,
+                                   "xGpg":  1.19,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Nottingham Forest",
                       "name":  "Nott\u0027m Forest",
-                      "played":  8,
-                      "xG":  15.747,
-                      "xGA":  9.032,
-                      "xGpg":  1.968,
-                      "xGApg":  1.129,
+                      "played":  9,
+                      "xG":  16.705,
+                      "xGA":  9.864,
+                      "xGpg":  1.856,
+                      "xGApg":  1.096,
                       "goalsFor":  6,
-                      "goalsAgainst":  10,
+                      "goalsAgainst":  12,
                       "home":  {
                                    "xGApg":  0.89,
                                    "xGpg":  0.889,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  1.368,
-                                   "xGpg":  3.048,
-                                   "played":  4
+                                   "xGApg":  1.261,
+                                   "xGpg":  2.63,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Ipswich",
                       "name":  "Ipswich",
-                      "played":  8,
-                      "xG":  10.612,
-                      "xGA":  18.85,
-                      "xGpg":  1.326,
-                      "xGApg":  2.356,
-                      "goalsFor":  12,
-                      "goalsAgainst":  16,
+                      "played":  9,
+                      "xG":  12.269,
+                      "xGA":  19.456,
+                      "xGpg":  1.363,
+                      "xGApg":  2.162,
+                      "goalsFor":  14,
+                      "goalsAgainst":  18,
                       "home":  {
                                    "xGApg":  1.614,
                                    "xGpg":  1.075,
                                    "played":  4
                                },
                       "away":  {
-                                   "xGApg":  3.099,
-                                   "xGpg":  1.578,
-                                   "played":  4
+                                   "xGApg":  2.6,
+                                   "xGpg":  1.594,
+                                   "played":  5
                                }
                   },
                   {
                       "understatTitle":  "Coventry",
                       "name":  "Coventry",
-                      "played":  8,
-                      "xG":  8.186,
-                      "xGA":  12.351,
-                      "xGpg":  1.023,
-                      "xGApg":  1.544,
-                      "goalsFor":  6,
-                      "goalsAgainst":  15,
+                      "played":  9,
+                      "xG":  9.16,
+                      "xGA":  13.948,
+                      "xGpg":  1.018,
+                      "xGApg":  1.55,
+                      "goalsFor":  9,
+                      "goalsAgainst":  16,
                       "home":  {
-                                   "xGApg":  1.504,
-                                   "xGpg":  1.074,
-                                   "played":  4
+                                   "xGApg":  1.523,
+                                   "xGpg":  1.054,
+                                   "played":  5
                                },
                       "away":  {
                                    "xGApg":  1.584,

@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/MLS.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/MLS.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 540 | 50,6 % | 46,7 % | +3,9 pe (1,8) | 44,3 % | 135 / 132 | modell (inga odds) |
-| 2026/27 | 480 | 49,6 % | 46,7 % | +2,9 pe (1,3) | 45,4 % | 127 / 115 | modell (inga odds) |
+| 2026/27 | 495 | 49,9 % | 46,7 % | +3,2 pe (1,4) | 45,9 % | 129 / 119 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 1,3). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,4). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,14 +23,14 @@ Bedömning 2026/27: inom slumpen (z 1,3). Tipsen slår att alltid tippa hemma.
 | 2023 | 521 | 47,0 % | 49,3 % | −1,0 | 29,2 % | 25,5 % | 1,9 |
 | 2024 | 522 | 46,2 % | 50,3 % | −1,9 | 24,9 % | 24,6 % | 0,1 |
 | 2025 | 540 | 49,8 % | 49,2 % | 0,3 | 25,0 % | 24,8 % | 0,1 |
-| 2026 | 480 | 50,0 % | 50,4 % | −0,2 | 26,5 % | 23,8 % | 1,4 |
+| 2026 | 495 | 50,5 % | 50,5 % | −0,0 | 26,1 % | 23,8 % | 1,2 |
 
 ### 2026: vad gick fel
 
-- Kryss: 127 av 480 (26,5 %) mot väntat 114,4 (z 1,4).
-- Hemmafavoriter vann 192 av 380 (väntat 196,8), bortafavoriter 48 av 100 (väntat 45,4), favoriter ≥ 60 % 59 av 90 (väntat 59,9).
-- Lag sämst mot oddsen (poäng mot förväntat): CF Montreal −10,1 (32 m), San Diego FC −9,7 (32 m), Los Angeles FC −9,0 (32 m), Columbus Crew −8,9 (32 m).
-- Lag bäst mot oddsen: Nashville SC +16,9 (32 m), New England Revolution +16,2 (32 m), FC Dallas +10,7 (32 m), San Jose Earthquakes +6,9 (32 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 129 av 495 (26,1 %) mot väntat 117,7 (z 1,2).
+- Hemmafavoriter vann 201 av 393 (väntat 203,8), bortafavoriter 49 av 102 (väntat 46,3), favoriter ≥ 60 % 62 av 94 (väntat 62,5).
+- Lag sämst mot oddsen (poäng mot förväntat): Los Angeles FC −10,9 (33 m), CF Montreal −9,7 (33 m), New York City −8,2 (33 m), Columbus Crew −8,1 (33 m).
+- Lag bäst mot oddsen: Nashville SC +17,8 (33 m), New England Revolution +15,0 (33 m), FC Dallas +9,9 (33 m), San Jose Earthquakes +8,5 (33 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -39,9 +39,9 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 654 / 304 | −2,0 pe (−1,0) | −2,4 pe (−0,8) | +1,0 pe (0,6) | −0,8 pe (−0,3) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 1433 / 759 | +0,4 pe (0,3) | −3,9 pe (−2,2) | −0,8 pe (−0,7) | +2,5 pe (1,5) | ingen säker effekt |
-| Bortafavorit | 549 / 309 | −2,9 pe (−1,4) | +2,1 pe (0,8) | −0,8 pe (−0,4) | +0,9 pe (0,4) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 122 / 48 | +2,8 pe (0,7) | −2,0 pe (−0,3) | −2,6 pe (−0,8) | +0,5 pe (0,1) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 1433 / 764 | +0,4 pe (0,3) | −3,7 pe (−2,1) | −0,8 pe (−0,7) | +2,3 pe (1,4) | ingen säker effekt |
+| Bortafavorit | 549 / 311 | −2,9 pe (−1,4) | +2,1 pe (0,8) | −0,8 pe (−0,4) | +1,1 pe (0,4) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 122 / 49 | +2,8 pe (0,7) | −1,4 pe (−0,2) | −2,6 pe (−0,8) | +0,1 pe (0,0) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

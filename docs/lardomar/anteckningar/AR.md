@@ -4,14 +4,14 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AR.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AR.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 510 | 42,2 % | 44,4 % | −2,2 pe (−1,0) | 40,8 % | 146 / 149 | modell (inga odds) |
-| 2026/27 | 464 | 45,0 % | 42,6 % | +2,4 pe (1,1) | 42,5 % | 138 / 117 | modell (inga odds) |
+| 2026/27 | 479 | 45,1 % | 42,6 % | +2,4 pe (1,1) | 42,0 % | 144 / 119 | modell (inga odds) |
 
 Bedömning 2026/27: inom slumpen (z 1,1). Tipsen slår att alltid tippa hemma.
 
@@ -23,14 +23,14 @@ Bedömning 2026/27: inom slumpen (z 1,1). Tipsen slår att alltid tippa hemma.
 | 2023 | 582 | 43,5 % | 45,2 % | −0,8 | 33,5 % | 30,6 % | 1,5 |
 | 2024 | 581 | 45,3 % | 46,5 % | −0,6 | 32,2 % | 30,5 % | 0,9 |
 | 2025 | 510 | 42,0 % | 45,3 % | −1,5 | 31,8 % | 31,4 % | 0,2 |
-| 2026 | 464 | 44,0 % | 45,6 % | −0,7 | 29,7 % | 31,2 % | −0,7 |
+| 2026 | 479 | 44,1 % | 45,8 % | −0,8 | 30,1 % | 31,1 % | −0,5 |
 
 ### 2026: vad gick fel
 
-- Kryss: 138 av 464 (29,7 %) mot väntat 144,6 (z −0,7).
-- Hemmafavoriter vann 157 av 337 (väntat 160,0), bortafavoriter 48 av 127 (väntat 51,3), favoriter ≥ 60 % 31 av 41 (väntat 26,9).
-- Lag sämst mot oddsen (poäng mot förväntat): Dep. Riestra −14,5 (30 m), Estudiantes Rio Cuarto −12,9 (30 m), Aldosivi −11,8 (30 m), Racing Club −11,0 (32 m).
-- Lag bäst mot oddsen: Gimnasia L.P. +14,6 (32 m), Barracas Central +11,0 (30 m), Velez Sarsfield +10,4 (31 m), Instituto +9,0 (30 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 144 av 479 (30,1 %) mot väntat 148,8 (z −0,5).
+- Hemmafavoriter vann 161 av 349 (väntat 166,2), bortafavoriter 51 av 130 (väntat 52,6), favoriter ≥ 60 % 34 av 45 (väntat 29,4).
+- Lag sämst mot oddsen (poäng mot förväntat): Dep. Riestra −16,1 (31 m), Estudiantes Rio Cuarto −13,9 (31 m), Aldosivi −12,6 (31 m), Racing Club −10,0 (33 m).
+- Lag bäst mot oddsen: Gimnasia L.P. +15,8 (33 m), Barracas Central +11,1 (31 m), Velez Sarsfield +9,7 (32 m), Instituto +9,1 (31 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -39,8 +39,8 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 770 / 273 | +0,9 pe (0,5) | +2,3 pe (0,8) | −0,0 pe (−0,0) | −1,6 pe (−0,6) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 2217 / 1054 | −0,4 pe (−0,4) | −3,7 pe (−2,5) | +0,4 pe (0,4) | +1,9 pe (1,3) | ingen säker effekt |
-| Bortafavorit | 1077 / 483 | −0,4 pe (−0,3) | −6,8 pe (−3,1) | +0,7 pe (0,5) | +3,0 pe (1,4) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 2217 / 1059 | −0,4 pe (−0,4) | −3,7 pe (−2,5) | +0,4 pe (0,4) | +1,9 pe (1,3) | ingen säker effekt |
+| Bortafavorit | 1077 / 486 | −0,4 pe (−0,3) | −6,4 pe (−2,9) | +0,7 pe (0,5) | +2,8 pe (1,3) | ingen säker effekt |
 | Storfavorit (≥ 70 %) | 92 / 31 | −1,7 pe (−0,4) | +5,5 pe (0,7) | −1,0 pe (−0,2) | −17,1 pe (−2,5) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.

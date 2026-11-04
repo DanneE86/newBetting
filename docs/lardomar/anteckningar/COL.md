@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/COL.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/COL.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 399 | 48,9 % | 48,6 % | +0,3 pe (0,1) | 46,4 % | 95 / 109 | modell (inga odds) |
-| 2026/27 | 359 | 47,1 % | 45,8 % | +1,3 pe (0,5) | 45,4 % | 111 / 79 | modell (inga odds) |
+| 2026/27 | 368 | 47,8 % | 45,8 % | +2,0 pe (0,8) | 46,2 % | 112 / 80 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 0,5). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 0,8). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -21,9 +21,9 @@ Inga odds i historiken för ligan (tipsen följer modellen).
 
 ### 2026/27: vad gick fel
 
-- 359 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
-- Grundmodellen och oddsen var oense i 5 matcher: grundmodellen rätt 2, oddsen rätt 1.
-- Dixon-Coles och oddsen var oense i 3 matcher: DC rätt 1.
+- 368 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
+- Grundmodellen och oddsen var oense i 6 matcher: grundmodellen rätt 2, oddsen rätt 2.
+- Dixon-Coles och oddsen var oense i 4 matcher: DC rätt 1.
 
 Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/COL.md](../ligor/COL.md).
 

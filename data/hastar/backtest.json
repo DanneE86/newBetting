@@ -1,53 +1,53 @@
 {
- "updatedAt": "2026-10-23T05:21:02.382Z",
- "games": 32,
- "races": 251,
- "topHitRate": 0.323,
- "favHitRate": 0.331,
- "logLoss": 1.945,
- "marketLogLoss": 1.93,
+ "updatedAt": "2026-11-01T17:42:53.123Z",
+ "games": 34,
+ "races": 267,
+ "topHitRate": 0.33,
+ "favHitRate": 0.341,
+ "logLoss": 1.916,
+ "marketLogLoss": 1.918,
  "calibration": [
   {
    "from": 0,
    "to": 0.1,
-   "n": 1935,
+   "n": 2070,
    "avgP": 0.034,
-   "winRate": 0.04
+   "winRate": 0.039
   },
   {
    "from": 0.1,
    "to": 0.2,
-   "n": 446,
+   "n": 472,
    "avgP": 0.143,
-   "winRate": 0.121
+   "winRate": 0.125
   },
   {
    "from": 0.2,
    "to": 0.3,
-   "n": 211,
+   "n": 221,
    "avgP": 0.243,
-   "winRate": 0.261
+   "winRate": 0.258
   },
   {
    "from": 0.3,
    "to": 0.4,
-   "n": 93,
+   "n": 100,
    "avgP": 0.343,
-   "winRate": 0.355
+   "winRate": 0.35
   },
   {
    "from": 0.4,
    "to": 0.5,
-   "n": 36,
-   "avgP": 0.448,
-   "winRate": 0.389
+   "n": 39,
+   "avgP": 0.447,
+   "winRate": 0.41
   },
   {
    "from": 0.5,
    "to": 0.6,
-   "n": 28,
+   "n": 31,
    "avgP": 0.547,
-   "winRate": 0.464
+   "winRate": 0.516
   },
   {
    "from": 0.6,
@@ -66,39 +66,39 @@
  ],
  "rank": {
   "A": {
-   "n": 387,
-   "wins": 117,
-   "sumP": 123.44399999999999,
+   "n": 410,
+   "wins": 126,
+   "sumP": 131.36600000000004,
    "stake": 0,
    "ret": 0,
-   "hitRate": 0.302,
+   "hitRate": 0.307,
    "roi": null,
-   "avgP": 0.319
+   "avgP": 0.32
   },
   "B": {
-   "n": 509,
-   "wins": 64,
-   "sumP": 68.94499999999996,
+   "n": 538,
+   "wins": 69,
+   "sumP": 73.06500000000001,
    "stake": 0,
    "ret": 0,
-   "hitRate": 0.126,
+   "hitRate": 0.128,
    "roi": null,
-   "avgP": 0.135
+   "avgP": 0.136
   },
   "C": {
-   "n": 665,
-   "wins": 40,
-   "sumP": 38.858999999999995,
+   "n": 709,
+   "wins": 43,
+   "sumP": 41.363999999999955,
    "stake": 0,
    "ret": 0,
-   "hitRate": 0.06,
+   "hitRate": 0.061,
    "roi": null,
    "avgP": 0.058
   },
   "D": {
-   "n": 1199,
-   "wins": 28,
-   "sumP": 19.752999999999954,
+   "n": 1287,
+   "wins": 29,
+   "sumP": 21.21099999999996,
    "stake": 0,
    "ret": 0,
    "hitRate": 0.023,
@@ -107,44 +107,44 @@
   }
  },
  "valueBets": {
-  "n": 665,
-  "wins": 56,
-  "stake": 665,
-  "ret": 666.6399999999999,
-  "hitRate": 0.084,
-  "roi": 0.002
+  "n": 708,
+  "wins": 58,
+  "stake": 708,
+  "ret": 771.84,
+  "hitRate": 0.082,
+  "roi": 0.09
  },
  "spikes": {
   "sakerhet": {
-   "n": 31,
-   "wins": 10,
-   "hitRate": 0.323,
+   "n": 33,
+   "wins": 12,
+   "hitRate": 0.364,
    "roi": null
   },
   "varde": {
-   "n": 8,
-   "wins": 2,
-   "hitRate": 0.25,
+   "n": 10,
+   "wins": 3,
+   "hitRate": 0.3,
    "roi": null
   },
   "chans": {
-   "n": 6,
+   "n": 7,
    "wins": 3,
-   "hitRate": 0.5,
+   "hitRate": 0.429,
    "roi": null
   }
  },
  "upsets": {
-  "n": 191,
+  "n": 197,
   "wins": 10,
-  "hitRate": 0.052
+  "hitRate": 0.051
  },
  "dd": {
-  "n": 90,
-  "hits": 0,
-  "stake": 90,
-  "ret": 0,
-  "roi": -1
+  "n": 96,
+  "hits": 1,
+  "stake": 96,
+  "ret": 6.91,
+  "roi": -0.928
  },
  "byTrack": {
   "Tingsryd": {
@@ -202,13 +202,13 @@
    "roi": -0.643
   },
   "Jägersro": {
-   "n": 99,
-   "wins": 9,
+   "n": 125,
+   "wins": 11,
    "sumP": 0,
-   "stake": 99,
-   "ret": 98.49000000000002,
-   "hitRate": 0.091,
-   "roi": -0.005
+   "stake": 125,
+   "ret": 203.68999999999997,
+   "hitRate": 0.088,
+   "roi": 0.63
   },
   "Charlottenlund": {
    "n": 19,
@@ -229,13 +229,13 @@
    "roi": 0.308
   },
   "Bjerke": {
-   "n": 24,
+   "n": 41,
    "wins": 1,
    "sumP": 0,
-   "stake": 24,
+   "stake": 41,
    "ret": 19.74,
-   "hitRate": 0.042,
-   "roi": -0.178
+   "hitRate": 0.024,
+   "roi": -0.519
   },
   "Färjestad": {
    "n": 41,
@@ -312,51 +312,51 @@
  },
  "byDistance": {
   "lång (>2200)": {
-   "n": 142,
-   "wins": 10,
+   "n": 150,
+   "wins": 12,
    "sumP": 0,
-   "stake": 142,
-   "ret": 155.11000000000004,
-   "hitRate": 0.07,
-   "roi": 0.092
+   "stake": 150,
+   "ret": 260.31,
+   "hitRate": 0.08,
+   "roi": 0.735
   },
   "kort (≤1700)": {
-   "n": 140,
+   "n": 153,
    "wins": 10,
    "sumP": 0,
-   "stake": 140,
+   "stake": 153,
    "ret": 112.77999999999999,
-   "hitRate": 0.071,
-   "roi": -0.194
+   "hitRate": 0.065,
+   "roi": -0.263
   },
   "medel (1701–2200)": {
-   "n": 383,
+   "n": 405,
    "wins": 36,
    "sumP": 0,
-   "stake": 383,
+   "stake": 405,
    "ret": 398.75,
-   "hitRate": 0.094,
-   "roi": 0.041
+   "hitRate": 0.089,
+   "roi": -0.015
   }
  },
  "byStartMethod": {
   "Autostart": {
-   "n": 513,
-   "wins": 44,
+   "n": 550,
+   "wins": 46,
    "sumP": 0,
-   "stake": 513,
-   "ret": 510.95,
-   "hitRate": 0.086,
-   "roi": -0.004
+   "stake": 550,
+   "ret": 616.15,
+   "hitRate": 0.084,
+   "roi": 0.12
   },
   "Voltstart": {
-   "n": 127,
+   "n": 133,
    "wins": 10,
    "sumP": 0,
-   "stake": 127,
+   "stake": 133,
    "ret": 133.62,
-   "hitRate": 0.079,
-   "roi": 0.052
+   "hitRate": 0.075,
+   "roi": 0.005
   },
   "galopp/okänd": {
    "n": 25,

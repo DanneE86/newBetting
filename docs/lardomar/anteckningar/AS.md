@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AS.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/AS.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 240 | 51,7 % | 48,6 % | +3,1 pe (1,0) | 40,0 % | 53 / 63 | modell (inga odds) |
-| 2026/27 | 208 | 46,2 % | 46,9 % | −0,8 pe (−0,2) | 38,9 % | 50 / 62 | modell (inga odds) |
+| 2026/27 | 215 | 47,4 % | 47,0 % | +0,5 pe (0,1) | 40,0 % | 51 / 62 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z −0,2). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 0,1). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,14 +23,14 @@ Bedömning 2026/27: inom slumpen (z −0,2). Tipsen slår att alltid tippa hemma
 | 2023 | 240 | 53,8 % | 51,7 % | 0,6 | 19,6 % | 25,0 % | −1,9 |
 | 2024 | 242 | 47,5 % | 50,1 % | −0,8 | 21,9 % | 25,0 % | −1,1 |
 | 2025 | 240 | 53,3 % | 50,5 % | 0,9 | 22,1 % | 25,0 % | −1,0 |
-| 2026 | 208 | 51,0 % | 52,7 % | −0,5 | 24,0 % | 24,0 % | 0,0 |
+| 2026 | 215 | 52,1 % | 52,8 % | −0,2 | 23,7 % | 24,0 % | −0,1 |
 
 ### 2026: vad gick fel
 
-- Kryss: 50 av 208 (24,0 %) mot väntat 49,9 (z 0,0).
-- Hemmafavoriter vann 65 av 127 (väntat 69,7), bortafavoriter 41 av 81 (väntat 39,9), favoriter ≥ 60 % 42 av 65 (väntat 44,1).
-- Lag sämst mot oddsen (poäng mot förväntat): Kalmar −11,7 (26 m), Mjallby −9,2 (26 m), Degerfors −6,9 (26 m), Halmstad −4,3 (26 m).
-- Lag bäst mot oddsen: Vasteras SK +11,8 (26 m), Sirius +8,3 (26 m), Brommapojkarna +7,3 (26 m), Elfsborg +4,9 (26 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 51 av 215 (23,7 %) mot väntat 51,5 (z −0,1).
+- Hemmafavoriter vann 70 av 133 (väntat 73,1), bortafavoriter 42 av 82 (väntat 40,4), favoriter ≥ 60 % 44 av 67 (väntat 45,5).
+- Lag sämst mot oddsen (poäng mot förväntat): Kalmar −11,9 (27 m), Mjallby −9,7 (27 m), Degerfors −7,4 (27 m), Halmstad −4,3 (26 m).
+- Lag bäst mot oddsen: Vasteras SK +13,1 (27 m), Sirius +8,3 (26 m), Brommapojkarna +6,2 (27 m), Elfsborg +5,6 (27 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -39,9 +39,9 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 462 / 162 | +0,1 pe (0,0) | +1,6 pe (0,4) | +0,5 pe (0,2) | −5,0 pe (−1,5) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 907 / 350 | −1,0 pe (−0,6) | −3,3 pe (−1,2) | +2,2 pe (1,5) | −1,3 pe (−0,5) | ingen säker effekt |
-| Bortafavorit | 876 / 326 | +2,5 pe (1,5) | +3,6 pe (1,3) | −0,4 pe (−0,3) | −3,0 pe (−1,2) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 235 / 70 | +5,3 pe (1,9) | +5,1 pe (1,0) | −0,6 pe (−0,2) | −2,8 pe (−0,6) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 907 / 351 | −1,0 pe (−0,6) | −3,4 pe (−1,3) | +2,2 pe (1,5) | −1,1 pe (−0,4) | ingen säker effekt |
+| Bortafavorit | 876 / 327 | +2,5 pe (1,5) | +3,7 pe (1,4) | −0,4 pe (−0,3) | −3,1 pe (−1,3) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 235 / 71 | +5,3 pe (1,9) | +5,4 pe (1,1) | −0,6 pe (−0,2) | −3,0 pe (−0,7) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

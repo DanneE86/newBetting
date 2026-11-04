@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-10-30. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/PL.csv`.
+Uppdaterad 2026-11-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/PL.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 380 | 48,7 % | 48,8 % | −0,1 pe (−0,0) | 42,6 % | 104 / 91 | modell (inga odds) |
-| 2026/27 | 80 | 47,5 % | 44,4 % | +3,1 pe (0,6) | 38,8 % | 23 / 19 | modell (inga odds) |
+| 2026/27 | 90 | 50,0 % | 44,1 % | +5,9 pe (1,1) | 40,0 % | 25 / 20 | modell (inga odds) |
 
-Bedömning 2026/27: inom slumpen (z 0,6). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z 1,1). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,16 +23,16 @@ Bedömning 2026/27: inom slumpen (z 0,6). Tipsen slår att alltid tippa hemma.
 | 2023/24 | 380 | 59,7 % | 56,2 % | 1,4 | 21,6 % | 22,5 % | −0,4 |
 | 2024/25 | 380 | 55,3 % | 54,8 % | 0,2 | 24,5 % | 23,3 % | 0,6 |
 | 2025/26 | 380 | 49,2 % | 52,2 % | −1,2 | 27,4 % | 24,8 % | 1,2 |
-| 2026/27 | 80 | 47,5 % | 51,5 % | −0,7 | 28,7 % | 24,6 % | 0,9 |
+| 2026/27 | 90 | 47,8 % | 51,5 % | −0,7 | 27,8 % | 24,6 % | 0,7 |
 
 ### 2026/27: vad gick fel
 
-- Kryss: 23 av 80 (28,7 %) mot väntat 19,7 (z 0,9).
-- Hemmafavoriter vann 24 av 48 (väntat 25,9), bortafavoriter 14 av 32 (väntat 15,4), favoriter ≥ 60 % 11 av 16 (väntat 11,2).
-- Lag sämst mot oddsen (poäng mot förväntat): Man United −7,1 (8 m), Nott'm Forest −4,4 (8 m), Sunderland −3,6 (8 m), Fulham −2,5 (8 m).
-- Lag bäst mot oddsen: Brighton +4,6 (8 m), Man City +4,4 (8 m), Hull +3,9 (8 m), Arsenal +3,8 (8 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
-- Grundmodellen och oddsen var oense i 19 matcher: grundmodellen rätt 4, oddsen rätt 6.
-- Dixon-Coles och oddsen var oense i 11 matcher: DC rätt 4.
+- Kryss: 25 av 90 (27,8 %) mot väntat 22,2 (z 0,7).
+- Hemmafavoriter vann 28 av 56 (väntat 29,8), bortafavoriter 15 av 34 (väntat 16,6), favoriter ≥ 60 % 13 av 18 (väntat 12,6).
+- Lag sämst mot oddsen (poäng mot förväntat): Man United −8,0 (9 m), Nott'm Forest −5,5 (9 m), Sunderland −5,1 (9 m), Crystal Palace −2,7 (9 m).
+- Lag bäst mot oddsen: Brighton +6,8 (9 m), Arsenal +4,2 (9 m), Hull +3,6 (9 m), Man City +2,4 (9 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Grundmodellen och oddsen var oense i 21 matcher: grundmodellen rätt 5, oddsen rätt 8.
+- Dixon-Coles och oddsen var oense i 12 matcher: DC rätt 5.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -42,10 +42,10 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 302 / 201 | +0,1 pe (0,1) | +0,8 pe (0,2) | +0,4 pe (0,2) | +3,7 pe (1,2) | ingen säker effekt |
 | Storfavorit (≥ 70 %) | 413 / 161 | −0,5 pe (−0,2) | +1,2 pe (0,4) | −0,6 pe (−0,3) | +2,0 pe (0,7) | ingen säker effekt |
-| Bortafavorit | 823 / 454 | +0,8 pe (0,5) | +0,5 pe (0,2) | −2,4 pe (−1,6) | +2,1 pe (1,1) | ingen säker effekt |
-| Oddsen rör sig bort från favoriten (öppning → stängning) | 863 / 419 | −3,8 pe (−2,3) | −2,1 pe (−0,9) | −0,9 pe (−0,6) | +1,9 pe (0,9) | ingen säker effekt |
+| Bortafavorit | 823 / 456 | +0,8 pe (0,5) | +0,6 pe (0,2) | −2,4 pe (−1,6) | +2,0 pe (1,0) | ingen säker effekt |
+| Oddsen rör sig bort från favoriten (öppning → stängning) | 863 / 423 | −3,8 pe (−2,3) | −2,1 pe (−0,9) | −0,9 pe (−0,6) | +1,8 pe (0,9) | ingen säker effekt |
 | Målsnål match (över 2,5 < 45 %) | 414 / 53 | −1,1 pe (−0,4) | +5,5 pe (0,8) | −1,3 pe (−0,6) | −0,7 pe (−0,1) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 736 / 375 | +0,8 pe (0,4) | −0,1 pe (−0,0) | −0,6 pe (−0,4) | +1,6 pe (0,7) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 736 / 380 | +0,8 pe (0,4) | −0,1 pe (−0,1) | −0,6 pe (−0,4) | +1,4 pe (0,6) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 
